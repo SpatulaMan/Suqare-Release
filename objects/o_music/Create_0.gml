@@ -1,0 +1,17 @@
+mCheck = false;
+mc = 0;
+s2 = audio_play_sound(snd_mainTheme,10,true,.8*o_saveload.musvol);
+s1 = audio_play_sound(snd_musicA1,10,true,0);
+audio_pause_sound(s1);
+//audio_sound_gain(s1,0,0);
+s3 = audio_play_sound(snd_musicB1,10,true,0);
+audio_pause_sound(s3);
+s4 = audio_play_sound(snd_musicC1,10,true,0);
+audio_pause_sound(s4);
+s5 = audio_play_sound(snd_musicD1,10,true,0);
+audio_pause_sound(s5);
+s6 = audio_play_sound(snd_musicD1_1,10,true,0);
+audio_pause_sound(s6);
+mCheck2 = false;
+mCheck3 = false;
+enemy = [];

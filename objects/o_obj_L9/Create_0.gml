@@ -1,0 +1,14 @@
+ob1 = false;
+ob2 = false;
+ob3 = false;
+ob4 = false;
+ob5 = false;
+ob6 = false;
+ninjakill = 0;
+t = 0;
+alarm_set(0,600);
+alarm_set(1,700);
+alarm_set(2,800);
+alarm_set(3,900);
+alarm_set(4,1000);
+alarm_set(5,1200);

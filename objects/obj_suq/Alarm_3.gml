@@ -1,0 +1,1 @@
+audio_play_sound(snd_step,3,false,1*o_saveload.sfxvol,0,random_range(.7,1.3));

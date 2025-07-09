@@ -1,0 +1,1 @@
+obj_guard_patrol.access = false;

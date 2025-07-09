@@ -1,0 +1,56 @@
+Go through house to investigate a disturbance. Going into the basement triggers it and you get locked down there. Find the key and then you need to find all 3 totems in order to kill the 
+ghost. One is outside, one is upstairs, and one is inside a statue or something to make it hidden downstairs? Once you find the totems, you can unlock the door for the secret new weapon. 
+
+Ghost will show up and attack, floating over walls, some kind of weapon can damage it to make it go away faster, but it will go away on its own/ you can run away from it until it goes away.
+It'll get triggered to spawn again at specific points, but also at set times if you haven't seen it in a while. 
+
+The people you go in with tell you to investigate upstairs and they'll go down? 
+
+Unique weapon? - Yes, Ghost Gun
+
+Other enemies like little monsters that come out after ghost appears. 
+
+Use blue key to get into basement and the red key will give you access to upstairs and the maze area which is found in the basement. 
+
+Only showing one objective at a time
+Start:
+1. Investigate the Disturbance
+1 Complete
+2. Gather 3 Totems
+2 Complete
+3. Kill Ghost
+
+Make Ghost
+Make Gremlins
+Make Ghost Gun
+Make Totems
+Make Golden Key Fragments
+Make Basement
+Make Statue for basement totem? 
+Make Upstairs
+Finish main floor and backyard
+Put one Golden Key Fragment hidden in the maze somewhere. 
+
+Some things are on the GHOST LAYER and can't be touched by anything not on the ghost layer. The Ghost Gun 
+
+BRIEFING:
+We just moved into this new neighborhood, and we've heard disturbances almost every night at one house in particular. I suspect it's those college boys partying, so it should 
+be straightforward. Just find out what's going on over there and put it to an end. I need my sleep back. 
+
+Reward: $1800
+Hiring Firm: Philbin Wuthgor
+Combat Difficulty: ?
+Mental Difficulty: ?
+
+Start with funk music and then switch to nothing and ambient wind noises. Creepier sounds the further you go in. Or have the creepier sounds play when the ghost is on screen.
+Also, maybe mix together the wind noises to make it more believable. 
+
+Walk into basement
+Have the ghost say:
+
+YOU DARE DISTURB ME
+I KNOW WHO YOU ARE
+YOU WERE SENT BY THE GREAT MACRAME
+TO END MY EXISTENCE
+BUT I WILL END YOU FIRST
+I WILL NOT LET YOU FIND THE 3 TOTEMS

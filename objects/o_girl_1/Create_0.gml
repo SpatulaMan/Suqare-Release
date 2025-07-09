@@ -1,0 +1,15 @@
+hp = 8;
+hpc = 8;
+hpt = 8;
+spr = s_girl_1;
+p1 = false;
+p2 = false;
+p3 = false;
+path_check = false;
+image_speed = 0;
+path = path_add();
+x1 = 0;
+y1 = 0;
+follow = noone;
+rCheck = true;
+hit = false;

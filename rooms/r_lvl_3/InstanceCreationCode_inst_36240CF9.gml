@@ -1,0 +1,1 @@
+ninjaNum = 1;

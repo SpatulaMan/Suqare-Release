@@ -1,0 +1,92 @@
+-Make turret bullets have a specific value set on the suq buls that denotes it's a turret bullet and that the guards should act differently because of it
+-Make each turret a separate one to buy. You can buy as many as you want. 
+	pistol turret
+	tear gas turret
+	shield turret
+	flamethrower turret
+	rocket launcher turret
+
+Need more levels where you can't kill anyone. Also have levels where they're constantly pursuing you, but you can't kill them. Tear gas turrets could help here
+
+Lockpicking mini-game upgrade? 
+
+Maybe make enemies be able to shoot each other? I would do that by giving enemy bullets a variable that would hold the instance_ID of the specific enemy that shot that bullet. If an enemy 
+collides with a bulletwith a matching instance_ID to itself, nothing happens, if it doesn't match, it either does 1 damage or converts itself into the corresponding suq_bul. I kinda like 
+the 1 damage thing, but rockets launchers would complicate that. 
+
+Ninja Retaliation level? 
+Ninja stop thieves level?
+Protect CEO from Ninja assasination
+Uncover the ninja underbelly mission. How they have their own base for selecting missions. Raid it and put it to an end
+
+
+Have a mission with a high reward and low difficulty, but have Cricle snipe it from you. You immediately get sent back to the armory OR you can try to fight him. But you'll lose most likely.
+Then start having cricle try and thwart some missions. I guess I'll design the levels around having Cricle work against you. Especially levels that have two sides. He'll pick the other side.
+Maybe he'll also try to snake the same job from you occasionally as well, and you'll have to race him to complete it first. Cool ideas could come from that. Race to steal something, kill
+someone, running through buildings, sneaking through a facility, etc. 
+
+Have a level called, "Walk a lady across the street" for some money. That's all you do in this one. avoid the cars coming down the road. If she gets hit, you're a terrible person. 
+
+Have some levels that endlessly come back based on some randomized criteria. e.g. walk a lady across the street 1, walk a lady across the street 2, and each one is different, but it rotates
+through a randomized set of things that could change up the level. Or just one of 5 different version of the level for small amounts of money. These can also be used to reset your depleting
+hearts if a level is too hard and you keep dying. Maybe these will keep going for as long as you succeed? Maybe have unlimited missions with randomized elements for the end game. Once you
+get the ending, the game turns into a rogue-like. Maybe you just quell insurrections, or do public service, or kill people, or something else based on your ending. Different ending based
+on what companies are still around, what companies are at the top, and what standing you have with them. 
+
+Cheat Codes in the "Extras" on the menu. Can try inputting in cheat codes, and they'll display below once you find one. 
+-SpatulaMan = Everything unlocked, all guns, and $100,000,000
+-Suqare = movement speed +50%
+-Cricle = gun damage +100%
+-Tirangle = 
+-
+
+Invicible enemies that the Nail gun is useful against. Start putting these guys into levels. Maybe they just have super high health, so they're impractical to kill. Blows them far away? 
+
+Spinning blade enemies to add variety to the ninja levels? Make the spinning blades rotate, but keep the circle on top from rotating. Blocks all bullets except fire and sniper. 
+
+Make message board in bedroom for information on new happenings?
+
+Level where you get kidnapped by a company with a low standing. Other companies might have other bad things in store for you. If they're at a bad enough standing < -5 for a long enough
+time, they'll try to get back at you. Maybe needs a low net worth as well? Different for each company? These will happen after you select a mission. Have a pop-up show up to tell you 
+what's happening right before the level begins except for 
+
+Kanker & Co. - will hire Cricle the assassin to kill you. He'll show up on the next level you do right at the beginning to kill you.
+HierTech - Will drugged you. Switches all movement directions. Maybe these continually change every 30 seconds as well. 
+Perez Holdings - Will stop your car with armed thugs while you're on your way to the mission. Defeat them to move on. 
+Yellerteeth Inc. - Will send you on a suicide mission at Ninja headquarters
+Ungulate Studios - Will kidnap you. You have to find weapons and escape. Kidnap you after 20 seconds in your base, or the moment you open the door to the armory. 
+Gildebrand Consulting - Will steal all of your weapons from you and leave you with the knife for a mission. 
+
+build and test all upgraded weapons, and design two new weapons with crazy abilities. 
+
+Have missions you haven't seen yet say "NEW" on them
+
+Add more gadgets
+
+
+Make Huge Octagon Boss
+Make Tank Boss
+Make Cylinder Boss
+
+Make missions that 
+
+Add a "Forging of the Golden Sword" mission once you gather all the fragments. 
+
+Make trailer:
+
+	Select Mission
+	//Show selecting mission
+	Buy Upgrades and Gadgets
+	//Show buying stuff
+	Grab your favorite weapons
+	//show grabbing weapons
+	Finish the job
+	//Show snippets of several levels being played
+	Will you succeed?
+	//Show checking the objectives and getting in car
+	Or will you fail?
+	//Show you dying in different ways
+	//Show Suqare: Hired Gun
+	Coming Sometime in the future
+	Wishlist on Steam 
+	Demo Out Now

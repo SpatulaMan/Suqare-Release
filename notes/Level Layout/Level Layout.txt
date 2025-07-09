@@ -1,0 +1,139 @@
+NL - Non-Lethal
+
+-Perez Holdings Plan - Become a monopolistic and powerful bank:
+2: Not doing Bank Heist
+or
+7: Destroy Gems
+12: Steal finance tech from Kanker and Co.
+19: Compromise all other banking software
+24: Execute members of government that would prevent a banking monopoly
+31: Destroy Uprising of banks
+35: Invade homes and kill everyone who works for the other banks
+41: Assassinate CEO of Kanker and Co. The ghosts of all those you killed come back to haunt you here
+
+-Kanker and Co Plan - Be a giant military force to start taking over countries:
+2: Bank heist
+and
+7: Ignore or take and fail Destroy Gems
+13: Steal plans and kidnap scientist to make super weapon
+16: Destroy Big Tank that could stop whole plan (The tank is accessible at any point, but you want to gather as many resources as possible to know how to destroy it.) 
+25: Protect Scientist while he assembles super weapon
+32: Take Control of manufacturing plant
+43: Charge super weapon
+
+-Ungulate Studios Plan - Keep Evil corporations in check:
+4: kidnap girl
+12: Steal weapon from Hiertech
+22: Stop Contraband Runners (stop cars from getting loaded with contraband. Some armored machine gun cars between the stocking buildings of which there's 3)
+29: Prevent Theft of Museum artifacts, Ghosts haunt you as well
+36: Prison Break, break into prison secretly, and sneak a few wrongfully convicted inmates out - NL besides ghosts that haunt the place
+42: Run Down, Chase Kanker and Co informant and kill him. Through doors, traps, he'll throw stuff to block the path, shoot at you, etc. Trying to get away to his car. Catch him before that! 
+49: Mobilize Army and take the fight to Kanker and Co (dependent on level 7 not being done? Or maybe just not being defeated yet)
+
+-Yellerteeth Inc. Plan - Steal every ninja artifact and kill ninja leader for revenge:
+3: Amulet of Hecto
+9: Ring of Tarpho (new weapons)
+15: Vambrace of Wurtu - Ninja artifact, but in a rich benefactor's mansion. Be totally silent and kill no one. - NL
+21: Jewel of Barfo, Ghost ninjas too (Steal from museum)
+27: Nose of Mortuban (New Enemy)
+33: Eye of Gutran
+39: Destroy Ninja Hierarchy (kill all ninja leaders)
+45: Ninja Retaliation, Fight off onslaught of ninjas until they're all dead. Protect the CEO?
+
+-Hiertech Plan - To be profitable by any means necessary:
+5: Save girl
+10: Art Auction (Figure out who plans to steal the art in detective fashion) - NL
+18: Contraband (Move contraband from building and load up cars while fighting off cops. When holding boxes, you can't shoot.)
+28: Kill Traitor (connected to winning levels 22 and 26)
+30: Steal Art (6 paintings) - NL
+37: Hijack Ship - NL (without killing crew cause they need to drive the boat. Lure and lock guards in any of the 3 brigs on the ship to make them set sail)
+46: Destroy Rivals, Take out Ungulate and Gildebrand by wiring money from their banks to Hiertech
+
+
+-Gildebrand Consulting Plan - Help people with small requests, and make life better for everyone:
+8: Eradicate spiders
+11: Prove Hiertech is targeting charities. Sneaky level - NL
+17: Help Old Ladies to cross the street(hurts Hiertech in net worth and standings because he's racing cars with cargo through there)
+26: High Stakes Poker Game (win 3 hands of poker out of 5 to smoke out who's the Hiertech mole who's trying to save himself since he lost cargo and is in debt to them. If we win, maybe we can convince him to turn on Hiertech (connected to level 22)
+34: Save Historic Building (Yellerteeth Inc wants to take down the building covertly overnight and claim it fell on its own and buy the land to expand its parking lot. Stop their machine!) 
+44: Save Hostages, in Maze that keeps changing every 60 seconds. 
+47: Ghost Infestation, Bunch of powerful ghosts in a house. Activate things to get them to come out and you try to kill them. 
+50: Evacuate Town, avoid super-weapon blasts and evacuate each building before they get destroyed. (contingent upon success of level 43 and 48 either failed or not done)
+
+
+Others:
+1: Kill gang leader
+6: Ghost
+14: Gun Club - NL (the local gun club stole my weapon from me, and they won't give it back. They're armed and will shoot, but please don't kill any of them. They're my dad's friends I'll only give you a reward if you can get my gun back without bloodshed. 
+23: Bodyguard at Dinner Party (Murder Mystery. Talk to all of the attendees after the lights went out to see who the murderer is. Whoever you choose is who they take into custody. It'll say something like, "You'll always wonder if you got the right person." or "He plead guilty" depending on if you choose correctly.)
+38: Want Some Stuff? This guy wants to sell you some good stuff. Just need to find him in a haunted mansion. You won't be able to sell these items back. Sells you really a couple good weapons and gadgets. 
+40: Compete in a gameshow
+48: Destroy super weapon and stop kanker and Co - President
+51: End Game 
+
+-Rivals:
+Perez and Kanker: when one goes up, the other one generally goes down. For net worth, and standing is specific per mission
+Ungulate and Gildebrand and Hiertech: Net worth is opposite each other for some things, but standing is easy to affect for hiertech just doing missions for the others. 
+Yellerteeth doesn't like ninjas
+
+
+
+
+Level List:
+
+1: Kill gang leader
+2: Bank Heist
+3: Amulet of hecto
+4: kidnap girl
+or
+5: Save girl
+6: Ghost
+7: Destroy Gems
+8: Eradicate spiders
+		9: Ring of Tarpho
+		10: Art Auction (Figure out who stole the art in detective fashion) - NL
+		11: Prove Hiertech is targeting charities. Sneaky level - NL
+		12: Steal weapon from Hiertech
+		13: Steal plans and kidnap scientist to make super weapon
+		14: Gun Club - NL
+		15: Vambrace of Wurtu
+		16: Destroy Big Tank that could stop whole plan
+		17: Help Old Ladies to cross the street(hurts Hiertech in net worth and standings because he's racing cars with cargo through there)
+		18: Contraband
+		19: Compromise all other banking software
+		20: Quest for the Golden Sword
+		21: Jewel of Barfo, Ghost ninjas too
+		22: Stop Contraband Runner (stop cars from getting loaded with contraband. Some armored machine gun cars between the stocking buildings of which there's 3)
+		23: Bodyguard at Dinner Party
+		24: Execute members of government that would prevent a banking monopoly
+		25: Protect Scientist while he assembles super weapon
+		26: High Stakes Poker Game
+		27: Nose of Mortuban (plan the heist on location first, look around, and then execute it. Have something to start the mission. Like the car again, but a different object)
+		28: Kill Traitor
+		29: Prevent Theft of Museum artifacts, Ghosts haunt you as well
+		30: Steal Art (6 paintings)
+		31: Destroy Uprising of banks
+		32: Take Control of manufacturing plant
+		33: Eye of Gutran
+		34: Save Historic Building
+		35: Invade homes and kill everyone who works for the other banks
+		36: Prison Break, break into prison secretly, and sneak a few wrongfully convicted inmates out - NL besides ghosts that haunt the place
+		37: Hijack Ship - NL
+		38: Want Some Stuff?
+		39: Destroy Ninja Hierarchy (kill all ninja leaders)
+		40: Compete in a gameshow
+		41: Assassinate CEO of Kanker and Co. The ghosts of all those you killed come back to haunt you here
+		42: Run Down
+		43: Charge super weapon
+		44: Save Hostages
+		45: Ninja Retaliation
+		46: Destroy Rivals
+		47: Ghost Infestation
+		48: Destroy super weapon and stop kanker and Co
+		49: Mobilize Army
+		50: Evacuate Town
+		51: End Game. The Armory gets invaded! Fight your way through and get the ending that you are the best mercenary if they all came for you directly. You've made it. The merchants are 
+			dead. Knives and stuff in em. Put stairs in the Armory and lock the door? 
+		
+Then you get a breakdown of your ending, how many levels you played out of the total amount, Total number of deaths, Final Money count, 
+Mercenary Rating(based on total levels completed, minus failed levels, minus every death, plus total money, plus each weapon you have, plus/minus the standing you have with each company since mercenaries want to keep clients happy)

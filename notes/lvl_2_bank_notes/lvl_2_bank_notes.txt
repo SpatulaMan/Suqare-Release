@@ -1,0 +1,19 @@
+Mission: Steal all 3 precious gems hidden around the Perez Holdings bank while making it seem like a regular bank robbery
+Company: Kankers & Co.
+
+Briefing:
+Don't bring any guns in. They will notice those if you have them drawn. Bring a melee weapon, but remember to drop it before going through the metal detector. Then find the Red key. 
+They'll let you in the red door and give you 30 seconds to access the safety deposit box room. We planted the safe decoder and a weapon in two different boxes there, so look carefully. 
+The safety deposit box room is located straight west then south from the red door. Then, locate the hidden safe. It'll look like a gap in a wall. Plant the decoder by walking up to it. 
+Continue to look for the gems while you wait for the safe to open. Also, don't get caught by the patrolling guards. If they see you for long enough, they might enter your picture 
+into their database and you'll be a prime target for Perez Holdings later. You can keep all the money you steal. 
+
+Once you have stolen the money from the safe and have all 3 gems in hand, escape and you'll get your full reward. If you can't finish the whole mission, you'll only get a partial reward.
+
+No Gems - No mission reward - +0 kankers
+1 or 2 gems - half mission reward - +1 kankers
+All gems - full mission reward - +3 kankers
+Stole money - +2 kankers
+Didn't steal money - -1 kankers
+Being found out that your trying to steal from the Perez Holdings bank. Another company owns the bank. - -5 Perez Holdings, they tell you they know you did it if they hire you or send
+assassins after you. 

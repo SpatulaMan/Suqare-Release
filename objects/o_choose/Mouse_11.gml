@@ -1,0 +1,1 @@
+if(o_logo.image_index == c1) then visible = false;

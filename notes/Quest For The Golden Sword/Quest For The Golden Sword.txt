@@ -1,0 +1,19 @@
+Quest For The Golden Sword:
+
+Need to find 4 key fragments across 4 levels. 
+
+Random Golden Key Fragments around levels with flavor text talking about a legendary Golden Sword that can qwell all evil. 
+
+1st key fragment in lvl 6 Horror
+	Hidden in the Maze
+2nd key fragment in lvl 10 Art Auction
+	Enemy Invulnerable to normal bullets. Only explosions can kill it to reveal the fragment
+3rd key fragment in lvl 12 Steal Weapon From Company - Can keep the weapon or give it to the company
+	
+4th key fragment in lvl 16 Big Tank. You just need to fight this huge tank. 
+
+Once all 4 fragments are found, another job will come up
+
+Display all the golden key fragments in the Armory?
+
+(display them all on the screen. Either top or left side. Just parts of the sword sprite?)  

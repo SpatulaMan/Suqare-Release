@@ -1,0 +1,10 @@
+ob1 = false;
+ob2 = false;
+ob3 = false;
+ob4 = false;
+ob5 = false;
+ob6 = false;
+ninjakill = 0;
+ninjabarrel = 0;
+bosscheck = false;
+alarm_set(0,10);

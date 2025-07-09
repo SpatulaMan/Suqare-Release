@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"lvl_7_gems",
+  "name":"lvl_7_gems",
+  "parent":{
+    "name":"Notes",
+    "path":"folders/Notes.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

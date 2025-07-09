@@ -1,0 +1,1 @@
+ninjakill = 1;

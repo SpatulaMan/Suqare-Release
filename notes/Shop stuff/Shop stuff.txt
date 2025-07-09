@@ -1,0 +1,24 @@
+Demo Shop items:
+
+Armor 1 - $1000
+Armor 2 - $3000
+Armor 3 - $9000
+Pistol Upgrade - $2000
+Magnum Upgrade - $5000
+MachineGun Upgrade - $5000
+Floor Mines x3 - $400
+Sticky Mines x3 - $600
+Lockpick 30% x1 - $200
+Lockpick 50% x1 - $500
+Decoy - $800
+Attractor - $2000
+Ammo Pickup 5% Increase - $500
+Ammo Pickup 10% Increase - $2000
+Money Pickup 5% Increase - $1000
+Money Pickup 10% Increase - $4000
+
+He can buy an ammo vending machine to buy extra ammo for each mission - $
+
+disguise instead of invisibility? 
+
+Grab enemy and forcibly use their body as a disguise? 
