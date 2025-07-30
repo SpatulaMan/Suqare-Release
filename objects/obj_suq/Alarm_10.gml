@@ -1,7 +1,7 @@
 /// @description Reset Persistent Rooms
 
 //change ammo counts to match what you started the mission with
-if(hprem < 8) { hprem += 2; }
+if(hprem < 5) { hprem = 5; }
 pMag = 0;
 mMag = 0;
 shuriken = 0;

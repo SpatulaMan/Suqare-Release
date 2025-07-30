@@ -1,13 +1,16 @@
 /// @description 
-if(place_empty(979,609,obj_ninja) and instance_number(obj_ninja) < 20)
+if(t < 60)
 {
-	with(obj_suq)
+	if(place_empty(979,609,obj_ninja) and instance_number(obj_ninja) < 20)
 	{
-		if(distance_to_point(979,609) > 150)
+		with(obj_suq)
 		{
-			instance_create_layer(979,609,"Instances_Action",obj_ninja);
-			o_obj_L9.t++;
+			if(distance_to_point(979,609) > 180)
+			{
+				instance_create_layer(979,609,"Instances_Action",obj_ninja);
+				o_obj_L9.t++;
+			}
 		}
 	}
+	alarm_set(0,250+t);
 }
-alarm_set(0,480+t);

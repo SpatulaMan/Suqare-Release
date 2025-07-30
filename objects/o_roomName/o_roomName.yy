@@ -37,7 +37,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_roomName",
+    "path":"sprites/s_roomName/s_roomName.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

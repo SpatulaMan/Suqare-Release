@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"levelEnd",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"levelEnd",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

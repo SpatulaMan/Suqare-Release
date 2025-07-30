@@ -444,7 +444,7 @@ if(ghostGunHave == 1 and gunEquip == 13)
 if(pickup_timer > 0)
 {
 	draw_set_halign(fa_center);
-	pickup_timer--;
+	if(!instance_exists(o_recap)) { pickup_timer--; }
 	switch(pickup_item)
 	{
 		case 0: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
@@ -533,7 +533,7 @@ if(pickup_timer > 0)
 		case 31: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("Don't let them take me back!"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 32: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("Protect me! They might shoot!"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 33: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("Wait There"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
-		case 34: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("What a weird dream"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 34: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("EMT BILL SUCKS, BUT I'M ALIVE"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/360); break;
 		case 35: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("Ghost Gun"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90);
 				if(gunNum == gunMax and ghostGunHave == 0) 
 				{

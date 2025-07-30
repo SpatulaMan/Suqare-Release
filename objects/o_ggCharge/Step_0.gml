@@ -9,7 +9,7 @@ image_angle = point_direction(x,y,mouse_x,mouse_y);
 if(t1 <= 0)
 {
 	t1 = 10;
-	audio_play_sound(snd_stepOther,5,false,3*o_saveload.sfxvol,0,t);
+	audio_play_sound(snd_stepOther,5,false,6*o_saveload.sfxvol,0,t);
 }
 if(s <= 0)
 {

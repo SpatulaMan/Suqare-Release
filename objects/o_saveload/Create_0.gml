@@ -112,3 +112,4 @@ pnetp = 60;
 ynetp = 55;
 gnetp = 50;
 unetp = 58;
+emt = .3;

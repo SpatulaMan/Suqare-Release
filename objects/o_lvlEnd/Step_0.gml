@@ -47,7 +47,8 @@ if(distance_to_object(obj_suq) <= 12 and success == true)
 {
 	if(check == true)
 	{
-		o_saveload.knetp = o_saveload.knet;
+		levelEnd(true);//true means called from lvlend car
+		/*o_saveload.knetp = o_saveload.knet;
 		o_saveload.unetp = o_saveload.unet;
 		o_saveload.gnetp = o_saveload.gnet;
 		o_saveload.pnetp = o_saveload.pnet;
@@ -363,6 +364,6 @@ if(distance_to_object(obj_suq) <= 12 and success == true)
 					if(o_obj_L9.ob3 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 2; obj_suq.money += 1000; }
 				}
 			} break;
-		}
+		}*/
 	}
 }

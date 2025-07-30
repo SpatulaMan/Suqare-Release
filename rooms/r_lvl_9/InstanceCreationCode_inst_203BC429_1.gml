@@ -1,1 +1,0 @@
-drop_gun = true;

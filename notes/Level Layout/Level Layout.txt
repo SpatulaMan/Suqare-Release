@@ -67,7 +67,7 @@ Others:
 14: Gun Club - NL (the local gun club stole my weapon from me, and they won't give it back. They're armed and will shoot, but please don't kill any of them. They're my dad's friends I'll only give you a reward if you can get my gun back without bloodshed. 
 23: Bodyguard at Dinner Party (Murder Mystery. Talk to all of the attendees after the lights went out to see who the murderer is. Whoever you choose is who they take into custody. It'll say something like, "You'll always wonder if you got the right person." or "He plead guilty" depending on if you choose correctly.)
 38: Want Some Stuff? This guy wants to sell you some good stuff. Just need to find him in a haunted mansion. You won't be able to sell these items back. Sells you really a couple good weapons and gadgets. 
-40: Compete in a gameshow
+40: Tower Defense
 48: Destroy super weapon and stop kanker and Co - President
 51: End Game 
 
@@ -90,7 +90,7 @@ or
 6: Ghost
 7: Destroy Gems
 8: Eradicate spiders
-		9: Ring of Tarpho
+9: Ring of Tarpho
 		10: Art Auction (Figure out who stole the art in detective fashion) - NL
 		11: Prove Hiertech is targeting charities. Sneaky level - NL
 		12: Steal weapon from Hiertech
@@ -121,7 +121,7 @@ or
 		37: Hijack Ship - NL
 		38: Want Some Stuff?
 		39: Destroy Ninja Hierarchy (kill all ninja leaders)
-		40: Compete in a gameshow
+		40: Tower Defense
 		41: Assassinate CEO of Kanker and Co. The ghosts of all those you killed come back to haunt you here
 		42: Run Down
 		43: Charge super weapon

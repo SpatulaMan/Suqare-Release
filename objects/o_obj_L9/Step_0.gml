@@ -1,10 +1,10 @@
-if(ninjakill >= 100)
+if(ninjakill >= 50)
 {
 	obj_suq.bonus = 2000;
 	ob2 = true;
 	ob3 = true;
 }
-else if(ninjakill >= 50)
+else if(ninjakill >= 30)
 {
 	obj_suq.bonus = 1000;
 	ob2 = true;

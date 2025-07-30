@@ -398,20 +398,23 @@ function scr_briefing(t){
 			prepared to fight with melee weapons. 
 			
 			They will know you're coming, so be ready for a big fight.
+			There's probably an easier way to the ring, so if you want
+			to try and avoid as much fighting as possible, bring some
+			equipment to get through locked doors. 
 			
 			Also, kill as many ninjas as you can. If you kill at least
-			50, I'll give you a bonus, and if you kill 100 or more, 
+			30, I'll give you a bonus, and if you kill 50 or more, 
 			I'll double it. ";
 	a[43] = @"Steal Ring";
-	a[44] = @"OPT: Kill 50";
-	a[45] = @"OPT: Kill 100";
+	a[44] = @"OPT: Kill 30";
+	a[45] = @"OPT: Kill 50";
 	a[46] = @"Mission: Steal Ring of Tarpho
 			
 			Hiring Firm: Yellerteeth Inc.
 			Current Standing With
 			Yellerteeth Inc: "+string(obj_suq.yellerteeth)+
 			@"
-			Combat Difficulty: 8
+			Combat Difficulty: 9
 			Mental Difficulty: 3
 			Reward: $5000
 			
@@ -760,7 +763,7 @@ function scr_shop(t){
 			Damage: 1
 			
 			
-			$4200
+			$2000
 			
 			You have " + string(obj_suq.attackTur) + " Turrets currently"; 
 	o[30] = @"Defense Turret
@@ -778,7 +781,7 @@ function scr_shop(t){
 			HP: 4
 			
 			
-			$4800
+			$2000
 			
 			You have " + string(obj_suq.defenseTur) + " Defense turrets currently"; 
 	o[31] = @"Tear Gas Turret
@@ -793,7 +796,7 @@ function scr_shop(t){
 			HP: 4
 			
 			
-			$4500
+			$2000
 			
 			You have " + string(obj_suq.tearTur) + " Tear Gas turrets currently"; 
 	o[32] = @"Flame Turret
@@ -811,7 +814,7 @@ function scr_shop(t){
 			Burn time: 8 seconds
 			
 			
-			$5600
+			$3000
 			
 			You have " + string(obj_suq.flameTur) + " Flame turrets currently"; 
 	o[33] = @"Rocket Turret
@@ -828,7 +831,7 @@ function scr_shop(t){
 			Damage: 8
 			
 			
-			$6700
+			$4000
 			
 			You have " + string(obj_suq.rocketTur) + " Rocket turrets currently"; 
 	o[34] = @"Ammo Pickup 3
@@ -960,9 +963,10 @@ function loading(l)
 			see your mission objectives";
 	r[10] = @"Some Locked Doors can be opened 
 			with bullets";
-	r[11] = @"Your health will go down every
-			time you die. It will replenish
-			once you finish a level.";
+	r[11] = @"If you're incapacitated, an EMT 
+			will come save you. But, if you 
+			made any money from the mission, 
+			he will take a large cut.";
 	r[12] = @"You can sell back any upgrade
 			for the same price you bought
 			it for.";

@@ -89,7 +89,8 @@ function save()
 		ynetp: o_saveload.ynetp,
 		gnetp: o_saveload.gnetp,
 		pnetp: o_saveload.pnetp,
-		unetp: o_saveload.unetp
+		unetp: o_saveload.unetp,
+		emt: o_saveload.emt
 		
 		//upgrades
 		
@@ -274,6 +275,8 @@ function load(_f)
 			o_saveload.pnetp=_struct.pnetp;
 		if (struct_exists(_struct, "unetp"))
 			o_saveload.unetp=_struct.unetp;
+		if (struct_exists(_struct, "emt"))
+			o_saveload.emt=_struct.emt;
 		
 		//levels that are incompleted and are available to the player currently in variables 
 		
@@ -362,7 +365,8 @@ function load(_f)
 			pnet:87,
 			ynet:73,
 			gnet:28,
-			unet:11
+			unet:11,
+			emt:.3
 		
 		}
 	

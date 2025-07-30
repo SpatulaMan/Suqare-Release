@@ -1,4 +1,4 @@
-if(other.image_index > 6 and other.image_index < 9)
+if(other.image_index == 7)
 {
 	lv -= other.damage;
 	direction = other.direction;
