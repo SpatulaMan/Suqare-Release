@@ -22,8 +22,8 @@ shotgunAmt = sgb;
 sniperRifleAmt = snb;
 rocketLauncherAmt = rb;
 flamethrowerAmt = fb;
-money = moneyb;
-money += ammoBuy;
+//money = moneyb;
+//money += ammoBuy;
 
 showMoney = 360;
 

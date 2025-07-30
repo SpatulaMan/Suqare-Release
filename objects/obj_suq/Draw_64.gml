@@ -533,7 +533,7 @@ if(pickup_timer > 0)
 		case 31: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("Don't let them take me back!"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 32: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("Protect me! They might shoot!"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 33: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("Wait There"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
-		case 34: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("EMT BILL SUCKS, BUT I'M ALIVE"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/360); break;
+		case 34: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("THAT EMT BILL SUCKS, BUT I'M ALIVE"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/360); break;
 		case 35: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("Ghost Gun"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90);
 				if(gunNum == gunMax and ghostGunHave == 0) 
 				{

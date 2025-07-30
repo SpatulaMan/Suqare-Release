@@ -47,7 +47,7 @@ if(distance_to_object(obj_suq) <= 12 and success == true)
 {
 	if(check == true)
 	{
-		levelEnd(true);//true means called from lvlend car
+		scr_levelEnd(true);//true means called from lvlend car
 		/*o_saveload.knetp = o_saveload.knet;
 		o_saveload.unetp = o_saveload.unet;
 		o_saveload.gnetp = o_saveload.gnet;
