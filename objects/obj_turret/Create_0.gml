@@ -29,3 +29,4 @@ shootCheck = 0;
 back = c_black;
 col = c_black;
 tspd = 2;
+shieldCheck = false;

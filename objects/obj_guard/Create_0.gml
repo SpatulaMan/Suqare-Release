@@ -1,4 +1,5 @@
 alarm_set(11,1);
+alarm_set(6,120);
 shtspd = 60;
 shootCheck = shtspd;
 four = 0;

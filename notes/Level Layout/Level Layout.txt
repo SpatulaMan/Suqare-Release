@@ -91,7 +91,7 @@ or
 7: Destroy Gems
 8: Eradicate spiders
 9: Ring of Tarpho
-		10: Art Auction (Figure out who stole the art in detective fashion) - NL
+		10: Dinner Party (Figure out who stole the art in detective fashion) - NL
 		11: Prove Hiertech is targeting charities. Sneaky level - NL
 		12: Steal weapon from Hiertech
 		13: Steal plans and kidnap scientist to make super weapon

@@ -28,3 +28,4 @@ if(bosscheck == true)
 		ob6 = true;
 	}
 }
+//if(

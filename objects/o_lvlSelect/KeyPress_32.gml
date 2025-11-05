@@ -14,7 +14,7 @@ if(distance_to_object(obj_suq) < 36)
 		case 6: o_lvlStart.x1 = 734; o_lvlStart.y1 = 998; o_lvlStart.r = r_lvl_7; break;
 		case 7: o_lvlStart.x1 = 624; o_lvlStart.y1 = 1205; o_lvlStart.r = r_lvl_8; break;
 		case 8: o_lvlStart.x1 = 864; o_lvlStart.y1 = 242; o_lvlStart.r = r_lvl_9; break;
-		case 9: o_lvlStart.x1 = 0; o_lvlStart.y1 = 0; o_lvlStart.r = r_lvl_10; break;
+		case 9: o_lvlStart.x1 = 0; o_lvlStart.y1 = 0; o_lvlStart.r = r_range; break;
 		case 10: o_lvlStart.x1 = 0; o_lvlStart.y1 = 0; o_lvlStart.r = r_lvl_11; break;
 		case 11: o_lvlStart.x1 = 0; o_lvlStart.y1 = 0; o_lvlStart.r = r_lvl_12; break;
 		case 12: o_lvlStart.x1 = 0; o_lvlStart.y1 = 0; o_lvlStart.r = r_lvl_13; break;
@@ -26,5 +26,8 @@ if(distance_to_object(obj_suq) < 36)
 		case 18: o_lvlStart.x1 = 0; o_lvlStart.y1 = 0; o_lvlStart.r = r_lvl_19; break;
 		case 19: o_lvlStart.x1 = 0; o_lvlStart.y1 = 0; o_lvlStart.r = r_lvl_20; break;
 	}
-	with (obj_wallWood) instance_destroy();
+	//with (obj_wallWood) instance_destroy();
+	o_missionG.b = b;
+	o_missionG.ot1 = ot1;
+	inst_4437104E.x = 800;//482 for origin
 }

@@ -15,7 +15,7 @@ if(success == false)
 		if(keyboard_check(vk_space))
 		{
 			if(!instance_exists(o_lvlText)) { sp_ch += 2; }
-			if(sp_ch >= 80)
+			if(sp_ch >= 60)
 			{
 				success = true;
 				obj_suq.gunEquip = 0;
@@ -47,7 +47,7 @@ if(distance_to_object(obj_suq) <= 12 and success == true)
 {
 	if(check == true)
 	{
-		scr_levelEnd(true);//true means called from lvlend car
+		scr_levelEnd(true,false);//true means called from lvlend car
 		/*o_saveload.knetp = o_saveload.knet;
 		o_saveload.unetp = o_saveload.unet;
 		o_saveload.gnetp = o_saveload.gnet;

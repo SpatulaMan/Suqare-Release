@@ -45,7 +45,7 @@ else
 	res = 0;
 }
 
-if(keyboard_check(vk_space) and visible == true)
+if(keyboard_check(vk_space) and visible == true and room != r_skill1 and room != r_skill2 and room != r_skill3 and room != r_skill4 and room != r_skill5 and room != r_range)
 {
 	if(!instance_exists(o_lvlText) and room != r_armory and distance_to_object(o_lvlEnd) > 12)
 	{
@@ -57,6 +57,20 @@ else
 	if(instance_exists(o_lvlText))
 	{
 		with (o_lvlText) instance_destroy();
+	}
+}
+if(keyboard_check(ord("M")) and visible == true and room != r_skill1 and room != r_skill2 and room != r_skill3 and room != r_skill4 and room != r_skill5 and room != r_range)
+{
+	if(!instance_exists(o_map) and room != r_armory)
+	{
+		instance_create(0,0,o_map);
+	}
+}
+else
+{
+	if(instance_exists(o_map))
+	{
+		with (o_map) instance_destroy();
 	}
 }
 
@@ -315,110 +329,113 @@ if(health > 0)
     else if((gunEquip != 13 or ghostGunHave != 1) and instance_exists(o_ghostGun)) { with (o_ghostGun) instance_destroy(); }
 	
 	//drop guns
-    if(keyboard_check_pressed(vk_tab) and gunEquip == 0 and knifeHave == 1) then 
-    { 
-        instance_create(x,y,obj_dropGun);
-		gunNum--;
-		knifeHave = 0;
-    }
-    if(keyboard_check_pressed(vk_tab) and gunEquip == 1 and pistolHave == 1) then 
-    { 
-        instance_create(x,y,obj_dropGun);
-        pistolHave = 0;
-		gunNum--;
-		pistolAmt += pMag;
-		pMag = 0;
-    }
-    if(keyboard_check_pressed(vk_tab) and gunEquip == 2 and magnumHave == 1) then 
-    { 
-        instance_create(x,y,obj_dropGun);
-        magnumHave = 0;
-		gunNum--;
-		magnumAmt += mMag;
-		mMag = 0;
-    }
-    if(keyboard_check_pressed(vk_tab) and gunEquip == 3 and machineGunHave == 1) then 
-    { 
-        instance_create(x,y,obj_dropGun);
-        machineGunHave = 0;
-		gunNum--;
-		machineGunAmt += mgMag;
-		mgMag = 0;
-    }
-    if(keyboard_check_pressed(vk_tab) and gunEquip == 4 and assaultRifleHave == 1) then 
-    { 
-        instance_create(x,y,obj_dropGun);
-        assaultRifleHave = 0;
-		gunNum--;
-		assaultRifleAmt += arMag;
-		arMag = 0;
-    }
-    if(keyboard_check_pressed(vk_tab) and gunEquip == 8 and sniperRifleHave == 1) then 
-    { 
-        instance_create(x,y,obj_dropGun);
-        sniperRifleHave = 0;
-		gunNum--;
-		sniperRifleAmt += snMag;
-		snMag = 0;
-    }
-    if(keyboard_check_pressed(vk_tab) and gunEquip == 7 and flamethrowerHave == 1) then 
-    { 
-        instance_create(x,y,obj_dropGun);
-		flamethrowerHave = 0;
-		gunNum--;
-		flamethrowerAmt += fMag;
-		fMag = 0;
-    }
-    if(keyboard_check_pressed(vk_tab) and gunEquip == 9 and rocketLauncherHave == 1) then 
-    { 
-        instance_create(x,y,obj_dropGun);
-        rocketLauncherHave = 0;
-		gunNum--;
-		rocketLauncherAmt += rlMag;
-		rlMag = 0;
-    }
-    if(keyboard_check_pressed(vk_tab) and gunEquip == 5 and shotgunHave == 1) then 
-    { 
-        instance_create(x,y,obj_dropGun);
-        shotgunHave = 0;
-		gunNum--;
-		shotgunAmt += sgMag;
-		sgMag = 0;
-    }
-	if(canSGShoot == 10) then audio_play_sound(snd_shotgunCock,5,false,o_saveload.sfxvol);
-    if(keyboard_check_pressed(vk_tab) and gunEquip == 6 and shooterGunHave == 1) then 
-    { 
-        instance_create(x,y,obj_dropGun);
-        shooterGunHave = 0;
-		gunNum--;
-		shooterGunAmt += shMag;
-		shMag = 0;
-    }
-	if(keyboard_check_pressed(vk_tab) and gunEquip == 10 and boomerangHave == 1) then 
-    { 
-        instance_create(x,y,obj_dropGun);
-		gunNum--;
-		boomerangHave = 0;
-    }
-	if(keyboard_check_pressed(vk_tab) and gunEquip == 11 and swordHave == 1) then 
-    { 
-        instance_create(x,y,obj_dropGun);
-		gunNum--;
-		swordHave = 0;
-    }
-	if(keyboard_check_pressed(vk_tab) and gunEquip == 12 and shuriken > 0) then 
-    { 
-        var _inst = instance_create(x,y,obj_dropGun);
-		gunNum--;
-		_inst.sh = shuriken;
-		shuriken = 0;
-    }
-	if(keyboard_check_pressed(vk_tab) and gunEquip == 13 and ghostGunHave == 1) then 
-    { 
-        instance_create(x,y,obj_dropGun);
-		gunNum--;
-		ghostGunHave = 0;
-    }
+	if(room != r_skill1 and room != r_skill2 and room != r_skill3 and room != r_skill4 and room != r_skill5 and room != r_range)
+	{
+	    if(keyboard_check_pressed(vk_tab) and gunEquip == 0 and knifeHave == 1) then 
+	    { 
+	        instance_create(x,y,obj_dropGun);
+			gunNum--;
+			knifeHave = 0;
+	    }
+	    if(keyboard_check_pressed(vk_tab) and gunEquip == 1 and pistolHave == 1) then 
+	    { 
+	        instance_create(x,y,obj_dropGun);
+	        pistolHave = 0;
+			gunNum--;
+			pistolAmt += pMag;
+			pMag = 0;
+	    }
+	    if(keyboard_check_pressed(vk_tab) and gunEquip == 2 and magnumHave == 1) then 
+	    { 
+	        instance_create(x,y,obj_dropGun);
+	        magnumHave = 0;
+			gunNum--;
+			magnumAmt += mMag;
+			mMag = 0;
+	    }
+	    if(keyboard_check_pressed(vk_tab) and gunEquip == 3 and machineGunHave == 1) then 
+	    { 
+	        instance_create(x,y,obj_dropGun);
+	        machineGunHave = 0;
+			gunNum--;
+			machineGunAmt += mgMag;
+			mgMag = 0;
+	    }
+	    if(keyboard_check_pressed(vk_tab) and gunEquip == 4 and assaultRifleHave == 1) then 
+	    { 
+	        instance_create(x,y,obj_dropGun);
+	        assaultRifleHave = 0;
+			gunNum--;
+			assaultRifleAmt += arMag;
+			arMag = 0;
+	    }
+	    if(keyboard_check_pressed(vk_tab) and gunEquip == 8 and sniperRifleHave == 1) then 
+	    { 
+	        instance_create(x,y,obj_dropGun);
+	        sniperRifleHave = 0;
+			gunNum--;
+			sniperRifleAmt += snMag;
+			snMag = 0;
+	    }
+	    if(keyboard_check_pressed(vk_tab) and gunEquip == 7 and flamethrowerHave == 1) then 
+	    { 
+	        instance_create(x,y,obj_dropGun);
+			flamethrowerHave = 0;
+			gunNum--;
+			flamethrowerAmt += fMag;
+			fMag = 0;
+	    }
+	    if(keyboard_check_pressed(vk_tab) and gunEquip == 9 and rocketLauncherHave == 1) then 
+	    { 
+	        instance_create(x,y,obj_dropGun);
+	        rocketLauncherHave = 0;
+			gunNum--;
+			rocketLauncherAmt += rlMag;
+			rlMag = 0;
+	    }
+	    if(keyboard_check_pressed(vk_tab) and gunEquip == 5 and shotgunHave == 1) then 
+	    { 
+	        instance_create(x,y,obj_dropGun);
+	        shotgunHave = 0;
+			gunNum--;
+			shotgunAmt += sgMag;
+			sgMag = 0;
+	    }
+		if(canSGShoot == 10) then audio_play_sound(snd_shotgunCock,5,false,o_saveload.sfxvol);
+	    if(keyboard_check_pressed(vk_tab) and gunEquip == 6 and shooterGunHave == 1) then 
+	    { 
+	        instance_create(x,y,obj_dropGun);
+	        shooterGunHave = 0;
+			gunNum--;
+			shooterGunAmt += shMag;
+			shMag = 0;
+	    }
+		if(keyboard_check_pressed(vk_tab) and gunEquip == 10 and boomerangHave == 1) then 
+	    { 
+	        instance_create(x,y,obj_dropGun);
+			gunNum--;
+			boomerangHave = 0;
+	    }
+		if(keyboard_check_pressed(vk_tab) and gunEquip == 11 and swordHave == 1) then 
+	    { 
+	        instance_create(x,y,obj_dropGun);
+			gunNum--;
+			swordHave = 0;
+	    }
+		if(keyboard_check_pressed(vk_tab) and gunEquip == 12 and shuriken > 0) then 
+	    { 
+	        var _inst = instance_create(x,y,obj_dropGun);
+			gunNum--;
+			_inst.sh = shuriken;
+			shuriken = 0;
+	    }
+		if(keyboard_check_pressed(vk_tab) and gunEquip == 13 and ghostGunHave == 1) then 
+	    { 
+	        instance_create(x,y,obj_dropGun);
+			gunNum--;
+			ghostGunHave = 0;
+	    }
+	}
     if(gunEquip == 0 and knifeHave == 1)
     {
         cursor_sprite = spr_baseC;
@@ -530,4 +547,63 @@ if(!instance_exists(o_gem2))
 	{
 		audio_stop_sound(snd_stepOther);
 	}
+}
+if(room == r_range or (room == r_skill1 and !instance_exists(o_skobj)) or (room == r_skill2 and !instance_exists(o_skobj)) or (room == r_skill3 and !instance_exists(o_skobj)) or 
+(room == r_skill4 and !instance_exists(o_skobj)) or (room == r_skill5 and !instance_exists(o_skobj)))//put all of these in here
+{
+	if(pistolHave == 1)
+	{
+		if(o_saveload.ammoFull) { pistolAmt = (o_saveload.ammoUp*60) }
+		else { pistolAmt = pmr; }
+	}
+	if(magnumHave == 1)
+	{
+		if(o_saveload.ammoFull) { magnumAmt = (o_saveload.ammoUp*30) }
+		else { magnumAmt = mmr; }
+	}
+	if(machineGunHave == 1)
+	{
+		if(o_saveload.ammoFull) { machineGunAmt = (o_saveload.ammoUp*150) }
+		else { machineGunAmt = mgmr; }
+	}
+	if(assaultRifleHave == 1)
+	{
+		if(o_saveload.ammoFull) { assaultRifleAmt = (o_saveload.ammoUp*80) }
+		else  { assaultRifleAmt = 20; }
+	}
+	if(shotgunHave == 1)
+	{
+		if(o_saveload.ammoFull) { shotgunAmt = (o_saveload.ammoUp*24) }
+		else { shotgunAmt = 6+sgda; }
+	}
+	if(shooterGunHave == 1)
+	{
+		if(o_saveload.ammoFull) { shooterGunAmt = (o_saveload.ammoUp*120) }
+		else { shooterGunAmt = 40; }
+	}
+	if(sniperRifleHave == 1)
+	{
+		if(o_saveload.ammoFull) { sniperRifleAmt = (o_saveload.ammoUp*16) }
+		else { sniperRifleAmt = snmr; }
+	}
+	if(flamethrowerHave == 1)
+	{
+		if(o_saveload.ammoFull) { flamethrowerAmt = (o_saveload.ammoUp*20) }
+		else  { flamethrowerAmt = 5; }
+	}
+	if(rocketLauncherHave == 1)
+	{
+		if(o_saveload.ammoFull) { rocketLauncherAmt = (o_saveload.ammoUp*8) }
+		else { rocketLauncherAmt = 2; }
+	}
+	minesAmt = msa;
+	minegAmt = mga;
+	lock30 = l3;
+	lock50 = l5;
+	attackTur = t1;
+	defenseTur = t2;
+	tearTur = t3;
+	flameTur = t4;
+	rocketTur = t5;
+	lives = lb;
 }

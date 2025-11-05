@@ -7,3 +7,7 @@ if(instance_exists(o_girl))
 			alarm_set(5,5);
 		}
 	}
+if(room == r_armory)
+{
+	room_persistent = true;
+}

@@ -15,10 +15,13 @@ instance_create(x,y,obj_fireSH);
 instance_create(x,y,obj_fireSH);
 instance_create(x,y,obj_fireSH);
 var _i = choose(1,1,1,1,2,2,2,3,4,4);
-switch(_i)
+if(room != r_skill1 and room != r_skill2 and room != r_skill3 and room != r_skill4 and room != r_skill5)
 {
-	case 1: scr_barrel(); break;
-	case 2: scr_barrelmoney(); break;
-	case 3: scr_spiderspawn(); break;
-	case 4: scr_box(); break;
+	switch(_i)
+	{
+		case 1: scr_barrel(); break;
+		case 2: scr_barrelmoney(); break;
+		case 3: scr_spiderspawn(); break;
+		case 4: scr_box(); break;
+	}
 }

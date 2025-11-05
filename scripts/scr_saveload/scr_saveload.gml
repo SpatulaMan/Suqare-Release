@@ -90,7 +90,17 @@ function save()
 		gnetp: o_saveload.gnetp,
 		pnetp: o_saveload.pnetp,
 		unetp: o_saveload.unetp,
-		emt: o_saveload.emt
+		emt: o_saveload.emt,
+		sk: o_saveload.skillCheck,
+		sk2: o_saveload.skillCheck2,
+		sk3: o_saveload.skillCheck3,
+		sk4: o_saveload.skillCheck4,
+		sk5: o_saveload.skillCheck5,
+		sk6: o_saveload.skillCheck6,
+		sk7: o_saveload.skillCheck7,
+		sk8: o_saveload.skillCheck8,
+		sk9: o_saveload.skillCheck9,
+		sk10: o_saveload.skillCheck10
 		
 		//upgrades
 		
@@ -277,6 +287,26 @@ function load(_f)
 			o_saveload.unetp=_struct.unetp;
 		if (struct_exists(_struct, "emt"))
 			o_saveload.emt=_struct.emt;
+		if (struct_exists(_struct, "sk"))
+			o_saveload.skillCheck=_struct.sk;
+		if (struct_exists(_struct, "sk2"))
+			o_saveload.skillCheck2=_struct.sk2;
+		if (struct_exists(_struct, "sk3"))
+			o_saveload.skillCheck3=_struct.sk3;
+		if (struct_exists(_struct, "sk4"))
+			o_saveload.skillCheck4=_struct.sk4;
+		if (struct_exists(_struct, "sk5"))
+			o_saveload.skillCheck5=_struct.sk5;
+		if (struct_exists(_struct, "sk6"))
+			o_saveload.skillCheck6=_struct.sk6;
+		if (struct_exists(_struct, "sk7"))
+			o_saveload.skillCheck7=_struct.sk7;
+		if (struct_exists(_struct, "sk8"))
+			o_saveload.skillCheck8=_struct.sk8;
+		if (struct_exists(_struct, "sk9"))
+			o_saveload.skillCheck9=_struct.sk9;
+		if (struct_exists(_struct, "sk10"))
+			o_saveload.skillCheck10=_struct.sk10;
 		
 		//levels that are incompleted and are available to the player currently in variables 
 		
@@ -366,7 +396,17 @@ function load(_f)
 			ynet:73,
 			gnet:28,
 			unet:11,
-			emt:.3
+			emt:.5,
+			sk: 0,
+			sk2: false,
+			sk3: false,
+			sk4: false,
+			sk5: false,
+			sk6: false,
+			sk7: false,
+			sk8: false,
+			sk9: false,
+			sk10: false
 		
 		}
 	

@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_levelEnd(car)
+function scr_levelEnd(car,range_optional)
 {
 	var _emtBill = o_saveload.emt;
 	if(car) { _emtBill = 1; }
@@ -35,19 +35,22 @@ function scr_levelEnd(car)
 			obj_suq.shh = 1;
 		if(obj_suq.ghostGunHave > 0)
 			obj_suq.ggh = 1;
-	if(instance_exists(obj_suq)) { obj_suq.visible = false; }
+	if(instance_exists(obj_suq) and !range_optional) { obj_suq.visible = false; }
 	if(instance_exists(o_girl))
 	{
 		o_girl.visible = false;
 	}
-	if(car and instance_exists(obj_suq)) { obj_suq.x = x;
+	if(car and instance_exists(obj_suq) and !range_optional) 
+	{ 
+	obj_suq.x = x;
 	obj_suq.y = y;
 	obj_camera.x = x;
 	obj_camera.y = y;
 	if(room == r_lvl_7 or room == r_lvl_8) { direction = 180; }
 	else { direction = 0; }
-	speed = 8; }
-	if(instance_exists(obj_suq))
+	speed = 8; 
+	}
+	if(instance_exists(obj_suq) and !range_optional)
 	{
 		obj_suq.progress++;
 		if(car) { o_lvlEnd.check = false; }
@@ -55,10 +58,10 @@ function scr_levelEnd(car)
 		{
 			case r_lvl_0: 
 			{
-				o_saveload.knet -= 5;
-				o_saveload.gnet -= 4;
+				o_saveload.knet -= 3;
+				o_saveload.gnet -= 2;
 				o_saveload.hnet += 3;
-				o_saveload.pnet -= 4;
+				o_saveload.pnet -= 1;
 				o_saveload.unet += 1;
 				o_saveload.ynet -= 2;
 				//setting level to done so that it doesn't show up in lvl select
@@ -78,7 +81,7 @@ function scr_levelEnd(car)
 				o_saveload.gnet += 2;
 				o_saveload.hnet -= 1;
 				o_saveload.unet -= 2;
-				o_saveload.ynet += 4;
+				o_saveload.ynet += 3;
 				//setting level to done so that it doesn't show up in lvl select
 				obj_suq.lvldone[obj_suq.lvl] = true;
 				if(obj_suq.gems < 3 and obj_suq.gems > 0)
@@ -91,7 +94,7 @@ function scr_levelEnd(car)
 					if(!instance_exists(o_safe) == true)
 					{
 						o_saveload.knet += 5;
-						o_saveload.pnet -= 10;
+						o_saveload.pnet -= 8;
 						obj_suq.kanker += 2;
 						obj_suq.report = 4;
 					}
@@ -106,7 +109,7 @@ function scr_levelEnd(car)
 					if(!instance_exists(o_safe) == true)
 					{
 						o_saveload.knet += 5;
-						o_saveload.pnet -= 10;
+						o_saveload.pnet -= 8;
 						obj_suq.kanker += 2;
 						obj_suq.report = 6;
 					}
@@ -124,9 +127,9 @@ function scr_levelEnd(car)
 			{
 				o_saveload.knet += 1;
 				o_saveload.gnet -= 2;
-				o_saveload.hnet -= 2;
+				o_saveload.hnet += 2;
 				o_saveload.pnet += 1;
-				o_saveload.unet -= 2;
+				o_saveload.unet += 2;
 				obj_suq.lvldone[obj_suq.lvl] = true;
 				if(obj_suq.hecto == true)
 				{
@@ -145,7 +148,7 @@ function scr_levelEnd(car)
 			case r_lvl_4:
 			{
 				o_saveload.knet -= 2;
-				o_saveload.gnet -= 3;
+				o_saveload.gnet += 3;
 				o_saveload.pnet -= 1;
 				o_saveload.ynet -= 3;
 				obj_suq.lvldone[obj_suq.lvl] = true;
@@ -178,7 +181,7 @@ function scr_levelEnd(car)
 			case r_lvl_5:
 			{
 				o_saveload.knet -= 2;
-				o_saveload.gnet -= 3;
+				o_saveload.gnet += 3;
 				o_saveload.pnet -= 1;
 				o_saveload.ynet -= 3;
 				obj_suq.lvldone[obj_suq.lvl] = true;
@@ -221,12 +224,12 @@ function scr_levelEnd(car)
 				}
 			} break;
 			case r_lvl_6:
-			{
+			{		
 				o_saveload.knet += 1;
-				o_saveload.gnet += 2;
+				o_saveload.gnet -= 2;
 				o_saveload.hnet -= 1;
 				o_saveload.pnet += 3;
-				o_saveload.unet -= 5;
+				o_saveload.unet -= 2;
 				o_saveload.ynet += 2;
 				obj_suq.lvldone[obj_suq.lvl] = true;
 				if(obj_suq.totems == 3 and instance_exists(obj_ghost) == false)//killed ghost
@@ -248,15 +251,15 @@ function scr_levelEnd(car)
 			} break;
 			case r_lvl_7:
 			{
-				o_saveload.gnet -= 4;
+				o_saveload.gnet += 3;
 				o_saveload.hnet += 3;
 				o_saveload.unet += 2;
 				o_saveload.ynet -= 1;
-				o_saveload.pnet += 3;
+				o_saveload.pnet -= 3;
 				obj_suq.lvldone[obj_suq.lvl] = true;
 				if(obj_suq.gemsD2 == obj_suq.gemsD)
 				{
-					o_saveload.knet -= 20;
+					o_saveload.knet -= 15;
 					obj_suq.money += 8500*_emtBill;
 					obj_suq.report = 19;
 					obj_suq.perez += 5;
@@ -272,9 +275,9 @@ function scr_levelEnd(car)
 			case r_lvl_8:
 			{
 				o_saveload.hnet -= 1;
-				o_saveload.unet -= 4;
+				o_saveload.unet -= 3;
 				o_saveload.ynet += 3;
-				o_saveload.pnet -= 1;
+				o_saveload.pnet += 2;
 				o_saveload.knet -= 2;
 				obj_suq.lvldone[obj_suq.lvl] = true;
 				if(instance_exists(obj_box_B) or instance_exists(obj_spider) or instance_exists(obj_spiderB))
@@ -294,11 +297,11 @@ function scr_levelEnd(car)
 			} break;
 			case r_lvl_9:
 			{
-				o_saveload.hnet += 4;
+				o_saveload.hnet += 2;
 				o_saveload.unet += 1;
-				o_saveload.gnet -= 2;
-				o_saveload.pnet += 3;
-				o_saveload.knet += 4;
+				o_saveload.gnet += 2;
+				o_saveload.pnet -= 3;
+				o_saveload.knet += 2;
 				obj_suq.lvldone[obj_suq.lvl] = true;
 				if(o_obj_L9.ob1 == true)
 				{
@@ -306,7 +309,7 @@ function scr_levelEnd(car)
 					o_saveload.ynet += 8;
 					obj_suq.report = 23;
 					obj_suq.yellerteeth += 2;
-					obj_suq.money += 5000*_emtBill;
+					obj_suq.money += 4000*_emtBill;
 					if(o_obj_L9.ob2 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 1; obj_suq.money += 1000*_emtBill; }
 					if(o_obj_L9.ob3 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 2; obj_suq.money += 1000*_emtBill; }
 				}
@@ -320,7 +323,7 @@ function scr_levelEnd(car)
 				}
 			} break;
 		}
-		if(!car)
+		if(!car and !range_optional)
 		{
 			obj_suq.minesAmt = obj_suq.msa;
 			obj_suq.minegAmt = obj_suq.mga;
@@ -332,7 +335,8 @@ function scr_levelEnd(car)
 			obj_suq.flameTur = obj_suq.t4;
 			obj_suq.rocketTur = obj_suq.t5;
 			obj_suq.gemsD2 = 0;//obj_suq.gemsD;
-			obj_suq.pistolAmt += obj_suq.pMag;
+			//obj_suq.pistolAmt += obj_suq.pMag;
+			obj_suq.pistolAmt = obj_suq.pMag;
 			obj_suq.magnumAmt = obj_suq.mMag;
 			obj_suq.machineGunAmt = obj_suq.mgMag;
 			obj_suq.assaultRifleAmt = obj_suq.arMag;
@@ -346,7 +350,7 @@ function scr_levelEnd(car)
 			obj_suq.y = 497;
 			obj_camera.x = 376;
 			obj_camera.y = 497;
-			obj_suq.showMoney = 360;
+			//obj_suq.showMoney = 360;
 			if(car) { obj_suq.hprem = 0; }
 			//lives = 10;
 			//obj_suq.lv = lives;
@@ -380,4 +384,89 @@ function scr_levelEnd(car)
 			room_goto(r_armory);
 		}
 	}
+	if(range_optional)
+		{
+			cursor_sprite = spr_unarmed;
+			/*obj_suq.minesAmt = obj_suq.msa;
+			obj_suq.minegAmt = obj_suq.mga;
+			obj_suq.lock30 = obj_suq.l3;
+			obj_suq.lock50 = obj_suq.l5;
+			obj_suq.attackTur = obj_suq.t1;
+			obj_suq.defenseTur = obj_suq.t2;
+			obj_suq.tearTur = obj_suq.t3;
+			obj_suq.flameTur = obj_suq.t4;
+			obj_suq.rocketTur = obj_suq.t5;
+			obj_suq.gemsD2 = 0;//obj_suq.gemsD;
+			//obj_suq.pistolAmt += obj_suq.pMag;
+			obj_suq.pistolAmt = obj_suq.pMag;
+			obj_suq.magnumAmt = obj_suq.mMag;
+			obj_suq.machineGunAmt = obj_suq.mgMag;
+			obj_suq.assaultRifleAmt = obj_suq.arMag;
+			obj_suq.shooterGunAmt = obj_suq.shMag;
+			obj_suq.shotgunAmt = obj_suq.sgMag;
+			obj_suq.sniperRifleAmt = obj_suq.snMag;
+			obj_suq.rocketLauncherAmt = obj_suq.rlMag;
+			obj_suq.flamethrowerAmt = obj_suq.fMag;*/
+			if(obj_suq.pistolHave == 1)
+			{
+				obj_suq.pMag = 0;
+				if(o_saveload.ammoFull) { obj_suq.pistolAmt = (o_saveload.ammoUp*60)+obj_suq.pmr }
+				else  { obj_suq.pistolAmt = 2*obj_suq.pmr; }
+			}
+			if(obj_suq.magnumHave == 1)
+			{
+				obj_suq.mMag = 0;
+				if(o_saveload.ammoFull) { obj_suq.magnumAmt = (o_saveload.ammoUp*30)+obj_suq.mmr }
+				else  { obj_suq.magnumAmt = 2*obj_suq.mmr; }
+			}
+			if(obj_suq.machineGunHave == 1)
+			{
+				obj_suq.mgMag = 0;
+				if(o_saveload.ammoFull) { obj_suq.machineGunAmt = (o_saveload.ammoUp*150)+obj_suq.mgmr }
+				else  { obj_suq.machineGunAmt = 2*obj_suq.mgmr; }
+			}
+			if(obj_suq.assaultRifleHave == 1)
+			{
+				obj_suq.arMag = 0;
+				if(o_saveload.ammoFull) { obj_suq.assaultRifleAmt = (o_saveload.ammoUp*80)+20; }
+				else  { obj_suq.assaultRifleAmt = 40; }
+			}
+			if(obj_suq.shotgunHave == 1)
+			{
+				obj_suq.sgMag = 0;
+				if(o_saveload.ammoFull) { obj_suq.shotgunAmt = (o_saveload.ammoUp*24)+6+obj_suq.sgda; }
+				else  { obj_suq.shotgunAmt = 2*(6+obj_suq.sgda); }
+			}
+			if(obj_suq.shooterGunHave == 1)
+			{
+				obj_suq.shMag = 0;
+				if(o_saveload.ammoFull) { obj_suq.shooterGunAmt = (o_saveload.ammoUp*120)+40; }
+				else  { obj_suq.shooterGunAmt = 80; }
+			}
+			if(obj_suq.sniperRifleHave == 1)
+			{
+				obj_suq.snMag = 0;
+				if(o_saveload.ammoFull) { obj_suq.sniperRifleAmt = (o_saveload.ammoUp*16)+obj_suq.snmr; }
+				else  { obj_suq.sniperRifleAmt = 2*snmr; }
+			}
+			if(obj_suq.flamethrowerHave == 1)
+			{
+				obj_suq.fMag = 0;
+				if(o_saveload.ammoFull) { obj_suq.flamethrowerAmt = (o_saveload.ammoUp*20)+5; }
+				else  { obj_suq.flamethrowerAmt = 10; }
+			}
+			if(obj_suq.rocketLauncherHave == 1)
+			{
+				obj_suq.rlMag = 0;
+				if(o_saveload.ammoFull) { obj_suq.rocketLauncherAmt = (o_saveload.ammoUp*8)+2; }
+				else  { obj_suq.rocketLauncherAmt = 4; }
+			}
+
+			obj_suq.x = 477;
+			obj_suq.y = 376;
+			obj_camera.x = 477;
+			obj_camera.y = 376;
+			
+			room_goto(r_armory);
+		}
 }

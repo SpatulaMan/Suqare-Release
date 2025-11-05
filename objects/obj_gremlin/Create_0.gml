@@ -1,4 +1,5 @@
 alarm_set(11,1);
+alarm_set(6,120);
 shtspd = 10;
 shtcnt = 0;
 shootCheck = shtspd;
@@ -22,6 +23,7 @@ roarCheck = false;
 
 path = path_add();
 path_speed = 1.8;
+if(room == r_range) { path_speed = 1; image_speed = 0; sprite_index = s_enemy}
 
 //image_speed = 0;
 wTime = 120;

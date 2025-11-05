@@ -39,7 +39,7 @@ boomerangHave = 0;
 swordHave = 0;
 swordLC = 0;
 shuriken = 0;
-money = o_saveload.money;
+money = floor(o_saveload.money);
 gunMax = o_saveload.gunMax;
 armorlvl1Have = o_saveload.armor1;
 armorlvl2Have = o_saveload.armor2;
@@ -258,6 +258,8 @@ sgb = 0;
 snb = 0;
 fb = 0;
 rb = 0;
+shb = 0;
+lb = 0;
 moneyb = 0;
 attract = o_saveload.attract;
 decoy = o_saveload.decoy;
@@ -285,6 +287,9 @@ rlda = o_saveload.rlda;
 rlmr = o_saveload.rlmr;
 
 ammoBuy = 0;
+
+//skill level check
+isSkillLvl = false;
 
 //gadgets
 gadget = 0;

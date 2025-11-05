@@ -1,6 +1,6 @@
 if(distance_to_object(obj_suq) < 10)
 {
-	pop--;
+	//pop--;
 }
 if(pop <= 0)
 {

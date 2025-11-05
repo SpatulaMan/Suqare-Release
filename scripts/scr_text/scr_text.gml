@@ -4,6 +4,11 @@ function scr_briefing(t){
 	var _t = "";
 	a[0] = "Q | E";
 	a[999] = "Hold Enter to Sell All Items";
+	a[998] = "E - MAP";
+	a[997] = "E - BRIEFING";
+	a[996] = "Q - BACK";
+	a[995] = "G - SKIP TO END";
+	a[994] = "F - CLOSE";
 	a[1] = @"BRIEFING:
 			A criminal gang has sprung up out of nowhere, and police are
 			doing nothing about it. They steal and murder without any 
@@ -16,20 +21,18 @@ function scr_briefing(t){
 	a[4] = @"BRIEFING:
 			We need you to steal 3 gems from the Perez Holdings bank. We
 			want you to make it look like a regular robbery, so break 
-			into the safe and steal all the money as well. We don't 
-			recommend bringing guns since they will notice them if you 
-			have them drawn, but bring a melee weapon at least. Once you
-			get through the metal detector, you'll have 30 seconds before
-			they shoot on sight. It will detect any weapon, by the way. 
+			into the safe and steal all the money as well. 
 			
-			We planted the safe decoder and a weapon in two boxes, so you 
-			won't be without a weapon for long. The safety deposit box 
-			room is located straight west and then south from the metal 
-			detector. When you locate the hidden safe, plant the safe 
-			decoder by walking up to it and wait for it to open. You can 
-			keep all the money you steal. Once you have stolen the money
-			from the safe and have all 3 gems in hand, escape and you'll
-			get your full reward.";//Mission: Perez Holdings Bank Heist, From: kanker and Co., combat: 1-4, Mental: 3, Reward: 800
+			They will shoot on sight if they see any weapons, so be 
+			careful. Once you get through the metal detector, you'll 
+			have 30 seconds before they suspect you're up to something. 
+			The metal detector will find any weapons you have equipped. 
+			
+			We planted the safe decoder and a weapon in separate safety 
+			deposit boxes. To open the safe, walk up to it after picking
+			up the safe decoder and then wait. Once you have stolen the 
+			money and have all 3 gems in hand, escape and you'll get 
+			your full reward.";//Mission: Perez Holdings Bank Heist, From: kanker and Co., combat: 1-3, Mental: 3, Reward: 800
 	a[5] = "Find Red Key";
 	a[6] = "Find Decoder";
 	a[7] = "Open Safe";
@@ -45,9 +48,9 @@ function scr_briefing(t){
 			
 			Agility: Run through a gauntlet of shuriken without getting
 			hit and make it to the end in time
-			Cunning: Outsmart the ninja by opening the real boxes
+			Cunning: Outsmart the ninja by opening the real barrels
 			Daring: Be daring like a ninja
-			Skill: Fight effectively until it is finished
+			Skill: Fight effectively
 			Instinct: Trust your instincts and make it through to the
 			other side
 			Mastery: Prove you've mastered all 5 ninja disciplines
@@ -64,9 +67,10 @@ function scr_briefing(t){
 			Current Standing With Firm: N/A
 			Combat Difficulty: 2
 			Mental Difficulty: 1
+			Locked Doors: 1
+			Req. Locked Doors: 1
+			Keys Available: 1
 			Reward: $300
-			
-			
 			
 			
 			
@@ -87,10 +91,10 @@ function scr_briefing(t){
 			@"
 			Combat Difficulty: 1-3
 			Mental Difficulty: 3
+			Locked Doors: 4
+			Req. Locked Doors: 3
+			Keys Available: 3
 			Reward: $800
-			
-			
-			
 			
 			
 			
@@ -108,12 +112,12 @@ function scr_briefing(t){
 			Current Standing With
 			Yellerteeth Inc: "+string(obj_suq.yellerteeth)+
 			@"
-			Combat Difficulty: 7
+			Combat Difficulty: 6
 			Mental Difficulty: 4
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
 			Reward: $4700
-			
-			
-			
 			
 			
 			
@@ -142,10 +146,10 @@ function scr_briefing(t){
 			@"
 			Combat Difficulty: 1-5
 			Mental Difficulty: 4
+			Locked Doors: 2
+			Req. Locked Doors: 2
+			Keys Available: 2
 			Reward: $4200
-			
-			
-			
 			
 			
 			
@@ -174,8 +178,8 @@ function scr_briefing(t){
 			them from escaping with her in their getaway car! 
 			I will equip you with a special monitoring device so you 
 			know where every enemy is on your level of the house, and 
-			I'd recommend placing mines at every entrance too. Get ready
-			quickly, because they'll likely show up seconds after you 
+			I'd recommend placing mines at every entrance too. Be quick 
+			because you'll only have 60 seconds to prepare before they 
 			arrive. Keep fighting until they're all dead!";
 	a[24] = "Kill Enemies";
 	a[25] = @"Mission: Prevent Kidnapping
@@ -184,12 +188,12 @@ function scr_briefing(t){
 			Current Standing With
 			Hiertech: "+string(obj_suq.hiertech)+
 			@"
-			Combat Difficulty: 6
+			Combat Difficulty: 7
 			Mental Difficulty: 3
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
 			Reward: $2450
-			
-			
-			
 			
 			
 			
@@ -206,9 +210,9 @@ function scr_briefing(t){
 	a[28] = @"BRIEFING:
 			We just moved into this new neighborhood, and we've heard 
 			disturbances almost every night at one house in particular.
-			It's abandoned, so I suspect it's those college boys 
-			partying again. Just find out what's going on over there 
-			and put it to an end. I need my sleep back.";
+			It's abandoned, so I suspect it's those college boys across
+			the road partying or something. Just find out what's going 
+			on over there and put it to an end. I need my sleep back.";
 	a[29] = "Investigate";
 	a[30] = "Find 3 Totems:" + string(obj_suq.totems);
 	a[31] = "Find Ghost Gun";
@@ -219,10 +223,10 @@ function scr_briefing(t){
 			Philbin Wuthgor: N/A
 			Combat Difficulty: ?
 			Mental Difficulty: ?
+			Locked Doors: 3
+			Req. Locked Doors: 3
+			Keys Available: 3
 			Reward: $1800
-			
-			
-			
 			
 			
 			
@@ -336,10 +340,10 @@ function scr_briefing(t){
 			@"
 			Combat Difficulty:"+string(_sc)+@"
 			Mental Difficulty:"+string(_sd)+@"
+			Locked Doors: 2
+			Req. Locked Doors: 1
+			Keys Available: 0
 			Reward: $8500
-			
-			
-			
 			
 			
 			
@@ -372,12 +376,12 @@ function scr_briefing(t){
 			Current Standing With
 			Gildebrand Consulting: "+string(obj_suq.gildebrand)+
 			@"
-			Combat Difficulty: 5
+			Combat Difficulty: 7
 			Mental Difficulty: 2
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
 			Reward: $3300
-			
-			
-			
 			
 			
 			
@@ -397,16 +401,11 @@ function scr_briefing(t){
 			The place will be light on ammo like all dojos are, so be
 			prepared to fight with melee weapons. 
 			
-			They will know you're coming, so be ready for a big fight.
-			There's probably an easier way to the ring, so if you want
-			to try and avoid as much fighting as possible, bring some
-			equipment to get through locked doors. 
-			
 			Also, kill as many ninjas as you can. If you kill at least
-			30, I'll give you a bonus, and if you kill 50 or more, 
-			I'll double it. ";
+			20, I'll give you a bonus, and if you kill 50 or more, 
+			I'll quadruple it.";
 	a[43] = @"Steal Ring";
-	a[44] = @"OPT: Kill 30";
+	a[44] = @"OPT: Kill 20";
 	a[45] = @"OPT: Kill 50";
 	a[46] = @"Mission: Steal Ring of Tarpho
 			
@@ -416,6 +415,9 @@ function scr_briefing(t){
 			@"
 			Combat Difficulty: 9
 			Mental Difficulty: 3
+			Locked Doors: 1
+			Req. Locked Doors: 0
+			Keys Available: 1
 			Reward: $5000
 			
 			
@@ -427,23 +429,142 @@ function scr_briefing(t){
 			
 			
 			
+			(Press Spacebar to Accept)";
+	a[47] = @"Stop a criminal gang by killing the boss";
+	a[48] = @"Sneak into a Perez Holdings bank, break into the vault,
+			and steal 3 special gems";
+	a[49] = @"Steal the Amulet of Hecto by completing all 6 Ninja 
+			trials";
+	a[50] = @"Kidnap the daughter of Hiertech's CEO";
+	a[51] = @"Prevent Ungulate Studios from kidnapping the daughter of 
+			Hiertech's CEO";
+	a[52] = @"Investigate the strange sounds and disturbances of an 
+			abandoned house";
+	a[53] = @"Destroy the gems that were stolen from a Perez Holdings
+			Bank";
+	a[54] = @"Destroy robot spiders hiding in a warehouse";
+	a[55] = @"Steal the Ring of Tarpho from a group of well-defended
+			Ninjas";
+	//Dinner party dialogue
+	a[56] =@"BRIEFING:
+			I'm having a dinner party at my estate, and our 
+			entertainment for the evening isn't able to make it. So,
+			as a backup, I thought about bringing a mercenary in as an
+			interesting case study. They'll ask you questions about how
+			you got into this business, what you're motives are, etc. 
+			It'll be a fun evening picking the brain of a mercenary
+			for the first time. 
+			
+			I'll also have the famous art 'esmerelda' on display in
+			a bullet proof glass case. Don't worry, I have plenty of
+			security, so they're won't be any need for you to protect
+			anything that night.
+			
+			If you must bring weapons, please leave them by your car.
+			We don't allow any kind of weaponry into the estate. 
+			We hope you grace us with your presence! ";
+	a[57] = @"Attend a dinner party at the Havarti Manor";
+	a[58] = @"Mission: Dinner Party
+			
+			Hiring Firm: Yellen Egbert II
+			Current Standing With
+			Yellen Egbert II: N/A
+			Combat Difficulty: ?
+			Mental Difficulty: ?
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $2500
 			
 			
 			
-			(Press Spacebar to Accept)";;
-	a[47] = @"";
-	a[48] = @"";
-	a[49] = @"";
-	a[50] = @"";
-	a[51] = @"";
-	a[52] = @"";
-	a[53] = @"";
-	a[54] = @"";
-	a[55] = @"";
-	a[56] = @"";
-	a[57] = @"";
-	a[58] = @"";
-	a[59] = @"";
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[59] = @"Attend Party";
+	a[60] = @"Oh, no! My butler is dead and the 'esmerelda' has been
+			stolen! Whoever could have done such a thing? Suqare, could
+			you please investigate and figure out who did this? I would
+			be forever in your debt. My guards already locked all the 
+			doors to the outside, so no one could have gotten in or 
+			out. Please question everyone here and investigate all you
+			can. Once you know who the culprit is, come back to me.";//estate owner reaction
+	a[61] = @"Find Culprit";//New Objective
+	a[62] = @"I stepped back the moment the lights went out, and I saw
+			some kind of glimmer flash by briefly as it went past 
+			me. Then I saw your knife in him when the lights came back 
+			on It is your knife in him, but why would you kill the 
+			butler and steal the art? I think you're innocent.";//estate owner statement
+	a[63] = @"Why are you questioning me? It was obviously you who did
+			it! Look, it's your knife! Not sure how you got it in here,
+			but no one else has a knife like that, so it must've been
+			you. 
+			
+			All I know is that the server I was working with had to go
+			to the bathroom, and he looked uncomfortable and shady. At
+			worst it just means he's an accomplice of yours!";//chef Quergy Catabombs statement
+	a[64] = @"No comment.";//Lawyer Jez Borden statement
+	a[65] = @"I was in the kitchen during the incident. I saw a 
+			hankerchief fly out from someone's pocket right before the
+			lights went out. I didn't see who threw it, but it seemed
+			very forceful. Like someone grabbed it quickly from someone
+			else and lost hold of it. I think it was a man and a woman.";//server Gerivalt Redily statement
+	a[66] = @"I didn't see anything. I was just coming out of the 
+			bathroom after someone tried to flush something down the
+			toilet. I didn't see who did it. I left it in there since
+			there was so much commotion out here.";//janitor Hops Voodoo statement
+	a[67] = @"I heard a sound like a door open right after the lights
+			went out. It could have been the bathroom attendent, but
+			that door seems too far away to me. Every door here is 
+			locked, though, so that has to be the explanation. ";//Treasurer Jonald Hiden
+	a[68] = @"What a tragedy! I can't believe something like this 
+			could happen. Everything was perfect. How'd anyone plan
+			around our security? I lost my key too... And something I
+			was going to return to... uh... someone I admire. 
+			
+			I was trying to protect my sister in law Jellen, so I 
+			grabbed her and ducked when the lights went out. I had to
+			make sure those around me were safe.";//Estate owner's younger brother Helen Egbert II (Named after their mom)
+	a[69] = @"I was grabbed by Helen Egbert, my husband's younger 
+			brother right when the commotion happened. He screamed so
+			loud that I couldn't hear anything. But...
+			
+			Helen has wanted me from the moment Yellen first brought me
+			around. I bet he hired someone to kill Yellen and used the 
+			art piece as payment. I bet the assassin missed and killed 
+			the butler instead. Only Yellen and Helen have a key to 
+			open the case. I would bet anything that Helen is the 
+			culprit.";//Estate owner wife Jellen Egbert
+	a[70] = @"Only the janitor came in here all night. The door was
+			propped open at the time of the incident.";//bathroom attendant Darby Warshington
+	a[71] = @"What happened? Someone died? The art was stolen? Oh my
+			goodness, that's awful! I was cowering in the corner when 
+			the lights went out, so I'm a bit shaken up. ";//floozy Patasha Wanzitoot
+	a[72] = @"I saw Patasha near Helen right before the lights went 
+			out. Is she interested in him? Surely she knows that Helen
+			wouldn't be interested. Why was she near him then? In fact,
+			why is she here at all?";//Diplomat Uranda Palamoose
+	a[73] = @"How'd that door come open? I swear it was locked! I guess
+			whoever the culprit is picked the lock, but couldn't escape
+			since I've been here the whole time. I didn't see anyone 
+			come or go either. We've kept this place locked down tight. ";//Guard Kresh Wanzitoot
+	a[74] = @"I smell something fishy here. Your knife was the murder
+			weapon, but you've been told to investigate. Sounds like a
+			cover up to me. I bet Yellen is low on money and needed a
+			patsy to take the blame for a murder theft. He took your 
+			knife, killed the butler, and took the art himself to
+			sell it to the highest bidder. Sound possible? Because 
+			that's how it happened, I'm sure of it.";//Reporter Iris Lagrange
+	a[75] = @"";//Evidence: Pistol in toilet with 4 bullets, knife in butler (yours), unlocked glass case, not actually locked door, hankerchief with JE initials, guest list without Patasha's name on it, a note in Yellen's office firing Bollivar, Traby, and Kresh
+	a[76] = @"";//Culprits Kresh Wanzitoot and Patasha Benedict
+	a[77] = @"";//Once you call out the correct suspects, they pull out weapons to attack. Your only weapon is the knife, so defend yourself
+	a[78] = @"";//New weapon, Silenced pistol. No sound circle generated, damage same as regular magnum, 4 round mag, long reload time, really fast bullet speed
+	a[79] = @"";// Who are the culprits? Give option to select any of the people there. Once selected, ask "any 
 /*
 15: Vambrace of Wurtu
 21: Jewel of Barfo, Ghost ninjas too
@@ -980,6 +1101,7 @@ function buttons(q)
 	
 	b[0] = @"W A S D.......................................................";
 	b[1] = @"Spacebar....................................................";
+	b[24] = @"M..................................................................";
 	b[2] = @"Left Click................................................";
 	b[3] = @"Right Click..............................................";
 	b[4] = @"Scroll Wheel............................................";
@@ -993,6 +1115,7 @@ function buttons(q)
 	//b[24] = @"Backspace..............................................";
 	b[10] = @"Move";
 	b[11] = @"Open Mission Objectives";
+	b[25] = @"Open Map";
 	b[12] = @"Shoot/Throw Weapon";
 	b[13] = @"Use Melee Weapon";
 	b[14] = @"Switch Weapons";
@@ -1091,7 +1214,7 @@ function debrief(m)
 			You didn't finish all of the objectives, but the Hiring firm is partially pleased to have at
 			least one gem in their possession. Time will tell what they plan to do with it, or if it has
 			any purpose other than monetary value. It isn't obvious if Perez Holdings ID'd you or not,
-			but keep an eye out for a hit on you if they did.
+			but they might blacklist you from jobs if they did.
 			
 			
 			Press Spacebar to continue";
@@ -1417,9 +1540,9 @@ function debrief(m)
 			Current standing with Kanker and CO. "+string(obj_suq.kanker)+@"
 			
 			Result:
-			You failed to destroy the gems. Whether this was to help Kanker & Co or to hurt
-			Perez holdings is your prerogative. Either way, big waves will come from this
-			decision. Watch your back. 
+			You failed to destroy the gems. Whether this was to help Kanker & Co, to hurt
+			Perez holdings, or if you just failed doesn't matter. Big waves will come from 
+			this outcome. 
 			
 			
 			Press Spacebar to continue ";
@@ -1499,7 +1622,7 @@ function debrief(m)
 			Current standing with Yellerteeth Inc. "+string(obj_suq.yellerteeth)+@"
 			
 			Result: 
-			You stole the Ring of Tarpho and killed at least 50 ninjas, dwindling their
+			You stole the Ring of Tarpho and killed at least 20 ninjas, dwindling their
 			numbers a bit while humiliating them. The ninja clans are getting antsy, but
 			yellerteeth shows no sign of stopping their vendetta against ninjas. Wonder
 			what they're up to. 
@@ -1507,7 +1630,7 @@ function debrief(m)
 			
 			Press Spacebar to continue ";
 	}
-	if(obj_suq.bonus == 1000 and m == 24)
+	if(obj_suq.bonus == 4000 and m == 24)
 	{
 		_t = @"Response From Hiring Firm:
 			You are terrible. I can't believe you could fail such a simple task. Sure,
@@ -1517,14 +1640,14 @@ function debrief(m)
 			Current standing with Yellerteeth Inc. "+string(obj_suq.yellerteeth)+@"
 			
 			Result: 
-			You failed to steal the Ring of Tarpho, but you did kill 50 or more ninjas.
+			You failed to steal the Ring of Tarpho, but you did kill 20 or more ninjas.
 			Yellerteeth is mad, but not as much as they could be. They're not done with
 			the ninjas yet either. Wonder what they're up to. 
 			
 			
 			Press Spacebar to continue ";
 	}
-	if(obj_suq.bonus == 2000 and m == 23)
+	if(obj_suq.bonus == 1000 and m == 23)
 	{
 		_t = @"Response From Hiring Firm:
 			This is amazing! Wow! These ninjas are finally getting what's coming to them. 
@@ -1533,7 +1656,7 @@ function debrief(m)
 			Current standing with Yellerteeth Inc. "+string(obj_suq.yellerteeth)+@"
 			
 			Result: 
-			You stole the Ring of Tarpho and killed at least 100 ninjas, dwindling their
+			You stole the Ring of Tarpho and killed at least 50 ninjas, dwindling their
 			numbers a bit while humiliating them. The ninja clans are getting antsy, but
 			yellerteeth shows no sign of stopping their vendetta against ninjas. Wonder
 			what they're up to. 
@@ -1541,17 +1664,17 @@ function debrief(m)
 			
 			Press Spacebar to continue ";
 	}
-	if(obj_suq.bonus == 2000 and m == 24)
+	if(obj_suq.bonus == 4000 and m == 24)
 	{
 		_t = @"Response From Hiring Firm:
 			You are terrible. I can't believe you could fail such a simple task. Sure,
-			you killed at least 100 ninjas, but the important part was the ring. I'll 
+			you killed at least 50 ninjas, but the important part was the ring. I'll 
 			honor my word and still give you the bonus. 
 			
 			Current standing with Yellerteeth Inc. "+string(obj_suq.yellerteeth)+@"
 			
 			Result: 
-			You failed to steal the Ring of Tarpho, but you did kill 100 or more ninjas.
+			You failed to steal the Ring of Tarpho, but you did kill 50 ninjas.
 			Yellerteeth is mad, but not nearly as much as they could be. They're not done 
 			with the ninjas yet either. Wonder what they're up to. 
 			
@@ -1577,4 +1700,97 @@ function debrief(m)
 	c[28] = @"";
 	c[29] = @"";
 	return c[m];
+}
+function tutorial(k)
+{
+	j[0] = @"You are Suqare. A brand new mercenary trying to make a name for yourself. You've equipped the 
+			place with a shop where you can buy equipment and upgrades, someone who who'll share hints, and
+			a manager who will always have a list of jobs for you to choose from. This is your first foray
+			into the world of mercenaries, so tread lightly. 
+			
+			Before you head out on a mission, make sure you equip some weapons from your personal armory.
+			You don't have much now, but your options will grow as you acquire more equipment. 
+			
+			These are tumultuous times. 6 large corporations are all vying for control in the public and
+			private sectors. While they show their good side to the public, many of them do some shady 
+			dealings behind closed doors. These 6 companies will be your primary source of jobs, but 
+			decide for yourself if the job fits your moral code. It won't always be pretty, but you have an
+			opportunity to make this world better or much worse. Use your head out there.  
+			
+			WASD to move
+			
+			Press Spacebar to Continue";
+	j[1] = @"This area shows the net worth of all 6 corporations. The higher that goes, the better they're 
+			doing. The actions you take during missions affect this, so if you want one company to thrive
+			while bankrupting another, try to make the necessary moves to do so. If a company goes bankrupt
+			they won't have any more jobs for you. 
+			
+			The blue line shows where their net worth was at before you took your last job. This way you 
+			can see how much their net worth changes from just one job. That's how volatile business is 
+			these days.
+			
+			Press Spacebar to Continue";
+	j[2] = @"This area shows how each company views you. If they like you, you might get extra bonuses.
+			If they hate you, you'll want to watch your back. Staying in a Neutral zone might just be the
+			safest if you don't want to ruffle any feathers.
+			
+			Use Q,E to switch between companies. 
+			
+			Press Spacebar to Continue";
+	j[3] = @"This is your job manager. He keeps a list of all the jobs that are out there for the taking. 
+			He'll show you a briefing and potentially a map of the area you'd be heading to depending on
+			how much information the hiring firm has for you. Read these closely and pay attention to
+			the placement of locked doors and enemy patrols. This planning stage might just mean the 
+			difference between a successful mission and a trip to the ER. 
+			
+			Remember, if your health runs out on a mission, you'll lose half of the money you would have
+			received from the company for the EMT bill. You'll also start the next mission with half health
+			while you recover. If finishing every objective is too risky, maybe consider getting out before
+			you face those consequences. You can leave a mission at any time by going back to your car. 
+			
+			The number of locked doors refers to the number of differently keyed doors, but there could be 
+			multiple of a door that requires the same key. If it says 3 locked doors, then 3 keys would be 
+			necessary to open them all. This also means that if there's 1 locked door, there could be
+			multiple doors that can be opened with the same key. Req. locked doors need to be opened to
+			complete all the objectives. 
+			
+			Check your objectives with Spacebar and the map with M. Do this often to know what to do.  
+			
+			Press Spacebar to Continue";
+	j[4] = @"This is the shop. Buy whatever upgrades you think will best serve you for a given job. 
+			Everything purchased in this shop will be automatically sold back to them after each mission
+			for the same price you bought it for. This way you can specialize for the needs of the job.
+			
+			New equipment and upgrades are being added constantly, so always check back to see what else
+			is available before you begin a job. If you accidentally buy the wrong thing, you can always
+			sell everything you have while still in the shop. 
+			
+			Play around with as many gadgets as you can. They are all useful in their own ways, and the
+			quicker you learn what they can all do, the better you'll be as a mercenary. You won't always
+			be better off with more armor or upgraded weapons. See what the job's main objective is and 
+			plan accordingly. 
+			
+			Press Spacebar to Continue";
+	j[5] = @"This is your armory. It stashes all of your weaponry that you've acquired during your jobs. 
+			If you have a weapon in your inventory when you exit a mission, it'll be automatically added
+			to your armory to be used at any time. Even if you drop it for something else. You'll want to
+			bring back as many weapons as possible to better equip yourself for what's out there. 
+			
+			Most weapons have a limited amount of ammo, so watch your supply closely. You can only bring 3
+			weapons normally, but the knife will always be supplied near your vehicle even if you don't 
+			choose to bring it along.
+			
+			The knife can be swung by using right-click while any weapon is equipped, or thrown by 
+			equipping the knife and using left-click. Throwing a knife does exponentially more damage,
+			but it comes with the risk of being defenseless. Swinging your knife is a great way to open
+			barrels to look for loose cash or ammo.
+			
+			Press Spacebar to Continue";
+	j[6] = @"This is the shooting range. You can test out any weapon you have here with infinite ammo.
+			There are also combat challenges you can try if you want to hone your skill even more. These
+			are against simulated enemies that you might face during jobs. Harder challenges will unlock as
+			you complete them, so you can improve your skills no matter your proficiency in combat.
+			
+			Press Spacebar to Continue";
+	return j[k];
 }

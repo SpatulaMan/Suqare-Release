@@ -3,7 +3,7 @@ if(image_index == 0 and check == false)
 {
 	image_speed = 0;
 	check = true;
-	alarm_set(0,r2);
+	alarm_set(0,120);
 }
 if(image_index == 7 and check2 == false)
 {
@@ -11,7 +11,7 @@ if(image_index == 7 and check2 == false)
 	check2 = true;
 	alarm_set(1,2);
 }
-if(image_index == 4 and distance_to_object(obj_suq) < 80)
+if(image_index == 4 and distance_to_object(obj_suq) < 60)
 {
 	audio_play_sound(snd_knifeStick,3,false,random_range(0.6,0.8)*o_saveload.sfxvol,0,random_range(1.3,1.6));
 }

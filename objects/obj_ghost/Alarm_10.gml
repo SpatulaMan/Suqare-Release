@@ -1,4 +1,5 @@
 alarm_set(10,sCheck);
+sCheck = choose(240,300,360);
 var _buls = choose(1,2,3,4,5,6);
 if(_buls > 0)
 {

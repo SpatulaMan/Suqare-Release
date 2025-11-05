@@ -32,3 +32,5 @@ if(obj_suq.shh > 0 and !instance_exists(obj_shuriken))
 }
 if(obj_suq.ggh > 0 and !instance_exists(obj_ghostGun))
 	instance_create_layer(x,y,"Instances_Action",obj_ghostGun);
+	
+alarm_set(1,10);

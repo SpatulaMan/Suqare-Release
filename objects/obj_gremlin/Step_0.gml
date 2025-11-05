@@ -19,7 +19,7 @@ if((boss == true and instance_exists(o_wallCreate.inst)) or boss == false)
 	pd1 = point_direction(x,y,obj_suq.x,obj_suq.y);
 	if(((_wallsee and _doorsee) or (_wt and _dt)))
 	{
-		if(roarCheck == false) 
+		if(roarCheck == false and room != r_range) 
 		{ 
 			roarCheck = true;
 			audio_play_sound(snd_doorCreak,3,false,random_range(0.9,0.98)*o_saveload.sfxvol,0,random_range(0.2,0.4)); 
@@ -53,7 +53,7 @@ if((boss == true and instance_exists(o_wallCreate.inst)) or boss == false)
 	    //var ad = angle_difference(weapon.image_angle,pd);
 	    //weapon.image_angle -= min(abs(ad), 4) * sign(ad);
 	    a = 0;
-		if(shootCheck <= 0)
+		if(shootCheck <= 0 and room != r_range)
 		{
 			audio_play_sound(snd_boxExplode,3,false,random_range(0.35,0.75)*o_saveload.sfxvol,0,random_range(0.2,0.6));
 			var Bulg = instance_create(x,y,o_ePBul);
@@ -140,6 +140,7 @@ if((boss == true and instance_exists(o_wallCreate.inst)) or boss == false)
 		{
 			_inst = instance_create_layer(x,y,"Instances_Action",o_hurt);
 			_inst.sprite_index = s_hurt_3;
+			if(room == r_range) { _inst.sprite_index = s_hurt; }
 			_inst.image_index = image_index;
 		}
 		if(place_meeting(x,y,o_hurt))
@@ -191,7 +192,7 @@ if((boss == true and instance_exists(o_wallCreate.inst)) or boss == false)
 		image_index = 3;
 		p3 = true;
 	}*/
-	if(hp <= 0)
+	if(hp <= 0 and room != r_range)
 	{
 		if(distance_to_object(obj_suq) < 180)
 		{
@@ -233,6 +234,37 @@ if((boss == true and instance_exists(o_wallCreate.inst)) or boss == false)
 		_piece2.image_index = 5;
 		_piece2.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
 		//instance_destroy(weapon.id);
+	    instance_destroy();
+	}
+	else if(hp <= 0 and room == r_range)
+	{
+		if(distance_to_object(obj_suq) < 180)
+		{
+			audio_play_sound(snd_enemyExplode,3,false,random_range(0.35,0.45)*o_saveload.sfxvol,0,random_range(0.9,1.1));
+		}//if(drop_gun) instance_create_layer(x,y,"Instances_Action",weapon_type);
+		var _piece3 = instance_create_layer(x,y,"Instances_Action",o_pieces);
+		_piece3.sprite_index = s_enemy_1;
+		_piece3.speed = 5;
+		_piece3.image_index = 0;
+		_piece3.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
+	
+		var _piece4 = instance_create_layer(x,y,"Instances_Action",o_pieces);
+		_piece4.sprite_index = s_enemy_1;
+		_piece4.speed = 5;
+		_piece4.image_index = 1;
+		_piece4.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
+	
+		var _piece = instance_create_layer(x,y,"Instances_Action",o_pieces);
+		_piece.sprite_index = s_enemy_1;
+		_piece.speed = 5;
+		_piece.image_index = 2;
+		_piece.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
+		
+		var _piece5 = instance_create_layer(x,y,"Instances_Action",o_pieces);
+		_piece5.sprite_index = s_enemy_1;
+		_piece5.speed = 5;
+		_piece5.image_index = 3;
+		_piece5.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
 	    instance_destroy();
 	}
 }

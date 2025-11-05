@@ -14,6 +14,15 @@ if(!path_exists(path))
 {
     path = path_add();
 }
+
+if(ninjakill > 0 and instance_exists(o_obj) and (x > 934 or x < 113 or y > 467 or y <115))
+{
+	if(o_obj.ob1 == true and o_obj.ob2 == true and o_obj.ob3 == true and o_obj.ob5 == true) 
+	{ 
+		instance_destroy();
+	}
+}
+
 if((boss == true and instance_exists(o_wallCreate.inst)) or boss == false)
 {
 	pd1 = point_direction(x,y,obj_suq.x,obj_suq.y);
@@ -75,9 +84,12 @@ if((boss == true and instance_exists(o_wallCreate.inst)) or boss == false)
 	    a = 0;
 		if(shootCheck <= 0)
 		{
+			if(dare == 1) { w_type = 1; }
 			if(w_type == 1)
 			{
-			    var Bulg = instance_create(x,y,o_eShuriken);
+				var Bulg;
+			    if(dare == 0) { Bulg = instance_create(x,y,o_eShuriken); }
+				else { Bulg = instance_create(x,y,o_eShuriken_ND); }
 			    Bulg.direction = point_direction(x,y,x3,y3);
 			    Bulg.image_angle = point_direction(x,y,x3,y3);
 				Bulg.speed = weapon_spd;

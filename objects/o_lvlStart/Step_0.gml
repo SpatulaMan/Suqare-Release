@@ -21,6 +21,7 @@ if(distance_to_object(obj_suq) <= 12 and success == true)
 	if(check == true)
 	{
 		alarm_set(0,120);
+		room_persistent = false;
 		check = false;
 	}
 	obj_suq.visible = false;

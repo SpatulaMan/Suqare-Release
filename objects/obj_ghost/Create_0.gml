@@ -1,5 +1,9 @@
 alarm_set(11,1);
-with (o_pieces) instance_destroy();
+if(instance_exists(o_pieces))
+{
+	with (o_pieces) instance_destroy();
+}
+hcheck = false;
 shtspd = 10;
 shtcnt = 0;
 shootCheck = shtspd;

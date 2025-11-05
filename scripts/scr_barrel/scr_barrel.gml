@@ -81,58 +81,115 @@ function scr_barrel() {
 }
 function scr_barrelmoney() {
 	var r11;
+	var r12;
+	var r13;
+	var r14;
 	var rc;
 	randomize();
 	if(instance_exists(obj_suq))
 	{
 		r11 = random_range(1,100);
+		r12 = random_range(1,100);
+		r13 = random_range(1,100);
+		r14 = random_range(1,100);
 	    rc = true;
-			//4 fifties
-			if(r11 > (79+obj_suq.moneyPercent) and rc == true)
-			{
-				instance_create_layer(x+3,y,"Instances_Action",o_coin_50);
-				instance_create_layer(x-3,y,"Instances_Action",o_coin_50);
-				instance_create_layer(x,y-3,"Instances_Action",o_coin_50);
-				instance_create_layer(x,y+3,"Instances_Action",o_coin_50);
-				rc = false;
-			}
-			//3 fifties
-			if(r11 > (69+obj_suq.moneyPercent) and rc == true)
-			{
-				instance_create_layer(x+3,y,"Instances_Action",o_coin_50);
-				instance_create_layer(x-3,y,"Instances_Action",o_coin_50);
-				instance_create_layer(x,y-3,"Instances_Action",o_coin_50);
-				rc = false;
-			}
-			//2 fifties
-			if(r11 > (59+obj_suq.moneyPercent) and rc == true)
-			{
-				instance_create_layer(x+3,y,"Instances_Action",o_coin_50);
-				instance_create_layer(x-3,y,"Instances_Action",o_coin_50);
-				rc = false;
-			}
 			//fifty coins
 			if(r11 > (40+obj_suq.moneyPercent) and rc == true)
 			{
-				instance_create_layer(x,y,"Instances_Action",o_coin_50);
+				instance_create_layer(x+3,y,"Instances_Action",o_coin_50);
 				rc = false;
 			}
 			//20 coins
-			if(r11 > (30+obj_suq.moneyPercent) and rc == true)
+			if(r11 > (20+obj_suq.moneyPercent) and rc == true)
 			{
-				instance_create_layer(x,y,"Instances_Action",o_coin_20);
+				instance_create_layer(x+3,y,"Instances_Action",o_coin_20);
 				rc = false;
 			}
 			//5 coins
-			if(r11 > (10+obj_suq.moneyPercent) and rc == true)
+			if(r11 > (obj_suq.moneyPercent) and rc == true)
 			{
-				instance_create_layer(x,y,"Instances_Action",o_coin_5);
+				instance_create_layer(x+3,y,"Instances_Action",o_coin_5);
 				rc = false;
 			}
 			//coin
-			if(r11 > (obj_suq.moneyPercent) and rc == true)
+			if(r11 > (obj_suq.moneyPercent-20) and rc == true)
 			{
-				instance_create_layer(x,y,"Instances_Action",o_coin);
+				instance_create_layer(x+3,y,"Instances_Action",o_coin);
+				rc = false;
+			}
+			rc = true;
+			//fifty coins
+			if(r12 > (49+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x-3,y,"Instances_Action",o_coin_50);
+				rc = false;
+			}
+			//20 coins
+			if(r12 > (25+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x-3,y,"Instances_Action",o_coin_20);
+				rc = false;
+			}
+			//5 coins
+			if(r12 > (5+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x-3,y,"Instances_Action",o_coin_5);
+				rc = false;
+			}
+			//coin
+			if(r12 > (obj_suq.moneyPercent-15) and rc == true)
+			{
+				instance_create_layer(x-3,y,"Instances_Action",o_coin);
+				rc = false;
+			}
+			rc = true;
+			//fifty coins
+			if(r13 > (59+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x,y-3,"Instances_Action",o_coin_50);
+				rc = false;
+			}
+			//20 coins
+			if(r13 > (30+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x,y-3,"Instances_Action",o_coin_20);
+				rc = false;
+			}
+			//5 coins
+			if(r13 > (10+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x,y-3,"Instances_Action",o_coin_5);
+				rc = false;
+			}
+			//coin
+			if(r13 > (obj_suq.moneyPercent-10) and rc == true)
+			{
+				instance_create_layer(x,y-3,"Instances_Action",o_coin);
+				rc = false;
+			}
+			rc = true;
+			//fifty coins
+			if(r14 > (79+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x,y+3,"Instances_Action",o_coin_50);
+				rc = false;
+			}
+			//20 coins
+			if(r14 > (40+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x,y+3,"Instances_Action",o_coin_20);
+				rc = false;
+			}
+			//5 coins
+			if(r14 > (20+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x,y+3,"Instances_Action",o_coin_5);
+				rc = false;
+			}
+			//coin
+			if(r14 > (obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x,y+3,"Instances_Action",o_coin);
 				rc = false;
 			}
 	}
@@ -156,14 +213,12 @@ function scr_spiderspawn() {
 			instance_create_layer(x,y-5,"Instances_Action",obj_spider);
 			instance_create_layer(x+5,y-5,"Instances_Action",obj_spider);
 			instance_create_layer(x+5,y+5,"Instances_Action",obj_spider);
-			instance_create_layer(x-5,y-5,"Instances_Action",obj_spider);
 		}
 		if(r15 > 65)
 		{
 			instance_create_layer(x-5,y+5,"Instances_Action",obj_spider);
 			instance_create_layer(x+10,y-5,"Instances_Action",obj_spider);
 			instance_create_layer(x+10,y+5,"Instances_Action",obj_spider);
-			instance_create_layer(x-10,y-5,"Instances_Action",obj_spider);
 		}
 		if(r15 > 90)
 		{
@@ -171,7 +226,6 @@ function scr_spiderspawn() {
 			instance_create_layer(x-5,y-10,"Instances_Action",obj_spider);
 			instance_create_layer(x-5,y+10,"Instances_Action",obj_spider);
 			instance_create_layer(x+5,y-10,"Instances_Action",obj_spider);
-			instance_create_layer(x+5,y+10,"Instances_Action",obj_spider);
 		}
 	}
 }
@@ -249,10 +303,125 @@ function scr_barrel2() {
 				if(r1 > w2[r2]) { break; }
 				else { array_delete(w,r2,1); array_delete(w2,r2,1); }
 			}
-			if(r1 > (w2[r2]+35+obj_suq.ammoPercent)) { instance_create_layer(x-2,y-1,"Instances_Action",w[r2]); } 
-			if(r1 > (w2[r2]+15+obj_suq.ammoPercent)) { instance_create_layer(x+2,y-1,"Instances_Action",w[r2]); } 
-			if(r1 > (w2[r2]+obj_suq.ammoPercent)) { instance_create_layer(x,y,"Instances_Action",w[r2]); }
+			if(r1 > (w2[r2]+35+obj_suq.ammoPercent)) { instance_create_layer(x-10,y+7,"Instances_Action",w[r2]); } 
+			if(r1 > (w2[r2]+15+obj_suq.ammoPercent)) { instance_create_layer(x+10,y+7,"Instances_Action",w[r2]); } 
+			if(r1 > (w2[r2]+obj_suq.ammoPercent)) { instance_create_layer(x+8,y+8,"Instances_Action",w[r2]); }
 		}
-		else { scr_barrelmoney(); }
+		else { scr_barrelmoney2(); }
+	}
+}
+function scr_barrelmoney2() {
+	var r11;
+	var r12;
+	var r13;
+	var r14;
+	var rc;
+	randomize();
+	if(instance_exists(obj_suq))
+	{
+		r11 = random_range(1,100);
+		r12 = random_range(1,100);
+		r13 = random_range(1,100);
+		r14 = random_range(1,100);
+	    rc = true;
+			//fifty coins
+			if(r11 > (40+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x+11,y+8,"Instances_Action",o_coin_50);
+				rc = false;
+			}
+			//20 coins
+			if(r11 > (20+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x+11,y+8,"Instances_Action",o_coin_20);
+				rc = false;
+			}
+			//5 coins
+			if(r11 > (obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x+11,y+8,"Instances_Action",o_coin_5);
+				rc = false;
+			}
+			//coin
+			if(r11 > (obj_suq.moneyPercent-20) and rc == true)
+			{
+				instance_create_layer(x+11,y+8,"Instances_Action",o_coin);
+				rc = false;
+			}
+			rc = true;
+			//fifty coins
+			if(r12 > (49+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x+5,y+8,"Instances_Action",o_coin_50);
+				rc = false;
+			}
+			//20 coins
+			if(r12 > (25+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x+5,y+8,"Instances_Action",o_coin_20);
+				rc = false;
+			}
+			//5 coins
+			if(r12 > (5+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x+5,y+8,"Instances_Action",o_coin_5);
+				rc = false;
+			}
+			//coin
+			if(r12 > (obj_suq.moneyPercent-15) and rc == true)
+			{
+				instance_create_layer(x+5,y+8,"Instances_Action",o_coin);
+				rc = false;
+			}
+			rc = true;
+			//fifty coins
+			if(r13 > (59+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x+8,y+5,"Instances_Action",o_coin_50);
+				rc = false;
+			}
+			//20 coins
+			if(r13 > (30+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x+8,y+5,"Instances_Action",o_coin_20);
+				rc = false;
+			}
+			//5 coins
+			if(r13 > (10+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x+8,y+5,"Instances_Action",o_coin_5);
+				rc = false;
+			}
+			//coin
+			if(r13 > (obj_suq.moneyPercent-10) and rc == true)
+			{
+				instance_create_layer(x+8,y+5,"Instances_Action",o_coin);
+				rc = false;
+			}
+			rc = true;
+			//fifty coins
+			if(r14 > (79+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x+8,y+11,"Instances_Action",o_coin_50);
+				rc = false;
+			}
+			//20 coins
+			if(r14 > (40+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x+8,y+11,"Instances_Action",o_coin_20);
+				rc = false;
+			}
+			//5 coins
+			if(r14 > (20+obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x+8,y+11,"Instances_Action",o_coin_5);
+				rc = false;
+			}
+			//coin
+			if(r14 > (obj_suq.moneyPercent) and rc == true)
+			{
+				instance_create_layer(x+8,y+11,"Instances_Action",o_coin);
+				rc = false;
+			}
 	}
 }

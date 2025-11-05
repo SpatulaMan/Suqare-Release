@@ -1,5 +1,6 @@
 /// @description 
-s = 0;
+scr_sellback(self,"shop");
+/*s = 0;
 repeat(42)
 {
 	if(wp[s] == true and ((s < 5) or (s > 8 and s < 28) or (s > 32 and s < 42)))

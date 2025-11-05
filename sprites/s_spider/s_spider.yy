@@ -6,7 +6,7 @@
   "bbox_left":0,
   "bbox_right":7,
   "bbox_top":0,
-  "collisionKind":1,
+  "collisionKind":0,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
@@ -47,7 +47,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"88d12c1f-899b-4b02-b01f-2bebba0e0568","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"88d12c1f-899b-4b02-b01f-2bebba0e0568","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"5f0e8e34-13b4-4362-b739-613ffe5d9688","blendMode":0,"displayName":"Layer 3","isLocked":false,"name":"5f0e8e34-13b4-4362-b739-613ffe5d9688","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
+    {"$GMImageLayer":"","%Name":"5f0e8e34-13b4-4362-b739-613ffe5d9688","blendMode":0,"displayName":"Layer 3","isLocked":false,"name":"5f0e8e34-13b4-4362-b739-613ffe5d9688","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s_spider",
   "nineSlice":{

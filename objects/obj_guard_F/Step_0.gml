@@ -17,7 +17,7 @@ if(distance_to_object(obj_suq) > 10)
 }
 if(path_check)
 {
-	if(mp_grid_path(global.grid,path,x,y,obj_suq.x,obj_suq.y,true))
+	if(mp_grid_path(global.grid,path,x,y,obj_suq.x+x4,obj_suq.y+y4,true))
 	{
 		path_start(path,1,path_action_stop,false);
 	}
@@ -42,7 +42,7 @@ if(((_wallsee and _doorsee) and abs(angle_difference(weapon.image_angle,pd1)) < 
 		}
 	    instance_create(x,y,o_gunSound);
 		shootCheck = shtspd;
-	    Bulg = instance_create(x,y,weapon_bul);
+	    var Bulg = instance_create(x,y,weapon_bul);
 	    Bulg.direction = weapon.image_angle;
 	    Bulg.image_angle = weapon.image_angle;
 		Bulg.speed = weapon_spd;

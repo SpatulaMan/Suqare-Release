@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if(room == r_lvl_5 and check == false)
 {
-	alarm_set(0,3000);
+	alarm_set(0,3600);
 	check = true;
 }
 if(room == r_lvl_8 and instance_exists(obj_box_B) == false and instance_exists(obj_spider) == false and check == false)

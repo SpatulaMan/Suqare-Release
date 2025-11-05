@@ -3,15 +3,15 @@ if(true)
 	b = "";
 	switch(lvl[s])
 	{
-		case 0: b = scr_briefing(1); ot1 = scr_briefing(16); obj_suq.lvl = 0; break;
-		case 1: b = scr_briefing(4); ot1 = scr_briefing(17); obj_suq.lvl = 1; break;
-		case 2: b = scr_briefing(9); ot1 = scr_briefing(18); obj_suq.lvl = 2; break;
-		case 3: b = scr_briefing(19); ot1 = scr_briefing(22); obj_suq.lvl = 3; break;
-		case 4: b = scr_briefing(23); ot1 = scr_briefing(25); obj_suq.lvl = 4; break;
-		case 5: b = scr_briefing(28); ot1 = scr_briefing(32); obj_suq.lvl = 5; break;
-		case 6: b = scr_briefing(35); ot1 = scr_briefing(37); obj_suq.lvl = 6; break;
-		case 7: b = scr_briefing(39); ot1 = scr_briefing(41); obj_suq.lvl = 7; break;
-		case 8: b = scr_briefing(42); ot1 = scr_briefing(46); obj_suq.lvl = 8; break;
+		case 0: b = scr_briefing(1); b2 = scr_briefing(47); ot1 = scr_briefing(16); obj_suq.lvl = 0; break;
+		case 1: b = scr_briefing(4); b2 = scr_briefing(48); ot1 = scr_briefing(17); obj_suq.lvl = 1; break;
+		case 2: b = scr_briefing(9); b2 = scr_briefing(49); ot1 = scr_briefing(18); obj_suq.lvl = 2; break;
+		case 3: b = scr_briefing(19); b2 = scr_briefing(50); ot1 = scr_briefing(22); obj_suq.lvl = 3; break;
+		case 4: b = scr_briefing(23); b2 = scr_briefing(51); ot1 = scr_briefing(25); obj_suq.lvl = 4; break;
+		case 5: b = scr_briefing(28); b2 = scr_briefing(52); ot1 = scr_briefing(32); obj_suq.lvl = 5; break;
+		case 6: b = scr_briefing(35); b2 = scr_briefing(53); ot1 = scr_briefing(37); obj_suq.lvl = 6; break;
+		case 7: b = scr_briefing(39); b2 = scr_briefing(54); ot1 = scr_briefing(41); obj_suq.lvl = 7; break;
+		case 8: b = scr_briefing(42); b2 = scr_briefing(55); ot1 = scr_briefing(46); obj_suq.lvl = 8; break;
 	}
 	if(keyboard_check_pressed(ord("E")))
 	{

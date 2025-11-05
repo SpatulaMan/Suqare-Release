@@ -86,6 +86,15 @@ if(a > 0)
 		case 53: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("CORPORATION STANDINGS"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 54: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("CORPORATION NET WORTH"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 55: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("TARPHO DOJO"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		//Gun Range
+		case 56: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("GUN RANGE"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 57: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SKILL CHALLENGE 1"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 58: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SKILL CHALLENGE 2"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 59: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SKILL CHALLENGE 3"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 60: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SKILL CHALLENGE 4"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 61: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SKILL CHALLENGE 5"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 62: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("KILL ALL ENEMIES"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 63: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh/2,string("YOU WIN!"),6,6,0,c_white,c_white,c_white,c_white,a); break;
 		default: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("RESTRICTED"),3,3,0,c_white,c_white,c_white,c_white,a); 
 	}
 }

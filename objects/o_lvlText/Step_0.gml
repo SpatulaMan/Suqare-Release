@@ -20,8 +20,8 @@ switch(room)
 	if(instance_exists(o_girl)) { if(o_girl.path_check == true) { obj1 = true; } } break;
 	
 	case r_lvl_5: t = 23; o1 = 24; o2 = 26; o3 = 27; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); ot3 = scr_briefing(o3); image_index = 2; 
-	obj2 = true; obj3 = true;
-	if(instance_exists(o_girl_1) and o_spawner.killed >= 32) { obj1 = true; } else { obj1 = false; }
+	obj2 = true; obj3 = false;
+	if(instance_exists(o_girl_1) and o_spawner.killed >= 32) { obj1 = true; obj3 = true; } else { obj1 = false; }
 	if(!instance_exists(o_girl_1) and o_badCar.speed == 0) { obj2 = false; }
 	if(o_badCar.speed > 0) { obj3 = false; } break;
 	

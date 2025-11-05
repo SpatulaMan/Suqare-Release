@@ -7,6 +7,7 @@ var _n = noone;
 var pd1 = 0;
 var ad = 0;
 var pd = 0;
+var Bulg;
 if(spawnCheck)
 {
 	spawnCheck = false;
@@ -20,7 +21,17 @@ if(spawnCheck)
 	}
 	shootCheck = shtspd;
 }
-if(weapon_type == o_shield and !instance_exists(o_shield)) { shootCheck--; }
+if(weapon_type == o_shield and !shieldCheck and amt > 0) 
+{
+	if(weapon_type == o_shield) then { audio_play_sound(snd_heal,1,false,o_saveload.sfxvol,0,3); }
+	Bulg = instance_create(x,y,weapon_bul);
+	Bulg.direction = image_angle;
+	Bulg.image_angle = image_angle;
+	Bulg.speed = weapon_spd;
+	Bulg.turret = 1;
+	Bulg.TID = id;
+	shieldCheck = true;
+}
 
 if(instance_exists(obj_guard))
 {
@@ -47,15 +58,18 @@ if(_wallsee and _doorsee or weapon_type == o_shield)
 	    if(weapon_type == o_tearGas) then { audio_play_sound(snd_knifespin,3,false,o_saveload.sfxvol); }
 		if(weapon_type == obj_flamethrower) then { if(!audio_is_playing(snd_fire)) then audio_play_sound(snd_fire,3,false,o_saveload.sfxvol); }
 		if(weapon_type == obj_rocketLauncher) then { audio_play_sound(snd_heavygun,1,false,o_saveload.sfxvol); }
-		if(weapon_type == o_shield) then { audio_play_sound(snd_heal,1,false,o_saveload.sfxvol,0,3); }
-		instance_create(x,y,o_gunSound);//maybe add check here to not create new shields
-	    var Bulg = instance_create(x,y,weapon_bul);
-	    Bulg.direction = image_angle;
-	    Bulg.image_angle = image_angle;
-		Bulg.speed = weapon_spd;
-		Bulg.turret = 1;
-		Bulg.TID = id;
-		if(weapon_type != o_shield) { amt--; }
+		//if(weapon_type == o_shield) then { audio_play_sound(snd_heal,1,false,o_saveload.sfxvol,0,3); }
+		if(weapon_type != o_shield) 
+		{
+			instance_create(x,y,o_gunSound);//maybe add check here to not create new shields
+		    Bulg = instance_create(x,y,weapon_bul);
+		    Bulg.direction = image_angle;
+		    Bulg.image_angle = image_angle;
+			Bulg.speed = weapon_spd;
+			Bulg.turret = 1;
+			Bulg.TID = id;
+			amt--; 
+		}
 		shootCheck = shtspd;
 	}
 }

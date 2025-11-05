@@ -48,4 +48,13 @@ if(distance_to_object(obj_suq) < 36)
 		case 40: if(wp[item[s]] == false and obj_suq.money >= p[item[s]]) { wp[item[s]] = true; obj_suq.money -= p[item[s]]; o_saveload.ammoFull = true; array_delete(item,s,1); save(); audio_play_sound(snd_heal,3,0,1*o_saveload.sfxvol,0,.7); } break;
 		case 41: if(wp[item[s]] == false and obj_suq.money >= p[item[s]]) { wp[item[s]] = true; obj_suq.money -= p[item[s]]; o_saveload.turretUp = 2; array_delete(item,s,1); save(); audio_play_sound(snd_heal,3,0,1*o_saveload.sfxvol,0,.7); } break;
 	}
+	obj_suq.msa = obj_suq.minesAmt;
+	obj_suq.mga = obj_suq.minegAmt;
+	obj_suq.l3 = obj_suq.lock30;
+	obj_suq.l5 = obj_suq.lock50;
+	obj_suq.t1 = obj_suq.attackTur;
+	obj_suq.t2 = obj_suq.defenseTur;
+	obj_suq.t3 = obj_suq.tearTur;
+	obj_suq.t4 = obj_suq.flameTur;
+	obj_suq.t5 = obj_suq.rocketTur;
 }

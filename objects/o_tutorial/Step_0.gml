@@ -1,14 +1,15 @@
 //Show/not show recap
-if(!instance_exists(o_intro) and place_meeting(x,y,obj_suq) and check == false)
+if(!instance_exists(o_help) and place_meeting(x,y,obj_suq) and check == false)
 {
-	instance_create(x,y,o_intro);
+	inst = instance_create(x,y,o_help);
+	inst.i = h;
 	check = true;
 }
 else if(!place_meeting(x,y,obj_suq))
 {
-	if(instance_exists(o_intro))
+	if(instance_exists(inst))
 	{
-		with (o_intro) instance_destroy();
+		with (inst) instance_destroy();
 	}
 	check = false;
 }

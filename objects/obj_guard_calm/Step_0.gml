@@ -146,7 +146,7 @@ if((see_check and abs(angle_difference(weapon.image_angle,pd1)) < 10) or check =
 			alarm_set(1,0);
 			a = 0;
 		}
-		else if(mp_grid_path(global.grid,path,x,y,obj_suq.x,obj_suq.y,true) and hit == false and suq_loc == true)
+		else if(mp_grid_path(global.grid,path,x,y,obj_suq.x+x4,obj_suq.y+y4,true) and hit == false and suq_loc == true)
 		{
 			path_start(path,1,path_action_stop,false);
 			alarm_set(0,0);

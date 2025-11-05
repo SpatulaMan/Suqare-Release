@@ -1,3 +1,3 @@
 /// @description 
-o_tutorial.x = obj_suq.x;
-o_tutorial.y = obj_suq.y;
+inst_200059D9.x = 376;
+inst_200059D9.y = 455;

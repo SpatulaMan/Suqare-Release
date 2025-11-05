@@ -7,9 +7,9 @@ if(hit == true) { gTime += 20; }
 if(gTime <= 0 and distance_to_object(instance_nearest(x,y,obj_wall)) > 32 and !place_meeting(x,y,obj_wall))
 {
 	instance_create_layer(x,y,"Instances_Action",obj_gremlin);
-	if(hp > (hpt*0.7)) { gTime = choose(700,800); }
-	if(hp <= (hpt*0.7) and hp > (hpt*0.4)) { gTime = choose(600,700); }
-	if(hp <= (hpt*0.4)) { gTime = choose(400,500); }
+	if(hp > (hpt*0.7)) { gTime = choose(900,1000); }
+	if(hp <= (hpt*0.7) and hp > (hpt*0.4)) { gTime = choose(800,900); }
+	if(hp <= (hpt*0.4)) { gTime = choose(600,700); }
 }
 if(instance_exists(inst_2CCA391A) == true and obj_suq.totems == 3) 
 { 
@@ -28,11 +28,11 @@ if(boss == false)
 	    a = 0;
 		if(shootCheck <= 0)
 		{
-			audio_play_sound(snd_boxExplode,3,false,random_range(0.35,0.75)*o_saveload.sfxvol,0,random_range(0.2,0.6));
-			var Bulg = instance_create(x,y,o_ePBul);
-		    Bulg.direction = point_direction(x,y,obj_suq.x,obj_suq.y);
-			Bulg.speed = 4;
-			Bulg.image_alpha = .01;
+			//audio_play_sound(snd_boxExplode,3,false,random_range(0.35,0.75)*o_saveload.sfxvol,0,random_range(0.2,0.6));
+			//var Bulg = instance_create(x,y,o_ePBul);
+		    //Bulg.direction = point_direction(x,y,obj_suq.x,obj_suq.y);
+			//Bulg.speed = 4;
+			//Bulg.image_alpha = .01;
 			shootCheck = 30;
 		}
 		/*else if(shootCheck <= 0)

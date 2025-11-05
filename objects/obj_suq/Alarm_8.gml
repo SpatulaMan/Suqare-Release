@@ -13,4 +13,4 @@ pickup_item = 34;
 pickup_timer = 360;
 //save();
 
-scr_levelEnd(false);//false means not called from lvlend car
+scr_levelEnd(false,false); //false means not called from lvlend car

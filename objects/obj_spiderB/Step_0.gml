@@ -65,7 +65,7 @@ if(!path_exists(path))
 			Bulg.image_angle = pd2;
 			Bulg.speed = 6;
 			//Bulg.image_alpha = .01;
-			shootCheck = 30;
+			shootCheck = choose(15,30,60,90);
 			var _cho = choose(1,1,1,1,2);
 			if(_cho == 2)
 			{
@@ -142,6 +142,7 @@ if(!path_exists(path))
 		{
 			_inst = instance_create_layer(x,y,"Instances_Action",o_hurt);
 			_inst.sprite_index = s_spiderBHurt;
+			_inst.image_angle = image_angle;
 		}
 		if(place_meeting(x,y,o_hurt))
 		{

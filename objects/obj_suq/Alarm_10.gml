@@ -1,10 +1,21 @@
 /// @description Reset Persistent Rooms
 
 //change ammo counts to match what you started the mission with
-if(hprem < 5) { hprem = 5; }
+if(hprem < 5 and room != r_skill1 and room != r_skill2 and room != r_skill3 and 
+room != r_skill4 and room != r_skill5 and room != r_range) { hprem = 5; }
 pMag = 0;
 mMag = 0;
-shuriken = 0;
+if(room != r_skill1 and room != r_skill2 and room != r_skill3 and room != r_skill4 and room != r_skill5 and room != r_range) { shuriken = 0; }//add all skill rooms
+else 
+{ 
+	if(lives <= 0) { x = 780; y = 178; room_goto(r_range); }
+	if(shb > 0) { shuriken = shb; }
+	lives = lb;	
+	lv = lb;
+	sprite_index = s_suq;
+	health = 100;
+	armorcheck = 0;
+}
 mgMag = 0;
 arMag = 0;
 shMag = 0;
@@ -41,10 +52,11 @@ if(audio_is_playing(snd_stepOther))
 {
 	audio_stop_sound(snd_stepOther);
 }
+if(room == r_lvl_2) { obj_suq.gems = 0; }
 room_persistent = false;
 if(room == r_lvl_0) { room_goto(r_lvl_0_1); room_persistent = false; }
 if(room == r_lvl_4) { room_goto(r_lvl_4_1); room_persistent = false; }
 if(room == r_lvl_0_1) { room_goto(r_lvl_0); room_persistent = false; }
 if(room == r_lvl_4_1) { room_goto(r_lvl_4); room_persistent = false; }
 
-alarm_set(8,5);
+if(room != r_range and room != r_skill1 and room != r_skill2 and room != r_skill3 and room != r_skill4 and room != r_skill5) { alarm_set(8,5); }
