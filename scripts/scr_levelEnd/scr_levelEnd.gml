@@ -35,6 +35,8 @@ function scr_levelEnd(car,range_optional)
 			obj_suq.shh = 1;
 		if(obj_suq.ghostGunHave > 0)
 			obj_suq.ggh = 1;
+		if(obj_suq.pp7Have > 0)
+			obj_suq.pph = 1;
 	if(instance_exists(obj_suq) and !range_optional) { obj_suq.visible = false; }
 	if(instance_exists(o_girl))
 	{
@@ -345,6 +347,7 @@ function scr_levelEnd(car,range_optional)
 			obj_suq.sniperRifleAmt = obj_suq.snMag;
 			obj_suq.rocketLauncherAmt = obj_suq.rlMag;
 			obj_suq.flamethrowerAmt = obj_suq.fMag;
+			obj_suq.pp7Amt = obj_suq.ppMag;
 
 			obj_suq.x = 376;
 			obj_suq.y = 497;
@@ -460,6 +463,12 @@ function scr_levelEnd(car,range_optional)
 				obj_suq.rlMag = 0;
 				if(o_saveload.ammoFull) { obj_suq.rocketLauncherAmt = (o_saveload.ammoUp*8)+2; }
 				else  { obj_suq.rocketLauncherAmt = 4; }
+			}
+			if(obj_suq.pp7Have == 1)
+			{
+				obj_suq.ppMag = 0;
+				if(o_saveload.ammoFull) { obj_suq.pp7Amt = (o_saveload.ammoUp*40)+4; }
+				else  { obj_suq.pp7Amt = 4; }
 			}
 
 			obj_suq.x = 477;

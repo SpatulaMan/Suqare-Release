@@ -8,7 +8,8 @@ else
 {
 	image_index = 0;
 }
-damage = 8;
+if(obj_suq.rlda == 0) { damage = 50; }
+else { damage = 75; }
 turret = 0;
 TID = 0;
 hp = 3;

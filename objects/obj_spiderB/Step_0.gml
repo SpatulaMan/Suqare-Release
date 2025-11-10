@@ -165,7 +165,7 @@ if(!path_exists(path))
 	}
 	if(hp <= 0)
 	{
-		audio_play_sound(snd_enemyExplode,3,false,random_range(0.1,0.2)*o_saveload.sfxvol,0,random_range(1.7,2.2));
+		audio_play_sound(snd_enemyExplode,3,false,random_range(0.02,0.08)*o_saveload.sfxvol,0,random_range(1.7,2.2));
 		var _piece = instance_create_layer(x,y,"Instances_Action",o_pieces);
 		_piece.sprite_index = s_spiderB_1;
 		_piece.speed = 5;

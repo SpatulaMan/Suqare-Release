@@ -196,7 +196,7 @@ if((boss == true and instance_exists(o_wallCreate.inst)) or boss == false)
 	{
 		if(distance_to_object(obj_suq) < 180)
 		{
-			audio_play_sound(snd_enemyExplode,3,false,random_range(0.35,0.45)*o_saveload.sfxvol,0,random_range(0.9,1.1));
+			audio_play_sound(snd_enemyExplode,3,false,random_range(0.05,0.15)*o_saveload.sfxvol,0,random_range(0.9,1.1));
 		}//if(drop_gun) instance_create_layer(x,y,"Instances_Action",weapon_type);
 		var _piece3 = instance_create_layer(x,y,"Instances_Action",o_pieces);
 		_piece3.sprite_index = s_enemy_G_1;
@@ -240,7 +240,7 @@ if((boss == true and instance_exists(o_wallCreate.inst)) or boss == false)
 	{
 		if(distance_to_object(obj_suq) < 180)
 		{
-			audio_play_sound(snd_enemyExplode,3,false,random_range(0.35,0.45)*o_saveload.sfxvol,0,random_range(0.9,1.1));
+			audio_play_sound(snd_enemyExplode,3,false,random_range(0.05,0.15)*o_saveload.sfxvol,0,random_range(0.9,1.1));
 		}//if(drop_gun) instance_create_layer(x,y,"Instances_Action",weapon_type);
 		var _piece3 = instance_create_layer(x,y,"Instances_Action",o_pieces);
 		_piece3.sprite_index = s_enemy_1;

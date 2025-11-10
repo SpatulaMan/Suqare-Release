@@ -215,7 +215,7 @@ if(hp <= 0)
 	{
 		if(distance_to_object(obj_suq) < 180)
 		{
-			audio_play_sound(snd_enemyExplode,3,false,random_range(0.35,0.45)*o_saveload.sfxvol,0,random_range(0.9,1.1));
+			audio_play_sound(snd_enemyExplode,3,false,random_range(0.05,0.15)*o_saveload.sfxvol,0,random_range(0.9,1.1));
 		}
 	}
 	if(drop_gun) instance_create_layer(x,y,"Instances_Action",weapon_type);

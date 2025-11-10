@@ -1,4 +1,5 @@
 /// @description Move weapons to correct spot
+depth = 401;
 if(instance_exists(obj_knife))
 {
 	obj_knife.x = x+15;
@@ -63,9 +64,15 @@ if(instance_exists(obj_shuriken))
 {
 	obj_shuriken.x = x+15;
 	obj_shuriken.y = y+143;
+	obj_shuriken.image_angle = 0;
 }
 if(instance_exists(obj_ghostGun))
 {
 	obj_ghostGun.x = x+48;
 	obj_ghostGun.y = y+146;
+}
+if(instance_exists(obj_pp7))
+{
+	obj_pp7.x = x+80;
+	obj_pp7.y = y+144;
 }

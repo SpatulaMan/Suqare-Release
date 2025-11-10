@@ -156,6 +156,10 @@ if(instance_exists(o_lvlStart))
 		audio_sound_gain(s3,.25*o_saveload.musvol,1000);
 		mCheck = false;
 	}
+	if(o_lvlStart.speed > 0 and o_lvlStart.r == r_lvl_10 and mCheck == true)
+	{
+		audio_sound_gain(s2,0,1000);
+	}
 }
 
 if(room == r_lvl_0 or room == r_lvl_0_1)
@@ -209,7 +213,7 @@ if(room == r_lvl_2)
 		}
 	}
 }
-if(room == r_lvl_3)
+if(room == r_lvl_3 or room == r_lvl_9)
 {
 	//audio_sound_gain(s1,0,3000);
 	if(mCheck2 == false and mCheck3 == false)
@@ -294,5 +298,19 @@ if(room == r_lvl_7 or room == r_lvl_8)
 		mCheck2 = true;
 		audio_resume_sound(s3);
 		audio_sound_gain(s3,.25*o_saveload.musvol,1000);
+	}
+}
+if(room == r_lvl_10)
+{
+	//audio_sound_gain(s1,0,3000);
+	if(mCheck2 == false and instance_exists(obj_guard))
+	{
+		mCheck2 = true;
+		audio_resume_sound(s1);
+		audio_sound_gain(s1,.25*o_saveload.musvol,1000);
+	}
+	else if(!instance_exists(obj_guard) and mCheck == true)
+	{
+		audio_sound_gain(s1,0,5000);
 	}
 }

@@ -20,7 +20,7 @@ function scr_wsup()
 		    {
 		        gunEquip--;
 		    }
-			if(gunEquip == 14)//?
+			if(gunEquip == 14 and pp7Have != 1)//?
 		    {
 		        gunEquip--;
 		    }
@@ -84,7 +84,7 @@ function scr_wsup()
 		    {
 		        gunEquip--;
 		    }
-			if(gunEquip == 14)//?
+			if(gunEquip == 14 and pp7Have != 1)
 		    {
 		        gunEquip--;
 		    }
@@ -223,7 +223,7 @@ function scr_wsdn()
 		    {
 		        gunEquip++;
 		    }
-			if(gunEquip == 14)//?
+			if(gunEquip == 14 and pp7Have != 1)
 		    {
 		        gunEquip++;
 		    }
@@ -287,7 +287,7 @@ function scr_wsdn()
 		    {
 		        gunEquip++;
 		    }
-			if(gunEquip == 14)//?
+			if(gunEquip == 14 and pp7Have != 1)
 		    {
 		        gunEquip++;
 		    }

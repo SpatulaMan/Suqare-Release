@@ -41,3 +41,13 @@ if(timer_ghost >= 1)
 		alarm_set(10,1);
 	}
 }
+if(timer_pp7 >= 1)
+{
+	timer_pp7--;
+	if(timer_pp7 == 0)
+	{
+		instance_create(x,y,obj_pp7);
+		instance_destroy();
+		alarm_set(10,1);
+	}
+}

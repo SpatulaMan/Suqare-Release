@@ -77,12 +77,11 @@ switch(prog)
 	case 9:
 	case 8:
 	case 7:
-	case 6:
-	case 5: if(obj_suq.lvldone[8] == false and obj_suq.lvldone[2] == true) { array_insert(lvl,t,8); t++; }
-			//if(obj_suq.lvldone[9] == false) { array_insert(lvl,t,9); t++; }
-	case 4: 
-	case 3: if(obj_suq.lvldone[6] == false and obj_suq.perez > -3 and obj_suq.lvldone[1] == true and obj_suq.gemsD > 0) { array_insert(lvl,t,6); t++; }
-			if(obj_suq.lvldone[5] == false) { array_insert(lvl,t,5); t++; }
+	case 6: if(obj_suq.lvldone[6] == false and obj_suq.perez > -3 and obj_suq.lvldone[1] == true and obj_suq.gemsD > 0) { array_insert(lvl,t,6); t++; }
+			if(obj_suq.lvldone[9] == false) { array_insert(lvl,t,9); t++; }
+	case 5: 
+	case 4: if(obj_suq.lvldone[8] == false and obj_suq.lvldone[2] == true) { array_insert(lvl,t,8); t++; }
+	case 3: if(obj_suq.lvldone[5] == false) { array_insert(lvl,t,5); t++; }
 			if(obj_suq.lvldone[7] == false) { array_insert(lvl,t,7); t++; }
 	case 2: 
 	case 1: if(obj_suq.lvldone[1] == false) { array_insert(lvl,t,1); t++; }

@@ -43,5 +43,8 @@ switch(room)
 	if(instance_exists(obj_box_B) == false and instance_exists(obj_spider) == false and instance_exists(obj_spiderB) == false) { obj1 = true; } else { obj1 = false; } break;
 	
 	case r_lvl_9: t = 42; o1 = 43; o2 = 44; o3 = 45; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); ot3 = scr_briefing(o3); image_index = 2;
-	if(o_obj_L9.ob1 == true) { obj1 = true; } if(o_obj_L9.ob2 == true) { obj2 = true; } if(o_obj_L9.ob3 == true) { obj3 = true; } 
+	if(o_obj_L9.ob1 == true) { obj1 = true; } if(o_obj_L9.ob2 == true) { obj2 = true; } if(o_obj_L9.ob3 == true) { obj3 = true; } break;
+	
+	case r_lvl_10: t = 56; o1 = 59; o2 = 61; b = scr_briefing(t); ot1 = scr_briefing(o1); image_index = 0;
+	if(o_L10.incident == true) { image_index = 1; ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); }
 }

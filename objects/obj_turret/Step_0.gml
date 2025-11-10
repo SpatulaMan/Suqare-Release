@@ -81,7 +81,7 @@ if(hp < hpc)
 }
 if(hp <= 0)
 {
-	audio_play_sound(snd_enemyExplode,3,false,random_range(0.35,0.45)*o_saveload.sfxvol,0,random_range(0.9,1.1));
+	audio_play_sound(snd_enemyExplode,3,false,random_range(0.05,0.15)*o_saveload.sfxvol,0,random_range(0.9,1.1));
     instance_destroy();
 }
 if(place_meeting(x,y,obj_suq) and !instance_exists(o_turretPlace) and !instance_exists(o_turretMove))

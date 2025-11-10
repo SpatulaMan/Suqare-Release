@@ -327,6 +327,8 @@ if(health > 0)
     else if((gunEquip != 9 or rocketLauncherHave != 1) and instance_exists(object144)) { with (object144) instance_destroy(); }
 	if(gunEquip == 13 and ghostGunHave == 1 and !instance_exists(o_ghostGun)) then { instance_create(x,y,o_ghostGun); }
     else if((gunEquip != 13 or ghostGunHave != 1) and instance_exists(o_ghostGun)) { with (o_ghostGun) instance_destroy(); }
+	if(gunEquip == 14 and pp7Have == 1 and !instance_exists(object146)) then { instance_create(x,y,object146); }
+    else if((gunEquip != 14 or pp7Have != 1) and instance_exists(object146)) { with (object146) instance_destroy(); }
 	
 	//drop guns
 	if(room != r_skill1 and room != r_skill2 and room != r_skill3 and room != r_skill4 and room != r_skill5 and room != r_range)
@@ -435,6 +437,12 @@ if(health > 0)
 			gunNum--;
 			ghostGunHave = 0;
 	    }
+		if(keyboard_check_pressed(vk_tab) and gunEquip == 14 and pp7Have == 1) then 
+	    { 
+	        instance_create(x,y,obj_dropGun);
+			gunNum--;
+			pp7Have = 0;
+	    }
 	}
     if(gunEquip == 0 and knifeHave == 1)
     {
@@ -495,6 +503,10 @@ if(health > 0)
 	if(gunEquip == 13 and ghostGunHave > 0)
 	{
 		cursor_sprite = spr_ghostGunC;
+	}
+	if(gunEquip == 14 and pp7Have > 0)
+	{
+		cursor_sprite = spr_pp7C;
 	}
     if(canSGShoot <= 0) then canSGShoot = 0;
     if(canSGShoot > 0) then canSGShoot--; 
@@ -595,6 +607,11 @@ if(room == r_range or (room == r_skill1 and !instance_exists(o_skobj)) or (room 
 	{
 		if(o_saveload.ammoFull) { rocketLauncherAmt = (o_saveload.ammoUp*8) }
 		else { rocketLauncherAmt = 2; }
+	}
+	if(pp7Have == 1)
+	{
+		if(o_saveload.ammoFull) { pp7Amt = (o_saveload.ammoUp*40) }
+		else { pp7Amt = 4; }
 	}
 	minesAmt = msa;
 	minegAmt = mga;

@@ -22,6 +22,8 @@ function save()
 		swordHave: obj_suq.swh,
 		shurikenHave: obj_suq.shh,
 		ghostGunHave: obj_suq.ggh,
+		pp7Have: obj_suq.pph,
+		lastNewWeapon: obj_suq.lnw,
 		money: obj_suq.money,
 		gunMax: obj_suq.gunMax,
 		progress: obj_suq.progress,
@@ -155,6 +157,10 @@ function load(_f)
 			o_saveload.shurikenHave=_struct.shurikenHave;	
 		if (struct_exists(_struct, "ghostGunHave"))
 			o_saveload.ghostGunHave=_struct.ghostGunHave;
+		if (struct_exists(_struct, "pp7Have"))
+			o_saveload.pp7Have=_struct.pp7Have;
+		if (struct_exists(_struct, "lastNewWeapon"))
+			o_saveload.lastNewWeapon=_struct.lastNewWeapon;
 		if (struct_exists(_struct, "money"))
 			o_saveload.money=_struct.money;
 		if (struct_exists(_struct, "gunMax"))
@@ -333,6 +339,8 @@ function load(_f)
 			swordHave: 0,
 			shuriken: 0,
 			ghostGunHave: 0,
+			pp7Have: 0,
+			lastNewWeapon: 0,
 			money: 0,
 			gunMax: 0,
 			progress: 0,

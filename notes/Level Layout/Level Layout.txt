@@ -42,7 +42,6 @@ and
 
 -Hiertech Plan - To be profitable by any means necessary:
 5: Save girl
-10: Art Auction (Figure out who plans to steal the art in detective fashion) - NL
 18: Contraband (Move contraband from building and load up cars while fighting off cops. When holding boxes, you can't shoot.)
 28: Kill Traitor (connected to winning levels 22 and 26)
 30: Steal Art (6 paintings) - NL
@@ -64,6 +63,7 @@ and
 Others:
 1: Kill gang leader
 6: Ghost
+10: Dinner Party (solve murder and painting theft) - NL
 14: Gun Club - NL (the local gun club stole my weapon from me, and they won't give it back. They're armed and will shoot, but please don't kill any of them. They're my dad's friends I'll only give you a reward if you can get my gun back without bloodshed. 
 23: Bodyguard at Dinner Party (Murder Mystery. Talk to all of the attendees after the lights went out to see who the murderer is. Whoever you choose is who they take into custody. It'll say something like, "You'll always wonder if you got the right person." or "He plead guilty" depending on if you choose correctly.)
 38: Want Some Stuff? This guy wants to sell you some good stuff. Just need to find him in a haunted mansion. You won't be able to sell these items back. Sells you really a couple good weapons and gadgets. 
@@ -91,7 +91,7 @@ or
 7: Destroy Gems
 8: Eradicate spiders
 9: Ring of Tarpho
-		10: Dinner Party (Figure out who stole the art in detective fashion) - NL
+		10: Dinner Party (solve murder and painting theft) - NL
 		11: Prove Hiertech is targeting charities. Sneaky level - NL
 		12: Steal weapon from Hiertech
 		13: Steal plans and kidnap scientist to make super weapon

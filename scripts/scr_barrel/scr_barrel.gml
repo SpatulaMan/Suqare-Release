@@ -63,6 +63,12 @@ function scr_barrel() {
 			array_insert(w2,r2,0);
 			r2++;
 		}
+		if(obj_suq.pp7Have == 1)
+		{
+			array_insert(w,r2,obj_ppAmmo);
+			array_insert(w2,r2,9);
+			r2++;
+		}
 		if(r2 > 0)
 		{
 			repeat(7)
@@ -292,6 +298,12 @@ function scr_barrel2() {
 		{
 			array_insert(w,r2,obj_pAmmo);
 			array_insert(w2,r2,49);
+			r2++;
+		}
+		if(obj_suq.pp7Have == 1)
+		{
+			array_insert(w,r2,obj_ppAmmo);
+			array_insert(w2,r2,29);
 			r2++;
 		}
 		if(r2 > 0)

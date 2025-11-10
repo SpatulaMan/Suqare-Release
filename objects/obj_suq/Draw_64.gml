@@ -440,7 +440,29 @@ if(ghostGunHave == 1 and gunEquip == 13)
     draw_text_transformed_colour(1560,940,string_hash_to_newline("?|?"),3,3,0,_col,_col,_col,_col,1);
 	draw_sprite_stretched(spr_ghostGun,0,1600,900,14*15,14*15);
 }
-
+if(pp7Have == 1 and gunEquip == 14)
+{
+	if(((keyboard_check_pressed(ord("R")) and ppMag < 4) or (ppMag == 0)) and pp7Amt > 0 and ppr == false)
+	{
+		ppr = true;
+		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
+	}
+	if(ppr) then pprt--;
+	if(pprt <= 0)
+	{
+		var _a = ppMag + pp7Amt;
+		var _b = _a - 4;
+		if(_b >= 0) then { ppMag = 4; pp7Amt = _b; }
+		else if(_b < 0) then { ppMag = 4 + _b; pp7Amt = 0; }
+		pprt = 120;
+		ppr = false;
+		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol);
+	}
+    draw_text_transformed_colour(1600,940,string_hash_to_newline("" + string(ppMag) + "|" + string(pp7Amt) + " "),3,3,0,c_dkgray,c_dkgray,c_dkgray,c_dkgray,1);
+	//draw_sprite_ext(spr_silencedPP7,0,1700,940,10,10,0,c_white,1);
+	draw_sprite_stretched(spr_silencedPP7,0,1600,940,21*10,10*10);
+	pp1 = true;
+}
 if(pickup_timer > 0)
 {
 	draw_set_halign(fa_center);
@@ -544,8 +566,12 @@ if(pickup_timer > 0)
 		case 38: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("PRESS E TO RECALL/PLACE"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 39: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ARMOR"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 40: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("RING OF TARPHO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
-		case 41: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
-		case 42: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 41: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("PP9"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); 
+				if(gunNum == gunMax and pp7Have == 0) 
+				{
+					draw_text_transformed_colour(roomw/2,roomh*.01,string_hash_to_newline("CAN'T CARRY MORE WEAPONS"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90);
+				}break;
+		case 42: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("PP9 AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 43: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 44: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 45: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;

@@ -37,6 +37,17 @@ if(health > 0 and !keyboard_check_direct(vk_shift))
             shMag -= 1;
     }
 	else if(shMag <= 0 and gunEquip == 6) then audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
+	if(ppMag > 0 and gunEquip == 14 and ppr == false)
+    {
+		audio_play_sound(snd_laser,1,false,o_saveload.sfxvol,0,2);
+		audio_play_sound(snd_magnum,1,false,o_saveload.sfxvol,0,2);
+        var Bul = instance_create(x,y,obj_suqPPBul)
+        Bul.direction = point_direction(x,y,mouse_x,mouse_y);
+        Bul.image_angle = Bul.direction;
+        Bul.speed = 24;
+        ppMag -= 1;
+    }
+	else if(ppMag <= 0 and gunEquip == 14) then audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
     if(gunEquip == 2 and magnumHave == 1 and mMag > 0 and mr == false)
     {
 		audio_play_sound(snd_laser,1,false,o_saveload.sfxvol);
