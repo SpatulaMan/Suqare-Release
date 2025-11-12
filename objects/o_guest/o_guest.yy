@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"o_L10",
+  "%Name":"o_guest",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_L10",
+  "name":"o_guest",
   "overriddenProperties":[],
   "parent":{
     "name":"lvl10",
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_hurt",
+    "path":"sprites/s_hurt/s_hurt.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -4,25 +4,12 @@ if((other.pistolHave == true or other.magnumHave == true or other.machineGunHave
 	or other.rocketLauncherHave == true or other.knifeHave == true or other.shuriken > 0 
 	or other.pp7Have == true or other.ghostGunHave == true or other.swordHave == true) and alarm_check == false)
 {
-	if(instance_exists(obj_guard_calm)) then obj_guard_calm.see_check = true;
-	if(instance_exists(obj_guard_patrol))
+	if(instance_exists(o_guard_replace))
 	{
-		obj_guard_patrol.see_check = true;
-		obj_guard_patrol.access = false;
+		with (o_guard_replace) instance_destroy();
 	}
 	var _inst = instance_create_layer(x+10,y-10,"Instances_Action",o_gunSound);
 	_inst.sprite_index = s_attractorSound;
-	start = true;
-	alarm_set(1,0);
-	alarm_set(0,0);
-	m = 0;
-	s = 0;
-	ml = 0;
 	alarm_check = true;
 	alarm_set(2,1);
-}
-else if(start == false)
-{
-	start = true;
-	alarm_set(1,6);
 }

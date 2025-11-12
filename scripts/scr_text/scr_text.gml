@@ -487,42 +487,60 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[59] = @"Attend Party";
-	a[60] = @"Oh, no! My butler is dead and the 'esmerelda' has been
+	a[60] = @"Yellen Egbert II:
+			Oh, no! My butler is dead and the 'esmerelda' has been
 			stolen! Whoever could have done such a thing? Suqare, could
 			you please investigate and figure out who did this? I would
 			be forever in your debt. My guards already locked all the 
 			doors to the outside, so no one could have gotten in or 
 			out. Please question everyone here and investigate all you
-			can. Once you know who the culprit is, come back to me.";//estate owner reaction
+			can. 
+			
+			Once you know who the culprit is, mark/unmark them by 
+			walking up to them and pressing 'T'. Then come back to me 
+			and press 'Enter'. I will then unlock the doors so you can 
+			leave. The police will come and arrest the guests you 
+			marked, and I'll follow up with you after you leave.";//estate owner reaction
 	a[61] = @"Find Culprit";//New Objective
-	a[62] = @"I stepped back the moment the lights went out, and I saw
+	a[62] = @"Yellen Egbert II:
+			I stepped back the moment the lights went out, and I saw
 			some kind of glimmer flash by briefly as it went past 
 			me. Then I saw your knife in him when the lights came back 
 			on It is your knife in him, but why would you kill the 
-			butler and steal the art? I think you're innocent.";//estate owner statement
-	a[63] = @"Why are you questioning me? It was obviously you who did
+			butler and steal the art? I think you're innocent.
+			
+			The power couldn't have been turned off from in here. 
+			That's the most puzzling thing about this. All of the 
+			guards are still at their posts too. It seems impossible. ";//estate owner statement
+	a[63] = @"Chef Quergy Catabombs:
+			Why are you questioning me? It was obviously you who did
 			it! Look, it's your knife! Not sure how you got it in here,
 			but no one else has a knife like that, so it must've been
 			you. 
 			
-			All I know is that the server I was working with had to go
+			All I know is that the waiter I was working with had to go
 			to the bathroom, and he looked uncomfortable and shady. At
 			worst it just means he's an accomplice of yours!";//chef Quergy Catabombs statement
-	a[64] = @"No comment.";//Lawyer Jez Borden statement
-	a[65] = @"I was in the kitchen during the incident. I saw a 
+	a[64] = @"Lawyer Jez Borden: 
+			No comment.";//Lawyer Jez Borden statement
+	a[65] = @"Waiter Gerivalt Redily:
+			I was in the kitchen during the incident. I saw a 
 			hankerchief fly out from someone's pocket right before the
 			lights went out. I didn't see who threw it, but it seemed
 			very forceful. Like someone grabbed it quickly from someone
-			else and lost hold of it. I think it was a man and a woman.";//server Gerivalt Redily statement
-	a[66] = @"I didn't see anything. I was just coming out of the 
+			else and lost hold of it. I think it was a man and a woman.";//Waiter Gerivalt Redily statement
+	a[66] = @"Janitor Hops Voodoo:
+			I didn't see anything. I was just coming out of the 
 			bathroom after someone tried to flush something down the
 			toilet. I didn't see who did it. I left it in there since
 			there was so much commotion out here.";//janitor Hops Voodoo statement
-	a[67] = @"I heard a sound like a door open right after the lights
+	a[67] = @"Treasurer Jonald Hiden
+			I heard a sound like a door open right after the lights
 			went out. It could have been the bathroom attendent, but
 			that door seems too far away to me. Every door here is 
 			locked, though, so that has to be the explanation. ";//Treasurer Jonald Hiden
-	a[68] = @"What a tragedy! I can't believe something like this 
+	a[68] = @"Yellen Egbert's younger brother Helen Egbert II:
+			What a tragedy! I can't believe something like this 
 			could happen. Everything was perfect. How'd anyone plan
 			around our security? I lost my key too... And something I
 			was going to return to... uh... someone I admire. 
@@ -530,7 +548,8 @@ function scr_briefing(t){
 			I was trying to protect my sister in law Jellen, so I 
 			grabbed her and ducked when the lights went out. I had to
 			make sure those around me were safe.";//Estate owner's younger brother Helen Egbert II (Named after their mom)
-	a[69] = @"I was grabbed by Helen Egbert, my husband's younger 
+	a[69] = @"Yellen Egbert's Wife Jellen Egbert:
+			I was grabbed by Helen Egbert, my husband's younger 
 			brother right when the commotion happened. He screamed so
 			loud that I couldn't hear anything. But...
 			
@@ -540,31 +559,64 @@ function scr_briefing(t){
 			the butler instead. Only Yellen and Helen have a key to 
 			open the case. I would bet anything that Helen is the 
 			culprit.";//Estate owner wife Jellen Egbert
-	a[70] = @"Only the janitor came in here all night. The door was
-			propped open at the time of the incident.";//bathroom attendant Darby Warshington
-	a[71] = @"What happened? Someone died? The art was stolen? Oh my
-			goodness, that's awful! I was cowering in the corner when 
+	a[70] = @"Bathroom Attendant Darby Warshington:
+			Only the janitor came in here all night. The door was
+			propped open at the time of the incident, and I closed it
+			right after the lights came on.";//bathroom attendant Darby Warshington
+	a[71] = @"Floozy Patasha Wanzitoot:
+			What happened? Someone died? The art was stolen? Oh my
+			goodness, that's awful! I was cowering under the table when 
 			the lights went out, so I'm a bit shaken up. ";//floozy Patasha Wanzitoot
-	a[72] = @"I saw Patasha near Helen right before the lights went 
+	a[72] = @"Diplomat Uranda Palamoose:
+			I saw Patasha near Helen right before the lights went 
 			out. Is she interested in him? Surely she knows that Helen
 			wouldn't be interested. Why was she near him then? In fact,
 			why is she here at all?";//Diplomat Uranda Palamoose
-	a[73] = @"How'd that door come open? I swear it was locked! I guess
+	a[73] = @"Guard Kresh Wanzitoot:
+			How'd that door come open? I swear it was locked! I guess
 			whoever the culprit is picked the lock, but couldn't escape
 			since I've been here the whole time. I didn't see anyone 
-			come or go either. We've kept this place locked down tight. ";//Guard Kresh Wanzitoot
-	a[74] = @"I smell something fishy here. Your knife was the murder
+			come or go either. We've kept this place locked down tight.";//Guard Kresh Wanzitoot
+	a[74] = @"Reporter Iris Lagrange:
+			I smell something fishy here. Your knife was the murder
 			weapon, but you've been told to investigate. Sounds like a
 			cover up to me. I bet Yellen is low on money and needed a
 			patsy to take the blame for a murder theft. He took your 
 			knife, killed the butler, and took the art himself to
 			sell it to the highest bidder. Sound possible? Because 
 			that's how it happened, I'm sure of it.";//Reporter Iris Lagrange
-	a[75] = @"";//Evidence: Pistol in toilet with 4 bullets, knife in butler (yours), unlocked glass case, not actually locked door, hankerchief with JE initials, guest list without Patasha's name on it, a note in Yellen's office firing Bollivar, Traby, and Kresh
-	a[76] = @"";//Culprits Kresh Wanzitoot and Patasha Benedict
-	a[77] = @"";//Once you call out the correct suspects, they pull out weapons to attack. Your only weapon is the knife, so defend yourself
+	a[75] = @"Guest List:
+			Iris lagrange,
+			Uranda Palamoose,
+			Helen Egbert II,
+			Jonald Hiden,
+			Jez Borden,
+			Suqare,
+			
+			Staff:
+			Bathroom attendant: Darby Warshington,
+			Waiter: Gerivalt Redily,
+			Janitor: Hops Voodoo,
+			Chef: Quergy Catabombs,
+			Butler: Pertey Nandi";//Evidence: Pistol in toilet with 0 bullets, knife in butler (yours), unlocked glass case, not actually locked door, hankerchief with JE initials, guest list without Patasha's name on it, a note in Yellen's office firing Bollivar Thornaby, Traby Gire, and Kresh Wanzitoot
+	a[76] = @"To whom it may concern:
+			Bollivar Thornaby, Traby Gire, and Kresh Wanzitoot,
+			
+			I regrettfully inform you that your time here as guards at
+			the manor has come to a close. Please pack up your things
+			and leave promptly after the dinner party is over tonight.
+			
+			I hope there are no hard feelings and you all find new
+			opportunities for employment soon. 
+			
+			Sincerely yours,
+			Yellen Egbert II
+			
+			Sent Yesterday";//Culprits Kresh Wanzitoot and Patasha Wanzitoot
+	a[77] = @"Guards:
+			No weapons allowed. Please drop them by your car. ";//guards telling you to not bring in weapons
 	a[78] = @"";//New weapon, Silenced pistol. No sound circle generated, damage same as regular magnum, 4 round mag, long reload time, really fast bullet speed
-	a[79] = @"";// Who are the culprits? Give option to select any of the people there. Once selected, ask "any 
+	a[79] = @"";// Who are the culprits? Give option to select any of the people there. Once selected, Press Enter by Yellen and end the mission.  
 /*
 15: Vambrace of Wurtu
 21: Jewel of Barfo, Ghost ninjas too
