@@ -14,6 +14,11 @@ if(instance_exists(o_L10))
 	{
 		with (obj_knife) instance_destroy();
 	}
+	if(instance_exists(inst_2D10A2E1))
+	{
+		inst_2D10A2E1.x = 461;
+		inst_2D10A2E1.y = 806;
+	}
 	instance_destroy();
 }
 if(instance_exists(o_noWeapons))

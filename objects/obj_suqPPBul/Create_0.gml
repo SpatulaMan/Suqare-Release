@@ -3,3 +3,4 @@ t = 0;
 r = 0;
 damage = 4;
 hp = 4;
+wallCheck = false;

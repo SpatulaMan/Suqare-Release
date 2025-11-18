@@ -2,4 +2,4 @@
 t = 0;
 image_speed = 0;
 image_index = 0;
-damage = 1;
+damage = .2;

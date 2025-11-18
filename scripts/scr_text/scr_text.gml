@@ -489,6 +489,29 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[59] = @"Attend Party";
+	a[61] = @"Accuse Suspects";//New Objective
+	a[62] = @"";
+	a[63] = @"";
+	a[64] = @"";
+	a[65] = @"";
+	a[66] = @"";
+	a[67] = @"";
+	a[68] = @"";
+	a[69] = @"";
+	
+/*
+15: Vambrace of Wurtu
+21: Jewel of Barfo, Ghost ninjas too
+27: Nose of Mortuban
+33: Eye of Gutran
+39: Destroy Ninja Hierarchy (kill all ninja leaders)
+45: Ninja Retaliation, Fight off onslaught of ninjas until they're all dead. Protect the CEO?
+*/
+return a[t];
+}
+
+function scr_conversation(t)
+{
 	//text for small text box is 128 across, and 11 char-13's
 	a[60] = @"Yellen Egbert II:
 			Oh, no! My butler is dead and the 'esmerelda' has been stolen! Whoever could have done such a thing? Suqare, could 
@@ -499,7 +522,6 @@ function scr_briefing(t){
 			Once you know who the culprit is, mark them by walking up to them and pressing 'T'. Then come back to me and press 
 			'Enter'. I will then unlock the doors so you can leave. The police will come and arrest the guests you marked, and
 			I'll follow up with you after you leave.";//estate owner reaction
-	a[61] = @"Accuse Suspects";//New Objective
 	a[62] = @"Yellen Egbert II:
 			I stepped back the moment the lights went out, and I saw some kind of glimmer flash by briefly as it went past me. 
 			Then I saw a knife in him when the lights came back on. It is your knife, but why would you kill the butler and 
@@ -556,19 +578,20 @@ function scr_briefing(t){
 			cover up to me. I bet Yellen is low on money and needed a patsy to take the blame for a murder theft. He took your 
 			knife, killed the butler, and took the art himself to sell it to the highest bidder. Sound possible? That's because
 			it's the most probable scenario.";//Reporter Iris Lagrange
-	a[75] = @"Guest List:       Staff:
-			Iris lagrange,      Bathroom attendant: Darby Warshington,
+	a[75] = @"Guest List:           Staff:
+			Iris lagrange,       Bathroom attendant: Darby Warshington,
 			Uranda Palamoose,   Waiter: Gerivalt Redily,
 			Helen Egbert II,    Janitor: Hops Voodoo,
-			Jonald Hiden,       Chef: Quergy Catabombs,
-			Jez Borden,         Butler: Pertey Nandiz
+			Jonald Hiden,        Chef: Quergy Catabombs,
+			Jez Borden,          Butler: Pertey Nandiz
 			Suqare,";
 	//Evidence: Pistol in toilet with 0 bullets, knife in butler (yours), unlocked glass case, not actually locked door, hankerchief with JE initials, guest list without Patasha's name on it, a note in Yellen's office firing Bollivar Thornaby, Traby Gire, and Kresh Wanzitoot
 	a[76] = @"Dear employees,
 			Bollivar Thornaby, Traby Gire, and Kresh Wanzitoot,
 			
 			I regrettfully inform you that your time here as guards at the manor has come to a close. Please pack up your 
-			things and leave promptly after the dinner party is over tonight.
+			things and leave promptly after the dinner party is over tonight. I trust your wives, Grildy Thornaby, Harbo Gire,
+			and Patasha Wanzitoot will not hold anything against me or the manor staff. Thank you for your cooperation.
 			
 			I hope there are no hard feelings and you all find new opportunities for employment soon. 
 			
@@ -595,16 +618,16 @@ function scr_briefing(t){
 	a[80] = @"
 			
 			
+			
+			
+			
 			J.E.";
-/*
-15: Vambrace of Wurtu
-21: Jewel of Barfo, Ghost ninjas too
-27: Nose of Mortuban
-33: Eye of Gutran
-39: Destroy Ninja Hierarchy (kill all ninja leaders)
-45: Ninja Retaliation, Fight off onslaught of ninjas until they're all dead. Protect the CEO?
-*/
-return a[t];
+	a[81] = @"No weapons are allowed in the bank. There's a metal detector in this door that will set off an alarm if anything 
+			is detected. 
+			
+			You are responsible for what you carry through here.";
+			
+	return a[t];
 }
 
 function scr_shop(t){
@@ -1732,9 +1755,9 @@ function debrief(m)
 			Response From Hiring Firm:
 			We got confessions from both suspects you told me about and retrieved the 
 			painting. The guard was the one to steal your knife, turn off the power, and 
-			kill the butler. Patasha, that floozy, was let in by her husband Kresh even
-			though she wasn't on the guest list. She was the one who stole Helen's key and
-			took the painting. 
+			kill the butler, though, he was trying to kill me. Patasha, that floozy, was
+			let in by her husband Kresh even though she wasn't on the guest list. She was
+			the one who took Helen's key and stole the painting. 
 			
 			Result: 
 			You found the culprits and succeeded in retrieving the esmerelda. 
@@ -1763,10 +1786,10 @@ function debrief(m)
 			
 			Response From Hiring Firm:
 			We got a confession from the suspect you told me about but didn't retrieve the 
-			painting. Kresh Wanzitoot, the guard, stole your knife, killed the butler, and
-			turned off the power. He must've had an accomplice because we never found the
-			esmerelda. He was working with someone, but I'm not sure we'll ever know who.
-			Thanks for your help regardless. 
+			painting. Kresh Wanzitoot, the guard, stole your knife, turned off the power, 
+			and killed the butler, but he was trying to kill me. He must've had an 
+			accomplice because we never found the esmerelda. Thanks for your help 
+			regardless. 
 			
 			Result: 
 			You found the murderer, but you failed to find the accomplice who stole the 
@@ -1856,7 +1879,7 @@ function debrief(m)
 			...
 			
 			Result: 
-			You killed the person who hired you.. For this depraved action, your standing 
+			You killed the person who hired you. For this depraved action, your standing 
 			with every single company has gone down. They'll most likely still work with 
 			you, but watch out for that.
 			

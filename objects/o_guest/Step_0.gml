@@ -78,6 +78,12 @@ if(done == false or isYellen)
 					with (o_L10.inst) instance_destroy();
 					//inst.i = 78;
 				}
+				if(instance_exists(inst))
+				{
+					with (inst) instance_destroy();
+					inst = instance_create(x,y,o_convo);
+					inst.i = h;
+				}
 				done = true;
 				with (o_guest) done = true;
 				o_L10.ob2 = true;
@@ -94,6 +100,6 @@ if(instance_exists(obj_guard) and _wallsee and _doorsee)
 }
 if(distance_to_point(xc,yc) < 15 and moveCheck == true)
 {
-	alarm_set(0,choose(20,60,100,140,180));
+	alarm_set(0,20);
 	moveCheck = false;
 }

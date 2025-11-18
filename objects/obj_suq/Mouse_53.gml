@@ -17,7 +17,7 @@ if(health > 0 and !keyboard_check_direct(vk_shift))
 		else
 			instance_create(x,y,o_gunSound);
     }
-	else if(pMag <= 0 and gunEquip == 1) then audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
+	else if((pMag <= 0 and gunEquip == 1) or pr == true) then audio_play_sound(snd_switchguns,3,false,.5*o_saveload.sfxvol,0,2);
     /*if(gunEquip == 0)
     {
         with (obj_suqPunch) instance_destroy();
@@ -36,7 +36,7 @@ if(health > 0 and !keyboard_check_direct(vk_shift))
             Bulsh.speed = 12;
             shMag -= 1;
     }
-	else if(shMag <= 0 and gunEquip == 6) then audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
+	else if((shMag <= 0 and gunEquip == 6) or shr == true) then audio_play_sound(snd_switchguns,3,false,.5*o_saveload.sfxvol,0,2);
 	if(ppMag > 0 and gunEquip == 14 and ppr == false)
     {
 		audio_play_sound(snd_laser,1,false,o_saveload.sfxvol,0,2);
@@ -47,7 +47,7 @@ if(health > 0 and !keyboard_check_direct(vk_shift))
         Bul.speed = 24;
         ppMag -= 1;
     }
-	else if(ppMag <= 0 and gunEquip == 14) then audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
+	else if((ppMag <= 0 and gunEquip == 14) or ppr == true) then audio_play_sound(snd_switchguns,3,false,.5*o_saveload.sfxvol,0,2);
     if(gunEquip == 2 and magnumHave == 1 and mMag > 0 and mr == false)
     {
 		audio_play_sound(snd_laser,1,false,o_saveload.sfxvol);
@@ -115,7 +115,7 @@ if(health > 0 and !keyboard_check_direct(vk_shift))
 				instance_create(x,y,o_gunSound);
         }
     }
-	else if(sgMag <= 0 and gunEquip == 5) then audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
+	else if((sgMag <= 0 and gunEquip == 5) or sgr == true) then audio_play_sound(snd_switchguns,3,false,.5*o_saveload.sfxvol,0,2);
     if(snMag > 0 and gunEquip == 8 and canSNShoot <= 0 and snr == false)
     {
 			audio_play_sound(snd_heavygun,1,false,random_range(2,2.5)*o_saveload.sfxvol,0,random_range(.7,.9));
@@ -133,7 +133,7 @@ if(health > 0 and !keyboard_check_direct(vk_shift))
 			else
 				instance_create(x,y,o_gunSound);
     }
-	else if(snMag <= 0 and gunEquip == 8) then audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
+	else if((snMag <= 0 and gunEquip == 8) or snr == true) then audio_play_sound(snd_switchguns,3,false,.5*o_saveload.sfxvol,0,2);
     if(rlMag > 0 and gunEquip == 9 and rlr == false)
     {
         if(canRLShoot = 0)
@@ -154,7 +154,7 @@ if(health > 0 and !keyboard_check_direct(vk_shift))
 				instance_create(x,y,o_gunSound);
         }
     }
-	else if(rlMag <= 0 and gunEquip == 9) then audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
+	else if((rlMag <= 0 and gunEquip == 9) or rlr == true) then audio_play_sound(snd_switchguns,3,false,.5*o_saveload.sfxvol,0,2);
 	if(knifeHave == 1 and gunEquip == 0)
 	{
 	    var Bulk = instance_create(x,y,obj_thrownKnife);
@@ -202,9 +202,9 @@ if(health > 0 and !keyboard_check_direct(vk_shift))
 			scr_wsup();
 		}
 	}
-	if(mgMag <= 0 and gunEquip == 3) then audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
-	if(arMag <= 0 and gunEquip == 4) then audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
-	if(fMag <= 0 and gunEquip == 7) then audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
+	if(mgMag <= 0 and gunEquip == 3) then audio_play_sound(snd_switchguns,3,false,.5*o_saveload.sfxvol,0,2);
+	if(arMag <= 0 and gunEquip == 4) then audio_play_sound(snd_switchguns,3,false,.5*o_saveload.sfxvol,0,2);
+	if(fMag <= 0 and gunEquip == 7) then audio_play_sound(snd_switchguns,3,false,.5*o_saveload.sfxvol,0,2);
 }
 if(gunEquip == 13 and ghostGunHave == 1)
 {

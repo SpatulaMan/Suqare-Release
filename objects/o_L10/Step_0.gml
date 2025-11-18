@@ -12,7 +12,7 @@ if((obj_suq.pistolHave == true or obj_suq.magnumHave == true or obj_suq.machineG
 			inst1 = instance_create_layer(662,834,"Instances",o_door);
 			inst1.locked1 = true;
 			inst = instance_create_layer(inst1.x,inst1.y-5,"Instances",obj_wallWood);
-			inst.image_angle = _inst1.image_angle;
+			inst.image_angle = inst1.image_angle;
 			inst.visible = false;
 			inst.locked = 2;
 		}

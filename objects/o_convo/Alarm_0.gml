@@ -1,2 +1,2 @@
 /// @description 
-txt = scr_briefing(i);
+txt = scr_conversation(i);
