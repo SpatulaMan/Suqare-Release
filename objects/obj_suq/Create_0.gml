@@ -314,3 +314,7 @@ report = 0;
 //alarm_set(1,60);
 save_check = true;
 Bulft = noone;
+
+//lvl 10 dinner party outcome
+culprit = 0;
+painting = o_saveload.painting;//this will determine if the painting shows in the armory or not. You can sell it too if you want. 

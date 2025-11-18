@@ -95,6 +95,12 @@ if(a > 0)
 		case 61: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SKILL CHALLENGE 5"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 62: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("KILL ALL ENEMIES"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 63: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh/2,string("YOU WIN!"),6,6,0,c_white,c_white,c_white,c_white,a); break;
+		case 64: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("MEN'S ROOM"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 65: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("LADIES' ROOM"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 66: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("OFFICE"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 67: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("PARTY ROOM"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 68: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("KILL ALL ENEMIES"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 69: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("KILL ALL ENEMIES"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		default: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("RESTRICTED"),3,3,0,c_white,c_white,c_white,c_white,a); 
 	}
 }

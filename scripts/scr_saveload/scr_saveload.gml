@@ -102,7 +102,8 @@ function save()
 		sk7: o_saveload.skillCheck7,
 		sk8: o_saveload.skillCheck8,
 		sk9: o_saveload.skillCheck9,
-		sk10: o_saveload.skillCheck10
+		sk10: o_saveload.skillCheck10,
+		paint: obj_suq.painting
 		
 		//upgrades
 		
@@ -313,6 +314,8 @@ function load(_f)
 			o_saveload.skillCheck9=_struct.sk9;
 		if (struct_exists(_struct, "sk10"))
 			o_saveload.skillCheck10=_struct.sk10;
+		if (struct_exists(_struct, "paint"))
+			o_saveload.painting=_struct.paint;
 		
 		//levels that are incompleted and are available to the player currently in variables 
 		
@@ -414,7 +417,8 @@ function load(_f)
 			sk7: false,
 			sk8: false,
 			sk9: false,
-			sk10: false
+			sk10: false,
+			painting: false
 		
 		}
 	

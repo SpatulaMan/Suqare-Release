@@ -8,3 +8,10 @@ _inst.weapon_type = obj_shotgun;
 _inst.drop_gun = choose(true,false,true);
 _inst.hp = 16;
 _inst.shtspd = 80;
+
+var _inst1 = instance_create_layer(x,y,"Instances_Action",o_gunSound);
+_inst1.sprite_index = s_attractorSound;
+if(instance_exists(inst_220150F4))
+{
+	inst_220150F4.alarm[2] = 1;
+}

@@ -86,14 +86,20 @@ if(((_wallsee and _doorsee) and abs(angle_difference(weapon.image_angle,pd1)) < 
 			if(bulamt < 25) { shtspd = 10; }
 			else if(bulamt > 25) { bulamt = 0; shtspd = 80; }
 		}
-		if(weapon_type == obj_shotgun) then { audio_play_sound(snd_heavygun,1,false,random_range(1.5,2)*o_saveload.sfxvol,0,random_range(.9,1.1)); }
+		if(weapon_type == obj_shotgun)
+		{ 
+			if(bulamt == 0 and distance_to_object(obj_suq) < 180) { audio_play_sound(snd_heavygun,1,false,random_range(1.5,2)*o_saveload.sfxvol,0,random_range(.9,1.1)); bulamt++; }
+			else if(distance_to_object(obj_suq) < 180 and bulamt != 0) { audio_play_sound(snd_shotgunCock,5,false,.5*o_saveload.sfxvol); bulamt = 0; }
+			shtspd = 40;
+			
+		}
 	    instance_create(x,y,o_gunSound);
 		shootCheck = shtspd;
 	    var Bulg = instance_create(x,y,weapon_bul);
 	    Bulg.direction = weapon.image_angle;
 	    Bulg.image_angle = weapon.image_angle;
 		Bulg.speed = weapon_spd;
-		if(weapon_type == obj_shotgun)
+		if(weapon_type == obj_shotgun and bulamt != 0)
 		{
 			var a1 = weapon.image_angle+choose(1,2);
 			var a2 = weapon.image_angle+choose(-1,-2);
@@ -103,7 +109,7 @@ if(((_wallsee and _doorsee) and abs(angle_difference(weapon.image_angle,pd1)) < 
 			var a6 = weapon.image_angle+choose(3,4);
 			var a7 = weapon.image_angle+choose(-3,-4);
 			var Bulg1 = instance_create(x,y,weapon_bul); Bulg1.direction = a1; Bulg1.image_angle = a1; Bulg1.speed = weapon_spd;
-			var Bulg2 = instance_create(x,y,weapon_bul); Bulg2.direction = a2.image_angle = a2; Bulg2.speed = weapon_spd;
+			var Bulg2 = instance_create(x,y,weapon_bul); Bulg2.direction = a2; Bulg2.image_angle = a2; Bulg2.speed = weapon_spd;
 			var Bulg3 = instance_create(x,y,weapon_bul); Bulg3.direction = a3; Bulg3.image_angle = a3; Bulg3.speed = weapon_spd;
 			var Bulg4 = instance_create(x,y,weapon_bul); Bulg4.direction = a4; Bulg4.image_angle = a4; Bulg4.speed = weapon_spd;
 			var Bulg5 = instance_create(x,y,weapon_bul); Bulg5.direction = a5; Bulg5.image_angle = a5; Bulg5.speed = weapon_spd;

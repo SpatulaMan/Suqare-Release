@@ -55,6 +55,13 @@ function scr_levelEnd(car,range_optional)
 	if(instance_exists(obj_suq) and !range_optional)
 	{
 		obj_suq.progress++;
+		//add functionality that doesn't continue game unless the level is beaten
+		/*
+		if(o_saveload.nofail)
+		{
+			obj_suq.progress--;
+		}
+		*/
 		if(car) { o_lvlEnd.check = false; }
 		switch(room)
 		{
@@ -86,6 +93,13 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.ynet += 3;
 				//setting level to done so that it doesn't show up in lvl select
 				obj_suq.lvldone[obj_suq.lvl] = true;
+				//Add functionality to never remove the level and you can repeat it endlessly
+				/*
+				if(o_saveload.easymode)
+				{
+					obj_suq.lvldone[obj_suq.lvl] = false;
+				}
+				*/
 				if(obj_suq.gems < 3 and obj_suq.gems > 0)
 				{
 					o_saveload.knet += 5;
@@ -324,6 +338,74 @@ function scr_levelEnd(car,range_optional)
 					if(o_obj_L9.ob3 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 2; obj_suq.money += 1000*_emtBill; }
 				}
 			} break;
+			case r_lvl_10:
+			{
+				o_saveload.hnet -= 1;
+				o_saveload.unet -= 1;
+				o_saveload.gnet -= 1;
+				o_saveload.pnet += 2;
+				o_saveload.knet -= 2;
+				o_saveload.ynet -= 1;
+				var _money = 0;
+				if(obj_suq.culprit == 1 and instance_number(o_guest) == 13)
+				{
+					_money += 6000;
+					obj_suq.report = 25;
+				}
+				else if(obj_suq.culprit == 2 and instance_number(o_guest) == 13)
+				{
+					_money += 4000;
+					obj_suq.report = 26;
+				}
+				else if(obj_suq.culprit == 3 and instance_number(o_guest) == 13)
+				{
+					_money += 3000;
+					obj_suq.report = 27;
+				}
+				else if(obj_suq.culprit == 4 and instance_number(o_guest) == 13)
+				{
+					_money += 2000;
+					obj_suq.report = 28;//wrong and too many accused, but at least you attended
+				}
+				else if(obj_suq.culprit == 5 and instance_number(o_guest) == 13)
+				{
+					_money += 2000;
+					obj_suq.report = 29;//wrong guess, but at least you attended
+				}
+				if(obj_suq.painting and o_L10.yellenDead)
+				{
+					obj_suq.report = 30;//You killed Yellen and stole painting
+					obj_suq.yellerteeth -= 1;
+					obj_suq.kanker -= 1;
+					obj_suq.gildebrand -= 1;
+					obj_suq.ungulate -= 1;
+					obj_suq.hiertech -= 1;
+					obj_suq.perez -= 1;
+				}
+				else if(obj_suq.painting and o_L10.yellenDead == false)
+				{
+					obj_suq.report = 32;//You stole painting
+				}
+				else if(o_L10.yellenDead)
+				{
+					obj_suq.report = 33;//You killed Yellen
+					obj_suq.yellerteeth -= 1;
+					obj_suq.kanker -= 1;
+					obj_suq.gildebrand -= 1;
+					obj_suq.ungulate -= 1;
+					obj_suq.hiertech -= 1;
+					obj_suq.perez -= 1;
+				}
+				else if(obj_suq.culprit == 0 and o_L10.ob1 == false)
+				{
+					obj_suq.report = 31;//You left without doing anything
+				}
+				else if(instance_exists(obj_guard))
+				{
+					obj_suq.report = 34;//you caused chaos
+				}
+				obj_suq.money += _money;
+			}
 		}
 		if(!car and !range_optional)
 		{

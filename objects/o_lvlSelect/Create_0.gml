@@ -90,4 +90,5 @@ switch(prog)
 			if(obj_suq.lvldone[4] == false and obj_suq.lvldone[3] == false) { array_insert(lvl,t,4); t++; }
 			break;
 	case 0: array_insert(lvl,t,0); t++;
+			array_insert(lvl,t,9); t++;//remove this later
 }

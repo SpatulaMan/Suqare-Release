@@ -125,3 +125,4 @@ skillCheck7 = false;
 skillCheck8 = false;
 skillCheck9 = false;
 skillCheck10 = false;
+painting = false;

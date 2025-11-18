@@ -572,9 +572,9 @@ if(pickup_timer > 0)
 					draw_text_transformed_colour(roomw/2,roomh*.01,string_hash_to_newline("CAN'T CARRY MORE WEAPONS"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90);
 				}break;
 		case 42: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("PP9 AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
-		case 43: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
-		case 44: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
-		case 45: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 43: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ESMERELDA PAINTING"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 44: draw_text_transformed_colour(roomw/2,roomh*.35,string_hash_to_newline("PRESS T TO MARK AS SUSPECT"),2,2,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 45: draw_text_transformed_colour(roomw/2,roomh*.35,string_hash_to_newline("PRESS ENTER TO CONFIRM MARKED SUSPECTS"),2,2,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 46: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 47: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 48: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;

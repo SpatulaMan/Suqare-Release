@@ -444,69 +444,73 @@ if(health > 0)
 			pp7Have = 0;
 	    }
 	}
-    if(gunEquip == 0 and knifeHave == 1)
-    {
-        cursor_sprite = spr_baseC;
-    }
-	else if(gunEquip == 0)
+	if(pr == true or mgr == true or arr == true or sgr == true or snr == true or mr == true or rlr == true or fr == true or shr == true or ppr == true)
+	{
+		cursor_sprite = s_reloading;
+	}
+	else if(gunEquip == 0 and knifeHave != 1)
 	{
 		cursor_sprite = spr_unarmed;
 	}
-    if(gunEquip == 1)
+    else if(gunEquip == 1)
     {
         cursor_sprite = spr_pistolC;
     }
-    if(gunEquip == 2)
+    else if(gunEquip == 2)
     {
         cursor_sprite = spr_magnumC;
     }
-    if(gunEquip == 3)
+    else if(gunEquip == 3)
     {
         cursor_sprite = spr_machineGunC;
     }
-    if(gunEquip == 4)
+    else if(gunEquip == 4)
     {
         cursor_sprite = spr_assaultRifleC;
     }
-    if(gunEquip == 8)
+    else if(gunEquip == 8)
     {
         cursor_sprite = spr_sniperRifleC;
     }
-    if(gunEquip == 7)
+    else if(gunEquip == 7)
     {
         cursor_sprite = spr_flamethrowerC;
     }
-    if(gunEquip == 9)
+    else if(gunEquip == 9)
     {
         cursor_sprite = spr_rocketLauncherC;
     }
-    if(gunEquip == 5)
+    else if(gunEquip == 5)
     {
         cursor_sprite = spr_shotgunC;
     }
-    if(gunEquip == 6)
+    else if(gunEquip == 6)
     {
         cursor_sprite = spr_knifeC;
     }
-	if(gunEquip == 10 and boomerangHave == 1)
-	{
-		cursor_sprite = spr_boomC;
-	}
-	if(gunEquip == 11 and swordHave == 1)
-	{
-		cursor_sprite = spr_swordC;
-	}
-	if(gunEquip == 12 and shuriken > 0)
-	{
-		cursor_sprite = spr_shurikenC;
-	}
-	if(gunEquip == 13 and ghostGunHave > 0)
+	else if(gunEquip == 13 and ghostGunHave > 0)
 	{
 		cursor_sprite = spr_ghostGunC;
 	}
-	if(gunEquip == 14 and pp7Have > 0)
+	else if(gunEquip == 14 and pp7Have > 0)
 	{
 		cursor_sprite = spr_pp7C;
+	}
+	if(gunEquip == 0 and knifeHave == 1)
+    {
+        cursor_sprite = spr_baseC;
+    }
+	else if(gunEquip == 12 and shuriken > 0)
+	{
+		cursor_sprite = spr_shurikenC;
+	}
+	else if(gunEquip == 11 and swordHave == 1)
+	{
+		cursor_sprite = spr_swordC;
+	}
+	else if(gunEquip == 10 and boomerangHave == 1)
+	{
+		cursor_sprite = spr_boomC;
 	}
     if(canSGShoot <= 0) then canSGShoot = 0;
     if(canSGShoot > 0) then canSGShoot--; 

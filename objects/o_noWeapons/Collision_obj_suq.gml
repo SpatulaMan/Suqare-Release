@@ -8,8 +8,12 @@ if((other.pistolHave == true or other.magnumHave == true or other.machineGunHave
 	{
 		with (o_guard_replace) instance_destroy();
 	}
+	if(instance_exists(o_convo))
+	{
+		with (o_convo) instance_destroy();
+	}
 	var _inst = instance_create_layer(x+10,y-10,"Instances_Action",o_gunSound);
-	_inst.sprite_index = s_attractorSound;
+	_inst.sprite_index = s_alarmSound;
 	alarm_check = true;
 	alarm_set(2,1);
 }

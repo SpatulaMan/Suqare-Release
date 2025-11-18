@@ -9,6 +9,8 @@ function scr_briefing(t){
 	a[996] = "Q - BACK";
 	a[995] = "G - SKIP TO END";
 	a[994] = "F - CLOSE";
+	a[993] = "SPACEBAR - CLOSE";
+	a[992] = "F - CLOSE";
 	a[1] = @"BRIEFING:
 			A criminal gang has sprung up out of nowhere, and police are
 			doing nothing about it. They steal and murder without any 
@@ -451,7 +453,7 @@ function scr_briefing(t){
 			entertainment for the evening isn't able to make it. So,
 			as a backup, I thought about bringing a mercenary in as an
 			interesting case study. They'll ask you questions about how
-			you got into this business, what you're motives are, etc. 
+			you got into this business, what your motives are, etc. 
 			It'll be a fun evening picking the brain of a mercenary
 			for the first time. 
 			
@@ -471,10 +473,10 @@ function scr_briefing(t){
 			Yellen Egbert II: N/A
 			Combat Difficulty: ?
 			Mental Difficulty: ?
-			Locked Doors: 0
+			Locked Doors: ?
 			Req. Locked Doors: 0
-			Keys Available: 0
-			Reward: $2500
+			Keys Available: ?
+			Reward: $2000
 			
 			
 			
@@ -487,136 +489,113 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[59] = @"Attend Party";
+	//text for small text box is 128 across, and 11 char-13's
 	a[60] = @"Yellen Egbert II:
-			Oh, no! My butler is dead and the 'esmerelda' has been
-			stolen! Whoever could have done such a thing? Suqare, could
-			you please investigate and figure out who did this? I would
-			be forever in your debt. My guards already locked all the 
-			doors to the outside, so no one could have gotten in or 
-			out. Please question everyone here and investigate all you
-			can. 
+			Oh, no! My butler is dead and the 'esmerelda' has been stolen! Whoever could have done such a thing? Suqare, could 
+			you please investigate and figure out who did this? I would be forever in your debt. My guards already locked all 
+			the doors to the outside, so no one could have gotten in or out. Please question everyone here and investigate all
+			you can. 
 			
-			Once you know who the culprit is, mark/unmark them by 
-			walking up to them and pressing 'T'. Then come back to me 
-			and press 'Enter'. I will then unlock the doors so you can 
-			leave. The police will come and arrest the guests you 
-			marked, and I'll follow up with you after you leave.";//estate owner reaction
-	a[61] = @"Find Culprit";//New Objective
+			Once you know who the culprit is, mark them by walking up to them and pressing 'T'. Then come back to me and press 
+			'Enter'. I will then unlock the doors so you can leave. The police will come and arrest the guests you marked, and
+			I'll follow up with you after you leave.";//estate owner reaction
+	a[61] = @"Accuse Suspects";//New Objective
 	a[62] = @"Yellen Egbert II:
-			I stepped back the moment the lights went out, and I saw
-			some kind of glimmer flash by briefly as it went past 
-			me. Then I saw your knife in him when the lights came back 
-			on It is your knife in him, but why would you kill the 
-			butler and steal the art? I think you're innocent.
+			I stepped back the moment the lights went out, and I saw some kind of glimmer flash by briefly as it went past me. 
+			Then I saw a knife in him when the lights came back on. It is your knife, but why would you kill the butler and 
+			steal the art? I think you're innocent.
 			
-			The power couldn't have been turned off from in here. 
-			That's the most puzzling thing about this. All of the 
-			guards are still at their posts too. It seems impossible. ";//estate owner statement
+			The power couldn't have been turned off from in here. That's the most puzzling thing about this. All of the guards
+			are still at their posts too. It seems impossible. ";//estate owner statement
 	a[63] = @"Chef Quergy Catabombs:
-			Why are you questioning me? It was obviously you who did
-			it! Look, it's your knife! Not sure how you got it in here,
-			but no one else has a knife like that, so it must've been
-			you. 
+			Why are you questioning me? It was obviously you who did it! Look, it's your knife! Not sure how you got it in 
+			here, but no one else has a knife like that.
 			
-			All I know is that the waiter I was working with had to go
-			to the bathroom, and he looked uncomfortable and shady. At
-			worst it just means he's an accomplice of yours!";//chef Quergy Catabombs statement
+			I know the waiter I was working with had to go to the bathroom, and he looked uncomfortable and shady. Maybe he was
+			working with you!";//chef Quergy Catabombs statement
 	a[64] = @"Lawyer Jez Borden: 
 			No comment.";//Lawyer Jez Borden statement
 	a[65] = @"Waiter Gerivalt Redily:
-			I was in the kitchen during the incident. I saw a 
-			hankerchief fly out from someone's pocket right before the
-			lights went out. I didn't see who threw it, but it seemed
-			very forceful. Like someone grabbed it quickly from someone
-			else and lost hold of it. I think it was a man and a woman.";//Waiter Gerivalt Redily statement
+			I was in the kitchen during the incident. I saw a hankerchief fly out from someone's pocket right before the lights
+			went out. I didn't see who threw it, but it seemed very forceful. Like someone grabbed it quickly from someone else
+			and lost hold of it. I think it was a man and a woman.";//Waiter Gerivalt Redily statement
 	a[66] = @"Janitor Hops Voodoo:
-			I didn't see anything. I was just coming out of the 
-			bathroom after someone tried to flush something down the
-			toilet. I didn't see who did it. I left it in there since
-			there was so much commotion out here.";//janitor Hops Voodoo statement
+			I didn't see anything. I was just coming out of the bathroom after someone tried to flush something down the 
+			toilet. I didn't see who did it or what it was. I left it in there since there was so much commotion out here.";//janitor Hops Voodoo statement
 	a[67] = @"Treasurer Jonald Hiden
-			I heard a sound like a door open right after the lights
-			went out. It could have been the bathroom attendent, but
-			that door seems too far away to me. Every door here is 
-			locked, though, so that has to be the explanation. ";//Treasurer Jonald Hiden
-	a[68] = @"Yellen Egbert's younger brother Helen Egbert II:
-			What a tragedy! I can't believe something like this 
-			could happen. Everything was perfect. How'd anyone plan
-			around our security? I lost my key too... And something I
-			was going to return to... uh... someone I admire. 
+			I heard a sound like a door open right after the lights went out. It could have been the bathroom attendent, but 
+			that door seems too far away to me. Every door here is locked, though, so that has to be the explanation. ";//Treasurer Jonald Hiden
+	a[68] = @"Helen Egbert II:
+			What a tragedy! I can't believe something like this could happen. Everything was perfect. How'd anyone plan around
+			our security? I lost my key too... And something I was going to return to... uh... someone I admire. 
 			
-			I was trying to protect my sister in law Jellen, so I 
-			grabbed her and ducked when the lights went out. I had to
+			I was trying to protect my sister in law Jellen, so I grabbed her and ducked when the lights went out. I had to 
 			make sure those around me were safe.";//Estate owner's younger brother Helen Egbert II (Named after their mom)
-	a[69] = @"Yellen Egbert's Wife Jellen Egbert:
-			I was grabbed by Helen Egbert, my husband's younger 
-			brother right when the commotion happened. He screamed so
-			loud that I couldn't hear anything. But...
+	a[69] = @"Jellen Egbert:
+			I was grabbed by Helen Egbert, my husband's younger brother right when the commotion happened. He screamed so loud
+			that I couldn't hear anything. But...
 			
-			Helen has wanted me from the moment Yellen first brought me
-			around. I bet he hired someone to kill Yellen and used the 
-			art piece as payment. I bet the assassin missed and killed 
-			the butler instead. Only Yellen and Helen have a key to 
-			open the case. I would bet anything that Helen is the 
-			culprit.";//Estate owner wife Jellen Egbert
+			Helen has wanted me from the moment Yellen first brought me around. I bet he hired someone to kill Yellen and used 
+			the art piece as payment. I bet the assassin missed and killed the butler instead. Only Yellen and Helen have a key 
+			to open the case. I would bet anything that Helen is the culprit.";//Estate owner wife Jellen Egbert
 	a[70] = @"Bathroom Attendant Darby Warshington:
-			Only the janitor came in here all night. The door was
-			propped open at the time of the incident, and I closed it
-			right after the lights came on.";//bathroom attendant Darby Warshington
+			The door was propped open at the time of the incident, and I closed it right after the lights came on. I didn't 
+			notice anything weird. A lot of people use the bathroom. ";//bathroom attendant Darby Warshington
 	a[71] = @"Floozy Patasha Wanzitoot:
-			What happened? Someone died? The art was stolen? Oh my
-			goodness, that's awful! I was cowering under the table when 
+			What happened? Someone died? The art was stolen? Oh my goodness, that's awful! I was cowering under the table when 
 			the lights went out, so I'm a bit shaken up. ";//floozy Patasha Wanzitoot
 	a[72] = @"Diplomat Uranda Palamoose:
-			I saw Patasha near Helen right before the lights went 
-			out. Is she interested in him? Surely she knows that Helen
-			wouldn't be interested. Why was she near him then? In fact,
-			why is she here at all?";//Diplomat Uranda Palamoose
+			I saw Patasha near Helen right before the lights went out. Is she interested in him? Surely she knows that Helen
+			wouldn't be interested. Why was she near him then? In fact, why is she here at all?";//Diplomat Uranda Palamoose
 	a[73] = @"Guard Kresh Wanzitoot:
-			How'd that door come open? I swear it was locked! I guess
-			whoever the culprit is picked the lock, but couldn't escape
-			since I've been here the whole time. I didn't see anyone 
-			come or go either. We've kept this place locked down tight.";//Guard Kresh Wanzitoot
+			How'd that door come open? I swear it was locked! I guess whoever the culprit is picked the lock, but couldn't 
+			escape since I've been here the whole time. I didn't see anyone come or go either. We've kept this place locked 
+			down tight.";//Guard Kresh Wanzitoot
 	a[74] = @"Reporter Iris Lagrange:
-			I smell something fishy here. Your knife was the murder
-			weapon, but you've been told to investigate. Sounds like a
-			cover up to me. I bet Yellen is low on money and needed a
-			patsy to take the blame for a murder theft. He took your 
-			knife, killed the butler, and took the art himself to
-			sell it to the highest bidder. Sound possible? Because 
-			that's how it happened, I'm sure of it.";//Reporter Iris Lagrange
-	a[75] = @"Guest List:
-			Iris lagrange,
-			Uranda Palamoose,
-			Helen Egbert II,
-			Jonald Hiden,
-			Jez Borden,
-			Suqare,
-			
-			Staff:
-			Bathroom attendant: Darby Warshington,
-			Waiter: Gerivalt Redily,
-			Janitor: Hops Voodoo,
-			Chef: Quergy Catabombs,
-			Butler: Pertey Nandi";//Evidence: Pistol in toilet with 0 bullets, knife in butler (yours), unlocked glass case, not actually locked door, hankerchief with JE initials, guest list without Patasha's name on it, a note in Yellen's office firing Bollivar Thornaby, Traby Gire, and Kresh Wanzitoot
-	a[76] = @"To whom it may concern:
+			I smell something fishy here. Your knife was the murder weapon, but you've been told to investigate. Sounds like a
+			cover up to me. I bet Yellen is low on money and needed a patsy to take the blame for a murder theft. He took your 
+			knife, killed the butler, and took the art himself to sell it to the highest bidder. Sound possible? That's because
+			it's the most probable scenario.";//Reporter Iris Lagrange
+	a[75] = @"Guest List:       Staff:
+			Iris lagrange,      Bathroom attendant: Darby Warshington,
+			Uranda Palamoose,   Waiter: Gerivalt Redily,
+			Helen Egbert II,    Janitor: Hops Voodoo,
+			Jonald Hiden,       Chef: Quergy Catabombs,
+			Jez Borden,         Butler: Pertey Nandiz
+			Suqare,";
+	//Evidence: Pistol in toilet with 0 bullets, knife in butler (yours), unlocked glass case, not actually locked door, hankerchief with JE initials, guest list without Patasha's name on it, a note in Yellen's office firing Bollivar Thornaby, Traby Gire, and Kresh Wanzitoot
+	a[76] = @"Dear employees,
 			Bollivar Thornaby, Traby Gire, and Kresh Wanzitoot,
 			
-			I regrettfully inform you that your time here as guards at
-			the manor has come to a close. Please pack up your things
-			and leave promptly after the dinner party is over tonight.
+			I regrettfully inform you that your time here as guards at the manor has come to a close. Please pack up your 
+			things and leave promptly after the dinner party is over tonight.
 			
-			I hope there are no hard feelings and you all find new
-			opportunities for employment soon. 
+			I hope there are no hard feelings and you all find new opportunities for employment soon. 
 			
 			Sincerely yours,
 			Yellen Egbert II
 			
 			Sent Yesterday";//Culprits Kresh Wanzitoot and Patasha Wanzitoot
-	a[77] = @"Guards:
-			No weapons allowed. Please drop them by your car. ";//guards telling you to not bring in weapons
-	a[78] = @"";//New weapon, Silenced pistol. No sound circle generated, damage same as regular magnum, 4 round mag, long reload time, really fast bullet speed
-	a[79] = @"";// Who are the culprits? Give option to select any of the people there. Once selected, Press Enter by Yellen and end the mission.  
+	a[77] = @"No weapons allowed. Please drop them by your car.";//guards telling you to not bring in weapons
+	a[78] = @"Yellen Egbert II:
+			Thanks for your help with the investigation. We'll have the suspects detained for the cops to look into. I'll wire
+			the money to your account, and I'll throw in a bonus if we retrieve the painting and catch all the culprits.";
+			//New weapon, Silenced pistol. No sound circle generated, damage same as regular magnum, 4 round mag, long reload time, really fast bullet speed
+	a[79] = @"Dear Aunt Pauly,
+			I absolutely hate Yellen. He married the girl of my dreams, and he got to be named after our father. Why did I get
+			stuck with being Helen Egbert II? No one's ever heard of their mom passing down a name to a son like this! I just
+			wish there was something I could do to make my life better and his life worse. My older brother is a sorry excuse
+			for a husband, and I would treat Jellen so much better.			
+			
+			I'm just venting, but it would be nice. Please don't tell anyone I said this, and thank you for always hearing me
+			out. 
+			
+			Sincerely
+			Helen Egbert II";// Who are the culprits? Give option to select any of the people there. Once selected, Press Enter by Yellen and end the mission.  
+	a[80] = @"
+			
+			
+			J.E.";
 /*
 15: Vambrace of Wurtu
 21: Jewel of Barfo, Ghost ninjas too
@@ -1746,11 +1725,163 @@ function debrief(m)
 			
 			
 			"+_t;
-	c[25] = @"";
-	c[26] = @"";
-	c[27] = @"";
-	c[28] = @"";
-	c[29] = @"";
+	c[25] = @"Objectives Complete
+			
+			Payout: $6000
+			
+			Response From Hiring Firm:
+			We got confessions from both suspects you told me about and retrieved the 
+			painting. The guard was the one to steal your knife, turn off the power, and 
+			kill the butler. Patasha, that floozy, was let in by her husband Kresh even
+			though she wasn't on the guest list. She was the one who stole Helen's key and
+			took the painting. 
+			
+			Result: 
+			You found the culprits and succeeded in retrieving the esmerelda. 
+			
+			
+			Press Spacebar to continue ";
+	c[26] = @"Objectives Complete
+			
+			Payout: $4000
+			
+			Response From Hiring Firm:
+			We got a confession from the suspect you told me about and retrieved the 
+			painting. Patasha, that floozy, somehow infiltrated the dinner party. She 
+			stole Helen's key and the painting as well. We still don't know who killed the
+			butler or turned off the power, though. Good job, nonetheless. 
+			
+			Result: 
+			You found the thief and succeeded in retrieving the esmerelda. You failed to
+			find the accomplice who killed the butler. 
+			
+			
+			Press Spacebar to continue ";
+	c[27] = @"Objectives Complete
+			
+			Payout: $3000
+			
+			Response From Hiring Firm:
+			We got a confession from the suspect you told me about but didn't retrieve the 
+			painting. Kresh Wanzitoot, the guard, stole your knife, killed the butler, and
+			turned off the power. He must've had an accomplice because we never found the
+			esmerelda. He was working with someone, but I'm not sure we'll ever know who.
+			Thanks for your help regardless. 
+			
+			Result: 
+			You found the murderer, but you failed to find the accomplice who stole the 
+			painting. 
+			
+			
+			Press Spacebar to continue ";
+	c[28] = @"Objectives Complete
+			
+			Payout: $2000
+			
+			Response From Hiring Firm:
+			There were too many people accused, and it confused the cops. The whole 
+			investigation fell apart since there wasn't a focused attempt to get a 
+			confession from the culprit or culprits at hand. They couldn't get any of the
+			evidence to stick. Sadly, we caught no one, and we lost the painting. 
+			
+			Result: 
+			You spread a wide net of accusations, but couldn't find who did the crimes. 
+			You still got a reward for attending, but nothing more. 
+			
+			
+			Press Spacebar to continue ";
+	c[29] = @"Objectives Complete
+			
+			Payout: $2000
+			
+			Response From Hiring Firm:
+			None of the evidence stuck to the people you accused. Therefore, the crimes
+			will go unanswered, and the esmerelda is gone. You just couldn't figure out
+			who did it. Thanks for trying, though. Here's your appearance fee. 
+			
+			Result: 
+			You didn't find who was responsible for the crimes, but you at least got paid
+			something for your time. 
+			
+			
+			Press Spacebar to continue ";
+	c[30] = @"Objective Failed
+			
+			Payout: $0
+			
+			Response From Hiring Firm:
+			...
+			
+			Result: 
+			You killed the person who hired you and stole the painting for yourself. For
+			this depraved action, your standing with every single company has gone down.
+			They'll most likely still work with you, but watch out for that. 
+			
+			
+			Press Spacebar to continue ";
+	c[31] = @"Objective Failed
+			
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You just left. Didn't even come inside. That's messed up, man. Apparently 
+			someone planned a heist of the esmerelda painting, and they got away with it,
+			so it would have been nice to have to you there to thwart it. 
+			
+			Result: 
+			You left. The esmerelda got stolen. You didn't get wrapped up in an 
+			investigation, though. 
+			
+			
+			Press Spacebar to continue ";
+	c[32] = @"Objective Failed
+			
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You stole esmerelda! How could you? I invite you to my dinner party, and you
+			treat me like this? I will have your head! 
+			
+			Result: 
+			You stole the painting for yourself. Check it out. It gives the place a nice 
+			feng shui. 
+			
+			
+			Press Spacebar to continue ";
+	c[33] = @"Objective Failed
+			
+			Payout: $0
+			
+			Response From Hiring Firm:
+			...
+			
+			Result: 
+			You killed the person who hired you.. For this depraved action, your standing 
+			with every single company has gone down. They'll most likely still work with 
+			you, but watch out for that.
+			
+			
+			Press Spacebar to continue ";
+	c[34] = @"Objective Failed
+			
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You caused so much chaos at my manor! Possibly killing guests and guards. It
+			was a manic display of insanity, and I can't believe I ever invited you over.
+			I need to go make sure my wife is okay. Hopefully you didn't kill her too! 
+			
+			Result: 
+			You caused a ruckus and left. Not sure why or what you got out of the 
+			situation, but maybe it was fun. 
+			
+			
+			Press Spacebar to continue";
+	c[35] = @"";
+	c[36] = @"";
+	c[37] = @"";
+	c[38] = @"";
+	c[39] = @"";
 	return c[m];
 }
 function tutorial(k)
