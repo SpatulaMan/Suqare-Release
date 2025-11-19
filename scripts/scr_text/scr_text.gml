@@ -573,6 +573,15 @@ function scr_conversation(t)
 			proficiency in combat.";
 	a[7] = @"This is where the trophies you acquire during missions will be displayed. If you're short on cash, you might be 
 			able to sell some of them. ";
+	a[8] = @"An exquisite piece of fine art depicting the ghostly figure of Esmerelda. It has invoked feelings of deep emotion
+			in the hearts of the many throughout its years on display. Sadly, the artist has been lost to time with no one ever
+			discovering who was responsible for its creation. 
+	
+			Do you want to sell the Esmerelda? 
+			
+			Valuation: $10,000
+			
+			Press Spacebar to sell";
 	a[60] = @"Yellen Egbert II:
 			Oh, no! My butler is dead and the 'esmerelda' has been stolen! Whoever could have done such a thing? Suqare, could 
 			you please investigate and figure out who did this? I would be forever in your debt. My guards already locked all 
@@ -643,7 +652,7 @@ function scr_conversation(t)
 			Uranda Palamoose,   Waiter: Gerivalt Redily,
 			Helen Egbert II,    Janitor: Hops Voodoo,
 			Jonald Hiden,        Chef: Quergy Catabombs,
-			Jez Borden,          Butler: Pertey Nandiz
+			Jez Borden,           Butler: Pertey Nandiz
 			Suqare,";
 	//Evidence: Pistol in toilet with 0 bullets, knife in butler (yours), unlocked glass case, not actually locked door, hankerchief with JE initials, guest list without Patasha's name on it, a note in Yellen's office firing Bollivar Thornaby, Traby Gire, and Kresh Wanzitoot
 	a[76] = @"Dear employees,

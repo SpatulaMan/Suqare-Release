@@ -334,7 +334,7 @@ if(shotgunHave == 1 and gunEquip == 5)
 		audio_play_sound(snd_shotgunReload,5,false,.6*o_saveload.sfxvol);
 		shotgunAmt--;
 		sgrt = 60-sgmr;
-		if(sgMag == (6+sgda)) then { sgr = false; sgrt = 60-sgmr; audio_play_sound(snd_shotgunCock,10,false,o_saveload.sfxvol);  }
+		if(sgMag == (6+sgda) or shotgunAmt == 0) then { sgr = false; sgrt = 60-sgmr; audio_play_sound(snd_shotgunCock,10,false,o_saveload.sfxvol);  }
 		if(shotgunAmt == 0) then audio_play_sound(snd_shotgunCock,10,false,o_saveload.sfxvol); 
 	}
     draw_text_transformed_color(1550,940,string_hash_to_newline("" + string(sgMag) + "|" + string(shotgunAmt) + " "),3,3,0,c_aqua,c_aqua,c_aqua,c_aqua,1);

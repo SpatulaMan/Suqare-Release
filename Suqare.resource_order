@@ -313,6 +313,7 @@
     {"name":"r_lvl_0","order":4,"path":"rooms/r_lvl_0/r_lvl_0.yy",},
     {"name":"r_lvl_1","order":5,"path":"rooms/r_lvl_1/r_lvl_1.yy",},
     {"name":"r_lvl_10","order":28,"path":"rooms/r_lvl_10/r_lvl_10.yy",},
+    {"name":"r_lvl_15","order":29,"path":"rooms/r_lvl_15/r_lvl_15.yy",},
     {"name":"r_lvl_2","order":9,"path":"rooms/r_lvl_2/r_lvl_2.yy",},
     {"name":"r_lvl_3","order":11,"path":"rooms/r_lvl_3/r_lvl_3.yy",},
     {"name":"r_lvl_4_1","order":13,"path":"rooms/r_lvl_4_1/r_lvl_4_1.yy",},
