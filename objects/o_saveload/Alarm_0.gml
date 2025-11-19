@@ -1,3 +1,3 @@
 /// @description 
-inst_200059D9.x = 376;
-inst_200059D9.y = 455;
+inst_7F0373ED.x = 376;
+inst_7F0373ED.y = 455;

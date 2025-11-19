@@ -6,7 +6,7 @@ Random Golden Key Fragments around levels with flavor text talking about a legen
 
 1st key fragment in lvl 6 Horror
 	Hidden in the Maze
-2nd key fragment in lvl 10 Art Auction
+2nd key fragment in lvl 10 Dinner Party
 	Enemy Invulnerable to normal bullets. Only explosions can kill it to reveal the fragment
 3rd key fragment in lvl 12 Steal Weapon From Company - Can keep the weapon or give it to the company
 	

@@ -23,7 +23,7 @@ and
 
 -Ungulate Studios Plan - Keep Evil corporations in check:
 4: kidnap girl
-12: Steal weapon from Hiertech
+11: Steal weapon from Hiertech
 22: Stop Contraband Runners (stop cars from getting loaded with contraband. Some armored machine gun cars between the stocking buildings of which there's 3)
 29: Prevent Theft of Museum artifacts, Ghosts haunt you as well
 36: Prison Break, break into prison secretly, and sneak a few wrongfully convicted inmates out - NL besides ghosts that haunt the place
@@ -51,7 +51,6 @@ and
 
 -Gildebrand Consulting Plan - Help people with small requests, and make life better for everyone:
 8: Eradicate spiders
-11: Prove Hiertech is targeting charities. Sneaky level - NL
 17: Help Old Ladies to cross the street(hurts Hiertech in net worth and standings because he's racing cars with cargo through there)
 26: High Stakes Poker Game (win 3 hands of poker out of 5 to smoke out who's the Hiertech mole who's trying to save himself since he lost cargo and is in debt to them. If we win, maybe we can convince him to turn on Hiertech (connected to level 22)
 34: Save Historic Building (Yellerteeth Inc wants to take down the building covertly overnight and claim it fell on its own and buy the land to expand its parking lot. Stop their machine!) 
@@ -65,7 +64,7 @@ Others:
 6: Ghost
 10: Dinner Party (solve murder and painting theft) - NL
 14: Gun Club - NL (the local gun club stole my weapon from me, and they won't give it back. They're armed and will shoot, but please don't kill any of them. They're my dad's friends I'll only give you a reward if you can get my gun back without bloodshed. 
-23: Bodyguard at Dinner Party (Murder Mystery. Talk to all of the attendees after the lights went out to see who the murderer is. Whoever you choose is who they take into custody. It'll say something like, "You'll always wonder if you got the right person." or "He plead guilty" depending on if you choose correctly.)
+23: Loot abandoned pirate ship. (Maybe have levels before this where you find clues and get get attacked by another group trying to find the treasure in the ship. Really hard riddles you'll need to figure out to unlock the next levels)
 38: Want Some Stuff? This guy wants to sell you some good stuff. Just need to find him in a haunted mansion. You won't be able to sell these items back. Sells you really a couple good weapons and gadgets. 
 40: Tower Defense
 48: Destroy super weapon and stop kanker and Co - President
@@ -91,12 +90,12 @@ or
 7: Destroy Gems
 8: Eradicate spiders
 9: Ring of Tarpho
-		10: Dinner Party (solve murder and painting theft) - NL
-		11: Prove Hiertech is targeting charities. Sneaky level - NL
-		12: Steal weapon from Hiertech
+10: Dinner Party (solve murder and painting theft) - NL
+		11: Steal weapon from Hiertech
+		12: Steal finance tech from Kanker and Co.
 		13: Steal plans and kidnap scientist to make super weapon
 		14: Gun Club - NL
-		15: Vambrace of Wurtu
+	15: Vambrace of Wurtu
 		16: Destroy Big Tank that could stop whole plan
 		17: Help Old Ladies to cross the street(hurts Hiertech in net worth and standings because he's racing cars with cargo through there)
 		18: Contraband

@@ -70,7 +70,7 @@ lock50=0;
 attract=0;
 decoy=0;
 turret=0;
-fragment=0;
+fragment=[false,false,false,false];
 gemsD=0;
 bank=0;
 //weapon upgrades

@@ -35,4 +35,29 @@ if(obj_suq.ggh > 0 and !instance_exists(obj_ghostGun))
 if(obj_suq.pph > 0 and !instance_exists(obj_pp7))
 	instance_create_layer(x,y,"Instances_Action",obj_pp7);
 	
+if(obj_suq.painting and !instance_exists(o_esmerelda))
+{
+	instance_create_layer(689,383,"Instances_Action",o_esmerelda);
+}
+if(obj_suq.fragment[0] == true)
+{
+	var inst = instance_create_layer(688,512,"Instances_Action",o_gFrag);
+	inst.image_index = 0;
+}
+if(obj_suq.fragment[1] == true)
+{
+	var inst = instance_create_layer(690,513,"Instances_Action",o_gFrag);
+	inst.image_index = 1;
+}
+if(obj_suq.fragment[2] == true)
+{
+	var inst = instance_create_layer(690,512,"Instances_Action",o_gFrag);
+	inst.image_index = 2;
+}
+if(obj_suq.fragment[3] == true)
+{
+	var inst = instance_create_layer(688,511,"Instances_Action",o_gFrag);
+	inst.image_index = 3;
+}
+	
 alarm_set(1,10);
