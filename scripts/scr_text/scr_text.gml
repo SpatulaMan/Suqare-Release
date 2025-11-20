@@ -582,6 +582,11 @@ function scr_conversation(t)
 			Valuation: $10,000
 			
 			Press Spacebar to sell";
+	a[9] = @"You have awakened the ghost of Gary Sanders. He wasn't happy in life, and he's doubly not happy in death. His only
+			fun is to manifest dangerous gremlins and cause disruption in this abandoned house. Relieve him of his misery. 
+	
+			You must find 3 totems to unlock a secret passageway to the only weapon that is effective against him. The fabled
+			ghost gun. Once you have it, you'll be able to kill him. ";
 	a[60] = @"Yellen Egbert II:
 			Oh, no! My butler is dead and the 'esmerelda' has been stolen! Whoever could have done such a thing? Suqare, could 
 			you please investigate and figure out who did this? I would be forever in your debt. My guards already locked all 

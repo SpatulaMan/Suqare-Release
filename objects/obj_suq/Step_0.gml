@@ -444,7 +444,7 @@ if(health > 0)
 			pp7Have = 0;
 	    }
 	}
-	if((pr == true or mgr == true or arr == true or sgr == true or snr == true or mr == true or rlr == true or fr == true or shr == true or ppr == true) and ((gunEquip > 0 and gunEquip < 10) or gunEquip == 14))
+	if((pr == true or mgr == true or arr == true or snr == true or mr == true or rlr == true or fr == true or shr == true or ppr == true) and ((gunEquip > 0 and gunEquip < 10 and gunEquip != 5) or gunEquip == 14))
 	{
 		cursor_sprite = s_reloading;
 	}
