@@ -448,7 +448,7 @@ function scr_briefing(t){
 	a[55] = @"Steal the Ring of Tarpho from a group of well-defended
 			Ninjas";
 	//Dinner party dialogue
-	a[56] =@"BRIEFING:
+	a[56] = @"BRIEFING:
 			I'm having a dinner party at my estate, and our 
 			entertainment for the evening isn't able to make it. So,
 			as a backup, I thought about bringing a mercenary in as an
@@ -489,11 +489,42 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[59] = @"Attend Party";
-	a[61] = @"Accuse Suspects";//New Objective
-	a[62] = @"";
-	a[63] = @"";
-	a[64] = @"";
-	a[65] = @"";
+	a[61] = @"Accuse Suspects";
+	a[62] = @"BRIEFING:
+			Hiertech's highly profitable chemical plant is leaking 
+			sludge into a local small town's water supply. If we don't
+			put a stop to it soon, the whole town will get sick and 
+			possibly die. 
+			
+			There are 4 main generators powering the plant, and I'll
+			have them marked on the map. They take a lot of firepower
+			to destroy, so I would recommend bringing some explosives.
+			
+			It'll be a hard fought battle, but I believe in you. ";
+	a[63] = @"Shut down Chemical Plant";
+	a[64] = @"Mission: Chemical Plant
+			
+			Hiring Firm: Ungulate Studios
+			Current Standing With
+			Ungulate Studios: "+string(obj_suq.ungulate)+
+			@"
+			Combat Difficulty: 9
+			Mental Difficulty: 3
+			Locked Doors: 3
+			Req. Locked Doors: 3
+			Keys Available: 3
+			Reward: $8700
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[65] = @"Destroy Plant:";
 	a[66] = @"";
 	a[67] = @"";
 	a[68] = @"";
@@ -2023,10 +2054,8 @@ function tutorial(k)
 			the placement of locked doors and enemy patrols. This planning stage might just mean the 
 			difference between a successful mission and a trip to the ER. 
 			
-			Remember, if your health runs out on a mission, you'll lose half of the money you would have
-			received from the company for the EMT bill. You'll also start the next mission with half health
-			while you recover. If finishing every objective is too risky, maybe consider getting out before
-			you face those consequences. You can leave a mission at any time by going back to your car. 
+			Remember, if finishing every objective is too risky, maybe consider getting out before you die. 
+			You can leave a mission at any time by going back to your car. 
 			
 			The number of locked doors refers to the number of differently keyed doors, but there could be 
 			multiple of a door that requires the same key. If it says 3 locked doors, then 3 keys would be 

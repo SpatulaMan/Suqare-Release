@@ -363,6 +363,7 @@
     {"id":{"name":"r_lvl_0","path":"rooms/r_lvl_0/r_lvl_0.yy",},},
     {"id":{"name":"r_lvl_1","path":"rooms/r_lvl_1/r_lvl_1.yy",},},
     {"id":{"name":"r_lvl_10","path":"rooms/r_lvl_10/r_lvl_10.yy",},},
+    {"id":{"name":"r_lvl_11","path":"rooms/r_lvl_11/r_lvl_11.yy",},},
     {"id":{"name":"r_lvl_15","path":"rooms/r_lvl_15/r_lvl_15.yy",},},
     {"id":{"name":"r_lvl_2","path":"rooms/r_lvl_2/r_lvl_2.yy",},},
     {"id":{"name":"r_lvl_3","path":"rooms/r_lvl_3/r_lvl_3.yy",},},
@@ -829,6 +830,7 @@
     {"roomId":{"name":"r_skill5","path":"rooms/r_skill5/r_skill5.yy",},},
     {"roomId":{"name":"r_lvl_10","path":"rooms/r_lvl_10/r_lvl_10.yy",},},
     {"roomId":{"name":"r_lvl_15","path":"rooms/r_lvl_15/r_lvl_15.yy",},},
+    {"roomId":{"name":"r_lvl_11","path":"rooms/r_lvl_11/r_lvl_11.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

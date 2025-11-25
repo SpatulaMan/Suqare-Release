@@ -79,6 +79,7 @@ switch(prog)
 	case 7:
 	case 6: if(obj_suq.lvldone[6] == false and obj_suq.perez > -3 and obj_suq.lvldone[1] == true and obj_suq.gemsD > 0) { array_insert(lvl,t,6); t++; }
 			if(obj_suq.lvldone[9] == false) { array_insert(lvl,t,9); t++; }
+			if(obj_suq.lvldone[10] == false) { array_insert(lvl,t,10); t++; }
 	case 5: 
 	case 4: if(obj_suq.lvldone[8] == false and obj_suq.lvldone[2] == true) { array_insert(lvl,t,8); t++; }
 	case 3: if(obj_suq.lvldone[5] == false) { array_insert(lvl,t,5); t++; }
@@ -88,7 +89,6 @@ switch(prog)
 			if(obj_suq.lvldone[2] == false) { array_insert(lvl,t,2); t++; }
 			if(obj_suq.lvldone[3] == false and obj_suq.lvldone[4] == false) { array_insert(lvl,t,3); t++; }
 			if(obj_suq.lvldone[4] == false and obj_suq.lvldone[3] == false) { array_insert(lvl,t,4); t++; }
-			array_insert(lvl,t,9); t++;//remove this later
 			break;
 	case 0: array_insert(lvl,t,0); t++;
 }

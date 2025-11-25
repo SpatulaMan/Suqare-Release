@@ -31,6 +31,8 @@ save();
 room_persistent = false;
 if(room == r_lvl_0) { room_goto(r_lvl_0_1); room_persistent = false; }
 if(room == r_lvl_0_1) { room_goto(r_lvl_0); room_persistent = false; }
+if(room == r_lvl_4) { room_goto(r_lvl_4_1); room_persistent = false; }
+if(room == r_lvl_4_1) { room_goto(r_lvl_4); room_persistent = false; }
 cursor_sprite = spr_unarmed;
 
 if(instance_exists(o_girl))

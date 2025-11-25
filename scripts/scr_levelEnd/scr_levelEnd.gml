@@ -2,41 +2,45 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_levelEnd(car,range_optional)
 {
-	var _emtBill = o_saveload.emt;
-	if(car) { _emtBill = 1; }
+	//var _emtBill = o_saveload.emt;
+	var _emtBill = 1;
+	//if(car) { _emtBill = 1; }
 	o_saveload.knetp = o_saveload.knet;
 		o_saveload.unetp = o_saveload.unet;
 		o_saveload.gnetp = o_saveload.gnet;
 		o_saveload.pnetp = o_saveload.pnet;
 		o_saveload.ynetp = o_saveload.ynet;
 		o_saveload.hnetp = o_saveload.hnet;
-		if(car) { alarm_set(0,120); }
-		if(obj_suq.magnumHave > 0)
-			obj_suq.mh = 1;
-		if(obj_suq.machineGunHave > 0)
-			obj_suq.mgh = 1;
-		if(obj_suq.shotgunHave > 0)
-			obj_suq.sh = 1;
-		if(obj_suq.assaultRifleHave > 0)
-			obj_suq.ah = 1;
-		if(obj_suq.shooterGunHave > 0)
-			obj_suq.sgh = 1;
-		if(obj_suq.flamethrowerHave > 0)
-			obj_suq.fh = 1;
-		if(obj_suq.sniperRifleHave > 0)
-			obj_suq.snh = 1;
-		if(obj_suq.rocketLauncherHave > 0)
-			obj_suq.rh = 1;
-		if(obj_suq.swordHave > 0)
-			obj_suq.swh = 1;
-		if(obj_suq.boomerangHave > 0)
-			obj_suq.bh = 1;
-		if(obj_suq.shuriken > 0)
-			obj_suq.shh = 1;
-		if(obj_suq.ghostGunHave > 0)
-			obj_suq.ggh = 1;
-		if(obj_suq.pp7Have > 0)
-			obj_suq.pph = 1;
+		if(car) 
+		{ 
+			alarm_set(0,120); 
+			if(obj_suq.magnumHave > 0)
+				obj_suq.mh = 1;
+			if(obj_suq.machineGunHave > 0)
+				obj_suq.mgh = 1;
+			if(obj_suq.shotgunHave > 0)
+				obj_suq.sh = 1;
+			if(obj_suq.assaultRifleHave > 0)
+				obj_suq.ah = 1;
+			if(obj_suq.shooterGunHave > 0)
+				obj_suq.sgh = 1;
+			if(obj_suq.flamethrowerHave > 0)
+				obj_suq.fh = 1;
+			if(obj_suq.sniperRifleHave > 0)
+				obj_suq.snh = 1;
+			if(obj_suq.rocketLauncherHave > 0)
+				obj_suq.rh = 1;
+			if(obj_suq.swordHave > 0)
+				obj_suq.swh = 1;
+			if(obj_suq.boomerangHave > 0)
+				obj_suq.bh = 1;
+			if(obj_suq.shuriken > 0)
+				obj_suq.shh = 1;
+			if(obj_suq.ghostGunHave > 0)
+				obj_suq.ggh = 1;
+			if(obj_suq.pp7Have > 0)
+				obj_suq.pph = 1;
+		}
 	if(instance_exists(obj_suq) and !range_optional) { obj_suq.visible = false; }
 	if(instance_exists(o_girl))
 	{
@@ -52,7 +56,7 @@ function scr_levelEnd(car,range_optional)
 	else { direction = 0; }
 	speed = 8; 
 	}
-	if(instance_exists(obj_suq) and !range_optional)
+	if(instance_exists(obj_suq) and !range_optional and car)
 	{
 		obj_suq.progress++;
 		//add functionality that doesn't continue game unless the level is beaten
@@ -436,7 +440,7 @@ function scr_levelEnd(car,range_optional)
 			obj_camera.x = 376;
 			obj_camera.y = 497;
 			//obj_suq.showMoney = 360;
-			if(car) { obj_suq.hprem = 0; }
+					//if(car) { obj_suq.hprem = 0; }
 			//lives = 10;
 			//obj_suq.lv = lives;
 			audio_play_sound(snd_pickup,1,false,.7*o_saveload.sfxvol,0,random_range(1.5,2));
@@ -444,6 +448,8 @@ function scr_levelEnd(car,range_optional)
 			room_persistent = false;
 			if(room == r_lvl_0) { room_goto(r_lvl_0_1); room_persistent = false; }
 			if(room == r_lvl_0_1) { room_goto(r_lvl_0); room_persistent = false; }
+			f(room == r_lvl_4) { room_goto(r_lvl_4_1); room_persistent = false; }
+			if(room == r_lvl_4_1) { room_goto(r_lvl_4); room_persistent = false; }
 			cursor_sprite = spr_unarmed;
 
 			if(instance_exists(o_girl))

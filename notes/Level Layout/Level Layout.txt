@@ -23,7 +23,7 @@ and
 
 -Ungulate Studios Plan - Keep Evil corporations in check:
 4: kidnap girl
-11: Steal Back from Hiertech
+11: Shut down Hiertech Chemical Plant
 22: Stop Contraband Runners (stop cars from getting loaded with contraband. Some armored machine gun cars between the stocking buildings of which there's 3)
 29: Prevent Theft of Museum artifacts, Ghosts haunt you as well
 36: Prison Break, break into prison secretly, and sneak a few wrongfully convicted inmates out - NL besides ghosts that haunt the place
@@ -91,9 +91,9 @@ or
 8: Eradicate spiders
 9: Ring of Tarpho
 10: Dinner Party (solve murder and painting theft) - NL
-		11: Steal weapon from Hiertech
+	11: Shut down Hiertech Chemical Plant
 		12: Steal finance tech from Kanker and Co.
-		13: Steal plans and kidnap scientist to make super weapon
+		13: Kidnap scientist to make super weapon
 		14: Gun Club - NL
 	15: Vambrace of Wurtu
 		16: Destroy Big Tank that could stop whole plan
