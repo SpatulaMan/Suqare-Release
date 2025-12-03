@@ -14,7 +14,7 @@ if(success == false)
 		//if(keyboard_check_pressed(vk_space))
 		if(keyboard_check(vk_space))
 		{
-			if(!instance_exists(o_lvlText)) { sp_ch += 2; }
+			if(!instance_exists(o_lvlText)) { sp_ch += 4; }
 			if(sp_ch >= 60)
 			{
 				success = true;

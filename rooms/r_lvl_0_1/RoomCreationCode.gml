@@ -1,1 +1,1 @@
-if(lives > 0) room_persistent = true;
+//if(lives > 0) room_persistent = true;

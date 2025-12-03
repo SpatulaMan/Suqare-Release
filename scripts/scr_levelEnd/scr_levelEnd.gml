@@ -5,14 +5,15 @@ function scr_levelEnd(car,range_optional)
 	//var _emtBill = o_saveload.emt;
 	var _emtBill = 1;
 	//if(car) { _emtBill = 1; }
-	o_saveload.knetp = o_saveload.knet;
-		o_saveload.unetp = o_saveload.unet;
-		o_saveload.gnetp = o_saveload.gnet;
-		o_saveload.pnetp = o_saveload.pnet;
-		o_saveload.ynetp = o_saveload.ynet;
-		o_saveload.hnetp = o_saveload.hnet;
+	
 		if(car) 
 		{ 
+			o_saveload.knetp = o_saveload.knet;
+			o_saveload.unetp = o_saveload.unet;
+			o_saveload.gnetp = o_saveload.gnet;
+			o_saveload.pnetp = o_saveload.pnet;
+			o_saveload.ynetp = o_saveload.ynet;
+			o_saveload.hnetp = o_saveload.hnet;
 			alarm_set(0,120); 
 			if(obj_suq.magnumHave > 0)
 				obj_suq.mh = 1;
@@ -48,24 +49,14 @@ function scr_levelEnd(car,range_optional)
 	}
 	if(car and instance_exists(obj_suq) and !range_optional) 
 	{ 
-	obj_suq.x = x;
-	obj_suq.y = y;
-	obj_camera.x = x;
-	obj_camera.y = y;
-	if(room == r_lvl_7 or room == r_lvl_8) { direction = 180; }
-	else { direction = 0; }
-	speed = 8; 
-	}
-	if(instance_exists(obj_suq) and !range_optional and car)
-	{
+		obj_suq.x = x;
+		obj_suq.y = y;
+		obj_camera.x = x;
+		obj_camera.y = y;
+		if(room == r_lvl_7 or room == r_lvl_8) { direction = 180; }
+		else { direction = 0; }
+		speed = 8;
 		obj_suq.progress++;
-		//add functionality that doesn't continue game unless the level is beaten
-		/*
-		if(o_saveload.nofail)
-		{
-			obj_suq.progress--;
-		}
-		*/
 		if(car) { o_lvlEnd.check = false; }
 		switch(room)
 		{
@@ -97,13 +88,6 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.ynet += 3;
 				//setting level to done so that it doesn't show up in lvl select
 				obj_suq.lvldone[obj_suq.lvl] = true;
-				//Add functionality to never remove the level and you can repeat it endlessly
-				/*
-				if(o_saveload.easymode)
-				{
-					obj_suq.lvldone[obj_suq.lvl] = false;
-				}
-				*/
 				if(obj_suq.gems < 3 and obj_suq.gems > 0)
 				{
 					o_saveload.knet += 5;
@@ -446,10 +430,10 @@ function scr_levelEnd(car,range_optional)
 			audio_play_sound(snd_pickup,1,false,.7*o_saveload.sfxvol,0,random_range(1.5,2));
 			save();
 			room_persistent = false;
-			if(room == r_lvl_0) { room_goto(r_lvl_0_1); room_persistent = false; }
-			if(room == r_lvl_0_1) { room_goto(r_lvl_0); room_persistent = false; }
-			f(room == r_lvl_4) { room_goto(r_lvl_4_1); room_persistent = false; }
-			if(room == r_lvl_4_1) { room_goto(r_lvl_4); room_persistent = false; }
+			//if(room == r_lvl_0) { room_goto(r_lvl_0_1); room_1persistent = false; }
+			//if(room == r_lvl_0_1) { room_goto(r_lvl_0); room_1persistent = false; }
+			//if(room == r_lvl_4) { room_goto(r_lvl_4_1); room_1persistent = false; }
+			//if(room == r_lvl_4_1) { room_goto(r_lvl_4); room_1persistent = false; }
 			cursor_sprite = spr_unarmed;
 
 			if(instance_exists(o_girl))
@@ -563,7 +547,11 @@ function scr_levelEnd(car,range_optional)
 			obj_suq.y = 376;
 			obj_camera.x = 477;
 			obj_camera.y = 376;
+			room_goto(r_armory);
 			
+		}
+		if(!car and !range_optional)
+		{
 			room_goto(r_armory);
 		}
 }

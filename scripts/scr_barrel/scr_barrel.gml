@@ -207,31 +207,31 @@ function scr_spiderspawn() {
 	{
 		r15 = random_range(1,100);
 		randomize();
-		if(r15 > 10)
+		if(r15 > 70)
 		{
 			instance_create_layer(x,y,"Instances_Action",obj_spider);
 			instance_create_layer(x+5,y,"Instances_Action",obj_spider);
-			instance_create_layer(x-5,y,"Instances_Action",obj_spider);
-			instance_create_layer(x,y+5,"Instances_Action",obj_spider);
 		}
-		if(r15 > 35)
+		if(r15 > 80)
 		{
 			instance_create_layer(x,y-5,"Instances_Action",obj_spider);
 			instance_create_layer(x+5,y-5,"Instances_Action",obj_spider);
-			instance_create_layer(x+5,y+5,"Instances_Action",obj_spider);
 		}
-		if(r15 > 65)
+		if(r15 > 90)
 		{
 			instance_create_layer(x-5,y+5,"Instances_Action",obj_spider);
 			instance_create_layer(x+10,y-5,"Instances_Action",obj_spider);
-			instance_create_layer(x+10,y+5,"Instances_Action",obj_spider);
 		}
-		if(r15 > 90)
+		if(r15 > 99)
 		{
 			instance_create_layer(x-10,y+5,"Instances_Action",obj_spider);
 			instance_create_layer(x-5,y-10,"Instances_Action",obj_spider);
 			instance_create_layer(x-5,y+10,"Instances_Action",obj_spider);
 			instance_create_layer(x+5,y-10,"Instances_Action",obj_spider);
+			instance_create_layer(x-5,y,"Instances_Action",obj_spider);
+			instance_create_layer(x,y+5,"Instances_Action",obj_spider);
+			instance_create_layer(x+5,y+5,"Instances_Action",obj_spider);
+			instance_create_layer(x+10,y+5,"Instances_Action",obj_spider);
 		}
 	}
 }

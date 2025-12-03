@@ -29,10 +29,10 @@ obj_suq.hprem = 0;
 audio_play_sound(snd_pickup,1,false,.7*o_saveload.sfxvol,0,random_range(1.5,2));
 save();
 room_persistent = false;
-if(room == r_lvl_0) { room_goto(r_lvl_0_1); room_persistent = false; }
-if(room == r_lvl_0_1) { room_goto(r_lvl_0); room_persistent = false; }
-if(room == r_lvl_4) { room_goto(r_lvl_4_1); room_persistent = false; }
-if(room == r_lvl_4_1) { room_goto(r_lvl_4); room_persistent = false; }
+//if(room == r_lvl_0) { room_goto(r_lvl_0_1); room_1persistent = false; }
+//if(room == r_lvl_0_1) { room_goto(r_lvl_0); room_1persistent = false; }
+//if(room == r_lvl_4) { room_goto(r_lvl_4_1); room_1persistent = false; }
+//if(room == r_lvl_4_1) { room_goto(r_lvl_4); room_1persistent = false; }
 cursor_sprite = spr_unarmed;
 
 if(instance_exists(o_girl))

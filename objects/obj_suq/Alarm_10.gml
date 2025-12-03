@@ -33,7 +33,7 @@ shotgunAmt = sgb;
 sniperRifleAmt = snb;
 rocketLauncherAmt = rb;
 flamethrowerAmt = fb;
-//money = moneyb;
+money = moneyb;//maybe leave this in? 
 //money += ammoBuy;
 
 showMoney = 360;
@@ -54,9 +54,9 @@ if(audio_is_playing(snd_stepOther))
 }
 if(room == r_lvl_2) { obj_suq.gems = 0; }
 room_persistent = false;
-if(room == r_lvl_0) { room_goto(r_lvl_0_1); room_persistent = false; }
-if(room == r_lvl_4) { room_goto(r_lvl_4_1); room_persistent = false; }
-if(room == r_lvl_0_1) { room_goto(r_lvl_0); room_persistent = false; }
-if(room == r_lvl_4_1) { room_goto(r_lvl_4); room_persistent = false; }
+//if(room == r_lvl_0) { room_goto(r_lvl_0_1); room_1persistent = false; }
+//if(room == r_lvl_4) { room_goto(r_lvl_4_1); room_1persistent = false; }
+//if(room == r_lvl_0_1) { room_goto(r_lvl_0); room_1persistent = false; }
+//if(room == r_lvl_4_1) { room_goto(r_lvl_4); room_1persistent = false; }
 
 if(room != r_range and room != r_skill1 and room != r_skill2 and room != r_skill3 and room != r_skill4 and room != r_skill5) { alarm_set(8,5); }

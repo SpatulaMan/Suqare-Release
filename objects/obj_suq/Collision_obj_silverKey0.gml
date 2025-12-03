@@ -24,7 +24,8 @@ if(other.image_index = 2)
 		//audio_play_sound(snd_doorCreak,3,false,random_range(0.9,0.98)*o_saveload.sfxvol,0,random_range(2,4)); 
 		audio_play_sound(snd_fire,4,false,random_range(0.9,0.98)*o_saveload.sfxvol,0,random_range(2,4)); 
 		ghostCheck = true;
-		var _inst = instance_create_layer(2072,457,"Instances_Action",o_conversation);
+		//var _inst = instance_create_layer(2072,457,"Instances_Action",o_conversation);
+		var _inst = instance_create_layer(x,y,"Instances_Action",o_conversation);
 		_inst.h = 9;
 		//o_roomName.r = 47;
 	}

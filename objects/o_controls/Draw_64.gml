@@ -31,6 +31,6 @@ if(visible == true)
 		draw_text_transformed_color(w*.055,h*.42,buttons(8),1,1,0,make_color_rgb(255,150,0),make_color_rgb(255,150,0),make_color_rgb(255,150,0),make_color_rgb(255,150,0),1);
 		draw_text_transformed_color(w*.055,h*.46,buttons(9),1,1,0,make_color_rgb(255,150,0),make_color_rgb(255,150,0),make_color_rgb(255,150,0),make_color_rgb(255,150,0),1);
 		draw_text_transformed_color(w*.055,h*.5,buttons(20),1,1,0,make_color_rgb(255,150,0),make_color_rgb(255,150,0),make_color_rgb(255,150,0),make_color_rgb(255,150,0),1);
-		draw_text_transformed_color(w*.055,h*.5,buttons(22),1,1,0,make_color_rgb(255,150,0),make_color_rgb(255,150,0),make_color_rgb(255,150,0),make_color_rgb(255,150,0),1);
+		draw_text_transformed_color(w*.055,h*.54,buttons(22),1,1,0,make_color_rgb(255,150,0),make_color_rgb(255,150,0),make_color_rgb(255,150,0),make_color_rgb(255,150,0),1);
 	}
 }

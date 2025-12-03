@@ -65,12 +65,12 @@ if(!path_exists(path))
 			Bulg.image_angle = pd2;
 			Bulg.speed = 6;
 			//Bulg.image_alpha = .01;
-			shootCheck = choose(15,30,60,90);
-			var _cho = choose(1,1,1,1,2);
-			if(_cho == 2)
-			{
+			shootCheck = choose(15,30,60,90,120);
+			//var _cho = choose(1,1,1,2);
+			//if(_cho == 2)
+			//{
 				scr_spiderspawn();
-			}
+			//}
 		}
 		/*else if(shootCheck <= 0)
 		{

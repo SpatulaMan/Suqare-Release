@@ -73,7 +73,8 @@ if(room == r_armory and instance_exists(o_armory))
 		ghostGunHave = 0;
 		gunNum = 0;
 		lvl = 0;
-		lives = 10-hprem;	
+		//lives = 10-hprem;	
+		lives = 10;
 		lv = lives;
 		sprite_index = s_suq;
 		health = 100;

@@ -130,7 +130,8 @@ rando8 = 0;
 girlcheck = true;
 //initialize Health
 health = 100;
-lives = 10-hprem;
+//lives = 10-hprem;
+lives = 10;
 lv = lives;
 armorcheck = 0;
 bonus = 0;

@@ -610,6 +610,7 @@
     {"id":{"name":"s_pieces","path":"sprites/s_pieces/s_pieces.yy",},},
     {"id":{"name":"s_pistol","path":"sprites/s_pistol/s_pistol.yy",},},
     {"id":{"name":"s_quitR","path":"sprites/s_quitR/s_quitR.yy",},},
+    {"id":{"name":"s_r","path":"sprites/s_r/s_r.yy",},},
     {"id":{"name":"s_recR","path":"sprites/s_recR/s_recR.yy",},},
     {"id":{"name":"s_reloading","path":"sprites/s_reloading/s_reloading.yy",},},
     {"id":{"name":"s_rocketLauncher","path":"sprites/s_rocketLauncher/s_rocketLauncher.yy",},},

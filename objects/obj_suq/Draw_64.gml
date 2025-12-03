@@ -242,7 +242,7 @@ if(pistolHave == 1 and gunEquip == 1)
 		else if(_b < 0) then { pMag = pmr + _b; pistolAmt = 0; }
 		prt = 50;
 		pr = false;
-		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol);
+		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol,0,1);
 	}
     draw_text_transformed_colour(1600,940,string_hash_to_newline("" + string(pMag) + "|" + string(pistolAmt) + " "),3,3,0,c_yellow,c_yellow,c_yellow,c_yellow,1);
 	if(pmr == 12) { draw_sprite_stretched(spr_pistol,0,1600,940,12*15,8*15); }
@@ -265,7 +265,7 @@ if(magnumHave == 1 and gunEquip == 2)
 		else if(_b < 0) then { mMag = mmr + _b; magnumAmt = 0; }
 		mrt = 60;
 		mr = false;
-		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol);
+		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol,0,.8);
 	}
     draw_text_transformed_colour(1600,940,string_hash_to_newline("" + string(mMag) + "|" + string(magnumAmt) + " "),3,3,0,c_orange,c_orange,c_orange,c_orange,1);
 	if(mmr == 6) { draw_sprite_stretched(spr_magnum,0,1600,940,12*15,8*15); }
@@ -288,7 +288,7 @@ if(machineGunHave == 1 and gunEquip == 3)
 		else if(_b < 0) then { mgMag = mgmr + _b; machineGunAmt = 0; }
 		mgrt = 60;
 		mgr = false;
-		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol);
+		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol,0,1.2);
 	}
     draw_text_transformed_colour(1600,940,string_hash_to_newline("" + string(mgMag) + "|" + string(machineGunAmt) + " "),3,3,0,c_lime,c_lime,c_lime,c_lime,1);
 	if(mgmr == 25) { draw_sprite_stretched(spr_machineGun,0,1600,940,12*15,12*15); }
@@ -309,7 +309,7 @@ if(assaultRifleHave == 1 and gunEquip == 4)
 		var _b = _a - 20;
 		if(_b >= 0) then { arMag = 20; assaultRifleAmt = _b; }
 		else if(_b < 0) then { arMag = 20 + _b; assaultRifleAmt = 0; }
-		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol);
+		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol,0,.9);
 		arrt = armr;
 		arr = false;
 	}
@@ -358,7 +358,7 @@ if(shooterGunHave == 1 and gunEquip == 6)
 		else if(_b < 0) then { shMag = 40 + _b; shooterGunAmt = 0; }
 		shrt = shmr;
 		shr = false;
-		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol);
+		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol,0,2);
 	}
     draw_text_transformed_color(1600,940,string_hash_to_newline("" + string(shMag) + "|" + string(shooterGunAmt) + " "),3,3,0,c_ltgray,c_ltgray,c_ltgray,c_ltgray,1);
 	if(shda == 80) { draw_sprite_stretched(spr_shooterGun,1,1600,940,18*15,14*15); }
@@ -381,7 +381,7 @@ if(flamethrowerHave == 1 and gunEquip == 7)
 		else if(_b < 0) then { fMag = 5 + _b; flamethrowerAmt = 0; }
 		frt = 90;
 		fr = false;
-		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol);
+		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol,0,.6);
 	}
     draw_text_transformed_colour(1500,940,string_hash_to_newline("" + string(fMag) + "|" + string(flamethrowerAmt) + " "),3,3,0,c_red,c_red,c_orange,c_orange,1);
 	if(fda == 1) { draw_sprite_stretched(spr_flamethrower,1,1500,940,24*15,8*15); }
@@ -404,7 +404,7 @@ if(sniperRifleHave == 1 and gunEquip == 8)
 		else if(_b < 0) then { snMag = snmr + _b; sniperRifleAmt = 0; }
 		snrt = 100;
 		snr = false;
-		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol);
+		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol,0,.6);
 	}
     draw_text_transformed_colour(1500,940,string_hash_to_newline("" + string(snMag) + "|" + string(sniperRifleAmt) + " "),3,3,0,c_red,c_red,c_red,c_red,1);
 	if(snda == 30) { draw_sprite_stretched(spr_sniperRifle,1,1500,920,24*15,14*15); }
@@ -427,7 +427,7 @@ if(rocketLauncherHave == 1 and gunEquip == 9)
 		else if(_b < 0) then { rlMag = 2 + _b; rocketLauncherAmt = 0; }
 		rlrt = 120;
 		rlr = false;
-		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol);
+		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol,0,.3);
 	}
     draw_text_transformed_colour(1500,940,string_hash_to_newline("" + string(rlMag) + "|" + string(rocketLauncherAmt) + " "),3,3,0,c_purple,c_purple,c_purple,c_purple,1);
 	if(rlda == 1) { draw_sprite_stretched(spr_rocketLauncher,1,1500,940,24*15,8*15); }
@@ -556,7 +556,7 @@ if(pickup_timer > 0)
 		case 32: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("Protect me! They might shoot!"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 33: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("Wait There"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		//case 34: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("THAT EMT BILL SUCKS, BUT I'M ALIVE"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/360); break;
-		case 34: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("THAT WAS A WEIRD DREAM"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/360); break;
+		case 34: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("WHAT A WEIRD DREAM"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/360); break;
 		case 35: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("Ghost Gun"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90);
 				if(gunNum == gunMax and ghostGunHave == 0) 
 				{

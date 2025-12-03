@@ -545,10 +545,10 @@ function scr_conversation(t)
 {
 	//text for small text box is 128 across, and 11 char-13's
 	a[0] = @"You are Suqare. A brand new mercenary trying to make a name for yourself. You've equipped the place with a shop 
-			where you can buy equipment and upgrades, someone who who'll share hints, and a manager who will always have a list
-			of jobs for you to choose from. This is your first foray into the world of mercenaries, so tread lightly. 
+			where you can buy equipment and upgrades, and a manager who will always have a list of jobs for you to choose from.
+			This is your first foray into the world of mercenaries; keep your wits about you. 
 			
-			These are tumultuous times. 6 large corporations are all vying for control in the public andprivate sectors. While 
+			These are tumultuous times. 6 large corporations are all vying for control in the public and private sectors. While 
 			they show their good side to the public, many of them do some shady dealings behind closed doors. These 6 companies
 			will be your primary source of jobs, but decide for yourself if the job fits your moral code. It won't always be 
 			pretty, but you have an opportunity to make this world better or much worse. Use your head out there.  
@@ -568,8 +568,8 @@ function scr_conversation(t)
 	a[3] = @"The job manager keeps a list of all the available jobs. He'll show you a briefing and maybe a map of the area. 
 			Read these closely and pay attention to the placement of locked doors and enemy patrols. 
 			
-			If your health runs out on a mission, you'll lose half of the money you would have received, you'll also start the
-			next mission with half health. If finishing every objective is too risky, consider leaving early. 
+			If finishing every objective is too risky, consider leaving early. You can leave at any point by going back to your
+			car. 
 			
 			The number of locked doors refers to the number of differently keyed doors, but there could be multiple of a door 
 			that requires the same key. If it says 3 locked doors, then 3 keys would be necessary to open them all. This also 
