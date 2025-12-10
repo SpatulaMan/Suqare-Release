@@ -2,7 +2,7 @@
 switch(room)
 {
 	case r_lvl_0: t = 1; o1 = 2; o2 = 3; b = scr_briefing(t); ot1 = scr_briefing(o2); image_index = 0; if(!instance_exists(inst_6C9E1EA5)) { obj1 = true; } break;
-	case r_lvl_0_1: t = 1; o1 = 2; o2 = 3; b = scr_briefing(t); ot1 = scr_briefing(o2); image_index = 0; if(obj_suq.magnumHave == 1) { obj1 = true; } break;
+	//case r_lvl_0_1: t = 1; o1 = 2; o2 = 3; b = scr_briefing(t); ot1 = scr_briefing(o2); image_index = 0; if(obj_suq.magnumHave == 1) { obj1 = true; } break;
 	
 	case r_lvl_2: t = 4; o1 = 6; o2 = 7; o3 = 8; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); ot3 = scr_briefing(o3);  
 	image_index = 2; if(!instance_exists(o_safeCracker)) { obj1 = true; } if(!instance_exists(o_safe)) { obj2 = true; } if(obj_suq.gems == 3) { obj3 = true; } break;
@@ -16,8 +16,8 @@ switch(room)
 	if(instance_exists(o_girl)) { if(o_girl.path_check == true and (o_girl.x < 454 and o_girl.y > 897)) { obj2 = true; } }
 	else if(!instance_exists(o_girl)) { obj2 = false; }break;
 	
-	case r_lvl_4_1: t = 19; o1 = 20; o2 = 21; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); image_index = 1; 
-	if(instance_exists(o_girl)) { if(o_girl.path_check == true) { obj1 = true; } } break;
+	//case r_lvl_4_1: t = 19; o1 = 20; o2 = 21; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); image_index = 1; 
+	//if(instance_exists(o_girl)) { if(o_girl.path_check == true) { obj1 = true; } } break;
 	
 	case r_lvl_5: t = 23; o1 = 24; o2 = 26; o3 = 27; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); ot3 = scr_briefing(o3); image_index = 2; 
 	obj2 = true; obj3 = false;
