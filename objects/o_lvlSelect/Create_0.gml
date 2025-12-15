@@ -79,16 +79,17 @@ switch(prog)
 	case 7:
 	case 6: if(obj_suq.lvldone[6] == false and obj_suq.perez > -3 and obj_suq.lvldone[1] == true and obj_suq.gemsD > 0) { array_insert(lvl,t,6); t++; }
 			if(obj_suq.lvldone[9] == false) { array_insert(lvl,t,9); t++; }
-			if(obj_suq.lvldone[10] == false) { array_insert(lvl,t,10); t++; }
+			//if(obj_suq.lvldone[10] == false and obj_suq.ungulate > -3) { array_insert(lvl,t,10); t++; }
 	case 5: 
-	case 4: if(obj_suq.lvldone[8] == false and obj_suq.lvldone[2] == true) { array_insert(lvl,t,8); t++; }
+	case 4: if(obj_suq.lvldone[8] == false and obj_suq.lvldone[2] == true and obj_suq.yellerteeth > -3) { array_insert(lvl,t,8); t++; }
 	case 3: if(obj_suq.lvldone[5] == false) { array_insert(lvl,t,5); t++; }
-			if(obj_suq.lvldone[7] == false) { array_insert(lvl,t,7); t++; }
+			if(obj_suq.lvldone[7] == false and obj_suq.gildebrand > -6) { array_insert(lvl,t,7); t++; }
 	case 2: 
-	case 1: if(obj_suq.lvldone[1] == false) { array_insert(lvl,t,1); t++; }
-			if(obj_suq.lvldone[2] == false) { array_insert(lvl,t,2); t++; }
-			if(obj_suq.lvldone[3] == false and obj_suq.lvldone[4] == false) { array_insert(lvl,t,3); t++; }
-			if(obj_suq.lvldone[4] == false and obj_suq.lvldone[3] == false) { array_insert(lvl,t,4); t++; }
+	case 1: if(obj_suq.lvldone[1] == false and obj_suq.kanker > -6) { array_insert(lvl,t,1); t++; }
+			if(obj_suq.lvldone[2] == false and obj_suq.yellerteeth > -6) { array_insert(lvl,t,2); t++; }
+			if(obj_suq.lvldone[3] == false and obj_suq.lvldone[4] == false and obj_suq.ungulate > -6) { array_insert(lvl,t,3); t++; }
+			if(obj_suq.lvldone[4] == false and obj_suq.lvldone[3] == false and obj_suq.hiertech > -6) { array_insert(lvl,t,4); t++; }
 			break;
 	case 0: array_insert(lvl,t,0); t++;
+			if(obj_suq.lvldone[10] == false and obj_suq.ungulate > -3) { array_insert(lvl,t,10); t++; }
 }

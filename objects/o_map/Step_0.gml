@@ -5,5 +5,6 @@ switch(room)
 	case r_lvl_4: t = 4; break;
 	case r_lvl_7: t = 7; break;
 	case r_lvl_8: t = 8; break;
+	case r_lvl_11: t = 11; break;
 	default: t = 0;
 }

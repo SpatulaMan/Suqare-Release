@@ -4,8 +4,8 @@ NL - Non-Lethal
 2: Not doing Bank Heist
 or
 7: Destroy Gems
-12: Steal finance tech from Kanker and Co.
-19: Compromise all other banking software
+12: Steal finance tech from Kanker and Co. - Negative to Kanker and positive to Perez, vice versa if failed
+19: Compromise all other banking software - Negative to Gildebrand and Yellerteeth and positive to Perez, negative to perez if failed
 24: Execute members of government that would prevent a banking monopoly
 31: Destroy Uprising of banks
 35: Invade homes and kill everyone who works for the other banks
@@ -23,7 +23,7 @@ and
 
 -Ungulate Studios Plan - Keep Evil corporations in check:
 4: kidnap girl
-11: Shut down Hiertech Chemical Plant
+11: Shut down Hiertech Chemical Plant - Negative to Hiertech, positive to Ungulate and vice versa if failed
 22: Stop Contraband Runners (stop cars from getting loaded with contraband. Some armored machine gun cars between the stocking buildings of which there's 3)
 29: Prevent Theft of Museum artifacts, Ghosts haunt you as well
 36: Prison Break, break into prison secretly, and sneak a few wrongfully convicted inmates out - NL besides ghosts that haunt the place

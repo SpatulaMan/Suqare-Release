@@ -508,11 +508,11 @@ function scr_briefing(t){
 			Current Standing With
 			Ungulate Studios: "+string(obj_suq.ungulate)+
 			@"
-			Combat Difficulty: 9
+			Combat Difficulty: 10
 			Mental Difficulty: 3
-			Locked Doors: 3
-			Req. Locked Doors: 3
-			Keys Available: 3
+			Locked Doors: 1
+			Req. Locked Doors: 0
+			Keys Available: 1
 			Reward: $8700
 			
 			
@@ -2005,8 +2005,40 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";
-	c[35] = @"";
-	c[36] = @"";
+	c[35] = @"Objective Complete
+			Payout: $8700
+			
+			Response From Hiring Firm:
+			You did it! That was quite a ride, but you made it out alive. This will
+			slow down Hiertech's production of contraband quite a bit. Glad we have the
+			same idea about what needs to be done with that horrible company. 
+			
+			Current standing with Ungulate Studios. "+string(obj_suq.ungulate)+@"
+			Current standing with Hiertech. "+string(obj_suq.hiertech)+@"
+			
+			Result:
+			Hiertech will struggle to recover from this loss, but they will be back. The
+			widespread empire of Hiertech won't go down easily. 
+			
+			Press Spacebar to continue";
+	c[36] = @"Objective Complete
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You didn't finish the job! Even if one of those generators is running, they
+			can still pump out product just as fast as before. This changes nothing. I'm
+			beginning to lose trust in you mercenaries.
+			
+			Current standing with Ungulate Studios. "+string(obj_suq.ungulate)+@"
+			Current standing with Hiertech. "+string(obj_suq.hiertech)+@"
+			
+			Result:
+			Hiertech saw no change in their day to day operations. At least one generator
+			was operational, so they were able to continue working and get the other ones
+			back online with little problem. They might take a slight financial hit, but
+			it won't be extreme. 
+			
+			Press Spacebar to continue";
 	c[37] = @"";
 	c[38] = @"";
 	c[39] = @"";

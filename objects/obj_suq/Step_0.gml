@@ -557,7 +557,31 @@ if(instance_exists(o_gem2))
 		audio_stop_sound(snd_stepOther);
 	}
 }
-if(!instance_exists(o_gem2))
+if(!instance_exists(o_gem2) and room == r_lvl_7)
+{
+	if(audio_is_playing(snd_stepOther))
+	{
+		audio_stop_sound(snd_stepOther);
+	}
+}
+if(instance_exists(o_generator))
+{
+	if(distance_to_object(o_generator) < 128)
+	{
+		sndlvl = 64/distance_to_object(o_generator);
+		if(sndlvl > 3) { sndlvl = 3; }
+		if(sndlvl < .05) { sndlvl = .05; }
+		if(!audio_is_playing(snd_stepOther))
+		{
+			audio_play_sound(snd_stepOther,10,0,sndlvl*o_saveload.sfxvol,0,random_range(.8,.84));
+		}
+	}
+	else
+	{
+		audio_stop_sound(snd_stepOther);
+	}
+}
+if(!instance_exists(o_generator) and room == r_lvl_11)
 {
 	if(audio_is_playing(snd_stepOther))
 	{

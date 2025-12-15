@@ -47,5 +47,8 @@ switch(room)
 	
 	case r_lvl_10: t = 56; o1 = 59; o2 = 61; b = scr_briefing(t); ot1 = scr_briefing(o1); image_index = 0;
 	if(o_L10.ob1 == true) { obj1 = true; image_index = 1; ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); }
-	if(o_L10.ob2 == true) { obj2 = true; }
+	if(o_L10.ob2 == true) { obj2 = true; } break;
+	
+	case r_lvl_11: t = 62; o1 = 65; b = scr_briefing(t); ot1 = scr_briefing(o1); image_index = 0;
+	if(instance_number(o_generator) <= 0) obj1 = true;
 }

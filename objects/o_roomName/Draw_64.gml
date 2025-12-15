@@ -100,7 +100,12 @@ if(a > 0)
 		case 66: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("OFFICE"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 67: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("PARTY ROOM"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 68: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("KILL ALL ENEMIES"),3,3,0,c_white,c_white,c_white,c_white,a); break;
-		case 69: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("KILL ALL ENEMIES"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 69: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("REACTOR HUB"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 70: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("REACTOR 1"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 71: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("REACTOR 2"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 72: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("REACTOR 3"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 73: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("REACTOR 4"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 74: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SECRET STOREROOM"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		default: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("RESTRICTED"),3,3,0,c_white,c_white,c_white,c_white,a); 
 	}
 }
