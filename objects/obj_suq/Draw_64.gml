@@ -244,6 +244,7 @@ if(pistolHave == 1 and gunEquip == 1)
 		pr = false;
 		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol,0,1);
 	}
+	if(pistolAmt == 0) { pr = false; }
     draw_text_transformed_colour(1600,940,string_hash_to_newline("" + string(pMag) + "|" + string(pistolAmt) + " "),3,3,0,c_yellow,c_yellow,c_yellow,c_yellow,1);
 	if(pmr == 12) { draw_sprite_stretched(spr_pistol,0,1600,940,12*15,8*15); }
 	else { draw_sprite_stretched(spr_pistol,1,1600,940,12*15,8*15);  }
@@ -267,6 +268,7 @@ if(magnumHave == 1 and gunEquip == 2)
 		mr = false;
 		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol,0,.8);
 	}
+	if(magnumAmt == 0) { mr = false; }
     draw_text_transformed_colour(1600,940,string_hash_to_newline("" + string(mMag) + "|" + string(magnumAmt) + " "),3,3,0,c_orange,c_orange,c_orange,c_orange,1);
 	if(mmr == 6) { draw_sprite_stretched(spr_magnum,0,1600,940,12*15,8*15); }
 	else { draw_sprite_stretched(spr_magnum,1,1600,940,12*15,8*15); }
@@ -290,6 +292,7 @@ if(machineGunHave == 1 and gunEquip == 3)
 		mgr = false;
 		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol,0,1.2);
 	}
+	if(machineGunAmt == 0) { mgr = false; }
     draw_text_transformed_colour(1600,940,string_hash_to_newline("" + string(mgMag) + "|" + string(machineGunAmt) + " "),3,3,0,c_lime,c_lime,c_lime,c_lime,1);
 	if(mgmr == 25) { draw_sprite_stretched(spr_machineGun,0,1600,940,12*15,12*15); }
 	else { draw_sprite_stretched(spr_machineGun,1,1600,940,12*15,12*15); }
@@ -313,6 +316,7 @@ if(assaultRifleHave == 1 and gunEquip == 4)
 		arrt = armr;
 		arr = false;
 	}
+	if(assaultRifleAmt == 0) { arr = false; }
     draw_text_transformed_colour(1600,940,string_hash_to_newline("" + string(arMag) + "|" + string(assaultRifleAmt) + " "),3,3,0,c_blue,c_blue,c_blue,c_blue,1);
 	if(arda == 1) { draw_sprite_stretched(spr_assaultRifle,1,1600,920,18*15,14*15); }
 	else { draw_sprite_stretched(spr_assaultRifle,0,1600,920,18*15,14*15); }
@@ -360,6 +364,7 @@ if(shooterGunHave == 1 and gunEquip == 6)
 		shr = false;
 		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol,0,2);
 	}
+	if(shooterGunAmt == 0) { shr = false; }
     draw_text_transformed_color(1600,940,string_hash_to_newline("" + string(shMag) + "|" + string(shooterGunAmt) + " "),3,3,0,c_ltgray,c_ltgray,c_ltgray,c_ltgray,1);
 	if(shda == 80) { draw_sprite_stretched(spr_shooterGun,1,1600,940,18*15,14*15); }
 	else { draw_sprite_stretched(spr_shooterGun,0,1600,940,18*15,14*15); }
@@ -383,6 +388,7 @@ if(flamethrowerHave == 1 and gunEquip == 7)
 		fr = false;
 		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol,0,.6);
 	}
+	if(flamethrowerAmt == 0) { fr = false; }
     draw_text_transformed_colour(1500,940,string_hash_to_newline("" + string(fMag) + "|" + string(flamethrowerAmt) + " "),3,3,0,c_red,c_red,c_orange,c_orange,1);
 	if(fda == 1) { draw_sprite_stretched(spr_flamethrower,1,1500,940,24*15,8*15); }
 	else { draw_sprite_stretched(spr_flamethrower,0,1500,940,24*15,8*15); }
@@ -406,6 +412,7 @@ if(sniperRifleHave == 1 and gunEquip == 8)
 		snr = false;
 		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol,0,.6);
 	}
+	if(sniperRifleAmt == 0) { snr = false; }
     draw_text_transformed_colour(1500,940,string_hash_to_newline("" + string(snMag) + "|" + string(sniperRifleAmt) + " "),3,3,0,c_red,c_red,c_red,c_red,1);
 	if(snda == 30) { draw_sprite_stretched(spr_sniperRifle,1,1500,920,24*15,14*15); }
 	else { draw_sprite_stretched(spr_sniperRifle,0,1500,920,24*15,14*15); }
@@ -429,6 +436,7 @@ if(rocketLauncherHave == 1 and gunEquip == 9)
 		rlr = false;
 		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol,0,.3);
 	}
+	if(rocketLauncherAmt == 0) { rlr = false; }
     draw_text_transformed_colour(1500,940,string_hash_to_newline("" + string(rlMag) + "|" + string(rocketLauncherAmt) + " "),3,3,0,c_purple,c_purple,c_purple,c_purple,1);
 	if(rlda == 1) { draw_sprite_stretched(spr_rocketLauncher,1,1500,940,24*15,8*15); }
 	else { draw_sprite_stretched(spr_rocketLauncher,0,1500,940,24*15,8*15); }
@@ -458,6 +466,7 @@ if(pp7Have == 1 and gunEquip == 14)
 		ppr = false;
 		audio_play_sound(snd_pickup,3,false,o_saveload.sfxvol);
 	}
+	if(pp7Amt == 0) { ppr = false; }
     draw_text_transformed_colour(1600,940,string_hash_to_newline("" + string(ppMag) + "|" + string(pp7Amt) + " "),3,3,0,c_dkgray,c_dkgray,c_dkgray,c_dkgray,1);
 	//draw_sprite_ext(spr_silencedPP7,0,1700,940,10,10,0,c_white,1);
 	draw_sprite_stretched(spr_silencedPP7,0,1600,940,21*10,10*10);

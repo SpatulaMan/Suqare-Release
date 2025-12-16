@@ -128,6 +128,7 @@
     {"name":"o_loading","order":37,"path":"objects/o_loading/o_loading.yy",},
     {"name":"o_lockpick50","order":4,"path":"objects/o_lockpick50/o_lockpick50.yy",},
     {"name":"o_logo","order":24,"path":"objects/o_logo/o_logo.yy",},
+    {"name":"o_lvl11Controller","order":1,"path":"objects/o_lvl11Controller/o_lvl11Controller.yy",},
     {"name":"o_lvl2","order":1,"path":"objects/o_lvl2/o_lvl2.yy",},
     {"name":"o_lvlBrief","order":14,"path":"objects/o_lvlBrief/o_lvlBrief.yy",},
     {"name":"o_lvlSelect","order":2,"path":"objects/o_lvlSelect/o_lvlSelect.yy",},

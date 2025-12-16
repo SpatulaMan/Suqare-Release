@@ -105,7 +105,7 @@ if(instance_exists(o_lvlStart))
 		audio_sound_gain(s3,.25*o_saveload.musvol,1000);
 		mCheck = false;
 	}
-	if(o_lvlStart.speed > 0 and o_lvlStart.r == r_lvl_5 and mCheck == true)
+	if(o_lvlStart.speed > 0 and (o_lvlStart.r == r_lvl_5 or o_lvlStart.r == r_lvl_11) and mCheck == true)
 	{
 		//if(audio_is_playing(s2))
 		//{
@@ -162,7 +162,7 @@ if(instance_exists(o_lvlStart))
 	}
 }
 
-if(room == r_lvl_0 or room == r_lvl_0_1)
+if(room == r_lvl_0)
 {
 	if(mCheck2 == false and mCheck3 == false)
 	{

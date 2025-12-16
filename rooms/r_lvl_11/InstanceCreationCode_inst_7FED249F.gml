@@ -22,5 +22,3 @@ switch(weapon_type)
 		weapon_bul = o_eSGBul;
 		shtspd = 80; break;
 }
-
-

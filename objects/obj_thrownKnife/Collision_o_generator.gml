@@ -1,4 +1,4 @@
-other.hp -= damage;
+other.hp -= .5;
 audio_play_sound(snd_hurt,3,false,o_saveload.sfxvol);
 var _inst = instance_create(x, y, obj)
 audio_play_sound(snd_knifeStick,5,false,o_saveload.sfxvol);

@@ -566,11 +566,11 @@ if(!instance_exists(o_gem2) and room == r_lvl_7)
 }
 if(instance_exists(o_generator))
 {
-	if(distance_to_object(o_generator) < 128)
+	if(distance_to_object(o_generator) < 240)
 	{
-		sndlvl = 64/distance_to_object(o_generator);
+		sndlvl = 60/distance_to_object(o_generator);
 		if(sndlvl > 3) { sndlvl = 3; }
-		if(sndlvl < .05) { sndlvl = .05; }
+		if(sndlvl < .01) { sndlvl = .01; }
 		if(!audio_is_playing(snd_stepOther))
 		{
 			audio_play_sound(snd_stepOther,10,0,sndlvl*o_saveload.sfxvol,0,random_range(.8,.84));

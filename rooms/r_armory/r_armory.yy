@@ -84,7 +84,6 @@
     {"name":"inst_1C89A0DB","path":"rooms/r_armory/r_armory.yy",},
     {"name":"inst_20C78659","path":"rooms/r_armory/r_armory.yy",},
     {"name":"inst_7F0373ED","path":"rooms/r_armory/r_armory.yy",},
-    {"name":"inst_561B88DE","path":"rooms/r_armory/r_armory.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -163,7 +162,6 @@
         {"$GMRInstance":"v1","%Name":"inst_627E792C","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_627E792C","objectId":{"name":"o_roomName","path":"objects/o_roomName/o_roomName.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":8.777504,"scaleY":5.4375,"x":531.0,"y":364.0,},
         {"$GMRInstance":"v1","%Name":"inst_1D3E5ED7","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1D3E5ED7","objectId":{"name":"o_roomName","path":"objects/o_roomName/o_roomName.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.496254,"scaleY":1.84375,"x":441.0,"y":494.0,},
         {"$GMRInstance":"v1","%Name":"inst_1BFADA70","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1BFADA70","objectId":{"name":"o_roomName","path":"objects/o_roomName/o_roomName.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0894318,"scaleY":2.96875,"x":326.0,"y":198.0,},
-        {"$GMRInstance":"v1","%Name":"inst_561B88DE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_561B88DE","objectId":{"name":"o_generator","path":"objects/o_generator/o_generator.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":402.0,"y":290.0,},
       ],"layers":[],"name":"Instances_Rooms","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances_Action","depth":400,"effectEnabled":true,"effectType":null,"gridX":1,"gridY":1,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_72779D2E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_72779D2E","objectId":{"name":"o_armory","path":"objects/o_armory/o_armory.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":535.0,"y":368.0,},

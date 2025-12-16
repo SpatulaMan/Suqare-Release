@@ -170,6 +170,7 @@
     {"id":{"name":"o_loading","path":"objects/o_loading/o_loading.yy",},},
     {"id":{"name":"o_lockpick50","path":"objects/o_lockpick50/o_lockpick50.yy",},},
     {"id":{"name":"o_logo","path":"objects/o_logo/o_logo.yy",},},
+    {"id":{"name":"o_lvl11Controller","path":"objects/o_lvl11Controller/o_lvl11Controller.yy",},},
     {"id":{"name":"o_lvl2","path":"objects/o_lvl2/o_lvl2.yy",},},
     {"id":{"name":"o_lvlBrief","path":"objects/o_lvlBrief/o_lvlBrief.yy",},},
     {"id":{"name":"o_lvlEnd","path":"objects/o_lvlEnd/o_lvlEnd.yy",},},

@@ -5,10 +5,10 @@ if(hp <= 0)
 }
 if(image_speed >= 1)
 {
-	spdchg = -.002;
+	spdchg = -.0015;
 }
-else if(image_speed <= .3)
+else if(image_speed <= .4)
 {
-	spdchg = .005;
+	spdchg = .002;
 }
 image_speed += spdchg;

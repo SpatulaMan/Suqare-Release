@@ -546,7 +546,7 @@ function scr_conversation(t)
 	//text for small text box is 128 across, and 11 char-13's
 	a[0] = @"You are Suqare. A brand new mercenary trying to make a name for yourself. You've equipped the place with a shop 
 			where you can buy equipment and upgrades, and a manager who will always have a list of jobs for you to choose from.
-			This is your first foray into the world of mercenaries; keep your wits about you. 
+			This is your first foray into the world of mercenaries. Keep your wits about you. 
 			
 			These are tumultuous times. 6 large corporations are all vying for control in the public and private sectors. While 
 			they show their good side to the public, many of them do some shady dealings behind closed doors. These 6 companies
@@ -776,8 +776,11 @@ function scr_shop(t){
 	o[6] = @"Mines x3
 			
 			
-			Description: 3 Mines that can be placed on the floor. Try to
-			lure unsuspecting enemies onto them. 
+			Description: 3 Mines that can be placed on the floor. Can be
+			triggered manually by throwing a knife at them. 
+			
+			Placing a mine in a doorway can be an easy way to take out 
+			an enemy in pursuit. 
 			
 			
 			$600
