@@ -3,6 +3,7 @@ if(!instance_exists(o_generator) and !gen_check)
 {
 	start = true;
 	alarm_set(1,6);
+	alarm_set(2,30);
 	gen_check = true;
 	var inst = instance_create_layer(0,0,"Instances",obj_darkness);
 	inst.image_xscale = 100;

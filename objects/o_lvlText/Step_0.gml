@@ -50,5 +50,9 @@ switch(room)
 	if(o_L10.ob2 == true) { obj2 = true; } break;
 	
 	case r_lvl_11: t = 62; o1 = 65; b = scr_briefing(t); ot1 = scr_briefing(o1); image_index = 0;
-	if(instance_number(o_generator) <= 0) obj1 = true;
+	if(instance_number(o_generator) <= 0) obj1 = true; break;
+	
+	case r_lvl_12: t = 66; o1 = 69; o2 = 70; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); image_index = 1;
+	if(!instance_exists(o_data)) { obj1 = true; }
+	if(obj_suq.cBackup == 16) { obj2 = true; }
 }

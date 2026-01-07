@@ -585,8 +585,8 @@ if(pickup_timer > 0)
 		case 43: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ESMERELDA PAINTING"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 44: draw_text_transformed_colour(roomw/2,roomh*.35,string_hash_to_newline("PRESS T TO MARK AS SUSPECT"),2,2,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 45: draw_text_transformed_colour(roomw/2,roomh*.35,string_hash_to_newline("PRESS ENTER TO CONFIRM MARKED SUSPECTS"),2,2,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
-		case 46: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
-		case 47: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 46: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("FINANCIAL SOFTWARE"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 47: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("BACKUP DATA CORRUPTED"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 48: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 49: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 50: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;

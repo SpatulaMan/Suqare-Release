@@ -523,12 +523,91 @@ function scr_briefing(t){
 			
 			
 			
+			
 			(Press Spacebar to Accept)";
 	a[65] = @"Destroy Plant:";
-	a[66] = @"";
-	a[67] = @"";
-	a[68] = @"";
-	a[69] = @"";
+	a[66] = @"BRIEFING:
+			Kanker and Co. is gaining on us with their new banking 
+			software. We're losing customers to it every day. We need
+			you to go into their Finance Headquarters, Download the 
+			raw package files and DLL's, and then corrupt all the 
+			backup data in the server room. 
+			
+			If we can do this, we'll be back on top as the go to 
+			finance and banking company. 
+			
+			The keys to the main computer room, and the backup server
+			room are with their respective overseers. Find them, kill
+			them, get in to do the job. ";
+	a[67] = @"Steal Finance Tech";
+	a[68] = @"Mission: Steal Tech
+			
+			Hiring Firm: Perez Holdings
+			Current Standing With
+			Perez Holdings: "+string(obj_suq.perez)+
+			@"
+			Combat Difficulty: 7
+			Mental Difficulty: 3
+			Locked Doors: 3
+			Req. Locked Doors: 3
+			Keys Available: 3
+			Reward: $7000
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[69] = @"Steal Tech";
+	a[70] = @"Corrupt Backups";
+	a[71] = @"BRIEFING:
+			We've just caught wind of an up and coming scientist who
+			invented something incredible. A device to convert 
+			living people into ghost like entities with all the 
+			abilities of a spectral being. This is amazing stuff. So,
+			we need you to go in and kidnap this scientist. We'll get
+			him to build a finished version of the machine, and then
+			our plans can really be set in motion. 
+			
+			Who knows if any of the people in the facility are ghosts
+			at this point, but if they are, you might want to make 
+			sure you have a weapon that can handle them. Or just run
+			away. Either works for us. ";
+	a[72] = @"Kidnap Scientist";
+	a[73] = @"Mission: Kidnap Scientist
+			
+			Hiring Firm: Kanker and Co.
+			Current Standing With
+			Kanker and Co.: "+string(obj_suq.kanker)+
+			@"
+			Combat Difficulty: 8
+			Mental Difficulty: 4
+			Locked Doors: 3
+			Req. Locked Doors: 3
+			Keys Available: 3
+			Reward: $5300
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[74] = @"Kidnap Scientist";
+	a[75] = @"";
+	a[76] = @"";
+	a[77] = @"";
+	a[78] = @"";
+	a[79] = @"";
 	
 /*
 15: Vambrace of Wurtu
@@ -2024,7 +2103,7 @@ function debrief(m)
 			widespread empire of Hiertech won't go down easily. 
 			
 			Press Spacebar to continue";
-	c[36] = @"Objective Complete
+	c[36] = @"Objective Failed
 			Payout: $0
 			
 			Response From Hiring Firm:
@@ -2042,9 +2121,79 @@ function debrief(m)
 			it won't be extreme. 
 			
 			Press Spacebar to continue";
-	c[37] = @"";
-	c[38] = @"";
-	c[39] = @"";
+	c[37] = @"Objectives Complete
+			Payout: $7000
+			
+			Response From Hiring Firm:
+			This is fantastic news! We're finally sticking it to those dummies over at
+			kanker. Their quarterly earnings will go way down, and they'll have less 
+			capital to make big purchases to further their plans. 
+			
+			Current standing with Perez Holdings. "+string(obj_suq.perez)+@"
+			
+			Result:
+			Perez Holdings saw a nice bump in revenue, but not anything too extreme. 
+			Kanker and Co. saw a huge hit, though. They're still able to go through
+			with the next steps of their plan, but it'll be more risky. 
+			
+			Press Spacebar to continue";
+	c[38] = @"Side Objective Complete
+			Payout: $1000
+			
+			Response From Hiring Firm:
+			You stole the software, so we can at least copy and improve on what 
+			kanker and Co. have done. We'll be more competitive, but with those
+			backups left uncorrupted, we can't hurt their current install base. 
+			This is hardly a win, but I guess we'll take it. 
+			
+			Current standing with Perez Holdings. "+string(obj_suq.perez)+@"
+			
+			Result:
+			Perez Holdings and Kanker and Co. are still battling it out, but Perez
+			Holdings has a nice inside look into how to improve their software. 
+			
+			Press Spacebar to continue";
+	c[39] = @"Side Objective Complete
+			Payout: $1000
+			
+			Response From Hiring Firm:
+			You corrupted the backups, but you didn't get us their software. This 
+			will help us in the long run, but we would have been better off if we 
+			had the software. I guess we can call this mission a success. 
+			
+			Current standing with Perez Holdings. "+string(obj_suq.perez)+@"
+			
+			Result:
+			Perez Holdings saw a nice bump in revenue after poaching Kanker and 
+			Co.'s customers, but the features they have in the software are still
+			lacking, preventing a total shut out of potential competitors. 
+			
+			Press Spacebar to continue";
+	c[40] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			What are we even hiring you for? You're supposed to get stuff done, but
+			you just stand around lolly gagging for the better part of a mud ridden,
+			dung pile of horse crap year! We would've been better off if you just
+			ignored us. 
+			
+			Current standing with Perez Holdings. "+string(obj_suq.perez)+@"
+			
+			Result:
+			Perez Holdings continue to lose sales to Kanker and Co.'s software. It
+			will be a battle to see who will come out on top. 
+			
+			Press Spacebar to continue";
+	c[41] = @"";
+	c[42] = @"";
+	c[43] = @"";
+	c[44] = @"";
+	c[45] = @"";
+	c[46] = @"";
+	c[47] = @"";
+	c[48] = @"";
+	c[49] = @"";
 	return c[m];
 }
 function tutorial(k)

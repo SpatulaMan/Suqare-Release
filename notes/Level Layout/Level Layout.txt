@@ -1,7 +1,7 @@
 NL - Non-Lethal
 
 -Perez Holdings Plan - Become a monopolistic and powerful bank:
-2: Not doing Bank Heist
+2: Not doing/failing Bank Heist
 or
 7: Destroy Gems
 12: Steal finance tech from Kanker and Co. - Negative to Kanker and positive to Perez, vice versa if failed
@@ -15,9 +15,9 @@ or
 2: Bank heist
 and
 7: Ignore or take and fail Destroy Gems
-13: Steal plans and kidnap scientist to make super weapon
+13: kidnap scientist to make super weapon
 16: Destroy Big Tank that could stop whole plan (The tank is accessible at any point, but you want to gather as many resources as possible to know how to destroy it.) 
-25: Protect Scientist while he assembles super weapon
+25: Protect Scientist while he assembles super weapon (Do this as a ghost?)
 32: Take Control of manufacturing plant
 43: Charge super weapon
 
@@ -77,6 +77,10 @@ Yellerteeth doesn't like ninjas
 
 
 
+If a company is bankrupt, remove those levels from the level select. 
+
+If a mission has to do with affecting a company that's already bankrupt, remove these levels as well. Increase standing and net worth of that company a chunk. 
+
 
 Level List:
 
@@ -91,9 +95,9 @@ or
 8: Eradicate spiders
 9: Ring of Tarpho
 10: Dinner Party (solve murder and painting theft) - NL
-	11: Shut down Hiertech Chemical Plant
-		12: Steal finance tech from Kanker and Co.
-		13: Kidnap scientist to make super weapon
+11: Shut down Hiertech Chemical Plant
+12: Steal finance tech from Kanker and Co.
+	13: Kidnap scientist to make super weapon
 		14: Gun Club - NL
 	15: Vambrace of Wurtu
 		16: Destroy Big Tank that could stop whole plan

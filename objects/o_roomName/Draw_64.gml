@@ -106,6 +106,12 @@ if(a > 0)
 		case 72: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("REACTOR 3"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 73: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("REACTOR 4"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 74: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SECRET STOREROOM"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 75: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("MAINTENANCE"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 76: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("C SUITE"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 77: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("MAIN COMPUTER"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 78: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("BACKUP SERVER"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 79: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("CUBICLES"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 80: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("JANITORIAL"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		default: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("RESTRICTED"),3,3,0,c_white,c_white,c_white,c_white,a); 
 	}
 }
