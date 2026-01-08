@@ -25,8 +25,6 @@ if(ki > 1) { draw_sprite_ext(spr_silverKey,keys[1],roomw*.15,roomh*.05,12,12,0,c
 if(ki > 2) { draw_sprite_ext(spr_silverKey,keys[2],roomw*.25,roomh*.05,12,12,0,c_white,1); }
 showMoney--;
 
-if(res > 0) { draw_healthbar(x-12,y-16,x+12,y-12,res*fix,c_black,_orange,_blue,0,false,false); }
-
 switch(lives)
 {
 	case 10: draw_sprite_ext(s_lives,0,576,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,432,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,288,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
@@ -587,8 +585,8 @@ if(pickup_timer > 0)
 		case 45: draw_text_transformed_colour(roomw/2,roomh*.35,string_hash_to_newline("PRESS ENTER TO CONFIRM MARKED SUSPECTS"),2,2,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 46: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("FINANCIAL SOFTWARE"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 47: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("BACKUP DATA CORRUPTED"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
-		case 48: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
-		case 49: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 48: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("HAZMAT SUIT"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 49: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("WEIRD PILL"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 50: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 	}
 }

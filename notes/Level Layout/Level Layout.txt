@@ -97,8 +97,8 @@ or
 10: Dinner Party (solve murder and painting theft) - NL
 11: Shut down Hiertech Chemical Plant
 12: Steal finance tech from Kanker and Co.
-	13: Kidnap scientist to make super weapon
-		14: Gun Club - NL
+13: Kidnap scientist to make super weapon
+	14: Gun Club - NL
 	15: Vambrace of Wurtu
 		16: Destroy Big Tank that could stop whole plan
 		17: Help Old Ladies to cross the street(hurts Hiertech in net worth and standings because he's racing cars with cargo through there)

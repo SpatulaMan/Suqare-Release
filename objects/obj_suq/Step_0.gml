@@ -2,6 +2,18 @@ rk = keyboard_check(ord("D"));
 lk = keyboard_check(ord("A"));
 uk = keyboard_check(ord("W"));
 dk = keyboard_check(ord("S"));
+if(spd > 2)
+{
+	spd -= 0.0005;
+}
+if(image_xscale > 1)
+{
+	image_xscale -= 0.0005;
+}
+if(image_yscale > 1)
+{
+	image_yscale -= 0.0005;
+}
 
 if(room != r_armory and keyboard_check(vk_backspace) and lives > 0)
 {
@@ -268,8 +280,8 @@ if(health > 0)
 		//_input = clamp(_input, 0, 1);
 		_spd = spd * _input;
 	
-		xspd = lengthdir_x(_spd, moveDir);
-		yspd = lengthdir_y(_spd, moveDir);
+		xspd = lengthdir_x(_spd, moveDir*mdCh);
+		yspd = lengthdir_y(_spd, moveDir*mdCh);
 	}
 	
 	if(place_meeting(x + xspd, y, obj_wall) or place_meeting(x + xspd, y, obj_wallWood))

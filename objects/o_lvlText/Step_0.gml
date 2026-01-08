@@ -14,7 +14,7 @@ switch(room)
 	case r_lvl_4: t = 19; o1 = 20; o2 = 21; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); image_index = 1; 
 	if(instance_exists(o_girl)) { if(o_girl.path_check == true) { obj1 = true; } } 
 	if(instance_exists(o_girl)) { if(o_girl.path_check == true and (o_girl.x < 454 and o_girl.y > 897)) { obj2 = true; } }
-	else if(!instance_exists(o_girl)) { obj2 = false; }break;
+	else if(!instance_exists(o_girl)) { obj2 = false; } break;
 	
 	//case r_lvl_4_1: t = 19; o1 = 20; o2 = 21; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); image_index = 1; 
 	//if(instance_exists(o_girl)) { if(o_girl.path_check == true) { obj1 = true; } } break;
@@ -54,5 +54,10 @@ switch(room)
 	
 	case r_lvl_12: t = 66; o1 = 69; o2 = 70; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); image_index = 1;
 	if(!instance_exists(o_data)) { obj1 = true; }
-	if(obj_suq.cBackup == 16) { obj2 = true; }
+	if(obj_suq.cBackup == 16) { obj2 = true; } break;
+	
+	case r_lvl_13: t = 71; o1 = 74; o2 = 75; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); image_index = 1;
+	if(instance_exists(o_scientist)) { if(obj_suq.distance_to_object(o_scientist) < 90) { obj1 = true; } }
+	if(instance_exists(o_scientist)) { if(o_scientist.path_check == true and (o_scientist.x < 469 and o_scientist.y > 681)) { obj2 = true; } }
+	else if(!instance_exists(o_scientist)) { obj2 = false; } break;
 }

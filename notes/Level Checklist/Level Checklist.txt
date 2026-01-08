@@ -1,8 +1,8 @@
--Briefing
--Level Details
--Short briefing
--Objectives
--Result text
+	-Briefing
+	-Level Details
+	-Short briefing
+	-Objectives
+	-Result text
 -Level Design
 -Starting location
 -Darkness
@@ -10,10 +10,10 @@
 -Backgrounds
 -New Features/Enemies
 -Enemy Placement
--Map
+	-Map
 -Gadgets/Weapons
 -Testing
--Add To Level Select
+	-Add To Level Select
 -Music
 -Mid-Level Objectives Complete
 -Level End Code

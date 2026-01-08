@@ -585,11 +585,11 @@ function scr_briefing(t){
 			Current Standing With
 			Kanker and Co.: "+string(obj_suq.kanker)+
 			@"
-			Combat Difficulty: 8
+			Combat Difficulty: 9
 			Mental Difficulty: 4
-			Locked Doors: 3
-			Req. Locked Doors: 3
-			Keys Available: 3
+			Locked Doors: 2
+			Req. Locked Doors: 2
+			Keys Available: 1
 			Reward: $5300
 			
 			
@@ -602,12 +602,45 @@ function scr_briefing(t){
 			
 			
 			(Press Spacebar to Accept)";
-	a[74] = @"Kidnap Scientist";
-	a[75] = @"";
-	a[76] = @"";
-	a[77] = @"";
-	a[78] = @"";
-	a[79] = @"";
+	a[74] = @"Find Scientist";
+	a[75] = @"Kidnap Scientist";
+	a[76] = @"BRIEFING:
+			I was just at the local gun club becoming a member. After 
+			my dad passed away, I wanted to honor him by using his gun
+			on the range at his favorite club. But, when I got there,
+			they took my gun and told me that I wasn't ready for it.
+			They 
+			How could they do that? That gun is the last thing I have
+			of his, so could you please get it back?
+			
+			None of these people are bad, so please don't kill anyone.
+			Just sneak through and take the gun. If you kill even one
+			person, then I won't give you a reward. It's just not 
+			worth that.";
+	a[77] = @"Steal Gun Back";
+	a[78] = @"Mission: Steal Gun
+			
+			Hiring Firm: Bobby Fray
+			Current Standing With
+			Bobby Fray: N/A
+			Combat Difficulty: 6
+			Mental Difficulty: 6
+			Locked Doors: 1
+			Req. Locked Doors: 1
+			Keys Available: 1
+			Reward: $3800
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[79] = @"Steal Gun";
 	
 /*
 15: Vambrace of Wurtu
@@ -810,6 +843,15 @@ function scr_conversation(t)
 			is detected. 
 			
 			You are responsible for what you carry through here.";
+	//lvl 13 warnings
+	a[82] = @"WARNING: POISONOUS GASES. DO NOT ENTER";
+	a[83] = @"WARNING: HAZMAT SUIT REQUIRED PAST THIS CHECKPOINT";
+	a[84] = @"WARNING: NO HAZMAT SUIT DETECTED. TURN BACK NOW";
+	a[85] = @"";
+	a[86] = @"";
+	a[87] = @"";
+	a[88] = @"";
+	a[89] = @"";
 			
 	return a[t];
 }
@@ -2185,12 +2227,91 @@ function debrief(m)
 			will be a battle to see who will come out on top. 
 			
 			Press Spacebar to continue";
-	c[41] = @"";
-	c[42] = @"";
-	c[43] = @"";
-	c[44] = @"";
-	c[45] = @"";
-	c[46] = @"";
+	c[41] = @"Objectives Complete
+			Payout: $5300
+			
+			Response From Hiring Firm:
+			You really got him? That's fantastic news! Our plans are finally coming
+			to fruition. Soon the world will know the power of Kanker and Co. And
+			you'll be on the right side of history. 
+			
+			Current standing with Kanker and Co. "+string(obj_suq.kanker)+@"
+			
+			Result:
+			Kanker and Co. have the scientist working on his prototype in their lab.
+			Once it's complete, who knows what kind of mayhem they will bring on the
+			world. 
+			
+			Press Spacebar to continue";
+	c[42] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			What!? You mean to tell me we sent you out there just for you to come 
+			back empty handed? This is preposterous! This won't stop us for long,
+			I can assure you. We will find a way to continue our plans! Once you 
+			see our power, you'll have to make a choice to be with us or against
+			us. 
+			
+			Current standing with Kanker and Co. "+string(obj_suq.kanker)+@"
+			
+			Result:
+			Kanker and Co.'s net worth will take a small hit for now, but they'll
+			be back. At least that's what they say. Who knows what will come about
+			if they can get there plan off the ground. 
+			
+			Press Spacebar to continue";
+	c[43] = @"Objectives Complete
+			Payout: $3800
+			
+			Response From Hiring Firm:
+			Awesome! Thanks! I'll keep my gun safe and won't be going back to that gun club again. I'm so
+			glad to have this back with me. 
+			
+			Result:
+			Bobby Fray shot himself the first time he tried to use it. No one knows how it happened, but 
+			he's recovering fine in the hospital. Maybe the gun club members knew what they were doing. 
+			
+			Press Spacebar to continue";
+	c[44] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You couldn't get my gun back? This is ridiculous. I'll have you know 
+			I am very upset right now. You're the worst, and a complete failure of
+			a mercenary. 
+			
+			Result:
+			The Gun Club kept the gun for a while, but when he learned how to use it, they eventually gave
+			it back to him. Maybe there was some wisdom in taking it away. 
+			
+			Press Spacebar to continue";
+	c[45] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			I can't believe it. I'm in shock. How could you... How... Why? You killed some of them? I 
+			don't care about the gun anymore. It has bloodshed associated with it, and I just can't bear 
+			to look at it. You disgust me. 
+			
+			Result:
+			You killed some members of the gun club. Maybe it was for fun, or maybe for justice, but most
+			people would say you went too far. 
+			
+			Press Spacebar to continue";
+	c[46] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			I can't believe it. I'm in shock. How could you... How... Why? You killed them all? I don't
+			care about the gun anymore. It has bloodshed associated with it, and I just can't bear to look
+			at it. You disgust me. 
+			
+			Result:
+			You killed every member of the gun club. Maybe it was for fun, or maybe for justice, but 
+			almost everyone would say you went too far. 
+			
+			Press Spacebar to continue";
 	c[47] = @"";
 	c[48] = @"";
 	c[49] = @"";

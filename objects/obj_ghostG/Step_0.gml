@@ -77,7 +77,7 @@ if(boss == false)
 		move_towards_point(x3,y3,spd);
 		p4 = true;
 	}*/
-	if(distance_to_object(obj_suq) < 120 and p5 == false)
+	if(distance_to_object(obj_suq) < 90 and p5 == false)
 	{
 		alarm_set(6,10);
 		p5 = true;

@@ -1,4 +1,10 @@
 visible = true;
+spd = 2;
+mdCh = 1;
+obj_suq.image_xscale = 1; 
+obj_suq.image_yscale = 1;
+image_blend = -1;
+//image_blend = c_white;
 if(room != r_armory and room != r_skill1 and room != r_skill2 and room != r_skill3
  and room != r_skill4 and room != r_skill5 and room != r_lvl_0_1 and room != r_lvl_4_1)
 {
@@ -34,6 +40,7 @@ if(room != r_armory and room != r_skill1 and room != r_skill2 and room != r_skil
 }
 if(room == r_armory and instance_exists(o_armory))
 {
+	hazmat = false;
 	if(o_armory.roomStartCheck == false)
 	{
 		alarm_set(1,30);

@@ -55,4 +55,14 @@ if(instance_exists(o_girl_1))
 		}
 	}
 }
+if(instance_exists(o_scientist))
+{
+	with (o_scientist)
+	{
+		if(path_exists(path))
+		{
+			path_delete(path);
+		}
+	}
+}
 room_goto(r_armory);

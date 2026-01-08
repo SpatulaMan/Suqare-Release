@@ -112,6 +112,15 @@ if(a > 0)
 		case 78: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("BACKUP SERVER"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 79: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("CUBICLES"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 80: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("JANITORIAL"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 81: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("F1: OUTFITTING"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 82: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("B1: MEDICINE"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 83: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("B2: GASES"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 84: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("B3: SPECIMENS"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 85: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("B4: EXPERIMENTAL"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 86: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HYDROKS RESEARCH FACILITY"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 87: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("JANITORIAL"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 88: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("JANITORIAL"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 89: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("JANITORIAL"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		default: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("RESTRICTED"),3,3,0,c_white,c_white,c_white,c_white,a); 
 	}
 }
