@@ -758,6 +758,7 @@
     {"name":"background30_tileset","order":25,"path":"tilesets/background30_tileset/background30_tileset.yy",},
     {"name":"background32_tileset","order":29,"path":"tilesets/background32_tileset/background32_tileset.yy",},
     {"name":"TileSet16","order":30,"path":"tilesets/TileSet16/TileSet16.yy",},
+    {"name":"TileSet35","order":54,"path":"tilesets/TileSet35/TileSet35.yy",},
     {"name":"ts_0","order":32,"path":"tilesets/ts_0/ts_0.yy",},
     {"name":"ts_1","order":33,"path":"tilesets/ts_1/ts_1.yy",},
     {"name":"ts_10","order":40,"path":"tilesets/ts_10/ts_10.yy",},

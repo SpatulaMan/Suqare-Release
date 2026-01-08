@@ -821,6 +821,7 @@
     {"id":{"name":"background30_tileset","path":"tilesets/background30_tileset/background30_tileset.yy",},},
     {"id":{"name":"background32_tileset","path":"tilesets/background32_tileset/background32_tileset.yy",},},
     {"id":{"name":"TileSet16","path":"tilesets/TileSet16/TileSet16.yy",},},
+    {"id":{"name":"TileSet35","path":"tilesets/TileSet35/TileSet35.yy",},},
     {"id":{"name":"ts_0","path":"tilesets/ts_0/ts_0.yy",},},
     {"id":{"name":"ts_1","path":"tilesets/ts_1/ts_1.yy",},},
     {"id":{"name":"ts_10","path":"tilesets/ts_10/ts_10.yy",},},

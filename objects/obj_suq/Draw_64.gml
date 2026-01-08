@@ -524,7 +524,7 @@ if(pickup_timer > 0)
 					draw_text_transformed_colour(roomw/2,roomh*.01,string_hash_to_newline("CAN'T CARRY MORE WEAPONS"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90);
 				}break;
 		case 15: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("SHOTGUN AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
-		case 16: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("AIR CANNON"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90);
+		case 16: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("GAS CANNON"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90);
 				if(gunNum == gunMax and shooterGunHave == 0) 
 				{
 					draw_text_transformed_colour(roomw/2,roomh*.01,string_hash_to_newline("CAN'T CARRY MORE WEAPONS"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90);
@@ -541,12 +541,12 @@ if(pickup_timer > 0)
 					draw_text_transformed_colour(roomw/2,roomh*.01,string_hash_to_newline("CAN'T CARRY MORE WEAPONS"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90);
 				}break;
 		case 20: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("SNIPER RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
-		case 21: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("AIR CANNON AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 21: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("GAS CANNON AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 22: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("GEM"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 23: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("RED KEY"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 24: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ORANGE KEY"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 25: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("SAFE DECODER"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
-		case 26: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("SWORD"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90);
+		case 26: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("GOLDEN SWORD"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90);
 				if(gunNum == gunMax and swordHave == 0) 
 				{
 					draw_text_transformed_colour(roomw/2,roomh*.01,string_hash_to_newline("CAN'T CARRY MORE WEAPONS"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90);

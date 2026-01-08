@@ -3,7 +3,7 @@
 	-Short briefing
 	-Objectives
 	-Result text
--Level Design
+	-Level Design
 -Starting location
 -Darkness
 -Room Names

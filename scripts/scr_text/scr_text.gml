@@ -625,7 +625,7 @@ function scr_briefing(t){
 			Bobby Fray: N/A
 			Combat Difficulty: 6
 			Mental Difficulty: 6
-			Locked Doors: 1
+			Locked Doors: 2
 			Req. Locked Doors: 1
 			Keys Available: 1
 			Reward: $3800
