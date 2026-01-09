@@ -4,16 +4,16 @@
 	-Objectives
 	-Result text
 	-Level Design
--Starting location
--Darkness
--Room Names
--Backgrounds
--New Features/Enemies
--Enemy Placement
+	-Starting location
+	-Darkness
+	-Room Names
+	-Backgrounds
+	-New Features/Enemies
+	-Enemy Placement
 	-Map
--Gadgets/Weapons
+	-Gadgets/Weapons
 -Testing
 	-Add To Level Select
 -Music
--Mid-Level Objectives Complete
--Level End Code
+	-Mid-Level Objectives Complete
+	-Level End Code

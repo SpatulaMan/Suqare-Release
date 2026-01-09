@@ -60,4 +60,7 @@ switch(room)
 	if(instance_exists(o_scientist)) { if(obj_suq.distance_to_object(o_scientist) < 90) { obj1 = true; } }
 	if(instance_exists(o_scientist)) { if(o_scientist.path_check == true and (o_scientist.x < 469 and o_scientist.y > 681)) { obj2 = true; } }
 	else if(!instance_exists(o_scientist)) { obj2 = false; } break;
+	
+	case r_lvl_14: t = 76; o1 = 79; o2 = 80; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); image_index = 1;
+	if(instance_exists(o_lvl14)) { obj1 = o_lvl14.ob1; obj2 = o_lvl14.ob2; }
 }

@@ -623,7 +623,7 @@ function scr_briefing(t){
 			Hiring Firm: Bobby Fray
 			Current Standing With
 			Bobby Fray: N/A
-			Combat Difficulty: 6
+			Combat Difficulty: 5
 			Mental Difficulty: 6
 			Locked Doors: 2
 			Req. Locked Doors: 1
@@ -641,6 +641,16 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[79] = @"Steal Gun";
+	a[80] = @"Don't Kill";
+	a[81] = @"Don't Kill";
+	a[82] = @"Don't Kill";
+	a[83] = @"Don't Kill";
+	a[84] = @"Don't Kill";
+	a[85] = @"Don't Kill";
+	a[86] = @"Don't Kill";
+	a[87] = @"Don't Kill";
+	a[88] = @"Don't Kill";
+	a[89] = @"Don't Kill";
 	
 /*
 15: Vambrace of Wurtu
@@ -2296,7 +2306,7 @@ function debrief(m)
 			
 			Result:
 			You killed some members of the gun club. Maybe it was for fun, or maybe for justice, but most
-			people would say you went too far. 
+			people would say you went too far. Your standing with some companies will drop for this. 
 			
 			Press Spacebar to continue";
 	c[46] = @"Objectives Failed
@@ -2309,7 +2319,8 @@ function debrief(m)
 			
 			Result:
 			You killed every member of the gun club. Maybe it was for fun, or maybe for justice, but 
-			almost everyone would say you went too far. 
+			almost everyone would say you went too far. Your standing with some companies will drop for 
+			this. 
 			
 			Press Spacebar to continue";
 	c[47] = @"";

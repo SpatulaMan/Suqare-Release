@@ -93,4 +93,7 @@ switch(prog)
 			if(obj_suq.lvldone[4] == false and obj_suq.lvldone[3] == false and obj_suq.hiertech > -6) { array_insert(lvl,t,4); t++; }
 			break;
 	case 0: array_insert(lvl,t,0); t++;
+			if(obj_suq.lvldone[11] == false and obj_suq.perez > -4) { array_insert(lvl,t,11); t++; }
+			if(obj_suq.lvldone[12] == false and obj_suq.kanker > -5) { array_insert(lvl,t,12); t++; }
+			if(obj_suq.lvldone[13] == false) { array_insert(lvl,t,13); t++; }
 }

@@ -504,6 +504,40 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 42;
 				}
 			}
+			case r_lvl_14:
+			{
+				o_saveload.ynet += 2;
+				o_saveload.gnet += 1;
+				o_saveload.hnet -= 2;
+				o_saveload.unet -= 2;
+				o_saveload.pnet -= 1;
+				o_saveload.knet += 3;
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				if(instance_exists(o_lvl14))
+				{
+					if(o_lvl14.ob1 == true and o_lvl14.ob2 == true)
+					{
+						obj_suq.money += 3800*_emtBill;
+						obj_suq.report = 43;
+					}
+					else if(o_lvl14.ob1 == false and o_lvl14.ob2 == true)
+					{
+						obj_suq.report = 44;
+					}
+					else if(o_lvl14.ob2 == false and instance_number(obj_guard) > 0)
+					{
+						obj_suq.report = 45;
+						obj_suq.ungulate -= 1;
+						obj_suq.gildebrand -= 1;
+					}
+					else if(o_lvl14.ob2 == false)
+					{
+						obj_suq.report = 46;
+						obj_suq.ungulate -= 2;
+						obj_suq.gildebrand -= 2;
+					}
+				}
+			}
 		}
 		if(!car and !range_optional)
 		{
