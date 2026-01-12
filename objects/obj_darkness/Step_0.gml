@@ -13,6 +13,7 @@ if(instance_exists(obj_suq))
 		s = 0;
 	}
 }
+
 /*repeat(100)
 {
 	if((collision_line(x+r,y+r,obj_suq.x,obj_suq.y,obj_wall,false,true) < 0 and 

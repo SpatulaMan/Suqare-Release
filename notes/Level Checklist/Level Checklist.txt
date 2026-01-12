@@ -1,19 +1,19 @@
-	-Briefing
-	-Level Details
-	-Short briefing
-	-Objectives
-	-Result text
-	-Level Design
-	-Starting location
-	-Darkness
-	-Room Names
-	-Backgrounds
-	-New Features/Enemies
-	-Enemy Placement
-	-Map
-	-Gadgets/Weapons
+-Briefing
+-Level Details
+-Short briefing
+-Objectives
+-Result text
+-Level Design
+-Starting location
+-Darkness
+-Room Names
+-Backgrounds
+-New Features/Enemies
+-Enemy Placement
+-Map
+-Gadgets/Weapons
 -Testing
-	-Add To Level Select
+-Add To Level Select
 -Music
-	-Mid-Level Objectives Complete
-	-Level End Code
+-Mid-Level Objectives Complete
+-Level End Code

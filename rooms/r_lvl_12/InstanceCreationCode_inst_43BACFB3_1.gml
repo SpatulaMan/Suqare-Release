@@ -19,5 +19,5 @@ switch(weapon_type)
 		shtspd = 80; break;
 }
 key_drop = true;
-keyImage = 2;
+keyimage = 2;
 

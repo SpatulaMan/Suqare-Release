@@ -33,7 +33,6 @@ and
 -Yellerteeth Inc. Plan - Steal every ninja artifact and kill ninja leader for revenge:
 3: Amulet of Hecto
 9: Ring of Tarpho (new weapons)
-15: Vambrace of Wurtu - Ninja artifact, but in a rich benefactor's mansion. Be totally silent and kill no one. - NL
 21: Jewel of Barfo, Ghost ninjas too (Steal from museum)
 27: Nose of Mortuban (New Enemy)
 33: Eye of Gutran
@@ -42,6 +41,7 @@ and
 
 -Hiertech Plan - To be profitable by any means necessary:
 5: Save girl
+15: Recruit Ninjas by completing a combat challenge against their best warriors (boss rush?)
 18: Contraband (Move contraband from building and load up cars while fighting off cops. When holding boxes, you can't shoot.)
 28: Kill Traitor (connected to winning levels 22 and 26)
 30: Steal Art (6 paintings) - NL
@@ -98,8 +98,8 @@ or
 11: Shut down Hiertech Chemical Plant
 12: Steal finance tech from Kanker and Co.
 13: Kidnap scientist to make super weapon
-	14: Gun Club - NL
-	15: Vambrace of Wurtu
+14: Gun Club - NL
+	15: Recruit Ninjas - Bad for Yellerteeth
 		16: Destroy Big Tank that could stop whole plan
 		17: Help Old Ladies to cross the street(hurts Hiertech in net worth and standings because he's racing cars with cargo through there)
 		18: Contraband

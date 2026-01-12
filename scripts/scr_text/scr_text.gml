@@ -857,7 +857,7 @@ function scr_conversation(t)
 	a[82] = @"WARNING: POISONOUS GASES. DO NOT ENTER";
 	a[83] = @"WARNING: HAZMAT SUIT REQUIRED PAST THIS CHECKPOINT";
 	a[84] = @"WARNING: NO HAZMAT SUIT DETECTED. TURN BACK NOW";
-	a[85] = @"";
+	a[85] = @"SERVER ROOM MANAGER";
 	a[86] = @"";
 	a[87] = @"";
 	a[88] = @"";

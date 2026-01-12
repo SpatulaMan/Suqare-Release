@@ -14,8 +14,8 @@
   "name":"obj_box_B",
   "overriddenProperties":[],
   "parent":{
-    "name":"lvl8",
-    "path":"folders/Objects/lvlmechs/lvl8.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":{
     "name":"obj_wall",
