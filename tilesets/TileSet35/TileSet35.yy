@@ -12,8 +12,8 @@
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"Bullets",
-    "path":"folders/Objects/Bullets.yy",
+    "name":"zzzDoNotUse",
+    "path":"folders/Objects/zzzDoNotUse.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",

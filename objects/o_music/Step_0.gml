@@ -213,7 +213,7 @@ if(room == r_lvl_2)
 		}
 	}
 }
-if(room == r_lvl_3 or room == r_lvl_9)
+if(room == r_lvl_3 or room == r_lvl_9 or room == r_lvl_15)
 {
 	//audio_sound_gain(s1,0,3000);
 	if(mCheck2 == false and mCheck3 == false)
@@ -290,7 +290,7 @@ if(room == r_lvl_6)
 		mCheck3 = false;
 	}
 }
-if(room == r_lvl_7 or room == r_lvl_8)
+if(room == r_lvl_7 or room == r_lvl_8 or room == r_lvl_12 or room == r_lvl_13 or room == r_lvl_14)
 {
 	//audio_sound_gain(s1,0,3000);
 	if(mCheck2 == false and mCheck3 == false)

@@ -121,7 +121,7 @@ if(a > 0)
 		case 87: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("GUN CLUB"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 88: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SHOOTING RANGE"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 89: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SERVER ROOM MANAGER"),3,3,0,c_white,c_white,c_white,c_white,a); break;
-		case 90: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SERVER ROOM MANAGER"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 90: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("PROVING GROUNDS"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 91: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SERVER ROOM MANAGER"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 92: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SERVER ROOM MANAGER"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 93: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SERVER ROOM MANAGER"),3,3,0,c_white,c_white,c_white,c_white,a); break;

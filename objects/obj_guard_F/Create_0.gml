@@ -18,7 +18,7 @@ hpc = 0;
 hpt = 0;
 patrol_check = false;
 check = false; //final check
-
+image_blend = c_green;
 image_speed = 0;
 
 p1 = false;

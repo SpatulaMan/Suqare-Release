@@ -642,12 +642,47 @@ function scr_briefing(t){
 			(Press Spacebar to Accept)";
 	a[79] = @"Steal Gun";
 	a[80] = @"Don't Kill";
-	a[81] = @"Don't Kill";
-	a[82] = @"Don't Kill";
-	a[83] = @"Don't Kill";
-	a[84] = @"Don't Kill";
-	a[85] = @"Don't Kill";
-	a[86] = @"Don't Kill";
+	a[81] = @"BRIEFING:
+			We need some extra protection for our business here at
+			Hiertech. So, we want to permanently recruit a local ninja
+			outfit nearby. The problem is they will only help those 
+			who can defeat all 3 of their ninja masters in one on one
+			combat. That's where you come in. 
+			
+			Here's the rundown on them from what we know:
+			Kyu: Runs fast, throws many shuriken, but is inaccurate 
+			and retreats often.
+			Ji: Hyper accurate and the speed of his shuriken are
+			lightning fast.
+			Ren: Has mastered the art of creating moving after images,
+			and he's also skilled at disappearing at any time.";
+	a[82] = @"Recruit Ninja Clan By Defeating 3 Ninja Masters";
+	a[83] = @"Mission: Recruit Ninjas
+			
+			Hiring Firm: Hiertech
+			Current Standing With
+			Hiertech: "+string(obj_suq.hiertech)+
+			@"
+			Combat Difficulty: 10
+			Mental Difficulty: 3
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $6000
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[84] = @"Defeat Kyu";
+	a[85] = @"Defeat Ji";
+	a[86] = @"Defeat Ren";
 	a[87] = @"Don't Kill";
 	a[88] = @"Don't Kill";
 	a[89] = @"Don't Kill";
@@ -2323,8 +2358,32 @@ function debrief(m)
 			this. 
 			
 			Press Spacebar to continue";
-	c[47] = @"";
-	c[48] = @"";
+	c[47] = @"Objectives Complete
+			Payout: $6000
+			
+			Response From Hiring Firm:
+			This is great! Our business will thrive with the extra protection.
+			
+			Current standing with Hiertech "+string(obj_suq.hiertech)+@"
+			
+			Result:
+			Hiertech's smuggling business is booming even more now. They're able to fend off law 
+			enforcement without breaking a sweat. 
+			
+			Press Spacebar to continue";
+	c[48] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You chickened out? You piece of terburated trash. I can't rely on anyone. 
+			
+			Current standing with Hiertech "+string(obj_suq.hiertech)+@"
+			
+			Result:
+			Hiertech's business model stayed the same, but the cops are starting to crack down on it 
+			little by little. 
+			
+			Press Spacebar to continue";
 	c[49] = @"";
 	return c[m];
 }

@@ -80,6 +80,7 @@ switch(prog)
 	case 6: if(obj_suq.lvldone[11] == false and obj_suq.perez > -4) { array_insert(lvl,t,11); t++; }
 			if(obj_suq.lvldone[12] == false and obj_suq.kanker > -5) { array_insert(lvl,t,12); t++; }
 			if(obj_suq.lvldone[13] == false) { array_insert(lvl,t,13); t++; }
+			if(obj_suq.lvldone[14] == false and obj_suq.hiertech > -4) { array_insert(lvl,t,14); t++; }
 	case 5: if(obj_suq.lvldone[6] == false and obj_suq.perez > -3 and obj_suq.lvldone[1] == true and obj_suq.gemsD > 0) { array_insert(lvl,t,6); t++; }
 			if(obj_suq.lvldone[9] == false) { array_insert(lvl,t,9); t++; }
 			if(obj_suq.lvldone[10] == false and obj_suq.ungulate > -3) { array_insert(lvl,t,10); t++; }
@@ -96,4 +97,5 @@ switch(prog)
 			if(obj_suq.lvldone[11] == false and obj_suq.perez > -4) { array_insert(lvl,t,11); t++; }
 			if(obj_suq.lvldone[12] == false and obj_suq.kanker > -5) { array_insert(lvl,t,12); t++; }
 			if(obj_suq.lvldone[13] == false) { array_insert(lvl,t,13); t++; }
+			if(obj_suq.lvldone[14] == false and obj_suq.hiertech > -4) { array_insert(lvl,t,14); t++; }
 }

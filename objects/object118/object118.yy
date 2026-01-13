@@ -18,8 +18,8 @@
   "name":"object118",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Enemies.yy",
+    "name":"zzzDoNotUse",
+    "path":"folders/Objects/zzzDoNotUse.yy",
   },
   "parentObjectId":null,
   "persistent":false,
