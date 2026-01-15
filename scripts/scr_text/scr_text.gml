@@ -683,9 +683,54 @@ function scr_briefing(t){
 	a[84] = @"Defeat Kyu";
 	a[85] = @"Defeat Ji";
 	a[86] = @"Defeat Ren";
-	a[87] = @"Don't Kill";
-	a[88] = @"Don't Kill";
-	a[89] = @"Don't Kill";
+	a[87] = @"BRIEFING:
+			So, Perez Holdings has been secretly developing some kind
+			of new tank technology. It's so powerful that it could end
+			our plans before they get off the ground. Since they don't
+			know we know it exists, this is our only chance to strike.
+			I want you to sneak into their warehouse, find out how to
+			kill it, then go kill it. 
+			
+			You can take it on at any point, but if you go in 
+			unprepared, it'll most likely eat you alive. Bring all the
+			powerful weaponry that you can carry. This will be a doozy 
+			of a battle. Bring lockpicks, tear gas, mines, whatever 
+			you have because who knows how to kill this thing!";
+	a[88] = @"Destroy A Big, Armored Tank";
+	a[89] = @"Mission: Destroy Tank
+			
+			Hiring Firm: Kanker and Co.
+			Current Standing With
+			Kanker and Co.: "+string(obj_suq.kanker)+
+			@"
+			Combat Difficulty: 11
+			Mental Difficulty: 6
+			Locked Doors: 2
+			Req. Locked Doors: 2
+			Keys Available: 3
+			Reward: $9000
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[90] = @"Destroy Tank";
+	a[91] = @"";
+	a[92] = @"";
+	a[93] = @"";
+	a[94] = @"";
+	a[95] = @"";
+	a[96] = @"";
+	a[97] = @"";
+	a[98] = @"";
+	a[99] = @"";
+	
 	
 /*
 15: Vambrace of Wurtu

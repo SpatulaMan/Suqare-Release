@@ -21,7 +21,7 @@ switch(room)
 	case r_trap6: draw_text_colour(1024,32,string_hash_to_newline("Enemies: " + string(instance_number(object98)+instance_number(object99)+instance_number(obj_spinBlades))),c_silver,c_silver,c_silver,c_silver,1); 
 					draw_text_colour(1132,32,string_hash_to_newline("Floor "),c_silver,c_silver,c_silver,c_silver,1);
 					draw_text_colour(1180,32,string_hash_to_newline("B2"),c_olive,c_olive,c_olive,c_olive,1); break;
-	case r_trap7: draw_text_colour(1024,32,string_hash_to_newline("Enemies: " + string(instance_number(obj_zombieBoss)+instance_number(obj_zombieF)+instance_number(obj_MTurret))),c_silver,c_silver,c_silver,c_silver,1); 
+	case r_trap7: draw_text_colour(1024,32,string_hash_to_newline("Enemies: " + string(instance_number(o_tank)+instance_number(obj_zombieF)+instance_number(obj_MTurret))),c_silver,c_silver,c_silver,c_silver,1); 
 					draw_text_colour(1132,32,string_hash_to_newline("Floor "),c_silver,c_silver,c_silver,c_silver,1);
 					draw_text_colour(1180,32,string_hash_to_newline("B1"),c_olive,c_olive,c_olive,c_olive,1); break;
 	/*case r_trap8: draw_text_colour(1024,32,string_hash_to_newline("Enemies: " + string(instance_number(obj_zombie))),c_silver,c_silver,c_silver,c_silver,1); 

@@ -28,8 +28,8 @@
   "name":"obj_ninja_bosses",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Enemies.yy",
+    "name":"Bosses",
+    "path":"folders/Objects/Bosses.yy",
   },
   "parentObjectId":{
     "name":"obj_guard",

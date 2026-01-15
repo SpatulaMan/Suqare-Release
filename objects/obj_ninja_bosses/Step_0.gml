@@ -165,9 +165,9 @@ else
 	}
 	if(teleportTime <= 0 and !path_check)
 	{
+		instance_create_layer(x,y,"Instances_Action",o_smoke_A);
 		x = x4;
 		y = y4;
-		instance_create_layer(x,y,"Instances_Action",o_smoke_A);
 	}
 }
 if(hp < hpc)
@@ -258,6 +258,10 @@ if(hp <= 0)
 	{
 		o_lvl15.o++;
 		o_lvl15.start = true;
+	}
+	if(instance_exists(inst_347332AC))
+	{
+		with (inst_347332AC) instance_destroy();
 	}
 	instance_destroy();
 }

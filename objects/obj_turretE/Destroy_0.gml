@@ -1,19 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
 audio_play_sound(snd_fire,3,false,.7*o_saveload.sfxvol);
-instance_create(x,y,obj_fireSH);
-instance_create(x,y,obj_fireSH);
-instance_create(x,y,obj_fireSH);
-instance_create(x,y,obj_fireSH);
-instance_create(x,y,obj_fireSH);
-instance_create(x,y,obj_fireSH);
-instance_create(x,y,obj_fireSH);
-instance_create(x,y,obj_fireSH);
-instance_create(x,y,obj_fireSH);
-instance_create(x,y,obj_fireSH);
-instance_create(x,y,obj_fireSH);
-instance_create(x,y,obj_fireSH);
-instance_create(x,y,obj_fireSH);
+instance_create(x,y,o_eFireSH);
+instance_create(x,y,o_eFireSH);
+instance_create(x,y,o_eFireSH);
+instance_create(x,y,o_eFireSH);
+instance_create(x,y,o_eFireSH);
+instance_create(x,y,o_eFireSH);
+instance_create(x,y,o_eFireSH);
+instance_create(x,y,o_eFireSH);
+instance_create(x,y,o_eFireSH);
+instance_create(x,y,o_eFireSH);
+instance_create(x,y,o_eFireSH);
+instance_create(x,y,o_eFireSH);
+instance_create(x,y,o_eFireSH);
 var _i = choose(1,1,1,1,2,2,2,3,4,4);
 if(room != r_skill1 and room != r_skill2 and room != r_skill3 and room != r_skill4 and room != r_skill5)
 {

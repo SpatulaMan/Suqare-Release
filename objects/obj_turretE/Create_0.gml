@@ -38,6 +38,7 @@ x5 = 0;
 y5 = 0;
 turretTime = 120;
 weapon_type = choose(obj_pistol,obj_magnum,obj_machineGun);
+if(room == r_lvl_16) { weapon_type = obj_machineGun; image_blend = c_red; }
 if(weapon_type == obj_pistol)
 {
 	weapon_spd = 6;

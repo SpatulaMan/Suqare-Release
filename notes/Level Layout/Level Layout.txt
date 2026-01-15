@@ -99,8 +99,8 @@ or
 12: Steal finance tech from Kanker and Co.
 13: Kidnap scientist to make super weapon
 14: Gun Club - NL
-	15: Recruit Ninjas - Bad for Yellerteeth
-		16: Destroy Big Tank that could stop whole plan
+15: Recruit Ninjas - Bad for Yellerteeth
+	16: Destroy Big Tank that could stop whole plan
 		17: Help Old Ladies to cross the street(hurts Hiertech in net worth and standings because he's racing cars with cargo through there)
 		18: Contraband
 		19: Compromise all other banking software
