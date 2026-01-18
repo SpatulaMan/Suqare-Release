@@ -1,0 +1,20 @@
+{
+  "$GMPath":"",
+  "%Name":"Path52",
+  "closed":false,
+  "kind":0,
+  "name":"Path52",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":980.74225,"y":608.11316,},
+    {"speed":100.0,"x":841.1428,"y":609.6583,},
+    {"speed":100.0,"x":837.87305,"y":256.86465,},
+    {"speed":100.0,"x":981.98126,"y":255.64044,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

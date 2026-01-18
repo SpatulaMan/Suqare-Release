@@ -75,7 +75,7 @@ switch(prog)
 	case 11:
 	case 10:
 	case 9:
-	case 8: if(obj_suq.lvldone[12] == false and obj_suq.kanker > -3 and o_saveload.pnet > 80) { array_insert(lvl,t,15); t++; }
+	case 8: if(obj_suq.lvldone[12] == false and obj_suq.kanker > -3 and o_saveload.pnet > 80 and obj_suq.progress < 25) { array_insert(lvl,t,15); t++; }
 	case 7:
 	case 6: if(obj_suq.lvldone[11] == false and obj_suq.perez > -4) { array_insert(lvl,t,11); t++; }
 			if(obj_suq.lvldone[12] == false and obj_suq.kanker > -5) { array_insert(lvl,t,12); t++; }
@@ -98,4 +98,9 @@ switch(prog)
 			if(obj_suq.lvldone[12] == false and obj_suq.kanker > -5) { array_insert(lvl,t,12); t++; }
 			if(obj_suq.lvldone[13] == false) { array_insert(lvl,t,13); t++; }
 			if(obj_suq.lvldone[14] == false and obj_suq.hiertech > -4) { array_insert(lvl,t,14); t++; }
+}
+if(t == 0)
+{
+	obj_suq.progress++
+	instance_destroy();
 }

@@ -1,0 +1,22 @@
+{
+  "$GMPath":"",
+  "%Name":"Path54",
+  "closed":false,
+  "kind":0,
+  "name":"Path54",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":1280.2808,"y":554.97815,},
+    {"speed":100.0,"x":1251.8789,"y":555.65515,},
+    {"speed":100.0,"x":1254.1768,"y":408.37854,},
+    {"speed":100.0,"x":1119.9001,"y":408.57446,},
+    {"speed":100.0,"x":1123.3895,"y":256.17023,},
+    {"speed":100.0,"x":981.65063,"y":256.36523,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

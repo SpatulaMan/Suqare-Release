@@ -11,6 +11,6 @@ if(tank == 3)
 }
 if(tank == 1)
 {
-	dPanel = o_tankDamage;
+	dPanel = 1;
 	//fill the rest of this out
 }

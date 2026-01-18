@@ -1,6 +1,6 @@
 /// @description
 var _wallsee = collision_line(x,y,obj_suq.x,obj_suq.y,obj_wall,false,true) < 0;
-var _doorsee = collision_lxine(x,y,obj_suq.x,obj_suq.y,o_door,false,true) < 0;
+var _doorsee = collision_line(x,y,obj_suq.x,obj_suq.y,o_door,false,true) < 0;
 var _wt = false;
 var _dt = false;
 var pd = point_direction(x,y,obj_suq.x,obj_suq.y);
@@ -28,7 +28,7 @@ if(wtdt and !_wallsee and !_doorsee)
 	adt = angle_difference(image_angle,pdt);
 	if(_wt and _dt)
 	{
-		image_angle -= min(abs(adt), 2) * sign(adt);
+		image_angle -= min(abs(adt), 3) * sign(adt);
 	}
 	else
 	{
@@ -42,7 +42,12 @@ if(wtdt and !_wallsee and !_doorsee)
 
 if(_wallsee and _doorsee)
 {
-	image_angle -= min(abs(ad), 2) * sign(ad);
+	image_angle -= min(abs(ad), 3) * sign(ad);
+}
+else if(!_wallsee and !_doorsee and !_wt and !_dt)
+{
+	var adi = angle_difference(image_angle,o_tank.image_angle);
+	image_angle -= min(abs(adi), 1) * sign(adi);
 }
 if(abs(angle_difference(image_angle,pd)) < 10)
 {

@@ -7,3 +7,7 @@ if(instance_exists(o_smoke) and tank == 2)
 	}
 }
 
+if(tank == 1)
+{
+	hp += .01;
+}

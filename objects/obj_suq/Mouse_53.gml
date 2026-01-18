@@ -246,14 +246,13 @@ if(keyboard_check_direct(vk_shift) and room != r_armory)
 			if(_op1 == 1 or _op1 == 2 or _op1 == 3)
 			{
 				with (_inst) instance_destroy();
-				audio_play_sound(snd_shotgunCock,3,false,.5*o_saveload.sfxvol,0,random_range(.8,1.5));
+				audio_play_sound(snd_shotgunCock,3,false,.7*o_saveload.sfxvol,0,.8);
 			}
 			else
 			{
 				audio_play_sound(snd_knifespin,3,false,o_saveload.sfxvol);
 			}
 			lock50--;
-			randomize();
 		} break;
 		case 4: if(decoy == 1)
 		{

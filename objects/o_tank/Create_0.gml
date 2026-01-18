@@ -9,7 +9,8 @@ tur2 = instance_create_layer(x+20,y-15,"Instances_Action",obj_turretE);
 tur1.image_blend = c_lime;
 tur2.image_blend = c_lime;
 lockPanel = noone;
-dPanel = noone;
+dPanel = false;
+damage = 4;
 
 four = 0;
 path_check = false;
@@ -25,7 +26,7 @@ keyimage = 0;
 hpc = 0;
 hpt = 0;
 patrol_check = false;
-check = false; //final check
+check = true;
 
 
 //path = path_add();

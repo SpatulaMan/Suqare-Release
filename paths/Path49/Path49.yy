@@ -1,0 +1,19 @@
+{
+  "$GMPath":"",
+  "%Name":"Path49",
+  "closed":false,
+  "kind":0,
+  "name":"Path49",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":963.3177,"y":842.47955,},
+    {"speed":100.0,"x":1278.8691,"y":842.9353,},
+    {"speed":100.0,"x":1280.6316,"y":555.4737,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

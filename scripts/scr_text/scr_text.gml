@@ -705,7 +705,7 @@ function scr_briefing(t){
 			@"
 			Combat Difficulty: 11
 			Mental Difficulty: 6
-			Locked Doors: 2
+			Locked Doors: 3
 			Req. Locked Doors: 2
 			Keys Available: 3
 			Reward: $9000
@@ -820,6 +820,43 @@ function scr_conversation(t)
 	
 			You must find 3 totems to unlock a secret passageway to the only weapon that is effective against him. The fabled
 			ghost gun. Once you have it, you'll be able to kill him. ";
+			
+	a[10] = @"Date: 12/23/0001
+			Report:
+			The Super Tank is doing well in our testing. We're continually placing mines in front of it, and it's not even
+			phased. We haven't dealt any actual damage to see if fire truly does repair the tank as we expect it to. 
+																										         -Mankie Fruniz";
+	a[11] = @"Date: 01/15/0002
+			Report:
+			We have a future enhancement request to report. The front panel seems to be made to a lesser standard than the rest 
+			of the armor. We need to rectify this situation before any field deployment of the Super Tank will be possible. 
+																										         -Mankie Fruniz";
+	a[12] = @"Date: 01/30/0002
+			Report:
+			Addendum to previous report made on 1/15/0002. The defective panel is actually the rear armor. We're not sure to 
+			what extent it's vulnerable yet, but we're testing that now. 
+																										         -Mankie Fruniz";
+	a[13] = @"ate: 02/06/0002
+			Report:
+			We can confirm that the panel is weak to weapons fire from armor piercing projectiles such as Magnums, Assault 
+			Rifles, Snipers, and PP9's. Sharp object thrown at it could also pierce through to some extent. 
+																										         -Mankie Fruniz";
+	a[14] = @"";
+	a[15] = @"";
+	a[16] = @"";
+	a[17] = @"";
+	a[18] = @"";
+	a[19] = @"";
+	a[20] = @"";
+	a[21] = @"";
+	a[22] = @"";
+	a[23] = @"";
+	a[24] = @"";
+	a[25] = @"";
+	a[26] = @"";
+	a[27] = @"";
+	a[28] = @"";
+	a[29] = @"";
 	a[60] = @"Yellen Egbert II:
 			Oh, no! My butler is dead and the 'esmerelda' has been stolen! Whoever could have done such a thing? Suqare, could 
 			you please investigate and figure out who did this? I would be forever in your debt. My guards already locked all 
@@ -2429,7 +2466,44 @@ function debrief(m)
 			little by little. 
 			
 			Press Spacebar to continue";
-	c[49] = @"";
+	c[49] = @"Objectives Complete
+			Payout: $9000
+			
+			Response From Hiring Firm:
+			You busted up that tank! I can't believe you actually figured out how to destroy it. This will
+			be a huge hit to Perez's net worth, so that'll be so nice not to have to worry about. 
+			
+			Current standing with Kanker and Co. "+string(obj_suq.kanker)+@"
+			
+			Result:
+			Perez Holdings won't be able to tamper with Kanker and Co.'s plans for a while now. This is a 
+			huge boom to Kanker and Co.'s bottom line, and a big hit to Perez Holdings. 
+			
+			Press Spacebar to continue";
+	c[50] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			We might be done for. That tank is going to do major damage when it's complete We're going to 
+			have to work even harder now to stop it, or finish our plans sooner. You may not have hurt us
+			directly, but you definitely wasted our time! 
+			
+			Current standing with Kanker and Co. "+string(obj_suq.kanker)+@"
+			
+			Result:
+			Perez Holdings could still attack Kanker and Co. and stop their plans, so we'll have to see 
+			which company comes out on top in this feud. 
+			
+			Press Spacebar to continue";
+	c[51] = @"";
+	c[52] = @"";
+	c[53] = @"";
+	c[54] = @"";
+	c[55] = @"";
+	c[56] = @"";
+	c[57] = @"";
+	c[58] = @"";
+	c[59] = @"";
 	return c[m];
 }
 function tutorial(k)

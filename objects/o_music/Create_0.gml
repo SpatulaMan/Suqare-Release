@@ -14,4 +14,5 @@ s6 = audio_play_sound(snd_musicD1_1,10,true,0);
 audio_pause_sound(s6);
 mCheck2 = false;
 mCheck3 = false;
-enemy = [];
+enemies = [];
+enemy = noone;

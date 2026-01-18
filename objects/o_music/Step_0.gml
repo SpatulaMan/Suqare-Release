@@ -7,17 +7,19 @@ if(o_saveload.musvol*.8 != audio_sound_get_gain(s2) and room == r_menu)
 {
 	audio_sound_gain(s2,.8*o_saveload.musvol,0);
 }
-if(instance_exists(obj_guard))
+if(instance_exists(obj_guard)) { enemy = obj_guard; }
+if(instance_exists(o_tank)) { enemy = o_tank; }
+if(instance_exists(enemy))
 {
-	for (var i = 0; i < instance_number(obj_guard); ++i;)
+	for (var i = 0; i < instance_number(enemy); ++i;)
 	{
-		enemy[i] = instance_find(obj_guard,i);
-		with(enemy[i])
+		enemies[i] = instance_find(enemy,i);
+		with(enemies[i])
 		{
 			_w = collision_line(x,y,obj_suq.x,obj_suq.y,obj_wall,false,true) < 0;
 			_d = collision_line(x,y,obj_suq.x,obj_suq.y,o_door,false,true) < 0;
 		}
-		_c = enemy[i].check;
+		_c = enemies[i].check;
 		_wallsee = _w;
 		_doorsee = _d;
 		if(_w and _d) { break; }
@@ -66,7 +68,7 @@ if(instance_exists(o_lvlStart))
 		audio_sound_gain(s1,.25*o_saveload.musvol,1000);
 		mCheck = false;
 	}
-	if(o_lvlStart.speed > 0 and o_lvlStart.r == r_lvl_2 and mCheck == true)
+	if(o_lvlStart.speed > 0 and o_lvlStart.r == r_lvl_2 and o_lvlStart.r == r_lvl_16 and mCheck == true)
 	{
 		//if(audio_is_playing(s2))
 		//{
@@ -180,7 +182,7 @@ if(room == r_lvl_0)
 		}
 	}
 }
-if(room == r_lvl_2)
+if(room == r_lvl_2 or room == r_lvl_16)
 {
 	//audio_sound_gain(s1,0,3000);
 	if(mCheck2 == false and mCheck3 == false)

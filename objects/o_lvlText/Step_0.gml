@@ -65,5 +65,8 @@ switch(room)
 	if(instance_exists(o_lvl14)) { obj1 = o_lvl14.ob1; obj2 = o_lvl14.ob2; } break;
 	
 	case r_lvl_15: t = 81; o1 = 84; o2 = 85; o3 = 86; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); ot3 = scr_briefing(o3); image_index = 2;
-	if(instance_exists(o_lvl15)) { obj1 = o_lvl15.ob1; obj2 = o_lvl15.ob2; obj3 = o_lvl15.ob3; }
+	if(instance_exists(o_lvl15)) { obj1 = o_lvl15.ob1; obj2 = o_lvl15.ob2; obj3 = o_lvl15.ob3; } break;
+
+	case r_lvl_16: t = 87; o1 = 90; b = scr_briefing(t); ot1 = scr_briefing(o1); image_index = 0;
+	if(instance_exists(o_lvl16)) { obj1 = o_lvl16.ob1; }
 }

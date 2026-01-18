@@ -1,22 +1,22 @@
--Briefing
--Level Details
--Short briefing
--Objectives
--Result text
+	-Briefing
+	-Level Details
+	-Short briefing
+	-Objectives
+	-Result text
 -Level Design
--Starting location
+	-Starting location
 -Darkness
 -Room Names
 -Backgrounds
--New Features/Enemies
+	-New Features/Enemies
 -Enemy Placement
--Map
--Gadgets/Weapons
+	-Map
+	-Gadgets/Weapons
 -Testing
--Add To Level Select
--Music
--Mid-Level Objectives Complete
--Level End Code
+	-Add To Level Select
+	-Music
+	-Mid-Level Objectives Complete
+	-Level End Code
 
 Have the weapons needed in the facility to destroy the tank. If it runs you over, it's instant death
 
@@ -31,7 +31,7 @@ Ideas for weaknesses/strengths:
 2. Bullets bounce off of it, and come back at you. 
 
 3. There's a locked door on it somewhere, find it, unlock it with the lockpicks, and then fire away with any weapon. 
-3. immune to all forms of damage
+3. immune to all forms of damage normally
 
 Spawn mines in front of the tank's paths in case the player didn't bring any. They're testing the tank's durability. 
 
