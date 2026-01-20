@@ -21,3 +21,4 @@ switch(weapon_type)
 key_drop = true;
 keyimage = 2;
 
+image_blend = c_navy;

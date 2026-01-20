@@ -123,9 +123,9 @@ if(a > 0)
 		case 89: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SERVER ROOM MANAGER"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 90: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("PROVING GROUNDS"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 91: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SERVER ROOM MANAGER"),3,3,0,c_white,c_white,c_white,c_white,a); break;
-		case 92: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SERVER ROOM MANAGER"),3,3,0,c_white,c_white,c_white,c_white,a); break;
-		case 93: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SERVER ROOM MANAGER"),3,3,0,c_white,c_white,c_white,c_white,a); break;
-		case 94: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SERVER ROOM MANAGER"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 92: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SUPER TANK TESTING"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 93: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SERVER ROOM"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 94: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("OFFICE"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 95: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SERVER ROOM MANAGER"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 96: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SERVER ROOM MANAGER"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 97: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SERVER ROOM MANAGER"),3,3,0,c_white,c_white,c_white,c_white,a); break;

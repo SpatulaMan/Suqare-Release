@@ -1,0 +1,6 @@
+locked1 = true;
+inst = instance_create_layer(x,y-5,"Instances",obj_wallWood);
+inst.image_angle = image_angle;
+inst.image_xscale = image_xscale;
+inst.visible = false;
+inst.locked = 2;

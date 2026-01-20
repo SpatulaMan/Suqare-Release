@@ -3,13 +3,13 @@
 	-Short briefing
 	-Objectives
 	-Result text
--Level Design
+	-Level Design
 	-Starting location
--Darkness
--Room Names
--Backgrounds
+	-Darkness
+	-Room Names
+	-Backgrounds
 	-New Features/Enemies
--Enemy Placement
+	-Enemy Placement
 	-Map
 	-Gadgets/Weapons
 -Testing

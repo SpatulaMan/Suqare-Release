@@ -10,7 +10,7 @@ tur1.image_blend = c_lime;
 tur2.image_blend = c_lime;
 lockPanel = noone;
 dPanel = false;
-damage = 4;
+damage = 2;
 
 four = 0;
 path_check = false;

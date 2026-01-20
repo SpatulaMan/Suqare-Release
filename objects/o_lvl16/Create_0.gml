@@ -6,5 +6,6 @@ in2 = noone;
 in3 = noone;
 in4 = noone;
 in5 = noone;
+tank = 0;
 
 alarm_set(1,60);
