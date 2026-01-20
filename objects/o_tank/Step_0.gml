@@ -1,5 +1,9 @@
 var pd = 0;
 var ad = 0;
+if(!audio_is_playing(snd_fireT) and distance_to_object(obj_suq) < 60)
+{
+	audio_play_sound(snd_hurt,1,false,.4*o_saveload.sfxvol,0,0.8);
+}
 if(instance_exists(o_tankHead))
 {
 	o_tankHead.x = x + lengthdir_x(16,image_angle-180);

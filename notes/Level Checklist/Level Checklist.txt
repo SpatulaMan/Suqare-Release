@@ -18,7 +18,17 @@
 	-Mid-Level Objectives Complete
 	-Level End Code
 
-Have the weapons needed in the facility to destroy the tank. If it runs you over, it's instant death
+
+Add SFX to tank moving and shooting
+
+
+
+
+
+
+
+
+
 
 for lvl 16, Make the tank's weaknesses randomize at the beginning of the level, and that, in turn, changes the hints that you find hidden around the warehouse to match it. 
 Ideas for weaknesses/strengths:
@@ -32,7 +42,3 @@ Ideas for weaknesses/strengths:
 
 3. There's a locked door on it somewhere, find it, unlock it with the lockpicks, and then fire away with any weapon. 
 3. immune to all forms of damage normally
-
-Spawn mines in front of the tank's paths in case the player didn't bring any. They're testing the tank's durability. 
-
-resizing the sniper's bullet with the draw event, checking the distance, and then resizing the sprite accordingly

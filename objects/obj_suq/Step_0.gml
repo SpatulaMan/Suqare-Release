@@ -600,6 +600,30 @@ if(!instance_exists(o_generator) and room == r_lvl_11)
 		audio_stop_sound(snd_stepOther);
 	}
 }
+if(instance_exists(o_tank))
+{
+	if(distance_to_object(o_tank) < 120)
+	{
+		sndlvl = 60/distance_to_object(o_tank);
+		if(sndlvl > 1) { sndlvl = 1; }
+		if(sndlvl < .01) { sndlvl = .05; }
+		if(!audio_is_playing(snd_fireT))
+		{
+			audio_play_sound(snd_fireT,1,0,sndlvl*o_saveload.sfxvol,0,random_range(.6,.8));
+		}
+	}
+	else
+	{
+		audio_stop_sound(snd_fireT);
+	}
+}
+if(!instance_exists(o_tank) and room == r_lvl_16)
+{
+	if(audio_is_playing(snd_fireT))
+	{
+		audio_stop_sound(snd_fireT);
+	}
+}
 if(room == r_range or (room == r_skill1 and !instance_exists(o_skobj)) or (room == r_skill2 and !instance_exists(o_skobj)) or (room == r_skill3 and !instance_exists(o_skobj)) or 
 (room == r_skill4 and !instance_exists(o_skobj)) or (room == r_skill5 and !instance_exists(o_skobj)))//put all of these in here
 {

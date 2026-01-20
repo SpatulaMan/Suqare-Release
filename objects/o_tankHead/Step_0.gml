@@ -56,7 +56,8 @@ if(abs(angle_difference(image_angle,pd)) < 10)
 if(shootCheck <= 0)
 {
 	shootCheck = 60;
-	//add sounds
+	audio_play_sound(snd_fire,1,0,o_saveload.sfxvol,0,random_range(.5,.6));
+	audio_play_sound(snd_heavygun,1,0,o_saveload.sfxvol,0,random_range(.3,.4));
 	var bul = instance_create_layer(x,y,"Instance_Action",o_eRLBul);
 	bul.image_angle = image_angle;
 	bul.direction = image_angle;
