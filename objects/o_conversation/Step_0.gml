@@ -16,7 +16,7 @@ else if((obj_suq.pistolHave == true or obj_suq.magnumHave == true or obj_suq.mac
 	inst.i = h;
 	check = true;
 }
-else if(h == 84 and obj_suq.hazmat == false and check == false)
+else if(h == 84 and obj_suq.hazmat == false and check == false and place_meeting(x,y,obj_suq))
 {
 	inst = instance_create(x,y,o_convo);
 	inst.i = h;

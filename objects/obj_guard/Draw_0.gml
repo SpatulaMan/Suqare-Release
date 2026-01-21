@@ -6,5 +6,5 @@ if(room == r_lvl_13)
 }
 if(room == r_lvl_14)
 {
-	image_blend = make_color_rgb(163,98,10);
+	image_blend = make_color_rgb(120,120,80);
 }

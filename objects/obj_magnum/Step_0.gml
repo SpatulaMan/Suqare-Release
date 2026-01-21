@@ -2,7 +2,7 @@ if(obj_suq.mmr > 6)
 {
 	image_index = 1;
 }
-else
+else if(room != r_lvl_14)
 {
 	image_index = 0;
 }

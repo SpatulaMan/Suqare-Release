@@ -14,6 +14,7 @@ if(room != r_lvl_3 or room != r_lvl_6)
 			for(var i = 0; i < instance_number(obj_darkness); i++)
 			{
 				var _od = instance_find(obj_darkness,i);
+				if(_od == instance_id) { i++; _od = instance_find(obj_darkness,i); }
 				if(_od.con == con)
 				{
 					with (_od) instance_change(obj_darknessP,true);

@@ -28,6 +28,7 @@ if(room != r_armory and room != r_skill1 and room != r_skill2 and room != r_skil
 	snb = sniperRifleAmt+snMag;
 	fb = flamethrowerAmt+fMag;
 	rb = rocketLauncherAmt+rlMag;
+	ppb = pp7Amt+ppMag;
 	shb = shuriken;
 	lb = lives;
 	moneyb = money;

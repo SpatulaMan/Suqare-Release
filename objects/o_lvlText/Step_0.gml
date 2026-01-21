@@ -57,7 +57,7 @@ switch(room)
 	if(obj_suq.cBackup == 16) { obj2 = true; } break;
 	
 	case r_lvl_13: t = 71; o1 = 74; o2 = 75; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); image_index = 1;
-	if(instance_exists(o_scientist)) { if(obj_suq.distance_to_object(o_scientist) < 90) { obj1 = true; } }
+	if(instance_exists(o_scientist)) { if((obj_suq.x > 2761 and obj_suq.y > 1071) or o_scientist.sciCheck) { obj1 = true; } }
 	if(instance_exists(o_scientist)) { if(o_scientist.path_check == true and (o_scientist.x < 469 and o_scientist.y > 681)) { obj2 = true; } }
 	else if(!instance_exists(o_scientist)) { obj2 = false; } break;
 	

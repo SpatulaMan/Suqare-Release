@@ -7,3 +7,7 @@ if(num != instance_number(obj_guard))
 {
 	ob2 = false;
 }
+else
+{
+	ob2 = true;
+}

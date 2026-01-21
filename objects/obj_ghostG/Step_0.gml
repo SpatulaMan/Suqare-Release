@@ -1,3 +1,5 @@
+var _wallsee = collision_line(x,y,obj_suq.x,obj_suq.y,obj_wall,false,true) < 0;
+var _doorsee = collision_line(x,y,obj_suq.x,obj_suq.y,o_door,false,true) < 0;
 if(boss == false)
 {
 	if(instance_exists(obj_suq))
@@ -77,7 +79,7 @@ if(boss == false)
 		move_towards_point(x3,y3,spd);
 		p4 = true;
 	}*/
-	if(distance_to_object(obj_suq) < 90 and p5 == false)
+	if((distance_to_object(obj_suq) < 160 or (_wallsee and _doorsee)) and p5 == false)
 	{
 		alarm_set(6,10);
 		p5 = true;
@@ -102,7 +104,7 @@ if(boss == false)
 		sCheck = 120;
 		spd = 1.4;
 	}
-	if(hp <= 0 and hp > -10)
+	if(hp <= 0 and hp > -19)
 	{
 		gTime = 1000;
 		sCheck = 0;

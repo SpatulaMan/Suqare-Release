@@ -32,7 +32,7 @@ if(bossType == 1)
 			else if(shtcnt >= 5)
 			{
 				shtcnt = 0;
-				shtspd = choose(120,160,200,240);
+				shtspd = 60;
 			}
 			shootCheck = shtspd;
 		}
@@ -50,7 +50,7 @@ if(bossType == 1)
 	{
 		path_start(path,path_speed,path_action_stop,false);
 	}
-	if(distance_to_object(obj_suq) < 30)
+	if(distance_to_object(obj_suq) < 50)
 	{
 		path_check = false;
 	}
@@ -83,7 +83,7 @@ else if(bossType == 2)
 			else if(shtcnt >= 3)
 			{
 				shtcnt = 0;
-				shtspd = 120;
+				shtspd = 60;
 			}
 			shootCheck = shtspd;
 		}
@@ -93,15 +93,11 @@ else if(bossType == 2)
 		path_end();
 		speed = 2;
 	}
-	else if(path_check)
+	else if(path_check and mp_grid_path(global.grid,path,x,y,x4,y4,true))
 	{
-		if(mp_grid_path(global.grid,path,x,y,x4,y4,true))
-		{
-			path_start(path,path_speed,path_action_stop,false);
-			path_check = false;
-		}
+		path_start(path,path_speed,path_action_stop,false);
 	}
-	if(distance_to_point(x4,y4) < 5 and path_check == false)
+	if(distance_to_point(x4,y4) < 5)
 	{
 		path_check = true;
 		x4 = choose(608,1036,1366);
@@ -129,12 +125,12 @@ else
 			else if(shtcnt >= 3)
 			{
 				shtcnt = 0;
-				shtspd = 180;
+				shtspd = 40;
 			}
 			shootCheck = shtspd;
 		}
 	}
-	if(mp_grid_path(global.grid,path,x,y,obj_suq.x,obj_suq.y,true) and hit == false and path_check)
+	if(mp_grid_path(global.grid,path,x,y,obj_suq.x,obj_suq.y,true))
 	{
 		path_start(path,path_speed,path_action_stop,false);
 	}
@@ -143,31 +139,35 @@ else
 		path_end();
 		speed = 2;
 	}
-	else if(!path_check and mp_grid_path(global.grid,path,x,y,x4,y4,true))
+	/*else if(!path_check and mp_grid_path(global.grid,path,x,y,x4,y4,true))
 	{
 		path_start(path,path_speed,path_action_stop,false);
-	}
-	if(distance_to_object(obj_suq) < 30)
+	}*/
+	/*if(distance_to_object(obj_suq) < 60)
 	{
-		path_check = false;
-		teleportTime = 300;
-	}
-	if(distance_to_point(x4,y4) < 5)
+		//path_check = false;
+		teleportTime--;
+	}*/
+	/*if(distance_to_point(x4,y4) < 5)
 	{
 		path_check = true;
 		x4 = choose(608,1036,1366);
 		y4 = choose(264,517,756);
-	}
-	if(instance_number(obj_ninja_images) < 25 and spawnTime <= 0)
+	}*/
+	if(teleportTime <= 0)
 	{
-		spawnTime = 360;
-		instance_create_layer(x,y,"Instances_Action",o_ninjaSpawner);
-	}
-	if(teleportTime <= 0 and !path_check)
-	{
-		instance_create_layer(x,y,"Instances_Action",o_smoke_A);
+		var _i = instance_create_layer(x,y,"Instances_Action",o_smoke_A);
+		_i.image_angle = random(359);
+		if(instance_number(obj_ninja_images) < 25)
+		{
+			//spawnTime = 360;
+			instance_create_layer(x,y,"Instances_Action",o_ninjaSpawner);
+		}
+		x4 = choose(608,1036,1366);
+		y4 = choose(264,517,756);
 		x = x4;
 		y = y4;
+		teleportTime = 420;
 	}
 }
 if(hp < hpc)
@@ -208,7 +208,6 @@ if((hp <= 0 and p1 == false) or (hp <= (hpt*0.75) and p1 == false))
 	_piece.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
 	_piece.image_blend = image_blend;
 	image_index = 1;
-	if(bossType == 1) { path_speed = 2.4; }
 	p1 = true;
 }
 if((hp <= 0 and p2 == false) or (hp <= (hpt*0.5) and p2 == false))
@@ -220,7 +219,6 @@ if((hp <= 0 and p2 == false) or (hp <= (hpt*0.5) and p2 == false))
 	_piece3.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
 	_piece3.image_blend = image_blend;
 	image_index = 2;
-	if(bossType == 1) { path_speed = 2.3; }
 	p2 = true;
 }
 if((hp <= 0 and p3 == false) or (hp <= (hpt*0.25) and p3 == false))
@@ -232,7 +230,6 @@ if((hp <= 0 and p3 == false) or (hp <= (hpt*0.25) and p3 == false))
 	_piece4.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
 	_piece4.image_blend = image_blend;
 	image_index = 3;
-	if(bossType == 1) { path_speed = 2.1; }
 	p3 = true;
 }
 if(hp <= 0)
@@ -258,10 +255,6 @@ if(hp <= 0)
 	{
 		o_lvl15.o++;
 		o_lvl15.start = true;
-	}
-	if(instance_exists(inst_347332AC))
-	{
-		with (inst_347332AC) instance_destroy();
 	}
 	instance_destroy();
 }

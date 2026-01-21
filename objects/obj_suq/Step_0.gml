@@ -280,7 +280,7 @@ if(health > 0)
 		//_input = clamp(_input, 0, 1);
 		_spd = spd * _input;
 	
-		xspd = lengthdir_x(_spd, moveDir*mdCh);
+		xspd = lengthdir_x(_spd*mdCh, moveDir);
 		yspd = lengthdir_y(_spd, moveDir*mdCh);
 	}
 	
@@ -456,7 +456,8 @@ if(health > 0)
 			pp7Have = 0;
 	    }
 	}
-	if((pr == true or mgr == true or arr == true or snr == true or mr == true or rlr == true or fr == true or shr == true or ppr == true) and ((gunEquip > 0 and gunEquip < 10 and gunEquip != 5) or gunEquip == 14))
+	if(((pr == true and gunEquip == 1) or (mgr == true and gunEquip == 3) or (arr == true and gunEquip == 4) or (snr == true and gunEquip == 8) or (mr == true and gunEquip == 2) or 
+		(rlr == true and gunEquip == 9) or (fr == true and gunEquip == 7) or (shr == true and gunEquip == 6) or (ppr == true and gunEquip == 14)) and (gunEquip != 5))
 	{
 		cursor_sprite = s_reloading;
 	}

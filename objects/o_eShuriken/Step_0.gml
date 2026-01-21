@@ -1,6 +1,6 @@
 spinTime--;
 soundTime--;
-spd -= .01;
+spd -= .005;
 /*if(spd <= 0) 
 {
 	spd = 0; 

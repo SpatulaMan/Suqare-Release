@@ -5,3 +5,9 @@ if(pickup_timer <= 0 and girlcheck == true and room != r_lvl_13)
 	pickup_timer = 90;
 	girlcheck = false;
 }
+if(room == r_lvl_13 and girlcheck == true)
+{
+	pickup_item = 50;
+	pickup_timer = 90;
+	girlcheck = false;
+}

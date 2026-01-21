@@ -274,6 +274,7 @@ fb = 0;
 rb = 0;
 shb = 0;
 lb = 0;
+ppb = 0;
 moneyb = 0;
 attract = o_saveload.attract;
 decoy = o_saveload.decoy;

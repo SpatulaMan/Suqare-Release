@@ -4,8 +4,6 @@ var _wallsee = collision_line(x,y,obj_suq.x,obj_suq.y,obj_wall,false,true) < 0;
 var _doorsee = collision_line(x,y,obj_suq.x,obj_suq.y,o_door,false,true) < 0;
 var _wt = false;
 var _dt = false;
-spawnTime--;
-teleportTime--;
 if(!path_exists(path))
 {
     path = path_add();
@@ -37,23 +35,9 @@ if(bossType == 1)
 			shootCheck = shtspd;
 		}
 	}
-	if(mp_grid_path(global.grid,path,x,y,obj_suq.x,obj_suq.y,true) and hit == false and path_check)
+	if(mp_grid_path(global.grid,path,x,y,obj_suq.x,obj_suq.y,true))
 	{
 		path_start(path,path_speed,path_action_stop,false);
-	}
-	else if(!path_check and mp_grid_path(global.grid,path,x,y,x4,y4,true))
-	{
-		path_start(path,path_speed,path_action_stop,false);
-	}
-	if(distance_to_object(obj_suq) < 30)
-	{
-		path_check = false;
-	}
-	if(distance_to_point(x4,y4) < 5)
-	{
-		path_check = true;
-		x4 = choose(608,1036,1366);
-		y4 = choose(264,517,756);
 	}
 }
 if(hp < hpc)
@@ -128,18 +112,21 @@ if(hp <= 0)
 		_piece5.speed = 5;
 		_piece5.image_index = 3;
 		_piece5.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
+		_piece5.image_blend = image_blend;
 	
 		var _piece1 = instance_create_layer(x,y,"Instances_Action",o_pieces);
 		_piece1.sprite_index = s_enemy_N_1;
 		_piece1.speed = 5;
 		_piece1.image_index = 4;
 		_piece1.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
+		_piece1.image_blend = image_blend;
 	
 		var _piece2 = instance_create_layer(x,y,"Instances_Action",o_pieces);
 		_piece2.sprite_index = s_enemy_N_1;
 		_piece2.speed = 5;
 		_piece2.image_index = 5;
 		_piece2.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
+		_piece2.image_blend = image_blend;
 		
 	instance_destroy();
 }

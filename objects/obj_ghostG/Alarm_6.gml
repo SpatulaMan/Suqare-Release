@@ -5,3 +5,8 @@ alarm_set(6,choose(60,120,180,40,80,100));
 x3 = choose(64,-64,0);
 y3 = choose(64,-64,0);
 move_towards_point(obj_suq.x+x3,obj_suq.y+y3,spd);
+if(p8 == false)
+{
+	alarm_set(10,30);
+	p8 = true;
+}

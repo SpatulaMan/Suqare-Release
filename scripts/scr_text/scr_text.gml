@@ -577,7 +577,10 @@ function scr_briefing(t){
 			Who knows if any of the people in the facility are ghosts
 			at this point, but if they are, you might want to make 
 			sure you have a weapon that can handle them. Or just run
-			away. Either works for us. ";
+			away. Either works for us. 
+			
+			They will not care to shoot the scientist along with you,
+			so keep him out of harm's way! ";
 	a[72] = @"Kidnap Scientist";
 	a[73] = @"Mission: Kidnap Scientist
 			
@@ -602,14 +605,14 @@ function scr_briefing(t){
 			
 			
 			(Press Spacebar to Accept)";
-	a[74] = @"Find Scientist";
-	a[75] = @"Kidnap Scientist";
+	a[74] = @"Find Target";
+	a[75] = @"Kidnap Target";
 	a[76] = @"BRIEFING:
 			I was just at the local gun club becoming a member. After 
 			my dad passed away, I wanted to honor him by using his gun
 			on the range at his favorite club. But, when I got there,
 			they took my gun and told me that I wasn't ready for it.
-			They 
+			
 			How could they do that? That gun is the last thing I have
 			of his, so could you please get it back?
 			
@@ -624,7 +627,7 @@ function scr_briefing(t){
 			Current Standing With
 			Bobby Fray: N/A
 			Combat Difficulty: 5
-			Mental Difficulty: 6
+			Mental Difficulty: 3
 			Locked Doors: 2
 			Req. Locked Doors: 1
 			Keys Available: 1
@@ -694,8 +697,8 @@ function scr_briefing(t){
 			You can take it on at any point, but if you go in 
 			unprepared, it'll most likely eat you alive. Bring all the
 			powerful weaponry that you can carry. This will be a doozy 
-			of a battle. Bring lockpicks, tear gas, mines, whatever 
-			you have because who knows how to kill this thing!";
+			of a battle. Bring whatever you can because no one knows
+			how to destroy this thing!";
 	a[88] = @"Destroy A Big, Armored Tank";
 	a[89] = @"Mission: Destroy Tank
 			
@@ -911,6 +914,8 @@ function scr_conversation(t)
 			Darvey Hent has forgotten to update his OS. Unfortunately, that means he has been let go... into our pit of feral
 			animals. Take this as your second warning. 
 																												  -Fimmy Jallon";//lvl16 Red Herrings
+	a[30] = @"Congratulations! You have defeated the 3 ninja masters. They will recover, and we will keep our end of the 
+			bargain. You are free to leave now. ";																										
 	a[60] = @"Yellen Egbert II:
 			Oh, no! My butler is dead and the 'esmerelda' has been stolen! Whoever could have done such a thing? Suqare, could 
 			you please investigate and figure out who did this? I would be forever in your debt. My guards already locked all 

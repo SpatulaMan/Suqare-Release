@@ -54,7 +54,6 @@ y4 = 0;
 x5 = x;//starting
 y5 = y;//starting
 hp = 4;
-ninjakill = 0;
 dare = 0;
 darecheck = false;
 boss = false;
@@ -64,6 +63,6 @@ hpt = 0;
 gTime = 600;
 spd = 2;
 dir = 5;
-alarm_set(6,240);
+//alarm_set(6,240);
 alarm_set(9,120);
 //alarm_set(0,300);

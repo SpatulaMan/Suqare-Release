@@ -587,6 +587,6 @@ if(pickup_timer > 0)
 		case 47: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("BACKUP DATA CORRUPTED"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 48: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("HAZMAT SUIT"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 49: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("WEIRD PILL"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
-		case 50: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("ASSAULT RIFLE AMMO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 50: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("SCIENTIST"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 	}
 }

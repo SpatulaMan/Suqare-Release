@@ -13,3 +13,4 @@ hit = false;
 fCheck = false;
 wallCheck = false;
 spawnCheck = false;
+sciCheck = false;

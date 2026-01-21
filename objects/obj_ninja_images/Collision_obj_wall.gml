@@ -1,2 +1,2 @@
 /// @description 
-hp = 0;
+//hp = 0;

@@ -1,4 +1,5 @@
 /// @description 
+inst = other;
 other.path_speed = 0;
 other.shootCheck = 20;
 other.path_check = false;

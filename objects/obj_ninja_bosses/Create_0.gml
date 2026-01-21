@@ -29,7 +29,7 @@ check = false; //final check
 weapon_spd = 4; 
 weapon = 101;
 spawnTime = 360;
-teleportTime = 300;
+teleportTime = 60;
 bigX = false;
 //path_start(path0, 1.7, path_action_restart, true);
 
@@ -49,11 +49,12 @@ x2 = 0;
 y2 = 0;
 x3 = 0;
 y3 = 0;
-x4 = 0;
-y4 = 0;
+x4 = choose(608,1036,1366);
+y4 = choose(264,517,756);
 x5 = x;//starting
 y5 = y;//starting
 //alarm_set(6,240);
+spd = 2;
 hp = 8;
 ninjakill = 0;
 dare = 0;

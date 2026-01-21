@@ -33,6 +33,7 @@ shotgunAmt = sgb;
 sniperRifleAmt = snb;
 rocketLauncherAmt = rb;
 flamethrowerAmt = fb;
+pp7Amt = ppb;  
 money = moneyb;//maybe leave this in? 
 //money += ammoBuy;
 

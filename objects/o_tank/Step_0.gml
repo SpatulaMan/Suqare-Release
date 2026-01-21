@@ -43,7 +43,7 @@ if(instance_exists(inst_7BE91A51))
 		}
 	}
 }
-pathTime--;
+pathTimer--;
 if(pathTimer <= 0)
 {
 	pathTimer = 2;
