@@ -102,6 +102,11 @@ else if(bossType == 2)
 		path_check = true;
 		x4 = choose(608,1036,1366);
 		y4 = choose(264,517,756);
+		if((x4 == 1366 and y4 == 756) or (x4 == 608 and y4 == 264))
+		{
+			x4 = obj_suq.x;
+			y4 = obj_suq.y;
+		}
 	}
 }
 else
@@ -130,7 +135,7 @@ else
 			shootCheck = shtspd;
 		}
 	}
-	if(mp_grid_path(global.grid,path,x,y,obj_suq.x,obj_suq.y,true))
+	if(mp_grid_path(global.grid,path,x,y,obj_suq.x,obj_suq.y,true) and teleportTime > 30)
 	{
 		path_start(path,path_speed,path_action_stop,false);
 	}
@@ -158,7 +163,7 @@ else
 	{
 		var _i = instance_create_layer(x,y,"Instances_Action",o_smoke_A);
 		_i.image_angle = random(359);
-		if(instance_number(obj_ninja_images) < 25)
+		if(instance_number(obj_ninja_images) < 20)
 		{
 			//spawnTime = 360;
 			instance_create_layer(x,y,"Instances_Action",o_ninjaSpawner);
@@ -167,7 +172,7 @@ else
 		y4 = choose(264,517,756);
 		x = x4;
 		y = y4;
-		teleportTime = 420;
+		teleportTime = 240;
 	}
 }
 if(hp < hpc)

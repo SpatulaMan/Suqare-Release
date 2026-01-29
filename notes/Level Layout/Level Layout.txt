@@ -5,7 +5,7 @@ NL - Non-Lethal
 or
 7: Destroy Gems
 12: Steal finance tech from Kanker and Co. - Negative to Kanker and positive to Perez, vice versa if failed
-19: Compromise all other banking software - Negative to Gildebrand and Yellerteeth and positive to Perez, negative to perez if failed
+19: Protect main vault - Mercenaries are coming in droves, killing them gives you points to spend on better guards to place down in certain locations 
 24: Execute members of government that would prevent a banking monopoly
 31: Destroy Uprising of banks
 35: Invade homes and kill everyone who works for the other banks
@@ -42,17 +42,17 @@ and
 -Hiertech Plan - To be profitable by any means necessary:
 5: Save girl
 15: Recruit Ninjas by completing a combat challenge against their best warriors (boss rush?)
-18: Contraband (Move contraband from building and load up cars while fighting off cops. When holding boxes, you can't shoot.)
-28: Kill Traitor (connected to winning levels 22 and 26)
+18: Kill Old Ladies
+28: Contraband (Move contraband from building and load up cars while fighting off cops. When holding boxes, you can't shoot.)
 30: Steal Art (6 paintings) - NL
 37: Hijack Ship - NL (without killing crew cause they need to drive the boat. Lure and lock guards in any of the 3 brigs on the ship to make them set sail)
-46: Destroy Rivals, Take out Ungulate and Gildebrand by wiring money from their banks to Hiertech
+46: Destroy Rivals, Take out Ungulate by wiring money from their banks to Hiertech
 
 
 -Gildebrand Consulting Plan - Help people with small requests, and make life better for everyone:
 8: Eradicate spiders
-17: Help Old Ladies to cross the street(hurts Hiertech in net worth and standings because he's racing cars with cargo through there)
-26: High Stakes Poker Game (win 3 hands of poker out of 5 to smoke out who's the Hiertech mole who's trying to save himself since he lost cargo and is in debt to them. If we win, maybe we can convince him to turn on Hiertech (connected to level 22)
+17: Help Old Ladies to cross the street
+26: Stop Super Weapon
 34: Save Historic Building (Yellerteeth Inc wants to take down the building covertly overnight and claim it fell on its own and buy the land to expand its parking lot. Stop their machine!) 
 44: Save Hostages, in Maze that keeps changing every 60 seconds. 
 47: Ghost Infestation, Bunch of powerful ghosts in a house. Activate things to get them to come out and you try to kill them. 
@@ -101,24 +101,26 @@ or
 13: Kidnap scientist to make super weapon
 14: Gun Club - NL
 15: Recruit Ninjas - Bad for Yellerteeth
-	16: Destroy Big Tank that could stop whole plan
-		17: Help Old Ladies to cross the street(hurts Hiertech in net worth and standings because he's racing cars with cargo through there)
-		18: Contraband
-		19: Compromise all other banking software
-		20: Quest for the Golden Sword (Have to place all the pieces in different places, drop all weapons/gadgets, and then solve puzzles/survive the level without any weaponry
-		21: Jewel of Barfo, Ghost ninjas too
-		22: Stop Contraband Runner (stop cars from getting loaded with contraband. Some armored machine gun cars between the stocking buildings of which there's 3)
-		23: Bodyguard at Dinner Party
-		24: Execute members of government that would prevent a banking monopoly
-		25: Protect Scientist while he assembles super weapon
-		26: High Stakes Poker Game
-		27: Nose of Mortuban (plan the heist on location first, look around, and then execute it. Have something to start the mission. Like the car again, but a different object)
-		28: Kill Traitor
+16: Destroy Big Tank that could stop whole plan
+	17: Help Old Ladies to cross the street
+or
+	18: Kill Benefactors
+	19: Protect Main Vault
+	20: Quest for the Golden Sword (Have to place all the pieces in different places, drop all weapons/gadgets, and then solve puzzles/survive the level without any weaponry
+	21: Jewel of Barfo
+	22: Stop Contraband Runner (stop cars from getting loaded with contraband. Some armored machine gun cars between the stocking buildings of which there's 3)
+	23: Loot abandoned pirate ship
+	24: Execute members of government that would prevent a banking monopoly
+	25: Protect Scientist while he assembles super weapon
+or
+	26: Stop Super Weapon
+	27: Vambrace of Mortuban (plan the heist on location first, look around, and then execute it. Have something to start the mission. Like the car again, but a different object)
+		28: Contraband
 		29: Prevent Theft of Museum artifacts, Ghosts haunt you as well
 		30: Steal Art (6 paintings)
 		31: Destroy Uprising of banks
 		32: Take Control of manufacturing plant
-		33: Eye of Gutran
+		33: Sandals of Gutran
 		34: Save Historic Building
 		35: Invade homes and kill everyone who works for the other banks
 		36: Prison Break, break into prison secretly, and sneak a few wrongfully convicted inmates out - NL besides ghosts that haunt the place

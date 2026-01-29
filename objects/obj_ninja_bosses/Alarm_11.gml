@@ -9,11 +9,11 @@ switch(bossType)
 			break;
 	case 2: hp = 60;
 			weapon_spd = 12;
-			spd = 3;
+			spd = 2.5;
 			path_speed = spd;
-			image_blend = c_orange;//Normal fast, shuriken speed high
+			image_blend = c_maroon;//Normal fast, shuriken speed high
 			break;
-	case 3: hp = 68;
+	case 3: hp = 80;
 			weapon_spd = 10;
 			spd = 2;
 			path_speed = spd;

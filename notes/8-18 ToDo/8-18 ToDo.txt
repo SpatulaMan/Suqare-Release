@@ -1,4 +1,5 @@
 -Maybe add some detective music or ambient noises to lvl 10
 -Add new gadget that shows another view on the screen of a little RC car that has its own vision to show whatever you need in stealth levels. Expensive, reusable, lasts for 10-20 seconds.
 	Maybe make it driveable, maybe make it just go in one direction and stop at a wall. It slides under any doors, shows things in black and white?, makes obj_darkness.image_alpha = .01
-	while in contact with it. Goes back to normal when not in contact. 
+	while in contact with it. Goes back to normal when not in contact. 15,000
+-Add gadget that gives you a 25% speed boost (or 50% maybe) for about 12,000

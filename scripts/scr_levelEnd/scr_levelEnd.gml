@@ -393,7 +393,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 34;//you caused chaos
 				}
 				obj_suq.money += _money;
-			}
+			} break;
 			case r_lvl_11:
 			{
 				o_saveload.ynet -= 3;
@@ -503,7 +503,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.kanker -= 2;
 					obj_suq.report = 42;
 				}
-			}
+			} break;
 			case r_lvl_14:
 			{
 				o_saveload.ynet += 2;
@@ -537,7 +537,7 @@ function scr_levelEnd(car,range_optional)
 						obj_suq.gildebrand -= 2;
 					}
 				}
-			}
+			} break;
 			case r_lvl_15:
 			{
 				o_saveload.ynet -= 2;
@@ -563,7 +563,7 @@ function scr_levelEnd(car,range_optional)
 						o_saveload.hnet -= 3;
 					}
 				}
-			}
+			} break;
 			case r_lvl_16:
 			{
 				o_saveload.ynet -= 2;
@@ -589,7 +589,7 @@ function scr_levelEnd(car,range_optional)
 						o_saveload.pnet += 4;
 					}
 				}
-			}
+			} break;
 		}
 		if(!car and !range_optional)
 		{

@@ -1,44 +1,22 @@
-	-Briefing
-	-Level Details
-	-Short briefing
-	-Objectives
-	-Result text
-	-Level Design
-	-Starting location
-	-Darkness
-	-Room Names
-	-Backgrounds
-	-New Features/Enemies
-	-Enemy Placement
-	-Map
-	-Gadgets/Weapons
+lvl 17 - lvl 51
+
+-Briefing
+-Short briefing
+-Level Details
+-Objectives
+-Result text
+-Add To Level Select
+
+-Level Design
+-Starting location
+-Darkness
+-Room Names
+-Backgrounds
+-New Features/Enemies
+-Enemy Placement
+-Map
+-Gadgets/Weapons
+-Music
+-Mid-Level Objectives Complete
+-Level End Code
 -Testing
-	-Add To Level Select
-	-Music
-	-Mid-Level Objectives Complete
-	-Level End Code
-
-
-Add SFX to tank moving and shooting
-
-
-
-
-
-
-
-
-
-
-for lvl 16, Make the tank's weaknesses randomize at the beginning of the level, and that, in turn, changes the hints that you find hidden around the warehouse to match it. 
-Ideas for weaknesses/strengths:
-0: Bullets that aren't super effective bounce off of it, and come back at you. 
-
-1. Fire heals the tank instead of hurts it
-1. Magnum, PP7, assault Rifle, and sniper bullets to the rear is the only way to damage it effectively. Other options are shurikens, knife throws to the rear, but that takes forever. 
-
-2. Air gun seeps into the cracks of the armor, letting fire from rocket launcher, flamethrower, or mines get in
-2. Bullets bounce off of it, and come back at you. 
-
-3. There's a locked door on it somewhere, find it, unlock it with the lockpicks, and then fire away with any weapon. 
-3. immune to all forms of damage normally
