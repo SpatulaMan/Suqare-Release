@@ -7,7 +7,6 @@ or
 12: Steal finance tech from Kanker and Co. - Negative to Kanker and positive to Perez, vice versa if failed
 19: Protect main vault - Mercenaries are coming in droves, killing them gives you points to spend on better guards to place down in certain locations 
 24: Execute members of government that would prevent a banking monopoly
-31: Destroy Uprising of banks
 35: Invade homes and kill everyone who works for the other banks
 41: Assassinate CEO of Kanker and Co. The ghosts of all those you killed come back to haunt you here
 
@@ -44,9 +43,9 @@ and
 15: Recruit Ninjas by completing a combat challenge against their best warriors (boss rush?)
 18: Kill Old Ladies
 28: Contraband (Move contraband from building and load up cars while fighting off cops. When holding boxes, you can't shoot.)
-30: Steal Art (6 paintings) - NL
+30: Steal Art (3 paintings)
 37: Hijack Ship - NL (without killing crew cause they need to drive the boat. Lure and lock guards in any of the 3 brigs on the ship to make them set sail)
-46: Destroy Rivals, Take out Ungulate by wiring money from their banks to Hiertech
+46: Destroy Rival, Take out Ungulate by wiring money from their banks to Hiertech
 
 
 -Gildebrand Consulting Plan - Help people with small requests, and make life better for everyone:
@@ -66,6 +65,7 @@ Others:
 14: Gun Club - NL (the local gun club stole my weapon from me, and they won't give it back. They're armed and will shoot, but please don't kill any of them. They're my dad's friends I'll only give you a reward if you can get my gun back without bloodshed. 
 20: Quest for the Golden Sword
 23: Loot abandoned pirate ship. (Maybe have levels before this where you find clues and get get attacked by another group trying to find the treasure in the ship. Really hard riddles you'll need to figure out to unlock the next levels)
+31: Destroy Modern Art Museum and all the art
 38: Want Some Stuff? This guy wants to sell you some good stuff. Just need to find him in a haunted mansion. You won't be able to sell these items back. Sells you really a couple good weapons and gadgets. 
 40: Tower Defense
 48: Destroy super weapon and stop kanker and Co - President
@@ -115,11 +115,13 @@ or
 or
 	26: Stop Super Weapon
 	27: Vambrace of Mortuban (plan the heist on location first, look around, and then execute it. Have something to start the mission. Like the car again, but a different object)
-		28: Contraband
-		29: Prevent Theft of Museum artifacts, Ghosts haunt you as well
-		30: Steal Art (6 paintings)
-		31: Destroy Uprising of banks
-		32: Take Control of manufacturing plant
+	28: Contraband
+	29: Prevent Art Theft (enemies are stealthy. Have to find and stop them.)
+or
+	30: Steal Art (3 paintings)
+or
+	31: Kill the head of security
+	32: Take Control of manufacturing plant
 		33: Sandals of Gutran
 		34: Save Historic Building
 		35: Invade homes and kill everyone who works for the other banks

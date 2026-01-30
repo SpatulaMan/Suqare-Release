@@ -325,3 +325,7 @@ painting = o_saveload.painting;//this will determine if the painting shows in th
 cBackup = 0;
 hazmat = false;
 mdCh = 1;
+
+lady1Arrow = noone;
+lady2Arrow = noone;
+lady3Arrow = noone;

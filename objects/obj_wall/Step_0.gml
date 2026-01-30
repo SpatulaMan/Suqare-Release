@@ -1,3 +1,7 @@
+if(room == r_lvl_17)
+{
+	image_alpha = 0.01;
+}
 if(locked == true and distance_to_object(obj_suq) < 4 and obj_suq.keyHave == true)
 {
 	instance_destroy();

@@ -5,6 +5,11 @@ var _wt = false;
 var _dt = false;
 var pd = point_direction(x,y,obj_suq.x,obj_suq.y);
 var ad = angle_difference(image_angle,pd);
+var adi = angle_difference(image_angle,o_tank.image_angle);
+if(!_wallsee and !_doorsee and !_wt and !_dt)
+{
+	image_angle -= min(abs(adi), 2) * sign(adi);
+}
 if(instance_exists(obj_turret) and !_wallsee and !_doorsee and !wtdt)
 {
 	for(var i = 0; i < instance_number(obj_turret); i++)
@@ -44,12 +49,7 @@ if(_wallsee and _doorsee)
 {
 	image_angle -= min(abs(ad), 3) * sign(ad);
 }
-else if(!_wallsee and !_doorsee and !_wt and !_dt)
-{
-	var adi = angle_difference(image_angle,o_tank.image_angle);
-	image_angle -= min(abs(adi), 1) * sign(adi);
-}
-if(abs(angle_difference(image_angle,pd)) < 10)
+if(abs(angle_difference(image_angle,pd)) < 10 and _wallsee and _doorsee)
 {
 	shootCheck--;
 }
@@ -58,7 +58,7 @@ if(shootCheck <= 0)
 	shootCheck = 60;
 	audio_play_sound(snd_fire,1,0,o_saveload.sfxvol,0,random_range(.5,.6));
 	audio_play_sound(snd_heavygun,1,0,o_saveload.sfxvol,0,random_range(.3,.4));
-	var bul = instance_create_layer(x,y,"Instance_Action",o_eRLBul);
+	var bul = instance_create_layer(x,y,"Instances_Action",o_eRLBul);
 	bul.image_angle = image_angle;
 	bul.direction = image_angle;
 	bul.speed = 10;

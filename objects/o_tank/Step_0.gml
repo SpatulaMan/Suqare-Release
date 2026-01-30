@@ -47,35 +47,36 @@ pathTimer--;
 if(pathTimer <= 0)
 {
 	pathTimer = 2;
-	x1 = x;
-	y1 = y;
+	
+	if(pos > 0) { x1 = x; y1 = y; }
+	if(pos < 0) { x2 = x; y2 = y; }
+	pos *= -1;
 }
 var _wallsee = collision_line(x,y,obj_suq.x,obj_suq.y,obj_wall,false,true) < 0;
 var _doorsee = collision_line(x,y,obj_suq.x,obj_suq.y,o_door,false,true) < 0;
 var pd1 = point_direction(x,y,obj_suq.x,obj_suq.y);
 if(patrol_check == false)
 {
-	if(p == Path49)
-	{
-		p = choose(Path50,Path54);
-	}
-	else if(p == Path50 or p == Path54 or p == Path52)
-	{
-		p = choose(Path51,Path53);
-	}
-	else if(p == Path51 or p == Path55) { p = Path49; }
-	else if(p == Path53 or p == Path56) { p = choose(Path52,Path55,Path56); }
+	path_end();
+	if(p == Path49) { p = choose(Path50,Path54); }
+	else if(p == Path50 or p == Path54 or p == Path52) { p = choose(Path51,Path53); }
+	else if(p == Path55 or p == Path53 or p == Path43) { p = Path49; }
+	else if(p == Path51 or p == Path56) { p = choose(Path52,Path55,Path56); }
 	path_start(p,1,path_action_stop,true);
 	//path_start(p,1,path_action_stop,false);
 	patrol_check = true;
 }
-if(path_speed == 0)
+if(path_position == 1)
 {
+	//path_end();
 	patrol_check = false;
 }
-pd = point_direction(x1,y1,x,y);
-ad = angle_difference(image_angle,pd);
-image_angle -= min(abs(ad), 4) * sign(ad);
+if(x2 > 0 and y2 > 0 and pos == 1)
+{
+	pd = point_direction(x1,y1,x2,y2);
+	ad = angle_difference(image_angle,pd);
+	image_angle -= min(abs(ad), 3) * sign(ad);
+}
 if(hp < hpc)
 {
 	//play sound to know you're hurting it

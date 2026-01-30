@@ -725,12 +725,46 @@ function scr_briefing(t){
 			(Press Spacebar to Accept)";
 	a[90] = @"Destroy Tank";
 	a[91] = @"BRIEFING:
-			";
-	a[92] = @"";
-	a[93] = @"";
-	a[94] = @"";
-	a[95] = @"";
-	a[96] = @"";
+			We need some help. We have some older benefactors who believe in our
+			business practices who need help walking home from a conference. 
+			They are a big reason we stay afloat, so we need them to stay safe. 
+			Usually this would be no problem, but we've heard reports of Hiertech
+			intentionally running his smuggling operation in this part of town
+			in order to kill as many of our benefactors as possible. 
+
+			They'll be driving the big, armored vehicles that will be exceeding
+			the speed limit. They might even swerve to hit them, so be very 
+			careful leading them across the road. 
+
+			They will tell you where you need to go. Just follow their direction,
+			and bring them home alive. ";
+	a[92] = @"Help Old Ladies Cross the street";
+	a[93] = @"Mission: Cross the street
+			
+			Hiring Firm: Gildebrand Consulting
+			Current Standing With
+			Gildebrand Consulting: "+string(obj_suq.gildebrand)+
+			@"
+			Combat Difficulty: 1
+			Mental Difficulty: 7
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $7400
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[94] = @"Help Janice";
+	a[95] = @"Help Gerty";
+	a[96] = @"Help Margie";
 	a[97] = @"";
 	a[98] = @"";
 	a[99] = @"";
@@ -959,92 +993,88 @@ function scr_conversation(t)
 			Report:
 			The Super Tank is doing well in our testing. We're continually placing mines in front of it, and it's not even
 			phased. We haven't dealt any actual damage to see if fire truly does repair the tank as we expect it to. 
-																										         -Mankie Fruniz";
+			-Mankie Fruniz";
 	a[11] = @"Date: 01/15/0002
 			Report:
 			We have a future enhancement request to report. The front panel seems to be made to a lesser standard than the rest 
 			of the armor. We need to rectify this situation before any field deployment of the Super Tank will be possible. 
-																										         -Mankie Fruniz";
+			-Mankie Fruniz";
 	a[12] = @"Date: 01/30/0002
 			Report:
 			Addendum to previous report made on 1/15/0002. The defective panel is actually the rear armor. We're not sure to 
 			what extent it's vulnerable yet, but we're testing that now. 
-																										         -Mankie Fruniz";
+			-Mankie Fruniz";
 	a[13] = @"Date: 02/06/0002
 			Report:
 			We can confirm that the panel is weak to weapons fire from armor piercing projectiles such as Magnums, Assault 
 			Rifles, Snipers, and PP9's. Sharp object thrown at it could also pierce through to some extent. 
-																										         -Mankie Fruniz";
+			-Mankie Fruniz";
 	a[14] = @"Date: 12/23/0001
 			Report:
 			The Super Tank is doing well in our testing. We're continually placing mines in front of it, and it's not even
 			phased. No damage to the outer hull at all. 
-																										         -Mankie Fruniz";
+			-Mankie Fruniz";
 	a[15] = @"Date: 01/15/0002
 			Report:
 			The combination of alloys we chose is working better than expected. We're seeing a 0 percent penetration rate from
 			even the most powerful of weapons. This thing might be unstoppable. 
-																										         -Mankie Fruniz";
+			-Mankie Fruniz";
 	a[16] = @"Date: 01/30/0002
 			Report:
 			Critical Defect to report. Thick gases can seep into the tank's armor, and it's doing weird things. We're not sure
 			of the ramifications yet, but we'll try to rectify the situation as soon as possible. 
-																										         -Mankie Fruniz";
+			-Mankie Fruniz";
 	a[17] = @"Date: 02/06/0002
 			Report:
 			Addendum to previous report: It makes the tank vulnerable to fire. This is a major oversight, and the Dev team is
 			working hard on it. We don't have an estimated resolution date as of yet. 
-																										         -Mankie Fruniz";
+			-Mankie Fruniz";
 	a[18] = @"Date: 12/23/0001
 			Report:
 			The Super Tank is completely impenetrable. It's still in development, though, so we have some quick access panels
 			still in place. We're expecting to replace them with the final armor soon. 
-																										         -Mankie Fruniz";
+			-Mankie Fruniz";
 	a[19] = @"Date: 01/15/0002
 			Report:
 			Every quick access panel has been replaced. We see no weaknesses to anything. Even the mines we're continually
 			putting in front of it seem to have no effect. This is a beast of a machine. 
-																										         -Mankie Fruniz";
+			-Mankie Fruniz";
 	a[20] = @"Date: 01/30/0002
 			Report:
 			Something's clanking on the back left tread. It's probably not a big issue, but we're starting a disassembly
 			process soon to locate the issue. 
-																										         -Mankie Fruniz";
+			-Mankie Fruniz";
 	a[21] = @"Date: 02/06/0002
 			Report:
 			Addendum to previous report: Brad left his wrench in the engine block again. We placed a locked door panel in front
 			of the affected area. There is a key for it, but we had to use the same lock as one of the doors in the facility.
 			We'll put the final armor back on the Super Tank once we verify there aren't any more engine issues. 
-																										         -Mankie Fruniz";
+			-Mankie Fruniz";
 	a[22] = @"I hit the Super Tank with my wrench today. It bounced right off. Yes! Brad is the best! Functional tests are so
 			easy to do! 
-																														  -Brad";//with 10-13
+			-Brad";//with 10-13
 	a[23] = @"I farted on the Super Tank today. Yes! Great job, Brad! I'm helpful and super hilarious! 
-			
-																														  -Brad";//with 14-17
+			-Brad";//with 14-17
 	a[24] = @"I left my wrench in the engine block today. Only the ninth time I've done that. Yes! Good job, Brad! Still below
 			double digits! 
-																														  -Brad";//with 18-21
+			-Brad";//with 18-21
 	a[25] = @"Memo:
 			Can everyone stop stealing my lunch and convincing me I ate it? That'd be nice... Go Brad! 
-			
-																													      -Brad";//lvl16 Red Herrings
+			-Brad";//lvl16 Red Herrings
 	a[26] = @"Memo:
 			Everyone, make sure you're recording all of your testing in GOJI. This will provide clarity to the other testers.
 			Thank you
-																													 -Bom Trady";//lvl16 Red Herrings
+			-Bom Trady";//lvl16 Red Herrings
 	a[27] = @"Memo:
 			If you are the owner of a blue sedan, please stop parking on that dead squirrel. 
-			
-																												-Mayton Panning";//lvl16 Red Herrings
+			-Mayton Panning";//lvl16 Red Herrings
 	a[28] = @"Memo:
 			Please update your computer OS to the latest slop from SicroMoft. If you don't, we'll have to come get you.
-			
-																											      -Fimmy Jallon";//lvl16 Red Herrings
+			-Fimmy Jallon";//lvl16 Red Herrings
 	a[29] = @"Memo:
 			Darvey Hent has forgotten to update his OS. Unfortunately, that means he has been let go... into our pit of feral
 			animals. Take this as your second warning. 
-																												  -Fimmy Jallon";//lvl16 Red Herrings
+			-Fimmy Jallon";//lvl16 Red Herrings
 	a[30] = @"Congratulations! You have defeated the 3 ninja masters. They will recover, and we will keep our end of the 
 			bargain. You are free to leave now. ";																										
 	a[60] = @"Yellen Egbert II:

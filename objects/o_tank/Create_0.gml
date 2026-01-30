@@ -1,7 +1,7 @@
 alarm_set(11,1);
 hp = 200;
 tank = choose(1,2,3);
-p = Path49;
+p = Path43;//dummy invalid path to start
 pathTimer = 2;
 instance_create_layer(x-16,y,"Instances_Action",o_tankHead);
 tur1 = instance_create_layer(x+20,y-15,"Instances_Action",obj_turretE);
@@ -14,6 +14,7 @@ damage = 2;
 
 four = 0;
 path_check = false;
+pos = 1;
 search_check = false;
 soundCheck = false;
 suq_loc = false;

@@ -588,5 +588,8 @@ if(pickup_timer > 0)
 		case 48: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("HAZMAT SUIT"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 49: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("WEIRD PILL"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 50: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("SCIENTIST"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 51: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("JANICE"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 52: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("GERTY"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 53: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("MARGIE"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 	}
 }

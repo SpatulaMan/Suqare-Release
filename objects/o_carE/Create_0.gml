@@ -1,5 +1,7 @@
 /// @description 
 randomize();
-direction = choose(0,90,180,270);
-image_blend = make_color_rgb(random_range(50,255),random_range(50,255),random_range(50,255))
-speed = random_range(1,5);
+spd = 0;
+image_speed = 0;
+alarm_set(0,2);
+damage = 0;
+hp = 50;

@@ -1,7 +1,7 @@
 /// @description 
 hp = 1;
-hpc = 16;
-hpt = 16;
+hpc = 1;
+hpt = 1;
 spr = s_fancyGuy_1;
 p1 = false;
 p2 = false;

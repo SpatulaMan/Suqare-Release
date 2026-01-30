@@ -3,6 +3,10 @@ if(tank == 2)
 	other.direction = random_range(other.image_angle-89,other.image_angle+89);
 	//add sound
 }
+else
+{
+	with (other) instance_destroy();
+}
 
 /*hp -= other.damage;
 hit = true;
