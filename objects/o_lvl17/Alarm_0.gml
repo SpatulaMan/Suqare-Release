@@ -23,4 +23,4 @@ if(bad) { _car.speed = random_range(2,5); _car.image_index = 1; _car.image_blend
 else { _car.speed = random_range(.8,3); _car.image_blend = make_color_rgb(random_range(30,255),random_range(30,255),random_range(30,255)); }
 
 carSpawn = choose(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16);
-alarm_set(0,120);
+alarm_set(0,60);

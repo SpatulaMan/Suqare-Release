@@ -132,7 +132,7 @@ if(instance_exists(o_lvlStart))
 		//audio_sound_gain(s5,.25*o_saveload.musvol,1000);
 		mCheck = false;
 	}
-	if(o_lvlStart.speed > 0 and (o_lvlStart.r == r_lvl_7 or o_lvlStart.r == r_lvl_8 or o_lvlStart.r == r_lvl_12 or o_lvlStart.r == r_lvl_13 or o_lvlStart.r == r_lvl_14) and mCheck == true)
+	if(o_lvlStart.speed > 0 and (o_lvlStart.r == r_lvl_7 or o_lvlStart.r == r_lvl_8 or o_lvlStart.r == r_lvl_12 or o_lvlStart.r == r_lvl_13 or o_lvlStart.r == r_lvl_14 or o_lvlStart.r == r_lvl_17) and mCheck == true)
 	{
 		//if(audio_is_playing(s2))
 		//{
@@ -292,7 +292,7 @@ if(room == r_lvl_6)
 		mCheck3 = false;
 	}
 }
-if(room == r_lvl_7 or room == r_lvl_8 or room == r_lvl_12 or room == r_lvl_13 or room == r_lvl_14)
+if(room == r_lvl_7 or room == r_lvl_8 or room == r_lvl_12 or room == r_lvl_13 or room == r_lvl_14 or room == r_lvl_17)
 {
 	//audio_sound_gain(s1,0,3000);
 	if(mCheck2 == false and mCheck3 == false)

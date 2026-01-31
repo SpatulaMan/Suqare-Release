@@ -439,6 +439,7 @@
     {"id":{"name":"r_lvl_15","path":"rooms/r_lvl_15/r_lvl_15.yy",},},
     {"id":{"name":"r_lvl_16","path":"rooms/r_lvl_16/r_lvl_16.yy",},},
     {"id":{"name":"r_lvl_17","path":"rooms/r_lvl_17/r_lvl_17.yy",},},
+    {"id":{"name":"r_lvl_18","path":"rooms/r_lvl_18/r_lvl_18.yy",},},
     {"id":{"name":"r_lvl_2","path":"rooms/r_lvl_2/r_lvl_2.yy",},},
     {"id":{"name":"r_lvl_3","path":"rooms/r_lvl_3/r_lvl_3.yy",},},
     {"id":{"name":"r_lvl_4_1","path":"rooms/r_lvl_4_1/r_lvl_4_1.yy",},},
@@ -929,6 +930,7 @@
     {"roomId":{"name":"r_lvl_15","path":"rooms/r_lvl_15/r_lvl_15.yy",},},
     {"roomId":{"name":"r_lvl_16","path":"rooms/r_lvl_16/r_lvl_16.yy",},},
     {"roomId":{"name":"r_lvl_17","path":"rooms/r_lvl_17/r_lvl_17.yy",},},
+    {"roomId":{"name":"r_lvl_18","path":"rooms/r_lvl_18/r_lvl_18.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

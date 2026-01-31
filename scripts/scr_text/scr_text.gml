@@ -725,19 +725,21 @@ function scr_briefing(t){
 			(Press Spacebar to Accept)";
 	a[90] = @"Destroy Tank";
 	a[91] = @"BRIEFING:
-			We need some help. We have some older benefactors who believe in our
-			business practices who need help walking home from a conference. 
-			They are a big reason we stay afloat, so we need them to stay safe. 
-			Usually this would be no problem, but we've heard reports of Hiertech
-			intentionally running his smuggling operation in this part of town
-			in order to kill as many of our benefactors as possible. 
+			We need some help. We have some older benefactors who 
+			believe in our business practices who need help walking 
+			home from a conference. They are a big reason we stay 
+			afloat, so we need them to stay safe. Usually this would be
+			no problem, but we've heard reports of Hiertech 
+			intentionally running his smuggling operation in this part 
+			of town in order to kill as many of our benefactors as 
+			possible. 
 
-			They'll be driving the big, armored vehicles that will be exceeding
-			the speed limit. They might even swerve to hit them, so be very 
-			careful leading them across the road. 
+			They'll be driving the big, armored vehicles that will be 
+			exceeding the speed limit. They might even swerve to hit 
+			them, so be very careful leading them across the road. 
 
-			They will tell you where you need to go. Just follow their direction,
-			and bring them home alive. ";
+			They will tell you where you need to go. Just follow their 
+			direction, and bring them home alive. ";
 	a[92] = @"Help Old Ladies Cross the street";
 	a[93] = @"Mission: Cross the street
 			
@@ -750,7 +752,7 @@ function scr_briefing(t){
 			Locked Doors: 0
 			Req. Locked Doors: 0
 			Keys Available: 0
-			Reward: $7400
+			Reward: $6900
 			
 			
 			
@@ -765,12 +767,50 @@ function scr_briefing(t){
 	a[94] = @"Help Janice";
 	a[95] = @"Help Gerty";
 	a[96] = @"Help Margie";
-	a[97] = @"";
-	a[98] = @"";
-	a[99] = @"";
-	a[100] = @"";
-	a[101] = @"";
-	a[102] = @"";
+	a[97] = @"BRIEFING:
+			Gildebrand Consulting has been out to get us for years now,
+			and we finally have a chance to deal a major blow to their 
+			finances. The three benefactors that we are targeting today
+			are usually in impenetrable mansions, but they will be 
+			walking home from a conference soon. This is our only 
+			chance to get to them and end Gildebrand Consulting's 
+			funding once and for all! 
+
+			While our smugglers are driving around town, I want you to 
+			find the benefactors and run them over. Once you're done 
+			with that, dump the car, and leave in your own. This will
+			really solidify Hiertech as a lasting power in the 
+			industry. 
+			
+			This is an all or nothing job. If you don't get all of them
+			we won't pay you anything. ";
+	a[98] = @"Run over 3 Old Ladies with a car";
+	a[99] = @"Mission: Cross the street
+			
+			Hiring Firm: Gildebrand Consulting
+			Current Standing With
+			Hiertech: "+string(obj_suq.hiertech)+
+			@"
+			Combat Difficulty: 1
+			Mental Difficulty: 4
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $8100
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[100] = @"Kill Janice";
+	a[101] = @"Kill Gerty";
+	a[102] = @"Kill Margie";
 	a[103] = @"";
 	a[104] = @"";
 	a[105] = @"";
@@ -2715,15 +2755,92 @@ function debrief(m)
 			which company comes out on top in this feud. 
 			
 			Press Spacebar to continue";
-	c[51] = @"";
-	c[52] = @"";
-	c[53] = @"";
-	c[54] = @"";
+	c[51] = @"Objectives Complete
+			Payout: $6900
+			
+			Response From Hiring Firm:
+			You saved all of our benefactors! We'll be staying afloat for a long time to come, so we
+			genuinely thank you from the bottom of our hearts. 
+			
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			Gildebrand Consulting will be funded for the time being, and their philanthropic processes
+			will stay unhindered. 
+			
+			Press Spacebar to continue";
+	c[52] = @"Objectives Partially Complete
+			Payout: $3500
+			
+			Response From Hiring Firm:
+			You at least saved two of them. We'll still be making enough profit to stay afloat, but we'll 
+			have to trim down our business and processes. This is a very sad day for our company, and we
+			will hold a vigil in her honor soon.
+			
+			
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			Gildebrand Consulting was hurt, but not bad enough to significantly change all of their 
+			business. 
+			
+			Press Spacebar to continue";
+	c[53] = @"Objectives Partially Complete
+			Payout: $1500
+			
+			Response From Hiring Firm:
+			This is terrible! with only one benefactor left, we will have to make major cuts to our
+			business to stay afloat. We're barely going to scrape by after this. I thought you were
+			supposed to be a good mercenary.
+			
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			Gildebrand Consulting will have major issues following this. Once they make huge changes to 
+			the business, they might be able to keep up their normal operations. 
+			
+			Press Spacebar to continue";
+	c[54] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			We might be done for. That tank is going to do major damage when it's complete We're going to 
+			have to work even harder now to stop it, or finish our plans sooner. You may not have hurt us
+			directly, but you definitely wasted our time! 
+			
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			Gildebrand Consulting will have major issues following this. Who knows if they will be able to
+			afford to do anything, much less hiring a mercenary for extra work. 
+			
+			Press Spacebar to continue";
 	c[55] = @"";
 	c[56] = @"";
 	c[57] = @"";
 	c[58] = @"";
 	c[59] = @"";
+	c[60] = @"";
+	c[61] = @"";
+	c[62] = @"";
+	c[63] = @"";
+	c[64] = @"";
+	c[65] = @"";
+	c[66] = @"";
+	c[67] = @"";
+	c[68] = @"";
+	c[69] = @"";
+	c[70] = @"";
+	c[71] = @"";
+	c[72] = @"";
+	c[73] = @"";
+	c[74] = @"";
+	c[75] = @"";
+	c[76] = @"";
+	c[77] = @"";
+	c[78] = @"";
+	c[79] = @"";
+	c[80] = @"";
 	return c[m];
 }
 function tutorial(k)
