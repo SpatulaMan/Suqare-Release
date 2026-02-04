@@ -1116,7 +1116,10 @@ function scr_conversation(t)
 			animals. Take this as your second warning. 
 			-Fimmy Jallon";//lvl16 Red Herrings
 	a[30] = @"Congratulations! You have defeated the 3 ninja masters. They will recover, and we will keep our end of the 
-			bargain. You are free to leave now. ";																										
+			bargain. You are free to leave now. ";		
+	a[31] = @"Janice has escaped to safety.";
+	a[32] = @"Gerty has escaped to safety.";
+	a[33] = @"Margie has escaped to safety.";
 	a[60] = @"Yellen Egbert II:
 			Oh, no! My butler is dead and the 'esmerelda' has been stolen! Whoever could have done such a thing? Suqare, could 
 			you please investigate and figure out who did this? I would be forever in your debt. My guards already locked all 
@@ -1782,7 +1785,14 @@ function buttons(q)
 	b[9] = @"F..................................................................";
 	b[20] = @"E..................................................................";
 	b[22] = @"Esc..............................................................";
-	//b[24] = @"Backspace..............................................";
+	b[24] = @"Backspace....................................................";
+	b[26] = @"Driving Controls......................................Driving Controls";
+	b[27] = @"Up Arrow..............................................";
+	b[28] = @"Down Arrow............................................";
+	b[29] = @"Left Arrow............................................";
+	b[30] = @"Right Arrow...........................................";
+	b[31] = @"B.....................................................";
+	b[32] = @"E.....................................................";
 	b[10] = @"Move";
 	b[11] = @"Open Mission Objectives";
 	b[25] = @"Open Map";
@@ -1796,7 +1806,13 @@ function buttons(q)
 	b[19] = @"Detonate Sticky Mines";
 	b[21] = @"Recall/Place active turrets";
 	b[23] = @"Show Controls";
-	//b[25] = @"Restart Mission";
+	b[25] = @"Restart";
+	b[33] = @"Accelerate";
+	b[34] = @"Decelerate";
+	b[35] = @"Turn Left";
+	b[36] = @"Turn Right";
+	b[37] = @"Brake";
+	b[38] = @"Exit Vehicle";
 	
 	return b[q];
 }
@@ -2815,8 +2831,37 @@ function debrief(m)
 			afford to do anything, much less hiring a mercenary for extra work. 
 			
 			Press Spacebar to continue";
-	c[55] = @"";
-	c[56] = @"";
+	c[55] = @"Objectives Complete
+			Payout: $8100
+			
+			Response From Hiring Firm:
+			You got them all! That's exactly what I wanted to hear. Hopefully those darn Gildebrand bozos
+			will finally go out of business, and we can spend more time and money on our efforts instead
+			of fighting them. 
+			
+			Current standing with Hiertech: "+string(obj_suq.hiertech)+@"
+			
+			Result:
+			Gildebrand Consulting will take an enormous hit to their bottom line. This may spell the end 
+			of a bitter Hiertech rival. 
+			
+			Press Spacebar to continue";
+	c[56] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You didn't get them all! Even if one of them is left, that means that Gildebrand still has 
+			enough funding to last them a while. We wanted someone reliable so we could finally wipe
+			Gildebrand Consulting off the map. 
+			
+			Current standing with Hiertech: "+string(obj_suq.hiertech)+@"
+			
+			Result:
+			Gildebrand Consulting's still has at least one benefactor which means they for sure get to 
+			fight another day. Maybe they'll continue to thrive, and maybe they'll still go bankrupt. Only
+			time will tell. 
+			
+			Press Spacebar to continue";
 	c[57] = @"";
 	c[58] = @"";
 	c[59] = @"";

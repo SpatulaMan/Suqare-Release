@@ -17,6 +17,7 @@ obj_suq.shotgunAmt = obj_suq.sgMag;
 obj_suq.sniperRifleAmt = obj_suq.snMag;
 obj_suq.rocketLauncherAmt = obj_suq.rlMag;
 obj_suq.flamethrowerAmt = obj_suq.fMag;
+obj_suq.pp7Amt = obj_suq.ppMag;
 
 obj_suq.x = x1;
 obj_suq.y = y1;

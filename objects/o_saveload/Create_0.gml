@@ -35,6 +35,7 @@ ammoUp=1;//1.5 for upgrade
 ammoFull=false;//true for upgrade
 turretUp=1;//2 for upgrade
 money=10000000;
+moneyT=money;
 //money=1700;
 gunMax=3;
 ammopercent=50;

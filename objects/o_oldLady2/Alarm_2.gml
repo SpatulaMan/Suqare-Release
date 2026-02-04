@@ -1,0 +1,1 @@
+var _inst = instance_create_layer(x,y,"Instances_Action",o_hurt);

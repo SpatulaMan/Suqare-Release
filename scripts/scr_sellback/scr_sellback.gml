@@ -4,7 +4,7 @@ function scr_sellback(_i,_ch)
 {
 	s = 0;
 	
-	repeat(42)
+	/*repeat(42)
 	{
 		if(_i.wp[s] == true and ((s < 5) or (s > 8 and s < 28) or (s > 32 and s < 42)))
 		{
@@ -28,7 +28,7 @@ function scr_sellback(_i,_ch)
 			}
 			s++;
 		}
-	}
+	}*/
 	obj_suq.armorlvl1Have = 0;
 	obj_suq.armorlvl2Have = 0;
 	obj_suq.armorlvl3Have = 0;

@@ -25,6 +25,7 @@ function save()
 		pp7Have: obj_suq.pph,
 		lastNewWeapon: obj_suq.lnw,
 		money: obj_suq.money,
+		moneyT: o_saveload.moneyT,
 		gunMax: obj_suq.gunMax,
 		progress: obj_suq.progress,
 		lvldone: obj_suq.lvldone,
@@ -164,6 +165,8 @@ function load(_f)
 			o_saveload.lastNewWeapon=_struct.lastNewWeapon;
 		if (struct_exists(_struct, "money"))
 			o_saveload.money=_struct.money;
+		if (struct_exists(_struct, "moneyT"))
+			o_saveload.moneyT=_struct.moneyT;
 		if (struct_exists(_struct, "gunMax"))
 			o_saveload.gunMax=_struct.gunMax;
 		if (struct_exists(_struct, "armor1"))
@@ -345,6 +348,7 @@ function load(_f)
 			pp7Have: 0,
 			lastNewWeapon: 0,
 			money: 0,
+			moneyT: 0,
 			gunMax: 0,
 			progress: 0,
 			lvldone: 0,

@@ -6,7 +6,7 @@ obj_suq.image_yscale = 1;
 image_blend = -1;
 //image_blend = c_white;
 if(room != r_armory and room != r_skill1 and room != r_skill2 and room != r_skill3
- and room != r_skill4 and room != r_skill5 and room != r_lvl_0_1 and room != r_lvl_4_1)
+ and room != r_skill4 and room != r_skill5)
 {
 	bonus = 0;
 	obj_suq.report = 0;
@@ -42,6 +42,7 @@ if(room != r_armory and room != r_skill1 and room != r_skill2 and room != r_skil
 if(room == r_armory and instance_exists(o_armory))
 {
 	hazmat = false;
+	money = floor(o_saveload.moneyT);
 	if(o_armory.roomStartCheck == false)
 	{
 		alarm_set(1,30);
@@ -78,6 +79,7 @@ if(room == r_armory and instance_exists(o_armory))
 		boomerangHave = 0;
 		swordHave = 0;
 		shuriken = 0;
+		pp7Have = 0;
 		ghostGunHave = 0;
 		gunNum = 0;
 		lvl = 0;
@@ -88,7 +90,7 @@ if(room == r_armory and instance_exists(o_armory))
 		health = 100;
 		armorcheck = 0;
 		gadget = -1;//see if this works
-		money = floor(money);
+		//money = floor(o_saveload.moneyT);
 		if(attract > 1) { attract = 1; }
 		if(decoy > 1) { decoy = 1; }
 		//if(report > 0) { instance_create(x,y,o_recap); }

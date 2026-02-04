@@ -72,7 +72,7 @@ function scr_levelEnd(car,range_optional)
 				obj_suq.lvldone[obj_suq.lvl] = true;
 				if(!instance_exists(inst_6C9E1EA5))
 				{
-					obj_suq.money += 300*_emtBill;
+					o_saveload.moneyT += 300*_emtBill;
 					obj_suq.report = 1;
 				}
 				else
@@ -93,7 +93,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.knet += 5;
 					o_saveload.pnet -= 2;
 					obj_suq.kanker += 1;
-					obj_suq.money += 100*_emtBill;
+					o_saveload.moneyT += 100*_emtBill;
 					obj_suq.report = 3;
 					if(!instance_exists(o_safe) == true)
 					{
@@ -108,7 +108,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.knet += 10;
 					o_saveload.pnet -= 2;
 					obj_suq.kanker += 3;
-					obj_suq.money += 800*_emtBill;
+					o_saveload.moneyT += 800*_emtBill;
 					obj_suq.report = 5;
 					if(!instance_exists(o_safe) == true)
 					{
@@ -138,7 +138,7 @@ function scr_levelEnd(car,range_optional)
 				if(obj_suq.hecto == true)
 				{
 					o_saveload.ynet += 10;
-					obj_suq.money += 4700*_emtBill;
+					o_saveload.moneyT += 4700*_emtBill;
 					obj_suq.yellerteeth += 4;
 					obj_suq.report = 8;
 				}
@@ -162,7 +162,7 @@ function scr_levelEnd(car,range_optional)
 					{
 						o_saveload.hnet -= 7;
 						o_saveload.unet += 4;
-						obj_suq.money += 4200*_emtBill;
+						o_saveload.moneyT += 4200*_emtBill;
 						obj_suq.ungulate += 2;
 						obj_suq.report = 10;
 					}
@@ -195,7 +195,7 @@ function scr_levelEnd(car,range_optional)
 					{
 						o_saveload.hnet -= 1;
 						o_saveload.unet -= 3;
-						obj_suq.money += 2450*_emtBill;
+						o_saveload.moneyT += 2450*_emtBill;
 						obj_suq.hiertech += 2;
 						obj_suq.report = 12;
 					}
@@ -238,12 +238,12 @@ function scr_levelEnd(car,range_optional)
 				obj_suq.lvldone[obj_suq.lvl] = true;
 				if(obj_suq.totems == 3 and instance_exists(obj_ghost) == false)//killed ghost
 				{
-					obj_suq.money += 3600*_emtBill;
+					o_saveload.moneyT += 3600*_emtBill;
 					obj_suq.report = 16;
 				}
 				else if(obj_suq.totems == 3 and instance_exists(obj_ghost) == true and obj_suq.ghostGunHave == 1)//investigated and found totems
 				{
-					obj_suq.money += 1800*_emtBill;
+					o_saveload.moneyT += 1800*_emtBill;
 					obj_suq.ggh = 0;
 					obj_suq.ghostGunHave = 0;
 					obj_suq.report = 17;
@@ -264,7 +264,7 @@ function scr_levelEnd(car,range_optional)
 				if(obj_suq.gemsD2 == obj_suq.gemsD)
 				{
 					o_saveload.knet -= 15;
-					obj_suq.money += 8500*_emtBill;
+					o_saveload.moneyT += 8500*_emtBill;
 					obj_suq.report = 19;
 					obj_suq.perez += 5;
 				}
@@ -294,7 +294,7 @@ function scr_levelEnd(car,range_optional)
 				else
 				{
 					o_saveload.gnet += 7;
-					obj_suq.money += 3300*_emtBill;
+					o_saveload.moneyT += 3300*_emtBill;
 					obj_suq.report = 22;
 					obj_suq.gildebrand += 3;
 				}
@@ -313,17 +313,17 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.ynet += 8;
 					obj_suq.report = 23;
 					obj_suq.yellerteeth += 2;
-					obj_suq.money += 4000*_emtBill;
-					if(o_obj_L9.ob2 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 1; obj_suq.money += 1000*_emtBill; }
-					if(o_obj_L9.ob3 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 2; obj_suq.money += 1000*_emtBill; }
+					o_saveload.moneyT += 4000*_emtBill;
+					if(o_obj_L9.ob2 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 1; o_saveload.moneyT += 1000*_emtBill; }
+					if(o_obj_L9.ob3 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 2; o_saveload.moneyT += 1000*_emtBill; }
 				}
 				else
 				{
 					o_saveload.ynet -= 9;
 					obj_suq.report = 24;
 					obj_suq.yellerteeth -= 3;
-					if(o_obj_L9.ob2 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 1; obj_suq.money += 1000*_emtBill; }
-					if(o_obj_L9.ob3 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 2; obj_suq.money += 1000*_emtBill; }
+					if(o_obj_L9.ob2 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 1; o_saveload.moneyT += 1000*_emtBill; }
+					if(o_obj_L9.ob3 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 2; o_saveload.moneyT += 1000*_emtBill; }
 				}
 			} break;
 			case r_lvl_10:
@@ -392,7 +392,7 @@ function scr_levelEnd(car,range_optional)
 				{
 					obj_suq.report = 34;//you caused chaos
 				}
-				obj_suq.money += _money;
+				o_saveload.moneyT += _money;
 			} break;
 			case r_lvl_11:
 			{
@@ -409,7 +409,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 35;
 					obj_suq.ungulate += 2;
 					obj_suq.hiertech -= 2;
-					obj_suq.money += 8700*_emtBill;
+					o_saveload.moneyT += 8700*_emtBill;
 				}
 				else
 				{
@@ -450,7 +450,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 37;
 					obj_suq.perez += 2;
 					obj_suq.kanker -= 2;
-					obj_suq.money += 7000*_emtBill;
+					o_saveload.moneyT += 7000*_emtBill;
 					o_saveload.pnet += 8;
 				}
 				else if(!instance_exists(o_data) and obj_suq.cBackup < 16)
@@ -486,7 +486,7 @@ function scr_levelEnd(car,range_optional)
 					if(distance_to_object(o_scientist) < 120)
 					{
 						o_saveload.knet += 7;
-						obj_suq.money += 5300*_emtBill;
+						o_saveload.moneyT += 5300*_emtBill;
 						obj_suq.kanker += 3;
 						obj_suq.report = 41;
 					}
@@ -517,7 +517,7 @@ function scr_levelEnd(car,range_optional)
 				{
 					if(o_lvl14.ob1 == true and o_lvl14.ob2 == true)
 					{
-						obj_suq.money += 3800*_emtBill;
+						o_saveload.moneyT += 3800*_emtBill;
 						obj_suq.report = 43;
 					}
 					else if(o_lvl14.ob1 == false and o_lvl14.ob2 == true)
@@ -550,7 +550,7 @@ function scr_levelEnd(car,range_optional)
 				{
 					if(o_lvl15.ob1 == true and o_lvl15.ob2 == true and o_lvl15.ob3 == true)
 					{
-						obj_suq.money += 6000*_emtBill;
+						o_saveload.moneyT += 6000*_emtBill;
 						obj_suq.report = 47;
 						obj_suq.hiertech += 2;
 						o_saveload.hnet += 6;
@@ -575,7 +575,7 @@ function scr_levelEnd(car,range_optional)
 				{
 					if(o_lvl16.ob1 == true)
 					{
-						obj_suq.money += 9000*_emtBill;
+						o_saveload.moneyT += 9000*_emtBill;
 						obj_suq.report = 49;
 						obj_suq.kanker += 2;
 						o_saveload.knet += 7;
@@ -602,22 +602,23 @@ function scr_levelEnd(car,range_optional)
 				{
 					if(o_lvl17.ob1 == true and o_lvl17.ob2 == true and o_lvl17.ob3 == true)
 					{
-						obj_suq.money += 6900*_emtBill;
+						o_saveload.moneyT += 6900*_emtBill;
 						obj_suq.report = 51;
 						obj_suq.gildebrand += 4;
 						o_saveload.gnet += 6;
 					}
 					else if((o_lvl17.ob1 == true and o_lvl17.ob2 == true) or (o_lvl17.ob3 == true and o_lvl17.ob2 == true) or (o_lvl17.ob1 == true and o_lvl17.ob3 == true))
 					{
-						obj_suq.money += 3500*_emtBill;
+						o_saveload.moneyT += 3500*_emtBill;
 						obj_suq.report = 52;
 						obj_suq.gildebrand += 2;
-						o_saveload.gnet += 3;
+						o_saveload.gnet -= 4;
 					}
-					else if(o_lvl17.ob1 == true or o_lvl17.ob2 == true or o_lvl17.ob3 == true)
+					else if(o_lvl17.ob1 == true xor o_lvl17.ob2 == true xor o_lvl17.ob3 == true)
 					{
-						obj_suq.money += 1500*_emtBill;
+						o_saveload.moneyT += 1500*_emtBill;
 						obj_suq.report = 53;
+						o_saveload.gnet -= 7;
 					}
 					else
 					{
@@ -634,9 +635,9 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.unet += 1;
 				o_saveload.pnet += 1;
 				obj_suq.lvldone[obj_suq.lvl] = true;
-				if()
+				if(!instance_exists(inst_1062E581) and !instance_exists(inst_1FC19C6A) and !instance_exists(inst_713E65DA))
 				{
-					obj_suq.money += 8100*_emtBill;
+					o_saveload.moneyT += 8100*_emtBill;
 					obj_suq.report = 55;
 					obj_suq.hiertech += 2;
 					obj_suq.gildebrand -= 4;
@@ -646,9 +647,23 @@ function scr_levelEnd(car,range_optional)
 				else
 				{
 					obj_suq.report = 56;
-					obj_suq.hiertech -= 1;
 					o_saveload.hnet -= 2;
-					o_saveload.gnet -= 2;
+				}
+				if((!instance_exists(inst_1062E581) and !instance_exists(inst_1FC19C6A)) or (!instance_exists(inst_1FC19C6A) and !instance_exists(inst_713E65DA)) or (!instance_exists(inst_1062E581) and !instance_exists(inst_713E65DA)))
+				{
+					obj_suq.hiertech += 1;
+					obj_suq.gildebrand -= 2;
+					o_saveload.gnet -= 7;
+				}
+				else if(!instance_exists(inst_1062E581) xor !instance_exists(inst_1FC19C6A) xor !instance_exists(inst_713E65DA))
+				{
+					obj_suq.gildebrand -= 1;
+					o_saveload.gnet -= 4;
+				}
+				else
+				{
+					o_saveload.gnet += 6;
+					obj_suq.hiertech -= 1;
 				}
 			} break;
 		}
