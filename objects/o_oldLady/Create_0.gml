@@ -15,3 +15,4 @@ wallCheck = false;
 spawnCheck = false;
 sciCheck = false;
 image_blend = c_fuchsia;
+arr = noone;

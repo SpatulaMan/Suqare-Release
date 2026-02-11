@@ -20,20 +20,22 @@ if(instance_exists(obj_turret))
 	_wt = collision_line(x,y,obj_turret.x,obj_turret.y,obj_wall,false,true) < 0;
 	_dt = collision_line(x,y,obj_turret.x,obj_turret.y,o_door,false,true) < 0;
 }
-if(instance_exists(obj_knife))
-{
-	_wallseek = collision_line(x,y,obj_knife.x,obj_knife.y,obj_wall,false,true) < 0;
-	_doorseek = collision_line(x,y,obj_knife.x,obj_knife.y,o_door,false,true) < 0;
-}
 if(instance_exists(o_decoy))
 {
 	_wallseed = collision_line(x,y,o_decoy.x,o_decoy.y,obj_wall,false,true) < 0;
 	_doorseed = collision_line(x,y,o_decoy.x,o_decoy.y,o_door,false,true) < 0;
 }
+var _n = noone;
+if(instance_exists(obj_guard_F)) { _n = instance_nearest(x,y,obj_guard_F); }
+//if(!instance_exists(obj_guard_F)) { _n = obj_suq; }
+var _wallsee2 = collision_line(x,y,_n.x,_n.y,obj_wall,false,true) < 0;
+var _doorsee2 = collision_line(x,y,_n.x,_n.y,o_door,false,true) < 0;
 var pd1 = point_direction(x,y,obj_suq.x,obj_suq.y);
-if(see_check == false and patrol_check == false)
+pd = point_direction(x,y,x3,y3);
+if(see_check == false and patrol_check == false and check11)
 {
-	path_start(p,1,choose(path_action_restart,path_action_reverse),false);
+	if(room != r_lvl_19) { path_start(p,spd,choose(path_action_restart,path_action_reverse),false); }
+	else { path_start(p,spd,choose(path_action_restart,path_action_reverse),true); }
 	patrol_check = true;
 }
 if(soundCheck == true)
@@ -52,21 +54,16 @@ if(soundCheck == true)
 	//search_check = false;
 	//alarm_set(3,0);
 }
-if(access == false and _wallsee and _doorsee and abs(angle_difference(weapon.image_angle,pd1)) < 5)
+if(access == false and _wallsee and _doorsee and abs(angle_difference(weapon.image_angle,pd)) < 5)
 {
 	see_check = true;
 }
 else if(_wallsee and _doorsee and 
-abs(angle_difference(weapon.image_angle,pd1)) < 5 and 
+abs(angle_difference(weapon.image_angle,pd)) < 5 and 
 ((obj_suq.pistolHave == 1 or obj_suq.magnumHave == 1 or obj_suq.machineGunHave == 1) and 
 obj_suq.gunEquip != 0 and obj_suq.gunEquip != 10 and obj_suq.gunEquip != 11 and obj_suq.gunEquip != 12))
 {
 	see_check = true;
-}
-if(instance_exists(obj_knife))
-{
-	var pd2 = point_direction(x,y,obj_knife.x,obj_knife.y);
-	if(_doorseek and _wallseek and abs(angle_difference(weapon.image_angle,pd2)) < 5) then see_check = true;
 }
 if(search_check == false and spin_check)
 {
@@ -80,7 +77,7 @@ if(hit == true)
 }
 if(see_check)
 {
-	if(((_wallsee and _doorsee) and abs(angle_difference(weapon.image_angle,pd1)) < 5) or check == true or (_wt and _dt))
+	if(((_wallsee and _doorsee) and abs(angle_difference(weapon.image_angle,pd1)) < 5) or (check == true and !(_wallsee2 and _doorsee2)) or (_wt and _dt) or (_wallsee2 and _doorsee2))
 	{
 		check = true;
 		x3 = obj_suq.x;
@@ -98,6 +95,11 @@ if(see_check)
 			x5 = _tn.x;
 			y5 = _tn.y;
 		}
+		else if(_wallsee2 and _doorsee2)
+		{
+			x3 = _n.x;
+			y3 = _n.y;
+		}
 		else if(_wt and _dt and !_wallsee and !_doorsee and instance_exists(obj_turret))
 		{
 			var _tn = instance_nearest(x,y,obj_turret);
@@ -112,7 +114,7 @@ if(see_check)
 			suq_loc = false;
 		}
 		suq_loc = true;
-		if((_wallsee and _doorsee) or (_wallseed and _doorseed) or (_wt and _dt)) { shootCheck -= 1; }
+		if((_wallsee and _doorsee) or (_wallseed and _doorseed) or (_wt and _dt) or (_wallsee2 and _doorsee2)) { shootCheck -= 1; }
 	    if((_wt and _dt) and (!_wallsee and !_doorsee)) 
 		{
 			pd = point_direction(x,y,x5,y5);
@@ -135,14 +137,46 @@ if(see_check)
 				if(bulamt < 25) { shtspd = 10; }
 				else if(bulamt > 25) { bulamt = 0; shtspd = 80; }
 			}
-			instance_create(x,y,o_gunSound);
+			if(weapon_type == obj_assaultRifle)
+			{ 
+				audio_play_sound(snd_laser,1,false,o_saveload.sfxvol,0,.7); 
+				bulamt++;
+				if(bulamt < 20) { shtspd = 20; }
+				else if(bulamt > 20) { bulamt = 0; shtspd = 100; }
+			}
+			if(weapon_type == obj_shotgun)
+			{ 
+				if(bulamt == 0 and distance_to_object(obj_suq) < 180) { audio_play_sound(snd_heavygun,1,false,random_range(1.5,2)*o_saveload.sfxvol,0,random_range(.9,1.1)); bulamt++; }
+				else if(distance_to_object(obj_suq) < 180 and bulamt != 0) { audio_play_sound(snd_shotgunCock,5,false,.5*o_saveload.sfxvol); bulamt = 0; }
+				shtspd = 40;
+			
+			}
 			shootCheck = shtspd;
-		    Bulg = instance_create(x,y,weapon_bul);
-		    Bulg.direction = weapon.image_angle;
-		    Bulg.image_angle = weapon.image_angle;
-			Bulg.speed = weapon_spd;
-			//x1 = choose(20,-20);
-			//y1 = choose(20,-20);
+			if((weapon_type == obj_shotgun and bulamt != 0) or weapon_type != obj_shotgun)
+			{
+				instance_create(x,y,o_gunSound);
+			    var Bulg = instance_create(x,y,weapon_bul);
+			    Bulg.direction = weapon.image_angle;
+			    Bulg.image_angle = weapon.image_angle;
+				Bulg.speed = weapon_spd;
+			}
+			if(weapon_type == obj_shotgun and bulamt != 0)
+			{
+				var a1 = weapon.image_angle+choose(1,2);
+				var a2 = weapon.image_angle+choose(-1,-2);
+				var a3 = weapon.image_angle+choose(5,-5);
+				var a4 = weapon.image_angle+choose(1,2,3,4,5);
+				var a5 = weapon.image_angle+choose(-1,-2,-3,-4,-5);
+				var a6 = weapon.image_angle+choose(3,4);
+				var a7 = weapon.image_angle+choose(-3,-4);
+				var Bulg1 = instance_create(x,y,weapon_bul); Bulg1.direction = a1; Bulg1.image_angle = a1; Bulg1.speed = weapon_spd;
+				var Bulg2 = instance_create(x,y,weapon_bul); Bulg2.direction = a2; Bulg2.image_angle = a2; Bulg2.speed = weapon_spd;
+				var Bulg3 = instance_create(x,y,weapon_bul); Bulg3.direction = a3; Bulg3.image_angle = a3; Bulg3.speed = weapon_spd;
+				var Bulg4 = instance_create(x,y,weapon_bul); Bulg4.direction = a4; Bulg4.image_angle = a4; Bulg4.speed = weapon_spd;
+				var Bulg5 = instance_create(x,y,weapon_bul); Bulg5.direction = a5; Bulg5.image_angle = a5; Bulg5.speed = weapon_spd;
+				var Bulg6 = instance_create(x,y,weapon_bul); Bulg6.direction = a6; Bulg6.image_angle = a6; Bulg6.speed = weapon_spd;
+				var Bulg7 = instance_create(x,y,weapon_bul); Bulg7.direction = a7; Bulg7.image_angle = a7; Bulg7.speed = weapon_spd;
+			}
 		}
 		soundCheck = false;
 		path_check = true;
@@ -150,7 +184,7 @@ if(see_check)
 		//alarm_set(3,0);
 	}
 
-	if(path_check)
+	if(path_check and room != r_lvl_19)
 	{
 		if(mp_grid_path(global.grid,path,x,y,x3,y3,true) and hit == false and suq_loc == false)
 		{
@@ -173,7 +207,7 @@ if(see_check)
 		}
 		if(_wallsee and collision_line(x,y,obj_suq.x,obj_suq.y,o_door,false,true) > 0 and search_check == false)
 		{
-			var pd1 = direction;
+			pd1 = direction;
 			var ad1 = angle_difference(weapon.image_angle,pd1);
 			weapon.image_angle -= min(abs(ad1), 1) * sign(ad1);
 			search_check = true;
@@ -191,11 +225,12 @@ if(see_check)
 if(hp < hpc)
 {
 	hpc = hp;
-	weapon.image_angle = pd1;
+	//weapon.image_angle = pd;
 	var _inst = noone;
 	if(hit == true)
 	{
 		_inst = instance_create_layer(x,y,"Instances_Action",o_hurt);
+		_inst.sprite_index = s_hurt_2;
 	}
 	if(place_meeting(x,y,o_hurt))
 	{

@@ -1,23 +1,26 @@
-if(path_position == 1)
+if(path_position == 1 and !safeCheck)
 {
 	x = 4000;
+	safeCheck = true;
 	switch(lady)
 	{
 		case 1: var _c1 = instance_create_layer(x,y,"Instances_Action",o_conversation) 
-				_c1.t = 300; _c1.h = 31; break;
+				_c1.t = 180; _c1.h = 31; break;
 		case 2: var _c2 = instance_create_layer(x,y,"Instances_Action",o_conversation) 
-				_c2.t = 300; _c2.h = 32; break;
+				_c2.t = 180; _c2.h = 32; break;
 		case 3: var _c3 = instance_create_layer(x,y,"Instances_Action",o_conversation) 
-				_c3.t = 300; _c3.h = 33; break;
+				_c3.t = 180; _c3.h = 33; break;
 	}
-}
-if(!path_exists(path))
-{
-    path = path_add();
 }
 if(patrol_check == false)
 {
-	path_start(p,1,path_action_stop,false);
+	switch(lady)
+	{
+		case 1: path_start(p,1.7,path_action_stop,false); break;
+		case 2: path_start(p,1.7,path_action_stop,false); break;
+		case 3: path_start(p,1.7,path_action_stop,false); break;
+	}
+	//path_start(p,1.5,path_action_stop,false);
 	patrol_check = true;
 }
 if(hp < hpc)

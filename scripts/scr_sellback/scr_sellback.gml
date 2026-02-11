@@ -60,9 +60,10 @@ function scr_sellback(_i,_ch)
 	o_saveload.ammoUp = 1;//1.5 for upgrade
 	o_saveload.ammoFull = false;//true for upgrade
 	o_saveload.turretUp = 1;//2 for upgrade
-	audio_play_sound(snd_heal,3,0,1*o_saveload.sfxvol,0,.7);
+	
 	if(_ch == "shop")
 	{
+		audio_play_sound(snd_heal,3,0,1*o_saveload.sfxvol,0,.7);
 		alarm_set(0,1);
 	}
 }

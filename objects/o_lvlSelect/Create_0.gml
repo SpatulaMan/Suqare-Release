@@ -68,16 +68,18 @@ switch(prog)
 	case 18:
 	case 17:
 	case 16:
-	case 15:
+	case 15: if(obj_suq.lvldone[19] == false and obj_suq.fragment[0] == true and obj_suq.fragment[1] == true and obj_suq.fragment[2] == true and obj_suq.fragment[3] == true) 
+			 { array_insert(lvl,t,19); t++; }
 	case 14:
 	case 13:
 	case 12:
 	case 11:
-	case 10:
+	case 10: if(obj_suq.lvldone[18] == false and obj_suq.perez > -2) { array_insert(lvl,t,18); t++; }
+			 
 	case 9:
 	case 8: if(obj_suq.lvldone[15] == false and obj_suq.kanker > -3 and o_saveload.pnet > 80 and obj_suq.progress < 25) { array_insert(lvl,t,15); t++; }
-			if(obj_suq.lvldone[16] == false and obj_suq.gildebrand > -4) { array_insert(lvl,t,16); t++; }
-			if(obj_suq.lvldone[17] == false and obj_suq.hiertech > -4) { array_insert(lvl,t,17); t++; }
+			if(obj_suq.lvldone[16] == false and obj_suq.lvldone[17] == false and obj_suq.gildebrand > -4) { array_insert(lvl,t,16); t++; }
+			if(obj_suq.lvldone[17] == false and obj_suq.lvldone[16] == false and obj_suq.hiertech > -4) { array_insert(lvl,t,17); t++; }
 	case 7:
 	case 6: if(obj_suq.lvldone[11] == false and obj_suq.perez > -4) { array_insert(lvl,t,11); t++; }
 			if(obj_suq.lvldone[12] == false and obj_suq.kanker > -5) { array_insert(lvl,t,12); t++; }
@@ -103,6 +105,8 @@ switch(prog)
 			if(obj_suq.lvldone[14] == false and obj_suq.hiertech > -4) { array_insert(lvl,t,14); t++; }
 			if(obj_suq.lvldone[15] == false and obj_suq.kanker > -3 and o_saveload.pnet > 80 and obj_suq.progress < 25) { array_insert(lvl,t,15); t++; }
 			if(obj_suq.lvldone[16] == false and obj_suq.gildebrand > -4) { array_insert(lvl,t,16); t++; }
+			if(obj_suq.lvldone[17] == false and obj_suq.hiertech > -4) { array_insert(lvl,t,17); t++; }
+			if(obj_suq.lvldone[18] == false and obj_suq.perez > -2) { array_insert(lvl,t,18); t++; }
 }
 if(t == 0)
 {

@@ -4,6 +4,7 @@ mdCh = 1;
 obj_suq.image_xscale = 1; 
 obj_suq.image_yscale = 1;
 image_blend = -1;
+image_alpha = 1;
 //image_blend = c_white;
 if(room != r_armory and room != r_skill1 and room != r_skill2 and room != r_skill3
  and room != r_skill4 and room != r_skill5)
@@ -31,7 +32,7 @@ if(room != r_armory and room != r_skill1 and room != r_skill2 and room != r_skil
 	ppb = pp7Amt+ppMag;
 	shb = shuriken;
 	lb = lives;
-	moneyb = money;
+	moneyb = o_saveload.moneyT;
 	tdead[0] = 0;
 	tdead[1] = 0;
 	tdead[2] = 0;

@@ -1,1 +1,1 @@
-if(roomStartCheck == false) { alarm_set(0,30); }
+if(roomStartCheck == false) { alarm_set(0,10); }

@@ -1,4 +1,4 @@
-if(room == r_lvl_17)
+if(room == r_lvl_17 or room == r_lvl_18)
 {
 	image_alpha = 0.01;
 }

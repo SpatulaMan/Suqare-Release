@@ -1,3 +1,4 @@
+weapon.image_angle = 180+other.image_angle;
 /*hp -= 1;
 hit = true;
 direction = other.direction;

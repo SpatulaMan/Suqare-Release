@@ -1,4 +1,5 @@
 obj_suq.money += amt;
+o_saveload.moneyT += amt;
 obj_suq.showMoney = 300;
 //play sound per amt it is
 switch(amt)

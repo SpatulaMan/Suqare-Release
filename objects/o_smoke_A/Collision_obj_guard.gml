@@ -15,3 +15,7 @@ if(!instance_exists(obj_ninja_bosses))
 			other.weapon.image_angle += 180;
 	}
 }
+if(other.sprite_index == s_turretE)
+{
+	other.shootCheck = 30;
+}

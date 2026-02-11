@@ -1,1 +1,1 @@
-if(fCheck == false) { path_check = true; }
+if(fCheck == false and room != r_lvl_19) { path_check = true; }

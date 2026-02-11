@@ -34,7 +34,7 @@ sniperRifleAmt = snb;
 rocketLauncherAmt = rb;
 flamethrowerAmt = fb;
 pp7Amt = ppb;  
-money = moneyb;//maybe leave this in? 
+o_saveload.moneyT = moneyb;//maybe leave this in? 
 //money += ammoBuy;
 
 showMoney = 360;
@@ -54,6 +54,10 @@ if(audio_is_playing(snd_stepOther))
 	audio_stop_sound(snd_stepOther);
 }
 if(room == r_lvl_2) { obj_suq.gems = 0; }
+if(room == r_lvl_6) { obj_suq.fragment[0] = false; }
+if(room == r_lvl_10) { obj_suq.fragment[1] = false; }
+if(room == r_lvl_12) { obj_suq.fragment[2] = false; }
+if(room == r_lvl_16) { obj_suq.fragment[3] = false; }
 room_persistent = false;
 //if(room == r_lvl_0) { room_goto(r_lvl_0_1); room_1persistent = false; }
 //if(room == r_lvl_4) { room_goto(r_lvl_4_1); room_1persistent = false; }

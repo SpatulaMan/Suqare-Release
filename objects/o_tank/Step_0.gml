@@ -1,8 +1,8 @@
 var pd = 0;
 var ad = 0;
-if(!audio_is_playing(snd_fireT) and distance_to_object(obj_suq) < 60)
+if(!audio_is_playing(snd_fireT) and distance_to_object(obj_suq) < 120)
 {
-	audio_play_sound(snd_hurt,1,false,.4*o_saveload.sfxvol,0,0.8);
+	audio_play_sound(snd_fireT,1,false,.4*o_saveload.sfxvol,0,0.8);
 }
 if(instance_exists(o_tankHead))
 {
@@ -24,6 +24,7 @@ if(instance_exists(inst_7BE91A51))
 	if(tank == 1)
 	{
 		inst_7BE91A51.image_angle = image_angle + 90;
+		inst_7BE91A51.image_yscale = 2;
 		inst_7BE91A51.x = x + lengthdir_x(39.4,image_angle-203.96);
 		inst_7BE91A51.y = y + lengthdir_y(39.4,image_angle-203.96);
 	}
@@ -32,6 +33,7 @@ if(instance_exists(inst_7BE91A51))
 		if(instance_exists(inst_271120D9))
 		{
 			inst_271120D9.image_angle = image_angle;
+			inst_271120D9.image_yscale = 2;
 			inst_271120D9.x = x + lengthdir_x(43.14,image_angle-136);
 			inst_271120D9.y = y + lengthdir_y(43.14,image_angle-136);
 		}
@@ -111,7 +113,7 @@ if(hp < hpc)
 		}
 	}
 }
-if(dPanel)
+if(dPanel and tank == 3)
 {
 	hp--;
 	var _piece = instance_create_layer(x,y,"Instances_Action",o_pieces);

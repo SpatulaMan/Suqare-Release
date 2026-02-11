@@ -1,6 +1,7 @@
 //Show/not show recap
 if(t > 0)
 {
+	image_alpha = 0.01;
 	x = obj_suq.x;
 	y = obj_suq.y;
 	t--;

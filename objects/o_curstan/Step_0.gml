@@ -17,27 +17,27 @@ switch(c)
 	case 4: cs = "Ungulate Studios"; csuq = obj_suq.ungulate; break;
 	case 5: cs = "Gildebrand Consulting"; csuq = obj_suq.gildebrand; break;
 }
-if(csuq < -7)
+if(csuq < -6)
 {
 	con = "Hated"
 	o1 = make_color_rgb(255,0,0);
 }
-else if(csuq >= -7 and csuq < -2)
+else if(csuq >= -6 and csuq < -1)
 {
 	con = "Disliked"
 	o1 = make_color_rgb(255,100,0);
 }
-else if(csuq >= -2 and csuq <= 2)
+else if(csuq >= -1 and csuq <= 1)
 {
 	con = "Neutral"
 	o1 = make_color_rgb(255,255,0);
 }
-else if(csuq > 2 and csuq <= 7)
+else if(csuq > 1 and csuq <= 6)
 {
 	con = "Liked"
 	o1 = make_color_rgb(150,255,0);
 }
-else if(csuq > 7)
+else if(csuq > 6)
 {
 	con = "Beloved"
 	o1 = make_color_rgb(0,255,0);

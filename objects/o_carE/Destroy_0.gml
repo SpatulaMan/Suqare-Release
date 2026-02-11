@@ -1,4 +1,4 @@
-audio_play_sound(snd_fire,3,false,.7*o_saveload.sfxvol);
+if(distance_to_object(obj_suq) < 100) { audio_play_sound(snd_fire,3,false,.7*o_saveload.sfxvol); }
 instance_create(x,y,obj_fireSH);
 instance_create(x,y,obj_fireSH);
 instance_create(x,y,obj_fireSH);

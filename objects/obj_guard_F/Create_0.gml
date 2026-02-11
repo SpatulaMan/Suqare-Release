@@ -1,5 +1,7 @@
 alarm_set(11,1);
 alarm_set(6,120);
+adif = 60;
+if(room == r_lvl_19) { adif = 270; }
 shtspd = 60;
 shootCheck = shtspd;
 four = 0;
@@ -18,7 +20,6 @@ hpc = 0;
 hpt = 0;
 patrol_check = false;
 check = false; //final check
-image_blend = c_green;
 image_speed = 0;
 
 p1 = false;
@@ -38,31 +39,12 @@ y4 = y;
 spr = s_enemy_1;
 fCheck = false;
 path = path_add();
-
-wc = choose(1,1,2,3,3);
-
-switch(wc)
-{
-	case 1: 
-	weapon = instance_create_layer(x,y,"Instances_Action",o_ePistol);
-	weapon_spd = 6;
-	weapon_bul = obj_suqBul;
-	weapon_type = obj_pistol;
-	drop_gun = true;
-	break;
-	case 2: 
-	weapon = instance_create_layer(x,y,"Instances_Action",o_eMagnum);
-	weapon_spd = 8;
-	weapon_bul = obj_suqMBul;
-	weapon_type = obj_magnum;
-	drop_gun = true;
-	break;
-	case 3: 
-	weapon = instance_create_layer(x,y,"Instances_Action",o_eMachineGun);
-	weapon_spd = 6;
-	weapon_bul = obj_suqMGBul;
-	weapon_type = obj_machineGun;
-	drop_gun = true;
-	shtspd = 10;
-	break;
-}
+weapon = noone;
+weapon_spd = 6;
+weapon_bul = obj_suqBul;
+weapon_type = obj_pistol;
+if(room != r_lvl_19) { wc = choose(1,1,2,3,3); }
+wc = 0;
+sk = 0;
+start = false;
+alarm_set(10,2);

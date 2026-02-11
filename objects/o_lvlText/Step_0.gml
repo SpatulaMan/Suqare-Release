@@ -75,4 +75,7 @@ switch(room)
 	
 	case r_lvl_18: t = 97; o1 = 100; o2 = 101; o3 = 102; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); ot3 = scr_briefing(o3); image_index = 2;
 	if(!instance_exists(inst_1062E581)) { obj1 = true; } if(!instance_exists(inst_1FC19C6A)) { obj2 = true; } if(!instance_exists(inst_713E65DA)) { obj3 = true; } break;
+	
+	case r_lvl_19: t = 103; o1 = 106; b = scr_briefing(t); ot1 = scr_briefing(o1); image_index = 0;
+	if(instance_exists(o_lvl19)) { obj1 = o_lvl19.ob1; } break;
 }

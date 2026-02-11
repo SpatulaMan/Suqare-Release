@@ -8,4 +8,7 @@ ob3 = false;
 ob1D = false;
 ob2D = false;
 ob3D = false;
+a1 = noone;
+a2 = noone;
+a3 = noone;
 alarm_set(1,10);

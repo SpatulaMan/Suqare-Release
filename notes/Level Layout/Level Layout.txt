@@ -102,10 +102,10 @@ or
 14: Gun Club - NL
 15: Recruit Ninjas - Bad for Yellerteeth
 16: Destroy Big Tank that could stop whole plan
-	17: Help Old Ladies to cross the street
+17: Help Old Ladies to cross the street
 or
-	18: Kill Benefactors
-	19: Protect Main Vault
+18: Kill Benefactors
+19: Protect Main Vault
 	20: Quest for the Golden Sword (Have to place all the pieces in different places, drop all weapons/gadgets, and then solve puzzles/survive the level without any weaponry
 	21: Jewel of Barfo
 	22: Stop Contraband Runner (stop cars from getting loaded with contraband. Some armored machine gun cars between the stocking buildings of which there's 3)

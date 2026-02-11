@@ -776,18 +776,17 @@ function scr_briefing(t){
 			chance to get to them and end Gildebrand Consulting's 
 			funding once and for all! 
 
-			While our smugglers are driving around town, I want you to 
-			find the benefactors and run them over. Once you're done 
-			with that, dump the car, and leave in your own. This will
-			really solidify Hiertech as a lasting power in the 
-			industry. 
+			You will find an armored car in the northwest parking lot.
+			Walk up to it to get in and turn those damsels into
+			roadkill. I hope you know how to drive, because you won't 
+			be able to catch them all on foot. 
 			
 			This is an all or nothing job. If you don't get all of them
 			we won't pay you anything. ";
 	a[98] = @"Run over 3 Old Ladies with a car";
-	a[99] = @"Mission: Cross the street
+	a[99] = @"Mission: Kill Benefactors
 			
-			Hiring Firm: Gildebrand Consulting
+			Hiring Firm: Hiertech
 			Current Standing With
 			Hiertech: "+string(obj_suq.hiertech)+
 			@"
@@ -811,12 +810,71 @@ function scr_briefing(t){
 	a[100] = @"Kill Janice";
 	a[101] = @"Kill Gerty";
 	a[102] = @"Kill Margie";
-	a[103] = @"";
-	a[104] = @"";
-	a[105] = @"";
-	a[106] = @"";
-	a[107] = @"";
-	a[108] = @"";
+	a[103] = @"BRIEFING:
+			Our main vault is under attack! We need you to come stop 
+			the mercenaries hired by Kanker and Co. because our main
+			force isn't well equipped for this right now, and they 
+			managed to remotely open the vault!
+
+			The more mercenaries you kill, the higher the guards 
+			confidence will be, and you can spend those confidence 
+			points to convince our guards to come out and help. We have
+			a defense mechanism that will ignite and kill anyone who 
+			enters the vault, but if 10 mercenaries get in, all of the 
+			money will get burned up as well. You must prevent this
+			from happening. 
+
+			You will have roughly 30 seconds after you get there to 
+			prep and get ready. This will be a hard-fought battle. ";
+	a[104] = @"Defend Main Vault From Mercenary Attack";
+	a[105] = @"Mission: Defend Vault
+			
+			Hiring Firm: Perez Holdings
+			Current Standing With
+			Perez Holdings: "+string(obj_suq.perez)+
+			@"
+			Combat Difficulty: 10
+			Mental Difficulty: 2
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $7000
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[106] = @"Defend Vault";
+	a[107] = @"The Golden Fragments";
+	a[108] = @"Mission: Golden Fragments
+			
+			Hiring Firm: 
+			Current Standing With
+			: "+string("")+
+			@"
+			Combat Difficulty: 
+			Mental Difficulty: 
+			Locked Doors: 
+			Req. Locked Doors: 
+			Keys Available: 
+			Reward: 
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
 	a[109] = @"";
 	a[110] = @"";
 	a[111] = @"";
@@ -1120,6 +1178,17 @@ function scr_conversation(t)
 	a[31] = @"Janice has escaped to safety.";
 	a[32] = @"Gerty has escaped to safety.";
 	a[33] = @"Margie has escaped to safety.";
+	a[34] = @"To recruit a guard, acquire enough confidence points (CP), and press the associated button
+			1 - Pistol Guard, 4 HP -- 5 CP
+			2 - Magnum Guard, 4 HP -- 7 CP
+			3 - Machine Gun Guard, 4 HP -- 8 CP
+			4 - Assault Rifle Guard, 4 HP -- 10 CP
+			5 - Shotgun Guard, 4 HP -- 10 CP
+			6 - Pistol Guard, 16 HP -- 10 CP
+			7 - Magnum Guard, 16 HP -- 12 CP
+			8 - Machine Gun Guard, 16 HP -- 13 CP
+			9 - Assault Rifle Guard, 16 HP -- 16 CP
+			0 - Shotgun Guard, 16 HP -- 16 CP";
 	a[60] = @"Yellen Egbert II:
 			Oh, no! My butler is dead and the 'esmerelda' has been stolen! Whoever could have done such a thing? Suqare, could 
 			you please investigate and figure out who did this? I would be forever in your debt. My guards already locked all 
@@ -1785,14 +1854,14 @@ function buttons(q)
 	b[9] = @"F..................................................................";
 	b[20] = @"E..................................................................";
 	b[22] = @"Esc..............................................................";
-	b[24] = @"Backspace....................................................";
-	b[26] = @"Driving Controls......................................Driving Controls";
-	b[27] = @"Up Arrow..............................................";
-	b[28] = @"Down Arrow............................................";
-	b[29] = @"Left Arrow............................................";
-	b[30] = @"Right Arrow...........................................";
-	b[31] = @"B.....................................................";
-	b[32] = @"E.....................................................";
+	b[39] = @"Backspace....................................................";
+	b[26] = @"Driving Controls";
+	b[27] = @"W..................................................................";
+	b[28] = @"S..................................................................";
+	b[29] = @"A..................................................................";
+	b[30] = @"D..................................................................";
+	b[31] = @"B..................................................................";
+	b[32] = @"E..................................................................";
 	b[10] = @"Move";
 	b[11] = @"Open Mission Objectives";
 	b[25] = @"Open Map";
@@ -1806,7 +1875,7 @@ function buttons(q)
 	b[19] = @"Detonate Sticky Mines";
 	b[21] = @"Recall/Place active turrets";
 	b[23] = @"Show Controls";
-	b[25] = @"Restart";
+	b[40] = @"Restart";
 	b[33] = @"Accelerate";
 	b[34] = @"Decelerate";
 	b[35] = @"Turn Left";
@@ -2862,8 +2931,35 @@ function debrief(m)
 			time will tell. 
 			
 			Press Spacebar to continue";
-	c[57] = @"";
-	c[58] = @"";
+	c[57] = @"Objectives Complete
+			Payout: $7000
+			
+			Response From Hiring Firm:
+			I can't believe you were able to stop them all. That was quite the battle, and you protected
+			the vault with no issue! You are truly impressive. 
+			
+			Current standing with Perez Holdings: "+string(obj_suq.perez)+@"
+			
+			Result:
+			Perez Holdings kept their vault money. This means they won't have to pay out for what they
+			lost, and this will keep their net worth from going lower for the time being. 
+			
+			Press Spacebar to continue";
+	c[58] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You couldn't save the money! Aagh! This is ridiculous! What are you, some kind of crap-bag,
+			full of garnished wages, mesothelioma, and a foot fungus? I can't believe you. 
+			
+			Current standing with Perez Holdings: "+string(obj_suq.perez)+@"
+			
+			Result:
+			Perez Holding's net worth took a huge hit from this since they had to pay out of their 
+			earnings to cover all the lost money to their customers. This could be the beginning of the
+			end for them if this keeps up. 
+			
+			Press Spacebar to continue";
 	c[59] = @"";
 	c[60] = @"";
 	c[61] = @"";
@@ -2886,6 +2982,15 @@ function debrief(m)
 	c[78] = @"";
 	c[79] = @"";
 	c[80] = @"";
+	c[81] = @"";
+	c[82] = @"";
+	c[83] = @"";
+	c[84] = @"";
+	c[85] = @"";
+	c[86] = @"";
+	c[87] = @"";
+	c[88] = @"";
+	c[89] = @"";
 	return c[m];
 }
 function tutorial(k)
