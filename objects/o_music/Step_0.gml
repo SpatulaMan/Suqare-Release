@@ -182,7 +182,7 @@ if(room == r_lvl_0)
 		}
 	}
 }
-if(room == r_lvl_2 or room == r_lvl_16)
+if(room == r_lvl_2)
 {
 	//audio_sound_gain(s1,0,3000);
 	if(mCheck2 == false and mCheck3 == false)
@@ -212,6 +212,34 @@ if(room == r_lvl_2 or room == r_lvl_16)
 		else
 		{
 			if(mc > 0) { mc--; }
+		}
+	}
+}
+if(room == r_lvl_16)
+{
+	//audio_sound_gain(s1,0,3000);
+	if(mCheck2 == false and mCheck3 == false)
+	{
+		//if!(_wallsee and _doorsee and _c and mc > 0) { mc--; }
+		mCheck2 = true;
+		audio_sound_gain(s1,0,1000);
+		audio_resume_sound(s3);
+		audio_sound_gain(s3,.25*o_saveload.musvol,1000);
+	}
+	if(mCheck2 == true)
+	{
+		if(_wallsee and _doorsee)
+		{
+			if(mCheck3 == false)
+			{
+				mCheck2 = false;
+				mCheck3 = true;
+				audio_sound_gain(s3,0,1000);
+				if(audio_sound_get_gain(s3) == 0) { audio_pause_sound(s3); }
+				audio_resume_sound(s1);
+				audio_sound_gain(s1,.25*o_saveload.musvol,500);
+				alarm_set(0,900);//keep music on for a bit longer before fading out
+			}
 		}
 	}
 }

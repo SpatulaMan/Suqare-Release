@@ -56,6 +56,13 @@ if((_wallsee and _doorsee) or check == true or (_wallseed and _doorseed) or (_wt
 		x3 = obj_suq.x;
 		y3 = obj_suq.y;
 	}
+	else if(!(_wallsee and _doorsee))
+	{
+		suq_loc = false;
+		check = false;
+		x3 = choose(0,500,1000);
+		y3 = choose(0,500,1000);
+	}
 	//suq_loc = true;
 	if((_wallsee and _doorsee) or (_wallseed and _doorseed) or (_wt and _dt)) { shootCheck -= 1; }
     if((_wt and _dt) and (!_wallsee and !_doorsee)) 

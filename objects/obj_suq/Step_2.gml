@@ -9,11 +9,11 @@ if(room == r_armory)
 }
 if(instance_exists(o_eFireSH))
 {
-	o_eFireSH.image_blend = c_yellow;
+	o_eFireSH.image_blend = c_aqua;
 }
 if(instance_exists(o_eFire))
 {
-	o_eFire.image_blend = c_yellow;
+	o_eFire.image_blend = c_aqua;
 }
 /*var _inst = instance_nearest(x,y,obj_darkness);
 with(_inst)

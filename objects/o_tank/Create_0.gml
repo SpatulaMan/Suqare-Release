@@ -1,6 +1,7 @@
 alarm_set(11,1);
-hp = 100;
-tank = 1;//choose(1,2,3);
+hp = 200;
+tank = 3;//choose(1,2,3);
+if(tank == 3) { image_index = 2; }
 p = Path43;//dummy invalid path to start
 pathTimer = 2;
 instance_create_layer(x-16,y,"Instances_Action",o_tankHead);

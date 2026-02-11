@@ -10,7 +10,7 @@ if(instance_exists(o_tank))
 	var adi = angle_difference(image_angle,o_tank.image_angle);
 	if(!_wallsee and !_doorsee and !_wt and !_dt)
 	{
-		image_angle -= min(abs(adi), 1) * sign(adi);
+		image_angle -= min(abs(adi), ang) * sign(adi);
 	}
 	if(instance_exists(obj_turret) and !_wallsee and !_doorsee and !wtdt)
 	{
@@ -35,7 +35,7 @@ if(instance_exists(o_tank))
 		adt = angle_difference(image_angle,pdt);
 		if(_wt and _dt)
 		{
-			image_angle -= min(abs(adt), 1) * sign(adt);
+			image_angle -= min(abs(adt), ang) * sign(adt);
 		}
 		else
 		{
@@ -49,7 +49,7 @@ if(instance_exists(o_tank))
 
 	if(_wallsee and _doorsee)
 	{
-		image_angle -= min(abs(ad), 1) * sign(ad);
+		image_angle -= min(abs(ad), ang) * sign(ad);
 	}
 	if(abs(angle_difference(image_angle,pd)) < 10 and _wallsee and _doorsee)
 	{

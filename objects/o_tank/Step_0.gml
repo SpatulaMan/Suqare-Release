@@ -23,8 +23,8 @@ if(instance_exists(inst_7BE91A51))
 {
 	if(tank == 1)
 	{
-		inst_7BE91A51.image_angle = image_angle + 90;
-		inst_7BE91A51.image_yscale = 2;
+		inst_7BE91A51.image_angle = image_angle - 90;
+		inst_7BE91A51.image_yscale = -2;
 		inst_7BE91A51.x = x + lengthdir_x(39.4,image_angle-203.96);
 		inst_7BE91A51.y = y + lengthdir_y(39.4,image_angle-203.96);
 	}
@@ -33,15 +33,16 @@ if(instance_exists(inst_7BE91A51))
 		if(instance_exists(inst_271120D9))
 		{
 			inst_271120D9.image_angle = image_angle;
-			inst_271120D9.image_yscale = 2;
-			inst_271120D9.x = x + lengthdir_x(43.14,image_angle-136);
-			inst_271120D9.y = y + lengthdir_y(43.14,image_angle-136);
+			inst_271120D9.image_yscale = 1.5;
+			inst_271120D9.x = x + lengthdir_x(43.14,image_angle+136);
+			inst_271120D9.y = y + lengthdir_y(43.14,image_angle+136);
 		}
 		else
 		{
 			inst_7BE91A51.image_angle = image_angle;
-			inst_7BE91A51.x = x + lengthdir_x(43.14,image_angle-136);
-			inst_7BE91A51.y = y + lengthdir_y(43.14,image_angle-136);
+			inst_7BE91A51.image_yscale = 1.5;
+			inst_7BE91A51.x = x + lengthdir_x(43.14,image_angle+136);
+			inst_7BE91A51.y = y + lengthdir_y(43.14,image_angle+136);
 		}
 	}
 }
@@ -121,8 +122,8 @@ if(dPanel and tank == 3)
 	_piece.speed = 5;
 	_piece.image_index = choose(0,1,2,3,4,5);
 	_piece.direction = random_range(200,340);
-	_piece.image_xscale = 4;
-	_piece.image_yscale = 4;
+	_piece.image_xscale = 3;
+	_piece.image_yscale = 3;
 	_piece.image_blend = c_lime;
 	image_index = 1;
 	dPanel = false;
@@ -135,8 +136,8 @@ if((hp <= 0 and p1 == false) or (hp <= (hpt*0.75) and p1 == false))
 	_piece.image_index = choose(0,1,2,3,4,5);
 	_piece.direction = random_range(0,359);
 	_piece.image_angle = random_range(0,359);
-	_piece.image_xscale = 2;
-	_piece.image_yscale = 2;
+	_piece.image_xscale = 3;
+	_piece.image_yscale = 3;
 	_piece.image_blend = c_lime;
 	p1 = true;
 }
@@ -148,8 +149,8 @@ if((hp <= 0 and p2 == false) or (hp <= (hpt*0.5) and p2 == false))
 	_piece3.image_index = choose(0,1,2,3,4,5);
 	_piece3.direction = random_range(0,359);
 	_piece3.image_angle = random_range(0,359);
-	_piece3.image_xscale = 2;
-	_piece3.image_yscale = 2;
+	_piece3.image_xscale = 3;
+	_piece3.image_yscale = 3;
 	_piece3.image_blend = c_lime;
 	p2 = true;
 }
@@ -161,8 +162,8 @@ if((hp <= 0 and p3 == false) or (hp <= (hpt*0.25) and p3 == false))
 	_piece4.image_index = choose(0,1,2,3,4,5);
 	_piece4.direction = random_range(0,359);
 	_piece4.image_angle = random_range(0,359);
-	_piece4.image_xscale = 2;
-	_piece4.image_yscale = 2;
+	_piece4.image_xscale = 3;
+	_piece4.image_yscale = 3;
 	_piece4.image_blend = c_lime;
 	p3 = true;
 }
@@ -178,8 +179,8 @@ if(hp <= 0)
 	_piece.image_index = choose(0,1,2,3,4,5);
 	_piece.direction = random_range(0,359);
 	_piece.image_angle = random_range(0,359);
-	_piece.image_xscale = 2;
-	_piece.image_yscale = 2;
+	_piece.image_xscale = 3;
+	_piece.image_yscale = 3;
 	_piece.image_blend = c_lime;
 	
 	var _piece3 = instance_create_layer(x,y,"Instances_Action",o_pieces);
@@ -188,8 +189,8 @@ if(hp <= 0)
 	_piece3.image_index = choose(0,1,2,3,4,5);
 	_piece3.direction = random_range(0,359);
 	_piece3.image_angle = random_range(0,359);
-	_piece3.image_xscale = 2;
-	_piece3.image_yscale = 2;
+	_piece3.image_xscale = 3;
+	_piece3.image_yscale = 3;
 	_piece3.image_blend = c_lime;
 	
 	var _piece4 = instance_create_layer(x,y,"Instances_Action",o_pieces);
@@ -198,8 +199,8 @@ if(hp <= 0)
 	_piece4.image_index = choose(0,1,2,3,4,5);
 	_piece4.direction = random_range(0,359);
 	_piece4.image_angle = random_range(0,359);
-	_piece4.image_xscale = 2;
-	_piece4.image_yscale = 2;
+	_piece4.image_xscale = 3;
+	_piece4.image_yscale = 3;
 	_piece4.image_blend = c_lime;
 	
 	var _piece5 = instance_create_layer(x,y,"Instances_Action",o_pieces);
@@ -208,8 +209,8 @@ if(hp <= 0)
 	_piece5.image_index = choose(0,1,2,3,4,5);
 	_piece5.direction = random_range(0,359);
 	_piece5.image_angle = random_range(0,359);
-	_piece5.image_xscale = 2;
-	_piece5.image_yscale = 2;
+	_piece5.image_xscale = 3;
+	_piece5.image_yscale = 3;
 	_piece5.image_blend = c_lime;
 	
 	var _piece1 = instance_create_layer(x,y,"Instances_Action",o_pieces);
@@ -218,8 +219,8 @@ if(hp <= 0)
 	_piece1.image_index = choose(0,1,2,3,4,5);
 	_piece1.direction = random_range(0,359);
 	_piece1.image_angle = random_range(0,359);
-	_piece1.image_xscale = 2;
-	_piece1.image_yscale = 2;
+	_piece1.image_xscale = 3;
+	_piece1.image_yscale = 3;
 	_piece1.image_blend = c_lime;
 	
 	var _piece2 = instance_create_layer(x,y,"Instances_Action",o_pieces);
@@ -228,8 +229,8 @@ if(hp <= 0)
 	_piece2.image_index = choose(0,1,2,3,4,5);
 	_piece2.direction = random_range(0,359);
 	_piece2.image_angle = random_range(0,359);
-	_piece2.image_xscale = 2;
-	_piece2.image_yscale = 2;
+	_piece2.image_xscale = 3;
+	_piece2.image_yscale = 3;
 	_piece2.image_blend = c_lime;
     instance_destroy();
 }

@@ -60,6 +60,7 @@ function scr_sellback(_i,_ch)
 	o_saveload.ammoUp = 1;//1.5 for upgrade
 	o_saveload.ammoFull = false;//true for upgrade
 	o_saveload.turretUp = 1;//2 for upgrade
+	obj_suq.money = o_saveload.moneyT;
 	
 	if(_ch == "shop")
 	{

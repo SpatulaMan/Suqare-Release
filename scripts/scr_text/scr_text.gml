@@ -695,10 +695,9 @@ function scr_briefing(t){
 			kill it, then go kill it. 
 			
 			You can take it on at any point, but if you go in 
-			unprepared, it'll most likely eat you alive. Bring all the
-			powerful weaponry that you can carry. This will be a doozy 
-			of a battle. Bring whatever you can because no one knows
-			how to destroy this thing!";
+			unprepared, it'll most likely eat you alive. Bring anything
+			and everything that you can because no one knows how to 
+			destroy this thing!";
 	a[88] = @"Destroy A Big, Armored Tank";
 	a[89] = @"Mission: Destroy Tank
 			
@@ -748,7 +747,7 @@ function scr_briefing(t){
 			Gildebrand Consulting: "+string(obj_suq.gildebrand)+
 			@"
 			Combat Difficulty: 1
-			Mental Difficulty: 7
+			Mental Difficulty: 3
 			Locked Doors: 0
 			Req. Locked Doors: 0
 			Keys Available: 0
@@ -1099,8 +1098,8 @@ function scr_conversation(t)
 			-Mankie Fruniz";
 	a[12] = @"Date: 01/30/0002
 			Report:
-			Addendum to previous report made on 1/15/0002. The defective panel is actually the rear armor. We're not sure to 
-			what extent it's vulnerable yet, but we're testing that now. 
+			Addendum to previous report made on 1/15/0002. The defective panel is actually the central rear armor. We're not 
+			sure to what extent it's vulnerable yet, but we're testing that now. 
 			-Mankie Fruniz";
 	a[13] = @"Date: 02/06/0002
 			Report:
@@ -1115,7 +1114,7 @@ function scr_conversation(t)
 	a[15] = @"Date: 01/15/0002
 			Report:
 			The combination of alloys we chose is working better than expected. We're seeing a 0 percent penetration rate from
-			even the most powerful of weapons. This thing might be unstoppable. 
+			even the most powerful of weapons. No wonder we call it the super tank. It might be unstoppable. 
 			-Mankie Fruniz";
 	a[16] = @"Date: 01/30/0002
 			Report:
@@ -1139,7 +1138,7 @@ function scr_conversation(t)
 			-Mankie Fruniz";
 	a[20] = @"Date: 01/30/0002
 			Report:
-			Something's clanking on the back left tread. It's probably not a big issue, but we're starting a disassembly
+			Something's clanking on the back right tread. It's probably not a big issue, but we're starting a disassembly
 			process soon to locate the issue. 
 			-Mankie Fruniz";
 	a[21] = @"Date: 02/06/0002
@@ -1153,11 +1152,11 @@ function scr_conversation(t)
 			-Brad";//with 10-13
 	a[23] = @"I farted on the Super Tank today. Yes! Great job, Brad! I'm helpful and super hilarious! 
 			-Brad";//with 14-17
-	a[24] = @"I left my wrench in the engine block today. Only the ninth time I've done that. Yes! Good job, Brad! Still below
-			double digits! 
+	a[24] = @"I left my wrench in the Super Tank's engine block today. Only the ninth time I've done that. Yes! Good job, Brad!
+			Still below double digits! 
 			-Brad";//with 18-21
 	a[25] = @"Memo:
-			Can everyone stop stealing my lunch and convincing me I ate it? That'd be nice... Go Brad! 
+			Can everyone stop stealing my lunch and convincing me that I ate it? That'd be nice... Go Brad! 
 			-Brad";//lvl16 Red Herrings
 	a[26] = @"Memo:
 			Everyone, make sure you're recording all of your testing in GOJI. This will provide clarity to the other testers.
