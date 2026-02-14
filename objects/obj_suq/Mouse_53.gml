@@ -186,7 +186,12 @@ if(health > 0 and !keyboard_check_direct(vk_shift))
         Pun.speed = 11;
         th = 1;
 		swordLC = 1;
-        alarm_set(6,1);
+		if(swordCH >= 120)
+		{
+			//alarm_set(6,1);
+			var _snbul = instance_create_layer(x,y,"Instances_Action",obj_suqSRBul);
+			_snbul.sprite_index = s_lightning;
+		}
         alarm_set(7,15);
 	}
 	if(shuriken > 0 and gunEquip == 12)

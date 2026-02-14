@@ -68,7 +68,7 @@ switch(prog)
 	case 18:
 	case 17:
 	case 16:
-	case 15: if(obj_suq.lvldone[19] == false and obj_suq.fragment[0] == true and obj_suq.fragment[1] == true and obj_suq.fragment[2] == true and obj_suq.fragment[3] == true) 
+	case 15: if(obj_suq.swh == false and obj_suq.fragment[0] == true and obj_suq.fragment[1] == true and obj_suq.fragment[2] == true and obj_suq.fragment[3] == true) 
 			 { array_insert(lvl,t,19); t++; }
 	case 14:
 	case 13:

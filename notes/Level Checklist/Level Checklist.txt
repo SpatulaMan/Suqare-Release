@@ -4,12 +4,12 @@ lvl 17 - lvl 51
 	-Level Details
 	-Objectives
 -Result text
--Add To Level Select
--Level Design
--Starting location
--Darkness
--Room Names
--Backgrounds
+	-Add To Level Select
+	-Level Design
+	-Starting location
+	-Darkness
+	-Room Names
+	-Backgrounds
 -New Features/Enemies
 -Enemy Placement
 	-Map

@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Guns",
-    "path":"folders/Sprites/Guns.yy",
+    "name":"lvlmechs",
+    "path":"folders/Sprites/lvlmechs.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,2 +1,1 @@
-sprite_index = spr_spinBlades;
-
+image_blend = c_white;

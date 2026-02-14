@@ -24,7 +24,7 @@ if(distance_to_object(obj_suq) < 36)
 		case 16: o_lvlStart.x1 = 615; o_lvlStart.y1 = 473; o_lvlStart.r = r_lvl_17; break;
 		case 17: o_lvlStart.x1 = 620; o_lvlStart.y1 = 586; o_lvlStart.r = r_lvl_18; break;
 		case 18: o_lvlStart.x1 = 1776; o_lvlStart.y1 = 240; o_lvlStart.r = r_lvl_19; break;
-		case 19: o_lvlStart.x1 = 0; o_lvlStart.y1 = 0; o_lvlStart.r = r_lvl_20; break;
+		case 19: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_20; break;
 	}
 	//with (obj_wallWood) instance_destroy();
 	o_missionG.b = b;

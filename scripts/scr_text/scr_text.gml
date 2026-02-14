@@ -874,7 +874,7 @@ function scr_briefing(t){
 			
 			
 			(Press Spacebar to Accept)";
-	a[109] = @"";
+	a[109] = @"???";
 	a[110] = @"";
 	a[111] = @"";
 	a[112] = @"";
@@ -1188,6 +1188,29 @@ function scr_conversation(t)
 			8 - Machine Gun Guard, 16 HP -- 13 CP
 			9 - Assault Rifle Guard, 16 HP -- 16 CP
 			0 - Shotgun Guard, 16 HP -- 16 CP";
+	a[35] = @"Welcome, traveler...
+	
+			You have journeyed far and conquered much to see this mystery through. Your persistence will most assuredly be
+			rewarded. But first, you must enter the temple through 4 doors. Each of which require a riddle to be answered to
+			open. 
+			
+			So come in, and discover for yourself why you're here... ";//Golden shard riddles
+	a[36] = @"Shoot me with a ray 
+			From a different plane of existence
+			It will all be okay
+			One just needs some persistence";//Golden shard riddles
+	a[37] = @"I'm cold from bottom to top
+			Frozen to the touch
+			If only I could make it stop
+			I wouldn't suffer so much";//Golden shard riddles
+	a[38] = @"Strike me once each
+			Three implements, deadly and sleek
+			Through air one must reach
+			The impact of which they seek";//Golden shard riddles
+	a[39] = @"An imposter, a sound
+			One just as you are
+			One is made, not found
+			Bring me both, will come ajar";//Golden shard riddles
 	a[60] = @"Yellen Egbert II:
 			Oh, no! My butler is dead and the 'esmerelda' has been stolen! Whoever could have done such a thing? Suqare, could 
 			you please investigate and figure out who did this? I would be forever in your debt. My guards already locked all 

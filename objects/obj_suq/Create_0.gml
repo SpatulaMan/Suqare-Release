@@ -40,6 +40,7 @@ rocketLauncherHave = 0;
 boomerangHave = 0;
 swordHave = 0;
 swordLC = 0;
+swordCH = 120;
 shuriken = 0;
 pp7Have = 0;
 lastNewWeaponHave = 0;
@@ -244,6 +245,7 @@ ghp = 0;
 totems = 0;
 ghostCheck = 0;
 gemCheck = false;
+
 
 f_suq = font_add("Suqarefinalize.TTF", 42, false, false, 32, 128);
 font_enable_sdf(f_suq, true);

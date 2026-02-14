@@ -2,6 +2,10 @@ rk = keyboard_check(ord("D"));
 lk = keyboard_check(ord("A"));
 uk = keyboard_check(ord("W"));
 dk = keyboard_check(ord("S"));
+if(swordHave == 1 and swordCH < 120)
+{
+	swordCH++;
+}
 if(spd > 2)
 {
 	spd -= 0.0005;
