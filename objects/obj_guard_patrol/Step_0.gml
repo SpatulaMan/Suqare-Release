@@ -13,6 +13,8 @@ var _wallseek = false;
 var _doorseek = false;
 var _wallseed = false;
 var _doorseed = false;
+var _wallsee2 = false;
+var _doorsee2 = false;
 var _wt = false;
 var _dt = false;
 if(instance_exists(obj_turret))
@@ -26,10 +28,12 @@ if(instance_exists(o_decoy))
 	_doorseed = collision_line(x,y,o_decoy.x,o_decoy.y,o_door,false,true) < 0;
 }
 var _n = noone;
-if(instance_exists(obj_guard_F)) { _n = instance_nearest(x,y,obj_guard_F); }
-//if(!instance_exists(obj_guard_F)) { _n = obj_suq; }
-var _wallsee2 = collision_line(x,y,_n.x,_n.y,obj_wall,false,true) < 0;
-var _doorsee2 = collision_line(x,y,_n.x,_n.y,o_door,false,true) < 0;
+if(instance_exists(obj_guard_F)) 
+{ 
+	_n = instance_nearest(x,y,obj_guard_F); 
+	_wallsee2 = collision_line(x,y,_n.x,_n.y,obj_wall,false,true) < 0;
+	_doorsee2 = collision_line(x,y,_n.x,_n.y,o_door,false,true) < 0;
+}
 var pd1 = point_direction(x,y,obj_suq.x,obj_suq.y);
 pd = point_direction(x,y,x3,y3);
 if(see_check == false and patrol_check == false and check11)

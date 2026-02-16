@@ -107,6 +107,7 @@ switch(prog)
 			if(obj_suq.lvldone[16] == false and obj_suq.gildebrand > -4) { array_insert(lvl,t,16); t++; }
 			if(obj_suq.lvldone[17] == false and obj_suq.hiertech > -4) { array_insert(lvl,t,17); t++; }
 			if(obj_suq.lvldone[18] == false and obj_suq.perez > -2) { array_insert(lvl,t,18); t++; }
+			array_insert(lvl,t,19); t++;
 }
 if(t == 0)
 {

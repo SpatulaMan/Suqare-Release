@@ -11,13 +11,15 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_thrownRang","path":"objects/obj_thrownRang/obj_thrownRang.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_thrownShuriken","path":"objects/obj_thrownShuriken/obj_thrownShuriken.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"o_gunSound","path":"objects/o_gunSound/o_gunSound.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_fireSH","path":"objects/obj_fireSH/obj_fireSH.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_statue",
   "overriddenProperties":[],
   "parent":{
-    "name":"Walls",
-    "path":"folders/Objects/Walls.yy",
+    "name":"lvl20",
+    "path":"folders/Objects/lvlmechs/lvl20.yy",
   },
   "parentObjectId":{
     "name":"obj_wall",

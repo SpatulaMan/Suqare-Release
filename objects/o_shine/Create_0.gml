@@ -7,3 +7,5 @@ if(dir == -1)
 	image_xscale = -1;
 }
 alarm_set(0,63);
+image_speed = 0;
+image_index = 1;

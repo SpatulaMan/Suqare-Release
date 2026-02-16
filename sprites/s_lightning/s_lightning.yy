@@ -28,7 +28,7 @@
   ],
   "name":"s_lightning",
   "nineSlice":null,
-  "origin":0,
+  "origin":3,
   "parent":{
     "name":"Buls",
     "path":"folders/Sprites/Buls.yy",
@@ -96,7 +96,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":0,
-    "yorigin":0,
+    "yorigin":15,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

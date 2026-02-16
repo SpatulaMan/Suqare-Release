@@ -34,4 +34,4 @@ if(alive)
 	}
 }
 
-if(hp <= 0) then { alive = false; }
+if(hp <= 0) then { instance_destroy(); }

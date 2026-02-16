@@ -282,7 +282,6 @@ if(distance_to_object(obj_suq) <= 12 and success == true)
 				else if(obj_suq.totems == 3 and instance_exists(obj_ghost) == true and obj_suq.ghostGunHave == 1)//investigated and found totems
 				{
 					obj_suq.money += 1800;
-					obj_suq.ggh = 0;
 					obj_suq.ghostGunHave = 0;
 					obj_suq.report = 17;
 				}

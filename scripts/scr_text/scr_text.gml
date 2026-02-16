@@ -853,16 +853,16 @@ function scr_briefing(t){
 	a[107] = @"The Golden Fragments";
 	a[108] = @"Mission: Golden Fragments
 			
-			Hiring Firm: 
+			Hiring Firm: ???
 			Current Standing With
-			: "+string("")+
+			???: "+string("")+
 			@"
-			Combat Difficulty: 
-			Mental Difficulty: 
-			Locked Doors: 
-			Req. Locked Doors: 
-			Keys Available: 
-			Reward: 
+			Combat Difficulty: ???
+			Mental Difficulty: ???
+			Locked Doors: ???
+			Req. Locked Doors: ???
+			Keys Available: ???
+			Reward: ???
 			
 			
 			
@@ -1191,8 +1191,7 @@ function scr_conversation(t)
 	a[35] = @"Welcome, traveler...
 	
 			You have journeyed far and conquered much to see this mystery through. Your persistence will most assuredly be
-			rewarded. But first, you must enter the temple through 4 doors. Each of which require a riddle to be answered to
-			open. 
+			rewarded. But first, you must enter the temple through 4 doors. Each of which require a riddle to be answered.
 			
 			So come in, and discover for yourself why you're here... ";//Golden shard riddles
 	a[36] = @"Shoot me with a ray 
@@ -1210,7 +1209,7 @@ function scr_conversation(t)
 	a[39] = @"An imposter, a sound
 			One just as you are
 			One is made, not found
-			Bring me both, will come ajar";//Golden shard riddles
+			Bring both, I'll come ajar";//Golden shard riddles
 	a[60] = @"Yellen Egbert II:
 			Oh, no! My butler is dead and the 'esmerelda' has been stolen! Whoever could have done such a thing? Suqare, could 
 			you please investigate and figure out who did this? I would be forever in your debt. My guards already locked all 
@@ -2255,13 +2254,12 @@ function debrief(m)
 			Payout: $1800
 			
 			Response From Hiring Firm:
-			Thanks for investigating the disturbance and getting this ghost gun to me. I'll
-			get another mercenary out there to finish the job. 
+			Thanks for investigating the disturbance and letting me make a replica of that 
+			weapon. I'll get another mercenary out there to finish the job. 
 			
 			Result: 
 			You didn't destroy the ghost, but you at least did enough to equip someone else
-			with the weapon to destroy it. You've lost out on a new weapon, but at least
-			you got the normal payout from the job. 
+			with the weapon to destroy it. 
 			
 			
 			Press Spacebar to continue ";

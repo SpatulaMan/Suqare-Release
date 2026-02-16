@@ -185,12 +185,16 @@ if(health > 0 and !keyboard_check_direct(vk_shift))
         Pun.image_angle = Pun.direction;
         Pun.speed = 11;
         th = 1;
-		swordLC = 1;
+		alarm_set(6,1);
+		//swordLC = 1;
 		if(swordCH >= 120)
 		{
-			//alarm_set(6,1);
+			swordCH = 0;
 			var _snbul = instance_create_layer(x,y,"Instances_Action",obj_suqSRBul);
 			_snbul.sprite_index = s_lightning;
+			_snbul.image_blend = c_yellow;
+			_snbul.image_angle = point_direction(x,y,mouse_x,mouse_y);
+			audio_play_sound(snd_magnum,1,false,2.5*o_saveload.sfxvol,0,.4);
 		}
         alarm_set(7,15);
 	}

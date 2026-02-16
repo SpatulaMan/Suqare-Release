@@ -6,4 +6,6 @@ boomerang = false;
 shuriken = false;
 imposter = false;
 sound = false;
+gain = 2.5;
+pitch = .5;
 image_speed = 0;

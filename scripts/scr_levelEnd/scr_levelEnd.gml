@@ -244,7 +244,6 @@ function scr_levelEnd(car,range_optional)
 				else if(obj_suq.totems == 3 and instance_exists(obj_ghost) == true and obj_suq.ghostGunHave == 1)//investigated and found totems
 				{
 					o_saveload.moneyT += 1800*_emtBill;
-					obj_suq.ggh = 0;
 					obj_suq.ghostGunHave = 0;
 					obj_suq.report = 17;
 				}

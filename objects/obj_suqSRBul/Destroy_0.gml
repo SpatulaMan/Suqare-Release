@@ -1,4 +1,4 @@
-if(Bulsrf == noone)
+/*if(Bulsrf == noone)
 {
 	Bulsrf = instance_create(x,y,obj_suqSRBulFade);
 	Bulsrf.direction = image_angle;

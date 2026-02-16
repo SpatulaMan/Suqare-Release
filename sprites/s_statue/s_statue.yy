@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"s_statue",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":31,
   "bbox_left":0,
   "bbox_right":31,
@@ -26,7 +26,7 @@
   ],
   "name":"s_statue",
   "nineSlice":null,
-  "origin":0,
+  "origin":4,
   "parent":{
     "name":"lvlmechs",
     "path":"folders/Sprites/lvlmechs.yy",
@@ -87,8 +87,8 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":16,
+    "yorigin":16,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

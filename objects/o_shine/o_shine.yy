@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite330",
-    "path":"sprites/Sprite330/Sprite330.yy",
+    "name":"s_light",
+    "path":"sprites/s_light/s_light.yy",
   },
   "spriteMaskId":null,
   "visible":true,
