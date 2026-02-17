@@ -855,7 +855,7 @@ function scr_briefing(t){
 			
 			Hiring Firm: ???
 			Current Standing With
-			???: "+string("")+
+			???: "+string("???")+
 			@"
 			Combat Difficulty: ???
 			Mental Difficulty: ???
@@ -875,13 +875,48 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[109] = @"???";
-	a[110] = @"";
-	a[111] = @"";
-	a[112] = @"";
-	a[113] = @"";
-	a[114] = @"";
-	a[115] = @"";
-	a[116] = @"";
+	a[110] = @"BRIEFING:
+			We need you to steal the Jewel of Barfo. Only a worthy 
+			ninja may step into the presence of the Jewel. So, you must
+			not only become a ninja, but you must also become one of 
+			the highest regarded ninjas ever. The Horoban Ninja clan is
+			holding a try-out for newcomers, and this will be your 
+			opening. 
+
+			If you finish the ninja challenges with a high enough 
+			score, they will let you into the Jewel room. Then you will
+			steal it. Easy enough. 
+
+			You cannot bring any guns. If you do, they will immediately 
+			disqualify you. ";
+	a[111] = @"Steal The Jewel of Barfo";
+	a[112] = @"Mission: Jewel of Barfo
+			
+			Hiring Firm: Yellerteeth Inc
+			Current Standing With
+			Yellerteeth Inc: "+string(obj_suq.yellerteeth)+
+			@"
+			Combat Difficulty: 4
+			Mental Difficulty: 5
+			Locked Doors: 3
+			Req. Locked Doors: 3
+			Keys Available: 3
+			Reward: $5200
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[113] = @"Accuracy Test";
+	a[114] = @"Speed Test";
+	a[115] = @"Evasion Test";
+	a[116] = @"Steal Jewel";
 	a[117] = @"";
 	a[118] = @"";
 	a[119] = @"";
@@ -1191,7 +1226,7 @@ function scr_conversation(t)
 	a[35] = @"Welcome, traveler...
 	
 			You have journeyed far and conquered much to see this mystery through. Your persistence will most assuredly be
-			rewarded. But first, you must enter the temple through 4 doors. Each of which require a riddle to be answered.
+			rewarded. But first, you must enter the temple through 4 doors. Each of which requires a riddle to be answered.
 			
 			So come in, and discover for yourself why you're here... ";//Golden shard riddles
 	a[36] = @"Shoot me with a ray 
@@ -1210,6 +1245,37 @@ function scr_conversation(t)
 			One just as you are
 			One is made, not found
 			Bring both, I'll come ajar";//Golden shard riddles
+	a[40] = @"This is the Accuracy Test. You will have 20 seconds to throw shurikens at the moving targets. The further they're
+			away from you, the more points they're worth. But, if you miss, that will be counted against you. If you get a high
+			enough score, we will give you one of the 3 keys necessary to see the jewel of barfo and become a ninja. 
+			Front - 1 Point
+			Middle - 3 Points
+			Back - 9 points
+			
+			Highscore: " + string(o_lvl21.accPoints) + @"
+			
+			Press F to start test";//barfo
+	a[41] = @"This is the Speed Throwing Test. You will have 20 seconds to throw shurikens at the dummy as fast as you can. You
+			will get 1 point for every shuriken in the dummy at the end of the time. If you obtain a high enough score, we will
+			give you one of the 3 keys necessary to see the jewel of barfo and become a ninja. 
+			
+			Highscore: " + string(o_lvl21.spdPoints) + @"
+			
+			Press F to start test";//barfo
+	a[42] = @"This is the Evasion Test. You will have shurikens thrown at you for 20 seconds. You will start with 100 points, 
+			and for each shuriken you don't dodge, you'll lose 1 point. If you can reach a high enough score, we will give you 
+			one of the 3 keys necessary to see the jewel of barfo and become a ninja. 
+			
+			Highscore: " + string(o_lvl21.evPoints) + @"
+			
+			Press F to start test";//barfo
+	a[43] = @"Congratulations on becoming a Horoban ninja. You may gaze upon the beauty of the Jewel of Barfo, our prized
+			posession. It has been with us for many generations. You will enjoy a great many benefits from being in our clan, 
+			but you must prove your loyalty by having the self control to not steal the jewel. It has power over most weak-
+			minded men and even those who claim to be intelligent and steadfast. If you can leave this place without trying
+			to take the jewel, the power of the Horoban clan will be with you always. Consider carefully. ";
+	a[44] = @"";
+	a[45] = @"";
 	a[60] = @"Yellen Egbert II:
 			Oh, no! My butler is dead and the 'esmerelda' has been stolen! Whoever could have done such a thing? Suqare, could 
 			you please investigate and figure out who did this? I would be forever in your debt. My guards already locked all 
@@ -1896,7 +1962,7 @@ function buttons(q)
 	b[19] = @"Detonate Sticky Mines";
 	b[21] = @"Recall/Place active turrets";
 	b[23] = @"Show Controls";
-	b[40] = @"Restart";
+	b[40] = @"Back To Armory";
 	b[33] = @"Accelerate";
 	b[34] = @"Decelerate";
 	b[35] = @"Turn Left";
@@ -2980,9 +3046,50 @@ function debrief(m)
 			end for them if this keeps up. 
 			
 			Press Spacebar to continue";
-	c[59] = @"";
-	c[60] = @"";
-	c[61] = @"";
+	c[59] = @"Objectives Complete
+			Payout: $5200
+			
+			Response From Hiring Firm:
+			That was good! I wasn't sure if you were up to snuff, but you stole the jewel without any
+			problems. My so-, I mean, my company will be pleased to hear this relic is coming to our
+			collection. 
+			
+			Current standing with Yellerteeth Inc: "+string(obj_suq.yellerteeth)+@"
+			
+			Result:
+			You've gotten yet another relic for Yellerteeth Inc. What on earth could they want all these
+			ninja artifacts for? 
+			
+			Press Spacebar to continue";
+	c[60] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You failure! I knew you didn't have it in you. You're no good at all! My so-, I mean company
+			will be extremely disappointed that you weren't up to snuff. 
+			
+			Current standing with Yellerteeth Inc: "+string(obj_suq.yellerteeth)+@"
+			
+			Result:
+			You've failed to get a relic for Yellerteeth Inc. What on earth could they want all these
+			ninja artifacts for? 
+			
+			Press Spacebar to continue";
+	c[61] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You failure! I knew you didn't have it in you. You're no good at all! My so-, I mean company
+			will be extremely disappointed that you weren't up to snuff. 
+			
+			Current standing with Yellerteeth Inc: "+string(obj_suq.yellerteeth)+@"
+			
+			Result:
+			You've failed to get a relic for Yellerteeth Inc. But, you've gained an alliance with the
+			Horoban Ninjas. You're not quite sure what power they can give you, but you trusted them
+			enough to fail a job on purpose. Hopefully this pans out. 
+			
+			Press Spacebar to continue";
 	c[62] = @"";
 	c[63] = @"";
 	c[64] = @"";

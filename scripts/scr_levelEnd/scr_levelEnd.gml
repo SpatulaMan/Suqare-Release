@@ -687,6 +687,34 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.perez -= 3;
 				}
 			} break;
+			case r_lvl_21:
+			{
+				o_saveload.pnet -= 2;
+				o_saveload.knet -= 1;
+				o_saveload.unet += 2;
+				o_saveload.hnet += 2;
+				o_saveload.gnet -= 1;
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				if(!instance_exists(o_jewel))
+				{
+					o_saveload.moneyT += 5200*_emtBill;
+					obj_suq.report = 59;
+					obj_suq.yellerteeth += 2;
+					o_saveload.ynet += 5;
+				}
+				else if(!instance_exists(o_guard_replace))
+				{
+					obj_suq.report = 60;
+					o_saveload.ynet -= 5;
+					obj_suq.yellerteeth -= 1;
+				}
+				else if(instance_exists(o_guard_replace) and o_lvl21.accPoints > 120 and o_lvl21.spdPoints >= 165 and o_lvl21.evPoints >= 90)
+				{
+					obj_suq.report = 61;
+					o_saveload.ynet -= 5;
+					obj_suq.yellerteeth -= 1;
+				}
+			} break;
 		}
 		if(!car and !range_optional)
 		{

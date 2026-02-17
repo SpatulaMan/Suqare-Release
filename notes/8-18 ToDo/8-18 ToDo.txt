@@ -5,3 +5,10 @@
 -Add gadget that gives you a 25% speed boost (or 50% maybe) for about 12,000
 
 -Add driving SFX for lvl 18 and lvl 17. For both the car you drive and the cars around you. 
+
+-Fix lightning
+
+-Add a level about "What is the meaning of life" Is there more to shape-anity? Discover meaning of life? 
+
+-If you side with the Horoban Ninjas, you have a chance to get a power for the duration of a level
+Odds: 1 - nothing(25%), 2 - Healed to full health the first time you're down to 1 heart(25%), 3 - Get all keys to a given mission (10%), 

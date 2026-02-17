@@ -1,0 +1,59 @@
+/// @description
+if(instance_exists(o_lvl21))
+{
+	if(!place_meeting(x,y,obj_shuriken))
+	{
+		instance_create_layer(x,y,"Instances_Action",obj_shuriken);
+	}
+	if(place_meeting(x,y,obj_suq) and keyboard_check_pressed(ord("F")) and o_lvl21.start == false)
+	{
+		active = true;
+		if(o_lvl21.start == false)
+		{
+			o_lvl21.start = true;
+			o_lvl21.acc = 0;
+			o_lvl21.spd = 0;
+			o_lvl21.ev = 100;
+			o_lvl21.s = 20;
+			if(instance_exists(obj_shuriken))
+			{
+				with (obj_shuriken) instance_destroy();
+			}
+			switch(mode)
+			{
+				case 1: o_lvl21.a = true; break;
+				case 2: o_lvl21.s = true; break;
+				case 3: o_lvl21.e = true; break;
+			}
+		}
+	}
+	else if(!place_meeting(x,y,obj_suq) and active and mode != 3)
+	{
+		o_lvl21.start = false;
+		active = false;
+	}
+	else if(obj_suq.y < 1218 and active and mode == 3)
+	{
+		o_lvl21.start = false;
+		active = false;
+	}
+	if(o_lvl21.start == false)
+	{
+		active = false;
+	}
+	if(o_lvl21.accPoints >= 120 and !blue) 
+	{ 
+		var _k1 = instance_create_layer(x,y,"Instances_Action",obj_silverKey0);
+		_k1 = image_index = 0;
+	}
+	if(o_lvl21.spdPoints >= 165 and !red)
+	{ 
+		var _k2 = instance_create_layer(x,y,"Instances_Action",obj_silverKey0);
+		_k2 = image_index = 1;
+	}
+	if(o_lvl21.evPoints >= 90 and !orange)
+	{ 
+		var _k3 = instance_create_layer(x,y,"Instances_Action",obj_silverKey0);
+		_k3 = image_index = 2;
+	}
+}

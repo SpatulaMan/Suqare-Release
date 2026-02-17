@@ -591,5 +591,6 @@ if(pickup_timer > 0)
 		case 51: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("JANICE"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 52: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("GERTY"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 53: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("MARGIE"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 54: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("JEWEL OF BARFO"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 	}
 }

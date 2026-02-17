@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_enemy_2",
-    "path":"sprites/s_enemy_2/s_enemy_2.yy",
+    "name":"s_hurt",
+    "path":"sprites/s_hurt/s_hurt.yy",
   },
   "spriteMaskId":null,
   "visible":true,

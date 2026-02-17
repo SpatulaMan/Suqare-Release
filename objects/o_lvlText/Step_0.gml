@@ -81,4 +81,11 @@ switch(room)
 	
 	case r_lvl_20: t = 107; o1 = 109; b = scr_briefing(t); ot1 = scr_briefing(o1); image_index = 0;
 	if(obj_suq.swordHave == 1) { obj1 = true; } break;
+	
+	case r_lvl_21: t = 110; o1 = 113; o2 = 114; o3 = 115; o4 = 116; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); ot3 = scr_briefing(o3); ot4 = scr_briefing(o4); 
+	image_index = 3;
+	if(o_lvl21.accPoints >= 120) { obj1 = true; }
+	if(o_lvl21.spdPoints >= 165) { obj2 = true; }
+	if(o_lvl21.evPoints >= 90) { obj3 = true; }
+	if(!instance_exists(o_jewel)) { obj4 = true; } break;
 }

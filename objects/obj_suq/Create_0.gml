@@ -241,6 +241,7 @@ pickup_item = 0;
 pickup_timer = 0;
 show = false;
 hecto = false;
+jewel = false;
 ghp = 0;
 totems = 0;
 ghostCheck = 0;

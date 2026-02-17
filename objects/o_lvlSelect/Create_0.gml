@@ -75,7 +75,7 @@ switch(prog)
 	case 12:
 	case 11:
 	case 10: if(obj_suq.lvldone[18] == false and obj_suq.perez > -2) { array_insert(lvl,t,18); t++; }
-			 
+			 if(obj_suq.lvldone[20] == false) { array_insert(lvl,t,20); t++; }
 	case 9:
 	case 8: if(obj_suq.lvldone[15] == false and obj_suq.kanker > -3 and o_saveload.pnet > 80 and obj_suq.progress < 25) { array_insert(lvl,t,15); t++; }
 			if(obj_suq.lvldone[16] == false and obj_suq.lvldone[17] == false and obj_suq.gildebrand > -4) { array_insert(lvl,t,16); t++; }
