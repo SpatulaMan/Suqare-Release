@@ -3,27 +3,20 @@ lvl 17 - lvl 51
 	-Short briefing
 	-Level Details
 	-Objectives
-	-Result text
+-Result text
 	-Add To Level Select
-	-Level Design
+-Level Design
 -Starting location
-	-Darkness
-	-Room Names
-	-Backgrounds
-	-New Features/Enemies
-	-Enemy Placement
+-Darkness
+-Room Names
+-Backgrounds
+-New Features/Enemies
+-Enemy Placement
 	-Map
-	-Gadgets/Weapons
-	-Music
-	-Mid-Level Objectives Complete
-	-Level End Code
+-Gadgets/Weapons
+-Music
+-Mid-Level Objectives Complete
+-Level End Code
 -Testing
 
-lvl 21 has 3 tests to pass to let you see the jewel. Once you see it, steal it, and fight your way out. 
-
-Test Of Accuracy (throw shurikens into dummys for points. shurikens that miss count against you. Dummy1 = 1 point, Dummy2 = 3 points, Dummy3 = 9 points, 20 second timer)
-Test Of Speed (how fast can you throw shurikens into a dummy. Total number in it is your score. 1 point per shuriken in dummy. 20 second timer)
-Test Of Evasion (shurikens being thrown at you. Dodge as many as possible. Gain 5 points per second, -1 per shuriken that hits you
-
-Make stand-in ninja objects that turn into regular ninjas the moment they are hit. Then if instance_exists(obj_ninja), then all of them change into obj_ninjas. 
-They all do this when the jewel is stolen as well. 
+lvl 22 add boomerang, and maybe add PP9

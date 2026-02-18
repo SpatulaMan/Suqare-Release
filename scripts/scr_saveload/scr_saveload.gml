@@ -104,7 +104,8 @@ function save()
 		sk8: o_saveload.skillCheck8,
 		sk9: o_saveload.skillCheck9,
 		sk10: o_saveload.skillCheck10,
-		paint: obj_suq.painting
+		paint: obj_suq.painting,
+		ninja: obj_suq.ninjaClan
 		
 		//upgrades
 		
@@ -319,6 +320,8 @@ function load(_f)
 			o_saveload.skillCheck10=_struct.sk10;
 		if (struct_exists(_struct, "paint"))
 			o_saveload.painting=_struct.paint;
+		if (struct_exists(_struct, "ninja"))
+			o_saveload.ninjaClan=_struct.ninja;
 		
 		//levels that are incompleted and are available to the player currently in variables 
 		
@@ -401,7 +404,7 @@ function load(_f)
 			tammo: 0,
 			thp: 0,
 			hprem: 0,
-			
+			ninjaClan: false,
 			fragment: 0,
 			gemsD: 0,
 			bank: 0,

@@ -107,7 +107,7 @@ or
 18: Kill Benefactors
 19: Protect Main Vault
 20: Quest for the Golden Sword (Have to place all the pieces in different places, drop all weapons/gadgets, and then solve puzzles/survive the level without any weaponry
-	21: Jewel of Barfo
+21: Jewel of Barfo
 	22: Stop Contraband Runner (stop cars from getting loaded with contraband. Some armored machine gun cars between the stocking buildings of which there's 3)
 	23: Loot abandoned pirate ship
 	24: Execute members of government that would prevent a banking monopoly

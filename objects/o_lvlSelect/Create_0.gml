@@ -72,7 +72,7 @@ switch(prog)
 			 { array_insert(lvl,t,19); t++; }
 	case 14:
 	case 13:
-	case 12:
+	case 12: if(obj_suq.lvldone[21] == false) { array_insert(lvl,t,21); t++; }
 	case 11:
 	case 10: if(obj_suq.lvldone[18] == false and obj_suq.perez > -2) { array_insert(lvl,t,18); t++; }
 			 if(obj_suq.lvldone[20] == false) { array_insert(lvl,t,20); t++; }

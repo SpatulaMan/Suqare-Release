@@ -702,17 +702,18 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.yellerteeth += 2;
 					o_saveload.ynet += 5;
 				}
-				else if(!instance_exists(o_guard_replace))
+				else if(!instance_exists(o_guard_replace) or (instance_exists(o_guard_replace) and instance_exists(obj_darkness)))
 				{
 					obj_suq.report = 60;
 					o_saveload.ynet -= 5;
 					obj_suq.yellerteeth -= 1;
 				}
-				else if(instance_exists(o_guard_replace) and o_lvl21.accPoints > 120 and o_lvl21.spdPoints >= 165 and o_lvl21.evPoints >= 90)
+				else if(instance_exists(o_guard_replace) and o_lvl21.accPoints > 120 and o_lvl21.spdPoints >= 165 and o_lvl21.evPoints >= 90 and !instance_exists(obj_darkness))
 				{
 					obj_suq.report = 61;
 					o_saveload.ynet -= 5;
 					obj_suq.yellerteeth -= 1;
+					obj_suq.ninjaClan = true;
 				}
 			} break;
 		}

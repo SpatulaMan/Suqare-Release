@@ -778,7 +778,8 @@ function scr_briefing(t){
 			You will find an armored car in the northwest parking lot.
 			Walk up to it to get in and turn those damsels into
 			roadkill. I hope you know how to drive, because you won't 
-			be able to catch them all on foot. 
+			be able to catch them all on foot. We'll have arrows
+			leading you to their destinations. 
 			
 			This is an all or nothing job. If you don't get all of them
 			we won't pay you anything. ";
@@ -887,8 +888,8 @@ function scr_briefing(t){
 			score, they will let you into the Jewel room. Then you will
 			steal it. Easy enough. 
 
-			You cannot bring any guns. If you do, they will immediately 
-			disqualify you. ";
+			You cannot bring any guns. If you do, you won't be allowed
+			in. ";
 	a[111] = @"Steal The Jewel of Barfo";
 	a[112] = @"Mission: Jewel of Barfo
 			
@@ -917,13 +918,46 @@ function scr_briefing(t){
 	a[114] = @"Speed Test";
 	a[115] = @"Evasion Test";
 	a[116] = @"Steal Jewel";
-	a[117] = @"";
-	a[118] = @"";
-	a[119] = @"";
-	a[120] = @"";
-	a[121] = @"";
-	a[122] = @"";
-	a[123] = @"";
+	a[117] = @"BRIEFING:
+			Hiertech's at it again. His posse of contraband runners is 
+			planning to load up again soon. Your job is to stop them.
+
+			You will have just a few minutes to stop all 4 cars from 
+			leaving. You'll need to locate them, and kill the guards 
+			and drivers. 
+
+			Please leave any contraband you find on the ground. If you
+			leave with any of it, I'll have to dock your pay since 
+			that's stealing. We'll dispose of any contraband we find 
+			there after you leave. ";
+	a[118] = @"Stop Contraband Runners";
+	a[119] = @"Mission: Stop Contraband
+			
+			Hiring Firm: Ungulate Studios
+			Current Standing With
+			Ungulate Studios: "+string(obj_suq.ungulate)+
+			@"
+			Combat Difficulty: 8
+			Mental Difficulty: 3
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $4500
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[120] = @"Stop Car 1";
+	a[121] = @"Stop Car 2";
+	a[122] = @"Stop Car 3";
+	a[123] = @"Stop Car 4";
 	a[124] = @"";
 	a[125] = @"";
 	a[126] = @"";

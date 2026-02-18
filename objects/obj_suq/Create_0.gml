@@ -26,6 +26,7 @@ pph = o_saveload.pp7Have;
 lnw = o_saveload.lastNewWeapon;
 ammoUp = o_saveload.ammoUp;
 hprem = o_saveload.hprem;
+ninjaClan = o_saveload.ninjaClan;
 knifeHave = 0;
 pistolHave = 0;
 magnumHave = 0;

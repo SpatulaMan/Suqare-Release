@@ -71,6 +71,7 @@ lock50=0;
 attract=0;
 decoy=0;
 turret=0;
+ninjaClan=false;
 fragment=[false,false,false,false];
 gemsD=0;
 bank=0;
