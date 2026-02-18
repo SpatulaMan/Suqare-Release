@@ -74,6 +74,7 @@ turret=0;
 ninjaClan=false;
 fragment=[false,false,false,false];
 gemsD=0;
+contraband = 0;
 bank=0;
 //weapon upgrades
 pda=0;//1 for upgrade

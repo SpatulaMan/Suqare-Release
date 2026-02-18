@@ -15,6 +15,9 @@ if(instance_exists(o_lvl21))
 			o_lvl21.spd = 0;
 			o_lvl21.ev = 100;
 			o_lvl21.s = 20;
+			o_lvl21.m = 0;
+			o_lvl21.ml = 0;
+			o_lvl21.alarm[1] = 6;
 			if(instance_exists(obj_shuriken))
 			{
 				with (obj_shuriken) instance_destroy();
@@ -30,15 +33,18 @@ if(instance_exists(o_lvl21))
 	else if(!place_meeting(x,y,obj_suq) and active and mode != 3)
 	{
 		o_lvl21.start = false;
+		o_lvl21.alarm[1] = 0;
 		active = false;
 	}
 	else if(obj_suq.y < 1218 and active and mode == 3)
 	{
 		o_lvl21.start = false;
+		o_lvl21.alarm[1] = 0;
 		active = false;
 	}
 	if(o_lvl21.start == false)
 	{
+		o_lvl21.alarm[1] = 0;
 		active = false;
 	}
 	if(o_lvl21.accPoints >= 120 and !blue) 

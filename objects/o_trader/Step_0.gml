@@ -86,3 +86,61 @@ if(room == r_lvl_13)
 		}
 	}
 }
+if(room == r_lvl_22)
+{
+	var _o = obj_machineGun;
+	var _o2 = obj_assaultRifle;
+	var _o3 = obj_shotgun;
+	var _o1 = obj_magnum;
+	if(instance_exists(_o))
+	{
+		if(distance_to_object(_o) < 32)
+		{
+			var _inst = instance_create_layer(x,y,"Instances_Action",obj_assaultRifle);
+			repeat(5)
+			{
+				instance_create_layer(x,y,"Instances_Action",obj_arAmmo);
+			}
+			with (_o) instance_destroy();
+			instance_destroy();
+		}
+	}
+	else if(instance_exists(_o1))
+	{
+		if(distance_to_object(_o1) < 32)
+		{
+			repeat(5)
+			{
+				instance_create_layer(x,y,"Instances_Action",o_coin_50);
+			}
+			with (_o1) instance_destroy();
+			instance_destroy();
+		}
+	}
+	else if(instance_exists(_o2))
+	{
+		if(distance_to_object(_o2) < 32)
+		{
+			instance_create_layer(x,y,"Instances_Action",obj_pp7);
+			repeat(5)
+			{
+				instance_create_layer(x,y,"Instances_Action",obj_ppAmmo);
+			}
+			with (_o2) instance_destroy();
+			instance_destroy();
+		}
+	}
+	else if(instance_exists(_o3))
+	{
+		if(distance_to_object(_o3) < 32)
+		{
+			instance_create_layer(x,y,"Instances_Action",obj_flamethrower);
+			repeat(5)
+			{
+				instance_create_layer(x,y,"Instances_Action",obj_flAmmo);
+			}
+			with (_o3) instance_destroy();
+			instance_destroy();
+		}
+	}
+}

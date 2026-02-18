@@ -11,5 +11,7 @@
 -Add a level about "What is the meaning of life" Is there more to shape-anity? Discover meaning of life? 
 
 -If you side with the Horoban Ninjas, you have a chance to get a power for the duration of a level
-Odds: 1 - nothing(50%), 2 - Healed to full health the first time you're down to 1 heart(12%), 3 - Get all keys to a given mission (10%), 4 - all ammo types drop at the start(13%),
-5 - drops 1000 bucks on mission start (15%)
+Odds: 1 - nothing(50%), 2 - Healed to full health the first time you're down to 1 heart(14%), 3 - Get 1 random key to a given mission (13%), 4 - all ammo types drop at the start(10%),
+5 - drops 1000 bucks on mission start (13%)
+
+-Create a level that relies on the boomerang. Death pits/spites keep you from crossing into other areas, but the boomerang works for it. Especially since it's your only weapon.

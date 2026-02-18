@@ -27,6 +27,7 @@ lnw = o_saveload.lastNewWeapon;
 ammoUp = o_saveload.ammoUp;
 hprem = o_saveload.hprem;
 ninjaClan = o_saveload.ninjaClan;
+contraband = o_saveload.contraband;
 knifeHave = 0;
 pistolHave = 0;
 magnumHave = 0;

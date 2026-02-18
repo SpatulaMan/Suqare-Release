@@ -8,6 +8,7 @@ switch(amt)
 	case 5: if(!audio_is_playing(snd_pickup)) then audio_play_sound(snd_pickup,1,false,.8*o_saveload.sfxvol,0,random_range(2.5,3)); break;
 	case 20: if(!audio_is_playing(snd_pickup)) then audio_play_sound(snd_pickup,1,false,.9*o_saveload.sfxvol,0,random_range(4,5)); break;
 	case 50: if(!audio_is_playing(snd_heal)) then audio_play_sound(snd_heal,1,false,1*o_saveload.sfxvol,0,random_range(3,5)); break;
+	default: if(!audio_is_playing(snd_hurt)) then audio_play_sound(snd_hurt,1,false,1.3*o_saveload.sfxvol,0,random_range(.6,.8)); break;
 }
 
 instance_destroy();

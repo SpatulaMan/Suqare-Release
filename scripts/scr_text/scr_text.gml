@@ -923,7 +923,7 @@ function scr_briefing(t){
 			planning to load up again soon. Your job is to stop them.
 
 			You will have just a few minutes to stop all 4 cars from 
-			leaving. You'll need to locate them, and kill the guards 
+			leaving. You'll need to locate them and kill the guards 
 			and drivers. 
 
 			Please leave any contraband you find on the ground. If you
@@ -958,11 +958,38 @@ function scr_briefing(t){
 	a[121] = @"Stop Car 2";
 	a[122] = @"Stop Car 3";
 	a[123] = @"Stop Car 4";
-	a[124] = @"";
-	a[125] = @"";
-	a[126] = @"";
-	a[127] = @"";
-	a[128] = @"";
+	a[124] = @"BRIEFING:
+			Coordinates are 19.645809, 37.295316
+			
+			Meet me here. Bring the contraband. 
+			
+			Once the deal has been made, I'll let you loot whatever you
+			want from this abandoned shipwreck I found. ";
+	a[125] = @"Loot the lost Pirate Ship of Swehle Buckos";
+	a[126] = @"Mission: Loot Pirate Ship
+			
+			Hiring Firm: Cricle
+			Current Standing With
+			Cricle: N/A
+			Combat Difficulty: 1
+			Mental Difficulty: 1
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $0
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[127] = @"Make Deal";
+	a[128] = @"Loot Ship";
 	a[129] = @"";
 	a[130] = @"";
 	a[131] = @"";
@@ -1308,7 +1335,14 @@ function scr_conversation(t)
 			but you must prove your loyalty by having the self control to not steal the jewel. It has power over most weak-
 			minded men and even those who claim to be intelligent and steadfast. If you can leave this place without trying
 			to take the jewel, the power of the Horoban clan will be with you always. Consider carefully. ";
-	a[44] = @"";
+	a[44] = @"PSSST! Hey!
+			I'm talking to you. Yeah, you, Suqare. 
+			My name is Cricle. I need you to grab at least 30 boxes of that contraband for a... project... that I have going
+			on. Bring it to me near the abondoned pirate ship. I'll send you the coordinates soon.
+			
+			Remember, 30 boxes of contraband. I hope you know how to count.
+			
+			Cricle, out. ";//lvl22
 	a[45] = @"";
 	a[60] = @"Yellen Egbert II:
 			Oh, no! My butler is dead and the 'esmerelda' has been stolen! Whoever could have done such a thing? Suqare, could 
@@ -3124,9 +3158,51 @@ function debrief(m)
 			enough to fail a job on purpose. Hopefully this pans out. 
 			
 			Press Spacebar to continue";
-	c[62] = @"";
-	c[63] = @"";
-	c[64] = @"";
+			var _m = 4500-(obj_suq.contraband*75);
+	c[62] = @"Objectives Complete
+			Payout: $" + string(_m) + @"
+			
+			Response From Hiring Firm:
+			That was impressive! You stopped the contraband from getting out into the world. This is huge.
+			I knew we could count on you to get this done. 
+			
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
+			
+			Result:
+			You stopped the contraband runners, much to Hiertech's chagrin. You're still not sure what
+			was in those boxes of contraband. Had to be something bad. 
+			
+			Press Spacebar to continue";
+	c[63] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You didn't stop them! This is what I feared. The streets will grow even more dangerous now 
+			that this stuff is out there. I don't even care if you took some. You're just as bad as the
+			runners themselves at this point. 
+			
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
+			
+			Result:
+			Hiertech's contraband is still out there causing problems. You're still not sure what's in
+			those boxes. Must be something bad. 
+			
+			Press Spacebar to continue";
+	c[64] = @"Objectives Complete
+			Payout: $" + string(_m) + @"
+			
+			Response From Hiring Firm:
+			That was impressive! You stopped the contraband from getting out into the world. We did find
+			that some of the boxes were missing. We're docking your pay 75 bucks for each box. That was
+			a terrible thing to do, but I hope you at least keep it from getting out into the world. 
+			
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
+			
+			Result:
+			You stopped the contraband runners, much to Hiertech's chagrin. You're still not sure what's
+			in the boxes. You've checked and have no idea. 
+			
+			Press Spacebar to continue";
 	c[65] = @"";
 	c[66] = @"";
 	c[67] = @"";

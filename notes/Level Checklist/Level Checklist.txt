@@ -12,11 +12,9 @@ lvl 17 - lvl 51
 -Backgrounds
 -New Features/Enemies
 -Enemy Placement
-	-Map
+-Map
 -Gadgets/Weapons
 -Music
 -Mid-Level Objectives Complete
 -Level End Code
 -Testing
-
-lvl 22 add boomerang, and maybe add PP9

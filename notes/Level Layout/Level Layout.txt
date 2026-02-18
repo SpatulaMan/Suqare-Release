@@ -64,7 +64,7 @@ Others:
 10: Dinner Party (solve murder and painting theft) - NL
 14: Gun Club - NL (the local gun club stole my weapon from me, and they won't give it back. They're armed and will shoot, but please don't kill any of them. They're my dad's friends I'll only give you a reward if you can get my gun back without bloodshed. 
 20: Quest for the Golden Sword
-23: Loot abandoned pirate ship. (Maybe have levels before this where you find clues and get get attacked by another group trying to find the treasure in the ship. Really hard riddles you'll need to figure out to unlock the next levels)
+23: Loot abandoned pirate ship. (Cricle from contraband level)
 31: Destroy Modern Art Museum and all the art
 38: Want Some Stuff? This guy wants to sell you some good stuff. Just need to find him in a haunted mansion. You won't be able to sell these items back. Sells you really a couple good weapons and gadgets. 
 40: Race for money (can be redone as many times as you want)
@@ -108,7 +108,7 @@ or
 19: Protect Main Vault
 20: Quest for the Golden Sword (Have to place all the pieces in different places, drop all weapons/gadgets, and then solve puzzles/survive the level without any weaponry
 21: Jewel of Barfo
-	22: Stop Contraband Runner (stop cars from getting loaded with contraband. Some armored machine gun cars between the stocking buildings of which there's 3)
+22: Stop Contraband Runner (stop cars from getting loaded with contraband. Some armored machine gun cars between the stocking buildings of which there's 3)
 	23: Loot abandoned pirate ship
 	24: Execute members of government that would prevent a banking monopoly
 	25: Protect Scientist while he assembles super weapon

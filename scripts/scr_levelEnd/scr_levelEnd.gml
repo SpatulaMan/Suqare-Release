@@ -300,7 +300,7 @@ function scr_levelEnd(car,range_optional)
 			} break;
 			case r_lvl_9:
 			{
-				o_saveload.hnet += 2;
+				o_saveload.hnet += 3;
 				o_saveload.unet += 1;
 				o_saveload.gnet += 2;
 				o_saveload.pnet -= 3;
@@ -507,7 +507,7 @@ function scr_levelEnd(car,range_optional)
 			{
 				o_saveload.ynet += 2;
 				o_saveload.gnet += 1;
-				o_saveload.hnet -= 2;
+				o_saveload.hnet -= 1;
 				o_saveload.unet -= 2;
 				o_saveload.pnet -= 1;
 				o_saveload.knet += 3;
@@ -594,7 +594,7 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.ynet += 2;
 				o_saveload.knet += 1;
 				o_saveload.unet -= 2;
-				o_saveload.hnet += 2;
+				o_saveload.hnet += 3;
 				o_saveload.pnet -= 2;
 				obj_suq.lvldone[obj_suq.lvl] = true;
 				if(instance_exists(o_lvl17))
@@ -692,7 +692,7 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.pnet -= 2;
 				o_saveload.knet -= 1;
 				o_saveload.unet += 2;
-				o_saveload.hnet += 2;
+				o_saveload.hnet += 3;
 				o_saveload.gnet -= 1;
 				obj_suq.lvldone[obj_suq.lvl] = true;
 				if(!instance_exists(o_jewel))
@@ -714,6 +714,39 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.ynet -= 5;
 					obj_suq.yellerteeth -= 1;
 					obj_suq.ninjaClan = true;
+				}
+			} break;
+			case r_lvl_22:
+			{
+				o_saveload.pnet += 1;
+				o_saveload.knet += 1;
+				o_saveload.ynet -= 1;
+				o_saveload.gnet += 1;
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				if(!instance_exists(obj_guard) and instance_exists(o_lvl22) and obj_suq.contraband == 0)
+				{
+					o_saveload.moneyT += 4500*_emtBill;
+					obj_suq.report = 62;
+					obj_suq.ungulate += 2;
+					obj_suq.hietech -= 1;
+					o_saveload.unet += 5;
+					o_saveload.hnet -= 4;
+				}
+				if(!instance_exists(obj_guard) and instance_exists(o_lvl22) and obj_suq.contraband > 0)
+				{
+					o_saveload.moneyT += (4500-(obj_suq.contraband*75))*_emtBill;
+					obj_suq.report = 64;
+					obj_suq.ungulate += 1;
+					obj_suq.hietech -= 1;
+					o_saveload.unet += 4;
+					o_saveload.hnet -= 4;
+				}
+				else if(!instance_exists(o_lvl22) or instance_exists(obj_guard))
+				{
+					obj_suq.report = 63;
+					o_saveload.unet -= 5;
+					obj_suq.ungulate -= 1;
+					o_saveload.hnet += 2;
 				}
 			} break;
 		}
