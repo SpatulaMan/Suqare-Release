@@ -63,6 +63,7 @@ function save()
 		yellerteeth: obj_suq.yellerteeth, //Yellerteeth Inc.
 		ungulate: obj_suq.ungulate, //Ungulate Studios
 		gildebrand: obj_suq.gildebrand, //Gildebrand Consulting Services
+		cricle: obj_suq.cricle,
 		mineg: obj_suq.minegAmt,
 		mines: obj_suq.minesAmt,
 		lock30: obj_suq.lock30,
@@ -325,6 +326,8 @@ function load(_f)
 			o_saveload.ninjaClan=_struct.ninja;
 		if (struct_exists(_struct, "contra"))
 			o_saveload.contraband=_struct.contra;
+		if (struct_exists(_struct, "cricle"))
+			o_saveload.cricle=_struct.cricle;
 		
 		//levels that are incompleted and are available to the player currently in variables 
 		
@@ -392,6 +395,7 @@ function load(_f)
 			yellerteeth: 0, //Yellerteeth Inc.
 			ungulate: 0, //Ungulate Studios
 			gildebrand: 0, //Gildebrand Consulting Services
+			cricle: 0,
 			mineg: 0,
 			mines: 0,
 			lock30: 0,

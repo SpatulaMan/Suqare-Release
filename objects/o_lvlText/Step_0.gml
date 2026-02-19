@@ -99,5 +99,6 @@ switch(room)
 		else { obj1 = true; obj2 = true; obj3 = true; obj4 = true; }
 	} break;
 	case r_lvl_23: t = 124; o1 = 127; o2 = 128; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); image_index = 1;
-	if(instance_exists(o_lvl14)) { obj1 = o_lvl14.ob1; obj2 = o_lvl14.ob2; } break;
+	if(instance_exists(o_cricle)) { if(o_cricle.x < 0) { obj1 = true; } }
+	if(!instance_exists(obj_box_money)) { obj2 = true; } break;
 }

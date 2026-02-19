@@ -15,3 +15,14 @@ Odds: 1 - nothing(50%), 2 - Healed to full health the first time you're down to 
 5 - drops 1000 bucks on mission start (13%)
 
 -Create a level that relies on the boomerang. Death pits/spites keep you from crossing into other areas, but the boomerang works for it. Especially since it's your only weapon.
+
+-Fix the shop menu to be clickable instead of cycling through an array
+
+-Add the 6 Pre-Missions that can happen when companies hate you enough for long enough. 
+
+-Finish all 51 levels
+
+-When you're on Cricle's bad side, there will be a chance to spawn several enemies near your vehicle to attack you. Text will show up saying, "Cricle sends his regards"
+and then the textbox and o_conversation will be destroyed. 
+
+-When you're on Cricle's good side, a whole extra mission is playabe at least. Maybe another request in the middle of another level. 

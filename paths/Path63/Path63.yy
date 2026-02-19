@@ -1,0 +1,22 @@
+{
+  "$GMPath":"",
+  "%Name":"Path63",
+  "closed":false,
+  "kind":0,
+  "name":"Path63",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":830.8735,"y":375.05478,},
+    {"speed":100.0,"x":737.6207,"y":392.46515,},
+    {"speed":100.0,"x":550.75,"y":402.36902,},
+    {"speed":100.0,"x":543.1923,"y":484.13824,},
+    {"speed":100.0,"x":325.6731,"y":510.38824,},
+    {"speed":100.0,"x":-66.15384,"y":526.119,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

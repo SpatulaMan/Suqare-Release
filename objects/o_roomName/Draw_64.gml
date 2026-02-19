@@ -131,6 +131,7 @@ if(a > 0)
 		case 97: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("NINJA TRAINING GROUNDS"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 98: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("WAREHOUSE"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 99: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("DRIVER'S LOUNGE"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 100: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SWEHLE BUCKO'S PIRATE SHIP"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		default: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("RESTRICTED"),3,3,0,c_white,c_white,c_white,c_white,a); 
 	}
 }

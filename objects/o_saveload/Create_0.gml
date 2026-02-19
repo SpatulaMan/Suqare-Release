@@ -50,6 +50,7 @@ perez=0
 yellerteeth=0
 ungulate=0
 gildebrand=0
+cricle=0;
 lvl=0;
 lvldone = [];
 i = 0;

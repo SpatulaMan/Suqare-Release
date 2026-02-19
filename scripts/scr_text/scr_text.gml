@@ -959,19 +959,20 @@ function scr_briefing(t){
 	a[122] = @"Stop Car 3";
 	a[123] = @"Stop Car 4";
 	a[124] = @"BRIEFING:
-			Coordinates are 19.645809, 37.295316
+			My coordinates are 19.645809, 37.295316
 			
 			Meet me here. Bring the contraband. 
 			
 			Once the deal has been made, I'll let you loot whatever you
-			want from this abandoned shipwreck I found. ";
+			want from this abandoned shipwreck I found. Some say it's
+			haunted, but I don't believe in that stuff.";
 	a[125] = @"Loot the lost Pirate Ship of Swehle Buckos";
 	a[126] = @"Mission: Loot Pirate Ship
 			
 			Hiring Firm: Cricle
 			Current Standing With
 			Cricle: N/A
-			Combat Difficulty: 1
+			Combat Difficulty: 1-?
 			Mental Difficulty: 1
 			Locked Doors: 0
 			Req. Locked Doors: 0
@@ -1343,7 +1344,9 @@ function scr_conversation(t)
 			Remember, 30 boxes of contraband. I hope you know how to count.
 			
 			Cricle, out. ";//lvl22
-	a[45] = @"";
+	a[45] = @"Pleasure doing business with you. The pirate ship is up ahead. ";
+	a[46] = @"So another one tries to come get me treasure. I will have none of it. I've never let a traveler into the 
+			treasure room o'er the last 600 years, and I'm not going to start now. Avast, ye matey! Come at me if you dare!";
 	a[60] = @"Yellen Egbert II:
 			Oh, no! My butler is dead and the 'esmerelda' has been stolen! Whoever could have done such a thing? Suqare, could 
 			you please investigate and figure out who did this? I would be forever in your debt. My guards already locked all 
@@ -3203,12 +3206,75 @@ function debrief(m)
 			in the boxes. You've checked and have no idea. 
 			
 			Press Spacebar to continue";
-	c[65] = @"";
-	c[66] = @"";
-	c[67] = @"";
-	c[68] = @"";
-	c[69] = @"";
-	c[70] = @"";
+	c[65] = @"Objectives Complete
+			Payout: $0
+			
+			Response From Hiring Firm:
+			Thanks for the contraband. I hope what you found in the ship was worthwhile. 
+			
+			Result:
+			You gave the stolen contraband to Cricle, and you successfully looted the Swehle Buckos Pirate 
+			Ship. It's not clear what Cricle's going to do with all that contraband, but he definitely 
+			seemed excited. 
+			
+			Press Spacebar to continue";
+	c[66] = @"Objectives Partially Complete
+			Payout: $0
+			
+			Response From Hiring Firm:
+			
+			
+			Result:
+			You decided to double-cross Cricle and kill him instead of handing over the contraband, and 
+			you successfully looted the Swehle Buckos Pirate Ship. 
+			
+			Press Spacebar to continue";//Killed Cricle, looted ship
+	c[67] = @"Objectives Partially Complete
+			Payout: $0
+			
+			Response From Hiring Firm:
+			
+			
+			Result:
+			You decided to double-cross Cricle and kill him instead of handing over the contraband, but 
+			you didn't loot the whole Swehle Buckos Pirate Ship. You might've missed some good stuff.
+			
+			Press Spacebar to continue";//Killed Cricle, failed to loot ship
+	c[68] = @"Objectives Partially Complete
+			Payout: $0
+			
+			Response From Hiring Firm:
+			Thanks for the contraband. I hope what you found in the ship made it worth your while. 
+			
+			Result:
+			You gave the stolen contraband to Cricle, but you didn't loot the whole Swehle Buckos Pirate 
+			Ship. You might've missed some good stuff. It's not clear what Cricle's going to do with all
+			that contraband, but he definitely seemed excited. 
+			
+			Press Spacebar to continue";//Deal done, Failed to loot ship
+	c[69] = @"Objectives Partially Complete
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You better believe I'm coming for you. 
+			
+			Result:
+			You decided to double-cross Cricle and attack him instead of handing over the contraband, and 
+			you successfully looted the Swehle Buckos Pirate Ship. Cricle will not forget this betrayal. 
+			
+			Press Spacebar to continue";//Deal is off, looted ship
+	c[70] = @"Objectives Partially Complete
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You better believe I'm coming for you. 
+			
+			Result:
+			You decided to double-cross Cricle and attack him instead of handing over the contraband. 
+			Cricle will not forget this betrayal. You also didn't loot the whole Swehle Buckos Pirate 
+			Ship, so you might've missed some good stuff. 
+			
+			Press Spacebar to continue";//Deal is off, failed to loot ship
 	c[71] = @"";
 	c[72] = @"";
 	c[73] = @"";

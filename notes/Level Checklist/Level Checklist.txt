@@ -1,10 +1,10 @@
 lvl 17 - lvl 51
-	-Briefing
-	-Short briefing
-	-Level Details
-	-Objectives
+-Briefing
+-Short briefing
+-Level Details
+-Objectives
 -Result text
-	-Add To Level Select
+-Add To Level Select
 -Level Design
 -Starting location
 -Darkness

@@ -27,7 +27,7 @@ if(distance_to_object(obj_suq) < 36)
 		case 19: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_20; break;
 		case 20: o_lvlStart.x1 = 539; o_lvlStart.y1 = 1690; o_lvlStart.r = r_lvl_21; break;
 		case 21: o_lvlStart.x1 = 1860; o_lvlStart.y1 = 482; o_lvlStart.r = r_lvl_22; break;
-		case 22: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_23; break;
+		case 22: o_lvlStart.x1 = 495; o_lvlStart.y1 = 570; o_lvlStart.r = r_lvl_23; break;
 		/*case 23: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_24; break;
 		case 24: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_25; break;
 		case 25: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_26; break;
