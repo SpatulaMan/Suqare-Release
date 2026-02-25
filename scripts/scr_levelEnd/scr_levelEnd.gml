@@ -803,6 +803,28 @@ function scr_levelEnd(car,range_optional)
 					}
 				}//2 complete
 			} break;
+			case r_lvl_24:
+			{
+				o_saveload.ynet += 2;
+				o_saveload.knet += 1;
+				o_saveload.unet -= 2;
+				o_saveload.hnet -= 2;
+				o_saveload.gnet += 1;
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				if(o_lvl24.o1 == true and o_lvl24.o2 == true)
+				{
+					o_saveload.moneyT += 7800*_emtBill;
+					obj_suq.report = 71;
+					obj_suq.perez += 2;
+					o_saveload.pnet += 6;
+				}
+				else
+				{
+					obj_suq.report = 72;
+					o_saveload.pnet -= 18;
+					obj_suq.perez -= 2;
+				}
+			} break;
 		}
 		if(!car and !range_optional)
 		{

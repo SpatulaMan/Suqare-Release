@@ -98,7 +98,10 @@ switch(room)
 		}
 		else { obj1 = true; obj2 = true; obj3 = true; obj4 = true; }
 	} break;
+	
 	case r_lvl_23: t = 124; o1 = 127; o2 = 128; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); image_index = 1;
-	if(instance_exists(o_cricle)) { if(o_cricle.x < 0) { obj1 = true; } }
-	if(!instance_exists(obj_box_money)) { obj2 = true; } break;
+	if(instance_exists(o_cricle)) { if(o_cricle.x < 0) { obj1 = true; } } if(!instance_exists(obj_box_money)) { obj2 = true; } break;
+	
+	case r_lvl_24: t = 129; o1 = 132; o2 = 133; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); image_index = 1;
+	if(o_lvl24.o1) { obj1 = true; } if(o_lvl24.o2) { obj2 = true; } break;
 }

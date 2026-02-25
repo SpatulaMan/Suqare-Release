@@ -991,11 +991,44 @@ function scr_briefing(t){
 			(Press Spacebar to Accept)";
 	a[127] = @"Make Deal";
 	a[128] = @"Loot Ship";
-	a[129] = @"";
-	a[130] = @"";
-	a[131] = @"";
-	a[132] = @"";
-	a[133] = @"";
+	a[129] = @"BRIEFING:
+			We are trying to covertely pass a bill that will make an
+			exception for us to become a banking monopoly. But, there
+			are two members of the government that will cause the bill
+			to fail. They happen to live next to each other, which is 
+			very convenient for us. And they'll be alone to boot. 
+			
+			The houses will be locked and alarmed, so make as little 
+			noise as possible. Unsilenced guns will do nothing but hurt
+			your odds of success. If you wake them up, they might call 
+			the cops and fight back. Best case scenario is you kill 
+			them in their sleep. ";
+	a[130] = @"Assassinate Two Government Officials";
+	a[131] = @"Mission: Assassinate Officials
+			
+			Hiring Firm: Perez Holdings
+			Current Standing With
+			Perez Holdings: "+string(obj_suq.perez)+
+			@"
+			Combat Difficulty: 3-6
+			Mental Difficulty: 8
+			Locked Doors: 3
+			Req. Locked Doors: 3
+			Keys Available: 0
+			Reward: $7800
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[132] = @"Kill Donalro";
+	a[133] = @"Kill Maros";
 	a[134] = @"";
 	a[135] = @"";
 	a[136] = @"";
@@ -3275,8 +3308,35 @@ function debrief(m)
 			Ship, so you might've missed some good stuff. 
 			
 			Press Spacebar to continue";//Deal is off, failed to loot ship
-	c[71] = @"";
-	c[72] = @"";
+	c[71] = @"Objectives Complete
+			Payout: $7800
+			
+			Response From Hiring Firm:
+			You got them both! The vote will surely fail now. We can't thank you enough for disposing
+			of the trash politicians we have to deal with. 
+			
+			Current standing with Perez Holdings: "+string(obj_suq.perez)+@"
+			
+			Result:
+			You killed the two swing-vote politicians. Perez Holdings replaced them with people up their
+			sleeve and got the vote they wanted. Who knows what kind of repurcussions might come from
+			this. 
+			
+			Press Spacebar to continue";
+	c[72] = @"Objectives Complete
+			Payout: $0
+			
+			Response From Hiring Firm:
+			So, poopy pants. Why didn't you do what I asked you to do? Yup. That's all I got to say about
+			that. 
+			
+			Current standing with Perez Holdings: "+string(obj_suq.perez)+@"
+			
+			Result:
+			You didn't kill both politicians, and Perez Holdings didn't get the vote they needed. Their
+			business will take a huge hit from this. 
+			
+			Press Spacebar to continue";
 	c[73] = @"";
 	c[74] = @"";
 	c[75] = @"";
