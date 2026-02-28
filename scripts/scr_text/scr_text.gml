@@ -1107,15 +1107,16 @@ function scr_briefing(t){
 	a[143] = @"BRIEFING:
 			We need you to steal the Vambrace of Mortuban. Problem is,
 			we don't have any information to go off of except the fact
-			that it's in the Ninja Records Office. We need you to 
-			scope out the area, learn everything you can about the
-			guards patrols, the location of the Vambrace, and anything
-			else about their security system. 
+			that it's in the Ninja Records Office. We're sure that
+			they have insane surveillance. Just stay out of their line
+			of sight. Nothing can destroy these cameras, and they may
+			not be able to see far, but it's heat vision and can see
+			through walls. 
 
 			Once you're ready, we'll start the theft at night. If 
-			you're found out, the Vambrace will be burned. It's
-			so valuable, that it's better to destroy it than to let
-			anyone else have it. Do not let this happen. ";
+			you're seen at all, the Vambrace will be burned within 10 
+			seconds. It's so valuable, that it's better to destroy it
+			than to let anyone else have it. Do not let this happen. ";
 	a[144] = @"Steal the Vambrace of Mortuban";
 	a[145] = @"Mission: Vambrace of Mortuban
 			
@@ -1140,8 +1141,8 @@ function scr_briefing(t){
 			
 			
 			(Press Spacebar to Accept)";
-	a[146] = @"Case the area";
-	a[147] = @"Execute Heist";
+	a[146] = @"Don't Be Seen";
+	a[147] = @"Take Vambrace";
 	a[148] = @"BRIEFING:
 			There's one last shipment of contraband we need for this
 			month's quota to be met. Trouble is, my best guy Frank
@@ -1608,7 +1609,9 @@ function scr_conversation(t)
 	a[51] = @"It will soon be revealed...";//start mystery
 	a[52] = @"Who is the real enemy? ";//start mystery
 	a[53] = @"Watc.. .ut for Tir...gle... ";//start mystery
-	a[54] = @"";
+	a[54] = @"Current state of landmines Spawning in Tank Arena: " + string(o_lvl16.mineOn) + @"
+			
+			To switch landmine spawning state to " + string(!o_lvl16.mineOn) + " Press Q ";//lvl16 shut off mines
 	a[55] = @"";
 	a[56] = @"";
 	a[57] = @"";
@@ -3643,9 +3646,46 @@ function debrief(m)
 			You were unsuccessful in keeping the graves un-vandalized. 
 			
 			Press Spacebar to continue";
-	c[79] = @"";
-	c[80] = @"";
-	c[81] = @"";
+	c[79] = @"Objectives Complete
+			Payout: $6600
+			
+			Response From Hiring Firm:
+			You got it! Not even my best people could make it through that onslaught of cameras. That was
+			good. This will be the best party ever! 
+			
+			Current standing with Yellerteeth Inc: "+string(obj_suq.yellerteeth)+@"
+			
+			Result:
+			You retrieved the vambrace of Mortuban. Wait... Did he say party? 
+			
+			Press Spacebar to continue";
+	c[80] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You got it burned up! Aw, you suck! This sucks. AAH! I'm gonna throw a chair into my new wall.
+			
+			Current standing with Yellerteeth Inc: "+string(obj_suq.yellerteeth)+@"
+			
+			Result:
+			Yellerteeth seem pretty upset you couldn't get the vambrace of Mortuban. And even more upset
+			that it was burned to a crisp. 
+			
+			Press Spacebar to continue";
+	c[81] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You couldn't get it. That's so dumb. Since it's still there, I guess I'll try again with 
+			somebody else. Maybe they won't be as disappointing as you. 
+			
+			Current standing with Yellerteeth Inc: "+string(obj_suq.yellerteeth)+@"
+			
+			Result:
+			Yellerteeth seem pretty upset you couldn't get the vambrace of Mortuban. But not so upset
+			that he would throw a chair into his new wall. 
+			
+			Press Spacebar to continue";
 	c[82] = @"";
 	c[83] = @"";
 	c[84] = @"";

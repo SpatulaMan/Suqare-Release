@@ -854,24 +854,52 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.knet -= 1;
 				o_saveload.unet += 2;
 				o_saveload.hnet += 2;
-				o_saveload.gnet -= 1;
 				o_saveload.pnet -= 2;
 				obj_suq.lvldone[obj_suq.lvl] = true;
 				if(o_lvl26.o1 == true and o_lvl26.isKilled == false)
 				{
 					o_saveload.moneyT += 3200*_emtBill;
 					obj_suq.report = 76;
+					o_saveload.gnet += 4;
 					obj_suq.gildebrand += 1;
 				}
 				else if(o_lvl26.isKilled == true)
 				{
 					obj_suq.report = 77;
+					o_saveload.gnet -= 4;
 					obj_suq.gildebrand -= 2;
 				}
 				else if(o_lvl26.o1 == false)
 				{
 					obj_suq.report = 78;
+					o_saveload.gnet -= 3;
 					obj_suq.gildebrand -= 1;
+				}
+			} break;
+			case r_lvl_27:
+			{
+				o_saveload.knet += 2;
+				o_saveload.unet -= 1;
+				o_saveload.hnet -= 1;
+				o_saveload.gnet += 2;
+				o_saveload.pnet += 1;
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				if(obj_suq.vambrace)
+				{
+					o_saveload.moneyT += 6600*_emtBill;
+					obj_suq.report = 79;
+					obj_suq.yellerteeth += 2;
+					o_saveload.ynet += 1;
+				}
+				else if(obj_suq.vambrace == false and obj_suq.vambraceK == true)
+				{
+					obj_suq.report = 80;
+					obj_suq.yellerteeth -= 2;
+				}
+				else if(obj_suq.vambrace == false and obj_suq.vambraceK == false)
+				{
+					obj_suq.report = 81;
+					obj_suq.yellerteeth -= 1;
 				}
 			} break;
 		}
