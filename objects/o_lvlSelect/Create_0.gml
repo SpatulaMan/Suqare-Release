@@ -61,12 +61,16 @@ switch(prog)
 	case 25:
 	case 24:
 	case 23:
-	case 22:
+	case 22: if(obj_suq.lvldone[28] == false and obj_suq.lvldone[29] == false and obj_suq.lvldone[30] == false) { array_insert(lvl,t,28); t++; }
+			if(obj_suq.lvldone[28] == false and obj_suq.lvldone[29] == false and obj_suq.lvldone[30] == false) { array_insert(lvl,t,29); t++; }
+			if(obj_suq.lvldone[28] == false and obj_suq.lvldone[29] == false and obj_suq.lvldone[30] == false) { array_insert(lvl,t,30); t++; }
 	case 21:
 	case 20:
-	case 19:
+	case 19: if(obj_suq.lvldone[26] == false) { array_insert(lvl,t,26); t++; }
+			if(obj_suq.lvldone[27] == false) { array_insert(lvl,t,27); t++; }
 	case 18:
-	case 17:
+	case 17: if(obj_suq.lvldone[24] == false and obj_suq.lvldone[25] == false) { array_insert(lvl,t,24); t++; }
+			 if(obj_suq.lvldone[24] == false and obj_suq.lvldone[25] == false) { array_insert(lvl,t,25); t++; }
 	case 16:
 	case 15: if(obj_suq.swh == false and obj_suq.fragment[0] == true and obj_suq.fragment[1] == true and obj_suq.fragment[2] == true and obj_suq.fragment[3] == true) 
 			 { array_insert(lvl,t,19); t++; }

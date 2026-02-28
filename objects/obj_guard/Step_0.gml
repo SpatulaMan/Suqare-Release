@@ -175,7 +175,7 @@ if(path_check)
 		var ad1 = angle_difference(weapon.image_angle,pd1);
 		weapon.image_angle -= min(abs(ad1), 1) * sign(ad1);
 		search_check = true;
-		alarm_set(3,180);
+		alarm_set(3,180); 
 	}
 }
 else if(search_check == false and spin_check)

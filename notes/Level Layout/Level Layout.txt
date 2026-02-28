@@ -16,7 +16,6 @@ and
 7: Ignore or take and fail Destroy Gems
 13: kidnap scientist to make super weapon
 16: Destroy Big Tank that could stop whole plan (The tank is accessible at any point, but you want to gather as many resources as possible to know how to destroy it.) 
-25: Protect Scientist while he assembles super weapon (Do this as a ghost?)
 32: Take Control of manufacturing plant
 43: Charge super weapon
 
@@ -33,7 +32,7 @@ and
 3: Amulet of Hecto
 9: Ring of Tarpho (new weapons)
 21: Jewel of Barfo, Ghost ninjas too (Steal from museum)
-27: Nose of Mortuban (New Enemy)
+27: Vambrace of Mortuban (New Enemy)
 33: Eye of Gutran
 39: Destroy Ninja Hierarchy (kill all ninja leaders)
 45: Ninja Retaliation, Fight off onslaught of ninjas until they're all dead. Protect the CEO?
@@ -51,7 +50,7 @@ and
 -Gildebrand Consulting Plan - Help people with small requests, and make life better for everyone:
 8: Eradicate spiders
 17: Help Old Ladies to cross the street
-26: Stop Super Weapon
+26: Cover Graveyard Watch for 5 minutes - NL
 34: Save Historic Building (Yellerteeth Inc wants to take down the building covertly overnight and claim it fell on its own and buy the land to expand its parking lot. Stop their machine!) 
 44: Save Hostages, in Maze that keeps changing every 60 seconds. 
 47: Ghost Infestation, Bunch of powerful ghosts in a house. Activate things to get them to come out and you try to kill them. 
@@ -65,7 +64,8 @@ Others:
 14: Gun Club - NL (the local gun club stole my weapon from me, and they won't give it back. They're armed and will shoot, but please don't kill any of them. They're my dad's friends I'll only give you a reward if you can get my gun back without bloodshed. 
 20: Quest for the Golden Sword
 23: Loot abandoned pirate ship. (Cricle from contraband level)
-31: Destroy Modern Art Museum and all the art
+25: Vandalize Gravestones for fun - NL
+31: Kill Head of Security
 38: Want Some Stuff? This guy wants to sell you some good stuff. Just need to find him in a haunted mansion. You won't be able to sell these items back. Sells you really a couple good weapons and gadgets. 
 40: Race for money (can be redone as many times as you want)
 48: Destroy super weapon and stop kanker and Co - President
@@ -106,17 +106,17 @@ or
 or
 18: Kill Benefactors
 19: Protect Main Vault
-20: Quest for the Golden Sword (Have to place all the pieces in different places, drop all weapons/gadgets, and then solve puzzles/survive the level without any weaponry
+20: Quest for the Golden Sword 
 21: Jewel of Barfo
 22: Stop Contraband Runner (stop cars from getting loaded with contraband. Some armored machine gun cars between the stocking buildings of which there's 3)
 23: Loot abandoned pirate ship
-	24: Execute members of government that would prevent a banking monopoly
-	25: Protect Scientist while he assembles super weapon
+24: Execute members of government that would prevent a banking monopoly
+25: Vandalize Gravestones for fun - NL
 or
-	26: Stop Super Weapon
+26: Cover Graveyard Watch for 3 minutes - NL
 	27: Vambrace of Mortuban (plan the heist on location first, look around, and then execute it. Have something to start the mission. Like the car again, but a different object)
 	28: Contraband
-	29: Prevent Art Theft (enemies are stealthy. Have to find and stop them.)
+	29: Prevent Art Theft (enemies are stealthy. Have to find and stop them. Gameplay like Night Trap with multiple screens to switch between?)
 or
 	30: Steal Art (3 paintings)
 or

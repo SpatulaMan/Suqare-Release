@@ -1029,40 +1029,261 @@ function scr_briefing(t){
 			(Press Spacebar to Accept)";
 	a[132] = @"Kill Donalro";
 	a[133] = @"Kill Maros";
-	a[134] = @"";
-	a[135] = @"";
-	a[136] = @"";
-	a[137] = @"";
-	a[138] = @"";
-	a[139] = @"";
-	a[140] = @"";
-	a[141] = @"";
-	a[142] = @"";
-	a[143] = @"";
-	a[144] = @"";
-	a[145] = @"";
-	a[146] = @"";
-	a[147] = @"";
-	a[148] = @"";
-	a[149] = @"";
-	a[150] = @"";
-	a[151] = @"";
-	a[152] = @"";
-	a[153] = @"";
-	a[154] = @"";
-	a[155] = @"";
-	a[156] = @"";
-	a[157] = @"";
-	a[158] = @"";
-	a[159] = @"";
-	a[160] = @"";
-	a[161] = @"";
-	a[162] = @"";
-	a[163] = @"";
-	a[164] = @"";
-	a[165] = @"";
-	a[166] = @"";
-	a[167] = @"";
+	a[134] = @"BRIEFING:
+			We want to vandalize some gravestones for fun. The grave-
+			keeper will be lurking around, and he's been known to 
+			shoot at kids who do this. Before he got old, it was just
+			to scare kids off, but now his eyesight is awful, and he
+			shoots directly at us. We want you to lure him out of the 
+			graveyard, so we can vandalize whatever we want. 
+			
+			We don't want to hurt him. It just sounds so fun to break 
+			some gravestones, ya know? Bring whatever Non-Lethal things
+			you have to keep him at bay and out of our way for about 2
+			minutes. If he comes back in during the 2 minutes, we'll be
+			seen, so don't let him back in until the time is up!";
+	a[135] = @"Lure the gun-crazy Grave-Keeper away from Graveyard";
+	a[136] = @"Mission: Grave-Keeper
+			
+			Hiring Firm: Ruke Sherber
+			Current Standing With
+			Ruke Sherber: N/A
+			Combat Difficulty: 1
+			Mental Difficulty: 3
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $3400
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[137] = @"Lead Guard Out";
+	a[138] = @"Keep Guard Out";
+	a[139] = @"BRIEFING:
+			I've heard that a group of kids are coming to vandalize the
+			gravestones tonight, but I really have to pee. Can you fend
+			them off for 3 minutes? Don't kill any of them, but the 
+			sound of fire arms or mines would scare them away. There
+			might be some other methods to scare them off, but just 
+			figure it out. 
+			
+			If 25 graves get vandalized, then the grave-keeper will lose
+			his job. Don't let that happen. It's all he has left. 
+			
+			He will already be gone when you get there, so be ready!";
+	a[140] = @"Protect the Graveyard";
+	a[141] = @"Mission: Graveyard Protection
+			
+			Hiring Firm: Gildebrand Consulting
+			Current Standing With
+			Gildebrand Consulting: "+string(obj_suq.gildebrand)+
+			@"
+			Combat Difficulty: 1
+			Mental Difficulty: 4
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $3200
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[142] = @"Protect graves";
+	a[143] = @"BRIEFING:
+			We need you to steal the Vambrace of Mortuban. Problem is,
+			we don't have any information to go off of except the fact
+			that it's in the Ninja Records Office. We need you to 
+			scope out the area, learn everything you can about the
+			guards patrols, the location of the Vambrace, and anything
+			else about their security system. 
+
+			Once you're ready, we'll start the theft at night. If 
+			you're found out, the Vambrace will be burned. It's
+			so valuable, that it's better to destroy it than to let
+			anyone else have it. Do not let this happen. ";
+	a[144] = @"Steal the Vambrace of Mortuban";
+	a[145] = @"Mission: Vambrace of Mortuban
+			
+			Hiring Firm: Yellerteeth Inc.
+			Current Standing With
+			Yellerteeth Inc.: "+string(obj_suq.yellerteeth)+
+			@"
+			Combat Difficulty: 1
+			Mental Difficulty: 7
+			Locked Doors: 3
+			Req. Locked Doors: 3
+			Keys Available: 3
+			Reward: $6600
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[146] = @"Case the area";
+	a[147] = @"Execute Heist";
+	a[148] = @"BRIEFING:
+			There's one last shipment of contraband we need for this
+			month's quota to be met. Trouble is, my best guy Frank
+			just quit. We need you to step in and take his place. 
+
+			Load up all the cargo in the armored car, and then the 
+			driver will head out. I'm worried that Frank might've 
+			tipped off the cops, though. ";
+	a[149] = @"Load Up Last Shipment of contraband";
+	a[150] = @"Mission: Load Up Contraband
+			
+			Hiring Firm: Hiertech
+			Current Standing With
+			Hiertech: "+string(obj_suq.hiertech)+
+			@"
+			Combat Difficulty: 9
+			Mental Difficulty: 3
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $7000
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[151] = @"Load Contraband";
+	a[152] = @"BRIEFING:
+			Hiertech is trying to steal the most expensive art at the
+			modern art museum. We need to stop them. They will most
+			likely send several of their most stealthy agents, so 
+			you'll need to be on watch for a bunch of them coming in
+			through any means necessary. 
+
+			We'll give you access to the map with the locations of the
+			paintings on it when you're there. 
+
+			We'll deduct from your pay for each art piece lost. They're
+			called Bertha, Goobet, and Holla. ";
+	a[153] = @"Prevent Art Theft";
+	a[154] = @"Mission: Prevent Art Theft
+			
+			Hiring Firm: Ungulate Studios
+			Current Standing With
+			Ungulate Studios: "+string(obj_suq.ungulate)+
+			@"
+			Combat Difficulty: 4
+			Mental Difficulty: 6
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $5700
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[155] = @"Save Bertha";
+	a[156] = @"Save Goobet";
+	a[157] = @"Save Holla";
+	a[158] = @"BRIEFING:
+			We've heard about three very valuable paintings in the
+			local modern art museum that are here for just a limited
+			period of time. Your job is to steal them for us. They 
+			are kept under heavy security, so you must not raise
+			any alarms. If you do, they'll go into maximum security
+			mode, and the paintings will be gone forever. ";
+	a[159] = @"Steal three valuable paintings. Bertha, Goobet, Holla";
+	a[160] = @"Mission: Steal Paintings
+			
+			Hiring Firm: Hiertech
+			Current Standing With
+			Hiertech: "+string(obj_suq.Hiertech)+
+			@"
+			Combat Difficulty: 3
+			Mental Difficulty: 7
+			Locked Doors: 3
+			Req. Locked Doors: 3
+			Keys Available: 3
+			Reward: $7900
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[161] = @"Steal Bertha";
+	a[162] = @"Steal Goobet";
+	a[163] = @"Steal Holla";
+	a[164] = @"BRIEFING:
+			I have a unique opportunity to kill the head of security
+			over the three valuable paintings that are in the modern
+			art museum. Since they're only here for a short time, this
+			is our only opportunity to kill the head of security. His 
+			name is Gerald. 
+
+			He's a horrible person who didn't get convicted of the 
+			murder of my parents because of an evidence mix-up. Now 
+			he's finally within my grasp! I've been waiting for a 
+			moment like this for years. Just kill him, and get out of 
+			there. ";
+	a[165] = @"Murder Head of Security at Art Museum";
+	a[166] = @"Mission: Steal Paintings
+			
+			Hiring Firm: Julien Bogart
+			Current Standing With
+			Julien Bogart: 
+			Combat Difficulty: 3
+			Mental Difficulty: 7
+			Locked Doors: 3
+			Req. Locked Doors: 3
+			Keys Available: 3
+			Reward: $6400
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[167] = @"Kill Gerald";
 	a[168] = @"";
 	a[169] = @"";
 	a[170] = @"";
@@ -1380,6 +1601,19 @@ function scr_conversation(t)
 	a[45] = @"Pleasure doing business with you. The pirate ship is up ahead. ";
 	a[46] = @"So another one tries to come get me treasure. I will have none of it. I've never let a traveler into the 
 			treasure room o'er the last 600 years, and I'm not going to start now. Avast, ye matey! Come at me if you dare!";
+	a[47] = @"They're coming for you...";//start mystery
+	a[48] = @"See the signs?";//start mystery
+	a[49] = @"It's all around you...";//start mystery
+	a[50] = @"When will you realize?";//start mystery
+	a[51] = @"It will soon be revealed...";//start mystery
+	a[52] = @"Who is the real enemy? ";//start mystery
+	a[53] = @"Watc.. .ut for Tir...gle... ";//start mystery
+	a[54] = @"";
+	a[55] = @"";
+	a[56] = @"";
+	a[57] = @"";
+	a[58] = @"";
+	a[59] = @"";
 	a[60] = @"Yellen Egbert II:
 			Oh, no! My butler is dead and the 'esmerelda' has been stolen! Whoever could have done such a thing? Suqare, could 
 			you please investigate and figure out who did this? I would be forever in your debt. My guards already locked all 
@@ -3323,7 +3557,7 @@ function debrief(m)
 			this. 
 			
 			Press Spacebar to continue";
-	c[72] = @"Objectives Complete
+	c[72] = @"Objectives Failed
 			Payout: $0
 			
 			Response From Hiring Firm:
@@ -3337,12 +3571,78 @@ function debrief(m)
 			business will take a huge hit from this. 
 			
 			Press Spacebar to continue";
-	c[73] = @"";
-	c[74] = @"";
-	c[75] = @"";
-	c[76] = @"";
-	c[77] = @"";
-	c[78] = @"";
+	c[73] = @"Objectives Complete
+			Payout: $3400
+			
+			Response From Hiring Firm:
+			We got them all! Thanks for doing that. Now everyone will know how cool we are for defacing
+			some gravestones. 
+			
+			Result:
+			Some kids vandalized gravestones successfully. 
+			
+			Press Spacebar to continue";
+	c[74] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You let him back in the graveyard before we could finish! We had to bolt. You're not as cool
+			as we thought you were. 
+			
+			Result:
+			Some kids were unsuccessful in vandalizing some gravestones. 
+			
+			Press Spacebar to continue";
+	c[75] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You weren't supposed to kill him! Now we're aiding and abetting a criminal! We're outta here,
+			and we hope to never see you again. 
+			
+			Result:
+			You killed the grave-keeper, so the kids got scared and ran. 
+			
+			Press Spacebar to continue";
+	c[76] = @"Objectives Complete
+			Payout: $3200
+			
+			Response From Hiring Firm:
+			You protected the gravestones! Great job. The grave keeper had a doozy of a pee, but you 
+			helped him keep his job throughout it. 
+			
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You helped the grave keeper keep his job. 
+			
+			Press Spacebar to continue";
+	c[77] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You weren't supposed to kill anyone! This is awful. I hope we never have to work with you 
+			again!
+			
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You killed people. Gildebrand didn't like that. 
+			
+			Press Spacebar to continue";
+	c[78] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You couldn't protect the gravestones for just 3 minutes? Sure, it was the longest pee in the
+			world, but he couldn't help it! He's old and only pees once a day. I expected more from you. 
+			
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You were unsuccessful in keeping the graves un-vandalized. 
+			
+			Press Spacebar to continue";
 	c[79] = @"";
 	c[80] = @"";
 	c[81] = @"";
