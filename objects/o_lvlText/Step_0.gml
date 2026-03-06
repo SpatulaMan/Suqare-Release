@@ -116,7 +116,7 @@ switch(room)
 	if(obj_suq.vambrace == true) { obj2 = true; } break;
 	
 	case r_lvl_28: t = 148; o1 = 151; b = scr_briefing(t); ot1 = scr_briefing(o1); image_index = 0;
-	if(o_lvl26.o1) { obj1 = true; } break;
+	if(o_lvl28.o1) { obj1 = true; } break;
 	
 	case r_lvl_29: t = 152; o1 = 155; o2 = 156; o3 = 157; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); ot3 = scr_briefing(o3); image_index = 2;
 	if(o_lvl26.o1) { obj1 = true; } break;

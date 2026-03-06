@@ -889,17 +889,41 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += 6600*_emtBill;
 					obj_suq.report = 79;
 					obj_suq.yellerteeth += 2;
-					o_saveload.ynet += 1;
+					o_saveload.ynet += 3;
 				}
 				else if(obj_suq.vambrace == false and obj_suq.vambraceK == true)
 				{
 					obj_suq.report = 80;
 					obj_suq.yellerteeth -= 2;
+					o_saveload.ynet -= 4;
 				}
 				else if(obj_suq.vambrace == false and obj_suq.vambraceK == false)
 				{
 					obj_suq.report = 81;
 					obj_suq.yellerteeth -= 1;
+					o_saveload.ynet -= 2;
+				}
+			} break;
+			case r_lvl_28:
+			{
+				o_saveload.knet -= 2;
+				o_saveload.unet += 1;
+				o_saveload.ynet += 1;
+				o_saveload.gnet -= 2;
+				o_saveload.pnet -= 1;
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				if(o_lvl28.o1 == true)
+				{
+					o_saveload.moneyT += 6600*_emtBill;
+					obj_suq.report = 82;
+					obj_suq.hiertech += 2;
+					o_saveload.hnet += 10;
+				}
+				else if(o_lvl28.o1 == false)
+				{
+					obj_suq.report = 83;
+					obj_suq.hiertech -= 2;
+					o_saveload.hnet -= 10;
 				}
 			} break;
 		}

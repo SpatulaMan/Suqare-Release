@@ -9,6 +9,7 @@ if(st < 120)
 if(st >= 120)
 {
 	image_index = 2;
+	if(!seen) { alarm_set(0,30); }
 	seen = true
 	image_angle -= min(abs(ad), 2) * sign(ad);
 }

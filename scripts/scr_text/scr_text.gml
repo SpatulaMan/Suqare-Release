@@ -3686,8 +3686,35 @@ function debrief(m)
 			that he would throw a chair into his new wall. 
 			
 			Press Spacebar to continue";
-	c[82] = @"";
-	c[83] = @"";
+	c[82] = @"Objectives Complete
+			Payout: $7000
+			
+			Response From Hiring Firm:
+			You got all the contraband loaded up, nice! Now we're back on track for our orders. Thanks
+			for the help and for doing it all through the police intervention. 
+			
+			Current standing with Hiertech: "+string(obj_suq.hiertech)+@"
+			
+			Result:
+			You loaded up all of the contraband for Hiertech. Now that this order is fulfilled, they'll
+			see a nice bump in Net Worth and not make any enemies. 
+			
+			Press Spacebar to continue";
+	c[83] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			I can't believe you couldn't get all the contraband loaded up! You imbecile! Now that this 
+			last shipment isn't making it, our customer is gonna think we short-changed them. This is not
+			gonna look good, and if you keep messing up like this, we're not letting you off the hook
+			
+			Current standing with Hiertech: "+string(obj_suq.hiertech)+@"
+			
+			Result:
+			Hiertech made a huge enemy in one of their customers. This might bite you in the butt in the
+			long run. 
+			
+			Press Spacebar to continue";
 	c[84] = @"";
 	c[85] = @"";
 	c[86] = @"";

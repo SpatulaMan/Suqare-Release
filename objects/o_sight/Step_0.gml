@@ -8,3 +8,10 @@ if(seen)
 }
 st--;
 if(st < 0) { st = 0; image_index = 0;}
+if(image_index == 1)
+{
+	if(!audio_is_playing(snd_stepOther))
+	{
+		audio_play_sound(snd_stepOther,4,false,random_range(3,3.5)*o_saveload.sfxvol,0,random_range(4,5));
+	}
+}

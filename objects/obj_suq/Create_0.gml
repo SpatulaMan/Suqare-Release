@@ -251,6 +251,7 @@ ghp = 0;
 totems = 0;
 ghostCheck = 0;
 gemCheck = false;
+heavyband = false;
 
 
 f_suq = font_add("Suqarefinalize.TTF", 42, false, false, 32, 128);

@@ -10,6 +10,11 @@ if(spd > 2)
 {
 	spd -= 0.0005;
 }
+if(heavyband)
+{
+	pickup_item = 58;
+	pickup_timer = 30;
+}
 if(image_xscale > 1)
 {
 	image_xscale -= 0.0005;
@@ -354,6 +359,7 @@ if(health > 0)
 	        instance_create(x,y,obj_dropGun);
 			gunNum--;
 			knifeHave = 0;
+			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
 	    if(keyboard_check_pressed(vk_tab) and gunEquip == 1 and pistolHave == 1) then 
 	    { 
@@ -362,6 +368,7 @@ if(health > 0)
 			gunNum--;
 			pistolAmt += pMag;
 			pMag = 0;
+			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
 	    if(keyboard_check_pressed(vk_tab) and gunEquip == 2 and magnumHave == 1) then 
 	    { 
@@ -370,6 +377,7 @@ if(health > 0)
 			gunNum--;
 			magnumAmt += mMag;
 			mMag = 0;
+			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
 	    if(keyboard_check_pressed(vk_tab) and gunEquip == 3 and machineGunHave == 1) then 
 	    { 
@@ -378,6 +386,7 @@ if(health > 0)
 			gunNum--;
 			machineGunAmt += mgMag;
 			mgMag = 0;
+			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
 	    if(keyboard_check_pressed(vk_tab) and gunEquip == 4 and assaultRifleHave == 1) then 
 	    { 
@@ -386,6 +395,7 @@ if(health > 0)
 			gunNum--;
 			assaultRifleAmt += arMag;
 			arMag = 0;
+			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
 	    if(keyboard_check_pressed(vk_tab) and gunEquip == 8 and sniperRifleHave == 1) then 
 	    { 
@@ -394,6 +404,7 @@ if(health > 0)
 			gunNum--;
 			sniperRifleAmt += snMag;
 			snMag = 0;
+			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
 	    if(keyboard_check_pressed(vk_tab) and gunEquip == 7 and flamethrowerHave == 1) then 
 	    { 
@@ -402,6 +413,7 @@ if(health > 0)
 			gunNum--;
 			flamethrowerAmt += fMag;
 			fMag = 0;
+			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
 	    if(keyboard_check_pressed(vk_tab) and gunEquip == 9 and rocketLauncherHave == 1) then 
 	    { 
@@ -410,6 +422,7 @@ if(health > 0)
 			gunNum--;
 			rocketLauncherAmt += rlMag;
 			rlMag = 0;
+			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
 	    if(keyboard_check_pressed(vk_tab) and gunEquip == 5 and shotgunHave == 1) then 
 	    { 
@@ -418,6 +431,7 @@ if(health > 0)
 			gunNum--;
 			shotgunAmt += sgMag;
 			sgMag = 0;
+			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
 		if(canSGShoot == 10) then audio_play_sound(snd_shotgunCock,5,false,o_saveload.sfxvol);
 	    if(keyboard_check_pressed(vk_tab) and gunEquip == 6 and shooterGunHave == 1) then 
@@ -427,18 +441,21 @@ if(health > 0)
 			gunNum--;
 			shooterGunAmt += shMag;
 			shMag = 0;
+			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
 		if(keyboard_check_pressed(vk_tab) and gunEquip == 10 and boomerangHave == 1) then 
 	    { 
 	        instance_create(x,y,obj_dropGun);
 			gunNum--;
 			boomerangHave = 0;
+			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
 		if(keyboard_check_pressed(vk_tab) and gunEquip == 11 and swordHave == 1) then 
 	    { 
 	        instance_create(x,y,obj_dropGun);
 			gunNum--;
 			swordHave = 0;
+			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
 		if(keyboard_check_pressed(vk_tab) and gunEquip == 12 and shuriken > 0) then 
 	    { 
@@ -446,19 +463,28 @@ if(health > 0)
 			gunNum--;
 			_inst.sh = shuriken;
 			shuriken = 0;
+			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
 		if(keyboard_check_pressed(vk_tab) and gunEquip == 13 and ghostGunHave == 1) then 
 	    { 
 	        instance_create(x,y,obj_dropGun);
 			gunNum--;
 			ghostGunHave = 0;
+			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
 		if(keyboard_check_pressed(vk_tab) and gunEquip == 14 and pp7Have == 1) then 
 	    { 
 	        instance_create(x,y,obj_dropGun);
 			gunNum--;
 			pp7Have = 0;
+			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
+	}
+	if(keyboard_check_pressed(ord("E")) and gunNum == 0 and heavyband == true) then 
+	{ 
+		instance_create(x,y,o_heavyband);
+		heavyband = false;
+		audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	}
 	if(((pr == true and gunEquip == 1) or (mgr == true and gunEquip == 3) or (arr == true and gunEquip == 4) or (snr == true and gunEquip == 8) or (mr == true and gunEquip == 2) or 
 		(rlr == true and gunEquip == 9) or (fr == true and gunEquip == 7) or (shr == true and gunEquip == 6) or (ppr == true and gunEquip == 14)) and (gunEquip != 5))
