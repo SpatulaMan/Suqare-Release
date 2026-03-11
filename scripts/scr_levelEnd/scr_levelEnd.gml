@@ -728,7 +728,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += 4500*_emtBill;
 					obj_suq.report = 62;
 					obj_suq.ungulate += 2;
-					obj_suq.hietech -= 1;
+					obj_suq.hiertech -= 1;
 					o_saveload.unet += 5;
 					o_saveload.hnet -= 4;
 				}
@@ -737,7 +737,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += (4500-(obj_suq.contraband*75))*_emtBill;
 					obj_suq.report = 64;
 					obj_suq.ungulate += 1;
-					obj_suq.hietech -= 1;
+					obj_suq.hiertech -= 1;
 					o_saveload.unet += 4;
 					o_saveload.hnet -= 4;
 				}
@@ -938,7 +938,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += 5700*_emtBill;
 					obj_suq.report = 84;
 					obj_suq.ungulate += 2;
-					obj_suq.hietech -= 1;
+					obj_suq.hiertech -= 1;
 					o_saveload.unet += 6;
 					o_saveload.hnet -= 5;
 				}
@@ -947,7 +947,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += 3000*_emtBill;
 					obj_suq.report = 85;
 					obj_suq.ungulate += 1;
-					obj_suq.hietech -= 1;
+					obj_suq.hiertech -= 1;
 					o_saveload.unet += 3;
 					o_saveload.hnet += 2;
 				}
@@ -962,9 +962,48 @@ function scr_levelEnd(car,range_optional)
 				{
 					obj_suq.report = 87;
 					obj_suq.ungulate -= 2;
-					obj_suq.hietech += 1;
+					obj_suq.hiertech += 1;
 					o_saveload.unet -= 6;
 					o_saveload.hnet += 7;
+				}
+			} break;
+			case r_lvl_30:
+			{
+				o_saveload.pnet += 2;
+				o_saveload.knet += 2;
+				o_saveload.ynet -= 2;
+				o_saveload.gnet += 2;
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				if(o_lvl30.o1 and o_lvl30.o2 and o_lvl30.o3 and instance_exists(o_carSt))
+				{
+					o_saveload.moneyT += 7900*_emtBill;
+					obj_suq.report = 88;
+					obj_suq.ungulate -= 1;
+					obj_suq.hiertech += 3;
+					o_saveload.unet -= 2;
+					o_saveload.hnet += 10;
+				}
+				if(o_lvl30.o1 and o_lvl30.o2 and o_lvl30.o3 and !instance_exists(o_carSt))
+				{
+					obj_suq.report = 91;
+					obj_suq.hiertech -= 4;
+					o_saveload.hnet -= 15;
+				}
+				if(!instance_exists(o_carSt))
+				{
+					obj_suq.report = 90;
+					obj_suq.ungulate += 1;
+					obj_suq.hiertech -= 2;
+					o_saveload.unet += 2;
+					o_saveload.hnet -= 10;
+				}
+				else if((!o_lvl30.o1 or !o_lvl30.o2 or !o_lvl30.o3))
+				{
+					obj_suq.report = 89;
+					obj_suq.ungulate += 1;
+					obj_suq.hiertech -= 1;
+					o_saveload.unet += 2;
+					o_saveload.hnet += 2;
 				}
 			} break;
 		}

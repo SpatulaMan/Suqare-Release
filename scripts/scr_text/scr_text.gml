@@ -1222,7 +1222,10 @@ function scr_briefing(t){
 			period of time. Your job is to steal them for us. They 
 			are kept under heavy security, so you must not raise
 			any alarms. If you do, they'll go into maximum security
-			mode, and the paintings will be gone forever. ";
+			mode, and the paintings will be unatainable. 
+			
+			Remember to bring all three paintings to the armored car
+			after you steal them or else you'll get no reward! ";
 	a[159] = @"Steal three valuable paintings called the Bertha, 
 			Goobet, and Holla";
 	a[160] = @"Mission: Steal Paintings
@@ -1251,6 +1254,7 @@ function scr_briefing(t){
 	a[161] = @"Steal Bertha";
 	a[162] = @"Steal Goobet";
 	a[163] = @"Steal Holla";
+	a[169] = @"Drop Them Off";
 	a[164] = @"BRIEFING:
 			I have a unique opportunity to kill the head of security
 			over the three valuable paintings that are in the modern
@@ -1288,7 +1292,6 @@ function scr_briefing(t){
 			(Press Spacebar to Accept)";
 	a[167] = @"Kill Gerald";
 	a[168] = @"Go Unnoticed";
-	a[169] = @"";
 	a[170] = @"";
 	a[171] = @"";
 	a[172] = @"";
@@ -3799,8 +3802,72 @@ function debrief(m)
 			shut its doors soon. 
 			
 			Press Spacebar to continue";
-	c[88] = @"";
-	c[89] = @"";
+	c[88] = @"Objectives Complete
+			Payout: $7900
+			
+			Response From Hiring Firm:
+			Wooo! We got all the paintings! Now our standing with our clients will be so high that there's
+			no way those other companies can take us down. This is financial security for our business. 
+			
+			Current standing with Hiertech: "+string(obj_suq.hiertech)+@"
+			
+			Result:
+			You stole all the paintings. Hiertech now has the money to stay afloat for a long while. 
+			
+			Press Spacebar to continue";
+	c[89] = @"Objectives Complete
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You couldn't get them all!? This is terrible. It wasn't about the worth of each painting, it
+			was about building trust with our overseas clients. Now they think we can't deliver. This will
+			definitely harm our business, so you better not cross us anymore. I sure hope you didn't steal
+			the paintings for yourself. 
+			
+			Current standing with Hiertech: "+string(obj_suq.hiertech)+@"
+			
+			Result:
+			You failed to steal the paintings for Hiertech. But maybe this was your plan all along. 
+			
+			Press Spacebar to continue";
+	c[90] = @"Objectives Complete
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You deliberately destroyed our getaway car? You are absolutely evil and an enemy of
+			Hiertech! I hope you die for this insubordination! 
+			
+			Current standing with Hiertech: "+string(obj_suq.hiertech)+@"
+			
+			Result:
+			You failed to steal the paintings for Hiertech, and you destroyed the van. 
+			
+			Press Spacebar to continue";
+	c[91] = @"Objectives Complete
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You deliberately destroyed our getaway car with the paintings inside? You are absolutely evil
+			and an enemy of Hiertech! I hope you die for this insubordination! 
+			
+			Current standing with Hiertech: "+string(obj_suq.hiertech)+@"
+			
+			Result:
+			You failed to steal the paintings for Hiertech, and you destroyed the van with the paintings 
+			inside. This has angered Hiertech far more than anything you've done. 
+			
+			Press Spacebar to continue";
+	c[92] = @"";
+	c[93] = @"";
+	c[94] = @"";
+	c[95] = @"";
+	c[96] = @"";
+	c[97] = @"";
+	c[98] = @"";
+	c[99] = @"";
+	c[100] = @"";
+	c[101] = @"";
+	c[102] = @"";
 	return c[m];
 }
 function tutorial(k)
