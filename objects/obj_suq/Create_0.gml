@@ -329,7 +329,11 @@ Bulft = noone;
 
 //lvl 10 dinner party outcome
 culprit = 0;
-painting = o_saveload.painting;//this will determine if the painting shows in the armory or not. You can sell it too if you want. 
+painting = o_saveload.painting;//this will determine if the painting shows in the armory or not. You can sell it too if you want.
+paints1 = o_saveload.paints1;
+paints2 = o_saveload.paints2;
+paints3 = o_saveload.paints3;
+
 
 cBackup = 0;
 hazmat = false;

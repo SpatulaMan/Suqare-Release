@@ -1178,16 +1178,17 @@ function scr_briefing(t){
 	a[151] = @"Load Contraband";
 	a[152] = @"BRIEFING:
 			Hiertech is trying to steal the most expensive art at the
-			modern art museum. We need to stop them. They will most
-			likely send several of their most stealthy agents, so 
-			you'll need to be on watch for a bunch of them coming in
-			through any means necessary. 
+			modern art museum. We need to stop them. They will send
+			their most stealthy agents, and they might even find secret
+			passageways as well. 
 
-			We'll give you access to the map with the locations of the
-			paintings on it when you're there. 
+			We'll give you access to the security turrets, but we can't
+			let you into the building. Switch between the security
+			cameras by pressing 1,2,3,4,5,6, and use the turret placed
+			there to take out the enemies. 
 
 			We'll deduct from your pay for each art piece lost. They're
-			called Bertha, Goobet, and Holla. ";
+			called the Bertha, Goobet, and Holla. ";
 	a[153] = @"Prevent Art Theft";
 	a[154] = @"Mission: Prevent Art Theft
 			
@@ -1222,7 +1223,8 @@ function scr_briefing(t){
 			are kept under heavy security, so you must not raise
 			any alarms. If you do, they'll go into maximum security
 			mode, and the paintings will be gone forever. ";
-	a[159] = @"Steal three valuable paintings. Bertha, Goobet, Holla";
+	a[159] = @"Steal three valuable paintings called the Bertha, 
+			Goobet, and Holla";
 	a[160] = @"Mission: Steal Paintings
 			
 			Hiring Firm: Hiertech
@@ -1266,8 +1268,8 @@ function scr_briefing(t){
 			
 			Hiring Firm: Julien Bogart
 			Current Standing With
-			Julien Bogart: 
-			Combat Difficulty: 3
+			Julien Bogart: N/A
+			Combat Difficulty: 4
 			Mental Difficulty: 7
 			Locked Doors: 3
 			Req. Locked Doors: 3
@@ -1285,7 +1287,7 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[167] = @"Kill Gerald";
-	a[168] = @"";
+	a[168] = @"Go Unnoticed";
 	a[169] = @"";
 	a[170] = @"";
 	a[171] = @"";
@@ -1626,6 +1628,34 @@ function scr_conversation(t)
 			Once you know who the culprit is, mark them by walking up to them and pressing 'T'. Then come back to me and press 
 			'Enter'. I will then unlock the doors so you can leave. The police will come and arrest the guests you marked, and
 			I'll follow up with you after you leave.";//estate owner reaction
+	var _t = "";
+	var _t1 = "";
+	var _t2 = "";
+	if(obj_suq.paints1 == true) 
+	{
+		_t = "The Bertha is a fine painting from the Pentagonal era. It depicts a lonely figure in search of meaning.";
+	}
+	if(obj_suq.paints2 == true) 
+	{
+		_t1 = @"The Goobet depicts birds flying over a waterfall. What are birds? No one will ever know. It's a concept unknown
+				to the whole shape world.";
+	}
+	if(obj_suq.paints3 == true) 
+	{
+		_t2 = @"The Holla shows how the ancient world used to Holla at ya boi. Bagpipes on a blank canvas. Very thought provoking
+				but bagpipes are not something anyone has heard of in thousands of years.";
+	}
+	a[61] = @"The finest art in the collection fetches a pretty penny. Here's what you have: " +
+			string(_t) +
+			string(_t1) +
+			string(_t2) + @"
+	
+			Do you want to sell them? 
+			
+			Valuation: $5,000 each
+			
+			Press Spacebar to sell";//Selling the Paintings from lvl 29-31
+	
 	a[62] = @"Yellen Egbert II:
 			I stepped back the moment the lights went out, and I saw some kind of glimmer flash by briefly as it went past me. 
 			Then I saw a knife in him when the lights came back on. It is your knife, but why would you kill the butler and 
@@ -3715,10 +3745,60 @@ function debrief(m)
 			long run. 
 			
 			Press Spacebar to continue";
-	c[84] = @"";
-	c[85] = @"";
-	c[86] = @"";
-	c[87] = @"";
+	c[84] = @"Objectives Complete
+			Payout: $5700
+			
+			Response From Hiring Firm:
+			We saved all of the art! Great job. Now people can continue to enjoy timeless art without any
+			worry. 
+			
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
+			
+			Result:
+			You saved the art, but you have no idea why anyone would want to look at it. 
+			
+			Press Spacebar to continue";
+	c[85] = @"Objectives Partially Complete
+			Payout: $3000
+			
+			Response From Hiring Firm:
+			We saved two paintings, at least. I hope the other one can be retrieved at some point. You did
+			an alright job, but we expected more from you. 
+			
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
+			
+			Result:
+			You saved most of the art. The museum isn't very happy it lost of one its most prized pieces. 
+			
+			Press Spacebar to continue";
+	c[86] = @"Objectives Partially Complete
+			Payout: $1000
+			
+			Response From Hiring Firm:
+			We only save one art piece. This is awful. At least you did something, but this hardly calls
+			for a kudos. 
+			
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
+			
+			Result:
+			You saved one piece of art. The museum is livid, but at least they have something left. 
+			
+			Press Spacebar to continue";
+	c[87] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You couldn't even save one art piece! You lousy, no-good, butt-for-brains mercenary! This job
+			meant everything to art lovers across the world. There is nothing that can replace the beauty
+			that was lost. 
+			
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
+			
+			Result:
+			You couldn't save a single piece of art and Ungulate Studios is mad. The museum might have to
+			shut its doors soon. 
+			
+			Press Spacebar to continue";
 	c[88] = @"";
 	c[89] = @"";
 	return c[m];

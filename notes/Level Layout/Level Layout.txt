@@ -114,8 +114,8 @@ or
 25: Vandalize Gravestones for fun - NL
 or
 26: Cover Graveyard Watch for 3 minutes - NL
-	27: Vambrace of Mortuban (plan the heist on location first, look around, and then execute it. Have something to start the mission. Like the car again, but a different object)
-	28: Contraband
+27: Vambrace of Mortuban (plan the heist on location first, look around, and then execute it. Have something to start the mission. Like the car again, but a different object)
+28: Contraband
 	29: Prevent Art Theft (enemies are stealthy. Have to find and stop them. Gameplay like Night Trap with multiple screens to switch between?)
 or
 	30: Steal Art (3 paintings)
@@ -129,7 +129,7 @@ or
 		37: Hijack Ship - NL
 		38: Want Some Stuff?
 		39: Destroy Ninja Hierarchy (kill all ninja leaders)
-		40: Race (only awards 2000 for a win, 1000 for 2nd, and 500 for 3rd. Hard race. Can be played as many times as you want.)
+		40: Race (only awards 2000 for a win, 1000 for 2nd, and 500 for 3rd. Hard race. Can be played as many times as you want. 500 to enter)
 		41: Assassinate CEO of Kanker and Co. The ghosts of all those you killed come back to haunt you here
 		42: Run Down
 		43: Charge super weapon

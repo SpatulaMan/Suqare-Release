@@ -27,6 +27,7 @@ else if(visible == true and s == -1)
 		case r_lvl_12: draw_sprite_ext(s_lvl12map,0,w*.133,h*.055,1,1,0,c_white,1); break;//too tall
 		case r_lvl_13: draw_sprite_ext(s_lvl13map,0,w*.133,h*.055,1,1,0,c_white,1); break;//too tall
 		case r_lvl_19: draw_sprite_ext(s_lvl19map,0,w*.1,h*.055,1,1,0,c_white,1); break;//too tall and wide
+		case r_lvl_29: draw_sprite_ext(s_lvl29map,0,w*.1,h*.055,1,1,0,c_white,1); break;//too tall and wide
 		default: draw_sprite_ext(s_mapnotfound,0,w*.133,h*.08,1,1,0,c_white,1);
 	}
 	draw_text_transformed_color(w*.355,h*.88,scr_briefing(994),2,2,0,make_color_rgb(255,150,0),make_color_rgb(255,150,0),make_color_rgb(255,150,0),make_color_rgb(255,150,0),1);//F - CLOSE

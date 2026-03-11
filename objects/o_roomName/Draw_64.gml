@@ -136,6 +136,11 @@ if(a > 0)
 		case 102: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("MAROS' HOUSE"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 103: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("GRAVEYARD SHED"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 104: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("NINJA RECORDS OFFICE"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 105: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("EMPLOYEES ONLY"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 106: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("COURTYARD"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 107: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("ART AREA"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 108: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("ANOTHER ART AREA"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 109: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("UNNECESSARY ART AREA"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		default: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("RESTRICTED"),3,3,0,c_white,c_white,c_white,c_white,a); 
 	}
 }

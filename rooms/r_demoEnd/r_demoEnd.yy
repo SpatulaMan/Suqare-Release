@@ -54,8 +54,8 @@
   ],
   "name":"r_demoEnd",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

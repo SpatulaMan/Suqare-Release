@@ -130,3 +130,6 @@ skillCheck8 = false;
 skillCheck9 = false;
 skillCheck10 = false;
 painting = false;
+paints1 = false;
+paints2 = false;
+paints3 = false;

@@ -1,5 +1,5 @@
 /// @description 
-if(distance_to_object(obj_suq) <= 23 and !instance_exists(o_convo) and check == false)
+if(distance_to_object(obj_suq) <= 23 and !instance_exists(o_convo) and check == false and room == r_armory)
 {
 	inst = instance_create(x,y,o_convo);
 	inst.i = 8;

@@ -926,6 +926,47 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.hnet -= 10;
 				}
 			} break;
+			case r_lvl_29:
+			{
+				o_saveload.pnet += 2;
+				o_saveload.knet += 2;
+				o_saveload.ynet -= 2;
+				o_saveload.gnet += 2;
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				if(o_lvl29.o1 and o_lvl29.o2 and o_lvl29.o3)
+				{
+					o_saveload.moneyT += 5700*_emtBill;
+					obj_suq.report = 84;
+					obj_suq.ungulate += 2;
+					obj_suq.hietech -= 1;
+					o_saveload.unet += 6;
+					o_saveload.hnet -= 5;
+				}
+				else if((o_lvl29.o1 and o_lvl29.o2 and !o_lvl29.o3) or (o_lvl29.o1 and !o_lvl29.o2 and o_lvl29.o3) or(!o_lvl29.o1 and o_lvl29.o2 and o_lvl29.o3))
+				{
+					o_saveload.moneyT += 3000*_emtBill;
+					obj_suq.report = 85;
+					obj_suq.ungulate += 1;
+					obj_suq.hietech -= 1;
+					o_saveload.unet += 3;
+					o_saveload.hnet += 2;
+				}
+				else if((o_lvl29.o1 and !o_lvl29.o2 and !o_lvl29.o3) or (!o_lvl29.o1 and !o_lvl29.o2 and o_lvl29.o3) or(!o_lvl29.o1 and o_lvl29.o2 and !o_lvl29.o3))
+				{
+					o_saveload.moneyT += 1000*_emtBill;
+					obj_suq.report = 86;
+					o_saveload.unet += 1;
+					o_saveload.hnet += 5;
+				}
+				else if(!o_lvl29.o1 and !o_lvl29.o2 and !o_lvl29.o3)
+				{
+					obj_suq.report = 87;
+					obj_suq.ungulate -= 2;
+					obj_suq.hietech += 1;
+					o_saveload.unet -= 6;
+					o_saveload.hnet += 7;
+				}
+			} break;
 		}
 		if(!car and !range_optional)
 		{

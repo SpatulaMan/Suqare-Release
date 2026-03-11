@@ -596,5 +596,9 @@ if(pickup_timer > 0)
 		case 56: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("PRESS E TO PICK UP CONTRABAND"),2,2,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 57: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("HEAVY CONTRABAND. DROP ALL WEAPONS TO PICK UP"),2,2,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 58: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("PRESS E TO DROP"),2,2,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 59: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("SHOCKED PAINTING"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 60: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("BIRD-WATERFALL PAINTING"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 61: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("BAGPIPES PAINTING"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 62: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("PRESS E TO STEAL PAINTING"),2,2,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 	}
 }

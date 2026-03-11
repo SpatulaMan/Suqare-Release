@@ -39,6 +39,48 @@ if(obj_suq.painting and !instance_exists(o_esmerelda))
 {
 	instance_create_layer(689,383,"Instances_Action",o_esmerelda);
 }
+if(!instance_exists(o_paints))
+{
+	if(obj_suq.paints3)
+	{
+		var _p1 = instance_create_layer(726,396,"Instances_Action",o_paints)
+		_p1.image_index = 2;
+		i++;
+	}
+	if(obj_suq.paints2)
+	{
+		
+		if(a[i] == 2)
+		{
+			var _p = instance_create_layer(743,382,"Instances_Action",o_paints);
+			_p.image_index = 1;
+		}
+		else
+		{
+			var _p = instance_create_layer(726,396,"Instances_Action",o_paints);
+			_p.image_index = 1;
+		}
+		i++;
+	}
+	if(obj_suq.paints1)
+	{
+		if(a[i] == 3)
+		{
+			var _p = instance_create_layer(724,370,"Instances_Action",o_paints);
+		}
+		else if(a[i] == 2)
+		{
+			var _p = instance_create_layer(743,382,"Instances_Action",o_paints);
+		}
+		else
+		{
+			instance_create_layer(726,396,"Instances_Action",o_paints);
+		}
+		
+	}
+
+	
+}
 if(obj_suq.fragment[0] == true)
 {
 	var inst = instance_create_layer(688,512,"Instances_Action",o_gFrag);

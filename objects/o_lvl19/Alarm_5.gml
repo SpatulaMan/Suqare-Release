@@ -20,18 +20,18 @@ if(r6 > 0)
 		case obj_machineGun: 
 			_e.weapon = instance_create_layer(x,y,"Instances_Action",o_eMachineGun); 
 			_e.weapon_bul = o_eMGBul;
-			_e.pv += 2;
+			_e.pv += 1;
 			_e.shtspd = 10; break;
 		case obj_assaultRifle: 
 			_e.weapon = instance_create_layer(x,y,"Instances_Action",o_eAssault); 
 			_e.weapon_bul = o_eARBul;
 			_e.weapon_spd = 8;
-			_e.pv += 3;
+			_e.pv += 2;
 			_e.shtspd = 20; break;
 		case obj_shotgun:
 			_e.weapon = instance_create_layer(x,y,"Instances_Action",o_eShotgun); 
 			_e.weapon_bul = o_eSGBul;
-			_e.pv += 3;
+			_e.pv += 2;
 			_e.shtspd = 80; break;
 	}
 	alarm_set(5,choose(60,80,100,120));

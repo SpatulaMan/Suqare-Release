@@ -56,7 +56,7 @@ turretTime = 120;
 restart_patrol = false;
 perez_time = 360;
 perez_check = false;
-if(room == r_lvl_19) 
+if(room == r_lvl_19 or room == r_lvl_29) 
 {
 	sprite_index = s_mercenary;
 	spr = s_mercenary_1;
