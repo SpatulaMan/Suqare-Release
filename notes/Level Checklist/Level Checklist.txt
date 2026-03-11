@@ -10,13 +10,13 @@ lvl 17 - lvl 51
 -Darkness - 27,28,29,30,31
 -Room Names - 27,28,29,30,31
 -Backgrounds - 27,28,29,30,31
--New Features/Enemies - 27,28,29,30
--Enemy Placement - 27,28,29,30
--Map - 27,28,29,30
--Gadgets/Weapons - 27,28,29,30
+-New Features/Enemies - 27,28,29,30,31
+-Enemy Placement - 27,28,29,30,31
+-Map - 27,28,29,30,31
+-Gadgets/Weapons - 27,28,29,30,31
 -Music - 27,28,29,30,31
--Mid-Level Objectives Complete - 27,28,29,30
--Level End Code - 27,28,29,30
+-Mid-Level Objectives Complete - 27,28,29,30,31
+-Level End Code - 27,28,29,30,31
 -Testing
 
 

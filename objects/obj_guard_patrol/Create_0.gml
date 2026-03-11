@@ -28,6 +28,10 @@ else
 {
 	access = false;
 }
+if(room == r_lvl_31)
+{
+	alarm_set(7,120);
+}
 patrol_check = false;
 check = false; //final check
 //path_start(path0, 1.7, path_action_restart, true);

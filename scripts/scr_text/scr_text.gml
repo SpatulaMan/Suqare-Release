@@ -1258,15 +1258,18 @@ function scr_briefing(t){
 	a[164] = @"BRIEFING:
 			I have a unique opportunity to kill the head of security
 			over the three valuable paintings that are in the modern
-			art museum. Since they're only here for a short time, this
-			is our only opportunity to kill the head of security. His 
-			name is Gerald. 
+			art museum. Since they're only here for a short time, he's
+			also here and he's vulnerable. His name is Gerald. 
 
 			He's a horrible person who didn't get convicted of the 
 			murder of my parents because of an evidence mix-up. Now 
 			he's finally within my grasp! I've been waiting for a 
 			moment like this for years. Just kill him, and get out of 
-			there. ";
+			there. 
+			
+			We can make it seem like an art theft gone wrong and none
+			of this will come back on me as long as you aren't 
+			discovered by the cameras.";
 	a[165] = @"Murder Head of Security at Art Museum";
 	a[166] = @"Mission: Steal Paintings
 			
@@ -3857,9 +3860,42 @@ function debrief(m)
 			inside. This has angered Hiertech far more than anything you've done. 
 			
 			Press Spacebar to continue";
-	c[92] = @"";
-	c[93] = @"";
-	c[94] = @"";
+	c[92] = @"Objectives Complete
+			Payout: $6400
+			
+			Response From Hiring Firm:
+			Yes! My family has finally been avenged! Thank you so much for what you do. It's so nice to
+			know that this is over at last. 
+			
+			Result:
+			You killed the murderer Gerald and did so without bringing any suspicion on Julien. 
+			
+			Press Spacebar to continue";
+	c[93] = @"Objectives Partially Complete
+			Payout: $1000
+			
+			Response From Hiring Firm:
+			My family has finally been avenged, but you were seen at the museum. That means they've 
+			connected me to the assassination! I've got to go on the run now. I thought you'd be better
+			at your job!
+			
+			Result:
+			You killed the murderer Gerald, but you tipped the authorities off about Julien hiring you
+			as a hitman. You avenged his family, but ruined his life. 
+			
+			Press Spacebar to continue";
+	c[94] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You couldn't even kill him? Do you pity murderers? I can't believe this. I hope you die and
+			rot in a jail cell! 
+			
+			Result:
+			You failed to kill Gerald. Maybe one last bit of mercy, or maybe you just didn't feel like it
+			anymore. 
+			
+			Press Spacebar to continue";
 	c[95] = @"";
 	c[96] = @"";
 	c[97] = @"";

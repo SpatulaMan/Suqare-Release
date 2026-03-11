@@ -11,6 +11,7 @@ if(st >= 120)
 	image_index = 2;
 	if(!seen) { alarm_set(0,30); }
 	seen = true
+	if(instance_exists(o_lvl31)) { o_lvl31.o2 = false; }
 	image_angle -= min(abs(ad), 2) * sign(ad);
 }
 st += 2;

@@ -22,6 +22,22 @@ if(seen)
 			inst_3387BF41.x = 1736;
 			inst_3387BF41.y = 730;
 		}
+		
+		if(instance_exists(inst_2390CB2_1))
+		{
+			inst_2390CB2_1.x = 735;
+			inst_2390CB2_1.y = 436;
+		}
+		if(instance_exists(inst_415A1B02_1))
+		{
+			inst_415A1B02_1.x = 1371;
+			inst_415A1B02_1.y = 1209;
+		}
+		if(instance_exists(inst_3387BF41_1))
+		{
+			inst_3387BF41_1.x = 1736;
+			inst_3387BF41_1.y = 730;
+		}
 	}
 }
 st--;

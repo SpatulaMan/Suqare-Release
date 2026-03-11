@@ -1,0 +1,1 @@
+if(!instance_exists(inst_126193C0_1)) { o1 = true; }
