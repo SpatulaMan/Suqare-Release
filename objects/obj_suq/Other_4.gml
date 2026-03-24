@@ -39,11 +39,14 @@ if(room != r_armory and room != r_skill1 and room != r_skill2 and room != r_skil
 	tdead[3] = 0;
 	tdead[4] = 0;
 	o_music.mCheck = false;
+	if(room == r_range) { gunRange = true; }	
 }
 if(room == r_armory and instance_exists(o_armory))
 {
+	ninjaBenefit = 0;
 	hazmat = false;
-	money = floor(o_saveload.moneyT);
+	if(!gunRange) { money = floor(o_saveload.moneyT); }
+	else { gunRange = false; }
 	if(o_armory.roomStartCheck == false)
 	{
 		alarm_set(1,30);

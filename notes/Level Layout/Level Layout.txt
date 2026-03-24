@@ -51,7 +51,7 @@ and
 8: Eradicate spiders
 17: Help Old Ladies to cross the street
 26: Cover Graveyard Watch for 5 minutes - NL
-34: Save Historic Building (Yellerteeth Inc wants to take down the building covertly overnight and claim it fell on its own and buy the land to expand its parking lot. Stop their machine!) 
+34: Chase down a criminal for trial. He sets traps, things that slow you down like barriers that you have to shoot things to get through. Also turrets to kill on the way. 
 44: Save Hostages, in Maze that keeps changing every 60 seconds. 
 47: Ghost Infestation, Bunch of powerful ghosts in a house. Activate things to get them to come out and you try to kill them. 
 50: Evacuate Town, avoid super-weapon blasts and evacuate each building before they get destroyed. (contingent upon success of level 43 and 48 either failed or not done)
@@ -116,14 +116,14 @@ or
 26: Cover Graveyard Watch for 3 minutes - NL
 27: Vambrace of Mortuban (plan the heist on location first, look around, and then execute it. Have something to start the mission. Like the car again, but a different object)
 28: Contraband
-	29: Prevent Art Theft (enemies are stealthy. Have to find and stop them. Gameplay like Night Trap with multiple screens to switch between?)
+29: Prevent Art Theft (enemies are stealthy. Have to find and stop them. Gameplay like Night Trap with multiple screens to switch between?)
 or
-	30: Steal Art (3 paintings)
+30: Steal Art (3 paintings)
 or
-	31: Kill the head of security
+31: Kill the head of security
 	32: Take Control of manufacturing plant
 		33: Sandals of Gutran
-		34: Save Historic Building
+		34: Chase down Criminal
 		35: Invade homes and kill everyone who works for the other banks
 		36: Prison Break, break into prison secretly, and sneak a few wrongfully convicted inmates out - NL besides ghosts that haunt the place
 		37: Hijack Ship - NL

@@ -6,7 +6,7 @@ if(swordHave == 1 and swordCH < 120)
 {
 	swordCH++;
 }
-if(spd > 2)
+if(spd > 2 and room == r_lvl_13)
 {
 	spd -= 0.0005;
 }
@@ -287,7 +287,8 @@ if(health > 0)
 		var _spd = 0;
 		var _input = point_distance(0, 0, _hm, _vm);
 		//_input = clamp(_input, 0, 1);
-		_spd = spd * _input;
+		if(!spdup) { _spd = spd * _input; }
+		else { _spd = (spd+.75) * _input; }
 	
 		xspd = lengthdir_x(_spd*mdCh, moveDir);
 		yspd = lengthdir_y(_spd, moveDir*mdCh);
@@ -313,9 +314,10 @@ if(health > 0)
 			audio_play_sound(snd_step,3,false,random_range(.2,.4)*o_saveload.sfxvol,0,random_range(.8,1.2));
 		}
 	}
-
+	
 	x += xspd;
 	y += yspd;
+	
     
     //switch guns
     /*if(keyboard_check_pressed(ord("Q"))) then { gunEquip = 0 }
@@ -718,4 +720,53 @@ if(room == r_range or (room == r_skill1 and !instance_exists(o_skobj)) or (room 
 	flameTur = t4;
 	rocketTur = t5;
 	lives = lb;
+}
+if(ninjaBenefit > 0)
+{
+	switch(ninjaBenefit)
+	{
+		case 0: break;//nothing 
+		case 1: if(lives <= 2) { lives = 10; ninjaBenefit = 0; } 
+				var _c1 = instance_create_layer(x,y,"Instances_Action",o_conversation); 
+				_c1.h = 55; break;
+		case 2: spd = 2.5; 
+				var _c2 = instance_create_layer(x,y,"Instances_Action",o_conversation); 
+				_c2.h = 56; ninjaBenefit = 0; break;
+		case 3: ninjaBenefit = 0;
+				instance_create_layer(x,y,"Instances_Action",obj_arAmmo); 
+				instance_create_layer(x,y,"Instances_Action",obj_arAmmo);
+				instance_create_layer(x,y,"Instances_Action",obj_flAmmo); 
+				instance_create_layer(x,y,"Instances_Action",obj_flAmmo);
+				instance_create_layer(x,y,"Instances_Action",obj_mAmmo); 
+				instance_create_layer(x,y,"Instances_Action",obj_mAmmo);
+				instance_create_layer(x,y,"Instances_Action",obj_mgAmmo); 
+				instance_create_layer(x,y,"Instances_Action",obj_mgAmmo);
+				instance_create_layer(x,y,"Instances_Action",obj_pAmmo); 
+				instance_create_layer(x,y,"Instances_Action",obj_pAmmo);
+				instance_create_layer(x,y,"Instances_Action",obj_ppAmmo); 
+				instance_create_layer(x,y,"Instances_Action",obj_ppAmmo);
+				instance_create_layer(x,y,"Instances_Action",obj_rlAmmo); 
+				instance_create_layer(x,y,"Instances_Action",obj_rlAmmo);
+				instance_create_layer(x,y,"Instances_Action",obj_sgAmmo); 
+				instance_create_layer(x,y,"Instances_Action",obj_sgAmmo);
+				instance_create_layer(x,y,"Instances_Action",obj_snrAmmo); 
+				instance_create_layer(x,y,"Instances_Action",obj_snrAmmo);
+				instance_create_layer(x,y,"Instances_Action",obj_srAmmo); 
+				instance_create_layer(x,y,"Instances_Action",obj_srAmmo); 
+				var _c3 = instance_create_layer(x,y,"Instances_Action",o_conversation); 
+				_c3.h = 57; break;
+		case 4: ninjaBenefit = 0;
+				instance_create_layer(x,y,"Instances_Action",o_coin_50);
+				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+				var _c4 = instance_create_layer(x,y,"Instances_Action",o_conversation); 
+				_c4.h = 58; ninjaBenefit = 0; break;
+	}
 }

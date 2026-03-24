@@ -1232,7 +1232,7 @@ function scr_briefing(t){
 			
 			Hiring Firm: Hiertech
 			Current Standing With
-			Hiertech: "+string(obj_suq.Hiertech)+
+			Hiertech: "+string(obj_suq.hiertech)+
 			@"
 			Combat Difficulty: 3
 			Mental Difficulty: 7
@@ -1295,11 +1295,39 @@ function scr_briefing(t){
 			(Press Spacebar to Accept)";
 	a[167] = @"Kill Gerald";
 	a[168] = @"Go Unnoticed";
-	a[170] = @"";
-	a[171] = @"";
-	a[172] = @"";
-	a[173] = @"";
-	a[174] = @"";
+	a[170] = @"BRIEFING:
+			The scientist you kidnapped for us is finally done with his
+			plans for the machine, but now we need one more thing. 
+			There's only one manufacturing plant near here that has the
+			technology to build our ghost army machine, so we need you
+			to do two things. Destroy or shutdown all security measures
+			and kill all the guards in the building. This will allow us
+			to go in and build the machine we need. ";
+	a[171] = @"Take Over Manufacturing Plant";
+	a[172] = @"Mission: Acquire Factory
+			
+			Hiring Firm: Kanker and Co.
+			Current Standing With
+			Kanker and Co.: "+string(obj_suq.kanker)+@"
+			Combat Difficulty: 10
+			Mental Difficulty: 2
+			Locked Doors: 1
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $10000
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[173] = @"Stop Turrets";
+	a[174] = @"Kill Guards";
 	a[175] = @"";
 	a[176] = @"";
 	a[177] = @"";
@@ -1570,30 +1598,33 @@ function scr_conversation(t)
 			One just as you are
 			One is made, not found
 			Bring both, I'll come ajar";//Golden shard riddles
-	a[40] = @"This is the Accuracy Test. You will have 20 seconds to throw shurikens at the moving targets. The further they're
-			away from you, the more points they're worth. But, if you miss, that will be counted against you. If you get a high
-			enough score, we will give you one of the 3 keys necessary to see the jewel of barfo and become a ninja. 
-			Front - 1 Point
-			Middle - 3 Points
-			Back - 9 points
+	if(instance_exists(o_lvl21))
+	{
+		a[40] = @"This is the Accuracy Test. You will have 20 seconds to throw shurikens at the moving targets. The further they're
+				away from you, the more points they're worth. But, if you miss, that will be counted against you. If you get a high
+				enough score, we will give you one of the 3 keys necessary to see the jewel of barfo and become a ninja. 
+				Front - 1 Point
+				Middle - 3 Points
+				Back - 9 points
 			
-			Highscore: " + string(o_lvl21.accPoints) + @"
+				Highscore: " + string(o_lvl21.accPoints) + @"
 			
-			Press F to start test";//barfo
-	a[41] = @"This is the Speed Throwing Test. You will have 20 seconds to throw shurikens at the dummy as fast as you can. You
-			will get 1 point for every shuriken in the dummy at the end of the time. If you obtain a high enough score, we will
-			give you one of the 3 keys necessary to see the jewel of barfo and become a ninja. 
+				Press F to start test";//barfo
+		a[41] = @"This is the Speed Throwing Test. You will have 20 seconds to throw shurikens at the dummy as fast as you can. You
+				will get 1 point for every shuriken in the dummy at the end of the time. If you obtain a high enough score, we will
+				give you one of the 3 keys necessary to see the jewel of barfo and become a ninja. 
 			
-			Highscore: " + string(o_lvl21.spdPoints) + @"
+				Highscore: " + string(o_lvl21.spdPoints) + @"
 			
-			Press F to start test";//barfo
-	a[42] = @"This is the Evasion Test. You will have shurikens thrown at you for 20 seconds. You will start with 100 points, 
-			and for each shuriken you don't dodge, you'll lose 1 point. If you can reach a high enough score, we will give you 
-			one of the 3 keys necessary to see the jewel of barfo and become a ninja. 
+				Press F to start test";//barfo
+		a[42] = @"This is the Evasion Test. You will have shurikens thrown at you for 20 seconds. You will start with 100 points, 
+				and for each shuriken you don't dodge, you'll lose 1 point. If you can reach a high enough score, we will give you 
+				one of the 3 keys necessary to see the jewel of barfo and become a ninja. 
 			
-			Highscore: " + string(o_lvl21.evPoints) + @"
+				Highscore: " + string(o_lvl21.evPoints) + @"
 			
-			Press F to start test";//barfo
+				Press F to start test";//barfo
+	}
 	a[43] = @"Congratulations on becoming a Horoban ninja. You may gaze upon the beauty of the Jewel of Barfo, our prized
 			posession. It has been with us for many generations. You will enjoy a great many benefits from being in our clan, 
 			but you must prove your loyalty by having the self control to not steal the jewel. It has power over most weak-
@@ -1617,13 +1648,24 @@ function scr_conversation(t)
 	a[51] = @"It will soon be revealed...";//start mystery
 	a[52] = @"Who is the real enemy? ";//start mystery
 	a[53] = @"Watc.. .ut for Tir...gle... ";//start mystery
-	a[54] = @"Current state of landmines Spawning in Tank Arena: " + string(o_lvl16.mineOn) + @"
+	if(instance_exists(o_lvl16))
+	{
+		a[54] = @"Current state of landmines Spawning in Tank Arena: " + string(o_lvl16.mineOn) + @"
 			
-			To switch landmine spawning state to " + string(!o_lvl16.mineOn) + " Press Q ";//lvl16 shut off mines
-	a[55] = @"";
-	a[56] = @"";
-	a[57] = @"";
-	a[58] = @"";
+				To switch landmine spawning state to " + string(!o_lvl16.mineOn) + " Press Q ";//lvl16 shut off 
+	}
+	a[55] = @"The Horoban Clan sends their regards, faithful recruit.
+			
+			The first time you are at or below 1 heart, we will heal you until you're back to full hearts.";//ninja benefit health
+	a[56] = @"The Horoban Clan sends their regards, faithful recruit.
+	
+			We've given you a temporary speed boost. Use it wisely. ";//ninja benefit speed boost
+	a[57] = @"The Horoban Clan sends their regards, faithful recruit.
+	
+			We've dropped ammo for all known weapons you might have to help you on this mission.";//drop all ammo types
+	a[58] = @"The Horoban Clan sends their regards, faithful recruit.
+	
+			Enjoy the dividends of being a member of our clan. Here's $500 cash.";//drop 500 cash
 	a[59] = @"";
 	a[60] = @"Yellen Egbert II:
 			Oh, no! My butler is dead and the 'esmerelda' has been stolen! Whoever could have done such a thing? Suqare, could 
@@ -1781,7 +1823,7 @@ function scr_conversation(t)
 
 function scr_shop(t){
 	o = [];
-	o[0] = "(Press Spacebar to Buy)           (Hold Enter To Sell All Items)";
+	o[0] = "(Left Click to Buy)               (Hold Enter To Sell All Items)";
 	o[1] = @"Armor
 			
 			
@@ -2239,9 +2281,34 @@ function scr_shop(t){
 			
 			
 			$24000"; 
-	o[43] = @""; 
-	o[44] = @""; 
-	o[45] = @""; 
+	o[43] = @"Speed Boots
+	
+			Description: Increases base movement speed considerably
+			
+			$28000"; 
+	o[44] = @"RC Car
+	
+			Description: Gives you access to a surveillance RC car. It
+			can drive under doors and it comes equipped with a camera
+			to see what it sees. 
+			
+			Battery Life: 15 seconds
+			Cooldown: 60 seconds
+			
+			@12000"; 
+	o[45] = @"PP9 Upgrade
+			
+			
+			Description: Increases Damage and bullet magnetism
+			
+			Damage: 4
+			Bullet Magnetism: 10
+			    |
+			Damage: 16
+			Bullet Magnetism: 40
+			
+			
+			$6800"; 
 	o[46] = @""; 
 	o[47] = @""; 
 	o[48] = @""; 

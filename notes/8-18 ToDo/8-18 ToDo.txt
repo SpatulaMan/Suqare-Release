@@ -1,22 +1,14 @@
 -Maybe add some detective music or ambient noises to lvl 10
+
 -Add new gadget that shows another view on the screen of a little RC car that has its own vision to show whatever you need in stealth levels. Expensive, reusable, lasts for 10-20 seconds.
 	Maybe make it driveable, maybe make it just go in one direction and stop at a wall. It slides under any doors, shows things in black and white?, makes obj_darkness.image_alpha = .01
 	while in contact with it. Goes back to normal when not in contact. 15,000
--Add gadget that gives you a 25% speed boost (or 50% maybe) for about 12,000
+-Add gadget that gives you a 25% speed boost (or 50% maybe) for about 6,000 for 25%, and 12,000 for 50%?
+-Add upgrade for PP9
 
 -Add driving SFX for lvl 18 and lvl 17. For both the car you drive and the cars around you. 
 
 -Fix lightning
-
--Add a level about "What is the meaning of life" Is there more to shape-anity? Discover meaning of life? 
-
--If you side with the Horoban Ninjas, you have a chance to get a power for the duration of a level
-Odds: 1 - nothing(50%), 2 - Healed to full health the first time you're down to 1 heart(14%), 3 - Get 1 random key to a given mission (13%), 4 - all ammo types drop at the start(10%),
-5 - drops 1000 bucks on mission start (13%)
-
--Create a level that relies on the boomerang. Death pits/spites keep you from crossing into other areas, but the boomerang works for it. Especially since it's your only weapon.
-
--Fix the shop menu to be clickable instead of cycling through an array
 
 -Add the 6 Pre-Missions that can happen when companies hate you enough for long enough. 
 
@@ -25,6 +17,10 @@ Odds: 1 - nothing(50%), 2 - Healed to full health the first time you're down to 
 -When you're on Cricle's bad side, there will be a chance to spawn several enemies near your vehicle to attack you. Text will show up saying, "Cricle sends his regards"
 and then the textbox and o_conversation will be destroyed. 
 
--When you're on Cricle's good side, a whole extra mission is playabe at least. Maybe another request in the middle of another level. 
+-When you're on Cricle's good side, a whole extra mission is playable at least. Maybe another request in the middle of another level. 
 
 -Save the ninja artifacts that are stolen. They will determine if you can play the final Yellerteeth level(s): hecto, ring, jewel, vambrace
+
+-Add all of the bankrupcy code to level select and if net worth hits zero, keep it there. 
+
+-Add some kind of trophy that will increase in price the longer you don't sell it. With market fluctuations. 

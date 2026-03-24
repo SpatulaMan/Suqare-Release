@@ -57,6 +57,9 @@ function scr_sellback(_i,_ch)
 	obj_suq.tearTur = 0;
 	obj_suq.flameTur = 0;
 	obj_suq.rocketTur = 0;
+	obj_suq.rc = false;
+	obj_suq.spdup = false;
+	obj_suq.ppda = 1;
 	o_saveload.ammoUp = 1;//1.5 for upgrade
 	o_saveload.ammoFull = false;//true for upgrade
 	o_saveload.turretUp = 1;//2 for upgrade

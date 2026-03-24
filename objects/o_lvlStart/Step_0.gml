@@ -31,4 +31,9 @@ if(distance_to_object(obj_suq) <= 12 and success == true)
 	obj_camera.y = y;
 	direction = 0;
 	speed = 8;
+	if(obj_suq.ninjaClan)
+	{
+		randomize();
+		obj_suq.ninjaBenefit = choose(0,0,0,0,0,1,2,3,4);
+	}
 }

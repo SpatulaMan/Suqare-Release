@@ -77,6 +77,7 @@ fragment=[false,false,false,false];
 gemsD=0;
 contraband = 0;
 bank=0;
+scientist=false;
 //weapon upgrades
 pda=0;//1 for upgrade
 pmr=12;//18
@@ -96,6 +97,7 @@ snda = 45;//30 for upgrade
 snmr = 4;//6 for upgrade
 rlda = 0;//1 for upgrade
 rlmr = 0;
+ppda = 1;
 atur=0;
 dtur=0;
 ttur=0;
@@ -105,6 +107,8 @@ tspd=0;
 tammo=0;
 thp=0;
 hprem=0;
+rc=false;
+spdup=false;
 //company's net worth
 knet=55;
 hnet=45;

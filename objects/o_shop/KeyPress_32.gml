@@ -1,5 +1,5 @@
 /// @description Buy Item
-if(distance_to_object(obj_suq) < 36)
+/*if(distance_to_object(obj_suq) < 36)
 {
 	//o_merchant.ready = true;
 	audio_play_sound(snd_shotgunReload,1,0,o_saveload.sfxvol,0,random_range(.45,.5));

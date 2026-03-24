@@ -106,11 +106,15 @@ function save()
 		sk9: o_saveload.skillCheck9,
 		sk10: o_saveload.skillCheck10,
 		paint: obj_suq.painting,
-		ninja: obj_suq.ninjaClan,
+		ninjaClan: obj_suq.ninjaClan,
 		contra: obj_suq.contraband,
+		scientist: obj_suq.scientist,
 		paints1: obj_suq.paints1,
 		paints2: obj_suq.paints2,
-		paints3: obj_suq.paints3
+		paints3: obj_suq.paints3,
+		spdup: obj_suq.spdup,
+		rc: obj_suq.rc,
+		ppda: obj_suq.ppda
 		
 		//upgrades
 		
@@ -325,10 +329,12 @@ function load(_f)
 			o_saveload.skillCheck10=_struct.sk10;
 		if (struct_exists(_struct, "paint"))
 			o_saveload.painting=_struct.paint;
-		if (struct_exists(_struct, "ninja"))
-			o_saveload.ninjaClan=_struct.ninja;
+		if (struct_exists(_struct, "ninjaClan"))
+			o_saveload.ninjaClan=_struct.ninjaClan;
 		if (struct_exists(_struct, "contra"))
 			o_saveload.contraband=_struct.contra;
+		if (struct_exists(_struct, "scientist"))
+			o_saveload.scientist=_struct.scientist;
 		if (struct_exists(_struct, "cricle"))
 			o_saveload.cricle=_struct.cricle;
 		if (struct_exists(_struct, "paints1"))
@@ -337,6 +343,12 @@ function load(_f)
 			o_saveload.paints2=_struct.paints2;
 		if (struct_exists(_struct, "paints3"))
 			o_saveload.paints3=_struct.paints3;
+		if (struct_exists(_struct, "spdup"))
+			o_saveload.spdup=_struct.spdup;
+		if (struct_exists(_struct, "rc"))
+			o_saveload.rc=_struct.rc;
+		if (struct_exists(_struct, "ppda"))
+			o_saveload.ppda=_struct.ppda;
 		
 		//levels that are incompleted and are available to the player currently in variables 
 		
@@ -445,7 +457,11 @@ function load(_f)
 			paints1: false,
 			paints2: false,
 			paints3: false,
-			contraband: 0
+			contraband: 0,
+			scientist: false,
+			spdup: false,
+			rc: false,
+			ppda: 1
 		
 		}
 	

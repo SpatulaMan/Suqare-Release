@@ -13,7 +13,7 @@ if(!instance_exists(obj_ninja_bosses))
 		if(check == false)
 		{
 			check = true;
-			if(other.weapon != 101)
+			if(other.weapon != 101 and !place_meeting(x,y,obj_gremlin))
 				other.weapon.image_angle += 180;
 		}
 	}

@@ -1,6 +1,6 @@
 //move_towards_point(mouse_x,mouse_y,6);
 t = 0;
 r = 0;
-damage = 4;
+damage = 4*obj_suq.ppda;
 hp = 4;
 wallCheck = false;

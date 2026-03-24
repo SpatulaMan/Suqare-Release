@@ -1,22 +1,22 @@
 lvl 17 - lvl 51
--Briefing - 27,28,29,30,31
--Short briefing - 27,28,29,30,31
--Level Details - 27,28,29,30,31
--Objectives - 27,28,29,30,31
--Result text - 27,28,29,30
--Add To Level Select - 27,28,29,30,31
--Level Design - 27,28,29,30,31
--Starting location - 27,28,29,30,31
--Darkness - 27,28,29,30,31
--Room Names - 27,28,29,30,31
--Backgrounds - 27,28,29,30,31
--New Features/Enemies - 27,28,29,30,31
--Enemy Placement - 27,28,29,30,31
--Map - 27,28,29,30,31
--Gadgets/Weapons - 27,28,29,30,31
--Music - 27,28,29,30,31
--Mid-Level Objectives Complete - 27,28,29,30,31
--Level End Code - 27,28,29,30,31
+	-Briefing
+	-Short briefing
+	-Level Details
+	-Objectives
+-Result text
+	-Add To Level Select
+-Level Design
+-Starting location
+-Darkness
+-Room Names
+-Backgrounds
+-New Features/Enemies
+-Enemy Placement
+-Map
+-Gadgets/Weapons
+	-Music
+	-Mid-Level Objectives Complete
+-Level End Code
 -Testing
 
 

@@ -1,4 +1,4 @@
-if(health > 0 and !keyboard_check_direct(vk_shift))
+if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
 {    
     canMNShoot--;
     if(mgMag > 0 and gunEquip == 3 and canMGShoot < 0 and mgr == false)

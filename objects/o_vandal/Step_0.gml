@@ -27,7 +27,6 @@ if(distance_to_point(x4,y4) < 3 and !gorv)
 	y4 = y1;
 	pch = 0;
 }
-if(
 if(hp < hpc)
 {
 	hpc = hp;

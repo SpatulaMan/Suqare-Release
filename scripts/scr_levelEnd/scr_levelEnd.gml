@@ -47,6 +47,7 @@ function scr_levelEnd(car,range_optional)
 	{
 		o_girl.visible = false;
 	}
+	if(instance_exists(o_scientist)) { if(o_scientist.x < 469 and o_scientist.y > 681) { obj_suq.scientist = true; } }
 	if(car and instance_exists(obj_suq) and !range_optional) 
 	{ 
 		obj_suq.x = x;

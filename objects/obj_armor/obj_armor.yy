@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_armor",
-    "path":"sprites/s_armor/s_armor.yy",
+    "name":"s_armor_2",
+    "path":"sprites/s_armor_2/s_armor_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -14,7 +14,12 @@ else if(sell > 0)
 {
 	sell -= 4;
 }
-if(s < 0)
+b = "";
+show = false;
+//obj_suq.showMoney = 200;
+if(s < 45) { b = scr_shop(s+1); }
+show = true;
+/*if(s < 0)
 {
 	s = array_length(item)-1;
 }

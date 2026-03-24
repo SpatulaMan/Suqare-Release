@@ -15,7 +15,7 @@ else if(pp7Have == 1 and ((pp7Amt+ppMag) < ((ammoUp*40)+4)))
 if((pp7Amt+ppMag) > ((ammoUp*40)+4))
 {
 	if(!audio_is_playing(snd_knifespin)) then audio_play_sound(snd_knifespin,5,false,o_saveload.sfxvol);
-	pp7Amt = (ammoUp*40)+(4-pMag);
+	pp7Amt = (ammoUp*40)+(4-ppMag);
 }
 if(gunEquip == 0 and knifeHave != 1)
 {

@@ -25,107 +25,110 @@ if(ki > 1) { draw_sprite_ext(spr_silverKey,keys[1],roomw*.15,roomh*.05,12,12,0,c
 if(ki > 2) { draw_sprite_ext(spr_silverKey,keys[2],roomw*.25,roomh*.05,12,12,0,c_white,1); }
 showMoney--;
 
-switch(lives)
+if(!instance_exists(o_shop))
 {
-	case 10: draw_sprite_ext(s_lives,0,576,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,432,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,288,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
-	case 9: draw_sprite_ext(s_lives_1,0,576,920,8,8,0,c_white,1);draw_sprite_ext(s_lives,0,432,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,288,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
-	case 8: draw_sprite_ext(s_lives,0,432,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,288,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
-	case 7: draw_sprite_ext(s_lives_1,0,432,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,288,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
-	case 6: draw_sprite_ext(s_lives,0,288,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
-	case 5: draw_sprite_ext(s_lives_1,0,288,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
-	case 4: draw_sprite_ext(s_lives,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
-	case 3: draw_sprite_ext(s_lives_1,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
-	case 2: draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
-	case 1: draw_sprite_ext(s_lives_1,0,0,920,8,8,0,c_white,1); break;
-}
-if(armorlvl1Have == 1 and armorcheck < 20)
-{
-	switch(armorcheck)
+	switch(lives)
 	{
-		case 0: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 1: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 2: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 3: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 4: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 5: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 6: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 7: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 8: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 9: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 10: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 11: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 12: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 13: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 14: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 15: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 16: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
-		case 17: draw_sprite_ext(s_armor,1,0,776,8,8,0,c_white,1); break;
-		case 18: draw_sprite_ext(s_armor,2,0,776,8,8,0,c_white,1); break;
-		case 19: draw_sprite_ext(s_armor,3,0,776,8,8,0,c_white,1); break;
+		case 10: draw_sprite_ext(s_lives,0,576,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,432,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,288,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
+		case 9: draw_sprite_ext(s_lives_1,0,576,920,8,8,0,c_white,1);draw_sprite_ext(s_lives,0,432,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,288,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
+		case 8: draw_sprite_ext(s_lives,0,432,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,288,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
+		case 7: draw_sprite_ext(s_lives_1,0,432,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,288,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
+		case 6: draw_sprite_ext(s_lives,0,288,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
+		case 5: draw_sprite_ext(s_lives_1,0,288,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
+		case 4: draw_sprite_ext(s_lives,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
+		case 3: draw_sprite_ext(s_lives_1,0,144,920,8,8,0,c_white,1); draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
+		case 2: draw_sprite_ext(s_lives,0,0,920,8,8,0,c_white,1); break;
+		case 1: draw_sprite_ext(s_lives_1,0,0,920,8,8,0,c_white,1); break;
 	}
-}
-if(armorlvl2Have == 1 and armorcheck < 16)
-{
-	switch(armorcheck)
+	if(armorlvl1Have == 1 and armorcheck < 20)
 	{
-		case 0: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
-		case 1: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
-		case 2: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
-		case 3: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
-		case 4: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
-		case 5: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
-		case 6: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
-		case 7: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
-		case 8: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
-		case 9: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
-		case 10: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
-		case 11: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
-		case 12: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
-		case 13: draw_sprite_ext(s_armor,1,144,776,8,8,0,c_white,1); break;
-		case 14: draw_sprite_ext(s_armor,2,144,776,8,8,0,c_white,1); break;
-		case 15: draw_sprite_ext(s_armor,3,144,776,8,8,0,c_white,1); break;
+		switch(armorcheck)
+		{
+			case 0: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 1: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 2: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 3: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 4: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 5: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 6: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 7: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 8: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 9: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 10: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 11: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 12: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 13: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 14: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 15: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 16: draw_sprite_ext(s_armor,0,0,776,8,8,0,c_white,1); break;
+			case 17: draw_sprite_ext(s_armor,1,0,776,8,8,0,c_white,1); break;
+			case 18: draw_sprite_ext(s_armor,2,0,776,8,8,0,c_white,1); break;
+			case 19: draw_sprite_ext(s_armor,3,0,776,8,8,0,c_white,1); break;
+		}
 	}
-}
-if(armorlvl3Have == 1 and armorcheck < 12)
-{
-	switch(armorcheck)
+	if(armorlvl2Have == 1 and armorcheck < 16)
 	{
-		case 0: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
-		case 1: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
-		case 2: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
-		case 3: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
-		case 4: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
-		case 5: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
-		case 6: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
-		case 7: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
-		case 8: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
-		case 9: draw_sprite_ext(s_armor,1,288,776,8,8,0,c_white,1); break;
-		case 10: draw_sprite_ext(s_armor,2,288,776,8,8,0,c_white,1); break;
-		case 11: draw_sprite_ext(s_armor,3,288,776,8,8,0,c_white,1); break;
+		switch(armorcheck)
+		{
+			case 0: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
+			case 1: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
+			case 2: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
+			case 3: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
+			case 4: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
+			case 5: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
+			case 6: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
+			case 7: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
+			case 8: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
+			case 9: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
+			case 10: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
+			case 11: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
+			case 12: draw_sprite_ext(s_armor,0,144,776,8,8,0,c_white,1); break;
+			case 13: draw_sprite_ext(s_armor,1,144,776,8,8,0,c_white,1); break;
+			case 14: draw_sprite_ext(s_armor,2,144,776,8,8,0,c_white,1); break;
+			case 15: draw_sprite_ext(s_armor,3,144,776,8,8,0,c_white,1); break;
+		}
 	}
-}
-if(armorlvl4Have == 1 and armorcheck < 8)
-{
-	switch(armorcheck)
+	if(armorlvl3Have == 1 and armorcheck < 12)
 	{
-		case 0: draw_sprite_ext(s_armor,0,432,776,8,8,0,c_white,1); break;
-		case 1: draw_sprite_ext(s_armor,0,432,776,8,8,0,c_white,1); break;
-		case 2: draw_sprite_ext(s_armor,0,432,776,8,8,0,c_white,1); break;
-		case 3: draw_sprite_ext(s_armor,0,432,776,8,8,0,c_white,1); break;
-		case 4: draw_sprite_ext(s_armor,0,432,776,8,8,0,c_white,1); break;
-		case 5: draw_sprite_ext(s_armor,1,432,776,8,8,0,c_white,1); break;
-		case 6: draw_sprite_ext(s_armor,2,432,776,8,8,0,c_white,1); break;
-		case 7: draw_sprite_ext(s_armor,3,432,776,8,8,0,c_white,1); break;
+		switch(armorcheck)
+		{
+			case 0: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
+			case 1: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
+			case 2: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
+			case 3: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
+			case 4: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
+			case 5: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
+			case 6: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
+			case 7: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
+			case 8: draw_sprite_ext(s_armor,0,288,776,8,8,0,c_white,1); break;
+			case 9: draw_sprite_ext(s_armor,1,288,776,8,8,0,c_white,1); break;
+			case 10: draw_sprite_ext(s_armor,2,288,776,8,8,0,c_white,1); break;
+			case 11: draw_sprite_ext(s_armor,3,288,776,8,8,0,c_white,1); break;
+		}
 	}
-}
-if(armorlvl5Have == 1 and armorcheck < 4)
-{
-	switch(armorcheck)
+	if(armorlvl4Have == 1 and armorcheck < 8)
 	{
-		case 0: draw_sprite_ext(s_armor,0,576,776,8,8,0,c_white,1); break;
-		case 1: draw_sprite_ext(s_armor,1,576,776,8,8,0,c_white,1); break;
-		case 2: draw_sprite_ext(s_armor,2,576,776,8,8,0,c_white,1); break;
-		case 3: draw_sprite_ext(s_armor,3,576,776,8,8,0,c_white,1); break;
+		switch(armorcheck)
+		{
+			case 0: draw_sprite_ext(s_armor,0,432,776,8,8,0,c_white,1); break;
+			case 1: draw_sprite_ext(s_armor,0,432,776,8,8,0,c_white,1); break;
+			case 2: draw_sprite_ext(s_armor,0,432,776,8,8,0,c_white,1); break;
+			case 3: draw_sprite_ext(s_armor,0,432,776,8,8,0,c_white,1); break;
+			case 4: draw_sprite_ext(s_armor,0,432,776,8,8,0,c_white,1); break;
+			case 5: draw_sprite_ext(s_armor,1,432,776,8,8,0,c_white,1); break;
+			case 6: draw_sprite_ext(s_armor,2,432,776,8,8,0,c_white,1); break;
+			case 7: draw_sprite_ext(s_armor,3,432,776,8,8,0,c_white,1); break;
+		}
+	}
+	if(armorlvl5Have == 1 and armorcheck < 4)
+	{
+		switch(armorcheck)
+		{
+			case 0: draw_sprite_ext(s_armor,0,576,776,8,8,0,c_white,1); break;
+			case 1: draw_sprite_ext(s_armor,1,576,776,8,8,0,c_white,1); break;
+			case 2: draw_sprite_ext(s_armor,2,576,776,8,8,0,c_white,1); break;
+			case 3: draw_sprite_ext(s_armor,3,576,776,8,8,0,c_white,1); break;
+		}
 	}
 }
 if(healthPacks >= 0)

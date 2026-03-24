@@ -34,6 +34,7 @@ if(true)
 		case 28: b = scr_briefing(152); b2 = scr_briefing(153); ot1 = scr_briefing(154); obj_suq.lvl = 28; break;
 		case 29: b = scr_briefing(158); b2 = scr_briefing(159); ot1 = scr_briefing(160); obj_suq.lvl = 29; break;
 		case 30: b = scr_briefing(164); b2 = scr_briefing(165); ot1 = scr_briefing(166); obj_suq.lvl = 30; break;
+		case 31: b = scr_briefing(170); b2 = scr_briefing(171); ot1 = scr_briefing(172); obj_suq.lvl = 31; break;
 	}
 	if(keyboard_check_pressed(ord("E")))
 	{

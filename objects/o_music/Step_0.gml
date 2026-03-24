@@ -113,7 +113,7 @@ if(instance_exists(o_lvlStart))
 		mCheck = false;
 	}
 	if(o_lvlStart.speed > 0 and (o_lvlStart.r == r_lvl_5 or o_lvlStart.r == r_lvl_11 or o_lvlStart.r == r_lvl_18 or o_lvlStart.r == r_lvl_19 or o_lvlStart.r == r_lvl_22 or
-		o_lvlStart.r == r_lvl_24 or o_lvlStart.r == r_lvl_25 or o_lvlStart.r == r_lvl_26 or o_lvlStart.r == r_lvl_29) and mCheck == true)
+		o_lvlStart.r == r_lvl_24 or o_lvlStart.r == r_lvl_25 or o_lvlStart.r == r_lvl_26 or o_lvlStart.r == r_lvl_29/* or o_lvlStart.r == r_lvl_32*/) and mCheck == true)
 	{
 		//if(audio_is_playing(s2))
 		//{
@@ -306,7 +306,7 @@ if(room == r_lvl_4)
 		}
 	}
 }
-if(room == r_lvl_5 or room == r_lvl_22 or room == r_lvl_24 or room == r_lvl_25 or room == r_lvl_26 or room == r_lvl_29)
+if(room == r_lvl_5 or room == r_lvl_22 or room == r_lvl_24 or room == r_lvl_25 or room == r_lvl_26 or room == r_lvl_29 or room == r_lvl_19 or room == r_lvl_31)
 {
 	if(mCheck2 == false and mCheck3 == false)
 	{

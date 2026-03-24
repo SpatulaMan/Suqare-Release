@@ -41,3 +41,6 @@ w[38] = s_money;
 w[39] = s_ammoS_1;//new ammo bag sprite
 w[40] = s_gunMax_1;//all weapons like ammo upgrade
 w[41] = s_turretAmmo;//all turrets like ammo upgrade
+w[42] = spr_sprintBoots;
+w[43] = s_rcCar;
+w[44] = spr_silencedPP7;
