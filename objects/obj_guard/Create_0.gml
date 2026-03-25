@@ -1,4 +1,3 @@
-alarm_set(11,1);
 alarm_set(6,120);
 shtspd = 60;
 shootCheck = shtspd;
@@ -52,3 +51,4 @@ restart_patrol = false;
 perez_time = 360;
 perez_check = false;
 spr = s_enemy_1;
+alarm_set(11,1);

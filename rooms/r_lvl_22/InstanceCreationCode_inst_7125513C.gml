@@ -1,5 +1,6 @@
 weapon_type = choose(obj_pistol,obj_magnum,obj_machineGun,obj_shotgun,obj_assaultRifle);
 drop_gun = choose(true,false,true);
+hp = 4;
 weapon_spd = 6;
 image_blend = c_green;
 switch(weapon_type)

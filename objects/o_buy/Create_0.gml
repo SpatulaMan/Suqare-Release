@@ -32,7 +32,6 @@ if(instance_exists(o_shop) and image_index != 2)
 		case 36: image_index = 0; break;
 		case 37: image_index = 0; break;
 		case 38: image_index = 0; break;
-		case 19: if(obj_suq.progress > 5) { image_index = 0; } else { image_index = 2; } break;
 		case 19: if(obj_suq.progress > 5 and obj_suq.ph == 1) { image_index = 0; } else { image_index = 2; } break;
 		case 20: if(obj_suq.progress > 5 and obj_suq.mh == 1) { image_index = 0; } else { image_index = 2; } break;
 		case 21: if(obj_suq.progress > 5 and obj_suq.mgh == 1) { image_index = 0; } else { image_index = 2; } break;

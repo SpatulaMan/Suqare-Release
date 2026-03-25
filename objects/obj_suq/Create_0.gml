@@ -28,6 +28,7 @@ ammoUp = o_saveload.ammoUp;
 hprem = o_saveload.hprem;
 ninjaClan = o_saveload.ninjaClan;
 ninjaBenefit = 0;
+ninjaHeal = false;
 contraband = o_saveload.contraband;
 cricle = o_saveload.cricle;
 knifeHave = 0;

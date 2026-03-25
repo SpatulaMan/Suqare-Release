@@ -701,6 +701,7 @@
     {"name":"s_lvl13map","order":18,"path":"sprites/s_lvl13map/s_lvl13map.yy",},
     {"name":"s_lvl19map","order":20,"path":"sprites/s_lvl19map/s_lvl19map.yy",},
     {"name":"s_lvl1map","order":6,"path":"sprites/s_lvl1map/s_lvl1map.yy",},
+    {"name":"s_lvl22map","order":36,"path":"sprites/s_lvl22map/s_lvl22map.yy",},
     {"name":"s_lvl29map","order":33,"path":"sprites/s_lvl29map/s_lvl29map.yy",},
     {"name":"s_lvl2map","order":4,"path":"sprites/s_lvl2map/s_lvl2map.yy",},
     {"name":"s_lvl30map","order":34,"path":"sprites/s_lvl30map/s_lvl30map.yy",},

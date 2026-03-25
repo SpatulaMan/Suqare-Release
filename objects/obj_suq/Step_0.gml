@@ -726,12 +726,13 @@ if(room == r_range or (room == r_skill1 and !instance_exists(o_skobj)) or (room 
 	rocketTur = t5;
 	lives = lb;
 }
+if(lives <= 2 and ninjaHeal) { lives = 10; ninjaHeal = false; }
 if(ninjaBenefit > 0 and instance_exists(o_lvlEnd))
 {
 	switch(ninjaBenefit)
 	{
 		case 0: break;//nothing 
-		case 1: if(lives <= 2) { lives = 10; ninjaBenefit = 0; } 
+		case 1: ninjaHeal = true; ninjaBenefit = 0; 
 				var _c1 = instance_create_layer(x,y,"Instances_Action",o_conversation); 
 				_c1.h = 55; break;
 		case 2: spd = 2.5; 

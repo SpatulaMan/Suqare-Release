@@ -1,5 +1,5 @@
 /// @description
-m = 3;//3 minute timer
+m = 5;//5 minute timer
 s = 0;
 ml = 0;
 alarm_set(1,6);

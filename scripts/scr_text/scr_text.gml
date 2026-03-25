@@ -937,7 +937,7 @@ function scr_briefing(t){
 			Current Standing With
 			Ungulate Studios: "+string(obj_suq.ungulate)+
 			@"
-			Combat Difficulty: 8
+			Combat Difficulty: 11
 			Mental Difficulty: 3
 			Locked Doors: 0
 			Req. Locked Doors: 0
@@ -1628,8 +1628,8 @@ function scr_conversation(t)
 	a[43] = @"Congratulations on becoming a Horoban ninja. You may gaze upon the beauty of the Jewel of Barfo, our prized
 			posession. It has been with us for many generations. You will enjoy a great many benefits from being in our clan, 
 			but you must prove your loyalty by having the self control to not steal the jewel. It has power over most weak-
-			minded men and even those who claim to be intelligent and steadfast. If you can leave this place without trying
-			to take the jewel, the power of the Horoban clan will be with you always. Consider carefully. ";
+			minded people and even those who claim to be intelligent and steadfast. If you can leave this place without 
+			trying to take the jewel, the power of the Horoban clan will be with you always. Consider carefully. ";
 	a[44] = @"PSSST! Hey!
 			I'm talking to you. Yeah, you, Suqare. 
 			My name is Cricle. I need you to grab at least 30 boxes of that contraband for a... project... that I have going

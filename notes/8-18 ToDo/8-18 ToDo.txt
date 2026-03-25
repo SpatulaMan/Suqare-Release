@@ -6,7 +6,7 @@
 
 -Finish all 51 levels - 20 levels left
 
--Playtest and bug-fix levels - 31 levels left
+-Playtest and bug-fix levels - 30 levels left
 
 -When you're on Cricle's bad side, there will be a chance to spawn several enemies near your vehicle to attack you. Text will show up saying, "Cricle sends his regards"
 and then the textbox and o_conversation will be destroyed. 
