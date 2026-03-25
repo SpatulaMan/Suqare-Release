@@ -276,7 +276,7 @@ if(obj_suq.rc == true)
 	wp[43] = true;
 	r15c2.image_index = 2;
 }
-if(obj_suq.ppda == true)
+if(obj_suq.ppda == 4)
 {
 	wp[44] = true;
 	r10c2.image_index = 2;

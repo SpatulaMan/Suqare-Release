@@ -14,6 +14,61 @@ function scr_levelEnd(car,range_optional)
 			o_saveload.pnetp = o_saveload.pnet;
 			o_saveload.ynetp = o_saveload.ynet;
 			o_saveload.hnetp = o_saveload.hnet;
+			switch(obj_suq.progress)
+			{
+				case 0: o_saveload.valueC += choose(50,-100,-200,-50); break;
+				case 1: o_saveload.valueC += choose(50,-100,-200,-50); break;
+				case 2: o_saveload.valueC += choose(-50,100,-200); break;
+				case 3: o_saveload.valueC += choose(-50,-100,200,-50); break;
+				case 4: o_saveload.valueC += choose(-50,100,200,-500); break;
+				case 5: o_saveload.valueC += choose(500,-100,200,-200,-100); break;
+				case 6: o_saveload.valueC += choose(1000,500,2000); break;
+				case 7: o_saveload.valueC += choose(50,100,500,-50); break;
+				case 8: o_saveload.valueC += choose(50,1000); break;
+				case 9: o_saveload.valueC += choose(50,-100,-200,-400); break;
+				case 10: o_saveload.valueC += choose(-50,1600,200); break;
+				case 11: o_saveload.valueC += choose(100,-1000,-300); break;
+				case 12: o_saveload.valueC += choose(500,1000,2000,-500); break;
+				case 13: o_saveload.valueC += choose(5000,-100,300,-50); break;
+				case 14: o_saveload.valueC += choose(100,2100); break;
+				case 15: o_saveload.valueC += choose(100,-200,-50); break;
+				case 16: o_saveload.valueC += choose(50,-100,200,-800); break;
+				case 17: o_saveload.valueC += choose(50,1050,600); break;
+				case 18: o_saveload.valueC += choose(100,3200,-50); break;
+				case 19: o_saveload.valueC += choose(50,100,-200,-1400); break;
+				case 20: o_saveload.valueC += choose(-500,-1000,-2000,-900); break;
+				case 21: o_saveload.valueC += choose(500,3000,2000); break;
+				case 22: o_saveload.valueC += choose(50,1600,-200,-50); break;
+				case 23: o_saveload.valueC += choose(50,1700,200,3000); break;
+				case 24: o_saveload.valueC += choose(50,-500,200,-50); break;
+				case 25: o_saveload.valueC += choose(100,200,-500); break;
+				case 26: o_saveload.valueC += choose(300,100,200,-50); break;
+				case 27: o_saveload.valueC += choose(50,-1000,200,-500); break;
+				case 28: o_saveload.valueC += choose(50,-700,-3500); break;
+				case 29: o_saveload.valueC += choose(200,1050,200,-600); break;
+				case 30: o_saveload.valueC += -5000; break;
+				case 31: o_saveload.valueC += choose(100,200,1500); break;
+				case 32: o_saveload.valueC += choose(50,100,2400,-1000); break;
+				case 33: o_saveload.valueC += choose(5100,200); break;
+				case 34: o_saveload.valueC += choose(100,200,-50); break;
+				case 35: o_saveload.valueC += choose(500,100,200,-500); break;
+				case 36: o_saveload.valueC += choose(50,100,200); break;
+				case 37: o_saveload.valueC += choose(100,200,-50); break;
+				case 38: o_saveload.valueC += choose(4000,7000,9000); break;
+				case 39: o_saveload.valueC += choose(-1000,200,-2000); break;
+				case 40: o_saveload.valueC += choose(50,-100,900); break;
+				case 41: o_saveload.valueC += choose(50,1200,200,-500); break;
+				case 42: o_saveload.valueC += choose(100,2400,-500); break;
+				case 43: o_saveload.valueC += choose(50,-1040,200); break;
+				case 44: o_saveload.valueC += choose(500,1100,2800); break;
+				case 45: o_saveload.valueC += choose(1000,200,6000); break;
+				case 46: o_saveload.valueC += choose(500,4100,200); break;
+				case 47: o_saveload.valueC += choose(2000,3000); break;
+				case 48: o_saveload.valueC += choose(500,1400,2600,-500); break;
+				case 49: o_saveload.valueC += choose(100,700,-4000); break;
+				case 50: o_saveload.valueC += choose(50,4500,2000,-50); break;
+				case 51: o_saveload.valueC += choose(5000,1000,2000); break;
+			}
 			alarm_set(0,120); 
 			if(obj_suq.magnumHave > 0)
 				obj_suq.mh = 1;
@@ -58,6 +113,12 @@ function scr_levelEnd(car,range_optional)
 		else { direction = 0; }
 		speed = 8;
 		obj_suq.progress++;
+		if(o_saveload.knet <= 0) { o_saveload.knet = -1000; }
+		if(o_saveload.unet <= 0) { o_saveload.unet = -1000; }
+		if(o_saveload.gnet <= 0) { o_saveload.gnet = -1000; }
+		if(o_saveload.pnet <= 0) { o_saveload.pnet = -1000; }
+		if(o_saveload.ynet <= 0) { o_saveload.ynet = -1000; }
+		if(o_saveload.hnet <= 0) { o_saveload.hnet = -1000; }
 		if(car) { o_lvlEnd.check = false; }
 		switch(room)
 		{
@@ -709,7 +770,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.ynet -= 5;
 					obj_suq.yellerteeth -= 1;
 				}
-				else if(instance_exists(o_guard_replace) and o_lvl21.accPoints > 120 and o_lvl21.spdPoints >= 165 and o_lvl21.evPoints >= 90 and !instance_exists(obj_darkness))
+				else if(instance_exists(o_guard_replace) and o_lvl21.accPoints > 120 and o_lvl21.spdPoints >= 165 and o_lvl21.evPoints >= 110 and !instance_exists(obj_darkness))
 				{
 					obj_suq.report = 61;
 					o_saveload.ynet -= 5;

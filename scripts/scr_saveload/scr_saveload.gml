@@ -114,7 +114,9 @@ function save()
 		paints3: obj_suq.paints3,
 		spdup: obj_suq.spdup,
 		rc: obj_suq.rc,
-		ppda: obj_suq.ppda
+		ppda: obj_suq.ppda,
+		valueC: o_saveload.valueC,
+		collect: o_saveload.collect
 		
 		//upgrades
 		
@@ -349,6 +351,10 @@ function load(_f)
 			o_saveload.rc=_struct.rc;
 		if (struct_exists(_struct, "ppda"))
 			o_saveload.ppda=_struct.ppda;
+		if (struct_exists(_struct, "valueC"))
+			o_saveload.valueC=_struct.valueC;
+		if (struct_exists(_struct, "collect"))
+			o_saveload.collect=_struct.collect;
 		
 		//levels that are incompleted and are available to the player currently in variables 
 		
@@ -461,7 +467,9 @@ function load(_f)
 			scientist: false,
 			spdup: false,
 			rc: false,
-			ppda: 1
+			ppda: 1,
+			valueC: 2000,
+			collect: true
 		
 		}
 	

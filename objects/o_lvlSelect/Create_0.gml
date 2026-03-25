@@ -113,6 +113,7 @@ switch(prog)
 			if(obj_suq.lvldone[17] == false and obj_suq.hiertech > -4) { array_insert(lvl,t,17); t++; }
 			if(obj_suq.lvldone[18] == false and obj_suq.perez > -2) { array_insert(lvl,t,18); t++; }
 			array_insert(lvl,t,19); t++;
+			array_insert(lvl,t,20); t++; 
 			if(obj_suq.lvldone[21] == false) { array_insert(lvl,t,21); t++; }
 			if(obj_suq.lvldone[22] == false) { array_insert(lvl,t,22); t++; }
 			if(obj_suq.lvldone[23] == false) { array_insert(lvl,t,23); t++; }

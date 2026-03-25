@@ -6,6 +6,11 @@ if(swordHave == 1 and swordCH < 120)
 {
 	swordCH++;
 }
+else if(swordHave == 1 and swordCH > 119 and swordCH < 121)
+{
+	swordCH = 121;
+	audio_play_sound(snd_heal,1,false,.6*o_saveload.sfxvol,0,3);
+}
 if(spd > 2 and room == r_lvl_13)
 {
 	spd -= 0.0005;
@@ -721,7 +726,7 @@ if(room == r_range or (room == r_skill1 and !instance_exists(o_skobj)) or (room 
 	rocketTur = t5;
 	lives = lb;
 }
-if(ninjaBenefit > 0)
+if(ninjaBenefit > 0 and instance_exists(o_lvlEnd))
 {
 	switch(ninjaBenefit)
 	{

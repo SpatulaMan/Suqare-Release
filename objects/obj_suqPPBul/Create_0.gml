@@ -4,3 +4,6 @@ r = 0;
 damage = 4*obj_suq.ppda;
 hp = 4;
 wallCheck = false;
+image_speed = 0
+if(obj_suq.ppda == 4) { image_index = 1; }
+else { image_index = 0; }

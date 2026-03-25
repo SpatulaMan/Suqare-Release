@@ -227,6 +227,10 @@ if(rocketTur > 0 and gadget == 10 and room != r_armory)
 	draw_sprite_ext(s_turretR,0,1550,145,15,15,0,c_white,1);
 	draw_text_transformed_colour(1450,80,string_hash_to_newline(string(rocketTur)),3,3,0,_c,_c,_c,_c,1);
 }
+if(rc and gadget == 11 and room != r_armory)
+{
+	draw_sprite_ext(s_rcCar,0,1550,145,15,15,0,c_white,1);
+}
 if(pistolHave == 1 and gunEquip == 1)
 {
 	if(((keyboard_check_pressed(ord("R")) and pMag < pmr) or (pMag == 0)) and pistolAmt > 0 and pr == false)
@@ -470,7 +474,8 @@ if(pp7Have == 1 and gunEquip == 14)
 	if(pp7Amt == 0) { ppr = false; }
     draw_text_transformed_colour(1600,940,string_hash_to_newline("" + string(ppMag) + "|" + string(pp7Amt) + " "),3,3,0,c_dkgray,c_dkgray,c_dkgray,c_dkgray,1);
 	//draw_sprite_ext(spr_silencedPP7,0,1700,940,10,10,0,c_white,1);
-	draw_sprite_stretched(spr_silencedPP7,0,1600,940,21*10,10*10);
+	if(ppda == 4) { draw_sprite_stretched(spr_silencedPP7,1,1600,940,21*10,10*10); }
+	else { draw_sprite_stretched(spr_silencedPP7,0,1600,940,21*10,10*10); }
 	pp1 = true;
 }
 if(pickup_timer > 0)

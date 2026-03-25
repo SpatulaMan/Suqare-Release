@@ -920,7 +920,7 @@ function scr_briefing(t){
 	a[116] = @"Steal Jewel";
 	a[117] = @"BRIEFING:
 			Hiertech's at it again. His posse of contraband runners is 
-			planning to load up again soon. Your job is to stop them.
+			planning to load up soon. Your job is to stop them.
 
 			You will have just a few minutes to stop all 4 cars from 
 			leaving. You'll need to locate them and kill the guards 
@@ -1602,7 +1602,7 @@ function scr_conversation(t)
 	{
 		a[40] = @"This is the Accuracy Test. You will have 20 seconds to throw shurikens at the moving targets. The further they're
 				away from you, the more points they're worth. But, if you miss, that will be counted against you. If you get a high
-				enough score, we will give you one of the 3 keys necessary to see the jewel of barfo and become a ninja. 
+				enough score, we will give you one of the 3 keys necessary to see the jewel of barfo and become a Horoban ninja. 
 				Front - 1 Point
 				Middle - 3 Points
 				Back - 9 points
@@ -1612,14 +1612,14 @@ function scr_conversation(t)
 				Press F to start test";//barfo
 		a[41] = @"This is the Speed Throwing Test. You will have 20 seconds to throw shurikens at the dummy as fast as you can. You
 				will get 1 point for every shuriken in the dummy at the end of the time. If you obtain a high enough score, we will
-				give you one of the 3 keys necessary to see the jewel of barfo and become a ninja. 
+				give you one of the 3 keys necessary to see the jewel of barfo and become a Horoban ninja. 
 			
 				Highscore: " + string(o_lvl21.spdPoints) + @"
 			
 				Press F to start test";//barfo
-		a[42] = @"This is the Evasion Test. You will have shurikens thrown at you for 20 seconds. You will start with 100 points, 
-				and for each shuriken you don't dodge, you'll lose 1 point. If you can reach a high enough score, we will give you 
-				one of the 3 keys necessary to see the jewel of barfo and become a ninja. 
+		a[42] = @"This is the Evasion Test. You will have shurikens thrown at you for 20 seconds. You will gain 6 points every 
+				second, and for each shuriken you don't dodge, you'll lose 1 point. If you can reach a high enough score, we will 
+				give you one of the 3 keys necessary to see the jewel of barfo and become a Horoban ninja. 
 			
 				Highscore: " + string(o_lvl21.evPoints) + @"
 			
@@ -1666,7 +1666,17 @@ function scr_conversation(t)
 	a[58] = @"The Horoban Clan sends their regards, faithful recruit.
 	
 			Enjoy the dividends of being a member of our clan. Here's $500 cash.";//drop 500 cash
-	a[59] = @"";
+	if(instance_exists(o_collect))
+	{
+		a[59] = @"Your favorite Action Figure of your childhood. Maybe it'll be worth a lot some day. Who knows. The market
+				fluctuates a lot. 
+			
+				Do you want to sell it? 
+			
+				Valuation: $" + string(o_collect.valueC) + @"
+			
+				Press Spacebar to sell";//Sell Collectible
+	}
 	a[60] = @"Yellen Egbert II:
 			Oh, no! My butler is dead and the 'esmerelda' has been stolen! Whoever could have done such a thing? Suqare, could 
 			you please investigate and figure out who did this? I would be forever in your debt. My guards already locked all 
@@ -2283,17 +2293,20 @@ function scr_shop(t){
 			$24000"; 
 	o[43] = @"Speed Boots
 	
+	
 			Description: Increases base movement speed considerably
 			
 			$28000"; 
 	o[44] = @"RC Car
 	
+	
 			Description: Gives you access to a surveillance RC car. It
 			can drive under doors and it comes equipped with a camera
 			to see what it sees. 
 			
-			Battery Life: 15 seconds
-			Cooldown: 60 seconds
+			To redeploy, pick up the rc car from where it stopped. 
+			
+			Battery Life: 30 seconds per use
 			
 			@12000"; 
 	o[45] = @"PP9 Upgrade
@@ -2308,7 +2321,7 @@ function scr_shop(t){
 			Bullet Magnetism: 40
 			
 			
-			$6800"; 
+			$7000"; 
 	o[46] = @""; 
 	o[47] = @""; 
 	o[48] = @""; 

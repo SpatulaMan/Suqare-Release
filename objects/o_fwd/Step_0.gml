@@ -1,9 +1,23 @@
 /// @description
-if(place_meeting(x,y,obj_wall))
+if(instance_exists(o_rcCar))
 {
-	go = false;
+	if(place_meeting(x,y,obj_wall) and !place_meeting(x,y,obj_wallWood))
+	{
+		go = false;
+	}
+	else
+	{
+		go = true;
+	}
 }
 else
 {
-	go = true;
+	if(place_meeting(x,y,obj_wall))
+	{
+		go = false;
+	}
+	else
+	{
+		go = true;
+	}
 }

@@ -190,11 +190,12 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
 		if(swordCH >= 120)
 		{
 			swordCH = 0;
-			var _snbul = instance_create_layer(x,y,"Instances_Action",obj_suqSRBul);
-			_snbul.sprite_index = s_lightning;
-			_snbul.image_blend = c_yellow;
+			var _snbul = instance_create_layer(x,y,"Instances_Action",o_lightningXY);
+			//_snbul.sprite_index = s_lightning;
+			//_snbul.image_blend = c_yellow;
+			_snbul.speed = 10;
+			_snbul.direction = point_direction(x,y,mouse_x,mouse_y);
 			_snbul.image_angle = point_direction(x,y,mouse_x,mouse_y);
-			audio_play_sound(snd_magnum,1,false,2.5*o_saveload.sfxvol,0,.4);
 		}
         alarm_set(7,15);
 	}
@@ -279,6 +280,11 @@ if(keyboard_check_direct(vk_shift) and room != r_armory)
 			audio_play_sound(snd_fire,10,false,3*o_saveload.sfxvol,0,.5);
 			attract++;
 			alarm_set(2,1800);
+		}
+		case 11: if(rc)
+		{
+			rc = false;
+			instance_create_layer(x,y,"Instances_Action",o_rcCar);
 		}
 	}
 }

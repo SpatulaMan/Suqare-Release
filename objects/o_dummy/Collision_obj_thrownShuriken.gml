@@ -3,7 +3,7 @@ other.speed = 0;
 with (other) instance_change(obj_shuriken,true);
 if(instance_exists(o_lvl21))
 {
-	if(o_lvl21.m > 0 or o_lvl21.s > 0 or o_lvl21.ml > 0)
+	if(o_lvl21.start == true)
 	{
 		switch(mode)
 		{

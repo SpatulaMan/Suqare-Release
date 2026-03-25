@@ -361,7 +361,7 @@ function scr_gadgetswitch(_dir)
 			    {
 			        gadget++;
 			    }
-				if(gadget == 11)
+				if(gadget == 11 and rc == false)
 			    {
 			        gadget++;
 			    }
@@ -413,7 +413,7 @@ function scr_gadgetswitch(_dir)
 			    {
 			        gadget++;
 			    }
-				if(gadget == 11)
+				if(gadget == 11 and rc == false)
 			    {
 			        gadget++;
 			    }
@@ -430,7 +430,7 @@ function scr_gadgetswitch(_dir)
 			    {
 			        gadget--;
 			    }
-				if(gadget == 11)
+				if(gadget == 11 and rc == false)
 			    {
 			        gadget--;
 			    }
@@ -482,7 +482,7 @@ function scr_gadgetswitch(_dir)
 			    {
 			        gadget--;
 			    }
-				if(gadget == 11)
+				if(gadget == 11 and rc == false)
 			    {
 			        gadget--;
 			    }
