@@ -1,3 +1,3 @@
 /// @description
 check = false;
-t = 400;
+t = 1200;

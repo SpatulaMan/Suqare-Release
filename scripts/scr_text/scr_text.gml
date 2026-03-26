@@ -2317,7 +2317,7 @@ function scr_shop(t){
 			Damage: 4
 			Bullet Magnetism: 10
 			    |
-			Damage: 16
+			Damage: 8
 			Bullet Magnetism: 40
 			
 			

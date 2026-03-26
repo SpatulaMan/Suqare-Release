@@ -15,9 +15,12 @@ if(room != r_lvl_3 and room != r_lvl_6)
 			{
 				var _od = instance_find(obj_darkness,i);
 				if(_od == id) { i++; _od = instance_find(obj_darkness,i); }
-				if(_od.con == con)
+				if(instance_exists(_od))
 				{
-					with (_od) instance_change(obj_darknessP,true);
+					if(_od.con == con)
+					{
+						with (_od) instance_change(obj_darknessP,true);
+					}
 				}
 			}
 		}

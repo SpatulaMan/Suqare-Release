@@ -1,5 +1,5 @@
 weapon_type = obj_shotgun;
-hp = 40;
+hp = 120;
 drop_gun = choose(true,false,true);
 weapon_spd = 8;
 switch(weapon_type)
