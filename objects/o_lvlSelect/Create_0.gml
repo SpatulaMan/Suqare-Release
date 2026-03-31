@@ -60,7 +60,7 @@ switch(prog)
 	case 26:
 	case 25:
 	case 24:
-	case 23: if(obj_suq.lvldone[31] == false and obj_suq.scientist) { array_insert(lvl,t,31); t++; }
+	case 23: if(obj_suq.lvldone[31] == false and obj_suq.scientist and obj_suq.tankD == true) { array_insert(lvl,t,31); t++; }
 	case 22: if(obj_suq.lvldone[28] == false and obj_suq.lvldone[29] == false and obj_suq.lvldone[30] == false) { array_insert(lvl,t,28); t++; }
 			if(obj_suq.lvldone[28] == false and obj_suq.lvldone[29] == false and obj_suq.lvldone[30] == false) { array_insert(lvl,t,29); t++; }
 			if(obj_suq.lvldone[28] == false and obj_suq.lvldone[29] == false and obj_suq.lvldone[30] == false) { array_insert(lvl,t,30); t++; }
@@ -87,7 +87,7 @@ switch(prog)
 			if(obj_suq.lvldone[17] == false and obj_suq.lvldone[16] == false) { array_insert(lvl,t,17); t++; }
 	case 7:
 	case 6: if(obj_suq.lvldone[11] == false) { array_insert(lvl,t,11); t++; }
-			if(obj_suq.lvldone[12] == false and obj_suq.lvldone[1] == true) { array_insert(lvl,t,12); t++; }
+			if(obj_suq.lvldone[12] == false and obj_suq.lvldone[1] == true and obj_suq.gemsD > 0) { array_insert(lvl,t,12); t++; }
 			if(obj_suq.lvldone[13] == false) { array_insert(lvl,t,13); t++; }
 			if(obj_suq.lvldone[14] == false) { array_insert(lvl,t,14); t++; }
 	case 5: if(obj_suq.lvldone[6] == false and obj_suq.lvldone[1] == true and obj_suq.gemsD > 0) { array_insert(lvl,t,6); t++; }

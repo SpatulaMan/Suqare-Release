@@ -64,7 +64,7 @@ defenseTur = o_saveload.dtur;
 tearTur = o_saveload.ttur;
 flameTur = o_saveload.ftur;
 rocketTur = o_saveload.rtur;
-progress = o_saveload.progress;
+progress = 40;//o_saveload.progress;
 perez = o_saveload.perez;
 kanker = o_saveload.kanker;
 hiertech = o_saveload.hiertech;
@@ -91,6 +91,7 @@ ppda = o_saveload.ppda;
 rc = o_saveload.rc;
 spdup = o_saveload.spdup;
 gunRange = false;
+tankD = o_saveload.tankD;
 
 lvl = o_saveload.lvl;
 i = 0;

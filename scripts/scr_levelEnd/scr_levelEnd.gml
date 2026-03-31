@@ -14,6 +14,8 @@ function scr_levelEnd(car,range_optional)
 			o_saveload.pnetp = o_saveload.pnet;
 			o_saveload.ynetp = o_saveload.ynet;
 			o_saveload.hnetp = o_saveload.hnet;
+			if(obj_suq.progress >= 6) { o_saveload.pnet -= (3 - o_saveload.software); }
+			if(obj_suq.progress >= 23 and o_saveload.officials == true) { o_saveload.pnet -= 2; }
 			switch(obj_suq.progress)
 			{
 				case 0: o_saveload.valueC += choose(50,-100,-200,-50); break;
@@ -161,7 +163,7 @@ function scr_levelEnd(car,range_optional)
 					{
 						o_saveload.knet += 5;
 						o_saveload.pnet -= 8;
-						obj_suq.kanker += 2;
+						obj_suq.kanker += 1;
 						obj_suq.report = 4;
 					}
 				}
@@ -169,14 +171,14 @@ function scr_levelEnd(car,range_optional)
 				{
 					o_saveload.knet += 10;
 					o_saveload.pnet -= 2;
-					obj_suq.kanker += 3;
+					obj_suq.kanker += 2;
 					o_saveload.moneyT += 800*_emtBill;
 					obj_suq.report = 5;
 					if(!instance_exists(o_safe) == true)
 					{
 						o_saveload.knet += 5;
 						o_saveload.pnet -= 8;
-						obj_suq.kanker += 2;
+						obj_suq.kanker += 1;
 						obj_suq.report = 6;
 					}
 				}
@@ -186,7 +188,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.pnet += 1;
 					if(!instance_exists(o_safe)) { o_saveload.pnet -= 10; }
 					obj_suq.report = 7;
-					obj_suq.kanker -= 1;
+					obj_suq.kanker -= 2;
 				}
 			} break;
 			case r_lvl_3:
@@ -201,7 +203,7 @@ function scr_levelEnd(car,range_optional)
 				{
 					o_saveload.ynet += 10;
 					o_saveload.moneyT += 4700*_emtBill;
-					obj_suq.yellerteeth += 4;
+					obj_suq.yellerteeth += 2;
 					obj_suq.report = 8;
 				}
 				else
@@ -232,7 +234,7 @@ function scr_levelEnd(car,range_optional)
 					{
 						o_saveload.hnet -= 3;
 						o_saveload.unet -= 1;
-						obj_suq.ungulate -= 1;
+						obj_suq.ungulate -= 2;
 						obj_suq.report = 11;
 					}
 				}
@@ -240,7 +242,7 @@ function scr_levelEnd(car,range_optional)
 				{
 					o_saveload.hnet -= 6;
 					o_saveload.unet -= 3;
-					obj_suq.ungulate -= 1;
+					obj_suq.ungulate -= 2;
 					obj_suq.report = 11;
 				}
 			} break;
@@ -273,14 +275,14 @@ function scr_levelEnd(car,range_optional)
 				{
 					o_saveload.hnet -= 7;
 					o_saveload.unet += 4;
-					obj_suq.hiertech -= 2;
+					obj_suq.hiertech -= 3;
 					obj_suq.report = 13;
 				}
 				else if(!instance_exists(o_girl_1) and o_badCar.speed == 0)
 				{
 					o_saveload.hnet -= 6;
 					o_saveload.unet -= 3;
-					obj_suq.hiertech -= 4;
+					obj_suq.hiertech -= 2;
 					obj_suq.report = 14;
 				}
 				else
@@ -306,7 +308,6 @@ function scr_levelEnd(car,range_optional)
 				else if(obj_suq.totems == 3 and instance_exists(obj_ghost) == true and obj_suq.ghostGunHave == 1)//investigated and found totems
 				{
 					o_saveload.moneyT += 1800*_emtBill;
-					obj_suq.ghostGunHave = 0;
 					obj_suq.report = 17;
 				}
 				else if(obj_suq.totems < 3 or obj_suq.ghostGunHave == 0)//failed
@@ -328,6 +329,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += 8500*_emtBill;
 					obj_suq.report = 19;
 					obj_suq.perez += 5;
+					obj_suq.gemsD = 0;
 				}
 				else
 				{
@@ -513,12 +515,14 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.kanker -= 2;
 					o_saveload.moneyT += 7000*_emtBill;
 					o_saveload.pnet += 8;
+					o_saveload.software = 3;
 				}
 				else if(!instance_exists(o_data) and obj_suq.cBackup < 16)
 				{
 					obj_suq.report = 38;
 					o_saveload.knet -= 3;
 					o_saveload.pnet += 1;
+					o_saveload.software = 2;
 				}
 				else if(obj_suq.cBackup == 16 and instance_exists(o_data))
 				{
@@ -526,6 +530,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.perez += 1;
 					o_saveload.knet -= 4;
 					o_saveload.pnet += 2;
+					o_saveload.software = 1;
 				}
 				else if(obj_suq.cBackup < 16 and instance_exists(o_data))
 				{
@@ -879,6 +884,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 71;
 					obj_suq.perez += 2;
 					o_saveload.pnet += 6;
+					o_saveload.officials = true;
 				}
 				else
 				{

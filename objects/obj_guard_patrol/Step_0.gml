@@ -235,7 +235,7 @@ if(hp < hpc)
 	if(hit == true)
 	{
 		_inst = instance_create_layer(x,y,"Instances_Action",o_hurt);
-		_inst.sprite_index = s_hurt_2;
+		if(room == r_lvl_19) { _inst.sprite_index = s_hurt_2; }
 	}
 	if(place_meeting(x,y,o_hurt))
 	{

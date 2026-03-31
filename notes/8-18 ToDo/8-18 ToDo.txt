@@ -15,4 +15,4 @@ and then the textbox and o_conversation will be destroyed.
 
 -Save the ninja artifacts that are stolen. They will determine if you can play the final Yellerteeth level(s): hecto, ring, jewel, vambrace
 
--level where you're swarmed by weak lvl 0 type enemies, but there's hundreds of them. Ammo everywhere. Angry mob about
+-level where you're swarmed by weak lvl 0 type enemies, but there's hundreds of them. Ammo everywhere. Angry mob about (attacking kanker's machine level?)

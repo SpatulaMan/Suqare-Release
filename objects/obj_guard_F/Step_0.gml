@@ -1,4 +1,4 @@
-if(start)
+if(start and instance_exists(weapon))
 {
 	weapon.x = x;
 	weapon.y = y;

@@ -1,8 +1,30 @@
-weapon = instance_create_layer(x,y,"Instances_Action",o_eMachineGun);
+weapon_type = choose(obj_shotgun,obj_assaultRifle);
 sprite_index = s_enemy_2;
-weapon_spd = 6;
-weapon_bul = o_eMGBul;
-weapon_type = obj_machineGun;
-drop_gun = false;
 hp = 16;
-shtspd = 10;
+drop_gun = false;
+weapon_spd = 6;
+switch(weapon_type)
+{
+	case obj_pistol: 
+		weapon = instance_create_layer(x,y,"Instances_Action",o_ePistol); 
+		weapon_bul = o_ePBul;
+		shtspd = 60; break;
+	case obj_magnum: 
+		weapon = instance_create_layer(x,y,"Instances_Action",o_eMagnum); 
+		weapon_bul = o_eMBul;
+		shtspd = 80; break;
+	case obj_machineGun: 
+		weapon = instance_create_layer(x,y,"Instances_Action",o_eMachineGun); 
+		weapon_bul = o_eMGBul;
+		shtspd = 10; break;
+	case obj_shotgun: 
+		weapon = instance_create_layer(x,y,"Instances_Action",o_eShotgun); 
+		weapon_bul = o_eSGBul;
+		shtspd = 80; break;
+	case obj_assaultRifle: 
+		weapon = instance_create_layer(x,y,"Instances_Action",o_eAssault); 
+		weapon_bul = o_eARBul;
+		shtspd = 20; break;
+}
+
+

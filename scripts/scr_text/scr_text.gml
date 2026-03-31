@@ -250,12 +250,7 @@ function scr_briefing(t){
 			
 			I guess it was a ghost creating the disturbance. The only 
 			way to stop one is to find 3 totems and find a specific 
-			kind of weapon. 
-			
-			If you can kill that ghost, I'll double your reward. But,
-			if you can't figure out how to kill it, bring the ghost
-			weapon back to me, and I'll find someone else who can do 
-			it.";
+			kind of weapon.";
 	//level 7
 	var _sc = "";
 	var _sd = "";
@@ -1441,7 +1436,7 @@ function scr_conversation(t)
 			the shop. 
 			
 			Play around with as many gadgets as you can. They are all useful in their own ways, and the quicker you learn what
-			they can all do, the better you'll be as a mercenary. You won't always be better off with more armor or upgraded 
+			they all can do, the better you'll be as a mercenary. You won't always be better off with more armor or upgraded 
 			weapons. See what the job's main objective is and plan accordingly. ";
 	a[5] = @"This is the armory. It stashes all the weaponry that you've acquired over time. If you have a weapon in your 
 			inventory when you exit a mission, it'll be automatically added to your armory to be used at any time. You'll want 
@@ -2134,7 +2129,7 @@ function scr_shop(t){
 			
 			Description: When placed, it will fire at the closest 
 			enemy. It cannot be reloaded, but it can be 
-			repositioned later.
+			repositioned.
 			
 			Stats:
 			Ammo: 30
@@ -2168,7 +2163,7 @@ function scr_shop(t){
 			
 			Description: When placed, it will fire at the closest 
 			enemy that hasn't been tear-gassed. It cannot be 
-			reloaded, but it can be repositioned later. 
+			reloaded, but it can be repositioned. 
 			
 			Stats:
 			Ammo: 15
@@ -2183,7 +2178,7 @@ function scr_shop(t){
 			
 			Description: When placed, it will fire at the closest 
 			enemy, but it has limited range. It cannot be reloaded,
-			but it can be repositioned later. The fire will do damage
+			but it can be repositioned. The fire will do damage
 			over time and stay burning for a while.
 			
 			Stats:
@@ -2201,7 +2196,7 @@ function scr_shop(t){
 			
 			Description: When placed, it will fire at the closest 
 			enemy. It cannot be reloaded, but it can be 
-			repositioned later. The rockets have additional splash
+			repositioned. The rockets have additional splash
 			damage. 
 			
 			Stats:

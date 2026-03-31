@@ -139,3 +139,6 @@ paints2 = false;
 paints3 = false;
 valueC = 2000;
 collect = true;
+tankD = false;
+software = 0;
+officials = false;

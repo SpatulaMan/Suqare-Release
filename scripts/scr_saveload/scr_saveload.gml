@@ -116,7 +116,10 @@ function save()
 		rc: obj_suq.rc,
 		ppda: obj_suq.ppda,
 		valueC: o_saveload.valueC,
-		collect: o_saveload.collect
+		collect: o_saveload.collect,
+		tankD: obj_suq.tankD,
+		software: o_saveload.software,
+		officials: o_saveload.officials
 		
 		//upgrades
 		
@@ -355,6 +358,12 @@ function load(_f)
 			o_saveload.valueC=_struct.valueC;
 		if (struct_exists(_struct, "collect"))
 			o_saveload.collect=_struct.collect;
+		if (struct_exists(_struct, "tankD"))
+			o_saveload.tankD=_struct.tankD;
+		if (struct_exists(_struct, "software"))
+			o_saveload.software=_struct.software;
+		if (struct_exists(_struct, "officials"))
+			o_saveload.officials=_struct.officials;
 		
 		//levels that are incompleted and are available to the player currently in variables 
 		
@@ -469,7 +478,10 @@ function load(_f)
 			rc: false,
 			ppda: 1,
 			valueC: 2000,
-			collect: true
+			collect: true,
+			tankD: false,
+			software: 0,
+			officials: false
 		
 		}
 	
