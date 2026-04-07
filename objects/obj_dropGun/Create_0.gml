@@ -3,6 +3,7 @@ timer_sword = 0;
 timer_shuriken = 0;
 timer_ghost = 0;
 timer_pp7 = 0;
+timer_chainGun = 0;
 if(obj_suq.gunEquip == 1) then { alarm_set(0,60) }
 if(obj_suq.gunEquip == 2) then { alarm_set(1,60) }
 if(obj_suq.gunEquip == 3) then { alarm_set(2,60) }
@@ -18,6 +19,7 @@ if(obj_suq.gunEquip == 11) then { timer_sword = 60; }
 if(obj_suq.gunEquip == 12) then { timer_shuriken = 60; }
 if(obj_suq.gunEquip == 13) then { timer_ghost = 60; }
 if(obj_suq.gunEquip == 14) then { timer_pp7 = 60; }
+if(obj_suq.gunEquip == 15) then { timer_chainGun = 60; }
 alarm_set(8,1);
 rl = false;
 sr = false;

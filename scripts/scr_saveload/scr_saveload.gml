@@ -23,6 +23,7 @@ function save()
 		shurikenHave: obj_suq.shh,
 		ghostGunHave: obj_suq.ggh,
 		pp7Have: obj_suq.pph,
+		chainGunHave: obj_suq.cgh,
 		lastNewWeapon: obj_suq.lnw,
 		money: obj_suq.money,
 		moneyT: o_saveload.moneyT,
@@ -119,7 +120,11 @@ function save()
 		collect: o_saveload.collect,
 		tankD: obj_suq.tankD,
 		software: o_saveload.software,
-		officials: o_saveload.officials
+		officials: o_saveload.officials,
+		convinced: o_saveload.convinced,
+		plant: o_saveload.plant,
+		nMems: o_saveload.nMems,
+		robot: o_saveload.robot
 		
 		//upgrades
 		
@@ -364,6 +369,16 @@ function load(_f)
 			o_saveload.software=_struct.software;
 		if (struct_exists(_struct, "officials"))
 			o_saveload.officials=_struct.officials;
+		if (struct_exists(_struct, "convinced"))
+			o_saveload.convinced=_struct.convinced;
+		if (struct_exists(_struct, "plant"))
+			o_saveload.plant=_struct.plant;
+		if (struct_exists(_struct, "chainGunHave"))
+			o_saveload.chainGunHave=_struct.chainGunHave;
+		if (struct_exists(_struct, "nMems"))
+			o_saveload.nMems=_struct.nMems;
+		if (struct_exists(_struct, "robot"))
+			o_saveload.robot=_struct.robot;
 		
 		//levels that are incompleted and are available to the player currently in variables 
 		
@@ -481,7 +496,12 @@ function load(_f)
 			collect: true,
 			tankD: false,
 			software: 0,
-			officials: false
+			officials: false,
+			convinced: false,
+			plant: false,
+			chainGunHave: 0,
+			nMems: false,
+			robot: true
 		
 		}
 	

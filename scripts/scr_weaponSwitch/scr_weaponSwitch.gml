@@ -16,7 +16,7 @@ function scr_wsup()
 			}
 		    gunEquip--;
 		    if(gunEquip < 0) then { gunEquip = 15; }
-			if(gunEquip == 15)//electron gun
+			if(gunEquip == 15 and chainGunHave != 1)//Chain gun
 		    {
 		        gunEquip--;
 		    }
@@ -80,7 +80,7 @@ function scr_wsup()
 		    {
 		        gunEquip = 15;
 		    }
-			if(gunEquip == 15)//electron gun
+			if(gunEquip == 15 and chainGunHave != 1)//chain gun
 		    {
 		        gunEquip--;
 		    }
@@ -227,7 +227,7 @@ function scr_wsdn()
 		    {
 		        gunEquip++;
 		    }
-			if(gunEquip == 15)//electron gun
+			if(gunEquip == 15 and chainGunHave != 1)//chain gun
 		    {
 		        gunEquip = 0;
 		    }
@@ -291,7 +291,7 @@ function scr_wsdn()
 		    {
 		        gunEquip++;
 		    }
-			if(gunEquip == 15)//electron gun
+			if(gunEquip == 15 and chainGunHave != 1)//chain gun
 		    {
 		        gunEquip = 0;
 		    }

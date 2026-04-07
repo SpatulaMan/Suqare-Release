@@ -15,7 +15,7 @@ function scr_levelEnd(car,range_optional)
 			o_saveload.ynetp = o_saveload.ynet;
 			o_saveload.hnetp = o_saveload.hnet;
 			if(obj_suq.progress >= 6) { o_saveload.pnet -= (3 - o_saveload.software); }
-			if(obj_suq.progress >= 23 and o_saveload.officials == true) { o_saveload.pnet -= 2; }
+			if(obj_suq.progress >= 23 and o_saveload.officials == false) { o_saveload.pnet -= 2; }
 			switch(obj_suq.progress)
 			{
 				case 0: o_saveload.valueC += choose(50,-100,-200,-50); break;
@@ -98,6 +98,8 @@ function scr_levelEnd(car,range_optional)
 				obj_suq.ggh = 1;
 			if(obj_suq.pp7Have > 0)
 				obj_suq.pph = 1;
+			if(obj_suq.chainGunHave > 0)
+				obj_suq.cgh = 1;
 		}
 	if(instance_exists(obj_suq) and !range_optional) { obj_suq.visible = false; }
 	if(instance_exists(o_girl))

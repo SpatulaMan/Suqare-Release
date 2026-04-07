@@ -478,6 +478,19 @@ if(pp7Have == 1 and gunEquip == 14)
 	else { draw_sprite_stretched(spr_silencedPP7,0,1600,940,21*10,10*10); }
 	pp1 = true;
 }
+if(chainGunHave == 1 and gunEquip == 15)
+{
+	if(!cgover)
+	{
+		draw_text_transformed_colour(1600,940,string_hash_to_newline("" + string(chainGunAmt) + "|" + string(0) + " "),3,3,0,c_green,c_orange,c_green,c_orange,1);
+		draw_sprite_stretched_ext(spr_chainGun,1,1600,880,18*15,14*15,c_white,1); 
+	}
+	else
+	{
+		draw_text_transformed_colour(1600,940,string_hash_to_newline("" + string(chainGunAmt) + "|" + string(0) + " "),3,3,0,c_yellow,c_red,c_yellow,c_red,1);
+		draw_sprite_stretched_ext(spr_chainGun,1,1600,880,18*15,14*15,c_orange,1); 
+	}
+}
 if(pickup_timer > 0)
 {
 	draw_set_halign(fa_center);
@@ -609,5 +622,6 @@ if(pickup_timer > 0)
 		case 61: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("BAGPIPES PAINTING"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 62: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("PRESS E TO STEAL PAINTING"),2,2,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 63: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("PRESS E TO DROP OFF PAINTINGS"),2,2,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 64: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("CHAIN GUN"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 	}
 }

@@ -51,3 +51,13 @@ if(timer_pp7 >= 1)
 		alarm_set(10,1);
 	}
 }
+if(timer_chainGun >= 1)
+{
+	timer_chainGun--;
+	if(timer_chainGun == 0)
+	{
+		instance_create(x,y,obj_chainGun);
+		instance_destroy();
+		alarm_set(10,1);
+	}
+}

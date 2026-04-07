@@ -73,6 +73,26 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
         flamethrowerAmt = 0;
         //gunEquip = 0;
     }
+	if(chainGunAmt > 0 and gunEquip == 15 and canCGShoot <= 0 and cgover == false)
+    {
+		if(instance_number(obj_suqCGBul) % 2 == 1)
+		{
+			audio_play_sound(snd_stepOther,1,false,random_range(1.5,2)*o_saveload.sfxvol,0,random_range(.4,.5));
+		}
+		var Bulcg = instance_create(x,y,obj_suqCGBul);
+        Bulcg.direction = point_direction(x,y,mouse_x,mouse_y);
+        Bulcg.image_angle = Bulcg.direction;
+        Bulcg.speed = 5;
+        chainGunAmt -= 1;
+        canCGShoot = 1;
+		if(instance_exists(o_gem2)) 
+		{
+			if(distance_to_object(o_gem2) > 48) 
+				instance_create(x,y,o_gunSound);
+		}
+		else
+			instance_create(x,y,o_gunSound);
+    }
 	/*if(boomerangHave == 1 and gunEquip == 10)
 	{
 	    bspdd -= 0.01;

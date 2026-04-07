@@ -43,8 +43,10 @@ weapon = noone;
 weapon_spd = 6;
 weapon_bul = obj_suqBul;
 weapon_type = obj_pistol;
-if(room != r_lvl_19) { wc = choose(1,1,2,3,3); }
 wc = 0;
+if(room != r_lvl_19) { wc = choose(1,1,2,3,3); }
+if(sprite_index == s_robot) { wc = 11; }
 sk = 0;
 start = false;
+robot = false;
 alarm_set(10,2);

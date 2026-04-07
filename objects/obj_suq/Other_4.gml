@@ -39,7 +39,7 @@ if(room != r_armory and room != r_skill1 and room != r_skill2 and room != r_skil
 	tdead[3] = 0;
 	tdead[4] = 0;
 	o_music.mCheck = false;
-	if(room == r_range) { gunRange = true; }	
+	if(room == r_range) { gunRange = true; }
 }
 if(room == r_armory and instance_exists(o_armory))
 {

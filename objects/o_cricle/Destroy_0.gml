@@ -13,3 +13,4 @@ _g.weapon_spd = 8;
 _g.weapon = instance_create_layer(x,y,"Instances_Action",o_eShotgun); 
 _g.weapon_bul = o_eSGBul;
 _g.shtspd = 80; 
+_g.spr = s_enemy_N_1;

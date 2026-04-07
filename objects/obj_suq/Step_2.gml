@@ -15,6 +15,20 @@ if(instance_exists(o_eFire))
 {
 	o_eFire.image_blend = c_aqua;
 }
+if((!mouse_check_button(mb_left) or cgover == true) and chainGunAmt < 120)
+{
+	chainGunAmt++;
+}
+if(chainGunAmt == 120 and cgover == true)
+{
+	cgover = false;
+}
+if(chainGunAmt <= 0 and cgover == false)
+{
+	audio_play_sound(snd_fire,3,false,random_range(.2,.3)*o_saveload.sfxvol,0,random_range(.3,.4));
+	cgover = true;
+	if(instance_exists(obj_suqCGBul)) { with (obj_suqCGBul) instance_destroy(); }
+}
 /*var _inst = instance_nearest(x,y,obj_darkness);
 with(_inst)
 {

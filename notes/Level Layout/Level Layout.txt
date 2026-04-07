@@ -7,8 +7,8 @@ or
 12: Steal finance tech from Kanker and Co. - Negative to Kanker and positive to Perez, vice versa if failed (lose money while this isn't done)
 19: Protect main vault - Mercenaries are coming in droves, killing them gives you points to spend on better guards to place down in certain locations 
 24: Execute members of government that would prevent a banking monopoly (Lose money while this isn't done)
-35: Influence government to choose Perez as main bank of government (Lose money while this isn't done)
-41: Defend head office from those rioting over increased prices and terrible treatment (Lose money while this isn't done)
+35: Influence government to choose Perez as main bank of government (Lose money while this isn't done) (Needs 24 done and 32 not done)
+41: Defend head office from those rioting over increased interest rates and terrible treatment (Lose money while this isn't done) (needs 35 done and 43,32 not done) Goes straight to end game
 
 
 -Kanker and Co Plan - Be a giant military force to start taking over countries:
@@ -17,8 +17,8 @@ and
 7: Ignore or take and fail Destroy Gems
 13: kidnap scientist to make super weapon
 16: Destroy Big Tank that could stop whole plan (The tank is accessible at any point, but you want to gather as many resources as possible to know how to destroy it.) 
-32: Take Control of manufacturing plant
-43: Charge super weapon
+32: Take Control of manufacturing plant (needs 13 and 16 done, and 35 not done)
+43: Charge super weapon (needs 32 done, and 35 not done) Goes straight to end game
 
 -Ungulate Studios Plan - Keep Evil corporations in check:
 4: kidnap girl
@@ -31,10 +31,10 @@ and
 
 -Yellerteeth Inc. Plan - Steal every ninja artifact and kill ninja leader for revenge:
 3: Amulet of Hecto
-9: Ring of Tarpho (need amulet)
-21: Jewel of Barfo, Ghost ninjas too (need ring)
-27: Vambrace of Mortuban (need Jewel)
-33: Eye of Gutran (need Vambrace)
+9: Ring of Tarpho 
+21: Jewel of Barfo, Ghost ninjas too 
+27: Vambrace of Mortuban 
+33: Eye of Gutran
 39: Destroy Ninja Hierarchy (kill all ninja leaders) (need standing > 2)
 45: Ninja Retaliation, Fight off onslaught of ninjas until they're all dead. Protect the ninja-themed birthday party. (need standing > 4)
 
@@ -46,7 +46,6 @@ and
 30: Steal Art (3 paintings)
 37: Hijack Ship - NL (without killing crew cause they need to drive the boat. Lure and lock guards in any of the 3 brigs on the ship to make them set sail)
 46: Destroy Rival, Take out Ungulate by wiring money from their banks to Hiertech
-
 
 -Gildebrand Consulting Plan - Help people with small requests, and make life better for everyone:
 8: Eradicate spiders (standing > -2)
@@ -67,9 +66,9 @@ Others:
 23: Loot abandoned pirate ship. (Cricle from contraband level)
 25: Vandalize Gravestones for fun - NL
 31: Kill Head of Security
-38: Want Some Stuff? This guy wants to sell you some good stuff. Just need to find him in a haunted mansion. You won't be able to sell these items back. Sells you really a couple good weapons and gadgets. 
+//38: Want Some Stuff? This guy wants to sell you some good stuff. Just need to find him in a haunted mansion. You won't be able to sell these items back. Sells you really a couple good weapons and gadgets. 
 40: Race for money (can be redone as many times as you want)
-48: Destroy super weapon and stop kanker and Co - President
+//48: Destroy super weapon and stop kanker and Co - President
 51: End Game 
 
 -Rivals:
@@ -128,11 +127,11 @@ or
 	35: Influence government to choose Perez as main bank of government (Lose money while this isn't done)
 	36: Prison Break, break into prison secretly, and sneak a few wrongfully convicted inmates out - NL besides ghosts that haunt the place?
 	37: Hijack Ship - NL
-		38: Want Some Stuff?
-		39: Destroy Ninja Hierarchy (kill all ninja leaders)
-		40: Race (only awards 2000 for a win, 1000 for 2nd, and 500 for 3rd. Hard race. Can be played as many times as you want. 500 to enter)
-		41: Assassinate CEO of Kanker and Co. The ghosts of all those you killed come back to haunt you here
-		42: Run Down
+	38: Want Some Stuff?
+	39: Destroy Ninja Hierarchy (kill all ninja leaders)
+	40: Race (only awards 2000 for a win, 1000 for 2nd, and 500 for 3rd. Hard race. Can be played as many times as you want. 500 to enter)
+	41: Defend head office from those rioting over increased interest rates and terrible treatment (Lose money while this isn't done)
+	42: Run Down
 		43: Charge super weapon
 		44: Save Hostages
 		45: Ninja Retaliation
@@ -142,7 +141,7 @@ or
 		49: Mobilize Army
 		50: Evacuate Town
 		51: End Game. The Armory gets invaded! Fight your way through and get the ending that you are the best mercenary if they all came for you directly. You've made it. The merchants are 
-			dead. Knives and stuff in em. Put stairs in the Armory and lock the door? 
+			dead. Knives and stuff in em. Put stairs in the Armory and lock the door? Lowest standing company that's not bankrupt comes after you? 
 		
 Then you get a breakdown of your ending, how many levels you played out of the total amount, Total number of deaths, Final Money count, 
 Mercenary Rating(based on total levels completed, minus failed levels, minus every death, plus total money, plus each weapon you have, plus/minus the standing you have with each company since mercenaries want to keep clients happy)

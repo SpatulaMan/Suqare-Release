@@ -1,10 +1,10 @@
 lvl 17 - lvl 51
 	-Briefing
-	-Short briefing
-	-Level Details
-	-Objectives
+-Short briefing
+-Level Details
+-Objectives
 -Result text
-	-Add To Level Select
+-Add To Level Select
 -Level Design
 -Starting location
 -Darkness
@@ -14,8 +14,8 @@ lvl 17 - lvl 51
 -Enemy Placement
 -Map
 -Gadgets/Weapons
-	-Music
-	-Mid-Level Objectives Complete
+-Music
+-Mid-Level Objectives Complete
 -Level End Code
 -Testing
 
@@ -36,6 +36,9 @@ lvl 17 - lvl 51
 
 
 
+
+
+If you help kanker, but have bad standing, then they attack you at lvl 51, if you have good standing, the whole city attacks you
 
 
 

@@ -187,7 +187,7 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
         th = 1;
 		alarm_set(6,1);
 		//swordLC = 1;
-		if(swordCH >= 120)
+		if(swordCH >= 60)
 		{
 			swordCH = 0;
 			var _snbul = instance_create_layer(x,y,"Instances_Action",o_lightningXY);

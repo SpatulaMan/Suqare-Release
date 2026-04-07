@@ -102,5 +102,14 @@ switch(wc)
 	hp = 16;
 	image_blend = c_purple;
 	break;
+	case 11: 
+	weapon = instance_create_layer(x,y,"Instances_Action",o_robot);
+	weapon_spd = 8;
+	weapon_bul = obj_suqARBul;
+	weapon_type = obj_pistol;
+	drop_gun = false;
+	shtspd = 10;
+	hp = 16;
+	break;
 }
 start = true;

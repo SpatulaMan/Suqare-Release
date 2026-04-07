@@ -1291,14 +1291,14 @@ function scr_briefing(t){
 	a[167] = @"Kill Gerald";
 	a[168] = @"Go Unnoticed";
 	a[170] = @"BRIEFING:
-			The scientist you kidnapped for us is finally done with his
-			plans for the machine, but now we need one more thing. 
-			There's only one manufacturing plant near here that has the
-			technology to build our ghost army machine, so we need you
-			to do two things. Destroy or shutdown all security measures
-			and kill all the guards in the building. This will allow us
-			to go in and build the machine we need. ";
-	a[171] = @"Take Over Manufacturing Plant";
+			We're almost there. Just one more step before we can take
+			over the world. There's a specialized plant that 
+			manufactures the parts we need to produce the ghost army 
+			machine, or GAM as we call it. 
+
+			We need you to clear out the guards, shut down the plant,
+			and input our software into the machine. Once that's done,
+			we'll take it from there. ";
 	a[172] = @"Mission: Acquire Factory
 			
 			Hiring Firm: Kanker and Co.
@@ -1321,9 +1321,9 @@ function scr_briefing(t){
 			
 			
 			(Press Spacebar to Accept)";
-	a[173] = @"Stop Turrets";
-	a[174] = @"Kill Guards";
-	a[175] = @"";
+	a[173] = @"Kill Guards";
+	a[174] = @"Shutdown Plant";
+	a[175] = @"Input Software";
 	a[176] = @"";
 	a[177] = @"";
 	a[178] = @"";
@@ -1642,7 +1642,7 @@ function scr_conversation(t)
 	a[50] = @"When will you realize?";//start mystery
 	a[51] = @"It will soon be revealed...";//start mystery
 	a[52] = @"Who is the real enemy? ";//start mystery
-	a[53] = @"Watc.. .ut for Tir...gle... ";//start mystery
+	a[53] = @"Watc.. .ut for Tir...angle... ";//start mystery
 	if(instance_exists(o_lvl16))
 	{
 		a[54] = @"Current state of landmines Spawning in Tank Arena: " + string(o_lvl16.mineOn) + @"
@@ -1818,10 +1818,25 @@ function scr_conversation(t)
 	a[83] = @"WARNING: HAZMAT SUIT REQUIRED PAST THIS CHECKPOINT";
 	a[84] = @"WARNING: NO HAZMAT SUIT DETECTED. TURN BACK NOW";
 	a[85] = @"SERVER ROOM MANAGER";
-	a[86] = @"";
-	a[87] = @"";
-	a[88] = @"";
-	a[89] = @"";
+	a[86] = @"Here's a gift from Kanker and Co. for being so good to us. Use it wisely.";//rocket launcher
+	a[87] = @"Perez Holdings here, and we have a present just for you! Hope you benefit from the new weaponry, like we've 
+			benefitted from your help. ";//Sniper Rifle
+	a[88] = @"For helping out Hiertech so much, we've decided to let you have our prototype chain gun.";//Chain Gun. Shoots out a chain that can be swung around to hit stuff. Once ammo hits zero, it starts adding back up to cool down. Back up to full works again. Long range melee
+	a[89] = @"A piece of expensive Ninja memorabilia that has no use to yellerteeth. This was gifted to you because of how much
+			you've helped Yellerteeth. You must be well-liked to earn such a prize. 
+	
+			Do you want to sell the Ninja Memorabilia? 
+			
+			Valuation: $6,500
+			
+			Press Spacebar to sell";//yellerteeth - Ninja memorabilia to sell or not
+	a[90] = @"We really like you, and we appreciate all you've done for us. But, we don't have much to give you beyond
+			information. Avoid anything offered to you by Tirangle. He's shady and it won't do you any good.";//gildebrand - avoid tirangle
+	a[91] = @"Ungulate Studios is so grateful for your help. We'd like to give you a gift of a robot companion that we found.
+			We don't have any use for it, so we programmed it to follow you and assist you. If you ever let it get destroyed,
+			it won't come back. We only have the one robot. 
+			
+			His name is roboto";//ungulate - gives you a pet robot that comes along with you and shoots at enemies
 			
 	return a[t];
 }

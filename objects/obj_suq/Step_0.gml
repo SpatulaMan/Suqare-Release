@@ -357,6 +357,8 @@ if(health > 0)
     else if((gunEquip != 13 or ghostGunHave != 1) and instance_exists(o_ghostGun)) { with (o_ghostGun) instance_destroy(); }
 	if(gunEquip == 14 and pp7Have == 1 and !instance_exists(object146)) then { instance_create(x,y,object146); }
     else if((gunEquip != 14 or pp7Have != 1) and instance_exists(object146)) { with (object146) instance_destroy(); }
+	if(gunEquip == 15 and chainGunHave == 1 and !instance_exists(object147)) then { instance_create(x,y,object147); }
+    else if((gunEquip != 15 or chainGunHave != 1) and instance_exists(object147)) { with (object147) instance_destroy(); }
 	
 	//drop guns
 	if(room != r_skill1 and room != r_skill2 and room != r_skill3 and room != r_skill4 and room != r_skill5 and room != r_range)
@@ -486,6 +488,13 @@ if(health > 0)
 			pp7Have = 0;
 			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
+		if(keyboard_check_pressed(vk_tab) and gunEquip == 15 and chainGunHave == 1) then 
+	    { 
+	        instance_create(x,y,obj_dropGun);
+			gunNum--;
+			chainGunHave = 0;
+			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
+	    }
 	}
 	if(keyboard_check_pressed(ord("E")) and gunNum == 0 and heavyband == true) then 
 	{ 
@@ -494,7 +503,7 @@ if(health > 0)
 		audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	}
 	if(((pr == true and gunEquip == 1) or (mgr == true and gunEquip == 3) or (arr == true and gunEquip == 4) or (snr == true and gunEquip == 8) or (mr == true and gunEquip == 2) or 
-		(rlr == true and gunEquip == 9) or (fr == true and gunEquip == 7) or (shr == true and gunEquip == 6) or (ppr == true and gunEquip == 14)) and (gunEquip != 5))
+		(rlr == true and gunEquip == 9) or (fr == true and gunEquip == 7) or (shr == true and gunEquip == 6) or (ppr == true and gunEquip == 14)) and (gunEquip != 5 and gunEquip != 15))
 	{
 		cursor_sprite = s_reloading;
 	}
@@ -546,6 +555,10 @@ if(health > 0)
 	{
 		cursor_sprite = spr_pp7C;
 	}
+	else if(gunEquip == 15 and chainGunHave > 0)
+	{
+		cursor_sprite = spr_chainC;
+	}
 	if(gunEquip == 0 and knifeHave == 1)
     {
         cursor_sprite = spr_baseC;
@@ -568,6 +581,8 @@ if(health > 0)
     if(canRLShoot > 0) then canRLShoot--; 
 	if(canSNShoot <= 0) then canSNShoot = 0;
     if(canSNShoot > 0) then canSNShoot--; 
+	if(canCGShoot <= 0) then canCGShoot = 0;
+    if(canCGShoot > 0) then canCGShoot--; 
 }
 if(keyboard_check(vk_shift) and room != r_armory and ((gadget == 6 and attackTur > 0) or (gadget == 7 and defenseTur > 0) or (gadget == 8 and tearTur > 0) or (gadget == 9 and flameTur > 0) or (gadget == 10 and rocketTur > 0)))
 {

@@ -30,6 +30,12 @@ if(start and instance_exists(weapon))
 		{
 			path_start(path,1,path_action_stop,false);
 		}
+		if(sprite_index == s_robot)
+		{
+			var pd = point_direction(x,y,obj_suq.x,obj_suq.y);
+			var ad = angle_difference(image_angle,pd);
+			image_angle -= min(abs(ad), 4) * sign(ad);
+		}
 	}
 	if(((_wallsee and _doorsee) and abs(angle_difference(weapon.image_angle,pd1)) < adif) or check == true)
 	{
@@ -40,7 +46,8 @@ if(start and instance_exists(weapon))
 	    a = 0;
 		if(shootCheck <= 0)
 		{
-			if(weapon_type == obj_pistol) then { audio_play_sound(snd_lightgun,4,false,o_saveload.sfxvol); }
+			if(weapon_type == obj_pistol and sprite_index == s_robot) then { audio_play_sound(snd_heavygun,4,false,o_saveload.sfxvol,0,random_range(.4,.6)); }
+			if(weapon_type == obj_pistol and sprite_index != s_robot) then { audio_play_sound(snd_lightgun,4,false,o_saveload.sfxvol); }
 			if(weapon_type == obj_magnum) then { audio_play_sound(snd_magnum,4,false,o_saveload.sfxvol); alarm_set(5,40); }
 			if(weapon_type == obj_machineGun)
 			{ 
@@ -95,6 +102,7 @@ if(start and instance_exists(weapon))
 		    Bulg.direction = weapon.image_angle;
 		    Bulg.image_angle = weapon.image_angle;
 			Bulg.speed = weapon_spd;
+			if(sprite_index == s_robot) { Bulg.sprite_index = s_robotBul; }
 			//x1 = choose(20,-20);
 			//y1 = choose(20,-20);
 		}

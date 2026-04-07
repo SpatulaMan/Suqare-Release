@@ -15,3 +15,4 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
     with (object112) instance_destroy();
 }
 
+if(instance_exists(obj_suqCGBul)) { with (obj_suqCGBul) instance_destroy(); }

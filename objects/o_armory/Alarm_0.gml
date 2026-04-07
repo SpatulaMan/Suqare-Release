@@ -15,9 +15,9 @@ if(obj_suq.sgh > 0 and !instance_exists(obj_shooterGun))
 	instance_create_layer(x,y,"Instances_Action",obj_shooterGun);
 if(obj_suq.fh > 0 and !instance_exists(obj_flamethrower))
 	instance_create_layer(x,y,"Instances_Action",obj_flamethrower);
-if(obj_suq.snh > 0 and !instance_exists(obj_sniperRifle))
+if((obj_suq.snh > 0 or obj_suq.perez > 6) and !instance_exists(obj_sniperRifle))
 	instance_create_layer(x,y,"Instances_Action",obj_sniperRifle);
-if(obj_suq.rh > 0 and !instance_exists(obj_rocketLauncher))
+if((obj_suq.rh > 0 or obj_suq.kanker > 6) and !instance_exists(obj_rocketLauncher))
 	instance_create_layer(x,y,"Instances_Action",obj_rocketLauncher);
 if(obj_suq.swh > 0 and !instance_exists(obj_sword))
 	instance_create_layer(x,y,"Instances_Action",obj_sword);
@@ -34,6 +34,18 @@ if(obj_suq.ggh > 0 and !instance_exists(obj_ghostGun))
 	instance_create_layer(x,y,"Instances_Action",obj_ghostGun);
 if(obj_suq.pph > 0 and !instance_exists(obj_pp7))
 	instance_create_layer(x,y,"Instances_Action",obj_pp7);
+if((obj_suq.cgh > 0 or obj_suq.hiertech > 6) and !instance_exists(obj_chainGun))
+	instance_create_layer(x,y,"Instances_Action",obj_chainGun);
+	
+if(obj_suq.gildebrand > 6)
+{
+	var _cg = instance_create_layer(788,323,"Instances_Action",o_conversation);
+	_cg.h = 90;
+}
+if(obj_suq.yellerteeth > 6 and o_saveload.nMemS == false) 
+{
+	instance_create_layer(733,513,"Instances_Action",o_nMem);
+}
 	
 if(obj_suq.painting and !instance_exists(o_esmerelda))
 {

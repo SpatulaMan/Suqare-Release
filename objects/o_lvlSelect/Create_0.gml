@@ -50,17 +50,19 @@ switch(prog)
 	case 36:
 	case 35:
 	case 34:
-	case 33:
-	case 32:
-	case 31:
+	case 33: if(obj_suq.lvldone[44] == false and obj_suq.yellerteeth > 2) { array_insert(lvl,t,44); t++; }
+	case 32: 
+	case 31: if(obj_suq.lvldone[40] == false and o_saveload.convinced == true) { array_insert(lvl,t,40); t++; }//if this one is completed, goes straight to end game with Perez as enemy for 51
+			if(obj_suq.lvldone[42] == false and o_saveload.plant == true) { array_insert(lvl,t,42); t++; }//if this one is completed, goes straight to end game with Kanker as enemy for 51
 	case 30:
-	case 29:
+	case 29: 
 	case 28:
 	case 27:
-	case 26:
-	case 25:
+	case 26: 
+	case 25: if(obj_suq.lvldone[32] == false) { array_insert(lvl,t,32); t++; }
 	case 24:
-	case 23: if(obj_suq.lvldone[31] == false and obj_suq.scientist and obj_suq.tankD == true) { array_insert(lvl,t,31); t++; }
+	case 23: if(obj_suq.lvldone[31] == false and obj_suq.scientist and obj_suq.tankD == true and o_saveload.convinced == false) { array_insert(lvl,t,31); t++; }
+			if(obj_suq.lvldone[34] == false and o_saveload.officials == true and o_saveload.plant == false) { array_insert(lvl,t,34); t++; }
 	case 22: if(obj_suq.lvldone[28] == false and obj_suq.lvldone[29] == false and obj_suq.lvldone[30] == false) { array_insert(lvl,t,28); t++; }
 			if(obj_suq.lvldone[28] == false and obj_suq.lvldone[29] == false and obj_suq.lvldone[30] == false) { array_insert(lvl,t,29); t++; }
 			if(obj_suq.lvldone[28] == false and obj_suq.lvldone[29] == false and obj_suq.lvldone[30] == false) { array_insert(lvl,t,30); t++; }
@@ -82,7 +84,7 @@ switch(prog)
 	case 10: if(obj_suq.lvldone[18] == false) { array_insert(lvl,t,18); t++; }
 			 if(obj_suq.lvldone[20] == false) { array_insert(lvl,t,20); t++; }
 	case 9:
-	case 8: if(obj_suq.lvldone[15] == false and obj_suq.lvldone[12] == true) { array_insert(lvl,t,15); t++; }
+	case 8: if(obj_suq.lvldone[15] == false) { array_insert(lvl,t,15); t++; }
 			if(obj_suq.lvldone[16] == false and obj_suq.lvldone[17] == false) { array_insert(lvl,t,16); t++; }
 			if(obj_suq.lvldone[17] == false and obj_suq.lvldone[16] == false) { array_insert(lvl,t,17); t++; }
 	case 7:

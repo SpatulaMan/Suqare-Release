@@ -76,3 +76,8 @@ if(instance_exists(obj_pp7))
 	obj_pp7.x = x+80;
 	obj_pp7.y = y+144;
 }
+if(instance_exists(obj_chainGun))
+{
+	obj_chainGun.x = x+111;
+	obj_chainGun.y = y+144;
+}

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":96.0,
   "name":"snd_musicA1",
   "parent":{
     "name":"Sounds",
