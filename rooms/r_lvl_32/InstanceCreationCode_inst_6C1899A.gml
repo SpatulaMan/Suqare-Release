@@ -1,6 +1,6 @@
-weapon_type = obj_assaultRifle;
+weapon_type = choose(obj_machineGun,obj_shotgun,obj_assaultRifle);
 sprite_index = s_enemy_2;
-image_blend = c_yellow;
+image_blend = c_green;
 hp = 32;
 drop_gun = choose(true,false,true);
 weapon_spd = 6;
@@ -27,4 +27,5 @@ switch(weapon_type)
 		weapon_bul = o_eARBul;
 		shtspd = 20; break;
 }
+
 

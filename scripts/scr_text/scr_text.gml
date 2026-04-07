@@ -1296,9 +1296,11 @@ function scr_briefing(t){
 			manufactures the parts we need to produce the ghost army 
 			machine, or GAM as we call it. 
 
-			We need you to clear out the guards, shut down the plant,
-			and input our software into the machine. Once that's done,
-			we'll take it from there. ";
+			We need you to clear out the guards, shut down the plant
+			from the control room, and input our software into the
+			production machine. Once that's done, we'll take it from 
+			there. ";
+	a[171] = @"Take Control of a Specialized Factory";
 	a[172] = @"Mission: Acquire Factory
 			
 			Hiring Firm: Kanker and Co.
@@ -1321,10 +1323,9 @@ function scr_briefing(t){
 			
 			
 			(Press Spacebar to Accept)";
-	a[173] = @"Kill Guards";
-	a[174] = @"Shutdown Plant";
-	a[175] = @"Input Software";
-	a[176] = @"";
+	a[173] = @"Shutdown Plant";
+	a[174] = @"Input Software";
+	a[175] = @"Kill Guards";
 	a[177] = @"";
 	a[178] = @"";
 	a[179] = @"";
@@ -1837,6 +1838,18 @@ function scr_conversation(t)
 			it won't come back. We only have the one robot. 
 			
 			His name is roboto";//ungulate - gives you a pet robot that comes along with you and shoots at enemies
+	a[92] = @"NEW SOFTWARE INPUT...
+			...
+			...
+			...
+			BZZZT
+			...
+			...
+			BONG
+			...
+			...
+			...
+			SOFTWARE ACCEPTED";
 			
 	return a[t];
 }

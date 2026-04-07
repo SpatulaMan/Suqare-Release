@@ -1,55 +1,7 @@
-lvl 17 - lvl 51
-	-Briefing
-	-Short briefing
-	-Level Details
-	-Objectives
--Result text
-	-Add To Level Select
--Level Design
-	-Starting location
--Darkness
--Room Names
-	-Backgrounds
--New Features/Enemies
--Enemy Placement
--Map
--Gadgets/Weapons
-	-Music
--Mid-Level Objectives Complete
--Level End Code
--Testing
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-If you help kanker, but have bad standing, then they attack you at lvl 51, if you have good standing, the whole city attacks you
-
-
-
-Setting up Tirangle as a antagonist directly against you and your business
-
-
-
-
-weapon_type = choose(obj_pistol,obj_magnum,obj_machineGun,obj_shotgun,obj_assaultRifle);
+weapon_type = choose(obj_machineGun,obj_shotgun,obj_assaultRifle);
 sprite_index = s_enemy_2;
-hp = 16;
+image_blend = c_green;
+hp = 32;
 drop_gun = choose(true,false,true);
 weapon_spd = 6;
 switch(weapon_type)

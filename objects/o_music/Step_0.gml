@@ -63,7 +63,7 @@ if(room == r_armory and mCheck == false and o_lvlStart.speed == 0)
 }
 if(instance_exists(o_lvlStart))
 {
-	if(o_lvlStart.speed > 0 and o_lvlStart.r == r_lvl_0 and mCheck == true)
+	if(o_lvlStart.speed > 0 and (o_lvlStart.r == r_lvl_0 or o_lvlStart.r == r_lvl_32) and mCheck == true)
 	{
 		audio_sound_gain(s2,0,1000);
 		//audio_resume_sound(s1);
@@ -184,7 +184,7 @@ if(instance_exists(o_lvlStart))
 	}
 }
 
-if(room == r_lvl_0)
+if(room == r_lvl_0 or room == r_lvl_32)
 {
 	if(mCheck2 == false and mCheck3 == false)
 	{

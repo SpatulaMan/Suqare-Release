@@ -141,6 +141,10 @@ if(a > 0)
 		case 107: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("ART AREA"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 108: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("ANOTHER ART AREA"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 109: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("UNNECESSARY ART AREA"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 110: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("OFFICES"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 111: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("CONTROL ROOM"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 112: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("MACHINE ROOM"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 113: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("POWER CELLS"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		default: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("RESTRICTED"),3,3,0,c_white,c_white,c_white,c_white,a); 
 	}
 }
