@@ -15,6 +15,7 @@ switch(room)
 	case r_lvl_29: draw_sprite_ext(s_lvl29map,0,w*.1,h*.055,1,1,0,c_white,1); break;//too tall and wide
 	case r_lvl_30: draw_sprite_ext(s_lvl30map,0,w*.1,h*.055,1,1,0,c_white,1); break;//too tall and wide
 	case r_lvl_31: draw_sprite_ext(s_lvl31map,0,w*.1,h*.055,1,1,0,c_white,1); break;//too tall and wide
+	case r_lvl_32: draw_sprite_ext(s_lvl32map,0,w*.1,h*.055,1,1,0,c_white,1); break;//too tall and wide
 	default: draw_sprite_ext(s_mapnotfound,0,w*.133,h*.12,1,1,0,c_white,1);
 }
 /*draw_text_transformed_color(w*.055,h*.85,scr_briefing(996),2,2,0,make_color_rgb(255,150,0),make_color_rgb(255,150,0),make_color_rgb(255,150,0),make_color_rgb(255,150,0),1);//Q - BACK

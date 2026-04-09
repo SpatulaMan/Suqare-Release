@@ -18,3 +18,8 @@ if(room == r_lvl_23 and sprite_index == s_enemy)
 	image_blend = make_color_rgb(20,50,80);
 	draw_sprite(s_eyepatch,0,x,y);
 }
+if(room == r_lvl_32 and weapon_type == obj_pistol)
+{
+	image_blend = make_color_rgb(0,120,120);
+	draw_sprite(s_labCoat,0,x,y);
+}

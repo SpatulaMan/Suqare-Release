@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Suqare",
-    "path":"Suqare.yyp",
+    "name":"lvlmechs",
+    "path":"folders/Sprites/lvlmechs.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

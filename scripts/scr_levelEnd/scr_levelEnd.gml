@@ -106,7 +106,6 @@ function scr_levelEnd(car,range_optional)
 	{
 		o_girl.visible = false;
 	}
-	if(instance_exists(o_scientist)) { if(o_scientist.x < 469 and o_scientist.y > 681) { obj_suq.scientist = true; } }
 	if(car and instance_exists(obj_suq) and !range_optional) 
 	{ 
 		obj_suq.x = x;
@@ -557,6 +556,7 @@ function scr_levelEnd(car,range_optional)
 						o_saveload.moneyT += 5300*_emtBill;
 						obj_suq.kanker += 3;
 						obj_suq.report = 41;
+						obj_suq.scientist = true;
 					}
 					else
 					{
@@ -648,6 +648,7 @@ function scr_levelEnd(car,range_optional)
 						obj_suq.kanker += 2;
 						o_saveload.knet += 7;
 						o_saveload.pnet -= 15;
+						obj_suq.tankD = true;
 					}
 					else
 					{
@@ -1105,14 +1106,42 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += 6400*_emtBill;
 					obj_suq.report = 92;
 				}
-				if(o_lvl30.o1 and !o_lvl30.o2)
+				if(o_lvl31.o1 and !o_lvl31.o2)
 				{
 					o_saveload.moneyT += 1000*_emtBill;
 					obj_suq.report = 93;
 				}
-				if(!o_lvl30.o1)
+				if(!o_lvl31.o1)
 				{
 					obj_suq.report = 94;
+				}
+			} break;
+			case r_lvl_32:
+			{
+				o_saveload.pnet -= 3;
+				o_saveload.ynet += 3;
+				o_saveload.gnet -= 3;
+				o_saveload.unet += 2;
+				o_saveload.hnet += 2;
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				if(o_lvl32.o1 and o_lvl32.o2 and o_lvl32.o3)
+				{
+					o_saveload.moneyT += 10000*_emtBill;
+					obj_suq.report = 95;
+					o_saveload.knet += 15;
+					o_saveload.kanker += 4;
+					o_saveload.pnet -= 6;
+					o_saveload.ynet -= 5;
+					o_saveload.gnet -= 4;
+					o_saveload.unet -= 4;
+					o_saveload.hnet -= 5;
+					o_saveload.plant = true;
+				}
+				else
+				{
+					obj_suq.report = 96;
+					o_saveload.kanker -= 14;
+					o_saveload.knet -= 20;
 				}
 			} break;
 		}

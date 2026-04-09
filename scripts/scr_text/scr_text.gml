@@ -1296,10 +1296,11 @@ function scr_briefing(t){
 			manufactures the parts we need to produce the ghost army 
 			machine, or GAM as we call it. 
 
-			We need you to clear out the guards, shut down the plant
+			We need you to take out the engineers, shut down the plant
 			from the control room, and input our software into the
-			production machine. Once that's done, we'll take it from 
-			there. ";
+			production machine. The power cells also have individual
+			switches on them that need to be shut off. Once that's 
+			done, we'll take it from there. ";
 	a[171] = @"Take Control of a Specialized Factory";
 	a[172] = @"Mission: Acquire Factory
 			
@@ -1325,7 +1326,7 @@ function scr_briefing(t){
 			(Press Spacebar to Accept)";
 	a[173] = @"Shutdown Plant";
 	a[174] = @"Input Software";
-	a[175] = @"Kill Guards";
+	a[175] = @"Kill Engineers";
 	a[177] = @"";
 	a[178] = @"";
 	a[179] = @"";
@@ -1850,6 +1851,10 @@ function scr_conversation(t)
 			...
 			...
 			SOFTWARE ACCEPTED";
+	a[93] = @"Company Memo:
+	
+			Remember, if the switch is on the pink line, power is on, and if the switch is on the pink box, power is off. 
+			It's like a 1 and a 0. What's so confusing about this?";
 			
 	return a[t];
 }
@@ -3999,8 +4004,36 @@ function debrief(m)
 			anymore. 
 			
 			Press Spacebar to continue";
-	c[95] = @"";
-	c[96] = @"";
+	c[95] = @"Objectives Complete
+			Payout: $10000
+			
+			Response From Hiring Firm:
+			We're so close now! What an exciting time to live in. Kanker and Co's dominance is inevitable,
+			and you've played a huge part in its naissance. We thank you for your service. 
+			
+			Current standing with Kanker and Co. "+string(obj_suq.kanker)+@"
+			
+			Result:
+			Kanker and Co. is all the more readying itself for a world-wide takeover. This will hit all
+			companies drastically and will shake up everything. Only time will tell how big of an effect
+			there is. 
+			
+			Press Spacebar to continue";
+	c[96] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You couldn't finish the job, and we're paying the price. Investors left and right are leaving,
+			and it looks like we might just be done for. 
+			
+			Current standing with Kanker and Co. "+string(obj_suq.kanker)+@"
+			
+			Result:
+			Kanker and Co. was unable to get the manufacturing plant. Something the entire world could be
+			happy about. This hit to their bottom line might do them in. If Kanker and Co. doesn't go
+			bankrupt, you should watch your back. 
+			
+			Press Spacebar to continue";
 	c[97] = @"";
 	c[98] = @"";
 	c[99] = @"";

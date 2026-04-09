@@ -11,4 +11,3 @@ if(instance_exists(tur2))
 {
 	with (tur2) instance_destroy();
 }
-obj_suq.tankD = true;
