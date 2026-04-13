@@ -69,7 +69,7 @@ Others:
 //38: Want Some Stuff? This guy wants to sell you some good stuff. Just need to find him in a haunted mansion. You won't be able to sell these items back. Sells you really a couple good weapons and gadgets. 
 40: Race for money (can be redone as many times as you want)
 //48: Destroy super weapon and stop kanker and Co - President
-51: End Game 
+51: End Game (incessent knocking at the door of the armory? Everything in shambles?)
 
 -Rivals:
 Perez and Kanker: when one goes up, the other one generally goes down. For net worth, and standing is specific per mission
@@ -132,7 +132,7 @@ or
 	40: Race (only awards 2000 for a win, 1000 for 2nd, and 500 for 3rd. Hard race. Can be played as many times as you want. 500 to enter)
 	41: Defend head office from those rioting over increased interest rates and terrible treatment (Lose money while this isn't done)
 	42: Run Down
-		43: Charge super weapon
+	43: Charge super weapon
 		44: Save Hostages
 		45: Ninja Retaliation
 		46: Destroy Rivals

@@ -124,7 +124,8 @@ function save()
 		convinced: o_saveload.convinced,
 		plant: o_saveload.plant,
 		nMems: o_saveload.nMems,
-		robot: o_saveload.robot
+		robot: o_saveload.robot,
+		engame: o_saveload.endgame
 		
 		//upgrades
 		
@@ -379,6 +380,8 @@ function load(_f)
 			o_saveload.nMems=_struct.nMems;
 		if (struct_exists(_struct, "robot"))
 			o_saveload.robot=_struct.robot;
+		if (struct_exists(_struct, "endgame"))
+			o_saveload.endgame=_struct.endgame;
 		
 		//levels that are incompleted and are available to the player currently in variables 
 		
@@ -501,7 +504,8 @@ function load(_f)
 			plant: false,
 			chainGunHave: 0,
 			nMems: false,
-			robot: true
+			robot: true,
+			endgame: false
 		
 		}
 	

@@ -2,15 +2,18 @@ weapon.x = x;
 weapon.y = y;
 var pd = 0;
 var ad = 0;
-if(((x < 1900 and obj_suq.x < 1900) or (x > 1900 and obj_suq.x > 1900)) and distance_to_object(ar) > 80)
+if(room != r_lvl_43)
 {
-	ar.x1 = x;
-	ar.y1 = y;
-	ar.image_alpha = 1;
-}
-else
-{
-	ar.image_alpha = .001;
+	if(((x < 1900 and obj_suq.x < 1900) or (x > 1900 and obj_suq.x > 1900)) and distance_to_object(ar) > 80)
+	{
+		ar.x1 = x;
+		ar.y1 = y;
+		ar.image_alpha = 1;
+	}
+	else
+	{
+		ar.image_alpha = .001;
+	}
 }
 if(!path_exists(path))
 {
@@ -136,22 +139,6 @@ if((_wallsee and _doorsee) or (_wallsee2 and _doorsee2))
 	//search_check = false;
 	//alarm_set(3,0);
 }
-/*if(soundCheck == true)
-{
-	x3 = x2;
-	y3 = y2;
-	suq_loc = false;
-	var pd = point_direction(x,y,x3,y3);
-    var ad = angle_difference(weapon.image_angle,pd);
-    weapon.image_angle -= min(abs(ad), 4) * sign(ad);
-    a = 0;
-	soundCheck = false;
-	path_check = true;
-	//search_check = false;
-}*/
-
-//if(path_check)
-//{
 	if(mp_grid_path(global.grid,path,x,y,x4,y4,true))
 	{
 		path_start(path,.7,path_action_stop,false);

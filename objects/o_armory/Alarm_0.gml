@@ -39,7 +39,7 @@ if((obj_suq.cgh > 0 or obj_suq.hiertech > 6) and !instance_exists(obj_chainGun))
 	
 if(obj_suq.gildebrand > 6)
 {
-	var _cg = instance_create_layer(788,323,"Instances_Action",o_conversation);
+	var _cg = instance_create_layer(335,521,"Instances_Action",o_conversation);
 	_cg.h = 90;
 }
 if(obj_suq.yellerteeth > 6 and o_saveload.nMemS == false) 

@@ -2,6 +2,7 @@ function scr_box() {
 	var r1;
 	var r2;
 	var rc;
+	var metric;
 	randomize();
 	if(instance_exists(obj_suq))
 	{
@@ -9,8 +10,10 @@ function scr_box() {
 	    r1 = random_range(1,100);
 		r2 = random_range(1,100);
 	    rc = true;
+		metric = 98;
+		if(obj_suq.gildebrand > 6) { metric = 80; }
 		//armor
-		if(r1 > 98 and obj_suq.armorlvl1Have == 1 and rc == true)
+		if(r1 > metric and obj_suq.armorlvl1Have == 1 and rc == true)
 		{
 		    instance_create_layer(x,y,"Instances_Action",obj_armor);
 		    rc = false;

@@ -408,7 +408,7 @@ function scr_briefing(t){
 			
 			Hiring Firm: Yellerteeth Inc.
 			Current Standing With
-			Yellerteeth Inc: "+string(obj_suq.yellerteeth)+
+			Yellerteeth Inc.: "+string(obj_suq.yellerteeth)+
 			@"
 			Combat Difficulty: 9
 			Mental Difficulty: 3
@@ -1327,14 +1327,79 @@ function scr_briefing(t){
 	a[173] = @"Shutdown Plant";
 	a[174] = @"Input Software";
 	a[175] = @"Kill Engineers";
-	a[177] = @"";
-	a[178] = @"";
-	a[179] = @"";
-	a[180] = @"";
-	a[181] = @"";
-	a[182] = @"";
-	a[183] = @"";
-	a[184] = @"";
+	a[177] = @"BRIEFING:
+			We finally found the location of the Eye of Gutran. It's 
+			with the Karnakas Ninja clan. Weirdly enough, there's no
+			challenges mentioned or anything. It seems like the 
+			Karnakas clan has been disbandeD years ago, making this the
+			easiest artifact to steal yet. 
+
+			Once you break into the stronghold, it should be located on
+			a central pedestal. Just head on in and grab it. ";
+	a[178] = @"Steal the Eye of Gutran";
+	a[179] = @"Mission: Eye of Gutran
+			
+			Hiring Firm: Yellerteeth Inc.
+			Current Standing With
+			Yellerteeth Inc.: "+string(obj_suq.yellerteeth)+@"
+			Combat Difficulty: 0
+			Mental Difficulty: 0
+			Locked Doors: 2
+			Req. Locked Doors: 2
+			Keys Available: 2
+			Reward: $5500
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[180] = @"Steal Eye";
+	a[181] = @"BRIEFING:
+			The machine's just about ready. Once we start it up, the
+			whole world's gonna be on the backfoot. We'll show them all
+			that we deserve to rule this planet. We only need your help
+			because our entire army is currently being transformed into
+			invulnerable ghosts at the moment. Perhaps a mistake to do
+			it all at once. 
+			
+			This will be a never-ending onslaught. Bring your best 
+			weapons and as much ammo as you can carry. It won't be 
+			enough. They will try to break in, stand in the machine's
+			event horizon, and risk their own life to destroy it. Kill
+			them all before they have a chance. You'll have about 30 
+			seconds to set up before they attack. 
+			
+			We will be all powerful! Hahahahaha! ";
+	a[182] = @"Defend Ghost Machine From Newly Mobilized Militia";
+	a[183] = @"Mission: Defend Machine
+			
+			Hiring Firm: Kanker and Co.
+			Current Standing With
+			Kanker and Co.: "+string(obj_suq.kanker)+@"
+			Combat Difficulty: 20
+			Mental Difficulty: 5
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $20000
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[184] = @"Defend Machine";
 	a[185] = @"";
 	a[186] = @"";
 	a[187] = @"";
@@ -1832,8 +1897,11 @@ function scr_conversation(t)
 			Valuation: $6,500
 			
 			Press Spacebar to sell";//yellerteeth - Ninja memorabilia to sell or not
-	a[90] = @"We really like you, and we appreciate all you've done for us. But, we don't have much to give you beyond
-			information. Avoid anything offered to you by Tirangle. He's shady and it won't do you any good.";//gildebrand - avoid tirangle
+	a[90] = @"We really like you, and we appreciate all you've done for us. But, we don't have much to give you. We know you
+			use a certain type of armor that can sometimes be found in blue crates, so we've made sure to ship more blue crates
+			that have a greater rate of dropping armor everywhere. 
+			
+			I know it doesn't make sense, but just level with me here. It's the best I got. ";//gildebrand - Spawn Armor more often
 	a[91] = @"Ungulate Studios is so grateful for your help. We'd like to give you a gift of a robot companion that we found.
 			We don't have any use for it, so we programmed it to follow you and assist you. If you ever let it get destroyed,
 			it won't come back. We only have the one robot. 
@@ -4034,8 +4102,35 @@ function debrief(m)
 			bankrupt, you should watch your back. 
 			
 			Press Spacebar to continue";
-	c[97] = @"";
-	c[98] = @"";
+	c[97] = @"Objectives Complete
+			Payout: $10000
+			
+			Response From Hiring Firm:
+			We're so close now! What an exciting time to live in. Kanker and Co's dominance is inevitable,
+			and you've played a huge part in its naissance. We thank you for your service. 
+			
+			Current standing with Kanker and Co. "+string(obj_suq.kanker)+@"
+			
+			Result:
+			Kanker and Co. is all the more readying itself for a world-wide takeover. This will hit all
+			companies drastically and will shake up everything. Only time will tell how big of an effect
+			there is. 
+			
+			Press Spacebar to continue";
+	c[98] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			We're already goners. It wasn't nice doing business with you. Go drown in a shallow puddle.
+			
+			Current standing with Kanker and Co. "+string(obj_suq.kanker)+@"
+			
+			Result:
+			Kanker and Co. is gone. Finished. You allowed the townsfolk to end their plans here at the
+			climax. With their final plan undone, the world can take a breath and move on. Never quite
+			knowing how close it was to being wholly controlled by a single company. 
+			
+			Press Spacebar to continue";
 	c[99] = @"";
 	c[100] = @"";
 	c[101] = @"";

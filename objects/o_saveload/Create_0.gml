@@ -147,3 +147,4 @@ convinced = false;//for level 35 bank level. This will be true for level 41 to s
 plant = false;//for level 32
 nMems = false;
 robot = true;
+endgame = false;

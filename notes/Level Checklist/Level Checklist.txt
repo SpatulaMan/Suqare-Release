@@ -3,7 +3,7 @@ lvl 17 - lvl 51
 	-Short briefing
 	-Level Details
 	-Objectives
--Result text
+	-Result text
 	-Add To Level Select
 	-Level Design
 	-Starting location
@@ -14,9 +14,9 @@ lvl 17 - lvl 51
 	-Enemy Placement
 -Map
 	-Gadgets/Weapons
-	-Music
+-Music
 	-Mid-Level Objectives Complete
--Level End Code
+	-Level End Code
 -Testing
 
 

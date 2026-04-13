@@ -10,6 +10,7 @@ randomize();
 pch = choose(1,2,3);
 x4 = 0;
 y4 = 0;
+if(room == r_lvl_43) { x4 = 1151; y4 = 896; pch = 4; }
 cCount = 0;
 gCheck = false;
 path_check = true;

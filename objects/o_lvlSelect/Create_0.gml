@@ -50,10 +50,10 @@ switch(prog)
 	case 36:
 	case 35:
 	case 34:
-	case 33: if(obj_suq.lvldone[44] == false and obj_suq.yellerteeth > 2) { array_insert(lvl,t,44); t++; }
+	case 33: if(obj_suq.lvldone[44] == false and obj_suq.yellerteeth > 2 and o_saveload.ynet > 0) { array_insert(lvl,t,44); t++; }
 	case 32: 
-	case 31: if(obj_suq.lvldone[40] == false and o_saveload.convinced == true) { array_insert(lvl,t,40); t++; }//if this one is completed, goes straight to end game with Perez as enemy for 51
-			if(obj_suq.lvldone[42] == false and o_saveload.plant == true) { array_insert(lvl,t,42); t++; }//if this one is completed, goes straight to end game with Kanker as enemy for 51
+	case 31: if(obj_suq.lvldone[40] == false and o_saveload.convinced == true and o_saveload.pnet > 0) { array_insert(lvl,t,40); t++; }//if this one is completed, goes straight to end game with Perez as enemy for 51
+			if(obj_suq.lvldone[42] == false and o_saveload.plant == true and o_saveload.knet > 0) { array_insert(lvl,t,42); t++; }//if this one is completed, goes straight to end game with Kanker as enemy for 51
 	case 30:
 	case 29: 
 	case 28:
@@ -61,50 +61,51 @@ switch(prog)
 	case 26: 
 	case 25: if(obj_suq.lvldone[32] == false) { array_insert(lvl,t,32); t++; }
 	case 24:
-	case 23: if(obj_suq.lvldone[31] == false and obj_suq.scientist and obj_suq.tankD == true) { array_insert(lvl,t,31); t++; }
-			if(obj_suq.lvldone[34] == false and o_saveload.officials == true and o_saveload.plant == false) { array_insert(lvl,t,34); t++; }
-	case 22: if(obj_suq.lvldone[28] == false and obj_suq.lvldone[29] == false and obj_suq.lvldone[30] == false) { array_insert(lvl,t,28); t++; }
-			if(obj_suq.lvldone[28] == false and obj_suq.lvldone[29] == false and obj_suq.lvldone[30] == false) { array_insert(lvl,t,29); t++; }
+	case 23: if(obj_suq.lvldone[31] == false and obj_suq.scientist and obj_suq.tankD == true and o_saveload.knet > 0) { array_insert(lvl,t,31); t++; }
+			if(obj_suq.lvldone[34] == false and o_saveload.officials == true and o_saveload.plant == false and o_saveload.pnet > 0) { array_insert(lvl,t,34); t++; }
+	case 22: if(obj_suq.lvldone[28] == false and obj_suq.lvldone[29] == false and obj_suq.lvldone[30] == false and o_saveload.unet > 0) { array_insert(lvl,t,28); t++; }
+			if(obj_suq.lvldone[28] == false and obj_suq.lvldone[29] == false and obj_suq.lvldone[30] == false and o_saveload.hnet > 0) { array_insert(lvl,t,29); t++; }
 			if(obj_suq.lvldone[28] == false and obj_suq.lvldone[29] == false and obj_suq.lvldone[30] == false) { array_insert(lvl,t,30); t++; }
 	case 21:
 	case 20:
-	case 19: if(obj_suq.lvldone[26] == false) { array_insert(lvl,t,26); t++; }
-			if(obj_suq.lvldone[27] == false) { array_insert(lvl,t,27); t++; }
+	case 19: if(obj_suq.lvldone[26] == false and obj_suq.yellerteeth > -2 and o_saveload.ynet > 0) { array_insert(lvl,t,26); t++; }
+			if(obj_suq.lvldone[27] == false and o_saveload.hnet > 0) { array_insert(lvl,t,27); t++; }
 	case 18:
 	case 17: if(obj_suq.lvldone[24] == false and obj_suq.lvldone[25] == false) { array_insert(lvl,t,24); t++; }
-			 if(obj_suq.lvldone[24] == false and obj_suq.lvldone[25] == false) { array_insert(lvl,t,25); t++; }
+			 if(obj_suq.lvldone[24] == false and obj_suq.lvldone[25] == false and o_saveload.gnet > 0) { array_insert(lvl,t,25); t++; }
 	case 16:
 	case 15: if(obj_suq.swh == false and obj_suq.fragment[0] == true and obj_suq.fragment[1] == true and obj_suq.fragment[2] == true and obj_suq.fragment[3] == true) 
 			 { array_insert(lvl,t,19); t++; }
-			 if(obj_suq.lvldone[23] == false) { array_insert(lvl,t,23); t++; }
+			 if(obj_suq.lvldone[23] == false and o_saveload.pnet > 0) { array_insert(lvl,t,23); t++; }
 	case 14:
 	case 13: if(obj_suq.lvldone[22] == false and obj_suq.contraband >= 30) { array_insert(lvl,t,22); t++; }
-	case 12: if(obj_suq.lvldone[21] == false) { array_insert(lvl,t,21); t++; }
+	case 12: if(obj_suq.lvldone[21] == false and o_saveload.unet > 0) { array_insert(lvl,t,21); t++; }
 	case 11:
-	case 10: if(obj_suq.lvldone[18] == false) { array_insert(lvl,t,18); t++; }
-			 if(obj_suq.lvldone[20] == false) { array_insert(lvl,t,20); t++; }
+	case 10: if(obj_suq.lvldone[18] == false and o_saveload.pnet > 0) { array_insert(lvl,t,18); t++; }
+			 if(obj_suq.lvldone[20] == false and obj_suq.yellerteeth > -2 and o_saveload.ynet > 0) { array_insert(lvl,t,20); t++; }
 	case 9:
-	case 8: if(obj_suq.lvldone[15] == false) { array_insert(lvl,t,15); t++; }
-			if(obj_suq.lvldone[16] == false and obj_suq.lvldone[17] == false) { array_insert(lvl,t,16); t++; }
-			if(obj_suq.lvldone[17] == false and obj_suq.lvldone[16] == false) { array_insert(lvl,t,17); t++; }
+	case 8: if(obj_suq.lvldone[15] == false and o_saveload.knet > 0) { array_insert(lvl,t,15); t++; }
+			if(obj_suq.lvldone[16] == false and obj_suq.lvldone[17] == false and o_saveload.gnet > 0) { array_insert(lvl,t,16); t++; }
+			if(obj_suq.lvldone[17] == false and obj_suq.lvldone[16] == false and o_saveload.hnet > 0) { array_insert(lvl,t,17); t++; }
 	case 7:
-	case 6: if(obj_suq.lvldone[11] == false) { array_insert(lvl,t,11); t++; }
-			if(obj_suq.lvldone[12] == false and obj_suq.lvldone[1] == true and obj_suq.gemsD > 0) { array_insert(lvl,t,12); t++; }
+	case 6: if(obj_suq.lvldone[11] == false and o_saveload.pnet > 0) { array_insert(lvl,t,11); t++; }
+			if(obj_suq.lvldone[12] == false and obj_suq.lvldone[1] == true and obj_suq.gemsD > 0 and o_saveload.knet > 0) { array_insert(lvl,t,12); t++; }
 			if(obj_suq.lvldone[13] == false) { array_insert(lvl,t,13); t++; }
-			if(obj_suq.lvldone[14] == false) { array_insert(lvl,t,14); t++; }
-	case 5: if(obj_suq.lvldone[6] == false and obj_suq.lvldone[1] == true and obj_suq.gemsD > 0) { array_insert(lvl,t,6); t++; }
+			if(obj_suq.lvldone[14] == false and o_saveload.hnet > 0) { array_insert(lvl,t,14); t++; }
+	case 5: if(obj_suq.lvldone[6] == false and obj_suq.lvldone[1] == true and obj_suq.gemsD > 0 and o_saveload.pnet > 0) { array_insert(lvl,t,6); t++; }
 			if(obj_suq.lvldone[9] == false) { array_insert(lvl,t,9); t++; }
-			if(obj_suq.lvldone[10] == false) { array_insert(lvl,t,10); t++; }
-	case 4: if(obj_suq.lvldone[8] == false and obj_suq.lvldone[2] == true) { array_insert(lvl,t,8); t++; }
+			if(obj_suq.lvldone[10] == false and o_saveload.unet > 0) { array_insert(lvl,t,10); t++; }
+	case 4: if(obj_suq.lvldone[8] == false and obj_suq.yellerteeth > -4 and o_saveload.ynet > 0) { array_insert(lvl,t,8); t++; }
 	case 3: if(obj_suq.lvldone[5] == false) { array_insert(lvl,t,5); t++; }
-			if(obj_suq.lvldone[7] == false) { array_insert(lvl,t,7); t++; }
+			if(obj_suq.lvldone[7] == false and o_saveload.gnet > 0) { array_insert(lvl,t,7); t++; }
 	case 2: 
-	case 1: if(obj_suq.lvldone[1] == false) { array_insert(lvl,t,1); t++; }
-			if(obj_suq.lvldone[2] == false and obj_suq.yellerteeth > -6) { array_insert(lvl,t,2); t++; }
-			if(obj_suq.lvldone[3] == false and obj_suq.lvldone[4] == false and obj_suq.ungulate > -6) { array_insert(lvl,t,3); t++; }
-			if(obj_suq.lvldone[4] == false and obj_suq.lvldone[3] == false and obj_suq.hiertech > -6) { array_insert(lvl,t,4); t++; }
+	case 1: if(obj_suq.lvldone[1] == false and o_saveload.knet > 0) { array_insert(lvl,t,1); t++; }
+			if(obj_suq.lvldone[2] == false and obj_suq.yellerteeth > -6 and o_saveload.ynet > 0) { array_insert(lvl,t,2); t++; }
+			if(obj_suq.lvldone[3] == false and obj_suq.lvldone[4] == false and obj_suq.ungulate > -6 and o_saveload.unet > 0) { array_insert(lvl,t,3); t++; }
+			if(obj_suq.lvldone[4] == false and obj_suq.lvldone[3] == false and obj_suq.hiertech > -6 and o_saveload.hnet > 0) { array_insert(lvl,t,4); t++; }
 			//break;
 	case 0: array_insert(lvl,t,0); t++;
+			array_insert(lvl,t,8); t++;
 			if(obj_suq.lvldone[9] == false) { array_insert(lvl,t,9); t++; }
 			if(obj_suq.lvldone[11] == false and obj_suq.perez > -4) { array_insert(lvl,t,11); t++; }
 			if(obj_suq.lvldone[12] == false and obj_suq.kanker > -5) { array_insert(lvl,t,12); t++; }
