@@ -1,0 +1,10 @@
+image_speed = 0;
+friction = .3;
+r = ceil(random_range(-15,15));
+move = true;
+fade = false;
+moveCount = 0;
+randomize();
+sprite_index = choose(s_enemy_N_1,s_box_B_pieces);
+image_index = choose(0,1,2,3,4,5);
+image_angle = ceil(random_range(0,359));

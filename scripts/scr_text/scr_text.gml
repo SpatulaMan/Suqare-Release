@@ -1331,19 +1331,19 @@ function scr_briefing(t){
 			We finally found the location of the Eye of Gutran. It's 
 			with the Karnakas Ninja clan. Weirdly enough, there's no
 			challenges mentioned or anything. It seems like the 
-			Karnakas clan has been disbandeD years ago, making this the
-			easiest artifact to steal yet. 
+			Karnakas clan disbanded years ago, making this the easiest
+			artifact to steal yet. 
 
-			Once you break into the stronghold, it should be located on
-			a central pedestal. Just head on in and grab it. ";
+			Once you break into the stronghold, it should be located in
+			a central room. ";
 	a[178] = @"Steal the Eye of Gutran";
 	a[179] = @"Mission: Eye of Gutran
 			
 			Hiring Firm: Yellerteeth Inc.
 			Current Standing With
 			Yellerteeth Inc.: "+string(obj_suq.yellerteeth)+@"
-			Combat Difficulty: 0
-			Mental Difficulty: 0
+			Combat Difficulty: ?
+			Mental Difficulty: ?
 			Locked Doors: 2
 			Req. Locked Doors: 2
 			Keys Available: 2
@@ -1923,6 +1923,7 @@ function scr_conversation(t)
 	
 			Remember, if the switch is on the pink line, power is on, and if the switch is on the pink box, power is off. 
 			It's like a 1 and a 0. What's so confusing about this?";
+	a[94] = @"He's got the Eye! Spring the trap! ";
 			
 	return a[t];
 }
@@ -3604,7 +3605,7 @@ function debrief(m)
 			
 			Response From Hiring Firm:
 			That was good! I wasn't sure if you were up to snuff, but you stole the jewel without any
-			problems. My so-, I mean, my company will be pleased to hear this relic is coming to our
+			problems. My son, I mean, my company will be pleased to hear this relic is coming to our
 			collection. 
 			
 			Current standing with Yellerteeth Inc: "+string(obj_suq.yellerteeth)+@"
@@ -3632,7 +3633,7 @@ function debrief(m)
 			Payout: $0
 			
 			Response From Hiring Firm:
-			You failure! I knew you didn't have it in you. You're no good at all! My so-, I mean company
+			You failure! I knew you didn't have it in you. You're no good at all! My son, I mean, company
 			will be extremely disappointed that you weren't up to snuff. 
 			
 			Current standing with Yellerteeth Inc: "+string(obj_suq.yellerteeth)+@"
@@ -4131,8 +4132,37 @@ function debrief(m)
 			knowing how close it was to being wholly controlled by a single company. 
 			
 			Press Spacebar to continue";
-	c[99] = @"";
-	c[100] = @"";
+	c[99] = @"Objectives Complete
+			Payout: $5500
+			
+			Response From Hiring Firm:
+			Wow, I really thought that was gonna be easy. I guess I won't assume that ever again. We're
+			grateful that you were able to get through a terrifying eye boss and a ninja ambush. That 
+			was absolutely insane. This party will be off the chain. 
+			
+			Current standing with Yellerteeth Inc. "+string(obj_suq.yellerteeth)+@"
+			
+			Result:
+			There's been hints of these artifacts helping them with influence in the east, something for
+			his son, and maybe some kind of party. It's all very cryptic, but I imagine the answer will be
+			revealed soon. 
+			
+			
+			Press Spacebar to continue";
+	c[100] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You left? Why? Were you threatened by a job that's too easy? Do you need to be challenged to
+			be worth anything? Buh. You suck. My party is gonna blow. 
+			
+			Current standing with Yellerteeth Inc. "+string(obj_suq.yellerteeth)+@"
+			
+			Result:
+			You didn't get the Eye of Gutran, but you've gotten another hint as to what they were wanting
+			these artifacts for. You probably won't see a full answer, though. 
+			
+			Press Spacebar to continue";
 	c[101] = @"";
 	c[102] = @"";
 	return c[m];

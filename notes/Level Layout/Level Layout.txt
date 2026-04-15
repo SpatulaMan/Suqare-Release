@@ -11,14 +11,14 @@ or
 41: Defend head office from those rioting over increased interest rates and terrible treatment (Lose money while this isn't done) (needs 35 done and 43,32 not done) Goes straight to end game
 
 
--Kanker and Co Plan - Be a giant military force to start taking over countries:
-2: Bank heist
-and
-7: Ignore or take and fail Destroy Gems
-13: kidnap scientist to make super weapon
-16: Destroy Big Tank that could stop whole plan (The tank is accessible at any point, but you want to gather as many resources as possible to know how to destroy it.) 
-32: Take Control of manufacturing plant (needs 13 and 16 done, and 35 not done)
-43: Charge super weapon (needs 32 done, and 35 not done) Goes straight to end game
+	-Kanker and Co Plan - Be a giant military force to start taking over countries:
+	2: Bank heist
+	and
+	7: Ignore or take and fail Destroy Gems
+	13: kidnap scientist to make super weapon
+	16: Destroy Big Tank that could stop whole plan (The tank is accessible at any point, but you want to gather as many resources as possible to know how to destroy it.) 
+	32: Take Control of manufacturing plant (needs 13 and 16 done, and 35 not done)
+	43: Charge super weapon (needs 32 done, and 35 not done) Goes straight to end game
 
 -Ungulate Studios Plan - Keep Evil corporations in check:
 4: kidnap girl
@@ -121,8 +121,8 @@ or
 30: Steal Art (3 paintings)
 or
 31: Kill the head of security
-	32: Take Control of manufacturing plant
-	33: Eye of Gutran
+32: Take Control of manufacturing plant
+33: Eye of Gutran
 	34: Chase down Criminal
 	35: Influence government to choose Perez as main bank of government (Lose money while this isn't done)
 	36: Prison Break, break into prison secretly, and sneak a few wrongfully convicted inmates out - NL besides ghosts that haunt the place?
@@ -132,7 +132,7 @@ or
 	40: Race (only awards 2000 for a win, 1000 for 2nd, and 500 for 3rd. Hard race. Can be played as many times as you want. 500 to enter)
 	41: Defend head office from those rioting over increased interest rates and terrible treatment (Lose money while this isn't done)
 	42: Run Down
-	43: Charge super weapon
+43: Charge super weapon
 		44: Save Hostages
 		45: Ninja Retaliation
 		46: Destroy Rivals

@@ -623,5 +623,6 @@ if(pickup_timer > 0)
 		case 62: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("PRESS E TO STEAL PAINTING"),2,2,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 63: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("PRESS E TO DROP OFF PAINTINGS"),2,2,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 64: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("CHAIN GUN"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 65: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("EYE OF GUTRAN"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 	}
 }

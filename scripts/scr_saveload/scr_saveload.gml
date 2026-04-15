@@ -125,6 +125,11 @@ function save()
 		plant: o_saveload.plant,
 		nMems: o_saveload.nMems,
 		robot: o_saveload.robot,
+		hecto: obj_suq.hecto,
+		ring: obj_suq.ring,
+		jewel: obj_suq.jewel,
+		vambrace: obj_suq.vambrace,
+		eye: obj_suq.eye,
 		engame: o_saveload.endgame
 		
 		//upgrades
@@ -380,6 +385,16 @@ function load(_f)
 			o_saveload.nMems=_struct.nMems;
 		if (struct_exists(_struct, "robot"))
 			o_saveload.robot=_struct.robot;
+		if (struct_exists(_struct, "hecto"))
+			o_saveload.hecto=_struct.hecto;
+		if (struct_exists(_struct, "ring"))
+			o_saveload.ring=_struct.ring;
+		if (struct_exists(_struct, "jewel"))
+			o_saveload.jewel=_struct.jewel;
+		if (struct_exists(_struct, "vambrace"))
+			o_saveload.vambrace=_struct.vambrace;
+		if (struct_exists(_struct, "eye"))
+			o_saveload.eye=_struct.eye;
 		if (struct_exists(_struct, "endgame"))
 			o_saveload.endgame=_struct.endgame;
 		
@@ -505,6 +520,11 @@ function load(_f)
 			chainGunHave: 0,
 			nMems: false,
 			robot: true,
+			hecto: false,
+			ring: false,
+			jewel: false,
+			vambrace: false,
+			eye: false,
 			endgame: false
 		
 		}

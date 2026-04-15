@@ -6,7 +6,7 @@
 
 -Add bonuses when you're on a company's good side - done
 
--Finish all 51 levels - 19 levels left
+-Finish all 51 levels - 17 levels left
 
 -Playtest and bug-fix levels - 29 levels left
 
@@ -17,5 +17,4 @@ and then the textbox and o_conversation will be destroyed.
 
 -Save the ninja artifacts that are stolen. They will determine if you can play the final Yellerteeth level(s): hecto, ring, jewel, vambrace
 
--level where you're swarmed by weak lvl 0 type enemies, but there's hundreds of them. Ammo everywhere. Angry mob about (attacking kanker's machine level?)
-
+Randomly have the car take you to get ice cream at the end of a level? 

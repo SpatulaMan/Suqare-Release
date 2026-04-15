@@ -146,6 +146,7 @@ if(a > 0)
 		case 112: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("RESEARCH AND PRODUCTION"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 113: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("POWER CELLS"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 114: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("GHOST MACHINE DEPLOYMENT LOCATION"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 115: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("TEMPLE OF GUTRAN"),2,2,0,c_white,c_white,c_white,c_white,a); break;
 		default: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("RESTRICTED"),3,3,0,c_white,c_white,c_white,c_white,a); 
 	}
 }

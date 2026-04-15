@@ -19,7 +19,7 @@ if(room == r_lvl_0 or room == r_lvl_11 or room == r_lvl_32) then image_index = 6
 if(room == r_lvl_32 and depth == 400) then image_index = 2;
 if((room == r_lvl_29 or room == r_lvl_30 or room == r_lvl_31) and depth == 100) then image_index = 1;
 if((room == r_lvl_29 or room == r_lvl_30 or room == r_lvl_31) and depth == 400) then image_index = 7;
-if(room == r_lvl_3 or r_lvl_9 or r_lvl_15 or r_lvl_21) then image_index = 4;
+if(room == r_lvl_3 or room == r_lvl_9 or room == r_lvl_15 or room == r_lvl_21 or room == r_lvl_33) then image_index = 4;
 if(room == r_lvl_4 or room == r_lvl_12) then image_index = 7;
 if(room == r_lvl_6) then image_index = 11;
 if(room == r_lvl_7) then image_index = 9;

@@ -1172,6 +1172,28 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.knet -= 100;
 				}
 			} break;
+			case r_lvl_33:
+			{
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				o_saveload.pnet += 2;
+				o_saveload.knet -= 3;
+				o_saveload.gnet += 2;
+				o_saveload.unet -= 2;
+				o_saveload.hnet += 3;
+				if(o_lvl33.o1)
+				{
+					o_saveload.moneyT += 5500*_emtBill;
+					obj_suq.report = 99;
+					o_saveload.ynet += 15;
+					o_saveload.yellerteeth += 2;
+				}
+				else
+				{
+					o_saveload.ynet -= 7;
+					obj_suq.report = 100;
+					o_saveload.yellerteeth -= 2;
+				}
+			} break;
 		}
 		if(!car and !range_optional)
 		{
