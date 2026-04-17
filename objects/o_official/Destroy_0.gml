@@ -45,6 +45,8 @@ if(!awake)
 	}
 	if(o == 1) { o_lvl24.o1 = true; }
 	else { o_lvl24.o2 = true; }
+	if(o == 1) { instance_create_layer(536,468,"Instances_Action",o_laserOff); } 
+	else { instance_create_layer(2123,415,"Instances_Action",o_laserOff); }
 }
 else
 {

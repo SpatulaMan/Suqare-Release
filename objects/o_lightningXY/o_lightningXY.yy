@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_suqBul",
-    "path":"sprites/spr_suqBul/spr_suqBul.yy",
+    "name":"s_ggBul",
+    "path":"sprites/s_ggBul/s_ggBul.yy",
   },
   "spriteMaskId":null,
   "visible":false,

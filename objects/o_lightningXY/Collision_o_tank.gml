@@ -1,4 +1,3 @@
 /// @description 
-x1 = x;
-y1 = y;
+ido = other.id;
 instance_destroy();

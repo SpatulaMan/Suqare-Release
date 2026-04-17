@@ -1,5 +1,5 @@
 /// @description
-if(instance_number(obj_guard_patrol) < 10)
+if(instance_number(obj_guard_patrol) < 5)
 {
 	var _e = instance_create_layer(1019,1418,"Instances_Action",obj_guard_patrol);
 	_e.weapon_type = choose(obj_magnum,obj_shotgun);
@@ -7,7 +7,7 @@ if(instance_number(obj_guard_patrol) < 10)
 	_e.hp = 16;
 	_e.drop_gun = choose(true,false,true);
 	_e.weapon_spd = 6;
-	switch(weapon_type)
+	switch(_e.weapon_type)
 	{
 		case obj_pistol: 
 			_e.weapon = instance_create_layer(_e.x,_e.y,"Instances_Action",o_ePistol); 
@@ -28,4 +28,4 @@ if(instance_number(obj_guard_patrol) < 10)
 	}
 	_e.p = Path64;
 }
-alarm_set(0,60);
+alarm_set(0,180);

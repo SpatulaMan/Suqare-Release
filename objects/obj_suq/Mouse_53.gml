@@ -189,11 +189,10 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
 		//swordLC = 1;
 		if(swordCH >= 60)
 		{
-			swordCH = 0;
+			swordCH = 60;
 			var _snbul = instance_create_layer(x,y,"Instances_Action",o_lightningXY);
 			//_snbul.sprite_index = s_lightning;
 			//_snbul.image_blend = c_yellow;
-			_snbul.speed = 10;
 			_snbul.direction = point_direction(x,y,mouse_x,mouse_y);
 			_snbul.image_angle = point_direction(x,y,mouse_x,mouse_y);
 		}

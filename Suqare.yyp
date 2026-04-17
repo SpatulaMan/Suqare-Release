@@ -222,6 +222,7 @@
     {"id":{"name":"o_L10","path":"objects/o_L10/o_L10.yy",},},
     {"id":{"name":"o_laserAlarms","path":"objects/o_laserAlarms/o_laserAlarms.yy",},},
     {"id":{"name":"o_laserN","path":"objects/o_laserN/o_laserN.yy",},},
+    {"id":{"name":"o_laserOff","path":"objects/o_laserOff/o_laserOff.yy",},},
     {"id":{"name":"o_lasers","path":"objects/o_lasers/o_lasers.yy",},},
     {"id":{"name":"o_laserSight","path":"objects/o_laserSight/o_laserSight.yy",},},
     {"id":{"name":"o_lightningXY","path":"objects/o_lightningXY/o_lightningXY.yy",},},

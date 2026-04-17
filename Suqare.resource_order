@@ -173,6 +173,7 @@
     {"name":"o_inTrig","order":2,"path":"objects/o_inTrig/o_inTrig.yy",},
     {"name":"o_laserAlarms","order":2,"path":"objects/o_laserAlarms/o_laserAlarms.yy",},
     {"name":"o_laserN","order":3,"path":"objects/o_laserN/o_laserN.yy",},
+    {"name":"o_laserOff","order":6,"path":"objects/o_laserOff/o_laserOff.yy",},
     {"name":"o_lasers","order":1,"path":"objects/o_lasers/o_lasers.yy",},
     {"name":"o_laserSight","order":7,"path":"objects/o_laserSight/o_laserSight.yy",},
     {"name":"o_lightningXY","order":57,"path":"objects/o_lightningXY/o_lightningXY.yy",},

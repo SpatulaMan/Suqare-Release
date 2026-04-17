@@ -1,4 +1,4 @@
 /// @description
 x1 = x;
 y1 = y;
-alarm_set(0,10);
+alarm_set(0,1);

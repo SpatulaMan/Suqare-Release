@@ -1,8 +1,6 @@
 /// @description 
-speed++;
-if(speed > 30 and distance_to_object(obj_wall) < speed)
-{ 
-	speed = 12; 
+/*if(distance_to_object(instance_nearest(x,y,obj_wall)))
+{
 	x1 = x;
 	y1 = y;
 	instance_destroy();

@@ -1,6 +1,6 @@
 /// @description 
 var _l = instance_create_layer(obj_suq.x,obj_suq.y,"Instances_Action",obj_suqlightning);
-if(distance_to_point(obj_suq.x,obj_suq.y) > 480) { d = 480; }
-else { d = distance_to_point(obj_suq.x,obj_suq.y); d += 12; }
+if(instance_exists(ido)) { d = distance_to_object(obj_suq); }
+else { d = 480; }
 _l.scale = d;
-_l.image_angle = point_direction(obj_suq.x,obj_suq.y,x1,y1);
+_l.image_angle = image_angle;

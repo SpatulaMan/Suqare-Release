@@ -134,7 +134,7 @@ or
 	42: Run Down
 43: Charge super weapon
 		44: Save Hostages
-		45: Ninja Retaliation
+		45: Ninja Birthday Party (artifact boss design with all 5 things on it. Amulet is shield, Jewel is power source, Eye is head and shoots lasers, ring shoots homing missiles, vambrace)
 		46: Destroy Rivals
 		47: Ghost Infestation
 		48: Destroy super weapon and stop kanker and Co

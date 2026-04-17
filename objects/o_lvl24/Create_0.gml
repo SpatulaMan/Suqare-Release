@@ -7,3 +7,4 @@ popo1 = false;
 popo2 = false;
 pocheck1 = false;
 pocheck2 = false;
+als = 0;
