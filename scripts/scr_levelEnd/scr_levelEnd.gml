@@ -1194,6 +1194,43 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.yellerteeth -= 2;
 				}
 			} break;
+			case r_lvl_39:
+			{
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				o_saveload.pnet -= 2;
+				o_saveload.knet += 3;
+				o_saveload.gnet -= 2;
+				o_saveload.unet += 2;
+				o_saveload.hnet -= 3;
+				if(o_lvl39.o1)
+				{
+					o_saveload.moneyT += 8400*_emtBill;
+					obj_suq.report = 101;
+					o_saveload.ynet += 22;
+					o_saveload.yellerteeth += 3;
+					obj_suq.artifacts = 1;
+				}
+				else if(instance_exists(obj_mercenaryN) and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye)
+				{
+					o_saveload.ynet -= 30;
+					obj_suq.report = 102;
+					o_saveload.yellerteeth -= 2;
+				}
+				else if(!obj_suq.hecto or !obj_suq.ring or !obj_suq.jewel or !obj_suq.vambrace or !obj_suq.eye)
+				{
+					o_saveload.ynet -= 30;
+					obj_suq.report = 103;
+					o_saveload.yellerteeth -= 4;
+					obj_suq.artifacts = 2;
+				}
+				else if(instance_exists(obj_mercenaryN) and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and 
+					(!instance_exists(o_hecto) or !instance_exists(o_tarpho) or !instance_exists(o_jewel) or !instance_exists(o_vambrace) or !instance_exists(o_eye)))
+				{
+					o_saveload.ynet -= 30;
+					obj_suq.report = 104;
+					o_saveload.yellerteeth -= 1;
+				}
+			} break;
 		}
 		if(!car and !range_optional)
 		{

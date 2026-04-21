@@ -130,6 +130,7 @@ function save()
 		jewel: obj_suq.jewel,
 		vambrace: obj_suq.vambrace,
 		eye: obj_suq.eye,
+		artifacts: obj_suq.artifacts,
 		engame: o_saveload.endgame
 		
 		//upgrades
@@ -395,6 +396,8 @@ function load(_f)
 			o_saveload.vambrace=_struct.vambrace;
 		if (struct_exists(_struct, "eye"))
 			o_saveload.eye=_struct.eye;
+		if (struct_exists(_struct, "artifacts"))
+			o_saveload.artifacts=_struct.artifacts;
 		if (struct_exists(_struct, "endgame"))
 			o_saveload.endgame=_struct.endgame;
 		
@@ -525,6 +528,7 @@ function load(_f)
 			jewel: false,
 			vambrace: false,
 			eye: false,
+			artifacts: 0,
 			endgame: false
 		
 		}

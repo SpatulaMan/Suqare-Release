@@ -1400,10 +1400,43 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[184] = @"Defend Machine";
-	a[185] = @"";
-	a[186] = @"";
-	a[187] = @"";
-	a[188] = @"";
+	a[185] = @"BRIEFING:
+			We have the 5 ninja artifacts in our special warehouse, but
+			the ninjas found out where it is. They know what we can do
+			with them, so they're coming to destroy them. We're 
+			shipping them to Yellerteeth HQ tomorrow, so this is the
+			ninja's last chance to stop us. Make sure that doesn't 
+			happen. 
+			
+			And don't get any funny ideas. Just keep the artifacts
+			protected, and we won't have any problems. 
+			
+			URGENT NOTE: We have word that the ninjas could get there
+			before you even. You will have no time to prepare! ";
+	a[186] = @"Protect the 5 stolen ninja artifacts";
+	a[187] = @"Mission: Eye of Gutran
+			
+			Hiring Firm: Yellerteeth Inc.
+			Current Standing With
+			Yellerteeth Inc.: "+string(obj_suq.yellerteeth)+@"
+			Combat Difficulty: 13
+			Mental Difficulty: 6
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $8400
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[188] = @"Defend Stuff";
 	a[189] = @"";
 	a[190] = @"";
 	a[191] = @"";
@@ -4144,7 +4177,7 @@ function debrief(m)
 			
 			Result:
 			There's been hints of these artifacts helping them with influence in the east, something for
-			his son, and maybe some kind of party. It's all very cryptic, but I imagine the answer will be
+			his son, and maybe some kind of shindig. It's all very cryptic, but I imagine the answer will be
 			revealed soon. 
 			
 			
@@ -4163,8 +4196,82 @@ function debrief(m)
 			these artifacts for. You probably won't see a full answer, though. 
 			
 			Press Spacebar to continue";
-	c[101] = @"";
-	c[102] = @"";
+	c[101] = @"Objectives Complete
+			Payout: $8400
+			
+			Response From Hiring Firm:
+			That was great! Now our plan can finally come to fruition. You're invited to the next phase of
+			our plan, so look for that job soon. 
+			
+			Current standing with Yellerteeth Inc. "+string(obj_suq.yellerteeth)+@"
+			
+			Result:
+			You prevented the destruction of the ninja artifacts, and allowed Yellerteeth to move forward
+			with their plan. You'll finally get to see what all the build up was about in the next job 
+			they have for you. 
+			
+			
+			Press Spacebar to continue";
+	c[102] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You just up and left? There was still so much to be done! I can't believe you would let this
+			happen. We're ruined! 
+			
+			Current standing with Yellerteeth Inc. "+string(obj_suq.yellerteeth)+@"
+			
+			Result:
+			You chose to leave the job without finishing it. Bold move. Yellerteeth's plans are basically
+			finished now, so their stock is bound to drop dramatically. 
+			
+			Press Spacebar to continue";//leaving while ninjas and artifacts are still there with no stealing
+	c[103] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You stole ninja artifacts from us? What!? How could you do such a thing? Don't you have any
+			integrity as a mercenary at all? This is unbelievable. You are a horrible person, and we will
+			never work with you again. 
+			
+			Current standing with Yellerteeth Inc. "+string(obj_suq.yellerteeth)+@"
+			
+			Result:
+			You chose to steal artifacts from Yellerteeth. If you got them all, maybe you can see for 
+			yourself what Yellerteeth had planned for them. Yellerteeth's plans are basically finished
+			now, so their stock is bound to drop dramatically. 
+			
+			Press Spacebar to continue";//you stole some or all the artifacts
+	c[104] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You couldn't stop them from destroying the artifacts? I guess they were more powerful than I
+			thought. Well, Yellerteeth is done for. We'll have to do some major restructuring if we want
+			to stay competitive in this market. 
+			
+			Current standing with Yellerteeth Inc. "+string(obj_suq.yellerteeth)+@"
+			
+			Result:
+			You couldn't stop the ninjas. Yellerteeth will pay the price, and the mystery of what they
+			were working on will never be discovered. 
+			
+			Press Spacebar to continue";//failed to protect all the artifacts
+	c[105] = @"";
+	c[106] = @"";
+	c[107] = @"";
+	c[108] = @"";
+	c[109] = @"";
+	c[110] = @"";
+	c[111] = @"";
+	c[112] = @"";
+	c[113] = @"";
+	c[114] = @"";
+	c[115] = @"";
+	c[116] = @"";
+	c[117] = @"";
+	c[118] = @"";
+	c[119] = @"";
 	return c[m];
 }
 function tutorial(k)

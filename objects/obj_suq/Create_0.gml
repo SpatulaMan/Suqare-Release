@@ -261,6 +261,7 @@ ring = o_saveload.ring;
 jewel = o_saveload.jewel;
 eye = o_saveload.eye;
 vambrace = o_saveload.vambrace;
+artifacts = o_saveload.artifacts;
 vambraceK = false;
 ghp = 0;
 totems = 0;

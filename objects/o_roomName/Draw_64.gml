@@ -147,6 +147,12 @@ if(a > 0)
 		case 113: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("POWER CELLS"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 114: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("GHOST MACHINE DEPLOYMENT LOCATION"),2,2,0,c_white,c_white,c_white,c_white,a); break;
 		case 115: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("TEMPLE OF GUTRAN"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 116: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("BASEMENT 1"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 117: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("BASEMENT 2"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 118: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("UPSTAIRS 1"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 119: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("UPSTAIRS 2"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 120: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("UPSTAIRS 3"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 121: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("MAIN FLOOR"),2,2,0,c_white,c_white,c_white,c_white,a); break;
 		default: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("RESTRICTED"),3,3,0,c_white,c_white,c_white,c_white,a); 
 	}
 }

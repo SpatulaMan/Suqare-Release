@@ -152,4 +152,5 @@ ring = false;
 jewel = false;
 vambrace = false;
 eye = false;
+artifacts = 0;
 endgame = false;

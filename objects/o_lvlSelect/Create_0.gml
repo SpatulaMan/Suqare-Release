@@ -50,12 +50,12 @@ switch(prog)
 	case 36:
 	case 35:
 	case 34:
-	case 33: if(obj_suq.lvldone[44] == false and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and obj_suq.yellerteeth > 6 and o_saveload.ynet > 0) { array_insert(lvl,t,44); t++; }
+	case 33: if(obj_suq.lvldone[44] == false and obj_suq.artifacts == 1 and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and obj_suq.yellerteeth > 6 and o_saveload.ynet > 0) { array_insert(lvl,t,44); t++; }
 	case 32: 
 	case 31: if(obj_suq.lvldone[40] == false and o_saveload.convinced == true and o_saveload.pnet > 0) { array_insert(lvl,t,40); t++; }//if this one is completed, goes straight to end game with Perez as enemy for 51
 			if(obj_suq.lvldone[42] == false and o_saveload.plant == true and o_saveload.knet > 0) { array_insert(lvl,t,42); t++; }//if this one is completed, goes straight to end game with Kanker as enemy for 51
 	case 30: 
-	case 29: if(obj_suq.lvldone[38] == false and o_saveload.ynet > 4) { array_insert(lvl,t,38); t++; }
+	case 29: if(obj_suq.lvldone[38] == false and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and obj_suq.yellerteeth > 4 and o_saveload.ynet > 0) { array_insert(lvl,t,38); t++; }
 	case 28:
 	case 27:
 	case 26: 

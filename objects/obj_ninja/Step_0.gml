@@ -26,10 +26,11 @@ if(ninjakill > 0 and instance_exists(o_obj) and (x > 934 or x < 113 or y > 467 o
 if((boss == true and instance_exists(o_wallCreate.inst)) or boss == false)
 {
 	pd1 = point_direction(x,y,obj_suq.x,obj_suq.y);
-	if(x > 1130 and y > 654)
+	if(x > 1130 and y > 654 and room == r_lvl_3)
 	{
 		shootCheck -= 1;
 	}
+	else(room != r_lvl_3) { shootCheck--; }
 	if(dare == 1 and darecheck == false)
 	{
 		darecheck = true;

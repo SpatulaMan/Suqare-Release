@@ -128,7 +128,7 @@ or
 	36: Prison Break, break into prison secretly, and sneak a few wrongfully convicted inmates out - NL besides ghosts that haunt the place?
 	37: Hijack Ship - NL
 	38: Want Some Stuff?
-	39: Destroy Ninja Hierarchy (kill all ninja leaders)
+	39: Defend the artifacts
 	40: Race (only awards 2000 for a win, 1000 for 2nd, and 500 for 3rd. Hard race. Can be played as many times as you want. 500 to enter)
 	41: Defend head office from those rioting over increased interest rates and terrible treatment (Lose money while this isn't done)
 	42: Run Down
