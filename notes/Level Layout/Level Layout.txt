@@ -36,7 +36,7 @@ or
 27: Vambrace of Mortuban 
 33: Eye of Gutran
 39: Destroy Ninja Hierarchy (kill all ninja leaders) (need standing > 2)
-45: Ninja Retaliation, Fight off onslaught of ninjas until they're all dead. Protect the ninja-themed birthday party. (need standing > 4)
+45: Protect the ninja-themed birthday party. (need standing > 4)
 
 -Hiertech Plan - To be profitable by any means necessary:
 5: Save girl

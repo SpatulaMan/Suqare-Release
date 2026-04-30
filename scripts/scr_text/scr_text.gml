@@ -1414,7 +1414,7 @@ function scr_briefing(t){
 			URGENT NOTE: We have word that the ninjas could get there
 			before you even. You will have no time to prepare! ";
 	a[186] = @"Protect the 5 stolen ninja artifacts";
-	a[187] = @"Mission: Eye of Gutran
+	a[187] = @"Mission: Protect Artifacts
 			
 			Hiring Firm: Yellerteeth Inc.
 			Current Standing With
@@ -1437,11 +1437,42 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[188] = @"Defend Stuff";
-	a[189] = @"";
-	a[190] = @"";
-	a[191] = @"";
-	a[192] = @"";
-	a[193] = @"";
+	a[189] = @"BRIEFING:
+			Please come to my son's 12th birthday party. We'll have a
+			special guest that's made up of the ninja artifacts for 
+			fun. Our plan at Yellerteeth Inc. is to be hired across the
+			globe for ninja-themed birthday parties. This will allow us
+			to dramatically increase our influence, and our 
+			marketability for some major net worth increases. Everyone
+			loves ninjas! 
+			
+			So, this job is a simple one. Just come and enjoy the
+			festivities as we celebrate a huge company victory. ";
+	a[190] = @"Attend a Ninja-themed birthday party";
+	a[191] = @"Mission: Attend Ninja Party
+			
+			Hiring Firm: Yellerteeth Inc.
+			Current Standing With
+			Yellerteeth Inc.: "+string(obj_suq.yellerteeth)+@"
+			Combat Difficulty: ?
+			Mental Difficulty: ?
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $6000
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[192] = @"Attend Party";
+	a[193] = @"Destroy Mech";
 	a[194] = @"";
 	a[195] = @"";
 	a[196] = @"";
@@ -1957,6 +1988,12 @@ function scr_conversation(t)
 			Remember, if the switch is on the pink line, power is on, and if the switch is on the pink box, power is off. 
 			It's like a 1 and a 0. What's so confusing about this?";
 	a[94] = @"He's got the Eye! Spring the trap! ";
+	a[95] = @"Things did not go to plan...";
+	a[96] = @"The party is over... Everyone is gone. ";
+	a[97] = @"The house, the presents, the plans, all destroyed. ";
+	a[98] = @"The artifacts... aren't what they seem. When they all come together. They become something different. ";
+	a[99] = @"I wrote these notes with the last of my strength. Please kill it! ";
+	a[100] = @"";
 			
 	return a[t];
 }
@@ -4257,9 +4294,53 @@ function debrief(m)
 			were working on will never be discovered. 
 			
 			Press Spacebar to continue";//failed to protect all the artifacts
-	c[105] = @"";
-	c[106] = @"";
-	c[107] = @"";
+	c[105] = @"Objectives Complete
+			Payout: $6000
+			
+			Response From Hiring Firm:
+			...
+			
+			Current standing with Yellerteeth Inc. "+string(obj_suq.yellerteeth)+@"
+			
+			Result:
+			You found the party already in shambles. Everyone was dead. You decided to avenge the people
+			there and kill the monster that had come from the artifacts. Yellerteeth as a company is gone, 
+			but at least this monster can't kill anymore. 
+			
+			
+			Press Spacebar to continue";
+	c[106] = @"Objectives Complete
+			Payout: $6000
+			
+			Response From Hiring Firm:
+			...
+			
+			Current standing with Yellerteeth Inc. "+string(obj_suq.yellerteeth)+@"
+			
+			Result:
+			You found the party already in shambles. Everyone was dead. You decided to leave before you 
+			even saw the artifact monster. Yellerteeth as a company is gone, and who knows if this monster
+			will keep terrorizing the world or not. Yellerteeth already wired you the money, so it didn't
+			matter if you killed the monster or not. 
+			
+			
+			Press Spacebar to continue";
+	c[107] = @"Objectives Complete
+			Payout: $6000
+			
+			Response From Hiring Firm:
+			...
+			
+			Current standing with Yellerteeth Inc. "+string(obj_suq.yellerteeth)+@"
+			
+			Result:
+			You found the party already in shambles. Everyone was dead. You decided to leave once you saw
+			the monster's insane abilities. Yellerteeth as a company is gone, and who knows if this 
+			monster will keep terrorizing the world or not. Yellerteeth already wired you the money, so it 
+			didn't matter if you killed the monster or not. 
+			
+			
+			Press Spacebar to continue";
 	c[108] = @"";
 	c[109] = @"";
 	c[110] = @"";

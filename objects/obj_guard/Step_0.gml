@@ -188,7 +188,7 @@ if(spin_check == false) then weapon.image_angle += a;
 if(hp < hpc)
 {
 	hpc = hp;
-	weapon.image_angle = pd;
+	//weapon.image_angle = pd; see if this is better
 	var _inst = noone;
 	if(hit == true and !place_meeting(x,y,o_hurt))
 	{
