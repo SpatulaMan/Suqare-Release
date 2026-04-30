@@ -13,7 +13,7 @@ spc = true;
 a = 2;
 hit = false;
 keyimage = 0;
-hp = 50;
+hp = 30;
 hpc = 0;
 hpt = 0;
 if(room == r_lvl_2)

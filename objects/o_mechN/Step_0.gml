@@ -86,5 +86,9 @@ if(hp <= 0)
 		instance_create(x,y,o_eFireSH);
 		instance_create(x,y,o_eFireSH);
 		instance_create(x,y,o_eFireSH);
-}
+	}
+	if(image_index == 0 and image_alpha < .5 and instance_number(o_mechN) == 1)
+	{
+		instance_destroy();
+	}
 }
