@@ -153,6 +153,15 @@ if(a > 0)
 		case 119: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("UPSTAIRS 2"),2,2,0,c_white,c_white,c_white,c_white,a); break;
 		case 120: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("UPSTAIRS 3"),2,2,0,c_white,c_white,c_white,c_white,a); break;
 		case 121: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("MAIN FLOOR"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 122: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HOUSE 1"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 123: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HOUSE 2"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 124: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HOUSE 3"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 125: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HOUSE 4"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 126: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HOUSE 5"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 127: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HOUSE 6"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 128: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HOUSE 7"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 129: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HOUSE 8"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 130: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HOUSE 9"),2,2,0,c_white,c_white,c_white,c_white,a); break;
 		default: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("RESTRICTED"),3,3,0,c_white,c_white,c_white,c_white,a); 
 	}
 }

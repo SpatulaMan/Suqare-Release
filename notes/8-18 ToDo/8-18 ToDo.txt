@@ -8,17 +8,12 @@
 
 -Add bonuses when you're on a company's good side - done
 
--Finish all 51 levels - 16 levels left
+-Finish all 51 levels - 15 levels left
 
 -Playtest and bug-fix levels - 28 levels left
 
--When you're on Cricle's bad side, there will be a chance to spawn several enemies near your vehicle to attack you. Text will show up saying, "Cricle sends his regards"
-and then the textbox and o_conversation will be destroyed. 
-
--When you're on Cricle's good side, a whole extra mission is playable at least. Maybe another request in the middle of another level. 
-
--Save the ninja artifacts that are stolen. They will determine if you can play the final Yellerteeth level(s): hecto, ring, jewel, vambrace
+-When you're on Cricle's good side, a whole extra mission is playable at least. Maybe another request in the middle of another level?
 
 Randomly have the car take you to get ice cream at the end of a level? 
 
-4 missions after lvl 45 shows up or choosing not to kill it, go to end game with monster attacking you? 
+4 missions after lvl 45 shows up or choosing not to kill the monster, go to end game with monster attacking you? 

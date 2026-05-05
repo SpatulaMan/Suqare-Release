@@ -1,0 +1,24 @@
+/// @description 
+image_speed = 0;
+check = false;
+lightCheck = false;
+inst = noone;
+mark = false;
+markCheck = false;
+done = false;
+w1 = obj_suq.roomw;
+h1 = obj_suq.roomh;
+path = path_add();
+x1 = 1067; y1 = 886; 
+x2 = 325; y2 = 417;
+x3 = 1337; y3 = 1760;
+x4 = 417; y4 = 1629;
+x5 = 1652; y5 = 1099;
+x6 = 681; y6 = 1114;
+xc = 0;
+yc = 0;
+alarm_set(0,20);
+xyc = 1;
+moveCheck = true;
+randomize();
+image_blend = choose(c_gray,c_fuchsia,c_navy,c_maroon,c_green,c_olive,c_silver,c_teal,c_purple,c_yellow);

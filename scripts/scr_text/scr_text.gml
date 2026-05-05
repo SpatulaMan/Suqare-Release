@@ -1472,12 +1472,50 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[192] = @"Attend Party";
-	a[193] = @"Destroy Mech";
-	a[194] = @"";
-	a[195] = @"";
-	a[196] = @"";
-	a[197] = @"";
-	a[198] = @"";
+	a[193] = @"Destroy Monster";
+	a[194] = @"BRIEFING:
+			There's an escaped convict on the loose. I think he works
+			for Yellerteeth Inc. He's something of a specialist on the
+			ways of the ninja, so we're thinking that company broke him
+			out of prison. We need you to apprehend him and bring him 
+			to justice. Or, if you want to get a lesser reward, you can 
+			kill him instead. 
+
+			He will be hard to catch since he will have some tricks up
+			his sleeve. Don't let them get to you, and don't let him 
+			get away! You'll find him in a housing district, but we're
+			sure he'll notice you right away. There will be other 
+			people around, so make sure you chase after the right guy.
+			He'll be running faster than the others. 
+			
+			We're giving you a special device that will pin him down
+			the moment you catch him. Also, you will lose $500 of the
+			payout for each bystander who dies during the chase. ";
+	a[195] = @"Recapture an escaped convict";
+	a[196] = @"Mission: Escaped Convict
+			
+			Hiring Firm: Gildebrand Consulting
+			Current Standing With
+			Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
+			Combat Difficulty: 5
+			Mental Difficulty: 6
+			Locked Doors: ?
+			Req. Locked Doors: ?
+			Keys Available: 0
+			Reward: $7700
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[197] = @"Catch Convict";
+	a[198] = @"Kill Convict";
 	a[199] = @"";
 	a[200] = @"";
 	a[201] = @"";
@@ -1993,7 +2031,16 @@ function scr_conversation(t)
 	a[97] = @"The house, the presents, the plans, all destroyed. ";
 	a[98] = @"The artifacts... aren't what they seem. When they all come together. They become something different. ";
 	a[99] = @"I wrote these notes with the last of my strength. Please kill it! ";
-	a[100] = @"";
+	a[100] = @"You got him! He's trapped now, so just leave him there. We'll pick him up soon. ";
+	a[101] = @"";
+	a[102] = @"";
+	a[103] = @"";
+	a[104] = @"";
+	a[105] = @"";
+	a[106] = @"";
+	a[107] = @"";
+	a[108] = @"";
+	a[109] = @"";
 			
 	return a[t];
 }
@@ -4341,9 +4388,56 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";
-	c[108] = @"";
-	c[109] = @"";
-	c[110] = @"";
+	c[108] = @"Objectives Complete
+			Payout: $7700
+			
+			Response From Hiring Firm:
+			Great job! You caught him, and he's been upgraded to a maximum security prison. Yellerteeth 
+			will be mad we caught their biggest ninja expert, but he broke the law by running illegal 
+			gambling rings for Monopoke cards. He may have been the smartest coocoo in the clock, but now
+			he's just a jaybird. 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You captured the convict and hurt Yellerteeth Inc's bottom line. This may affect your ability
+			to work with them at a later date, so be aware of that.  
+			
+			
+			Press Spacebar to continue";
+	c[109] = @"Objectives Complete
+			Payout: $2500
+			
+			Response From Hiring Firm:
+			Great job! Now, this isn't normally how we like to advertise our services, but with the extent
+			of his law-breaking choices, he was verging on the death penalty anyway. The cardinal sin of
+			running illegal gambling rings for Monopoke cards. Dark stuff. We can't offer you the full
+			payment for not catching him, but here's something for the trouble. 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You killed the convict and hurt Yellerteeth Inc's bottom line. This may affect your ability
+			to work with them at a later date, so be aware of that. 
+			
+			
+			Press Spacebar to continue";
+	c[110] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You couldn't catch him? Or kill him even? Nothing? Nada? Zilch? What are you, some kind of
+			lousy mercenary? I guess you are. This hurts everyone's business except Yellerteeth Inc, and I
+			for one find that repulsive to have a Monopoke gambler on the loose. 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You failed to capture or kill the escaped convict. This will hurt Gildebrand Consulting's 
+			business, but Yellerteeth will remain unaffected by your actions. 
+			
+			
+			Press Spacebar to continue";
 	c[111] = @"";
 	c[112] = @"";
 	c[113] = @"";
@@ -4353,6 +4447,16 @@ function debrief(m)
 	c[117] = @"";
 	c[118] = @"";
 	c[119] = @"";
+	c[120] = @"";
+	c[121] = @"";
+	c[122] = @"";
+	c[123] = @"";
+	c[124] = @"";
+	c[125] = @"";
+	c[126] = @"";
+	c[127] = @"";
+	c[128] = @"";
+	c[129] = @"";
 	return c[m];
 }
 function tutorial(k)

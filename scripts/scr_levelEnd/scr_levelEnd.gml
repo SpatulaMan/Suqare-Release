@@ -804,7 +804,10 @@ function scr_levelEnd(car,range_optional)
 				}
 				if(!instance_exists(obj_guard) and instance_exists(o_lvl22) and obj_suq.contraband > 0)
 				{
-					o_saveload.moneyT += (4500-(obj_suq.contraband*75))*_emtBill;
+					if((4500-(obj_suq.contraband*75)) > 0)
+					{
+						o_saveload.moneyT += (4500-(obj_suq.contraband*75))*_emtBill;
+					}
 					obj_suq.report = 64;
 					obj_suq.ungulate += 1;
 					obj_suq.hiertech -= 1;
@@ -1129,7 +1132,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += 10000*_emtBill;
 					obj_suq.report = 95;
 					o_saveload.knet += 15;
-					o_saveload.kanker += 4;
+					obj_suq.kanker += 4;
 					o_saveload.pnet -= 6;
 					o_saveload.ynet -= 5;
 					o_saveload.gnet -= 4;
@@ -1140,7 +1143,7 @@ function scr_levelEnd(car,range_optional)
 				else
 				{
 					obj_suq.report = 96;
-					o_saveload.kanker -= 14;
+					obj_suq.kanker -= 14;
 					o_saveload.knet -= 20;
 				}
 			} break;
@@ -1152,7 +1155,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += 20000*_emtBill;
 					obj_suq.report = 97;
 					o_saveload.knet += 40;
-					o_saveload.kanker += 4;
+					obj_suq.kanker += 4;
 					o_saveload.pnet -= 6;
 					o_saveload.ynet -= 5;
 					o_saveload.gnet -= 4;
@@ -1168,7 +1171,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.unet -= 2;
 					o_saveload.hnet -= 2;
 					obj_suq.report = 98;
-					o_saveload.kanker -= 20;
+					obj_suq.kanker -= 20;
 					o_saveload.knet -= 100;
 				}
 			} break;
@@ -1185,13 +1188,13 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += 5500*_emtBill;
 					obj_suq.report = 99;
 					o_saveload.ynet += 15;
-					o_saveload.yellerteeth += 2;
+					obj_suq.yellerteeth += 2;
 				}
 				else
 				{
 					o_saveload.ynet -= 7;
 					obj_suq.report = 100;
-					o_saveload.yellerteeth -= 2;
+					obj_suq.yellerteeth -= 2;
 				}
 			} break;
 			case r_lvl_39:
@@ -1207,20 +1210,20 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += 8400*_emtBill;
 					obj_suq.report = 101;
 					o_saveload.ynet += 22;
-					o_saveload.yellerteeth += 3;
+					obj_suq.yellerteeth += 3;
 					obj_suq.artifacts = 1;
 				}
 				else if(instance_exists(obj_mercenaryN) and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye)
 				{
 					o_saveload.ynet -= 30;
 					obj_suq.report = 102;
-					o_saveload.yellerteeth -= 2;
+					obj_suq.yellerteeth -= 2;
 				}
 				else if(!obj_suq.hecto or !obj_suq.ring or !obj_suq.jewel or !obj_suq.vambrace or !obj_suq.eye)
 				{
 					o_saveload.ynet -= 30;
 					obj_suq.report = 103;
-					o_saveload.yellerteeth -= 4;
+					obj_suq.yellerteeth -= 4;
 					obj_suq.artifacts = 2;
 				}
 				else if(instance_exists(obj_mercenaryN) and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and 
@@ -1228,7 +1231,7 @@ function scr_levelEnd(car,range_optional)
 				{
 					o_saveload.ynet -= 30;
 					obj_suq.report = 104;
-					o_saveload.yellerteeth -= 1;
+					obj_suq.yellerteeth -= 1;
 				}
 			} break;
 			case r_lvl_45:
@@ -1244,19 +1247,53 @@ function scr_levelEnd(car,range_optional)
 				{
 					obj_suq.report = 105;
 					o_saveload.ynet -= 100;
-					o_saveload.yellerteeth += 3;
+					obj_suq.yellerteeth += 3;
 				}
 				else if(o_lvl45.o1 == false)
 				{
 					o_saveload.ynet -= 100;
 					obj_suq.report = 106;
-					o_saveload.yellerteeth -= 2;
+					obj_suq.yellerteeth -= 2;
 				}
 				else if(o_lvl45.o1 and !o_lvl45.o2)
 				{
 					o_saveload.ynet -= 100;
 					obj_suq.report = 107;
-					o_saveload.yellerteeth -= 1;
+					obj_suq.yellerteeth -= 1;
+				}
+			} break;
+			case r_lvl_34:
+			{
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				o_saveload.pnet += 2;
+				o_saveload.knet -= 3;
+				o_saveload.unet -= 2;
+				o_saveload.hnet += 3;
+				o_saveload.moneyT += 7700*_emtBill;
+				if(o_lvl34.o1)
+				{
+					obj_suq.report = 108;
+					o_saveload.gnet += 10;
+					o_saveload.ynet -= 6;
+					obj_suq.yellerteeth -= 2;
+					obj_suq.gildebrand += 2;
+					if(7700-o_lvl34.nod > 0) { o_saveload.moneyT += 7700-o_lvl34.nod; }
+				}
+				else if(o_lvl34.o2)
+				{
+					o_saveload.ynet -= 6;
+					o_saveload.gnet += 7;
+					obj_suq.report = 109;
+					obj_suq.yellerteeth -= 2;
+					obj_suq.gildebrand += 1;
+					if(2500-o_lvl34.nod > 0) { o_saveload.moneyT += 2500-o_lvl34.nod; }
+				}
+				else if(!o_lvl34.o1 and !o_lvl34.o2)
+				{
+					o_saveload.ynet += 5;
+					o_saveload.gnet -= 8;
+					obj_suq.report = 110;
+					obj_suq.gildebrand -= 2;
 				}
 			} break;
 		}
