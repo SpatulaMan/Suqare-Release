@@ -1270,7 +1270,7 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.unet -= 2;
 				o_saveload.hnet += 3;
 				o_saveload.moneyT += 7700*_emtBill;
-				if(o_lvl34.o1)
+				if(o_lvl34.o1 and o_lvl34.tirH < 3)
 				{
 					obj_suq.report = 108;
 					o_saveload.gnet += 10;
@@ -1279,11 +1279,29 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.gildebrand += 2;
 					if(7700-o_lvl34.nod > 0) { o_saveload.moneyT += 7700-o_lvl34.nod; }
 				}
-				else if(o_lvl34.o2)
+				else if(o_lvl34.o2 and o_lvl34.tirH < 3)
 				{
 					o_saveload.ynet -= 6;
 					o_saveload.gnet += 7;
 					obj_suq.report = 109;
+					obj_suq.yellerteeth -= 2;
+					obj_suq.gildebrand += 1;
+					if(2500-o_lvl34.nod > 0) { o_saveload.moneyT += 2500-o_lvl34.nod; }
+				}
+				else if(o_lvl34.o1 and o_lvl34.tirH == 3)
+				{
+					obj_suq.report = 111;
+					o_saveload.gnet += 10;
+					o_saveload.ynet -= 6;
+					obj_suq.yellerteeth -= 2;
+					obj_suq.gildebrand += 2;
+					if(7700-o_lvl34.nod > 0) { o_saveload.moneyT += 7700-o_lvl34.nod; }
+				}
+				else if(o_lvl34.o2 and o_lvl34.tirH == 3)
+				{
+					o_saveload.ynet -= 6;
+					o_saveload.gnet += 7;
+					obj_suq.report = 112;
 					obj_suq.yellerteeth -= 2;
 					obj_suq.gildebrand += 1;
 					if(2500-o_lvl34.nod > 0) { o_saveload.moneyT += 2500-o_lvl34.nod; }

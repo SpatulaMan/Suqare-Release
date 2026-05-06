@@ -3,3 +3,5 @@
 check = false;
 inst = noone;
 t = 0;
+tirH = false;
+tirCh = false;

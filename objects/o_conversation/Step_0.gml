@@ -1,4 +1,9 @@
 //Show/not show recap
+if((h == 102 or h == 103 or h == 104) and !tirCh)
+{
+	tirCh = true;
+	tirH = true;
+}
 if(t > 0)
 {
 	image_alpha = 0.01;
@@ -12,6 +17,7 @@ if(!instance_exists(o_convo) and place_meeting(x,y,obj_suq) and check == false a
 	inst = instance_create(x,y,o_convo);
 	inst.i = h;
 	check = true;
+	if(tirH) { o_lvl34.tirH++; tirH = false; }
 }
 else if((obj_suq.pistolHave == true or obj_suq.magnumHave == true or obj_suq.machineGunHave == true
 	or obj_suq.assaultRifleHave == true or obj_suq.shotgunHave == true or obj_suq.shooterGunHave == true

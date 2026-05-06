@@ -1,4 +1,5 @@
 /// @description
+randomize();
 alarm_set(11,1);
 alarm_set(6,120);
 check11 = false;
@@ -42,8 +43,26 @@ path_start(_p, 1.8, path_action_restart, true);
 switch(_p)
 {
 	case Path70: instance_create_layer(1735,215,"Instances_Action",o_badCar); break;
-	case Path71: instance_create_layer(1732,1813,"Instances_Action",o_badCar); break;
-	case Path72: instance_create_layer(482,268,"Instances_Action",o_badCar); break;
+	case Path71: instance_create_layer(1732,1813,"Instances_Action",o_badCar); 
+		inst_3BEDA394.x = 495;
+		inst_3BEDA394.y = 1029; 
+		inst_193D15A4.x = 1030;
+		inst_193D15A4.y = 1472;
+		inst_6559FF57.x = 1589;
+		inst_6559FF57.y = 1007;
+		inst_5F0B53D6.x = 1759;
+		inst_5F0B53D6.y = 1556;
+		break;
+	case Path72: instance_create_layer(482,268,"Instances_Action",o_badCar); 
+		inst_3BEDA394.x = 572;
+		inst_3BEDA394.y = 1132; 
+		inst_193D15A4.x = 1096;
+		inst_193D15A4.y = 680;
+		inst_6559FF57.x = 994;
+		inst_6559FF57.y = 1131;
+		inst_5F0B53D6.x = 375;
+		inst_5F0B53D6.y = 689;
+		break;
 }
 
 image_speed = 0;

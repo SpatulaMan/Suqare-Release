@@ -266,7 +266,5 @@ if(hp <= 0)
 	_piece2.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
 	_piece2.image_blend = image_blend;
 	instance_destroy(weapon.id);
-	if(key_drop) then var _k = instance_create(x,y,obj_silverKey0);
-	if(keyimage > 0) _k.image_index = keyimage;
     instance_destroy();
 }

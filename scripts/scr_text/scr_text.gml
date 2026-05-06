@@ -1491,7 +1491,7 @@ function scr_briefing(t){
 			We're giving you a special device that will pin him down
 			the moment you catch him. Also, you will lose $500 of the
 			payout for each bystander who dies during the chase. ";
-	a[195] = @"Recapture an escaped convict";
+	a[195] = @"Capture an escaped convict";
 	a[196] = @"Mission: Escaped Convict
 			
 			Hiring Firm: Gildebrand Consulting
@@ -1516,9 +1516,44 @@ function scr_briefing(t){
 			(Press Spacebar to Accept)";
 	a[197] = @"Catch Convict";
 	a[198] = @"Kill Convict";
-	a[199] = @"";
-	a[200] = @"";
-	a[201] = @"";
+	a[199] = @"BRIEFING:
+			This is it. We've finally found out where he's holding the
+			hostages. We just need to beat him at his own game. We've
+			been trying to stop Tirangle's schemes for years, and we
+			finally have a chance. No one's ever been this close 
+			before, so if we can save these hostages, maybe we can
+			actually catch him later. 
+			
+			We know there are 3 hostages, but we don't know where
+			they'll be in his house of tricks. We don't really know
+			what to expect in there, so we're relying on you to get the
+			job done. 
+			
+			Look out for clues to where he's hiding. He's surely not
+			here, but he's out there somewhere. ";
+	a[200] = @"Save Hostages from Tirangle, The Crazy Game Master";
+	a[201] = @"Mission: Save Tirangle's Hostages
+			
+			Hiring Firm: Gildebrand Consulting
+			Current Standing With
+			Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
+			Combat Difficulty: 3
+			Mental Difficulty: 8
+			Locked Doors: ?
+			Req. Locked Doors: ?
+			Keys Available: 0
+			Reward: $9500
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
 	a[202] = @"";
 	a[203] = @"";
 	a[204] = @"";
@@ -2032,10 +2067,11 @@ function scr_conversation(t)
 	a[98] = @"The artifacts... aren't what they seem. When they all come together. They become something different. ";
 	a[99] = @"I wrote these notes with the last of my strength. Please kill it! ";
 	a[100] = @"You got him! He's trapped now, so just leave him there. We'll pick him up soon. ";
-	a[101] = @"";
-	a[102] = @"";
-	a[103] = @"";
-	a[104] = @"";
+	a[101] = @"I wish I didn't need to write these reminders down. My Alzheimers has really gotten out of hand. I'll need to 
+			get someone to destroy all this evidence I'm leaving around.";//Tirangle clues
+	a[102] = @"This cannot get out. I've kidnapped 3 people, and I plan to toy with them in my mansion of mazes.";//Tirangle clues
+	a[103] = @"My mansion is located on Squardevard St. and I plan on playing some games with them on the 13th of Circluly. ";//Tirangle clues
+	a[104] = @"At promptly 6:17 pm, I will mix up the game, and they'll all be dead by 8.";//Tirangle clues
 	a[105] = @"";
 	a[106] = @"";
 	a[107] = @"";
@@ -4438,8 +4474,50 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";
-	c[111] = @"";
-	c[112] = @"";
+	c[111] = @"Objectives Complete
+			Payout: $7700
+			
+			Response From Hiring Firm:
+			Great job! You caught him, and he's been upgraded to a maximum security prison. Yellerteeth 
+			will be mad we caught their biggest ninja expert, but he broke the law by running illegal 
+			gambling rings for Monopoke cards. He may have been the smartest coocoo in the clock, but now
+			he's just a jaybird. 
+			
+			Oh, and you also found evidence that the convict was working with a crazed lunatic named 
+			Tirangle. It seems he was the one who broke him out of prison to cover up the evidence of his
+			next scheme. Hopefully you got enough information to tell us what he's doing, where it is, and
+			when it is. 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You captured the convict and hurt Yellerteeth Inc's bottom line. This may affect your ability
+			to work with them at a later date, so be aware of that.  
+			
+			
+			Press Spacebar to continue";//found Tirangle's hints
+	c[112] = @"Objectives Complete
+			Payout: $2500
+			
+			Response From Hiring Firm:
+			Great job! Now, this isn't normally how we like to advertise our services, but with the extent
+			of his law-breaking choices, he was verging on the death penalty anyway. The cardinal sin of
+			running illegal gambling rings for Monopoke cards. Dark stuff. We can't offer you the full
+			payment for not catching him, but here's something for the trouble. 
+			
+			Oh, and you also found evidence that the convict was working with a crazed lunatic named 
+			Tirangle. It seems he was the one who broke him out of prison to cover up the evidence of his
+			next scheme. Hopefully you got enough information to tell us what he's doing, where it is, and
+			when it is. 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You killed the convict and hurt Yellerteeth Inc's bottom line. This may affect your ability
+			to work with them at a later date, so be aware of that. 
+			
+			
+			Press Spacebar to continue";//found Tirangle's hints
 	c[113] = @"";
 	c[114] = @"";
 	c[115] = @"";
