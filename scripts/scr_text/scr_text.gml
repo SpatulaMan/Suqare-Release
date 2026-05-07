@@ -1554,8 +1554,8 @@ function scr_briefing(t){
 			
 			
 			(Press Spacebar to Accept)";
-	a[202] = @"";
-	a[203] = @"";
+	a[202] = @"Save Hostages";
+	a[203] = @"Escape Maze";
 	a[204] = @"";
 	a[205] = @"";
 	a[206] = @"";
@@ -4518,10 +4518,67 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";//found Tirangle's hints
-	c[113] = @"";
-	c[114] = @"";
-	c[115] = @"";
-	c[116] = @"";
+	c[113] = @"Objectives Complete
+			Payout: $9500
+			
+			Response From Hiring Firm:
+			You saved all three hostages! And now we know exactly where he'll be next. This lunatic will
+			finally be brought to justice. 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You saved the hostages and now have one last thing to do. Gildebrand Consulting will be 
+			sending you one more job to finish this for good. 
+			
+			
+			Press Spacebar to continue";
+	c[114] = @"Objectives Partially Complete
+			Payout: $5500
+			
+			Response From Hiring Firm:
+			You couldn't save all the hostages, but you at least found out where he'll be next. We can get
+			him next time and stop him for good! 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You saved some of the hostages, but found out where Tirangle will be next. Gildebrand 
+			Consulting will send you one more job to finish this. 
+			
+			
+			Press Spacebar to continue";//Saved at least one hostage
+	c[115] = @"Objectives Partially Complete
+			Payout: $1500
+			
+			Response From Hiring Firm:
+			You couldn't save any of the hostages!? That's awful! I hoped you were better at your job. At
+			least we found out the location of where he's going next. We can get him there. 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You couldn't save the hostages, but you found out where Tirangle will be next. Gildebrand 
+			Consulting will send you one more job to finish this. 
+			
+			
+			Press Spacebar to continue";//no hostages, but found information
+	c[116] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You couldn't save any of the hostages!? That's awful! I hoped you were better at your job. You
+			couldn't even figure out where Tirangle will be after this. That means the trail's gone cold,
+			and he'll never be brought to justice! You are a despicable person. 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You couldn't save the hostages, and you couldn't even get information about Tirangle's next
+			location. This mission has been a total and utter failure. 
+			
+			
+			Press Spacebar to continue";//no hostages or information
 	c[117] = @"";
 	c[118] = @"";
 	c[119] = @"";

@@ -1,10 +1,10 @@
 lvl 17 - lvl 51
--Briefing
--Short briefing
--Level Details
--Objectives
--Result text
--Add To Level Select
+	-Briefing
+	-Short briefing
+	-Level Details
+	-Objectives
+	-Result text
+	Add To Level Select
 -Level Design
 -Starting location
 -Darkness
@@ -12,15 +12,18 @@ lvl 17 - lvl 51
 -Backgrounds
 -New Features/Enemies
 -Enemy Placement
--Map
--Gadgets/Weapons
+	-Map
+	-Gadgets/Weapons
 -Music
--Mid-Level Objectives Complete
+	-Mid-Level Objectives Complete
 -Level End Code
 -Testing
 
 
-
+Make several different mazes in the same form factor with an exit. Every 30-60 seconds, switch between which maze you're in, keeping the same relative position along with the hostages
+that you've rescued so far. 4 different mazes should be fine. All with different floor backgrounds to get some kind of bearing. Different enemies in each one? Mostly to just try to kill
+the hostages. Only teleport player to other mazes while he's in one. Information on Tirangle's wherabouts is in a specific location in each maze. If you touch it, you get that information
+and it unlocks the last Tirangle level. 
 
 
 

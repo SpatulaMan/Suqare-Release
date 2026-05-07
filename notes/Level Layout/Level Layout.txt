@@ -53,8 +53,9 @@ or
 26: Cover Graveyard Watch for 5 minutes - NL (standing > -2)
 34: Chase down a criminal for trial. He sets traps, things that slow you down like barriers that you have to shoot things to get through. Also turrets to kill on the way. (standing > 0)
 44: Save Hostages, in Maze that keeps changing every 60 seconds. (standing > 0)
-47: Ghost Infestation, Bunch of powerful ghosts in a house. Activate things to get them to come out and you try to kill them. (standing > -2)
-50: Evacuate Town, avoid super-weapon blasts and evacuate each building before they get destroyed. (contingent upon success of level 43 and 48 either failed or not done)
+47: Take Down Tirangle for good (this is where he wanted you to find him so he could play a game with you. One last game against his greatest adversary.)
+50: Ghost Infestation, Bunch of powerful ghosts from Kanker and Co's machine. Only playable if you complete the kanker story. Even playable if Gildebrand is bankrupt. Send out certain people, so
+they can be safe for as long as possible. Reward: $0
 
 
 Others:

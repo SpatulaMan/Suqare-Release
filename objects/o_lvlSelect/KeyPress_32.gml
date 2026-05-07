@@ -42,6 +42,7 @@ if(distance_to_object(obj_suq) < 36)
 		case 38: o_lvlStart.x1 = 668; o_lvlStart.y1 = 932; o_lvlStart.r = r_lvl_39; break;
 		case 44: o_lvlStart.x1 = 1495; o_lvlStart.y1 = 1516; o_lvlStart.r = r_lvl_45; break;
 		case 33: o_lvlStart.x1 = 456; o_lvlStart.y1 = 1766; o_lvlStart.r = r_lvl_34; break;
+		case 43: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_44; break;
 		/*case 34: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_35; break;
 		case 35: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_36; break;
 		case 36: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_37; break;
@@ -51,7 +52,7 @@ if(distance_to_object(obj_suq) < 36)
 		case 40: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_41; break;
 		case 41: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_42; break;
 		
-		case 43: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_44; break;
+		
 		
 		case 45: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_46; break;
 		case 46: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_47; break;

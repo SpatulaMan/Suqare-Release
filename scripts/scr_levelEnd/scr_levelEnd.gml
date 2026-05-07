@@ -1161,7 +1161,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.gnet -= 4;
 					o_saveload.unet -= 4;
 					o_saveload.hnet -= 5;
-					o_saveload.endgame = true;
+					//o_saveload.endgame = true; I think I want to add this after the player does the ghost level from Gildebrand
 				}
 				else
 				{

@@ -51,7 +51,7 @@ switch(prog)
 	case 35:
 	case 34:
 	case 33: if(obj_suq.lvldone[44] == false and obj_suq.artifacts == 1 and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and obj_suq.yellerteeth > 6 and o_saveload.ynet > 0) { array_insert(lvl,t,44); t++; }
-	case 32: 
+	case 32: if(obj_suq.lvldone[43] == false and obj_suq.gildebrand > 2 and o_saveload.gnet > 15) { array_insert(lvl,t,43); t++; }
 	case 31: if(obj_suq.lvldone[40] == false and o_saveload.convinced == true and o_saveload.pnet > 0) { array_insert(lvl,t,40); t++; }//if this one is completed, goes straight to end game with Perez as enemy for 51
 			if(obj_suq.lvldone[42] == false and o_saveload.plant == true and o_saveload.knet > 0) { array_insert(lvl,t,42); t++; }//if this one is completed, goes straight to end game with Kanker as enemy for 51
 	case 30: 
