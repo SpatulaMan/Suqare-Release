@@ -6,12 +6,9 @@ if(s == 0 and image_alpha < 1)
 {
 	image_alpha += .005;
 }
-if(instance_exists(obj_suq))
+if(image_alpha <= 0)
 {
-	if(image_alpha <= 0)
-	{
-		s = 0;
-	}
+	s = 0;
 }
 
 /*repeat(100)

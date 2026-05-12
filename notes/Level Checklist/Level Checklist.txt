@@ -1,10 +1,10 @@
 lvl 17 - lvl 51
-	-Briefing
-	-Short briefing
-	-Level Details
-	-Objectives
-	-Result text
-	Add To Level Select
+-Briefing
+-Short briefing
+-Level Details
+-Objectives
+-Result text
+-Add To Level Select
 -Level Design
 -Starting location
 -Darkness
@@ -12,10 +12,10 @@ lvl 17 - lvl 51
 -Backgrounds
 -New Features/Enemies
 -Enemy Placement
-	-Map
-	-Gadgets/Weapons
+-Map
+-Gadgets/Weapons
 -Music
-	-Mid-Level Objectives Complete
+-Mid-Level Objectives Complete
 -Level End Code
 -Testing
 
@@ -25,11 +25,11 @@ that you've rescued so far. 4 different mazes should be fine. All with different
 the hostages. Only teleport player to other mazes while he's in one. Information on Tirangle's wherabouts is in a specific location in each maze. If you touch it, you get that information
 and it unlocks the last Tirangle level. 
 
+create hostages too. Just follow the player, that's it. Maybe just 3 Scientists, basically. 
 
 
 
-
-
+use the creepy ghost music for the level. 
 
 
 

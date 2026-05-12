@@ -1269,8 +1269,7 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.knet -= 3;
 				o_saveload.unet -= 2;
 				o_saveload.hnet += 3;
-				o_saveload.moneyT += 7700*_emtBill;
-				if(o_lvl34.o1 and o_lvl34.tirH < 3)
+				if(o_lvl34.o1 and o_lvl34.tirH < 1)
 				{
 					obj_suq.report = 108;
 					o_saveload.gnet += 10;
@@ -1279,7 +1278,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.gildebrand += 2;
 					if(7700-o_lvl34.nod > 0) { o_saveload.moneyT += 7700-o_lvl34.nod; }
 				}
-				else if(o_lvl34.o2 and o_lvl34.tirH < 3)
+				else if(o_lvl34.o2 and o_lvl34.tirH < 1)
 				{
 					o_saveload.ynet -= 6;
 					o_saveload.gnet += 7;
@@ -1288,7 +1287,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.gildebrand += 1;
 					if(2500-o_lvl34.nod > 0) { o_saveload.moneyT += 2500-o_lvl34.nod; }
 				}
-				else if(o_lvl34.o1 and o_lvl34.tirH == 3)
+				else if(o_lvl34.o1 and o_lvl34.tirH >= 1)
 				{
 					obj_suq.report = 111;
 					o_saveload.gnet += 10;
@@ -1297,7 +1296,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.gildebrand += 2;
 					if(7700-o_lvl34.nod > 0) { o_saveload.moneyT += 7700-o_lvl34.nod; }
 				}
-				else if(o_lvl34.o2 and o_lvl34.tirH == 3)
+				else if(o_lvl34.o2 and o_lvl34.tirH >= 1)
 				{
 					o_saveload.ynet -= 6;
 					o_saveload.gnet += 7;
@@ -1311,6 +1310,55 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.ynet += 5;
 					o_saveload.gnet -= 8;
 					obj_suq.report = 110;
+					obj_suq.gildebrand -= 2;
+				}
+			} break;
+			case r_lvl_44:
+			{
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				o_saveload.pnet -= 2;
+				o_saveload.knet += 3;
+				o_saveload.unet += 2;
+				o_saveload.hnet -= 3;
+				o_saveload.ynet -= 3;
+				if(o_lvl44.o1 and o_lvl44.o2 and o_lvl44.o3 and o_lvl44.tirH >= 1)
+				{
+					obj_suq.report = 113;
+					o_saveload.gnet += 12;
+					obj_suq.gildebrand += 3;
+					o_saveload.moneyT += 9500;
+				}
+				else if(o_lvl44.o1 and o_lvl44.o2 and o_lvl44.o3 and o_lvl44.tirH < 1)
+				{
+					obj_suq.report = 117;
+					o_saveload.gnet += 10;
+					obj_suq.gildebrand += 2;
+					o_saveload.moneyT += 9500;
+				}
+				else if((o_lvl44.o1 or o_lvl44.o2 or o_lvl44.o3) and o_lvl44.tirH >= 1)
+				{
+					obj_suq.report = 114;
+					o_saveload.gnet += 7;
+					obj_suq.gildebrand += 2;
+					o_saveload.moneyT += 5500;
+				}
+				else if((o_lvl44.o1 or o_lvl44.o2 or o_lvl44.o3) and o_lvl44.tirH < 1)
+				{
+					obj_suq.report = 118;
+					o_saveload.gnet += 6;
+					obj_suq.gildebrand += 1;
+					o_saveload.moneyT += 4500;
+				}
+				else if(!o_lvl44.o1 and !o_lvl44.o2 and !o_lvl44.o3 and o_lvl44.tirH >= 1)
+				{
+					obj_suq.report = 115;
+					o_saveload.gnet -= 2;
+					o_saveload.moneyT += 1500;
+				}
+				else if(!o_lvl44.o1 and !o_lvl44.o2 and !o_lvl44.o3 and o_lvl44.tirH < 1)
+				{
+					obj_suq.report = 116;
+					o_saveload.gnet -= 6;
 					obj_suq.gildebrand -= 2;
 				}
 			} break;

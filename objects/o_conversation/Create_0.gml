@@ -4,4 +4,5 @@ check = false;
 inst = noone;
 t = 0;
 tirH = false;
+tirH2 = false;
 tirCh = false;

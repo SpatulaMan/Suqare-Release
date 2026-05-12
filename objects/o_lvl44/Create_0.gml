@@ -1,3 +1,21 @@
 /// @description
 o1 = false;
 o2 = false;
+o3 = false;
+o1c = 0;
+o1Ch1 = false;
+o1Ch2 = false;
+o1Ch3 = false;
+txt = 106;
+obj = 0;
+x1 = 0;
+y1 = 0;
+xc = 0;
+ar = noone;
+tirH = 0;
+sci1 = instance_find(o_scientist,0);
+sci2 = instance_find(o_scientist,1);
+sci3 = instance_find(o_scientist,2);
+alarm_set(0,3600);
+alarm_set(1,1800);
+alarm_set(3,2400);

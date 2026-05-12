@@ -353,6 +353,7 @@
     {"id":{"name":"o_vandal","path":"objects/o_vandal/o_vandal.yy",},},
     {"id":{"name":"o_vPunch","path":"objects/o_vPunch/o_vPunch.yy",},},
     {"id":{"name":"o_wallCreate","path":"objects/o_wallCreate/o_wallCreate.yy",},},
+    {"id":{"name":"o_wallM","path":"objects/o_wallM/o_wallM.yy",},},
     {"id":{"name":"o_weaponArmory","path":"objects/o_weaponArmory/o_weaponArmory.yy",},},
     {"id":{"name":"obj_arAmmo","path":"objects/obj_arAmmo/obj_arAmmo.yy",},},
     {"id":{"name":"obj_armor","path":"objects/obj_armor/obj_armor.yy",},},

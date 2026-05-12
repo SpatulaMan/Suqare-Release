@@ -1554,9 +1554,9 @@ function scr_briefing(t){
 			
 			
 			(Press Spacebar to Accept)";
-	a[202] = @"Save Hostages";
-	a[203] = @"Escape Maze";
-	a[204] = @"";
+	a[202] = @"Save Hostage 1";
+	a[203] = @"Save Hostage 2";
+	a[204] = @"Save Hostage 3";
 	a[205] = @"";
 	a[206] = @"";
 	a[207] = @"";
@@ -2068,15 +2068,63 @@ function scr_conversation(t)
 	a[99] = @"I wrote these notes with the last of my strength. Please kill it! ";
 	a[100] = @"You got him! He's trapped now, so just leave him there. We'll pick him up soon. ";
 	a[101] = @"I wish I didn't need to write these reminders down. My Alzheimers has really gotten out of hand. I'll need to 
-			get someone to destroy all this evidence I'm leaving around.";//Tirangle clues
-	a[102] = @"This cannot get out. I've kidnapped 3 people, and I plan to toy with them in my mansion of mazes.";//Tirangle clues
-	a[103] = @"My mansion is located on Squardevard St. and I plan on playing some games with them on the 13th of Circluly. ";//Tirangle clues
-	a[104] = @"At promptly 6:17 pm, I will mix up the game, and they'll all be dead by 8.";//Tirangle clues
-	a[105] = @"";
-	a[106] = @"";
-	a[107] = @"";
-	a[108] = @"";
-	a[109] = @"";
+			get someone to destroy all this evidence I'm leaving around.
+			
+			This cannot get out. I've kidnapped 3 people, and I plan to toy with them in my mansion of mazes.
+			
+			My mansion is located on Squardevard St. and I plan on playing some games with them on the 13th of Circluly. 
+			
+			At promptly 6:17 pm, I will mix up the game, and they'll all be dead by 8.";//Tirangle clues
+	a[102] = @"I wish I didn't need to write these reminders down. My Alzheimers has really gotten out of hand. I'll need to 
+			get someone to destroy all this evidence I'm leaving around.
+			
+			This cannot get out. I've kidnapped 3 people, and I plan to toy with them in my mansion of mazes.
+			
+			My mansion is located on Squardevard St. and I plan on playing some games with them on the 13th of Circluly. 
+			
+			At promptly 6:17 pm, I will mix up the game, and they'll all be dead by 8.";//Tirangle clues
+	a[103] = @"I wish I didn't need to write these reminders down. My Alzheimers has really gotten out of hand. I'll need to 
+			get someone to destroy all this evidence I'm leaving around.
+			
+			This cannot get out. I've kidnapped 3 people, and I plan to toy with them in my mansion of mazes.
+			
+			My mansion is located on Squardevard St. and I plan on playing some games with them on the 13th of Circluly. 
+			
+			At promptly 6:17 pm, I will mix up the game, and they'll all be dead by 8.";//Tirangle clues
+	a[104] = @"I wish I didn't need to write these reminders down. My Alzheimers has really gotten out of hand. I'll need to 
+			get someone to destroy all this evidence I'm leaving around.
+			
+			This cannot get out. I've kidnapped 3 people, and I plan to toy with them in my mansion of mazes.
+			
+			My mansion is located on Squardevard St. and I plan on playing some games with them on the 13th of Circluly. 
+			
+			At promptly 6:17 pm, I will mix up the game, and they'll all be dead by 8.";//Tirangle clues
+	a[105] = @"Don't fall for Tirangle's tricks. He's got walls that move to block paths, he'll spawn enemies around you,  
+			direct you towards traps, and taunt you. If he uses a red arrow to guide you, follow it, because that's the only
+			one you can trust to find the hostages. There might be one arrow to help you escape, but you'll be on your own 
+			there. ";
+	a[106] = @"Oops. Wrong way, Suqare. 
+	
+			Oh, I'm sorry, did you get lost? ";
+	a[107] = @"Take the next left and you'll find the way... Or maybe you will never escape my prison. 
+	
+			Muwhahaha";
+	a[108] = @"Up, down, left, right. All paths seem to come to a screeching halt. If only you knew the secrets of the game.
+			Too bad you'll be dead before that ever happens. ";
+	a[109] = @"Wake up, Suqare. You're in a dream. Just let my guards give you a little jolt and you'll finally be free from
+			this game. ";
+	a[110] = @"You'll never succeed, Suqare. Give up now. Just let those unfortunate enough to be my victims meet their fate.
+			And maybe you won't meet the same yourself. ";
+	a[111] = @"After this, I plan on living it up in my villa on 412 parallelogram Rd. I'll probably stay there until the cops
+			stop looking for me. ";
+	a[112] = @"";
+	a[113] = @"";
+	a[114] = @"";
+	a[115] = @"";
+	a[116] = @"";
+	a[117] = @"";
+	a[118] = @"";
+	a[119] = @"";
 			
 	return a[t];
 }
@@ -4532,7 +4580,22 @@ function debrief(m)
 			sending you one more job to finish this for good. 
 			
 			
-			Press Spacebar to continue";
+			Press Spacebar to continue";//saved hostages and have information
+	c[117] = @"Objectives Complete
+			Payout: $9500
+			
+			Response From Hiring Firm:
+			You saved all three hostages! That's fantastic news. I really wished we could have found his
+			current location as well, but I guess that wasn't in the cards for us this time. Dang! 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You saved the hostages, but the trail for Tirangle has gone cold. It looks like he's gotten
+			away with it all and will never be brought to justice. 
+			
+			
+			Press Spacebar to continue";//saved hostages and no information	
 	c[114] = @"Objectives Partially Complete
 			Payout: $5500
 			
@@ -4543,12 +4606,28 @@ function debrief(m)
 			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
 			
 			Result:
-			You saved some of the hostages, but found out where Tirangle will be next. Gildebrand 
-			Consulting will send you one more job to finish this. 
+			You only saved some of the hostages, but at least you found out where Tirangle will be next. 
+			Gildebrand Consulting will send you one more job to finish this. 
 			
 			
-			Press Spacebar to continue";//Saved at least one hostage
-	c[115] = @"Objectives Partially Complete
+			Press Spacebar to continue";//Saved at least one hostage and information
+	c[118] = @"Objectives Partially Complete
+			Payout: $4500
+			
+			Response From Hiring Firm:
+			You couldn't save all the hostages, but we at least didn't leave them all without hope. It 
+			sucks, and it's especially bad because we couldn't find any clues to Tirangle's wherabouts. It 
+			looks like he's bested us for good. 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You saved some of the hostages, but didn't find any clues to Tirangle's current location. The
+			trail has gone cold, and he's never going to face justice. 
+			
+			
+			Press Spacebar to continue";//Saved at least one hostage and no information
+	c[115] = @"Objectives Failed
 			Payout: $1500
 			
 			Response From Hiring Firm:
@@ -4579,10 +4658,37 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";//no hostages or information
-	c[117] = @"";
-	c[118] = @"";
-	c[119] = @"";
-	c[120] = @"";
+	c[119] = @"Objectives Complete
+			Payout: $12000
+			
+			Response From Hiring Firm:
+			You saved all three hostages! And now we know exactly where he'll be next. This lunatic will
+			finally be brought to justice. 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You saved the hostages and now have one last thing to do. Gildebrand Consulting will be 
+			sending you one more job to finish this for good. 
+			
+			
+			Press Spacebar to continue";//killed tirangle
+	c[120] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You couldn't save any of the hostages!? That's awful! I hoped you were better at your job. You
+			couldn't even figure out where Tirangle will be after this. That means the trail's gone cold,
+			and he'll never be brought to justice! You are a despicable person. 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You couldn't save the hostages, and you couldn't even get information about Tirangle's next
+			location. This mission has been a total and utter failure. 
+			
+			
+			Press Spacebar to continue";//didn't kill tirangle
 	c[121] = @"";
 	c[122] = @"";
 	c[123] = @"";

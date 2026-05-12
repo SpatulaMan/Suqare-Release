@@ -1,5 +1,5 @@
 /// @description 
-if(other.open == true and other.player == true and room != r_lvl_3 and room != r_lvl_6) 
+if(other.open == true and other.player == true and room != r_lvl_3 and room != r_lvl_6 and room != r_lvl_44) 
 {
 	if(instance_exists(obj_darkness)) 
 	{  

@@ -281,6 +281,7 @@
     {"name":"o_vandal","order":1,"path":"objects/o_vandal/o_vandal.yy",},
     {"name":"o_vPunch","order":66,"path":"objects/o_vPunch/o_vPunch.yy",},
     {"name":"o_wallCreate","order":4,"path":"objects/o_wallCreate/o_wallCreate.yy",},
+    {"name":"o_wallM","order":1,"path":"objects/o_wallM/o_wallM.yy",},
     {"name":"o_weaponArmory","order":26,"path":"objects/o_weaponArmory/o_weaponArmory.yy",},
     {"name":"obj_arAmmo","order":9,"path":"objects/obj_arAmmo/obj_arAmmo.yy",},
     {"name":"obj_armor","order":2,"path":"objects/obj_armor/obj_armor.yy",},

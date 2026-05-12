@@ -117,7 +117,7 @@ if(a > 0)
 		case 83: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("B2: GASES"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 84: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("B3: SPECIMENS"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 85: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("B4: EXPERIMENTAL"),3,3,0,c_white,c_white,c_white,c_white,a); break;
-		case 86: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HYDROKS RESEARCH FACILITY"),3,3,0,c_white,c_white,c_white,c_white,a); break;
+		case 86: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HYDROKOS RESEARCH FACILITY"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 87: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("GUN CLUB"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 88: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SHOOTING RANGE"),3,3,0,c_white,c_white,c_white,c_white,a); break;
 		case 89: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("SERVER ROOM MANAGER"),3,3,0,c_white,c_white,c_white,c_white,a); break;
@@ -162,6 +162,7 @@ if(a > 0)
 		case 128: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HOUSE 7"),2,2,0,c_white,c_white,c_white,c_white,a); break;
 		case 129: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HOUSE 8"),2,2,0,c_white,c_white,c_white,c_white,a); break;
 		case 130: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HOUSE 9"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 131: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("MANSION OF MAZES"),2,2,0,c_white,c_white,c_white,c_white,a); break;
 		default: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("RESTRICTED"),3,3,0,c_white,c_white,c_white,c_white,a); 
 	}
 }
