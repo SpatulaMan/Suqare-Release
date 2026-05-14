@@ -19,17 +19,7 @@ lvl 17 - lvl 51
 -Level End Code
 -Testing
 
-
-Make several different mazes in the same form factor with an exit. Every 30-60 seconds, switch between which maze you're in, keeping the same relative position along with the hostages
-that you've rescued so far. 4 different mazes should be fine. All with different floor backgrounds to get some kind of bearing. Different enemies in each one? Mostly to just try to kill
-the hostages. Only teleport player to other mazes while he's in one. Information on Tirangle's wherabouts is in a specific location in each maze. If you touch it, you get that information
-and it unlocks the last Tirangle level. 
-
-create hostages too. Just follow the player, that's it. Maybe just 3 Scientists, basically. 
-
-
-
-use the creepy ghost music for the level. 
+make Tirangle have hostages that circle around him, teleport from place to place, relatively small house, powerful defense turrets, and other tricks as well. 
 
 
 

@@ -2070,17 +2070,8 @@ function scr_conversation(t)
 	a[101] = @"I wish I didn't need to write these reminders down. My Alzheimers has really gotten out of hand. I'll need to 
 			get someone to destroy all this evidence I'm leaving around.
 			
-			This cannot get out. I've kidnapped 3 people, and I plan to toy with them in my mansion of mazes.
-			
-			My mansion is located on Squardevard St. and I plan on playing some games with them on the 13th of Circluly. 
-			
-			At promptly 6:17 pm, I will mix up the game, and they'll all be dead by 8.";//Tirangle clues
-	a[102] = @"I wish I didn't need to write these reminders down. My Alzheimers has really gotten out of hand. I'll need to 
-			get someone to destroy all this evidence I'm leaving around.
-			
-			This cannot get out. I've kidnapped 3 people, and I plan to toy with them in my mansion of mazes.
-			
-			My mansion is located on Squardevard St. and I plan on playing some games with them on the 13th of Circluly. 
+			This cannot get out. I've kidnapped 3 people, and I plan to toy with them in my mansion of mazes.";//Tirangle clues
+	a[102] = @"My mansion is located on Squardevard St. and I plan on playing some games with them on the 13th of Circluly. 
 			
 			At promptly 6:17 pm, I will mix up the game, and they'll all be dead by 8.";//Tirangle clues
 	a[103] = @"I wish I didn't need to write these reminders down. My Alzheimers has really gotten out of hand. I'll need to 
@@ -2091,14 +2082,7 @@ function scr_conversation(t)
 			My mansion is located on Squardevard St. and I plan on playing some games with them on the 13th of Circluly. 
 			
 			At promptly 6:17 pm, I will mix up the game, and they'll all be dead by 8.";//Tirangle clues
-	a[104] = @"I wish I didn't need to write these reminders down. My Alzheimers has really gotten out of hand. I'll need to 
-			get someone to destroy all this evidence I'm leaving around.
-			
-			This cannot get out. I've kidnapped 3 people, and I plan to toy with them in my mansion of mazes.
-			
-			My mansion is located on Squardevard St. and I plan on playing some games with them on the 13th of Circluly. 
-			
-			At promptly 6:17 pm, I will mix up the game, and they'll all be dead by 8.";//Tirangle clues
+	a[104] = @"";//Tirangle clues
 	a[105] = @"Don't fall for Tirangle's tricks. He's got walls that move to block paths, he'll spawn enemies around you,  
 			direct you towards traps, and taunt you. If he uses a red arrow to guide you, follow it, because that's the only
 			one you can trust to find the hostages. There might be one arrow to help you escape, but you'll be on your own 
@@ -4533,14 +4517,14 @@ function debrief(m)
 			
 			Oh, and you also found evidence that the convict was working with a crazed lunatic named 
 			Tirangle. It seems he was the one who broke him out of prison to cover up the evidence of his
-			next scheme. Hopefully you got enough information to tell us what he's doing, where it is, and
-			when it is. 
+			next scheme. 
 			
 			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You captured the convict and hurt Yellerteeth Inc's bottom line. This may affect your ability
-			to work with them at a later date, so be aware of that.  
+			to work with them at a later date, so be aware of that. You did find evidence for Tirangle's
+			next scheme with both location and time, so there will be a job for that soon. 
 			
 			
 			Press Spacebar to continue";//found Tirangle's hints
@@ -4555,14 +4539,14 @@ function debrief(m)
 			
 			Oh, and you also found evidence that the convict was working with a crazed lunatic named 
 			Tirangle. It seems he was the one who broke him out of prison to cover up the evidence of his
-			next scheme. Hopefully you got enough information to tell us what he's doing, where it is, and
-			when it is. 
+			next scheme. 
 			
 			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You killed the convict and hurt Yellerteeth Inc's bottom line. This may affect your ability
-			to work with them at a later date, so be aware of that. 
+			to work with them at a later date, so be aware of that. You did find evidence for Tirangle's
+			next scheme with both location and time, so there will be a job for that soon. 
 			
 			
 			Press Spacebar to continue";//found Tirangle's hints
@@ -4689,7 +4673,27 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";//didn't kill tirangle
-	c[121] = @"";
+	c[121] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You couldn't catch him? Or kill him even? Nothing? Nada? Zilch? What are you, some kind of
+			lousy mercenary? I guess you are. This hurts everyone's business except Yellerteeth Inc, and I
+			for one find that repulsive to have a Monopoke gambler on the loose. 
+			
+			Oh, and you also found evidence that the convict was working with a crazed lunatic named 
+			Tirangle. It seems he was the one who broke him out of prison to cover up the evidence of his
+			next scheme. 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You failed to capture or kill the escaped convict. This will hurt Gildebrand Consulting's 
+			business, but Yellerteeth will remain unaffected by your actions. You did find evidence for 
+			Tirangle's next scheme with both location and time, so there will be a job for that soon. 
+			
+			
+			Press Spacebar to continue";
 	c[122] = @"";
 	c[123] = @"";
 	c[124] = @"";

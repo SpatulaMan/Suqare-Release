@@ -765,6 +765,7 @@
     {"id":{"name":"s_contraband","path":"sprites/s_contraband/s_contraband.yy",},},
     {"id":{"name":"s_crosshair_1","path":"sprites/s_crosshair_1/s_crosshair_1.yy",},},
     {"id":{"name":"s_crosshair","path":"sprites/s_crosshair/s_crosshair.yy",},},
+    {"id":{"name":"s_cuffs","path":"sprites/s_cuffs/s_cuffs.yy",},},
     {"id":{"name":"s_data","path":"sprites/s_data/s_data.yy",},},
     {"id":{"name":"s_demoEnd","path":"sprites/s_demoEnd/s_demoEnd.yy",},},
     {"id":{"name":"s_door_frame","path":"sprites/s_door_frame/s_door_frame.yy",},},

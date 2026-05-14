@@ -2,6 +2,7 @@ rk = keyboard_check(ord("D"));
 lk = keyboard_check(ord("A"));
 uk = keyboard_check(ord("W"));
 dk = keyboard_check(ord("S"));
+if(keyboard_check_pressed(vk_f1)) { money = 25000; }//for testing
 if(swordHave == 1 and swordCH < 120)
 {
 	swordCH++;

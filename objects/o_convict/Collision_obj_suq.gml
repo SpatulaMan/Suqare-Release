@@ -1,6 +1,6 @@
 /// @description
 catchTime++;
-if(catchTime >= catchNeed)
+if(catchTime >= catchNeed and spd > 0)
 {
 	spd = 0;
 	path_end();

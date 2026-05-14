@@ -681,6 +681,7 @@
     {"name":"s_contraband","order":26,"path":"sprites/s_contraband/s_contraband.yy",},
     {"name":"s_crosshair_1","order":11,"path":"sprites/s_crosshair_1/s_crosshair_1.yy",},
     {"name":"s_crosshair","order":25,"path":"sprites/s_crosshair/s_crosshair.yy",},
+    {"name":"s_cuffs","order":82,"path":"sprites/s_cuffs/s_cuffs.yy",},
     {"name":"s_data","order":13,"path":"sprites/s_data/s_data.yy",},
     {"name":"s_demoEnd","order":8,"path":"sprites/s_demoEnd/s_demoEnd.yy",},
     {"name":"s_door_frame","order":25,"path":"sprites/s_door_frame/s_door_frame.yy",},

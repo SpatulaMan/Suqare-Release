@@ -30,7 +30,7 @@ if((boss == true and instance_exists(o_wallCreate.inst)) or boss == false)
 	{
 		shootCheck -= 1;
 	}
-	else(room != r_lvl_3) { shootCheck--; }
+	else if(room != r_lvl_3) { shootCheck--; }
 	if(dare == 1 and darecheck == false)
 	{
 		darecheck = true;

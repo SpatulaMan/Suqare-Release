@@ -41,4 +41,3 @@ restart_patrol = false;
 spr = s_enemy_1;
 alarm_set(11,1);
 randomize();
-alarm_set(0,ceil(random_range(60,600)));
