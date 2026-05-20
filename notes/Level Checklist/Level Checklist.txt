@@ -1,25 +1,26 @@
 lvl 17 - lvl 51
--Briefing
--Short briefing
--Level Details
--Objectives
--Result text
--Add To Level Select
--Level Design
--Starting location
--Darkness
--Room Names
--Backgrounds
--New Features/Enemies
--Enemy Placement
--Map
--Gadgets/Weapons
--Music
--Mid-Level Objectives Complete
+	-Briefing
+	-Short briefing
+	-Level Details
+	-Objectives
+	-Result text
+	-Add To Level Select
+	-Level Design
+	-Starting location
+	-Darkness
+	-Room Names
+	-Backgrounds
+	-New Features/Enemies
+	-Enemy Placement
+	-Map
+	-Gadgets/Weapons
+	-Music
+	-Mid-Level Objectives Complete
 -Level End Code
 -Testing
 
-make Tirangle have hostages that circle around him, teleport from place to place, relatively small house, powerful defense turrets, and other tricks as well. 
+
+ relatively small house, powerful defense turrets, and rocket launcher bullets fly around, walls that move and hurt you. lotta things to dodge. 
 
 
 
@@ -31,10 +32,6 @@ make Tirangle have hostages that circle around him, teleport from place to place
 
 
 If you help kanker, but have bad standing, then they attack you at lvl 51, if you have good standing, the whole city attacks you
-
-
-
-Setting up Tirangle as a antagonist directly against you and your business
 
 
 

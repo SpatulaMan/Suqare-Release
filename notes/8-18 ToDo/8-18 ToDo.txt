@@ -20,3 +20,6 @@ Randomly have the car take you to get ice cream at the end of a level?
 
 -Do I add text to the ninja objects that they're known to explode and kill all other-worldy creatures in one blast? If you set this off during the endgame mission, then a different ending happens.
 Instead of you completely losing and barely making it out with your life, you instead beat Kanker and Co., and end the game with every company hitting bankruptcy. 
+
+-Have all the stats of what you did and how you changed the world scroll by in the credits. the companies net worth's, your standings with them, maybe how many of their missions you completed
+and how many you failed? 

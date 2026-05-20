@@ -48,7 +48,7 @@ switch(prog)
 	case 38:
 	case 37:
 	case 36:
-	case 35:
+	case 35: if(obj_suq.lvldone[46] == false and obj_suq.gildebrand > 3 and o_saveload.gnet > 0) { array_insert(lvl,t,46); t++; }
 	case 34:
 	case 33: if(obj_suq.lvldone[44] == false and obj_suq.artifacts == 1 and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and obj_suq.yellerteeth > 6 and o_saveload.ynet > 0) { array_insert(lvl,t,44); t++; }
 	case 32: if(obj_suq.lvldone[43] == false and obj_suq.gildebrand > 2 and o_saveload.gnet > 15) { array_insert(lvl,t,43); t++; }

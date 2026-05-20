@@ -1369,6 +1369,27 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.gildebrand -= 2;
 				}
 			} break;
+			case r_lvl_47:
+			{
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				o_saveload.pnet += 2;
+				o_saveload.knet -= 3;
+				o_saveload.unet -= 2;
+				o_saveload.hnet += 3;
+				o_saveload.ynet += 3;
+				if(o_lvl47.o1 == true)
+				{
+					obj_suq.report = 122;
+					o_saveload.gnet += 12;
+					obj_suq.gildebrand += 3;
+				}
+				else
+				{
+					obj_suq.report = 123;
+					o_saveload.gnet -= 12;
+					obj_suq.gildebrand -= 3;
+				}
+			}
 		}
 		if(!car and !range_optional)
 		{

@@ -1537,10 +1537,10 @@ function scr_briefing(t){
 			Hiring Firm: Gildebrand Consulting
 			Current Standing With
 			Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
-			Combat Difficulty: 3
+			Combat Difficulty: 6
 			Mental Difficulty: 8
-			Locked Doors: ?
-			Req. Locked Doors: ?
+			Locked Doors: 0
+			Req. Locked Doors: 0
 			Keys Available: 0
 			Reward: $9500
 			
@@ -1557,10 +1557,36 @@ function scr_briefing(t){
 	a[202] = @"Save Hostage 1";
 	a[203] = @"Save Hostage 2";
 	a[204] = @"Save Hostage 3";
-	a[205] = @"";
-	a[206] = @"";
-	a[207] = @"";
-	a[208] = @"";
+	a[205] = @"BRIEFING:
+			I can't believe we're finally here. About to take out the 
+			world's most infamous criminal. Be on your guard. He's 
+			bound to have some nasty tricks up his sleeve. 
+			
+			End him. Right here. Right now. ";
+	a[206] = @"Stop Tirangle once and for all";
+	a[207] = @"Mission: Kill Tirangle
+			
+			Hiring Firm: Gildebrand Consulting
+			Current Standing With
+			Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
+			Combat Difficulty: 15
+			Mental Difficulty: 4
+			Locked Doors: 1
+			Req. Locked Doors: 1
+			Keys Available: 1
+			Reward: $12500
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[208] = @"Kill Tirangle";
 	a[209] = @"";
 	a[210] = @"";
 	a[211] = @"";
@@ -4656,7 +4682,7 @@ function debrief(m)
 			sending you one more job to finish this for good. 
 			
 			
-			Press Spacebar to continue";//killed tirangle
+			Press Spacebar to continue";//found hostages and information
 	c[120] = @"Objectives Failed
 			Payout: $0
 			
@@ -4672,7 +4698,7 @@ function debrief(m)
 			location. This mission has been a total and utter failure. 
 			
 			
-			Press Spacebar to continue";//didn't kill tirangle
+			Press Spacebar to continue";
 	c[121] = @"Objectives Failed
 			Payout: $0
 			
@@ -4693,9 +4719,37 @@ function debrief(m)
 			Tirangle's next scheme with both location and time, so there will be a job for that soon. 
 			
 			
-			Press Spacebar to continue";
-	c[122] = @"";
-	c[123] = @"";
+			Press Spacebar to continue";//lvl 34 extra ending
+	c[122] = @"Objectives Complete
+			Payout: $12500
+			
+			Response From Hiring Firm:
+			You did it... It's finally over! The greatest villain in all of the world has finally been 
+			stopped. You did good. You deserve everything amazing in the world. 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You ended the reign of the great Tirangle. The world can rest a little easier knowing he's 
+			gone for good. 
+			
+			
+			Press Spacebar to continue";//killed tirangle
+	c[123] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			What happened? Did you just decide it wasn't worth it? Did you fall for one of his tricks? I
+			can't believe it. I told you not to trust him! What more can I do? Now he's off galavanting on
+			an island somewhere living it up when he should be dead! Gah! You sicken me. 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You decided against killing Tirangle. Only you know the reason why and if you regret it.  
+			
+			
+			Press Spacebar to continue";//failed to kill tirangle
 	c[124] = @"";
 	c[125] = @"";
 	c[126] = @"";

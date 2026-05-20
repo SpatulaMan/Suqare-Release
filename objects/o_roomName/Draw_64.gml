@@ -163,6 +163,7 @@ if(a > 0)
 		case 129: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HOUSE 8"),2,2,0,c_white,c_white,c_white,c_white,a); break;
 		case 130: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("HOUSE 9"),2,2,0,c_white,c_white,c_white,c_white,a); break;
 		case 131: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("MANSION OF MAZES"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 132: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("FINAL CONFRONTATION"),2,2,0,c_white,c_white,c_white,c_white,a); break;
 		default: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("RESTRICTED"),3,3,0,c_white,c_white,c_white,c_white,a); 
 	}
 }

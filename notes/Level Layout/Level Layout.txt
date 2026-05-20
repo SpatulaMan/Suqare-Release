@@ -44,7 +44,7 @@ or
 18: Kill Old Ladies
 28: Contraband (Move contraband from building and load up cars while fighting off cops. When holding boxes, you can't shoot.)
 30: Steal Art (3 paintings)
-37: Hijack Ship - NL (without killing crew cause they need to drive the boat. Lure and lock guards in any of the 3 brigs on the ship to make them set sail)
+37: Hijack Ship - NL (Actually Tirangle posing as Hiertech. It's a setup to kill you.)
 46:
 48: Destroy Rival, Take out Ungulate by wiring money from their banks to Hiertech
 
@@ -139,7 +139,7 @@ or
 43: Charge super weapon
 44: Save Hostages
 45: Ninja Birthday Party (artifact boss design with all 5 things on it. 
-		47: Take Down Tirangle
+	47: Take Down Tirangle
 		48: Destroy Rivals
 		49: Stop Hiertech once and for all by finding their black market. Figure out where it is. Once you do, the cops will come shut it down. 
 		50: Ghost Invasion, Save people from the ghost attack
