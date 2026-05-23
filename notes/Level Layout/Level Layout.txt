@@ -27,7 +27,7 @@ or
 29: Prevent Theft of Museum artifacts
 36: Prison Break, break into prison secretly, and sneak a few wrongfully convicted inmates out - NL besides ghosts that haunt the place?
 42: Race to win a town back their water from Hiertech's racing division
-49: 
+49: Stop Hiertech once and for all by finding their black market. Figure out where it is. Once you do, the cops will come shut it down. 
 
 	-Yellerteeth Inc. Plan - Steal every ninja artifact and kill ninja leader for revenge:
 	3: Amulet of Hecto
@@ -45,18 +45,19 @@ or
 28: Contraband (Move contraband from building and load up cars while fighting off cops. When holding boxes, you can't shoot.)
 30: Steal Art (3 paintings)
 37: Hijack Ship - NL (Actually Tirangle posing as Hiertech. It's a setup to kill you.)
-46:
+46: Use race as a cover to assasinate a leader of Ungulate studios who's watching. Needs to be done and you need to be back at the starting line before the race ends.
+	Maybe he runs away while his guards constantly attack you. 
 48: Destroy Rival, Take out Ungulate by wiring money from their banks to Hiertech
 
--Gildebrand Consulting Plan - Help people with small requests, and make life better for everyone:
-8: Eradicate spiders (standing > -2)
-17: Help Old Ladies to cross the street (standing > 2)
-26: Cover Graveyard Watch for 5 minutes - NL (standing > -2)
-34: Chase down a criminal for trial. He sets traps, things that slow you down like barriers that you have to shoot things to get through. Also turrets to kill on the way. (standing > 0)
-44: Save Hostages, in Maze that keeps changing every 60 seconds. (standing > 0)
-47: Take Down Tirangle for good (this is where he wanted you to find him so he could play a game with you. One last game against his greatest adversary.)
-50: Ghost Infestation, Bunch of powerful ghosts from Kanker and Co's machine. Only playable if you complete the kanker story. Even playable if Gildebrand is bankrupt. Send out certain people, so
-they can be safe for as long as possible. Reward: $0
+	-Gildebrand Consulting Plan - Help people with small requests, and make life better for everyone:
+	8: Eradicate spiders (standing > -2)
+	17: Help Old Ladies to cross the street (standing > 2)
+	26: Cover Graveyard Watch for 5 minutes - NL (standing > -2)
+	34: Chase down a criminal for trial. He sets traps, things that slow you down like barriers that you have to shoot things to get through. Also turrets to kill on the way. (standing > 0)
+	44: Save Hostages, in Maze that keeps changing every 60 seconds. (standing > 0)
+	47: Take Down Tirangle for good (this is where he wanted you to find him so he could play a game with you. One last game against his greatest adversary.)
+	50: Ghost Infestation, Bunch of powerful ghosts from Kanker and Co's machine. Only playable if you complete the kanker story. Even playable if Gildebrand is bankrupt. Send out certain people, so
+	they can be safe for as long as possible. Reward: $0
 
 
 Others:
@@ -142,7 +143,7 @@ or
 47: Take Down Tirangle
 		48: Destroy Rivals
 		49: Stop Hiertech once and for all by finding their black market. Figure out where it is. Once you do, the cops will come shut it down. 
-		50: Ghost Invasion, Save people from the ghost attack
+50: Ghost Invasion, Save people from the ghost attack
 		51: End Game. The Armory gets invaded! Fight your way through and get the ending that you are the best mercenary if they all came for you directly. You've made it. The merchants are 
 			dead. Knives and stuff in em. Put stairs in the Armory and lock the door? Lowest standing company that's not bankrupt comes after you? 
 		

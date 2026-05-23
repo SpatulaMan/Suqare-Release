@@ -132,7 +132,8 @@ function save()
 		eye: obj_suq.eye,
 		artifacts: obj_suq.artifacts,
 		engame: o_saveload.endgame,
-		knkrwins: o_saveload.knkrwins
+		knkrwins: o_saveload.knkrwins,
+		armycount: o_saveload.armycount
 		
 		//upgrades
 		
@@ -403,6 +404,8 @@ function load(_f)
 			o_saveload.endgame=_struct.endgame;
 		if (struct_exists(_struct, "knkrwins"))
 			o_saveload.knkrwins=_struct.knkrwins;
+		if (struct_exists(_struct, "armycount"))
+			o_saveload.armycount=_struct.armycount;
 			
 		
 		//levels that are incompleted and are available to the player currently in variables 
@@ -534,7 +537,8 @@ function load(_f)
 			eye: false,
 			artifacts: 0,
 			endgame: false,
-			knkrwins: false
+			knkrwins: false,
+			armycount: 0
 		
 		}
 	

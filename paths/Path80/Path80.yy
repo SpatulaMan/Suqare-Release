@@ -1,0 +1,21 @@
+{
+  "$GMPath":"",
+  "%Name":"Path80",
+  "closed":true,
+  "kind":0,
+  "name":"Path80",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":671.61633,"y":195.28868,},
+    {"speed":100.0,"x":741.6157,"y":359.82977,},
+    {"speed":100.0,"x":1014.9136,"y":327.9149,},
+    {"speed":100.0,"x":1017.44556,"y":194.97873,},
+    {"speed":100.0,"x":689.6795,"y":194.65958,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

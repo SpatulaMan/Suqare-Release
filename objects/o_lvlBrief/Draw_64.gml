@@ -32,6 +32,7 @@ else if(visible == true and s == -1)
 		case r_lvl_30: draw_sprite_ext(s_lvl30map,0,w*.1,h*.055,1,1,0,c_white,1); break;//too tall and wide
 		case r_lvl_31: draw_sprite_ext(s_lvl31map,0,w*.1,h*.055,1,1,0,c_white,1); break;//too tall and wide
 		case r_lvl_32: draw_sprite_ext(s_lvl32map,0,w*.1,h*.055,1,1,0,c_white,1); break;//too tall and wide
+		case r_lvl_35: draw_sprite_ext(s_lvl35map,0,w*.1,h*.055,1,1,0,c_white,1); break;//too tall
 		case r_lvl_39: draw_sprite_ext(s_lvl39map,0,w*.1,h*.25,1,1,0,c_white,1); break;//too tall and narrow
 		case r_lvl_43: draw_sprite_ext(s_lvl43map,0,w*.133,h*.055,1,1,0,c_white,1); break;//too tall
 		default: draw_sprite_ext(s_mapnotfound,0,w*.133,h*.08,1,1,0,c_white,1);

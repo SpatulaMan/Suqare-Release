@@ -155,3 +155,4 @@ eye = false;
 artifacts = 0;
 endgame = false;
 knkrwins = false;
+armycount = 0;

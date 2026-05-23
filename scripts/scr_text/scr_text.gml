@@ -1625,11 +1625,46 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[212] = @"Save Civilians";
-	a[213] = @"";
-	a[214] = @"";
-	a[215] = @"";
-	a[216] = @"";
-	a[217] = @"";
+	a[213] = @"BRIEFING:
+			We need to convince the government that Perez Holdings is
+			a bank in good standing, so they choose us as the primary
+			bank of the government. We've already pushed the bill that
+			makes a banking monopoly legal, but this is the next step
+			to becoming even richer. 
+			
+			We need you to sneak into the government building without 
+			causing a scene and plant some evidence that shows Perez 
+			Holdings as the best option. Sneak in and out. If an alarm
+			is raised or if you kill anyone, there's a chance they will
+			know something's up. Do not let that happen. 
+			
+			Make it to the main office and place the evidence on the 
+			desk with the computer. ";
+	a[214] = @"Plant Fake Evidence About Perez Holdings ";
+	a[215] = @"Mission: Influence Government
+			
+			Hiring Firm: Perez Holdings
+			Current Standing With
+			Perez Holdings: "+string(obj_suq.perez)+@"
+			Combat Difficulty: 2
+			Mental Difficulty: 9
+			Locked Doors: 3
+			Req. Locked Doors: 3
+			Keys Available: 2
+			Reward: $9300
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[216] = @"Plant Evidence";
+	a[217] = @"Stay Hidden";
 	a[218] = @"";
 	a[219] = @"";
 	a[220] = @"";
@@ -1642,6 +1677,16 @@ function scr_briefing(t){
 	a[227] = @"";
 	a[228] = @"";
 	a[229] = @"";
+	a[230] = @"";
+	a[231] = @"";
+	a[232] = @"";
+	a[233] = @"";
+	a[234] = @"";
+	a[235] = @"";
+	a[236] = @"";
+	a[237] = @"";
+	a[238] = @"";
+	a[239] = @"";
 	
 	
 /*
@@ -4820,8 +4865,39 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";
-	c[126] = @"";
-	c[127] = @"";
+	c[126] = @"Objectives Complete
+			Payout: $9300
+			
+			Response From Hiring Firm:
+			We're going to be a success! Everything's going smoothly, and we'll be a monopolistic and 
+			powerful bank in no time. No one will be able to control our rates since we'll have full 
+			control over everything financial. Some people might not be able to be financially stable
+			anymore, but it's a small price to pay to give us even more money. 
+			
+			Current standing with Perez Holdings"+string(obj_suq.perez)+@"
+			
+			Result:
+			Perez Holdings has become the national bank. There are many against it, and there will be
+			repercussions from this. But, for now, Perez Holdings will bask in their victory. 
+			
+			
+			Press Spacebar to continue";
+	c[127] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			Aw nuts. Without that evidence on the government's desk, we'll never become the main bank of
+			the country. We'll have to think of another plan. You will not be a part of it. Never show 
+			your face around here again. We're done with you. 
+			
+			Current standing with Perez Holdings"+string(obj_suq.perez)+@"
+			
+			Result:
+			You weren't able to plant the evidence secretly, so Perez Holdings will have to stay a large
+			bank instead of a mega bank for the time being. 
+			
+			
+			Press Spacebar to continue";
 	c[128] = @"";
 	c[129] = @"";
 	c[130] = @"";

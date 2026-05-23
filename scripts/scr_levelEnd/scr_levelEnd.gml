@@ -15,7 +15,8 @@ function scr_levelEnd(car,range_optional)
 			o_saveload.ynetp = o_saveload.ynet;
 			o_saveload.hnetp = o_saveload.hnet;
 			if(obj_suq.progress >= 6) { o_saveload.pnet -= (3 - o_saveload.software); }
-			if(obj_suq.progress >= 23 and o_saveload.officials == false) { o_saveload.pnet -= 2; }
+			if(obj_suq.progress >= 15 and o_saveload.officials == false) { o_saveload.pnet -= 2; }
+			if(obj_suq.progress >= 23 and o_saveload.convinced == false) { o_saveload.pnet -= 1; } 
 			switch(obj_suq.progress)
 			{
 				case 0: o_saveload.valueC += choose(50,-100,-200,-50); break;
@@ -1404,12 +1405,38 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 124;
 					obj_suq.gildebrand += 3;
 					obj_suq.kanker -= 3;
+					o_saveload.armycount = o_lvl50.count;
 				}
 				else
 				{
 					obj_suq.report = 125;
 					obj_suq.gildebrand -= 3;
 					obj_suq.kanker += 1;
+				}
+			} break;
+			case r_lvl_35:
+			{
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				o_saveload.gnet += 3;
+				
+				o_saveload.unet -= 3;
+				o_saveload.hnet += 2;
+				o_saveload.ynet -= 2;
+				if(o_lvl35.o1 == true and o_lvl35.o2 == true)
+				{
+					obj_suq.report = 126;
+					obj_suq.perez += 3;
+					o_saveload.pnet += 25;
+					o_saveload.knet -= 6;
+					obj_suq.kanker -= 1;
+					o_saveload.convinced = true;
+				}
+				else
+				{
+					obj_suq.report = 127;
+					obj_suq.perez -= 3;
+					o_saveload.pnet -= 5;
+					o_saveload.knet += 3;
 				}
 			} break;
 		}
