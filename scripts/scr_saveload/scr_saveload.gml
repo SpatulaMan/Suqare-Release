@@ -131,7 +131,8 @@ function save()
 		vambrace: obj_suq.vambrace,
 		eye: obj_suq.eye,
 		artifacts: obj_suq.artifacts,
-		engame: o_saveload.endgame
+		engame: o_saveload.endgame,
+		knkrwins: o_saveload.knkrwins
 		
 		//upgrades
 		
@@ -400,6 +401,9 @@ function load(_f)
 			o_saveload.artifacts=_struct.artifacts;
 		if (struct_exists(_struct, "endgame"))
 			o_saveload.endgame=_struct.endgame;
+		if (struct_exists(_struct, "knkrwins"))
+			o_saveload.knkrwins=_struct.knkrwins;
+			
 		
 		//levels that are incompleted and are available to the player currently in variables 
 		
@@ -529,7 +533,8 @@ function load(_f)
 			vambrace: false,
 			eye: false,
 			artifacts: 0,
-			endgame: false
+			endgame: false,
+			knkrwins: false
 		
 		}
 	

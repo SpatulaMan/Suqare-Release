@@ -139,7 +139,7 @@ or
 43: Charge super weapon
 44: Save Hostages
 45: Ninja Birthday Party (artifact boss design with all 5 things on it. 
-	47: Take Down Tirangle
+47: Take Down Tirangle
 		48: Destroy Rivals
 		49: Stop Hiertech once and for all by finding their black market. Figure out where it is. Once you do, the cops will come shut it down. 
 		50: Ghost Invasion, Save people from the ghost attack

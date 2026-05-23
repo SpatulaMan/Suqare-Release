@@ -3,7 +3,7 @@ if(success == false)
 {
 	if(distance_to_object(obj_suq) <= 12)
 	{
-		if(room == r_lvl_7 or room == r_lvl_8 or room == r_lvl_23)
+		if(room == r_lvl_7 or room == r_lvl_8 or room == r_lvl_23 or room == r_lvl_50)
 		{
 			image_index = 3;
 		}
@@ -20,7 +20,7 @@ if(success == false)
 				success = true;
 				obj_suq.gunEquip = 0;
 				cursor_sprite = spr_unarmed;
-				if(room == r_lvl_7 or room == r_lvl_8 or room == r_lvl_23)
+				if(room == r_lvl_7 or room == r_lvl_8 or room == r_lvl_23 or room == r_lvl_50)
 				{
 					image_index = 2;
 				}
@@ -33,7 +33,7 @@ if(success == false)
 	}
 	else 
 	{
-		if(room == r_lvl_7 or room == r_lvl_8 or room == r_lvl_23)
+		if(room == r_lvl_7 or room == r_lvl_8 or room == r_lvl_23 or room == r_lvl_50)
 		{
 			image_index = 2;
 		}

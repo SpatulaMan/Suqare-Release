@@ -1,0 +1,14 @@
+/// @description
+hp = 8;
+hpc = 8;
+hpt = 8;
+spr = s_fancyGuy_1;
+p1 = false;
+p2 = false;
+p3 = false;
+path_check = false;
+image_speed = 0;
+path = path_add();
+hit = false;
+fCheck = false;
+wallCheck = false;

@@ -1587,10 +1587,44 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[208] = @"Kill Tirangle";
-	a[209] = @"";
-	a[210] = @"";
-	a[211] = @"";
-	a[212] = @"";
+	a[209] = @"BRIEFING:
+			Kanker and Co. is taking over the world. We can't stop it.
+			There's an underground resistance starting up, and we want
+			you to save as many people as possible so they can join. 
+			Bring the civilians to the safety zone, and we'll bring 
+			them into our base without the ghosts knowing about it. 
+			
+			We can't pay you anything, but we hope that you can find
+			some goodness left in your heart to help us. Don't let 
+			Kanker steamroll the world. Help us fight! 
+			
+			Remember, Kanker's forces are all ghosts now. Regular 
+			weapons will have no effect on them. But don't some ghosts
+			spawn gremlins?";
+	a[210] = @"Save Civilians To Bolster The Resistance's Fighting Force";
+	a[211] = @"Mission: Help Resistance
+			
+			Hiring Firm: Gildebrand Consulting
+			Current Standing With
+			Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
+			Combat Difficulty: 18
+			Mental Difficulty: 2
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $0
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[212] = @"Save Civilians";
 	a[213] = @"";
 	a[214] = @"";
 	a[215] = @"";
@@ -4750,12 +4784,56 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";//failed to kill tirangle
-	c[124] = @"";
-	c[125] = @"";
+	c[124] = @"Objectives Complete
+			Payout: $0
+			
+			Response From Hiring Firm:
+			Thank goodness. You saved at least one civilian. Maybe you're trying to make up for the 
+			mistakes you made. Or maybe you just want the battle to be more interesting. Either way, we
+			thank you for the help. I hope your heart has changed and feels for the people fighting for 
+			their lives. Best of luck to you, Suqare. 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You saved some civilians and bolstered the Resistance Forces. Who knows how much of a 
+			difference this will make in the fight against Kanker and Co., but they might have a better
+			fighting chance. 
+			
+			
+			Press Spacebar to continue";
+	c[125] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You couldn't even save one civilian? Not one? Did you take the job just to taunt us one last
+			time? You truly have become evil. I hope Kanker and Co. turns on you, because they're not the
+			most evil anymore. You are. You have become the scurge of the world. I hope you can live with
+			your choices, and I hope you don't live that long. 
+			
+			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You didn't save a single civilian, and the Resistance is in the same place that it was in 
+			before. You've burned all the bridges except for Kanker and Co. Maybe they'll be merciful and
+			remember what you've done for them. Maybe they won't. 
+			
+			
+			Press Spacebar to continue";
 	c[126] = @"";
 	c[127] = @"";
 	c[128] = @"";
 	c[129] = @"";
+	c[130] = @"";
+	c[131] = @"";
+	c[132] = @"";
+	c[133] = @"";
+	c[134] = @"";
+	c[135] = @"";
+	c[136] = @"";
+	c[137] = @"";
+	c[138] = @"";
+	c[139] = @"";
 	return c[m];
 }
 function tutorial(k)

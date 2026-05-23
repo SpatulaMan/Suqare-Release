@@ -44,6 +44,7 @@ if(distance_to_object(obj_suq) < 36)
 		case 33: o_lvlStart.x1 = 456; o_lvlStart.y1 = 1766; o_lvlStart.r = r_lvl_34; break;
 		case 43: o_lvlStart.x1 = 1359; o_lvlStart.y1 = 1726; o_lvlStart.r = r_lvl_44; break;
 		case 46: o_lvlStart.x1 = 1090; o_lvlStart.y1 = 937; o_lvlStart.r = r_lvl_47; break;
+		case 49: o_lvlStart.x1 = 329; o_lvlStart.y1 = 242; o_lvlStart.r = r_lvl_50; break;
 		/*case 34: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_35; break;
 		case 35: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_36; break;
 		case 36: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_37; break;
@@ -59,7 +60,7 @@ if(distance_to_object(obj_suq) < 36)
 		
 		case 47: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_48; break;
 		case 48: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_49; break;
-		case 49: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_50; break;
+		
 		case 50: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_51; break;*/
 	}
 	//with (obj_wallWood) instance_destroy();

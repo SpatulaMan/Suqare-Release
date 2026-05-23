@@ -1161,6 +1161,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.gnet -= 4;
 					o_saveload.unet -= 4;
 					o_saveload.hnet -= 5;
+					o_saveload.knkrwins = true;
 					//o_saveload.endgame = true; I think I want to add this after the player does the ghost level from Gildebrand
 				}
 				else
@@ -1389,7 +1390,28 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.gnet -= 12;
 					obj_suq.gildebrand -= 3;
 				}
-			}
+			} break;
+			case r_lvl_50:
+			{
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				o_saveload.pnet -= 2;
+				o_saveload.knet += 3;
+				o_saveload.unet += 2;
+				o_saveload.hnet -= 3;
+				o_saveload.ynet -= 3;
+				if(o_lvl50.o1 == true)
+				{
+					obj_suq.report = 124;
+					obj_suq.gildebrand += 3;
+					obj_suq.kanker -= 3;
+				}
+				else
+				{
+					obj_suq.report = 125;
+					obj_suq.gildebrand -= 3;
+					obj_suq.kanker += 1;
+				}
+			} break;
 		}
 		if(!car and !range_optional)
 		{
