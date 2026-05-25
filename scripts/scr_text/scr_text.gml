@@ -1665,10 +1665,48 @@ function scr_briefing(t){
 			(Press Spacebar to Accept)";
 	a[216] = @"Plant Evidence";
 	a[217] = @"Stay Hidden";
-	a[218] = @"";
-	a[219] = @"";
-	a[220] = @"";
-	a[221] = @"";
+	a[218] = @"BRIEFING:
+			There's a riot forming in the town. They're going to 
+			protest and bring a lot of bad press on us. This is their
+			last chance to reverse the decision made by the government
+			to make us the national bank. This riot cannot be left to
+			complete what it set out to do. We only have a limited 
+			amount of time to get this done before he leaves to his
+			safe zone. 
+			
+			We've found a description of the riot leader, and if we
+			take him out, they won't be able to keep the riot going.
+			You must do this silently. If a gunshot or any kind of 
+			weapon is heard, that will trigger a commotion, and we'll
+			be blamed for it. Find him and kill him quickly before he
+			can shoot at you. 
+			
+			The leader will be fuschia colored with a gas mask and lab
+			coat on. Hex code for him is FF00FF. Check everyone. ";
+	a[219] = @"Find and Kill Riot Leader";
+	a[220] = @"Mission: Kill Riot Leader
+			
+			Hiring Firm: Perez Holdings
+			Current Standing With
+			Perez Holdings: "+string(obj_suq.perez)+@"
+			Combat Difficulty: 2
+			Mental Difficulty: 10
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $10000
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[221] = @"Kill Leader";
 	a[222] = @"";
 	a[223] = @"";
 	a[224] = @"";
@@ -4898,8 +4936,40 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";
-	c[128] = @"";
-	c[129] = @"";
+	c[128] = @"Objectives Complete
+			Payout: $10000
+			
+			Response From Hiring Firm:
+			We're finally the all-powerful bank! There's nothing anyone can do. Those interest rates will
+			never know what hit em. Hiring you has been a small price to pay for all this. Maybe we'll
+			give you a discount if you ever need a loan. 
+			
+			Current standing with Perez Holdings"+string(obj_suq.perez)+@"
+			
+			Result:
+			Perez Holdings is the permanent National Bank with no one to oppose them. The government is
+			none the wiser of their illegal antics carried out by you, but time will tell how Perez 
+			chooses to use this power. 
+			
+			
+			Press Spacebar to continue";
+	c[129] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			The vote has been reversed! You couldn't kill the leader fast enough. Or maybe you killed the
+			wrong guy. Either way, our plans have been ruined. It's all been for nothing, and you are the
+			problem. You are the worst mercenary we've ever seen! You were so promising, and now we know
+			that you're basically a fraud. 
+			
+			Current standing with Perez Holdings"+string(obj_suq.perez)+@"
+			
+			Result:
+			You failed to find and kill the leader in time, and Perez Holdings has been kicked out of the
+			position as National Bank. Time will tell what they decide to do next. 
+			
+			
+			Press Spacebar to continue";
 	c[130] = @"";
 	c[131] = @"";
 	c[132] = @"";

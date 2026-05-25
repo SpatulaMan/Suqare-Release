@@ -625,5 +625,16 @@ if(pickup_timer > 0)
 		case 64: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("CHAIN GUN"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 65: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("EYE OF GUTRAN"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
 		case 66: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("VAMBRACE OF MORTUBAN"),2,2,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;
+		case 67: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("FF00FF"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;//fuchsia
+		case 68: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("0000FF"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;//blue
+		case 69: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("FF0000"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;//red
+		case 70: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("FFFF00"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;//yellow
+		case 71: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("00FFFF"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;//aqua
+		case 72: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("800000"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;//maroon
+		case 73: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("808000"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;//olive
+		case 74: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("FFA040"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;//orange
+		case 75: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("00FF00"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;//lime
+		case 76: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("800080"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;//purple
+		case 77: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("008080"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;//teal
 	}
 }

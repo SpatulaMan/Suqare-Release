@@ -22,7 +22,7 @@ if((room == r_lvl_29 or room == r_lvl_30 or room == r_lvl_31) and depth == 400) 
 if(room == r_lvl_3 or room == r_lvl_9 or room == r_lvl_15 or room == r_lvl_21 or room == r_lvl_33 or room == r_lvl_39) then image_index = 4;
 if(room == r_lvl_4 or room == r_lvl_12 or room == r_lvl_47) then image_index = 7;
 if(room == r_lvl_6) then image_index = 11;
-if(room == r_lvl_7) then image_index = 9;
+if(room == r_lvl_7 or room == r_lvl_41) then image_index = 9;
 if(room == r_lvl_20 or room == r_lvl_35) then image_index = 11;
 if(room == r_lvl_34) then image_index = 1;
 if(room == r_lvl_8 or room == r_lvl_10 or room == r_lvl_13 or room == r_lvl_25 or room == r_lvl_26) then image_index = 5;

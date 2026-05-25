@@ -49,17 +49,17 @@ switch(prog)
 	case 37:
 	case 36:
 	case 35: if(obj_suq.lvldone[49] == false and o_saveload.knkrwins == true) { array_insert(lvl,t,49); t++; }
-	case 34: if(obj_suq.lvldone[46] == false and obj_suq.gildebrand > 3 and o_saveload.gnet > 0) { array_insert(lvl,t,46); t++; }
-	case 33: if(obj_suq.lvldone[44] == false and obj_suq.artifacts == 1 and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and obj_suq.yellerteeth > 6 and o_saveload.ynet > 0) { array_insert(lvl,t,44); t++; }
-	case 32: if(obj_suq.lvldone[43] == false and obj_suq.gildebrand > 2 and o_saveload.gnet > 15) { array_insert(lvl,t,43); t++; }
-	case 31: if(obj_suq.lvldone[40] == false and o_saveload.convinced == true and o_saveload.pnet > 0) { array_insert(lvl,t,40); t++; }//if this one is completed, goes straight to end game with Perez as enemy for 51
-			if(obj_suq.lvldone[42] == false and o_saveload.plant == true and o_saveload.knet > 0) { array_insert(lvl,t,42); t++; }//if this one is completed, goes straight to end game with Kanker as enemy for 51
+	case 34: if(obj_suq.lvldone[46] == false and o_saveload.gnet > 0) { array_insert(lvl,t,46); t++; }
+	case 33: if(obj_suq.lvldone[44] == false and obj_suq.artifacts == 1 and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and o_saveload.ynet > 0) { array_insert(lvl,t,44); t++; }
+	case 32: if(obj_suq.lvldone[43] == false and o_saveload.gnet > 15) { array_insert(lvl,t,43); t++; }
+	case 31: if(obj_suq.lvldone[40] == false and o_saveload.convinced == true and o_saveload.pnet > 0) { array_insert(lvl,t,40); t++; }
+			if(obj_suq.lvldone[42] == false and o_saveload.plant == true and o_saveload.knet > 0) { array_insert(lvl,t,42); t++; }
 	case 30: 
-	case 29: if(obj_suq.lvldone[38] == false and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and obj_suq.yellerteeth > 4 and o_saveload.ynet > 0) { array_insert(lvl,t,38); t++; }
+	case 29: if(obj_suq.lvldone[38] == false and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and o_saveload.ynet > 0) { array_insert(lvl,t,38); t++; }
 	case 28:
 	case 27:
-	case 26: if(obj_suq.lvldone[33] == false and obj_suq.gildebrand > 2 and o_saveload.gnet > 15) { array_insert(lvl,t,33); t++; }
-	case 25: if(obj_suq.lvldone[32] == false and obj_suq.yellerteeth > 3 and o_saveload.ynet > 0) { array_insert(lvl,t,32); t++; }
+	case 26: if(obj_suq.lvldone[33] == false and o_saveload.gnet > 15) { array_insert(lvl,t,33); t++; }
+	case 25: if(obj_suq.lvldone[32] == false and o_saveload.ynet > 0) { array_insert(lvl,t,32); t++; }
 	case 24:
 	case 23: if(obj_suq.lvldone[31] == false and obj_suq.scientist and obj_suq.tankD == true and o_saveload.knet > 0) { array_insert(lvl,t,31); t++; }
 			if(obj_suq.lvldone[34] == false and o_saveload.officials == true and o_saveload.plant == false and o_saveload.pnet > 0) { array_insert(lvl,t,34); t++; }
@@ -68,7 +68,7 @@ switch(prog)
 			if(obj_suq.lvldone[28] == false and obj_suq.lvldone[29] == false and obj_suq.lvldone[30] == false) { array_insert(lvl,t,30); t++; }
 	case 21:
 	case 20:
-	case 19: if(obj_suq.lvldone[26] == false and obj_suq.yellerteeth > -2 and o_saveload.ynet > 0) { array_insert(lvl,t,26); t++; }
+	case 19: if(obj_suq.lvldone[26] == false and o_saveload.ynet > 0) { array_insert(lvl,t,26); t++; }
 			if(obj_suq.lvldone[27] == false and o_saveload.hnet > 0) { array_insert(lvl,t,27); t++; }
 	case 18:
 	case 17: if(obj_suq.lvldone[24] == false and obj_suq.lvldone[25] == false) { array_insert(lvl,t,24); t++; }
@@ -82,7 +82,7 @@ switch(prog)
 	case 12: if(obj_suq.lvldone[21] == false and o_saveload.unet > 0) { array_insert(lvl,t,21); t++; }
 	case 11:
 	case 10: if(obj_suq.lvldone[18] == false and o_saveload.pnet > 0) { array_insert(lvl,t,18); t++; }
-			 if(obj_suq.lvldone[20] == false and obj_suq.yellerteeth > -2 and o_saveload.ynet > 0) { array_insert(lvl,t,20); t++; }
+			 if(obj_suq.lvldone[20] == false and o_saveload.ynet > 0) { array_insert(lvl,t,20); t++; }
 	case 9:
 	case 8: if(obj_suq.lvldone[15] == false and o_saveload.knet > 0) { array_insert(lvl,t,15); t++; }
 			if(obj_suq.lvldone[16] == false and obj_suq.lvldone[17] == false and o_saveload.gnet > 0) { array_insert(lvl,t,16); t++; }
@@ -95,26 +95,26 @@ switch(prog)
 	case 5: if(obj_suq.lvldone[6] == false and obj_suq.lvldone[1] == true and obj_suq.gemsD > 0 and o_saveload.pnet > 0) { array_insert(lvl,t,6); t++; }
 			if(obj_suq.lvldone[9] == false) { array_insert(lvl,t,9); t++; }
 			if(obj_suq.lvldone[10] == false and o_saveload.unet > 0) { array_insert(lvl,t,10); t++; }
-	case 4: if(obj_suq.lvldone[8] == false and obj_suq.yellerteeth > -4 and o_saveload.ynet > 0) { array_insert(lvl,t,8); t++; }
+	case 4: if(obj_suq.lvldone[8] == false and o_saveload.ynet > 0) { array_insert(lvl,t,8); t++; }
 	case 3: if(obj_suq.lvldone[5] == false) { array_insert(lvl,t,5); t++; }
 			if(obj_suq.lvldone[7] == false and o_saveload.gnet > 0) { array_insert(lvl,t,7); t++; }
 	case 2: 
 	case 1: if(obj_suq.lvldone[1] == false and o_saveload.knet > 0) { array_insert(lvl,t,1); t++; }
-			if(obj_suq.lvldone[2] == false and obj_suq.yellerteeth > -6 and o_saveload.ynet > 0) { array_insert(lvl,t,2); t++; }
-			if(obj_suq.lvldone[3] == false and obj_suq.lvldone[4] == false and obj_suq.ungulate > -6 and o_saveload.unet > 0) { array_insert(lvl,t,3); t++; }
-			if(obj_suq.lvldone[4] == false and obj_suq.lvldone[3] == false and obj_suq.hiertech > -6 and o_saveload.hnet > 0) { array_insert(lvl,t,4); t++; }
+			if(obj_suq.lvldone[2] == false and o_saveload.ynet > 0) { array_insert(lvl,t,2); t++; }
+			if(obj_suq.lvldone[3] == false and obj_suq.lvldone[4] == false and o_saveload.unet > 0) { array_insert(lvl,t,3); t++; }
+			if(obj_suq.lvldone[4] == false and obj_suq.lvldone[3] == false and o_saveload.hnet > 0) { array_insert(lvl,t,4); t++; }
 			//break;
 	case 0: array_insert(lvl,t,0); t++;
 			array_insert(lvl,t,8); t++;
 			if(obj_suq.lvldone[9] == false) { array_insert(lvl,t,9); t++; }
-			if(obj_suq.lvldone[11] == false and obj_suq.perez > -4) { array_insert(lvl,t,11); t++; }
-			if(obj_suq.lvldone[12] == false and obj_suq.kanker > -5) { array_insert(lvl,t,12); t++; }
+			if(obj_suq.lvldone[11] == false) { array_insert(lvl,t,11); t++; }
+			if(obj_suq.lvldone[12] == false) { array_insert(lvl,t,12); t++; }
 			if(obj_suq.lvldone[13] == false) { array_insert(lvl,t,13); t++; }
-			if(obj_suq.lvldone[14] == false and obj_suq.hiertech > -4) { array_insert(lvl,t,14); t++; }
-			if(obj_suq.lvldone[15] == false and obj_suq.kanker > -3 and o_saveload.pnet > 80 and obj_suq.progress < 25) { array_insert(lvl,t,15); t++; }
-			if(obj_suq.lvldone[16] == false and obj_suq.gildebrand > -4) { array_insert(lvl,t,16); t++; }
-			if(obj_suq.lvldone[17] == false and obj_suq.hiertech > -4) { array_insert(lvl,t,17); t++; }
-			if(obj_suq.lvldone[18] == false and obj_suq.perez > -2) { array_insert(lvl,t,18); t++; }
+			if(obj_suq.lvldone[14] == false) { array_insert(lvl,t,14); t++; }
+			if(obj_suq.lvldone[15] == false and o_saveload.pnet > 80 and obj_suq.progress < 25) { array_insert(lvl,t,15); t++; }
+			if(obj_suq.lvldone[16] == false) { array_insert(lvl,t,16); t++; }
+			if(obj_suq.lvldone[17] == false) { array_insert(lvl,t,17); t++; }
+			if(obj_suq.lvldone[18] == false) { array_insert(lvl,t,18); t++; }
 			array_insert(lvl,t,19); t++;
 			array_insert(lvl,t,20); t++; 
 			if(obj_suq.lvldone[21] == false) { array_insert(lvl,t,21); t++; }

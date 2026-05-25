@@ -8,7 +8,7 @@ or
 19: Protect main vault - Mercenaries are coming in droves, killing them gives you points to spend on better guards to place down in certain locations 
 24: Execute members of government that would prevent a banking monopoly (Lose money while this isn't done)
 35: Influence government to choose Perez as main bank of government (Lose money while this isn't done) (Needs 24 done and 32 not done)
-41: Stop Riot Leader (find and kill) (Lose money while this isn't done) (needs 35 done and 43,32 not done) Goes straight to end game?
+41: Stop Riot Leader (find and kill) (Lose money while this isn't done) (needs 35 done and 43,32 not done) Goes to end game after other available levels are done. 
 
 
 	-Kanker and Co Plan - Be a giant military force to start taking over countries:

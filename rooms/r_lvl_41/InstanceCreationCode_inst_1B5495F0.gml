@@ -1,0 +1,9 @@
+weapon_type = obj_magnum;
+hp = 16;
+drop_gun = choose(true,false,true);
+p = Path81;
+weapon_spd = 6;
+weapon = instance_create_layer(x,y,"Instances_Action",o_eMagnum); 
+weapon.image_alpha = 0.01;
+weapon_bul = o_eMBul;
+shtspd = 80; break;
