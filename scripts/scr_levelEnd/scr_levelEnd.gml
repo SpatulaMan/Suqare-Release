@@ -1384,6 +1384,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 122;
 					o_saveload.gnet += 12;
 					obj_suq.gildebrand += 3;
+					o_saveload.moneyT += 12500;
 				}
 				else
 				{
@@ -1429,6 +1430,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.knet -= 6;
 					obj_suq.kanker -= 1;
 					o_saveload.convinced = true;
+					o_saveload.moneyT += 9300;
 				}
 				else
 				{
@@ -1451,6 +1453,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.perez += 3;
 					o_saveload.pnet += 15;
 					o_saveload.knet -= 6;
+					o_saveload.moneyT += 10000;
 				}
 				else
 				{
@@ -1458,6 +1461,23 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.perez -= 4;
 					o_saveload.pnet -= 30;
 					o_saveload.knet += 6;
+				}
+			} break;
+			case r_lvl_37:
+			{
+				//obj_suq.lvldone[obj_suq.lvl] = true;
+				o_saveload.gnet += 2;
+				o_saveload.unet -= 2;
+				o_saveload.hnet += 3;
+				o_saveload.ynet -= 3;
+				o_saveload.pnet -= 3;
+				o_saveload.knet += 3;
+				if(o_lvl37.o1 == true)
+				{
+					obj_suq.report = 130;
+					o_saveload.moneyT += o_lvl37.r;
+					o_saveload.trick = false;
+					saveTrick();
 				}
 			} break;
 		}

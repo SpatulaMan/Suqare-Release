@@ -156,3 +156,4 @@ artifacts = 0;
 endgame = false;
 knkrwins = false;
 armycount = 0;
+trick = false;

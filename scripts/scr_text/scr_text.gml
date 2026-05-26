@@ -1707,10 +1707,42 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[221] = @"Kill Leader";
-	a[222] = @"";
-	a[223] = @"";
-	a[224] = @"";
-	a[225] = @"";
+	a[222] = @"BRIEFING:
+			We have a big job for you. There's this ship shipping 
+			shipping ships, right? And if we can divert it to another
+			port, we can get a big payout. Higher than we usually see.
+			What we need you to do is just kill everyone on board, then
+			we'll step in and remotely hack and divert the ship. 
+			
+			Please know that this will not be a walk in the park. It's
+			a full-on war. This ship is decked out with every form of
+			warfare imaginable with super powerful guards all over it.
+			Get ready for the mission of a lifetime. Bring your best
+			weapons. ";
+	a[223] = @"Hijack a Shipping Ship Shipping Shipping Ships";
+	a[224] = @"Mission: Hijack Ship
+			
+			Hiring Firm: Hiertech
+			Current Standing With
+			Hiertech: "+string(obj_suq.hiertech)+@"
+			Combat Difficulty: 13
+			Mental Difficulty: 3
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $15000
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[225] = @"Escape Tirangle";
 	a[226] = @"";
 	a[227] = @"";
 	a[228] = @"";
@@ -2244,14 +2276,90 @@ function scr_conversation(t)
 			And maybe you won't meet the same yourself. ";
 	a[111] = @"After this, I plan on living it up in my villa on 412 parallelogram Rd. I'll probably stay there until the cops
 			stop looking for me. ";
-	a[112] = @"";
-	a[113] = @"";
-	a[114] = @"";
-	a[115] = @"";
-	a[116] = @"";
-	a[117] = @"";
-	a[118] = @"";
-	a[119] = @"";
+	a[112] = @"Welcome to my game, Suqare. My name is Tirangle. You thought you were going on a mission from Hiertech, but
+			actually, you've fallen into my trap and you have to play a game. It's a simple quiz, but for every wrong answer, I
+			will take money away. For every correct answer, I'll give you money. Some answers will lead to more questions, and 
+			others fewer questions. ";//tirangle game lvl 37
+	a[113] = @"Oh, you thought you could just quit? No, no, no, leaving my game won't be that easy. ";//tirangle game lvl 37
+	a[114] = @"What is Perez Holdings?
+	
+			Left - Storage Company
+			
+			Right - Bank";//tirangle game lvl 37 1
+	a[115] = @"Who is Ungulate Studios' Rival?
+	
+			Up - Hiertech
+			
+			Down - Gildebrand Consulting";//tirangle game lvl 37 2
+	a[116] = @"How much does the 4th armor level cost in the shop?
+	
+			Left - $25000
+			
+			Right - $20000";//tirangle game lvl 37 3
+	a[117] = @"What was lurking in Philbin Wuthgor's Neighbor's house? 
+	
+			Up - Purple Ghost
+			
+			Down - Red Ghost";//tirangle game lvl 37 4
+	a[118] = @"How many Golden Fragments are there? 
+	
+			Up - 6
+			
+			Left - 4";//tirangle game lvl 37 5
+	a[119] = @"What is the sum of the interior angles of a Triangle?
+	
+			Up - 360 degrees
+			
+			Down - 180 degrees";//tirangle game lvl 37 6
+	a[120] = @"What small robots did Gildebrand Consulting need you to destroy? 
+	
+			Left - Spiders
+			
+			Down - Cockroaches";//tirangle game lvl 37 7
+	a[121] = @"What is the highest number of weapons you can hold at one time?  
+	
+			Left - 3
+			
+			Down - 7";//tirangle game lvl 37 8
+	a[122] = @"How many bullets does an upgraded machine gun have in its magazine?
+	
+			Up - 40
+			
+			Left - 50";//tirangle game lvl 37 9
+	a[123] = @"Where can the flamethrower be found?
+	
+			Up - Inside the scientists lab after the deadly gases have been released
+			
+			Right - Inside the haunted ship of the Swehle Buckos";//tirangle game lvl 37 10
+	a[124] = @"What are the possible colors of keys? 
+	
+			Up - Blue, Red, Orange
+			
+			Right - Blue, Red, Orange, Purple";//tirangle game lvl 37 11
+	a[125] = @"What percent chance does a lockpick have of opening a locked door?  
+	
+			Up - 50%
+			
+			Right - 30%";//tirangle game lvl 37 12
+	a[126] = @"How much does the 4th armor level cost in the shop?
+	
+			Right - $25000
+			
+			Left - $20000";//tirangle game lvl 37
+	a[127] = @"What are the possible colors of keys? 
+	
+			Left - Blue, Red, Orange
+			
+			Right - Blue, Red, Orange, Purple";//tirangle game lvl 37
+	a[130] = @"What percent chance does a lockpick have of opening a locked door?  
+	
+			Left - 50%
+			
+			Down - 30%";//tirangle game lvl 37
+	a[128] = @"You're a sneaky one, aren't you? Thought you could outsmart me, so you closed the game entrirely to get out of
+			my level. Since you choose to cheat my game, I'll choose to cheat you, and steal $10,000. Hope it was worth it.
+			Hahahahaha!";//Tirangle game after shutting down game
+	a[129] = @"Well, that's the game. We'll see how much money you lost in the end. Let's play again sometime. Hahahaha!";//tirangle game lvl 37 after answering all possible questions
 			
 	return a[t];
 }
@@ -4970,7 +5078,21 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";
-	c[130] = @"";
+	c[130] = @"Objectives Complete??
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You finally got out. Thanks for playing my game. Hope you didn't lose too much. Hahahahaha!
+			
+			
+			Result:
+			Your money has changed by: " + string(o_lvl37.r) + @" dollars. 
+			
+			Tirangle has struck again. He's known for playing games and causing problems for fun. He's
+			wanted in 73 countries for his antics. 
+			
+			
+			Press Spacebar to continue";
 	c[131] = @"";
 	c[132] = @"";
 	c[133] = @"";

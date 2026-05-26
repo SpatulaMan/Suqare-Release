@@ -21,7 +21,8 @@ lvl 17 - lvl 51
 
 
 
-
+If player quits out of lvl37, a certain variable gets set and saved where Tirangle comes to talk to you at the armory. He then takes 10,000 dollars from you for quitting his level. 
+Some 4th wall breaking stuff here. 
 
 
 

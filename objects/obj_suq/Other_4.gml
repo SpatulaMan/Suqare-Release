@@ -100,3 +100,9 @@ if(room == r_armory and instance_exists(o_armory))
 		//if(report > 0) { instance_create(x,y,o_recap); }
 	}
 }
+if(room == r_lvl_37)
+{
+	o_saveload.trick = true;
+	lvldone[lvl] = true;
+	save();
+}

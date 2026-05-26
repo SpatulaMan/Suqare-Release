@@ -133,12 +133,31 @@ function save()
 		artifacts: obj_suq.artifacts,
 		engame: o_saveload.endgame,
 		knkrwins: o_saveload.knkrwins,
-		armycount: o_saveload.armycount
+		armycount: o_saveload.armycount,
+		trick: o_saveload.trick
 		
 		//upgrades
 		
 		//gadgets
 		
+	}
+	
+	var _string = json_stringify(_struct);
+
+	var _file = file_text_open_write(string(_f) + "save.txt");
+	
+	file_text_write_string(_file,_string);
+	
+	file_text_close(_file);
+
+}
+function saveTrick()
+{
+	//if(!instance_exists(o_saveIcon)) { instance_create_layer(x,y,"Instances",o_saveIcon); }
+	var _f = o_saveload.filename;
+	var _struct = 
+	{
+		trick: o_saveload.trick		
 	}
 	
 	var _string = json_stringify(_struct);
@@ -406,6 +425,8 @@ function load(_f)
 			o_saveload.knkrwins=_struct.knkrwins;
 		if (struct_exists(_struct, "armycount"))
 			o_saveload.armycount=_struct.armycount;
+		if (struct_exists(_struct, "trick"))
+			o_saveload.trick=_struct.trick;
 			
 		
 		//levels that are incompleted and are available to the player currently in variables 
@@ -538,7 +559,8 @@ function load(_f)
 			artifacts: 0,
 			endgame: false,
 			knkrwins: false,
-			armycount: 0
+			armycount: 0,
+			trick: false
 		
 		}
 	
