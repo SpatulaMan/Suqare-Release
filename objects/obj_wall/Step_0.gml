@@ -15,7 +15,7 @@ if(distance_to_object(obj_suq) > 4 and lockSoundCheck == true)
 {
 	lockSoundCheck = false;
 }
-if(room == r_lvl_0 or room == r_lvl_11 or room == r_lvl_32) then image_index = 6;
+if(room == r_lvl_0 or room == r_lvl_11 or room == r_lvl_32 or room == r_lvl_46) then image_index = 6;
 if(room == r_lvl_32 and depth == 400) then image_index = 2;
 if((room == r_lvl_29 or room == r_lvl_30 or room == r_lvl_31) and depth == 100) then image_index = 1;
 if((room == r_lvl_29 or room == r_lvl_30 or room == r_lvl_31) and depth == 400) then image_index = 7;

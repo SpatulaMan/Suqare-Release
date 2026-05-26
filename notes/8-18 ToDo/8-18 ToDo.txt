@@ -8,7 +8,7 @@
 
 -Add bonuses when you're on a company's good side - done
 
--Finish all 51 levels - 9 levels left
+-Finish all 51 levels - 7 levels left
 
 -Playtest and bug-fix levels - 28 levels left
 

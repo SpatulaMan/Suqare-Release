@@ -170,6 +170,7 @@ if(a > 0)
 		case 136: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("COMMON AREA"),2,2,0,c_white,c_white,c_white,c_white,a); break;
 		case 137: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("WORK ZONE"),2,2,0,c_white,c_white,c_white,c_white,a); break;
 		case 138: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("RESTRICTED AREA"),2,2,0,c_white,c_white,c_white,c_white,a); break;
+		case 139: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("BOX SEATS"),2,2,0,c_white,c_white,c_white,c_white,a); break;
 		default: draw_text_transformed_colour(obj_suq.roomw/2,obj_suq.roomh*.75,string("RESTRICTED"),3,3,0,c_white,c_white,c_white,c_white,a); 
 	}
 }

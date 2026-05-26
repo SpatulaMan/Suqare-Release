@@ -1,4 +1,5 @@
 /// @description
+audio_play_sound(snd_hurt,1,false,1.8*o_saveload.sfxvol,0,.6);
 if(instance_exists(o_correct)) 
 {  
 	for(var i = 0; i < instance_number(o_correct); i++)

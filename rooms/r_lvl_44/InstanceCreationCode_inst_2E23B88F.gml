@@ -1,6 +1,7 @@
 weapon_type = choose(obj_machineGun,obj_shotgun);
 sprite_index = s_enemy_2;
-hp = 16;
+image_blend = c_green;
+hp = 32;
 drop_gun = choose(true,true,false);
 weapon_spd = 6;
 switch(weapon_type)

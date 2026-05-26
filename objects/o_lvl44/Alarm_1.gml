@@ -10,7 +10,8 @@ switch(obj)
 				inst = instance_create_layer(1717,761,"Instances_Action",obj_guard); 
 				inst.weapon_type = choose(obj_machineGun,obj_shotgun);
 				inst.sprite_index = s_enemy_2;
-				inst.hp = 16;
+				inst.image_blend = c_green;
+				inst.hp = 32;
 				inst.drop_gun = choose(true,true,false);
 				inst.weapon_spd = 6;
 				ar.image_blend = c_yellow;
@@ -27,14 +28,14 @@ switch(obj)
 						inst.weapon_bul = o_eSGBul;
 						inst.shtspd = 80; break;
 				} 
-				break;
-			}
+			} break;
 	case 2: if(!instance_place(1926,544,obj_guard))
 			{
 				inst = instance_create_layer(1926,544,"Instances_Action",obj_guard); 
 				inst.weapon_type = choose(obj_machineGun,obj_shotgun);
 				inst.sprite_index = s_enemy_2;
-				inst.hp = 16;
+				inst.image_blend = c_green;
+				inst.hp = 32;
 				inst.drop_gun = choose(true,true,false);
 				inst.weapon_spd = 6;
 				ar.image_blend = c_navy;
@@ -51,14 +52,14 @@ switch(obj)
 						inst.weapon_bul = o_eSGBul;
 						inst.shtspd = 80; break;
 				} 
-				break;
-			}
+			} break;
 	case 3: if(!instance_place(1046,1301,obj_guard))
 		{
 			inst = instance_create_layer(1046,1301,"Instances_Action",obj_guard); 
 			inst.weapon_type = choose(obj_machineGun,obj_shotgun);
 			inst.sprite_index = s_enemy_2;
-			inst.hp = 16;
+			inst.image_blend = c_green;
+			inst.hp = 32;
 			inst.drop_gun = choose(true,true,false);
 			inst.weapon_spd = 6;
 			ar.x1 = inst.x;
@@ -74,8 +75,7 @@ switch(obj)
 					inst.weapon_bul = o_eSGBul;
 					inst.shtspd = 80; break;
 			} 
-			break;
-		} 
+		} break;
 	case 4: if(xc == 1) { x1 = 1511; y1 = 555; }
 			else if(xc == 2) { x1 = 1904; y1 = 1460; }
 			else if(xc == 3) { x1 = 654; y1 = 975; } 

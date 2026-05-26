@@ -1742,12 +1742,46 @@ function scr_briefing(t){
 			
 			
 			(Press Spacebar to Accept)";
-	a[225] = @"Escape Tirangle";
-	a[226] = @"";
-	a[227] = @"";
-	a[228] = @"";
-	a[229] = @"";
-	a[230] = @"";
+	a[225] = @"Play Game";
+	a[226] = @"BRIEFING:
+			We have our annual race competition coming up, but don't
+			worry about that part. We always win the race to prevent
+			Ungulate Studios from winning a water source back for a
+			lowly desert town. We need it for our data centers. 
+			
+			What we actually need you to do is assassinate the CEO of
+			Ungulate Studios since he'll be attending the race in 
+			person this year. He'll be in a box seat and heavily
+			guarded. To prevent suspicions, you'll need to kill him
+			and leave during the last 2 minutes of the race. 
+			
+			The CEO will probably run away, so be ready to chase him
+			down. ";
+	a[227] = @"Kill Ungulate Studios CEO during Race";
+	a[228] = @"Mission: Kill CEO
+			
+			Hiring Firm: Hiertech
+			Current Standing With
+			Hiertech: "+string(obj_suq.hiertech)+@"
+			Combat Difficulty: 12
+			Mental Difficulty: 4
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $8500
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[229] = @"Kill CEO";
+	a[230] = @"Leave Quickly";
 	a[231] = @"";
 	a[232] = @"";
 	a[233] = @"";
@@ -1757,16 +1791,18 @@ function scr_briefing(t){
 	a[237] = @"";
 	a[238] = @"";
 	a[239] = @"";
+	a[240] = @"";
+	a[241] = @"";
+	a[242] = @"";
+	a[243] = @"";
+	a[244] = @"";
+	a[245] = @"";
+	a[246] = @"";
+	a[247] = @"";
+	a[248] = @"";
+	a[249] = @"";
 	
 	
-/*
-15: Vambrace of Wurtu
-21: Jewel of Barfo, Ghost ninjas too
-27: Nose of Mortuban
-33: Eye of Gutran
-39: Destroy Ninja Hierarchy (kill all ninja leaders)
-45: Ninja Retaliation, Fight off onslaught of ninjas until they're all dead. Protect the CEO?
-*/
 return a[t];
 }
 
@@ -5093,9 +5129,57 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";
-	c[131] = @"";
-	c[132] = @"";
-	c[133] = @"";
+	c[131] = @"Objectives Complete
+			Payout: $8500
+			
+			Response From Hiring Firm:
+			You killed him! This won't end Ungulate as a company, but it'll sure hurt them for the time
+			being. We'll come back with an idea to put them down for good. For now, though, great job with
+			this. 
+			
+			Current standing with Hiertech"+string(obj_suq.hiertech)+@"
+			
+			Result:
+			Ungulate Studios will be reeling from this. Their CEO has been leading them well for the last
+			35 years. Hiertech will definitely increase their net worth with Ungulate left scrambling to
+			replace their late CEO. 
+			
+			
+			Press Spacebar to continue";
+	c[132] = @"Objectives Partially Complete
+			Payout: $4000
+			
+			Response From Hiring Firm:
+			The vote has been reversed! You couldn't kill the leader fast enough. Or maybe you killed the
+			wrong guy. Either way, our plans have been ruined. It's all been for nothing, and you are the
+			problem. You are the worst mercenary we've ever seen! You were so promising, and now we know
+			that you're basically a fraud. 
+			
+			Current standing with Hiertech"+string(obj_suq.hiertech)+@"
+			
+			Result:
+			Ungulate Studios will be reeling from this. Their CEO has been leading them well for the last
+			35 years. Hiertech will no doubt see a net worth increase with Ungulate left scrambling to
+			replace their late CEO, but since the CEO wasn't killed in time, we're being investigated for
+			involvement in the crime. 
+			
+			
+			Press Spacebar to continue";
+	c[133] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You couldn't kill him at all!? Are you a moron? Can you not follow directions? If only we 
+			could just end the whole company. That might be what we try to do next. 
+			
+			Current standing with Hiertech"+string(obj_suq.hiertech)+@"
+			
+			Result:
+			You failed to kill Ungulate Studios' CEO, and now Hiertech has set its sights on ending the
+			whole company. 
+			
+			
+			Press Spacebar to continue";
 	c[134] = @"";
 	c[135] = @"";
 	c[136] = @"";

@@ -56,7 +56,8 @@ switch(prog)
 			if(obj_suq.lvldone[42] == false and o_saveload.plant == true and o_saveload.knet > 0) { array_insert(lvl,t,42); t++; }
 	case 30: 
 	case 29: if(obj_suq.lvldone[38] == false and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and o_saveload.ynet > 0) { array_insert(lvl,t,38); t++; }
-	case 28:
+	case 28: if(obj_suq.lvldone[45] == false and obj_suq.lvldone[41] == false and o_saveload.hnet > 0) { array_insert(lvl,t,45); t++; }
+			if(obj_suq.lvldone[45] == false and obj_suq.lvldone[41] == false and o_saveload.unet > 0) { array_insert(lvl,t,41); t++; }
 	case 27:
 	case 26: if(obj_suq.lvldone[33] == false and o_saveload.gnet > 15) { array_insert(lvl,t,33); t++; }
 	case 25: if(obj_suq.lvldone[32] == false and o_saveload.ynet > 0) { array_insert(lvl,t,32); t++; } 

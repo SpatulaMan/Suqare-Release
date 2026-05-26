@@ -44,6 +44,7 @@ if(true)
 		case 42: b = scr_briefing(181); b2 = scr_briefing(182); ot1 = scr_briefing(183); obj_suq.lvl = 42; break;
 		case 43: b = scr_briefing(199); b2 = scr_briefing(200); ot1 = scr_briefing(201); obj_suq.lvl = 43; break;
 		case 44: b = scr_briefing(189); b2 = scr_briefing(190); ot1 = scr_briefing(191); obj_suq.lvl = 44; break;
+		case 45: b = scr_briefing(226); b2 = scr_briefing(227); ot1 = scr_briefing(228); obj_suq.lvl = 45; break;
 		case 46: b = scr_briefing(205); b2 = scr_briefing(206); ot1 = scr_briefing(207); obj_suq.lvl = 46; break;
 		case 49: b = scr_briefing(209); b2 = scr_briefing(210); ot1 = scr_briefing(211); obj_suq.lvl = 49; break;
 	}

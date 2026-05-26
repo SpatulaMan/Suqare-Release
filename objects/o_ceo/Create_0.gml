@@ -1,0 +1,23 @@
+/// @description
+image_speed = 0;
+check = false;
+lightCheck = false;
+inst = noone;
+mark = false;
+markCheck = false;
+done = false;
+w1 = obj_suq.roomw;
+h1 = obj_suq.roomh;
+path = path_add();
+x1_2 = 721; y1 = 604; y2 = 749;
+x3 = 413; y3 = 468;
+x4 = 1302; y4 = 757;
+x5 = 1188; y5 = 467;
+x6 = 859; y6 = 372;
+xc = 0;
+yc = 0;
+xyc = 1;
+alarm_set(0,60);
+moveCheck = true;
+hp = 1;
+image_blend = c_maroon;
