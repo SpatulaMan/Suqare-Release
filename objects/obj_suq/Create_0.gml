@@ -9,6 +9,7 @@ repeat(6)
 	keys[_i] = 0;
 	_i++;
 }
+r36 = 0;
 ki = 0;
 mh = o_saveload.magnumHave;
 mgh = o_saveload.machineGunHave;

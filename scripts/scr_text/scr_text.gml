@@ -1813,12 +1813,45 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[234] = @"Clear Defenses";
-	a[235] = @"";
-	a[236] = @"";
-	a[237] = @"";
-	a[238] = @"";
-	a[239] = @"";
-	a[240] = @"";
+	a[235] = @"BRIEFING:
+			There's been 3 wrongly-convicted people recently, and 
+			they're being held in separate cells at the prison manor.
+			I guess they call it that because it resembles a local
+			mansion around here? It's weird, but just go with it. 
+			
+			We need you to break these 3 people out of prison without
+			killing a single guard. The guards are just working their
+			normal jobs and didn't have a part in convicting them. 
+			If you kill even one of them, you will get no reward.
+			
+			The cells are all located upstairs, and you will get a 
+			third of the reward per prisoner you rescue. ";
+	a[236] = @"Break 3 people out of Prison";
+	a[237] = @"Mission: Prison Break
+			
+			Hiring Firm: Ungulate Studios
+			Current Standing With
+			Ungulate Studios: "+string(obj_suq.ungulate)+@"
+			Combat Difficulty: 5
+			Mental Difficulty: 10
+			Locked Doors: 3
+			Req. Locked Doors: 3
+			Keys Available: 3
+			Reward: $7200
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[238] = @"Free Prisoner 1";
+	a[239] = @"Free Prisoner 2";
+	a[240] = @"Free Prisoner 3";
 	a[241] = @"";
 	a[242] = @"";
 	a[243] = @"";
@@ -5237,10 +5270,74 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";
-	c[136] = @"";
-	c[137] = @"";
-	c[138] = @"";
-	c[139] = @"";
+	c[136] = @"Objectives Complete
+			Payout: $7200
+			
+			Response From Hiring Firm:
+			You saved them all! I knew we could count on you to get the job done cleanly and effectively. 
+			
+			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			
+			Result:
+			The wrongly convicted inmates were put into a protection program to keep them safe from the 
+			law. They owe you their lives for saving them. 
+			
+			
+			Press Spacebar to continue";
+	c[137] = @"Objectives Partially Complete
+			Payout: $" + string(obj_suq.r36) + @"
+			
+			Response From Hiring Firm:
+			Well, you couldn't save them all, but you made a valiant effort. Nice job not killing any of
+			the guards. That's the trickiest part. 
+			
+			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			
+			Result:
+			The wrongly convicted inmates you ended up rescuing were put into a protection program to keep
+			them safe from the law. They owe you their lives for saving them. 
+			
+			
+			Press Spacebar to continue";
+	c[138] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			I thought you would be able to get at least one inmate out! Ugh, this is awful. How could you
+			be so incompetent?
+			
+			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			
+			Result:
+			You weren't able to save the inmates, so they will be stuck in prison till the day they die
+			most likely. 
+			
+			
+			Press Spacebar to continue";
+	c[139] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			I don't even care if you saved any inmates. You're worse than anyone for killing the innocent
+			guards of the prison! I hate all you stand for. 
+			
+			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			
+			Result:
+			You killed at least one guard in the prison, and that made everything else you did become moot.
+			
+			
+			Press Spacebar to continue";
+	c[140] = @"";
+	c[141] = @"";
+	c[142] = @"";
+	c[143] = @"";
+	c[144] = @"";
+	c[145] = @"";
+	c[146] = @"";
+	c[147] = @"";
+	c[148] = @"";
+	c[149] = @"";
 	return c[m];
 }
 function tutorial(k)

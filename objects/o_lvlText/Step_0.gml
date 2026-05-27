@@ -143,6 +143,12 @@ switch(room)
 	if(o_lvl35.o2 == true) { obj2 = true; }
 	break;
 	
+	case r_lvl_36: t = 235; o1 = 238; o2 = 239; o3 = 240; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); ot3 = scr_briefing(o3); image_index = 2;
+	if(o_lvl36.o1) { obj1 = true; } 
+	if(o_lvl36.o2) { obj2 = true; } 
+	if(o_lvl36.o3) { obj3 = true; } 
+	break;
+	
 	case r_lvl_37: t = 222; o1 = 225; b = scr_briefing(t); ot1 = scr_briefing(o1); image_index = 0;
 	if(o_lvl37.o1) { obj1 = true; } break
 	

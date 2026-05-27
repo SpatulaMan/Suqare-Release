@@ -38,16 +38,22 @@ if(true)
 		case 32: b = scr_briefing(177); b2 = scr_briefing(178); ot1 = scr_briefing(179); obj_suq.lvl = 32; break;
 		case 33: b = scr_briefing(194); b2 = scr_briefing(195); ot1 = scr_briefing(196); obj_suq.lvl = 33; break;
 		case 34: b = scr_briefing(213); b2 = scr_briefing(214); ot1 = scr_briefing(215); obj_suq.lvl = 34; break;
+		case 35: b = scr_briefing(235); b2 = scr_briefing(236); ot1 = scr_briefing(237); obj_suq.lvl = 35; break;
 		case 36: b = scr_briefing(222); b2 = scr_briefing(223); ot1 = scr_briefing(224); obj_suq.lvl = 36; break;
+		//case 37: b = scr_briefing(222); b2 = scr_briefing(223); ot1 = scr_briefing(224); obj_suq.lvl = 37; break;
 		case 38: b = scr_briefing(185); b2 = scr_briefing(186); ot1 = scr_briefing(187); obj_suq.lvl = 38; break;
+		//case 39: b = scr_briefing(222); b2 = scr_briefing(223); ot1 = scr_briefing(224); obj_suq.lvl = 39; break;
 		case 40: b = scr_briefing(218); b2 = scr_briefing(219); ot1 = scr_briefing(220); obj_suq.lvl = 40; break;
+		//case 41: b = scr_briefing(222); b2 = scr_briefing(223); ot1 = scr_briefing(224); obj_suq.lvl = 41; break;
 		case 42: b = scr_briefing(181); b2 = scr_briefing(182); ot1 = scr_briefing(183); obj_suq.lvl = 42; break;
 		case 43: b = scr_briefing(199); b2 = scr_briefing(200); ot1 = scr_briefing(201); obj_suq.lvl = 43; break;
 		case 44: b = scr_briefing(189); b2 = scr_briefing(190); ot1 = scr_briefing(191); obj_suq.lvl = 44; break;
 		case 45: b = scr_briefing(226); b2 = scr_briefing(227); ot1 = scr_briefing(228); obj_suq.lvl = 45; break;
 		case 46: b = scr_briefing(205); b2 = scr_briefing(206); ot1 = scr_briefing(207); obj_suq.lvl = 46; break;
 		case 47: b = scr_briefing(231); b2 = scr_briefing(232); ot1 = scr_briefing(233); obj_suq.lvl = 47; break;
+		//case 48: b = scr_briefing(222); b2 = scr_briefing(223); ot1 = scr_briefing(224); obj_suq.lvl = 48; break;
 		case 49: b = scr_briefing(209); b2 = scr_briefing(210); ot1 = scr_briefing(211); obj_suq.lvl = 49; break;
+		//case 50: b = scr_briefing(222); b2 = scr_briefing(223); ot1 = scr_briefing(224); obj_suq.lvl = 50; break;
 	}
 	if(keyboard_check_pressed(ord("E")))
 	{

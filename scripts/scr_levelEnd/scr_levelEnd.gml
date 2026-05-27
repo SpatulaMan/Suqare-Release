@@ -1163,7 +1163,6 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.unet -= 4;
 					o_saveload.hnet -= 5;
 					o_saveload.knkrwins = true;
-					//o_saveload.endgame = true; I think I want to add this after the player does the ghost level from Gildebrand
 				}
 				else
 				{
@@ -1401,6 +1400,7 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.unet += 2;
 				o_saveload.hnet -= 3;
 				o_saveload.ynet -= 3;
+				o_saveload.endgame = true;
 				if(o_lvl50.o1 == true)
 				{
 					obj_suq.report = 124;
@@ -1454,6 +1454,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.pnet += 15;
 					o_saveload.knet -= 6;
 					o_saveload.moneyT += 10000;
+					o_saveload.endgame = true;
 				}
 				else
 				{
@@ -1538,6 +1539,42 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.hnet -= 7;
 					o_saveload.unet += 2;
 				}
+			} break;
+			case r_lvl_36:
+			{
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				o_saveload.gnet -= 2;
+				o_saveload.knet -= 3;
+				o_saveload.pnet += 3;
+				o_saveload.ynet += 3;
+				o_saveload.hnet += 2;
+				if(o_lvl36.o1 == true and o_lvl36.o2 == true and o_lvl36.o3 == true and o_lvl36.guards == instance_number(obj_guard))
+				{
+					obj_suq.report = 136;
+					obj_suq.ungulate += 3;
+					o_saveload.unet += 10;
+					o_saveload.moneyT += 7200;
+				}//all done
+				else if((o_lvl36.o1 == true or o_lvl36.o2 == true or o_lvl36.o3 == true) and o_lvl36.guards == instance_number(obj_guard))
+				{
+					obj_suq.report = 137;
+					o_saveload.unet += 6;
+					if(o_lvl36.o1) { o_saveload.moneyT += 2400; obj_suq.ungulate += 1; }
+					if(o_lvl36.o2) { o_saveload.moneyT += 2400; obj_suq.ungulate += 1; }
+					if(o_lvl36.o3) { o_saveload.moneyT += 2400; obj_suq.ungulate += 1; }
+				}//some saved, no kill
+				else if(o_lvl36.o1 == false and o_lvl36.o2 == false and o_lvl36.o3 == false and o_lvl36.guards == instance_number(obj_guard))
+				{
+					obj_suq.report = 138;
+					obj_suq.ungulate -= 2;
+					o_saveload.unet -= 4;
+				}//none saved no kill
+				else
+				{
+					obj_suq.report = 139;
+					obj_suq.ungulate -= 3;
+					o_saveload.unet -= 7;
+				}//kill
 			} break;
 		}
 		if(!car and !range_optional)

@@ -29,6 +29,7 @@ if(chainGunAmt <= 0 and cgover == false)
 	cgover = true;
 	if(instance_exists(obj_suqCGBul)) { with (obj_suqCGBul) instance_destroy(); }
 }
+if(instance_exists(o_lvl36)) { r36 = o_lvl36.r1 + o_lvl36.r2 + o_lvl36.r3; }
 /*var _inst = instance_nearest(x,y,obj_darkness);
 with(_inst)
 {
