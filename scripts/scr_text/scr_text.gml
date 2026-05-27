@@ -1753,7 +1753,7 @@ function scr_briefing(t){
 			Ungulate Studios since he'll be attending the race in 
 			person this year. He'll be in a box seat and heavily
 			guarded. To prevent suspicions, you'll need to kill him
-			and leave during the last 2 minutes of the race. 
+			and leave during the last 3 minutes of the race. 
 			
 			The CEO will probably run away, so be ready to chase him
 			down. ";
@@ -1782,10 +1782,37 @@ function scr_briefing(t){
 			(Press Spacebar to Accept)";
 	a[229] = @"Kill CEO";
 	a[230] = @"Leave Quickly";
-	a[231] = @"";
-	a[232] = @"";
-	a[233] = @"";
-	a[234] = @"";
+	a[231] = @"BRIEFING:
+			We have a way to destroy Ungulate Studios for good. They
+			have a heavily armed safe house that was taken from a 
+			local gang where they keep all of their bank accounts and
+			business records. If you can just clear out all of the 
+			guards and defenses in the building, we can handle the 
+			rest. It's a simple enough task. ";
+	a[232] = @"Kill All Guards at Ungulate Studios Safe House";
+	a[233] = @"Mission: Destroy Defenses
+			
+			Hiring Firm: Hiertech
+			Current Standing With
+			Hiertech: "+string(obj_suq.hiertech)+@"
+			Combat Difficulty: 15
+			Mental Difficulty: 1
+			Locked Doors: 3
+			Req. Locked Doors: 3
+			Keys Available: 3
+			Reward: $11000
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[234] = @"Clear Defenses";
 	a[235] = @"";
 	a[236] = @"";
 	a[237] = @"";
@@ -5150,17 +5177,17 @@ function debrief(m)
 			Payout: $4000
 			
 			Response From Hiring Firm:
-			The vote has been reversed! You couldn't kill the leader fast enough. Or maybe you killed the
-			wrong guy. Either way, our plans have been ruined. It's all been for nothing, and you are the
-			problem. You are the worst mercenary we've ever seen! You were so promising, and now we know
-			that you're basically a fraud. 
+			You killed him! This won't end Ungulate as a company, but it'll sure hurt them for the time
+			being. We'll come back with an idea to put them down for good. On the other hand, you couldn't
+			kill him during the race, so somebody noticed and reported it. We're being investigated now,
+			and that won't be good for out bottom line. I wish you could just do you job right. 
 			
 			Current standing with Hiertech"+string(obj_suq.hiertech)+@"
 			
 			Result:
 			Ungulate Studios will be reeling from this. Their CEO has been leading them well for the last
 			35 years. Hiertech will no doubt see a net worth increase with Ungulate left scrambling to
-			replace their late CEO, but since the CEO wasn't killed in time, we're being investigated for
+			replace their late CEO, but since the CEO wasn't killed in time, they're being investigated for
 			involvement in the crime. 
 			
 			
@@ -5169,8 +5196,8 @@ function debrief(m)
 			Payout: $0
 			
 			Response From Hiring Firm:
-			You couldn't kill him at all!? Are you a moron? Can you not follow directions? If only we 
-			could just end the whole company. That might be what we try to do next. 
+			You couldn't kill him!? Are you a moron? Can you not follow directions? If only we could just
+			end the whole company. That might be what we try to do next. 
 			
 			Current standing with Hiertech"+string(obj_suq.hiertech)+@"
 			
@@ -5180,8 +5207,36 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";
-	c[134] = @"";
-	c[135] = @"";
+	c[134] = @"Objectives Complete
+			Payout: $11000
+			
+			Response From Hiring Firm:
+			You cleared out their defenses, and Ungulate is finally no more! We're free to do as we please.
+			You have been a huge help in keeping crime on the rise. Cheers to criminal activity! 
+			
+			Current standing with Hiertech"+string(obj_suq.hiertech)+@"
+			
+			Result:
+			Ungulate Studios is done for, and Hiertech is finally able to do whatever they want without
+			much repercussions. 
+			
+			
+			Press Spacebar to continue";
+	c[135] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You are the absolute worst mercenary ever! How could you do this to us!? I hope you die in a
+			small hole. 
+			
+			Current standing with Hiertech"+string(obj_suq.hiertech)+@"
+			
+			Result:
+			You failed to clear out the defenses, and Hiertech is stuck with a major rival still left in
+			the game.
+			
+			
+			Press Spacebar to continue";
 	c[136] = @"";
 	c[137] = @"";
 	c[138] = @"";

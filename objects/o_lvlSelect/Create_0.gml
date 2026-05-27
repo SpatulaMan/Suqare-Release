@@ -54,6 +54,7 @@ switch(prog)
 	case 32: if(obj_suq.lvldone[43] == false and o_saveload.gnet > 15) { array_insert(lvl,t,43); t++; }
 	case 31: if(obj_suq.lvldone[40] == false and o_saveload.convinced == true and o_saveload.pnet > 0) { array_insert(lvl,t,40); t++; }
 			if(obj_suq.lvldone[42] == false and o_saveload.plant == true and o_saveload.knet > 0) { array_insert(lvl,t,42); t++; }
+			if(obj_suq.lvldone[47] == false and o_saveload.ceo and o_saveload.hnet > 0) { array_insert(lvl,t,47); t++; }
 	case 30: 
 	case 29: if(obj_suq.lvldone[38] == false and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and o_saveload.ynet > 0) { array_insert(lvl,t,38); t++; }
 	case 28: if(obj_suq.lvldone[45] == false and obj_suq.lvldone[41] == false and o_saveload.hnet > 0) { array_insert(lvl,t,45); t++; }

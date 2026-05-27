@@ -5,7 +5,7 @@ if(distance_to_object(obj_suq) < 300 and _wallsee and _doorsee)
 {
 	if(mp_grid_path(global.grid,path,x,y,xc,yc,true) and !place_meeting(x,y,o_smoke))
 	{
-		path_start(path,4,path_action_stop,false);
+		path_start(path,3,path_action_stop,false);
 	}
 }
 if(distance_to_point(xc,yc) < 15 and moveCheck == true)

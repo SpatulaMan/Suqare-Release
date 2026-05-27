@@ -1,2 +1,1 @@
 /// @description
-hp -= other.damage;

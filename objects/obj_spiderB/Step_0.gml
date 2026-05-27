@@ -69,7 +69,7 @@ if(!path_exists(path))
 			//var _cho = choose(1,1,1,2);
 			//if(_cho == 2)
 			//{
-				scr_spiderspawn();
+				if(instance_number(obj_spider) < 80) { scr_spiderspawn(); }
 			//}
 		}
 		/*else if(shootCheck <= 0)
