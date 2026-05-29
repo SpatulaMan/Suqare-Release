@@ -158,3 +158,4 @@ knkrwins = false;
 armycount = 0;
 trick = false;
 ceo = false;
+rec = 300;

@@ -5,8 +5,8 @@
   "kind":0,
   "name":"Path81",
   "parent":{
-    "name":"lvl41",
-    "path":"folders/Objects/lvlmechs/lvl41.yy",
+    "name":"Paths",
+    "path":"folders/Paths.yy",
   },
   "points":[
     {"speed":100.0,"x":2867.068,"y":829.08514,},

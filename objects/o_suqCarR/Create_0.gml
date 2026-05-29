@@ -9,7 +9,6 @@ angchg = 0;
 timer = 0;
 hp = 10;
 crash = false;
-image_angle = 180;
 spd = speed;
 fwdC = instance_create_layer(x,y,"Instances_Action",o_fwd);
 revC = instance_create_layer(x,y,"Instances_Action",o_fwd);

@@ -1,4 +1,4 @@
-acc = .1;
+acc = .02;
 spd = 3;
 trn = 1;
 i = inst_FA64942;

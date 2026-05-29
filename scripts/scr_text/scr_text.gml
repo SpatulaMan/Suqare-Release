@@ -1876,7 +1876,7 @@ function scr_briefing(t){
 			Hiring Firm: Ungulate Studios
 			Current Standing With
 			Ungulate Studios: "+string(obj_suq.ungulate)+@"
-			Combat Difficulty: 7
+			Combat Difficulty: 0
 			Mental Difficulty: 7
 			Locked Doors: 0
 			Req. Locked Doors: 0
@@ -1894,10 +1894,44 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[244] = @"Win Race";
-	a[245] = @"";
-	a[246] = @"";
-	a[247] = @"";
-	a[248] = @"";
+	a[245] = @"BRIEFING:
+			I wanted to let you in on a little side-gig the rest of us
+			mercenaries do. We run time-trials. There's a current 
+			course record that no one's been able to touch in years,
+			and we want to let you try. If you set a new record, you
+			get a payout, if you don't, you don't. Simple as that. 
+			
+			Come back and try the time trial as many times as you 
+			want, even if you set the record, you can always set it
+			again. 
+			
+			The moment you get into one of the 3 car options, the time
+			will start. Follow the arrows to the checkpoints and finish
+			one lap around.";
+	a[246] = @"Time Trial Course";
+	a[247] = @"Mission: Time Trial
+			
+			Hiring Firm: Mercenary Dan
+			Current Standing With
+			Mercenary Dan
+			Combat Difficulty: 0
+			Mental Difficulty: 8
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $2000
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[248] = @"Set Record";
 	a[249] = @"";
 	
 	
@@ -5397,9 +5431,39 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";
-	c[142] = @"";
-	c[143] = @"";
-	c[144] = @"";
+	c[142] = @"New Course Record Set
+			Payout: $2000
+			
+			Response From Hiring Firm:
+			Wow, you beat the record! 
+			
+			Result:
+			You are now the fastest driver on the track. 
+			
+			
+			Press Spacebar to continue";
+	c[143] = @"No New Record
+			Payout: $0
+			
+			Response From Hiring Firm:
+			I knew you didn't have what it takes. 
+			
+			Result:
+			You didn't beat the current course record. 
+			
+			
+			Press Spacebar to continue";
+	c[144] = @"No New Record
+			Payout: $0
+			
+			Response From Hiring Firm:
+			You must've peaked because you couldn't beat your own record. 
+			
+			Result:
+			You didn't beat the current course record. 
+			
+			
+			Press Spacebar to continue";
 	c[145] = @"";
 	c[146] = @"";
 	c[147] = @"";

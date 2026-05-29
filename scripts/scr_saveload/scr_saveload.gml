@@ -135,7 +135,8 @@ function save()
 		knkrwins: o_saveload.knkrwins,
 		armycount: o_saveload.armycount,
 		trick: o_saveload.trick,
-		ceo: o_saveload.ceo
+		ceo: o_saveload.ceo,
+		rec: o_saveload.rec
 		
 		//upgrades
 		
@@ -430,6 +431,8 @@ function load(_f)
 			o_saveload.trick=_struct.trick;
 		if (struct_exists(_struct, "ceo"))
 			o_saveload.ceo=_struct.ceo;
+		if (struct_exists(_struct, "rec"))
+			o_saveload.rec=_struct.rec;
 			
 		
 		//levels that are incompleted and are available to the player currently in variables 
@@ -564,7 +567,8 @@ function load(_f)
 			knkrwins: false,
 			armycount: 0,
 			trick: false,
-			ceo: false
+			ceo: false,
+			rec: 300
 		
 		}
 	

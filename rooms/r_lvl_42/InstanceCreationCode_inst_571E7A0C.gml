@@ -1,4 +1,4 @@
-acc = .15;
+acc = .04;
 spd = 5;
 trn = 1;
 i = inst_4D8539CD;

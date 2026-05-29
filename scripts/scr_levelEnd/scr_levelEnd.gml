@@ -1600,6 +1600,29 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.hnet += 5;
 				}//lose
 			} break;
+			case r_lvl_40:
+			{
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				o_saveload.gnet -= 2;
+				o_saveload.knet += 2;
+				o_saveload.pnet += 3;
+				o_saveload.ynet -= 2;
+				o_saveload.unet += 2;
+				o_saveload.hnet += 3;
+				if(o_lvl40.o1 == true)
+				{
+					obj_suq.report = 142;
+					o_saveload.moneyT += 2000;
+				}//win
+				else if(o_saveload.rec < 300)
+				{
+					obj_suq.report = 144;
+				}//lose
+				else
+				{
+					obj_suq.report = 143;
+				}
+			} break
 		}
 		if(!car and !range_optional)
 		{
