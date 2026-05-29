@@ -1,0 +1,20 @@
+/// @description
+image_index = 0;
+image_speed = 0;
+image_blend = make_color_rgb(200,90,50); 
+driver = false;
+leave = false;
+spdchg = 0;
+angchg = 0;
+timer = 0;
+hp = 10;
+crash = false;
+image_angle = 180;
+spd = speed;
+fwdC = instance_create_layer(x,y,"Instances_Action",o_fwd);
+revC = instance_create_layer(x,y,"Instances_Action",o_fwd);
+c = 0;
+ar = instance_create(x,y,o_arrow_1);
+ar.x1 = x;
+ar.y1 = y;
+ch = true;

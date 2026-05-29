@@ -7,3 +7,9 @@ if(o1 and !check)
 	with (inst_49672E8C) instance_destroy();
 	check = true;
 }
+if(keyboard_check_pressed(vk_backspace) and !check2)
+{
+	check2 = true;
+	var inst = instance_create_layer(obj_suq.x,obj_suq.y,"Instances_Action",o_conversation)
+	inst.h = 113;
+}

@@ -134,9 +134,9 @@ or
 	40: Race (only awards 2000 for a win, 1000 for 2nd, and 500 for 3rd. Hard race. Can be played as many times as you want. 500 to enter) Time trial, maybe
 41: Stop Riot Leader (find and kill) (Lose money while this isn't done)
 	42: Race to win back town's water. They always lose, so you need to help. 
-	or
+or
 46: Use race as a cover to assasinate a leader of Ungulate studios who's watching. Needs to be done and you need to be back at the starting line before the race ends.
-		Maybe he runs away while his guards constantly attack you. 
+Maybe he runs away while his guards constantly attack you. 
 43: Charge super weapon
 44: Save Hostages
 45: Ninja Birthday Party (artifact boss design with all 5 things on it. 

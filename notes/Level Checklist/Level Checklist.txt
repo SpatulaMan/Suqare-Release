@@ -3,7 +3,7 @@ lvl 17 - lvl 51
 	-Short briefing
 	-Level Details
 	-Objectives
--Result text
+	-Result text
 	-Add To Level Select
 	-Level Design
 	-Starting location
@@ -21,8 +21,7 @@ lvl 17 - lvl 51
 
 
 
-If player quits out of lvl37, a certain variable gets set and saved where Tirangle comes to talk to you at the armory. He then takes 10,000 dollars from you for quitting his level. 
-Some 4th wall breaking stuff here. 
+Set Acceleration, top speed, maybe turning speed for each vehicle. Give each of them an object to follow that's on a path, that way they can move they're image_angle to look at it always. 
 
 
 

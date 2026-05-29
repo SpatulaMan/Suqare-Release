@@ -1852,10 +1852,48 @@ function scr_briefing(t){
 	a[238] = @"Free Prisoner 1";
 	a[239] = @"Free Prisoner 2";
 	a[240] = @"Free Prisoner 3";
-	a[241] = @"";
-	a[242] = @"";
-	a[243] = @"";
-	a[244] = @"";
+	a[241] = @"BRIEFING:
+			There's a small desert town that's in dire need of water,
+			but the area always has a racing tournament to see who gets
+			the clean water. The town we represent always loses to 
+			whoever pays the most for Hiertech guys to win the race. 
+			They've never had the money to pay for them, so they 
+			reached out to us to see if we could help. 
+			
+			We're hoping that you're our guy. Someone who can finally
+			end the longest winning streak in history and win water for
+			a town truly in need. 
+			
+			The rust-bucket of a car could be better, but it's fast.
+			It controls horribly, and if you even touch a wall or 
+			another car, the whole thing will explode. It also won't
+			have racing stripes which probably does worsen your 
+			chances. They will start without you, so get into your car
+			and go, go, go! ";
+	a[242] = @"Race for Clean Water";
+	a[243] = @"Mission: Water Race
+			
+			Hiring Firm: Ungulate Studios
+			Current Standing With
+			Ungulate Studios: "+string(obj_suq.ungulate)+@"
+			Combat Difficulty: 7
+			Mental Difficulty: 7
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $9600
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[244] = @"Win Race";
 	a[245] = @"";
 	a[246] = @"";
 	a[247] = @"";
@@ -5328,8 +5366,37 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";
-	c[140] = @"";
-	c[141] = @"";
+	c[140] = @"Objectives Complete
+			Payout: $9600
+			
+			Response From Hiring Firm:
+			I can't believe it. You actually won! This has never happened before! The whole town will be
+			living it up for at least one more year thanks to you! 
+			
+			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			
+			Result:
+			You saved the desert town from certain doom, but you definitely angered Hiertech since they 
+			had a lot riding on this race. 
+			
+			
+			Press Spacebar to continue";
+	c[141] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			Well, we tried. I knew it was a long shot, so don't beat yourself up about it too much. 
+			Hiertech's racers are just too good, and their cars are new. This town will most likely be
+			long gone before next year's race. I really hoped we could save them this year. 
+			
+			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			
+			Result:
+			You were too slow in the Water Race, so whoever paid for Hiertech to race for them won once
+			again this year. The desert town is done for, and the residents will begin moving soon. 
+			
+			
+			Press Spacebar to continue";
 	c[142] = @"";
 	c[143] = @"";
 	c[144] = @"";
