@@ -100,7 +100,7 @@ if(instance_exists(o_lvlStart))
 		audio_sound_gain(s4,.25*o_saveload.musvol,1000);
 		mCheck = false;
 	}
-	if(o_lvlStart.speed > 0 and (o_lvlStart.r == r_lvl_4 or o_lvlStart.r == r_lvl_36) and mCheck == true)
+	if(o_lvlStart.speed > 0 and (o_lvlStart.r == r_lvl_4 or o_lvlStart.r == r_lvl_36 or o_lvlStart.r == r_lvl_38) and mCheck == true)
 	{
 		//if(audio_is_playing(s2))
 		//{

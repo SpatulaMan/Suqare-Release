@@ -15,7 +15,7 @@ wallCheck = false;
 spawnCheck = false;
 sciCheck = false;
 randomize();
-if(room == r_lvl_44)
+if(room == r_lvl_44 or room == r_lvl_38)
 {
 	image_blend = choose(c_aqua,c_maroon,c_lime,c_gray,c_teal,c_yellow);
 }

@@ -12,4 +12,5 @@ if((m > 0 or s > 0 or ml > 0) and start)
 if(m <= 0 and s <= 0 and ml <= 0 and start)
 {
 	o1 = false;
+	start = false;
 }

@@ -69,7 +69,7 @@ Others:
 23: Loot abandoned pirate ship. (Cricle from contraband level)
 25: Vandalize Gravestones for fun - NL
 31: Kill Head of Security
-38: Getaway car driver
+38: Crazy Taxi Driver
 40: Time Trial for money (can be redone as many times as you want. $2000 for every course record set)
 51: End Game (incessent knocking at the door of the armory? Everything in shambles?)
 
@@ -129,9 +129,9 @@ or
 35: Influence government to choose Perez as main bank of government (Lose money while this isn't done) (plant evidence in government building to show perez in good light)
 36: Prison Break, break into prison secretly, and sneak a few wrongfully convicted inmates out - NL besides ghosts that haunt the place?
 37: Hijack Ship - NL
-	38: Getaway car driver
+	38: Crazy Taxi Driver
 39: Defend the artifacts
-40: Race (only awards 2000 for a win, 1000 for 2nd, and 500 for 3rd. Hard race. Can be played as many times as you want. 500 to enter) Time trial, maybe
+40: Race (only awards 2000 for a win, Time trial, maybe
 41: Stop Riot Leader (find and kill) (Lose money while this isn't done)
 42: Race to win back town's water. They always lose, so you need to help. 
 or

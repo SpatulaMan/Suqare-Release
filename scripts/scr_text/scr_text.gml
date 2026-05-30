@@ -1913,7 +1913,7 @@ function scr_briefing(t){
 			
 			Hiring Firm: Mercenary Dan
 			Current Standing With
-			Mercenary Dan
+			Mercenary Dan: N/A
 			Combat Difficulty: 0
 			Mental Difficulty: 8
 			Locked Doors: 0
@@ -1932,7 +1932,47 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[248] = @"Set Record";
-	a[249] = @"";
+	a[249] = @"BRIEFING:
+			We need help! I've got 3 guys trapped in the middle of a 
+			fight they can't hope to win. I want you to go in with our
+			special Front-Loader-Troop-Transport-Vehicle or FLTTV, and
+			pick up our guys while under heavy fire. I'll have a nav
+			marker for each of them. Just do your best to keep the
+			FLTTV in working order. If we lose that, there's no way to
+			get them all back to safety. 
+			
+			We're counting on you. ";
+	a[250] = @"Drive Like A Crazy Cab";
+	a[251] = @"Mission: Crazy Cab
+			
+			Hiring Firm: Ceaver Bleaver
+			Current Standing With
+			Ceaver Bleaver: N/A
+			Combat Difficulty: 11
+			Mental Difficulty: 5
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $10500
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[252] = @"Pick Up Geraldo";
+	a[253] = @"Pick Up Cracker";
+	a[254] = @"Pick Up Peretti";
+	a[255] = @"Escape";
+	a[256] = @"";
+	a[257] = @"";
+	a[258] = @"";
+	a[259] = @"";
 	
 	
 return a[t];
@@ -5464,11 +5504,88 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";
-	c[145] = @"";
-	c[146] = @"";
-	c[147] = @"";
-	c[148] = @"";
-	c[149] = @"";
+	c[145] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			That was an interesting outcome. You destroyed all of the other vehicles and became the last
+			one standing. That would normally mean a win by default, but the overseers don't see it that 
+			way. You broke the rules and didn't win the race. Sorry to say, nothing changes, and we get
+			disqualified. 
+			
+			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			
+			Result:
+			Your interesting methods of winning didn't pan out for you or the desert town. The residents
+			will begin moving soon. 
+			
+			
+			Press Spacebar to continue";
+	c[146] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			That was interesting... All of the cars are destroyed now. What did you think that would 
+			accomplish? We're disqualified from the race for life now. 
+			
+			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			
+			Result:
+			Your interesting methods of winning didn't pan out for you or the desert town. The residents
+			will begin moving soon. 
+			
+			
+			Press Spacebar to continue";
+	c[147] = @"Objectives Complete
+			Payout: $10500
+			
+			Response From Hiring Firm:
+			Thank you! Our guys are back home to their families all thanks to you! 
+			
+			Result:
+			You saved all of them, and became known as a really good driver. Rumors are out there of a
+			league of mercenaries that do time trial runs in the city, and they're looking for more people
+			to join. 
+			
+			
+			Press Spacebar to continue";
+	c[148] = @"Objectives Partially Complete
+			Payout: $3600
+			
+			Response From Hiring Firm:
+			Ugh, you couldn't save all of them, but you deserve something for your efforts. Please don't 
+			let them die in vain. Do better on your next missions for good. 
+			
+			Result:
+			You saved some of the people on the inside, but couldn't get them all. You've become known as
+			an alright driver, but nothing special. No one's coming to ask you to join a time trial league
+			or anything. 
+			
+			
+			Press Spacebar to continue";
+	c[149] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			No! You couldn't save any of them, and they were all killed in that fight. Their families will
+			be heartbroken to hear about this. I thought we could count on you. I guess not. 
+			
+			Result:
+			You couldn't save any of them, and are known as a driver with no ability. Not something anyone
+			would look for in a time trial racing league. 
+			
+			
+			Press Spacebar to continue";
+	c[150] = @"";
+	c[151] = @"";
+	c[152] = @"";
+	c[153] = @"";
+	c[154] = @"";
+	c[155] = @"";
+	c[156] = @"";
+	c[157] = @"";
+	c[158] = @"";
+	c[159] = @"";
 	return c[m];
 }
 function tutorial(k)

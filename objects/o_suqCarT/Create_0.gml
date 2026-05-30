@@ -12,3 +12,4 @@ fwdC = instance_create_layer(x,y,"Instances_Action",o_fwd);
 revC = instance_create_layer(x,y,"Instances_Action",o_fwd);
 ch = false;
 c = 0;
+dis = false;

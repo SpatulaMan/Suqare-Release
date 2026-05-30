@@ -5,5 +5,5 @@ if(start)
 }
 if((m > 0 or s > 0 or ml > 0) and !instance_exists(o_checkP))
 {
-	start = false;
+	alarm_set(1,0);
 }

@@ -1592,6 +1592,20 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.hnet -= 5;
 					o_saveload.moneyT += 9600;
 				}//win
+				else if(o_lvl42.alt)
+				{
+					obj_suq.report = 145;
+					obj_suq.ungulate -= 2;
+					o_saveload.unet -= 7;
+					o_saveload.hnet += 5;
+				}//lose
+				else if(!instance_exists(o_carR) and !instance_exists(o_suqCarT))
+				{
+					obj_suq.report = 146;
+					obj_suq.ungulate -= 2;
+					o_saveload.unet -= 7;
+					o_saveload.hnet += 5;
+				}//lose
 				else
 				{
 					obj_suq.report = 141;
@@ -1622,7 +1636,31 @@ function scr_levelEnd(car,range_optional)
 				{
 					obj_suq.report = 143;
 				}
-			} break
+			} break;
+			case r_lvl_38:
+			{
+				obj_suq.lvldone[obj_suq.lvl] = true;
+				o_saveload.gnet += 2;
+				o_saveload.knet -= 2;
+				o_saveload.pnet -= 3;
+				o_saveload.ynet += 2;
+				o_saveload.unet -= 2;
+				o_saveload.hnet -= 3;
+				if(o_lvl38.o1 == true and o_lvl38.o2 == true and o_lvl38.o3 == true and o_lvl38.o4 == true)
+				{
+					obj_suq.report = 147;
+					o_saveload.moneyT += 10500;
+				}//all
+				else if((o_lvl38.o1 == true or o_lvl38.o2 == true or o_lvl38.o3 == true) and o_lvl38.o4 == true)
+				{
+					obj_suq.report = 148;
+					o_saveload.moneyT += 3600;
+				}//some
+				else
+				{
+					obj_suq.report = 149;
+				}//none
+			} break;
 		}
 		if(!car and !range_optional)
 		{
