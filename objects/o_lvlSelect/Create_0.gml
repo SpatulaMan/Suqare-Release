@@ -115,7 +115,7 @@ switch(prog)
 			if(obj_suq.lvldone[12] == false) { array_insert(lvl,t,12); t++; }
 			if(obj_suq.lvldone[13] == false) { array_insert(lvl,t,13); t++; }
 			if(obj_suq.lvldone[14] == false) { array_insert(lvl,t,14); t++; }
-			if(obj_suq.lvldone[15] == false and o_saveload.pnet > 80 and obj_suq.progress < 25) { array_insert(lvl,t,15); t++; }
+			if(obj_suq.lvldone[15] == false) { array_insert(lvl,t,15); t++; }
 			if(obj_suq.lvldone[16] == false) { array_insert(lvl,t,16); t++; }
 			if(obj_suq.lvldone[17] == false) { array_insert(lvl,t,17); t++; }
 			if(obj_suq.lvldone[18] == false) { array_insert(lvl,t,18); t++; }
@@ -125,12 +125,12 @@ switch(prog)
 			if(obj_suq.lvldone[22] == false) { array_insert(lvl,t,22); t++; }
 			if(obj_suq.lvldone[23] == false) { array_insert(lvl,t,23); t++; }
 }
-if(obj_suq.progress >= 51)
-{
-	
-}
-if(t == 0)
+if(t == 0 and obj_suq.progress < 36)
 {
 	obj_suq.progress++
 	instance_destroy();
+}
+if(t <= 1)
+{
+	o_saveload.endgame = true;
 }

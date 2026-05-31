@@ -19,41 +19,41 @@ function scr_levelEnd(car,range_optional)
 			if(obj_suq.progress >= 23 and o_saveload.convinced == false) { o_saveload.pnet -= 1; } 
 			switch(obj_suq.progress)
 			{
-				case 0: o_saveload.valueC += choose(50,-100,-200,-50); break;
-				case 1: o_saveload.valueC += choose(50,-100,-200,-50); break;
+				case 0: o_saveload.valueC += choose(50,-100,200,-50); break;
+				case 1: o_saveload.valueC += choose(50,-100,200,-50); break;
 				case 2: o_saveload.valueC += choose(-50,100,-200); break;
-				case 3: o_saveload.valueC += choose(-50,-100,200,-50); break;
+				case 3: o_saveload.valueC += choose(-50,100,200,-50); break;
 				case 4: o_saveload.valueC += choose(-50,100,200,-500); break;
-				case 5: o_saveload.valueC += choose(500,-100,200,-200,-100); break;
+				case 5: o_saveload.valueC += choose(500,-100,200,200,-100); break;
 				case 6: o_saveload.valueC += choose(1000,500,2000); break;
 				case 7: o_saveload.valueC += choose(50,100,500,-50); break;
 				case 8: o_saveload.valueC += choose(50,1000); break;
-				case 9: o_saveload.valueC += choose(50,-100,-200,-400); break;
-				case 10: o_saveload.valueC += choose(-50,1600,200); break;
-				case 11: o_saveload.valueC += choose(100,-1000,-300); break;
-				case 12: o_saveload.valueC += choose(500,1000,2000,-500); break;
-				case 13: o_saveload.valueC += choose(5000,-100,300,-50); break;
+				case 9: o_saveload.valueC += choose(50,-100,-200,400); break;
+				case 10: o_saveload.valueC += choose(50,1600,200); break;
+				case 11: o_saveload.valueC += choose(100,1000,-300); break;
+				case 12: o_saveload.valueC += choose(500,5000,2000,500); break;
+				case 13: o_saveload.valueC += choose(5000,-100,300,50); break;
 				case 14: o_saveload.valueC += choose(100,2100); break;
-				case 15: o_saveload.valueC += choose(100,-200,-50); break;
-				case 16: o_saveload.valueC += choose(50,-100,200,-800); break;
-				case 17: o_saveload.valueC += choose(50,1050,600); break;
-				case 18: o_saveload.valueC += choose(100,3200,-50); break;
-				case 19: o_saveload.valueC += choose(50,100,-200,-1400); break;
+				case 15: o_saveload.valueC += choose(100,-200,50); break;
+				case 16: o_saveload.valueC += choose(5000,-100,200,-800); break;
+				case 17: o_saveload.valueC += choose(500,1050,600); break;
+				case 18: o_saveload.valueC += choose(100,3200,50); break;
+				case 19: o_saveload.valueC += choose(50,1000,-200,-1400); break;
 				case 20: o_saveload.valueC += choose(-500,-1000,-2000,-900); break;
-				case 21: o_saveload.valueC += choose(500,3000,2000); break;
-				case 22: o_saveload.valueC += choose(50,1600,-200,-50); break;
+				case 21: o_saveload.valueC += choose(5000,3000,2000); break;
+				case 22: o_saveload.valueC += choose(500,1600,-200,-50); break;
 				case 23: o_saveload.valueC += choose(50,1700,200,3000); break;
-				case 24: o_saveload.valueC += choose(50,-500,200,-50); break;
+				case 24: o_saveload.valueC += choose(50,-500,2000,-50); break;
 				case 25: o_saveload.valueC += choose(100,200,-500); break;
-				case 26: o_saveload.valueC += choose(300,100,200,-50); break;
-				case 27: o_saveload.valueC += choose(50,-1000,200,-500); break;
-				case 28: o_saveload.valueC += choose(50,-700,-3500); break;
-				case 29: o_saveload.valueC += choose(200,1050,200,-600); break;
+				case 26: o_saveload.valueC += choose(300,1000,200,-50); break;
+				case 27: o_saveload.valueC += choose(50,-1000,2000,-500); break;
+				case 28: o_saveload.valueC += choose(5000,700,-3500); break;
+				case 29: o_saveload.valueC += choose(200,10500,200,-600); break;
 				case 30: o_saveload.valueC += -5000; break;
-				case 31: o_saveload.valueC += choose(100,200,1500); break;
-				case 32: o_saveload.valueC += choose(50,100,2400,-1000); break;
-				case 33: o_saveload.valueC += choose(5100,200); break;
-				case 34: o_saveload.valueC += choose(100,200,-50); break;
+				case 31: o_saveload.valueC += choose(1000,200,1500); break;
+				case 32: o_saveload.valueC += choose(500,100,2400,-1000); break;
+				case 33: o_saveload.valueC += choose(5100,2000); break;
+				case 34: o_saveload.valueC += choose(1000,200,-50); break;
 				case 35: o_saveload.valueC += choose(500,100,200,-500); break;
 				case 36: o_saveload.valueC += choose(50,100,200); break;
 				case 37: o_saveload.valueC += choose(100,200,-50); break;
@@ -61,8 +61,8 @@ function scr_levelEnd(car,range_optional)
 				case 39: o_saveload.valueC += choose(-1000,200,-2000); break;
 				case 40: o_saveload.valueC += choose(50,-100,900); break;
 				case 41: o_saveload.valueC += choose(50,1200,200,-500); break;
-				case 42: o_saveload.valueC += choose(100,2400,-500); break;
-				case 43: o_saveload.valueC += choose(50,-1040,200); break;
+				case 42: o_saveload.valueC += choose(1000,2400,-500); break;
+				case 43: o_saveload.valueC += choose(500,-1040,200); break;
 				case 44: o_saveload.valueC += choose(500,1100,2800); break;
 				case 45: o_saveload.valueC += choose(1000,200,6000); break;
 				case 46: o_saveload.valueC += choose(500,4100,200); break;
@@ -1454,7 +1454,6 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.pnet += 15;
 					o_saveload.knet -= 6;
 					o_saveload.moneyT += 10000;
-					o_saveload.endgame = true;
 				}
 				else
 				{

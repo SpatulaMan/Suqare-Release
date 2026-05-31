@@ -25,3 +25,23 @@ Instead of you completely losing and barely making it out with your life, you in
 
 -Have all the stats of what you did and how you changed the world scroll by in the credits. the companies net worth's, your standings with them, maybe how many of their missions you completed
 and how many you failed? 
+
+
+
+
+lvl 51:
+
+You get an attack ending if any of the comapnies are less than -6 standing and the one with the highest net worth attacks you if any are above zero net worth
+if all are greater than -6 and less than 6, you get a boring nothing ending
+highest net worth company with standing higher than 6 gives you positive ending
+
+Kanker standing and knet (bad standing not bankrupt, attack you)
+perez standing and pnet
+yellerteeth standing and ynet
+gildebrand standing and gnet
+ungulate standing and unet
+hiertech standing and hnet
+if several levels pass after not doing lvl 45 and it being available, trigger attack by ninja artifact boss? 
+
+
+Tirangle ending if no other ones trigger? 

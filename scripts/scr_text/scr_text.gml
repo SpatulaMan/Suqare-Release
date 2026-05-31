@@ -1989,8 +1989,8 @@ function scr_briefing(t){
 			Hiring Firm: Ungulate Studios
 			Current Standing With
 			Ungulate Studios: "+string(obj_suq.ungulate)+@"
-			Combat Difficulty: 12
-			Mental Difficulty: 7
+			Combat Difficulty: 14
+			Mental Difficulty: 8
 			Locked Doors: 0
 			Req. Locked Doors: 0
 			Keys Available: 0
