@@ -199,6 +199,10 @@ switch(room)
 	if(o_lvl48.o1 == true) { obj1 = true; }
 	break;
 	
+	case r_lvl_49: t = 256; o1 = 259; b = scr_briefing(t); ot1 = scr_briefing(o1); image_index = 0;
+	if(o_lvl49.o1 == true) { obj1 = true; }
+	break;
+	
 	case r_lvl_50: t = 209; o1 = 212; b = scr_briefing(t); ot1 = scr_briefing(o1); image_index = 0;
 	if(o_lvl50.o1 == true) { obj1 = true; }
 	break;

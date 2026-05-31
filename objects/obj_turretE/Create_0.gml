@@ -50,14 +50,17 @@ if(weapon_type == obj_pistol)
 {
 	weapon_spd = 6;
 	weapon_bul = o_ePBul;
+	shtspd = 60;
 }
 else if(weapon_type == obj_machineGun)
 {
 	weapon_spd = 6;
 	weapon_bul = o_eMGBul;
+	shtspd = 10;
 }
 else
 {
 	weapon_spd = 8;
 	weapon_bul = o_eMBul;
+	shtspd = 80;
 }

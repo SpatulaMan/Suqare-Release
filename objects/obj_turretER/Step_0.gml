@@ -1,4 +1,5 @@
 turretTime--;
+var Bulg;
 var pd = 0;
 var ad = 0;
 var _wallsee = collision_line(x,y,obj_suq.x,obj_suq.y,obj_wall,false,true) < 0;
@@ -78,7 +79,7 @@ if((_wallsee and _doorsee) or check == true or (_wallseed and _doorseed) or (_wt
     a = 0;
 	if(shootCheck <= 0 and !place_meeting(x,y,o_smoke))
 	{
-		if(weapon_type == obj_pistol) then { audio_play_sound(snd_lightgun,4,false,o_saveload.sfxvol); }
+		
 		if(weapon_type == obj_magnum) then { audio_play_sound(snd_magnum,4,false,o_saveload.sfxvol); alarm_set(5,40); }
 		if(weapon_type == obj_machineGun)
 		{ 
@@ -89,10 +90,16 @@ if((_wallsee and _doorsee) or check == true or (_wallseed and _doorseed) or (_wt
 		}
 	    instance_create(x,y,o_gunSound);
 		shootCheck = shtspd;
-	    var Bulg = instance_create(x,y,weapon_bul);
+	    Bulg = instance_create(x,y,weapon_bul);
 	    Bulg.direction = image_angle;
 	    Bulg.image_angle = image_angle;
 		Bulg.speed = weapon_spd;
+		if(weapon_type == obj_pistol) 
+		{ 
+			Bulg.sprite_index = spr_suqRLBul;
+			audio_play_sound(snd_fire,1,0,o_saveload.sfxvol,0,random_range(.7,.8));
+			audio_play_sound(snd_heavygun,1,0,o_saveload.sfxvol,0,random_range(.5,.6));
+		}
 	}
 }
 

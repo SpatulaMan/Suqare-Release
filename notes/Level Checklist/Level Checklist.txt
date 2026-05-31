@@ -21,7 +21,6 @@ lvl 17 - lvl 51
 
 
 
-Set Acceleration, top speed, maybe turning speed for each vehicle. Give each of them an object to follow that's on a path, that way they can move they're image_angle to look at it always. 
 
 
 
@@ -62,4 +61,8 @@ switch(weapon_type)
 		weapon = instance_create_layer(x,y,"Instances_Action",o_eAssault); 
 		weapon_bul = o_eARBul;
 		shtspd = 20; break;
+	case obj_rocketLauncher: 
+		weapon = instance_create_layer(x,y,"Instances_Action",o_eBazooka); 
+		weapon_bul = o_missile;
+		shtspd = 30; break;
 }

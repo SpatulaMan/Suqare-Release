@@ -51,13 +51,14 @@ switch(prog)
 	case 35: if(obj_suq.lvldone[49] == false and o_saveload.knkrwins == true) { array_insert(lvl,t,49); t++; }
 	case 34: if(obj_suq.lvldone[46] == false and o_saveload.gnet > 0) { array_insert(lvl,t,46); t++; }
 	case 33: if(obj_suq.lvldone[44] == false and obj_suq.artifacts == 1 and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and o_saveload.ynet > 0) { array_insert(lvl,t,44); t++; }
-	case 32: if(obj_suq.lvldone[43] == false and o_saveload.gnet > 15) { array_insert(lvl,t,43); t++; }
+	case 32: if(obj_suq.lvldone[43] == false and o_saveload.gnet > 0) { array_insert(lvl,t,43); t++; }
+			if(obj_suq.lvldone[48] == false and o_saveload.hnet > 0 and o_saveload.unet > 0) { array_insert(lvl,t,48); t++; }
 	case 31: if(obj_suq.lvldone[42] == false and o_saveload.plant == true and o_saveload.knet > 0) { array_insert(lvl,t,42); t++; }
 			if(obj_suq.lvldone[47] == false and o_saveload.ceo and o_saveload.hnet > 0) { array_insert(lvl,t,47); t++; }
 	case 30: 
 	case 29: if(obj_suq.lvldone[38] == false and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and o_saveload.ynet > 0) { array_insert(lvl,t,38); t++; }
 	case 28: if(obj_suq.lvldone[45] == false and obj_suq.lvldone[41] == false and o_saveload.hnet > 0) { array_insert(lvl,t,45); t++; }
-			if(obj_suq.lvldone[45] == false and obj_suq.lvldone[41] == false and o_saveload.unet > 0) { array_insert(lvl,t,41); t++; }
+			if(obj_suq.lvldone[45] == false and obj_suq.lvldone[41] == false and o_saveload.unet > 0 and o_saveload.hnet > 0) { array_insert(lvl,t,41); t++; }
 	case 27: array_insert(lvl,t,39); t++;
 	case 26: if(obj_suq.lvldone[33] == false and o_saveload.gnet > 15) { array_insert(lvl,t,33); t++; }
 			if(obj_suq.lvldone[35] == false and o_saveload.unet > 0) { array_insert(lvl,t,35); t++; } 

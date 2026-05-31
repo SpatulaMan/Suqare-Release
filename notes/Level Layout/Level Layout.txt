@@ -129,7 +129,7 @@ or
 35: Influence government to choose Perez as main bank of government (Lose money while this isn't done) (plant evidence in government building to show perez in good light)
 36: Prison Break, break into prison secretly, and sneak a few wrongfully convicted inmates out - NL besides ghosts that haunt the place?
 37: Hijack Ship - NL
-	38: Crazy Taxi Driver
+38: Crazy Taxi Driver
 39: Defend the artifacts
 40: Race (only awards 2000 for a win, Time trial, maybe
 41: Stop Riot Leader (find and kill) (Lose money while this isn't done)
@@ -142,7 +142,7 @@ Maybe he runs away while his guards constantly attack you.
 45: Ninja Birthday Party (artifact boss design with all 5 things on it. 
 47: Take Down Tirangle
 48: Destroy Rivals
-		49: Stop Hiertech once and for all by finding their black market. Figure out where it is. Once you do, the cops will come shut it down. 
+	49: Stop Hiertech once and for all by getting into their black market and
 50: Ghost Invasion, Save people from the ghost attack
 		51: End Game. The Armory gets invaded! Fight your way through and get the ending that you are the best mercenary if they all came for you directly. You've made it. The merchants are 
 			dead. Knives and stuff in em. Put stairs in the Armory and lock the door? Lowest standing company that's not bankrupt comes after you? 

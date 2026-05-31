@@ -77,6 +77,13 @@ if(((_wallsee and _doorsee) and abs(angle_difference(weapon.image_angle,pd1)) < 
     a = 0;
 	if(shootCheck <= 0 and !place_meeting(x,y,o_smoke))
 	{
+		if(weapon_type == obj_rocketLauncher)
+		{
+			audio_play_sound(snd_fire,1,0,o_saveload.sfxvol,0,random_range(1,1.2));
+			audio_play_sound(snd_heavygun,1,0,o_saveload.sfxvol,0,random_range(.8,1));
+			if(bulamt < 3) { shtspd = 30; }
+			else if(bulamt > 3) { bulamt = 0; shtspd = 120; }
+		}
 		if(weapon_type == obj_pistol) then { audio_play_sound(snd_lightgun,4,false,o_saveload.sfxvol); }
 		if(weapon_type == obj_magnum) then { audio_play_sound(snd_magnum,4,false,o_saveload.sfxvol); alarm_set(5,40); }
 		if(weapon_type == obj_machineGun)
@@ -98,7 +105,6 @@ if(((_wallsee and _doorsee) and abs(angle_difference(weapon.image_angle,pd1)) < 
 			if(bulamt == 0 and distance_to_object(obj_suq) < 180) { audio_play_sound(snd_heavygun,1,false,random_range(1.5,2)*o_saveload.sfxvol,0,random_range(.9,1.1)); bulamt++; }
 			else if(distance_to_object(obj_suq) < 180 and bulamt != 0) { audio_play_sound(snd_shotgunCock,5,false,.5*o_saveload.sfxvol); bulamt = 0; }
 			shtspd = 40;
-			
 		}
 		shootCheck = shtspd;
 		if((weapon_type == obj_shotgun and bulamt != 0) or weapon_type != obj_shotgun)

@@ -47,8 +47,15 @@ if(room == r_lvl_30 or room = r_lvl_31)
 }
 if(room == r_lvl_16) { weapon_type = obj_pistol; image_blend = c_red; }
 image_blend = c_aqua;
+if(room == r_lvl_49) { weapon_type = obj_pistol; }
 if(weapon_type == obj_pistol)
 {
 	weapon_spd = 6;
-	weapon_bul = o_missile;
+	weapon_bul = o_eRLBul;
+	shtspd = 120;
+}
+else if(weapon_type == obj_machineGun)
+{
+	weapon_spd = 6;
+	weapon_bul = o_eMGBul;
 }

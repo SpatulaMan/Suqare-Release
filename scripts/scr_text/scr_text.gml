@@ -1969,10 +1969,44 @@ function scr_briefing(t){
 	a[253] = @"Pick Up Cracker";
 	a[254] = @"Pick Up Peretti";
 	a[255] = @"Escape";
-	a[256] = @"";
-	a[257] = @"";
-	a[258] = @"";
-	a[259] = @"";
+	a[256] = @"BRIEFING:
+			We've finally found the location of Hiertech's black 
+			market operations. This is where they sell all of their
+			contraband and make most of their profits. We don't have
+			the firepower or the ability to shut them down ourselves,
+			so we want you to get past their defenses and kill everyone
+			in the market. 
+			
+			Once that's done, they won't have anyone left to rebuild,
+			and it'll make sure Hiertech never sees the light of day
+			again. 
+			
+			Make sure to pay attention to your map. There are mines
+			dug underground that we've located and placed on your map.";
+	a[257] = @"Shut Down Hiertech's Black Market";
+	a[258] = @"Mission: Black Market
+			
+			Hiring Firm: Ungulate Studios
+			Current Standing With
+			Ungulate Studios: "+string(obj_suq.ungulate)+@"
+			Combat Difficulty: 12
+			Mental Difficulty: 7
+			Locked Doors: 0
+			Req. Locked Doors: 0
+			Keys Available: 0
+			Reward: $11200
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			(Press Spacebar to Accept)";
+	a[259] = @"Destroy Market";
 	
 	
 return a[t];
@@ -2568,6 +2602,8 @@ function scr_conversation(t)
 			my level. Since you choose to cheat my game, I'll choose to cheat you, and steal $10,000. Hope it was worth it.
 			Hahahahaha!";//Tirangle game after shutting down game
 	a[129] = @"Well, that's the game. We'll see how much money you lost in the end. Let's play again sometime. Hahahaha!";//tirangle game lvl 37 after answering all possible questions
+	a[130] = @"You dare face the leader of Hiertech? No one has ever challenged me and lived to tell the tale. I've been dying 
+			for a real fight, so come at me! Let me see the fire in your eyes before I rip them out! ";
 			
 	return a[t];
 }
@@ -5576,8 +5612,38 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";
-	c[150] = @"";
-	c[151] = @"";
+	c[150] = @"Objectives Complete
+			Payout: $11200
+			
+			Response From Hiring Firm:
+			You did it! You ended Hiertech for good! That's a relief. Finally this world can grow to become
+			a better place instead of a smelly, old, crime-ridden piece of crap we were headed towards. 
+			Fantastic job, Suqare. 
+			
+			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			
+			Result:
+			With the destruction of Hiertech's black market, their stocks will plummet quickly and with a
+			sense of finality. Ungulate has finally prevailed over Hiertech. 
+			
+			
+			Press Spacebar to continue";
+	c[151] = @"Objectives Failed
+			Payout: $0
+			
+			Response From Hiring Firm:
+			This is insane. I can't believe you'd take the job to end so much crime in the world, and just
+			not finish it. Maybe you were scared, or maybe you just wanted to make sure no one else could
+			take the job to protect your precious Hiertech. Either, you disgust me! 
+			
+			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			
+			Result:
+			Your failure to end Hiertech for good has made Ungulate's operations harder to run day after
+			day. Hiertech continues to grow more powerful. 
+			
+			
+			Press Spacebar to continue";
 	c[152] = @"";
 	c[153] = @"";
 	c[154] = @"";

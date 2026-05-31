@@ -5,16 +5,18 @@
 -Need laser SFX for lvl 45
 
 -Add the 6 Pre-Missions that can happen when companies hate you enough for long enough. 
+Kanker & Co. - will hire Cricle the assassin to kill you. He'll show up on the next level you do right at the beginning to kill you.
+HierTech - Will drug you. Switches all movement directions. Maybe these continually change every 30 seconds as well. 
+Perez Holdings - Will stop your car with armed thugs while you're on your way to the mission. Defeat them to move on. 
+Yellerteeth Inc. - Will send you on a suicide mission at Ninja headquarters
+Ungulate Studios - Will kidnap you. You have to find weapons and escape. Kidnap you after 20 seconds in your base, or the moment you open the door to the armory. 
+Gildebrand Consulting - Will steal all of your weapons from you and leave you with the knife for a mission. 
 
 -Add bonuses when you're on a company's good side - done
 
 -Finish all 51 levels - 2 levels left
 
--Playtest and bug-fix levels - 28 levels left
-
--When you're on Cricle's good side, a whole extra mission is playable at least. Maybe another request in the middle of another level?
-
-Randomly have the car take you to get ice cream at the end of a level? 
+-Playtest and bug-fix levels - 27 levels left
 
 4 missions after lvl 45 shows up or choosing not to kill the monster, go to end game with monster attacking you? 
 
