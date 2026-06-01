@@ -136,7 +136,8 @@ function save()
 		armycount: o_saveload.armycount,
 		trick: o_saveload.trick,
 		ceo: o_saveload.ceo,
-		rec: o_saveload.rec
+		rec: o_saveload.rec,
+		ending: o_saveload.ending
 		
 		//upgrades
 		
@@ -433,6 +434,8 @@ function load(_f)
 			o_saveload.ceo=_struct.ceo;
 		if (struct_exists(_struct, "rec"))
 			o_saveload.rec=_struct.rec;
+		if (struct_exists(_struct, "ending"))
+			o_saveload.ending=_struct.ending;
 			
 		
 		//levels that are incompleted and are available to the player currently in variables 
@@ -568,7 +571,8 @@ function load(_f)
 			armycount: 0,
 			trick: false,
 			ceo: false,
-			rec: 300
+			rec: 300,
+			ending: 0
 		
 		}
 	

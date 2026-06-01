@@ -14,7 +14,7 @@ Gildebrand Consulting - Will steal all of your weapons from you and leave you wi
 
 -Add bonuses when you're on a company's good side - done
 
--Finish all 51 levels - 2 levels left
+-Finish all 51 levels - 1 levels left
 
 -Playtest and bug-fix levels - 27 levels left
 
@@ -44,4 +44,25 @@ hiertech standing and hnet
 if several levels pass after not doing lvl 45 and it being available, trigger attack by ninja artifact boss? 
 
 
-Tirangle ending if no other ones trigger? 
+
+
+Checklist:
+-level 51
+-Playtest and fix 27 levels
+-2 skill check levels
+-6 low standing levels
+-gadgets
+-credits
+	-How many levels completed
+	-How many deaths?
+	-How many successes/partial successes
+	-How many failures
+	-What companies are still left with their net worths and your standing with them
+	-Text blurb about each company and what they're doing or if they're bankrupt. 
+	-how the world has changed based on your actions
+	-A Mercenary rating based on how much money you made in total, multiplied by the total standing of all 6 companies - need to figure out what a good score is
+-Setup a section where you can replay any level in the game besides the golden sword level. Can't get that one ever unless it's in the regular game. 
+-controller support
+-steam acheivements
+-change game icon to crosshair
+-extras?

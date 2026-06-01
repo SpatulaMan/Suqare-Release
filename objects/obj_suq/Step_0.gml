@@ -74,7 +74,7 @@ else
 
 if(keyboard_check(vk_space) and visible == true and room != r_skill1 and room != r_skill2 and room != r_skill3 and room != r_skill4 and room != r_skill5 and room != r_range)
 {
-	if(!instance_exists(o_lvlText) and room != r_armory and distance_to_object(o_lvlEnd) > 12)
+	if(!instance_exists(o_lvlText) and room != r_armory and room != r_lvl_51 and distance_to_object(o_lvlEnd) > 12)
 	{
 		instance_create(0,0,o_lvlText);
 	}

@@ -1,4 +1,4 @@
-if(distance_to_object(obj_suq) < 27 and d == false)
+/*if(distance_to_object(obj_suq) < 27 and d == false)
 {
 	d = true;
 	l = floor(random_range(0,array_length(la)));

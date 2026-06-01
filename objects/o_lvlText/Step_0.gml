@@ -206,4 +206,7 @@ switch(room)
 	case r_lvl_50: t = 209; o1 = 212; b = scr_briefing(t); ot1 = scr_briefing(o1); image_index = 0;
 	if(o_lvl50.o1 == true) { obj1 = true; }
 	break;
+	
+	case r_lvl_51: image_index = 9;
+	break;
 }

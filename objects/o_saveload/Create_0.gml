@@ -159,3 +159,4 @@ armycount = 0;
 trick = false;
 ceo = false;
 rec = 300;
+ending = 0;

@@ -1,5 +1,5 @@
 /// @description Hint Guy Text
-if(d)
+/*if(d)
 {
 	draw_set_halign(fa_center);
 	draw_rectangle_color(roomw*.15,roomh*.2,roomw*.85,roomh*.7,c_black,c_black,c_black,c_black,false);

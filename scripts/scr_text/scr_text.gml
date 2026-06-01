@@ -2600,10 +2600,23 @@ function scr_conversation(t)
 			Down - 30%";//tirangle game lvl 37
 	a[128] = @"You're a sneaky one, aren't you? Thought you could outsmart me, so you closed the game entrirely to get out of
 			my level. Since you choose to cheat my game, I'll choose to cheat you, and steal $10,000. Hope it was worth it.
-			Hahahahaha!";//Tirangle game after shutting down game
+			Hahahahaha!";//Tirangle after shutting down game
 	a[129] = @"Well, that's the game. We'll see how much money you lost in the end. Let's play again sometime. Hahahaha!";//tirangle game lvl 37 after answering all possible questions
 	a[130] = @"You dare face the leader of Hiertech? No one has ever challenged me and lived to tell the tale. I've been dying 
 			for a real fight, so come at me! Let me see the fire in your eyes before I rip them out! ";
+	a[131] = @"They killed them all. Everyone else in here. They only left me alive so they could fight you at your strongest.
+			
+			I'm trembling, man. I never thought my brothers would go out like this. Give em the payback they deserve. ";//Scared Merchant
+	a[132] = @"Suqare! This is Kanker and Co. I never thought it would come to this, but you've proven to be a bigger problem 
+			than any rival company I've had before. That's why I found you and killed your friends. That's why I'm gonna kill
+			you too! ";//kanker
+	a[133] = @"";//perez
+	a[134] = @"";//gildebrand
+	a[135] = @"";//ungulate
+	a[136] = @"";//yellerteeth
+	a[137] = @"";//hiertech
+	a[138] = @"";
+	a[139] = @"";
 			
 	return a[t];
 }

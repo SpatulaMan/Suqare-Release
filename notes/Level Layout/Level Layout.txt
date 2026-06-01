@@ -20,14 +20,14 @@ NL - Non-Lethal
 	32: Take Control of manufacturing plant (needs 13 and 16 done, and 35 not done)
 	43: Charge super weapon (needs 32 done, and 35 not done) Goes straight to end game
 
--Ungulate Studios Plan - Keep Evil corporations in check:
-4: kidnap girl
-11: Shut down Hiertech Chemical Plant - Negative to Hiertech, positive to Ungulate and vice versa if failed (
-22: Stop Contraband Runners (stop cars from getting loaded with contraband. Some armored machine gun cars between the stocking buildings of which there's 3)
-29: Prevent Theft of Museum artifacts
-36: Prison Break, break into prison secretly, and sneak a few wrongfully convicted inmates out - NL 
-42: Race to win a town back their water from Hiertech's racing division
-49: Stop Hiertech once and for all by finding their black market. Figure out where it is. Once you do, the cops will come shut it down. 
+	-Ungulate Studios Plan - Keep Evil corporations in check:
+	4: kidnap girl
+	11: Shut down Hiertech Chemical Plant - Negative to Hiertech, positive to Ungulate and vice versa if failed (
+	22: Stop Contraband Runners (stop cars from getting loaded with contraband. Some armored machine gun cars between the stocking buildings of which there's 3)
+	29: Prevent Theft of Museum artifacts
+	36: Prison Break, break into prison secretly, and sneak a few wrongfully convicted inmates out - NL 
+	42: Race to win a town back their water from Hiertech's racing division
+	49: Stop Hiertech once and for all by finding their black market. Figure out where it is. Once you do, the cops will come shut it down. 
 
 	-Yellerteeth Inc. Plan - Steal every ninja artifact and kill ninja leader for revenge:
 	3: Amulet of Hecto
@@ -142,9 +142,9 @@ Maybe he runs away while his guards constantly attack you.
 45: Ninja Birthday Party (artifact boss design with all 5 things on it. 
 47: Take Down Tirangle
 48: Destroy Rivals
-	49: Stop Hiertech once and for all by getting into their black market and
+49: Stop Hiertech once and for all by getting into their black market and
 50: Ghost Invasion, Save people from the ghost attack
-		51: End Game. The Armory gets invaded! Fight your way through and get the ending that you are the best mercenary if they all came for you directly. You've made it. The merchants are 
+	51: End Game. The Armory gets invaded! Fight your way through and get the ending that you are the best mercenary if they all came for you directly. You've made it. The merchants are 
 			dead. Knives and stuff in em. Put stairs in the Armory and lock the door? Lowest standing company that's not bankrupt comes after you? 
 		
 Then you get a breakdown of your ending, how many levels you played out of the total amount, Total number of deaths, Final Money count, 
