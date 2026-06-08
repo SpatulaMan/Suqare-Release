@@ -3,7 +3,10 @@ if(seen)
 {
 	if(instance_exists(o_vambrace) and !instance_exists(o_eFire))
 	{
-		instance_create_layer(o_vambrace.x,o_vambrace.y,"Instances_Action",o_eFire);
+		if(o_vambrace.x < 7000)
+		{
+			instance_create_layer(o_vambrace.x,o_vambrace.y,"Instances_Action",o_eFire);
+		}
 	}
 	if(room == r_lvl_30 or room == r_lvl_31)
 	{
@@ -41,11 +44,13 @@ if(seen)
 	}
 }
 st--;
-if(st < 0) { st = 0; image_index = 0;}
-if(image_index == 1)
+t--;
+if(st < 0) { st = 0; image_index = 0; }
+/*if(image_index == 1)
 {
-	if(!audio_is_playing(snd_stepOther))
+	if(t < 0)
 	{
-		audio_play_sound(snd_stepOther,4,false,random_range(3,3.5)*o_saveload.sfxvol,0,random_range(4,5));
+		t = 5;
+		audio_play_sound(snd_stepOther,4,false,random_range(2,3)*o_saveload.sfxvol,0,random_range(6,8));
 	}
 }

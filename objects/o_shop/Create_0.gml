@@ -126,6 +126,17 @@ if(obj_suq.armorlvl5Have == 1)
 	wp[4] = true;
 	r1c1.image_index = 2;
 }
+if(obj_suq.minegAmt >= 99) { r1c2.image_index = 2; }
+if(obj_suq.minesAmt >= 99) { r2c1.image_index = 2; }
+if(obj_suq.lock30 >= 99) { r2c2.image_index = 2; }
+if(obj_suq.lock50 >= 99) { r3c1.image_index = 2; }
+
+if(obj_suq.attackTur >= 20) { r11c1.image_index = 2; }
+if(obj_suq.defenseTur >= 20) { r11c2.image_index = 2; }
+if(obj_suq.tearTur >= 20) { r12c1.image_index = 2; }
+if(obj_suq.flameTur >= 20) { r12c2.image_index = 2; }
+if(obj_suq.rocketTur >= 20) { r13c1.image_index = 2; }
+
 if(obj_suq.decoy == 1)
 {
 	wp[9] = true;

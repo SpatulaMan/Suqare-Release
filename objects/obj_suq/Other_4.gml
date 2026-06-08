@@ -85,6 +85,7 @@ if(room == r_armory and instance_exists(o_armory))
 		sniperRifleHave = 0;
 		rocketLauncherHave = 0;
 		boomerangHave = 0;
+		chainGunHave = 0;
 		swordHave = 0;
 		shuriken = 0;
 		pp7Have = 0;

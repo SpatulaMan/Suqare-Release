@@ -1032,6 +1032,11 @@ function scr_briefing(t){
 			shoots directly at us. We want you to lure him out of the 
 			graveyard, so we can vandalize whatever we want. 
 			
+			You'll want to explore every out-building around the area
+			too. That way he thinks you're trying to steal stuff from
+			there and doesn't suspect us, and you have to do this 
+			during the time we're vandalizing. 
+			
 			We don't want to hurt him. It just sounds so fun to break 
 			some gravestones, ya know? Bring whatever Non-Lethal things
 			you have to keep him at bay and out of our way for about 2
@@ -1043,8 +1048,8 @@ function scr_briefing(t){
 			Hiring Firm: Ruke Sherber
 			Current Standing With
 			Ruke Sherber: N/A
-			Combat Difficulty: 1
-			Mental Difficulty: 3
+			Combat Difficulty: 3
+			Mental Difficulty: 4
 			Locked Doors: 0
 			Req. Locked Doors: 0
 			Keys Available: 0
@@ -1060,18 +1065,18 @@ function scr_briefing(t){
 			
 			
 			(Press Spacebar to Accept)";
-	a[137] = @"Lead Guard Out";
-	a[138] = @"Keep Guard Out";
+	a[137] = @"Keep Guard Out";
+	a[138] = @"Enter Buildings";
 	a[139] = @"BRIEFING:
 			I've heard that a group of kids are coming to vandalize the
-			gravestones tonight, but I really have to pee. Can you fend
-			them off for 3 minutes? Don't kill any of them, but the 
-			sound of fire arms or mines would scare them away. There
-			might be some other methods to scare them off, but just 
-			figure it out. 
+			gravestones tonight, but the gravekeeper really has to pee.
+			Can you fend them off for 3 minutes? Don't kill any of 
+			them. The sound of firearms or mines should scare them 
+			away. There might be some other methods to scare them off,
+			but I think you can figure it out. 
 			
-			If 25 graves get vandalized, then the grave-keeper will lose
-			his job. Don't let that happen. It's all he has left. 
+			If 35 graves get vandalized, the grave-keeper will lose his
+			job. Don't let that happen. It's all he has left. 
 			
 			He will already be gone when you get there, so be ready!";
 	a[140] = @"Protect the Graveyard";
@@ -1082,7 +1087,7 @@ function scr_briefing(t){
 			Gildebrand Consulting: "+string(obj_suq.gildebrand)+
 			@"
 			Combat Difficulty: 1
-			Mental Difficulty: 4
+			Mental Difficulty: 6
 			Locked Doors: 0
 			Req. Locked Doors: 0
 			Keys Available: 0
@@ -1104,14 +1109,17 @@ function scr_briefing(t){
 			we don't have any information to go off of except the fact
 			that it's in the Ninja Records Office. We're sure that
 			they have insane surveillance. Just stay out of their line
-			of sight. Nothing can destroy these cameras, and they may
-			not be able to see far, but it's heat vision and can see
-			through walls. 
+			of sight. It takes a little while after a camera sees you 
+			to actually detect that you're an intruder, and they cannot
+			see through walls. They're also indestructible
 
 			Once you're ready, we'll start the theft at night. If 
-			you're seen at all, the Vambrace will be burned within 10 
+			you're detected, the Vambrace will be burned within 10 
 			seconds. It's so valuable, that it's better to destroy it
-			than to let anyone else have it. Do not let this happen. ";
+			than to let anyone else have it. Do not let this happen. 
+			
+			If you get spotted, just get to the vambrace quickly, and
+			we won't have any problems. ";
 	a[144] = @"Steal the Vambrace of Mortuban";
 	a[145] = @"Mission: Vambrace of Mortuban
 			
@@ -1120,7 +1128,7 @@ function scr_briefing(t){
 			Yellerteeth Inc.: "+string(obj_suq.yellerteeth)+
 			@"
 			Combat Difficulty: 1
-			Mental Difficulty: 7
+			Mental Difficulty: 8
 			Locked Doors: 3
 			Req. Locked Doors: 3
 			Keys Available: 3
@@ -2257,12 +2265,12 @@ function scr_conversation(t)
 	a[45] = @"Pleasure doing business with you. The pirate ship is up ahead. ";
 	a[46] = @"So another one tries to come get me treasure. I will have none of it. I've never let a traveler into the 
 			treasure room o'er the last 600 years, and I'm not going to start now. Avast, ye matey! Come at me if you dare!";
-	a[47] = @"They're coming for you...";//start mystery
+	a[47] = @"He's coming for you...";//start mystery
 	a[48] = @"See the signs?";//start mystery
 	a[49] = @"It's all around you...";//start mystery
 	a[50] = @"When will you realize?";//start mystery
 	a[51] = @"It will soon be revealed...";//start mystery
-	a[52] = @"Who is the real enemy? ";//start mystery
+	a[52] = @"Who's the real enemy? ";//start mystery
 	a[53] = @"Watc.. .ut for Tir...angle... ";//start mystery
 	if(instance_exists(o_lvl16))
 	{
@@ -2615,7 +2623,8 @@ function scr_conversation(t)
 	a[135] = @"";//ungulate
 	a[136] = @"";//yellerteeth
 	a[137] = @"";//hiertech
-	a[138] = @"";
+	a[138] = @"Aw nuts! You let him get back into the graveyard, and he saw our faces! Now, we're gonna hear about this from
+			our parents. Buh. You were no help at all. ";//lvl 25 letting grave keeper back into the area
 	a[139] = @"";
 			
 	return a[t];
@@ -4506,8 +4515,8 @@ function debrief(m)
 			Payout: $0
 			
 			Response From Hiring Firm:
-			You weren't supposed to kill him! Now we're aiding and abetting a criminal! We're outta here,
-			and we hope to never see you again. 
+			You weren't supposed to kill him! Now we're aiding and abetting a real criminal! We're outta 
+			here, and we hope to never see you again. 
 			
 			Result:
 			You killed the grave-keeper, so the kids got scared and ran. 
@@ -4517,13 +4526,13 @@ function debrief(m)
 			Payout: $3200
 			
 			Response From Hiring Firm:
-			You protected the gravestones! Great job. The grave keeper had a doozy of a pee, but you 
+			You protected the gravestones! Great job. The gravekeeper had a doozy of a pee, but you 
 			helped him keep his job throughout it. 
 			
 			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
-			You helped the grave keeper keep his job. 
+			You helped the gravekeeper keep his job. 
 			
 			Press Spacebar to continue";
 	c[77] = @"Objectives Failed
@@ -4556,7 +4565,7 @@ function debrief(m)
 			Payout: $6600
 			
 			Response From Hiring Firm:
-			You got it! Not even my best people could make it through that onslaught of cameras. That was
+			You got it! Not even my best people could make it through that onslaught of security. That was
 			good. This will be the best party ever! 
 			
 			Current standing with Yellerteeth Inc: "+string(obj_suq.yellerteeth)+@"
@@ -5343,7 +5352,7 @@ function debrief(m)
 			
 			
 			Result:
-			Your money has changed by: " + string(o_lvl37.r) + @" dollars. 
+			Your money has changed by: " + string(obj_suq.r37) + @" dollars. 
 			
 			Tirangle has struck again. He's known for playing games and causing problems for fun. He's
 			wanted in 73 countries for his antics. 

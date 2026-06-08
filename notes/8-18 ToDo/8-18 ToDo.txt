@@ -16,7 +16,7 @@ Gildebrand Consulting - Will steal all of your weapons from you and leave you wi
 
 -Finish all 51 levels - 1 levels left
 
--Playtest and bug-fix levels - 27 levels left
+-Playtest and bug-fix levels - 24 levels left
 
 4 missions after lvl 45 shows up or choosing not to kill the monster, go to end game with monster attacking you? 
 
@@ -26,7 +26,7 @@ Instead of you completely losing and barely making it out with your life, you in
 -Have all the stats of what you did and how you changed the world scroll by in the credits. the companies net worth's, your standings with them, maybe how many of their missions you completed
 and how many you failed? 
 
-
+	lvl 25 testing error: Also make player explore all the buildings. Add that in End/Save script for lvl_25
 
 
 lvl 51:
@@ -53,7 +53,7 @@ Checklist:
 -6 low standing levels
 -gadgets
 -credits
-	-How many levels completed
+	-How many Missions Taken
 	-How many deaths?
 	-How many successes/partial successes
 	-How many failures

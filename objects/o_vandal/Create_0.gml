@@ -20,3 +20,6 @@ gF = instance_furthest(x,y,o_grave);
 gR = o_grave;
 gorv = false;
 alarm_set(3,60);
+alarm_set(7,120);
+spdup = 0;
+run = false;

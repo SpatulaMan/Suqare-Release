@@ -7,3 +7,4 @@ ml = 0;
 graves = 0;
 t = 360;
 isKilled = false;
+alarm_set(1,6);

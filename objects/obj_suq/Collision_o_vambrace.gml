@@ -1,5 +1,5 @@
 /// @description
-with (other) instance_destroy();
+other.x = 10000;
 pickup_item = 66;
 pickup_timer = 90;
 if(vambrace == false) { vambrace = true; }

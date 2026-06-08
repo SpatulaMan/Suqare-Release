@@ -1,4 +1,4 @@
-ml--
+if(start) { ml--; }
 if(ml < 0)
 {
 	s--;
@@ -7,7 +7,7 @@ if(ml < 0)
 if(s < 0)
 {
 	m--;
-	s = 9;
+	s = 59;
 }
 
 if!(ml == 0 and s == 0 and m == 0)

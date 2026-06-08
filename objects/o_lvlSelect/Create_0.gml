@@ -109,21 +109,33 @@ switch(prog)
 			if(obj_suq.lvldone[4] == false and obj_suq.lvldone[3] == false and o_saveload.hnet > 0) { array_insert(lvl,t,4); t++; }
 			//break;
 	case 0: array_insert(lvl,t,0); t++;
-			array_insert(lvl,t,8); t++;
-			if(obj_suq.lvldone[9] == false) { array_insert(lvl,t,9); t++; }
-			if(obj_suq.lvldone[11] == false) { array_insert(lvl,t,11); t++; }
-			if(obj_suq.lvldone[12] == false) { array_insert(lvl,t,12); t++; }
-			if(obj_suq.lvldone[13] == false) { array_insert(lvl,t,13); t++; }
-			if(obj_suq.lvldone[14] == false) { array_insert(lvl,t,14); t++; }
-			if(obj_suq.lvldone[15] == false) { array_insert(lvl,t,15); t++; }
-			if(obj_suq.lvldone[16] == false) { array_insert(lvl,t,16); t++; }
-			if(obj_suq.lvldone[17] == false) { array_insert(lvl,t,17); t++; }
-			if(obj_suq.lvldone[18] == false) { array_insert(lvl,t,18); t++; }
-			array_insert(lvl,t,19); t++;
-			array_insert(lvl,t,20); t++; 
-			if(obj_suq.lvldone[21] == false) { array_insert(lvl,t,21); t++; }
-			if(obj_suq.lvldone[22] == false) { array_insert(lvl,t,22); t++; }
-			if(obj_suq.lvldone[23] == false) { array_insert(lvl,t,23); t++; }
+			array_insert(lvl,t,24); t++;
+			array_insert(lvl,t,25); t++;
+			array_insert(lvl,t,26); t++;
+			array_insert(lvl,t,27); t++;
+			array_insert(lvl,t,28); t++;
+			array_insert(lvl,t,29); t++;
+			array_insert(lvl,t,30); t++;
+			array_insert(lvl,t,31); t++;
+			array_insert(lvl,t,32); t++;
+			array_insert(lvl,t,33); t++;
+			array_insert(lvl,t,34); t++;
+			array_insert(lvl,t,35); t++;
+			array_insert(lvl,t,36); t++;
+			array_insert(lvl,t,37); t++;
+			array_insert(lvl,t,38); t++;
+			array_insert(lvl,t,39); t++;
+			array_insert(lvl,t,40); t++;
+			array_insert(lvl,t,41); t++;
+			array_insert(lvl,t,42); t++;
+			array_insert(lvl,t,43); t++;
+			array_insert(lvl,t,44); t++;
+			array_insert(lvl,t,45); t++;
+			array_insert(lvl,t,46); t++;
+			array_insert(lvl,t,47); t++;
+			array_insert(lvl,t,48); t++;
+			array_insert(lvl,t,49); t++;
+			array_insert(lvl,t,50); t++;
 }
 if(t == 0 and obj_suq.progress < 36)
 {

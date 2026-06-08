@@ -108,12 +108,12 @@ switch(room)
 	case r_lvl_25: t = 134; o1 = 137; o2 = 138; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); image_index = 1;
 	if(o_lvl25.o1) { obj1 = true; } if(o_lvl25.o2) { obj2 = true; } break;
 	
-	case r_lvl_26: t = 134; o1 = 137; o2 = 138; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); image_index = 1;
+	case r_lvl_26: t = 139; o1 = 142; b = scr_briefing(t); ot1 = scr_briefing(o1); image_index = 0;
 	if(o_lvl26.o1) { obj1 = true; } break;
 	
 	case r_lvl_27: t = 143; o1 = 146; o2 = 147; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); image_index = 1;
-	if(!instance_exists(o_eFire)) { obj1 = true; } 
-	if(obj_suq.vambrace == true) { obj2 = true; } break;
+	if(o_lvl27.o1) { obj1 = true; } 
+	if(o_lvl27.o2) { obj2 = true; } break;
 	
 	case r_lvl_28: t = 148; o1 = 151; b = scr_briefing(t); ot1 = scr_briefing(o1); image_index = 0;
 	if(o_lvl28.o1) { obj1 = true; } break;

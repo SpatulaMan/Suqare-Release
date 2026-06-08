@@ -1,5 +1,5 @@
 /// @description
-if(!gCheck and other.image_index < 3 and !gorv) 
+if(!gCheck and other.image_index < 3 and !gorv and spdup == 0) 
 { 
 	randomize();
 	other.image_index = choose(3,4,5,6,7,8,9,10,11,12,13,14,15); 

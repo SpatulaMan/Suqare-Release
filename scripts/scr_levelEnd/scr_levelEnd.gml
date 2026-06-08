@@ -1476,6 +1476,7 @@ function scr_levelEnd(car,range_optional)
 				{
 					obj_suq.report = 130;
 					o_saveload.moneyT += o_lvl37.r;
+					obj_suq.r37 = o_lvl37.r;
 					o_saveload.trick = false;
 					saveTrick();
 				}
@@ -1515,14 +1516,14 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.unet += 2;
 				}
 			} break;
-			case r_lvl_47:
+			case r_lvl_48:
 			{
 				obj_suq.lvldone[obj_suq.lvl] = true;
 				o_saveload.gnet += 3;
 				o_saveload.knet -= 3;
 				o_saveload.pnet += 2;
 				o_saveload.ynet -= 2;
-				if(o_lvl47.o1 == true)
+				if(o_lvl48.o1 == true)
 				{
 					obj_suq.report = 134;
 					obj_suq.hiertech += 3;

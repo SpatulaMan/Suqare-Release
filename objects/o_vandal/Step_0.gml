@@ -2,29 +2,23 @@ if(!path_exists(path))
 {
     path = path_add();
 }
-if(pch == 1)
+if(run)
 {
-	x4 = gC.x;
-	y4 = gC.y;
-}
-if(pch == 2)
-{
-	x4 = gF.x;
-	y4 = gF.y;
-}
-if(pch == 3)
-{
-	x4 = gR.x;
-	y4 = gR.y;
+	x4 = x1;
+	y4 = y1;
+	spdup = .8;
+	if(distance_to_point(x1,y1) < 15) { x = 10000; }
 }
 if(mp_grid_path(global.grid,path,x,y,x4,y4,true))
 {
-	path_start(path,.7,path_action_stop,false);
+	path_start(path,spdup+.7,path_action_stop,false);
 }
 if(distance_to_point(x4,y4) < 3 and !gorv)
 {
 	x4 = x1;
 	y4 = y1;
+	spdup = .8;
+	run = true;
 	pch = 0;
 }
 if(hp < hpc)
@@ -94,7 +88,6 @@ if(hp <= 0)
 	{
 		audio_play_sound(snd_enemyExplode,3,false,random_range(0.05,0.15)*o_saveload.sfxvol,0,random_range(0.9,1.1));
 	}
-	if(drop_gun) instance_create_layer(x,y,"Instances_Action",weapon_type);
 	var _piece5 = instance_create_layer(x,y,"Instances_Action",o_pieces);
 	_piece5.sprite_index = spr;
 	_piece5.speed = 5;
@@ -115,8 +108,5 @@ if(hp <= 0)
 	_piece2.image_index = 5;
 	_piece2.image_blend = image_blend;
 	_piece2.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
-	instance_destroy(weapon.id);
-	if(key_drop) then var _k = instance_create(x,y,obj_silverKey0);
-	if(keyimage > 0) _k.image_index = keyimage;
     instance_destroy();
 }

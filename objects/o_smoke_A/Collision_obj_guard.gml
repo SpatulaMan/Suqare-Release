@@ -1,5 +1,5 @@
 /// @description 
-if(!instance_exists(obj_ninja_bosses))
+if(!instance_exists(obj_ninja_bosses) and !instance_exists(o_vandal))
 {
 	if(other.sprite_index != s_turretE)
 	{

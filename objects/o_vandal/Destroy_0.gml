@@ -4,7 +4,4 @@ if(path_exists(path))
 {
     path_delete(path);
 }
-if(hp <= 0)
-{
-	o_lvl26.isKilled = true;
-}
+o_lvl26.isKilled = true;

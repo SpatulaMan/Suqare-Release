@@ -268,6 +268,7 @@ if(room == r_lvl_16)
 }
 if(room == r_lvl_3 or room == r_lvl_9 or room == r_lvl_15 or room == r_lvl_21 or room == r_lvl_27 or room == r_lvl_39 or room == r_lvl_45)
 {
+	if(audio_is_playing(snd_musicA1)) { audio_stop_sound(snd_musicA1); }
 	//audio_sound_gain(s1,0,3000);
 	if(mCheck2 == false and mCheck3 == false)
 	{

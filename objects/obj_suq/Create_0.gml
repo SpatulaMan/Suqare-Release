@@ -327,6 +327,7 @@ snmr = o_saveload.snmr;
 rlda = o_saveload.rlda;
 rlmr = o_saveload.rlmr;
 sndlvl = 0;
+r37 = 0;
 
 ammoBuy = 0;
 
