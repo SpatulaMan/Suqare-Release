@@ -1149,11 +1149,12 @@ function scr_briefing(t){
 	a[148] = @"BRIEFING:
 			There's one last shipment of contraband we need for this
 			month's quota to be met. Trouble is, my best guy Frank
-			just quit. We need you to step in and take his place. 
+			just quit. We need you to step in and take his place. Look
+			for the cargo in the surrounding buildings, and load them
+			up in the maroon armored car. 
 
-			Load up all the cargo in the armored car, and then the 
-			driver will head out. I'm worried that Frank might've 
-			tipped off the cops, though. ";
+			Be careful. I'm worried that Frank might've tipped off the 
+			cops.";
 	a[149] = @"Load Up Last Shipment of contraband";
 	a[150] = @"Mission: Load Up Contraband
 			
@@ -1227,6 +1228,9 @@ function scr_briefing(t){
 			any alarms. If you do, they'll go into maximum security
 			mode, and the paintings will be unatainable. 
 			
+			These cameras have audio turned on too, so any gunshots
+			will be heard if you're close enough to a camera. 
+			
 			Remember to bring all three paintings to the armored car
 			after you steal them or else you'll get no reward! ";
 	a[159] = @"Steal three valuable paintings called the Bertha, 
@@ -1273,8 +1277,8 @@ function scr_briefing(t){
 			We can make it seem like an art theft gone wrong and none
 			of this will come back on me as long as you aren't 
 			discovered by the cameras.";
-	a[165] = @"Murder Head of Security at Art Museum";
-	a[166] = @"Mission: Steal Paintings
+	a[165] = @"Assassinate Head of Security at Art Museum";
+	a[166] = @"Mission: Kill Head Of Security
 			
 			Hiring Firm: Julien Bogart
 			Current Standing With

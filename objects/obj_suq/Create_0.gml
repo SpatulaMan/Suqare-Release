@@ -95,6 +95,9 @@ rc = o_saveload.rc;
 spdup = o_saveload.spdup;
 gunRange = false;
 tankD = o_saveload.tankD;
+tkisl = false;
+tbisl = false;
+tsisl = false;
 
 lvl = o_saveload.lvl;
 i = 0;

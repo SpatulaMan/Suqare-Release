@@ -1,5 +1,8 @@
-if(other.pickup == true)
+if(!heavyband)
 {
-	other.speed = 0;
-	with (other) instance_change(obj_boomerang,true);
+	if(other.pickup == true)
+	{
+		other.speed = 0;
+		with (other) instance_change(obj_boomerang,true);
+	}
 }

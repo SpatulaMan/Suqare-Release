@@ -161,8 +161,12 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
 	    Bulk.direction = point_direction(x,y,mouse_x,mouse_y);
 		Bulk.image_angle = Bulk.direction;
 	    Bulk.speed = 6;
-	    knifeHave = 0;
+		knifeHave = 0; 
 		gunNum--;
+		if(room == r_range or room == r_skill1 or room == r_skill2 or room == r_skill3 or room == r_skill4 or room == r_skill5)
+		{
+			tkisl = true;
+		}
 		audio_play_sound(snd_knifeThrow,5,false,o_saveload.sfxvol);
 	}
 	if(boomerangHave == 1 and gunEquip == 10)
@@ -172,8 +176,12 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
 		Bulb.x1 = mouse_x;
 		Bulb.y1 = mouse_y;
 	    Bulb.speed = 8;
-	    boomerangHave = 0;
+		boomerangHave = 0;
 		gunNum--;
+		if(room == r_range or room == r_skill1 or room == r_skill2 or room == r_skill3 or room == r_skill4 or room == r_skill5)
+		{
+			tbisl = true;
+		}
 		audio_play_sound(snd_knifeThrow,5,false,o_saveload.sfxvol);
 	}
 	if(swordHave == 1 and gunEquip == 11 and !instance_exists(obj_swordSwing))
@@ -204,7 +212,11 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
 	    //Bulrl.direction = point_direction(x,y,obj_camera.x,obj_camera.y);
 		Bulsk.direction = point_direction(x,y,mouse_x,mouse_y);
 	    Bulsk.speed = 6;
-	    shuriken--;
+		shuriken--;
+		if(room == r_range or room == r_skill1 or room == r_skill2 or room == r_skill3 or room == r_skill4 or room == r_skill5)
+		{
+			tsisl = true;
+		}
 		if(shuriken <= 0)
 		{
 			gunNum--;

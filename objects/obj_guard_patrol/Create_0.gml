@@ -61,7 +61,7 @@ restart_patrol = false;
 perez_time = 360;
 perez_check = false;
 spr = s_enemy_1;
-if(room == r_lvl_19 or room == r_lvl_29) 
+if(room == r_lvl_19 or room == r_lvl_29 or room == r_lvl_31) 
 {
 	sprite_index = s_mercenary;
 	spr = s_mercenary_1;

@@ -109,11 +109,6 @@ switch(prog)
 			if(obj_suq.lvldone[4] == false and obj_suq.lvldone[3] == false and o_saveload.hnet > 0) { array_insert(lvl,t,4); t++; }
 			//break;
 	case 0: array_insert(lvl,t,0); t++;
-			array_insert(lvl,t,24); t++;
-			array_insert(lvl,t,25); t++;
-			array_insert(lvl,t,26); t++;
-			array_insert(lvl,t,27); t++;
-			array_insert(lvl,t,28); t++;
 			array_insert(lvl,t,29); t++;
 			array_insert(lvl,t,30); t++;
 			array_insert(lvl,t,31); t++;

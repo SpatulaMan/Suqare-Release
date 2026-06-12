@@ -87,7 +87,7 @@ if((_wallsee and _doorsee) or check == true or (_wallseed and _doorseed) or (_wt
 			if(bulamt < 25) { shtspd = 10; }
 			else if(bulamt > 25) { bulamt = 0; shtspd = 80; }
 		}
-	    instance_create(x,y,o_gunSound);
+	    if(room != r_lvl_30) { instance_create(x,y,o_gunSound); }
 		shootCheck = shtspd;
 	    var Bulg = instance_create(x,y,weapon_bul);
 	    Bulg.direction = image_angle;

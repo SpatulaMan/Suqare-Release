@@ -3,6 +3,7 @@ var _e = instance_create_layer(110,1366,"Instances_Action",obj_guard_patrol);
 	_e.weapon_type = choose(obj_magnum,obj_machineGun);
 	_e.drop_gun = false;
 	_e.weapon_spd = 6;
+	_e.hp = 6;
 	_e.p = Path66;
 	switch(_e.weapon_type)
 	{
@@ -19,4 +20,4 @@ var _e = instance_create_layer(110,1366,"Instances_Action",obj_guard_patrol);
 	}
 bga++;
 if(bga < bgt)
-	alarm_set(0,choose(360,400,440));
+	alarm_set(0,choose(180,240,300));

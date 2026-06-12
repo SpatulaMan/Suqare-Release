@@ -42,7 +42,7 @@ if(room == r_lvl_30 or room = r_lvl_31)
 { 
 	weapon_type = obj_machineGun; 
 	hp = 24; 
-	sprite_index = s_turretT;
+	sprite_index = s_turretT_1;
 	image_blend = c_green;
 }
 if(room == r_lvl_16) { weapon_type = obj_machineGun; image_blend = c_red; }

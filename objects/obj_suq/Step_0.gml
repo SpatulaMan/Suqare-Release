@@ -294,7 +294,7 @@ if(health > 0)
 		var _input = point_distance(0, 0, _hm, _vm);
 		//_input = clamp(_input, 0, 1);
 		if(!spdup) { _spd = spd * _input; }
-		else { _spd = (spd+.75) * _input; }
+		else { _spd = (spd+.25) * _input; }
 	
 		xspd = lengthdir_x(_spd*mdCh, moveDir);
 		yspd = lengthdir_y(_spd, moveDir*mdCh);
@@ -497,12 +497,13 @@ if(health > 0)
 			audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	    }
 	}
-	if(keyboard_check_pressed(ord("E")) and gunNum == 0 and heavyband == true) then 
+	if(keyboard_check_pressed(ord("E")) and gunNum == 0 and heavyband == true)
 	{ 
 		instance_create(x,y,o_heavyband);
 		heavyband = false;
 		audio_play_sound(snd_stepOther,5,false,2*o_saveload.sfxvol,0,random_range(.8,.9));
 	}
+	if(heavyband) { pickup_item = 79; pickup_timer = 2; }
 	if(((pr == true and gunEquip == 1) or (mgr == true and gunEquip == 3) or (arr == true and gunEquip == 4) or (snr == true and gunEquip == 8) or (mr == true and gunEquip == 2) or 
 		(rlr == true and gunEquip == 9) or (fr == true and gunEquip == 7) or (shr == true and gunEquip == 6) or (ppr == true and gunEquip == 14)) and (gunEquip != 5 and gunEquip != 15))
 	{
@@ -751,7 +752,7 @@ if(ninjaBenefit > 0 and instance_exists(o_lvlEnd))
 		case 1: ninjaHeal = true; ninjaBenefit = 0; 
 				var _c1 = instance_create_layer(x,y,"Instances_Action",o_conversation); 
 				_c1.h = 55; break;
-		case 2: spd = 2.5; 
+		case 2: spd = 2.25; 
 				var _c2 = instance_create_layer(x,y,"Instances_Action",o_conversation); 
 				_c2.h = 56; ninjaBenefit = 0; break;
 		case 3: ninjaBenefit = 0;

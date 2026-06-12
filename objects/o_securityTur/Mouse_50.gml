@@ -7,6 +7,5 @@ if(shoot < 0 and distance_to_object(obj_suq) < 100)
     Bulmg.direction = point_direction(x,y,mouse_x,mouse_y);
     Bulmg.image_angle = Bulmg.direction;
     Bulmg.speed = 9;
-	Bulmg.damage += mgda;
     shoot = 5;
 }

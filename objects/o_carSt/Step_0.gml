@@ -24,5 +24,11 @@ if(distance_to_object(obj_suq) < 5)
 			o_lvl30.o3 = true;
 			obj_suq.paints3 = false;
 		}
+		if(!audio_is_playing(snd_knifespin)) then audio_play_sound(snd_knifespin,5,false,o_saveload.sfxvol);
 	}
+}
+if(o_lvl30.o1 and o_lvl30.o2 and o_lvl30.o3)
+{
+	speed = 6;
+	direction = 180;
 }

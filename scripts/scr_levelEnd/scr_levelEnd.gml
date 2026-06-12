@@ -1833,6 +1833,29 @@ function scr_levelEnd(car,range_optional)
 				if(o_saveload.ammoFull) { obj_suq.pp7Amt = (o_saveload.ammoUp*40)+4; }
 				else  { obj_suq.pp7Amt = 4; }
 			}
+			if(obj_suq.tkisl)
+			{
+				obj_suq.knifeHave = 1;
+				obj_suq.gunNum++;
+				obj_suq.tkisl = false;
+			}
+			if(obj_suq.tbisl)
+			{
+				obj_suq.tbisl = false;
+				obj_suq.boomerangHave = 1;
+				obj_suq.gunNum++;
+			}
+			if(obj_suq.tsisl and obj_suq.shuriken <= 0)
+			{
+				obj_suq.tsisl = false;
+				obj_suq.shuriken = 30;
+				obj_suq.gunNum++;
+			}
+			else if(obj_suq.tsisl and obj_suq.shuriken > 0)
+			{
+				obj_suq.tsisl = false;
+				obj_suq.shuriken = 30;
+			}
 
 			obj_suq.x = 477;
 			obj_suq.y = 376;

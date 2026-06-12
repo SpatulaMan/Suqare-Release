@@ -41,6 +41,32 @@ if(room != r_armory and room != r_skill1 and room != r_skill2 and room != r_skil
 	o_music.mCheck = false;
 	if(room == r_range) { gunRange = true; }
 }
+if(room == r_range)
+{
+	if(tkisl)
+	{
+		knifeHave = 1;
+		gunNum++;
+		tkisl = false;
+	}
+	if(tbisl)
+	{
+		tbisl = false;
+		boomerangHave = 1;
+		gunNum++;
+	}
+	if(tsisl and shuriken <= 0)
+	{
+		tsisl = false;
+		shuriken = 30;
+		gunNum++;
+	}
+	else if(tsisl and shuriken > 0)
+	{
+		tsisl = false;
+		shuriken = 30;
+	}
+}
 if(room == r_armory and instance_exists(o_armory))
 {
 	if(o_saveload.endgame == true)
