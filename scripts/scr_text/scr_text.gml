@@ -1276,7 +1276,8 @@ function scr_briefing(t){
 			
 			We can make it seem like an art theft gone wrong and none
 			of this will come back on me as long as you aren't 
-			discovered by the cameras.";
+			discovered by the cameras. The cameras are tracking audio,
+			so any sound from you will trigger the alarm. ";
 	a[165] = @"Assassinate Head of Security at Art Museum";
 	a[166] = @"Mission: Kill Head Of Security
 			
@@ -2487,9 +2488,11 @@ function scr_conversation(t)
 			SOFTWARE ACCEPTED";
 	a[93] = @"Company Memo:
 	
-			Remember, if the switch is on the pink line, power is on, and if the switch is on the pink box, power is off. 
-			It's like a 1 and a 0. What's so confusing about this?";
-	a[94] = @"He's got the Eye! Spring the trap! ";
+			Remember, if the switch is on the pink section, power is on, and if the switch is on the green section, power is 
+			off. It's conductive versus non-conductive material. What's so hard to understand about this? ";
+	a[94] = @"He's got the Eye! Spring the trap! 
+	
+			Don't let him get back to his car! ";
 	a[95] = @"Things did not go to plan...";
 	a[96] = @"The party is over... Everyone is gone. ";
 	a[97] = @"The house, the presents, the plans, all destroyed. ";
@@ -2629,7 +2632,7 @@ function scr_conversation(t)
 	a[137] = @"";//hiertech
 	a[138] = @"Aw nuts! You let him get back into the graveyard, and he saw our faces! Now, we're gonna hear about this from
 			our parents. Buh. You were no help at all. ";//lvl 25 letting grave keeper back into the area
-	a[139] = @"";
+	a[139] = @"Whew! Can't believe I made it out of there alive. ";
 			
 	return a[t];
 }

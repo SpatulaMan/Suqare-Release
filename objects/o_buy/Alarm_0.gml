@@ -28,8 +28,8 @@ if(instance_exists(o_shop) and image_index != 2)
 		case 20: if(obj_suq.progress > 5 and obj_suq.mh == 1) { image_index = 0; } else { image_index = 2; } break;
 		case 21: if(obj_suq.progress > 5 and obj_suq.mgh == 1) { image_index = 0; } else { image_index = 2; } break;
 		case 22: if(obj_suq.progress > 5 and obj_suq.ah == 1) { image_index = 0; } else { image_index = 2; } break;
-		case 23: if(obj_suq.progress > 5 and obj_suq.sgh == 1) { image_index = 0; } else { image_index = 2; } break;
-		case 24: if(obj_suq.progress > 5 and obj_suq.sh == 1) { image_index = 0; } else { image_index = 2; } break;
+		case 23: if(obj_suq.progress > 5 and obj_suq.sh == 1) { image_index = 0; } else { image_index = 2; } break;
+		case 24: if(obj_suq.progress > 5 and obj_suq.sgh == 1) { image_index = 0; } else { image_index = 2; } break;
 		case 25: if(obj_suq.progress > 5 and obj_suq.fh == 1) { image_index = 0; } else { image_index = 2; } break;
 		case 26: if(obj_suq.progress > 5 and obj_suq.snh == 1) { image_index = 0; } else { image_index = 2; } break;
 		case 27: if(obj_suq.progress > 5 and obj_suq.rh == 1) { image_index = 0; } else { image_index = 2; } break;

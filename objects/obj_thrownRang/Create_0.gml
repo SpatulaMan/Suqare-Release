@@ -14,4 +14,7 @@ obj = obj_boomerang;
 spdd = .5;
 bounceCount = 3;
 
+moveBack = false;
+
 alarm_set(0,10);
+alarm_set(1,90);

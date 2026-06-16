@@ -1,4 +1,9 @@
 /// @description 
+if(place_meeting(x,y,inst_2390CB2) or place_meeting(x,y,inst_415A1B02) or place_meeting(x,y,inst_3387BF41) or 
+	place_meeting(x,y,inst_2390CB2_1) or place_meeting(x,y,inst_415A1B02_1) or place_meeting(x,y,inst_3387BF41_1))
+{
+	locked = true;
+}
 if(distance_to_object(obj_suq) <= 10 and !instance_exists(o_convo) and check == false and room == r_armory)
 {
 	inst = instance_create(x,y,o_convo);

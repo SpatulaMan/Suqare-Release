@@ -42,7 +42,7 @@ if(obj_suq.gildebrand > 6)
 	var _cg = instance_create_layer(335,521,"Instances_Action",o_conversation);
 	_cg.h = 90;
 }
-if(obj_suq.yellerteeth > 6 and o_saveload.nMemS == false) 
+if(obj_suq.yellerteeth > 6 and o_saveload.nMems == false) 
 {
 	instance_create_layer(733,513,"Instances_Action",o_nMem);
 }

@@ -12,6 +12,8 @@ obj_suq.sniperRifleHave = 0;
 obj_suq.rocketLauncherHave = 0;
 obj_suq.boomerangHave = 0;
 obj_suq.swordHave = 0;
+obj_suq.pp7Have = 0;
+obj_suq.chainGunHave = 0;
 obj_suq.shuriken = 0;
 obj_suq.ghostGunHave = 0;
 obj_suq.gunNum = 0;
@@ -30,8 +32,8 @@ if(instance_exists(obj_flamethrower)) { with (obj_flamethrower) instance_destroy
 if(instance_exists(obj_boomerang)) { with (obj_boomerang) instance_destroy(); }
 if(instance_exists(obj_knife)) { with (obj_knife) instance_destroy(); }
 if(instance_exists(obj_sword)) { with (obj_sword) instance_destroy(); }
-//if(instance_exists(obj_pistol)) { with (obj_pistol) instance_destroy(); }
-//if(instance_exists(obj_pistol)) { with (obj_pistol) instance_destroy(); }
+if(instance_exists(obj_pp7)) { with (obj_pp7) instance_destroy(); }
+if(instance_exists(obj_chainGun)) { with (obj_chainGun) instance_destroy(); }
 o_armory.alarm[0] = 10;
 save();
 instance_destroy();

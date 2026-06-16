@@ -1,6 +1,8 @@
 /// @description
 o1 = false;
-o2 = false;
+o2 = true;
+bgt = 32;
+bga = 0;
 check = false;
 alarm_set(0,choose(180,240,300));
 alarm_set(1,choose(200,280,340));

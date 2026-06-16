@@ -1,6 +1,7 @@
 /// @description
 if(seen)
 {
+	if(room == r_lvl_31) { o_lvl31.o2 = false; }
 	if(instance_exists(o_vambrace) and !instance_exists(o_eFire))
 	{
 		if(o_vambrace.x < 7000)

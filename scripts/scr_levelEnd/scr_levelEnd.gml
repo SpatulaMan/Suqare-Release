@@ -1088,20 +1088,17 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.ynet -= 2;
 				o_saveload.gnet += 2;
 				o_saveload.unet -= 6;
-				o_saveload.hnet += 15;
+				o_saveload.hnet += 12;
 				if(obj_suq.paints1)
 				{
-					o_saveload.unet += 3;
 					o_saveload.hnet -= 5;
 				}
 				if(obj_suq.paints2)
 				{
-					o_saveload.unet += 3;
 					o_saveload.hnet -= 5;
 				}
 				if(obj_suq.paints3)
 				{
-					o_saveload.unet += 3;
 					o_saveload.hnet -= 5;
 				}
 				obj_suq.lvldone[obj_suq.lvl] = true;

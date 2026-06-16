@@ -8,9 +8,25 @@ room_persistent = false;
 //room_goto(r_armory);
 x = 376;
 y = 497;
-//lvl = 0;
-pickup_item = 34;
-pickup_timer = 360;
+//lvl = 0;\
+if(instance_exists(o_lvlEnd))
+{
+	if(o_lvlEnd.speed > 0)
+	{
+		pickup_item = 139;
+		pickup_timer = 360;
+	}
+	else
+	{
+		pickup_item = 34;
+		pickup_timer = 360;
+	}
+}
+else
+{
+	pickup_item = 34;
+	pickup_timer = 360;
+}
 //save();
 
 scr_levelEnd(false,false); //false means not called from lvlend car

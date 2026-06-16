@@ -1,3 +1,6 @@
 /// @description
-other.x = x;
-other.y = y;
+if(other.locked == false)
+{
+	other.x = x;
+	other.y = y;
+}

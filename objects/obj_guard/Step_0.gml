@@ -109,7 +109,7 @@ if(((_wallsee and _doorsee) and abs(angle_difference(weapon.image_angle,pd1)) < 
 		shootCheck = shtspd;
 		if((weapon_type == obj_shotgun and bulamt != 0) or weapon_type != obj_shotgun)
 		{
-			instance_create(x,y,o_gunSound);
+			if(room != r_lvl_31) { instance_create(x,y,o_gunSound); }
 		    var Bulg = instance_create(x,y,weapon_bul);
 		    Bulg.direction = weapon.image_angle;
 		    Bulg.image_angle = weapon.image_angle;

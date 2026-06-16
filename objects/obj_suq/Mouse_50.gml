@@ -73,7 +73,7 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
         flamethrowerAmt = 0;
         //gunEquip = 0;
     }
-	if(chainGunAmt > 0 and gunEquip == 15 and canCGShoot <= 0 and cgover == false)
+	if(chainGunAmt > 0 and chainGunHave == 1 and gunEquip == 15 and canCGShoot <= 0 and cgover == false)
     {
 		if(instance_number(obj_suqCGBul) % 2 == 1)
 		{

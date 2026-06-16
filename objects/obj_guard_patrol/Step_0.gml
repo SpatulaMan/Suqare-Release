@@ -39,7 +39,7 @@ pd = point_direction(x,y,x3,y3);
 if(see_check == false and patrol_check == false and check11)
 {
 	if(room != r_lvl_19) { path_start(p,spd,choose(path_action_restart,path_action_reverse),false); }
-	if(room == r_lvl_24 or room == r_lvl_29) { path_start(p,spd,path_action_reverse,false); }
+	if(room == r_lvl_24 or room == r_lvl_29 or room == r_lvl_31) { path_start(p,spd,path_action_reverse,false); }
 	else { path_start(p,spd,choose(path_action_restart,path_action_reverse),true); }
 	patrol_check = true;
 }
@@ -159,7 +159,7 @@ if(see_check)
 			shootCheck = shtspd;
 			if((weapon_type == obj_shotgun and bulamt != 0) or weapon_type != obj_shotgun)
 			{
-				instance_create(x,y,o_gunSound);
+				if(room != r_lvl_31) { instance_create(x,y,o_gunSound); }
 			    var Bulg = instance_create(x,y,weapon_bul);
 			    Bulg.direction = weapon.image_angle;
 			    Bulg.image_angle = weapon.image_angle;
@@ -189,7 +189,7 @@ if(see_check)
 		//alarm_set(3,0);
 	}
 
-	if(path_check and room != r_lvl_19 and room != r_lvl_29)
+	if(path_check and room != r_lvl_19 and room != r_lvl_29 and room != r_lvl_31)
 	{
 		if(mp_grid_path(global.grid,path,x,y,x3,y3,true) and hit == false and suq_loc == false)
 		{

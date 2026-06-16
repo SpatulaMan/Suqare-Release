@@ -1,4 +1,5 @@
 weapon_type = obj_pistol;
+eng = true;
 sprite_index = s_enemy;
 hp = 4;
 drop_gun = choose(true,false,true);

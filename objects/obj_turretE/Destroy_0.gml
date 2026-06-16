@@ -21,7 +21,7 @@ if(room != r_skill1 and room != r_skill2 and room != r_skill3 and room != r_skil
 	{
 		case 1: scr_barrel(); break;
 		case 2: scr_barrelmoney(); break;
-		case 3: scr_spiderspawn(); break;
+		case 3: if(room == r_lvl_8) { scr_spiderspawn(); } break;
 		case 4: scr_box(); break;
 	}
 }

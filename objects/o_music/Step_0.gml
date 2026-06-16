@@ -63,10 +63,9 @@ if(room == r_armory and mCheck == false and o_lvlStart.speed == 0)
 }
 if(instance_exists(o_lvlStart))
 {
-	if(o_lvlStart.speed > 0 and (o_lvlStart.r == r_lvl_0 or o_lvlStart.r == r_lvl_32 or r_lvl_48) and mCheck == true)
+	if(o_lvlStart.speed > 0 and (o_lvlStart.r == r_lvl_0 or o_lvlStart.r == r_lvl_32 or o_lvlStart.r == r_lvl_48) and mCheck == true)
 	{
 		audio_sound_gain(s2,0,1000);
-		//audio_resume_sound(s1);
 		audio_stop_sound(s1);
 		s1 = audio_play_sound(snd_musicA1,10,true,0);
 		audio_sound_gain(s1,0,0);
@@ -312,7 +311,7 @@ if(room == r_lvl_4 or room == r_lvl_49)
 		}
 	}
 }
-if(room == r_lvl_5 or room == r_lvl_22 or room == r_lvl_24 or room == r_lvl_25 or room == r_lvl_26 or room == r_lvl_29 or room == r_lvl_19 or room == r_lvl_31 or 
+if(room == r_lvl_5 or room == r_lvl_22 or room == r_lvl_24 or room == r_lvl_25 or room == r_lvl_26 or room == r_lvl_29 or room == r_lvl_19 or 
 room == r_lvl_47 or room == r_lvl_50 or room == r_lvl_41 or room == r_lvl_37 or room == r_lvl_46 or room == r_lvl_42 or room == r_lvl_40)
 {
 	if(mCheck2 == false and mCheck3 == false)

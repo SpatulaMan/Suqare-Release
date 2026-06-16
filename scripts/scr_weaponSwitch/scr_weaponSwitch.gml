@@ -144,7 +144,7 @@ function scr_wsup()
 		    {
 		        gunEquip--;
 		    }
-			if(gunEquip < 0) then { gunEquip = 15}
+			if(gunEquip < 0) then { gunEquip = 15; }
 		}
 	}
 }
