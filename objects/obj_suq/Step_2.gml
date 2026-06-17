@@ -40,3 +40,67 @@ with(_inst)
 	}
 }
 
+*/
+if(room == r_armory)
+{
+	if(pistolHave == 1)
+	{
+		if(o_saveload.ammoFull) { pistolAmt = (o_saveload.ammoUp*60)+pmr; }
+		else if(pMag == 0) { pistolAmt = 2*pmr; }
+		else { pistolAmt = pmr; }
+	}
+	if(magnumHave == 1)
+	{
+		if(o_saveload.ammoFull) { magnumAmt = (o_saveload.ammoUp*mMax)+mmr; }
+		else if(mMag == 0) { magnumAmt = 2*mmr; }
+		else { magnumAmt = mmr; }
+	}
+	if(machineGunHave == 1)
+	{
+		if(o_saveload.ammoFull) { machineGunAmt = (o_saveload.ammoUp*150)+mgmr; }
+		else if(mgMag == 0) { machineGunAmt = 2*mgmr; }
+		else { machineGunAmt = mgmr; }
+	}
+	if(assaultRifleHave == 1)
+	{
+		if(o_saveload.ammoFull) { assaultRifleAmt = (o_saveload.ammoUp*80)+20; }
+		else if(arMag == 0) { assaultRifleAmt = 40; }
+		else  { assaultRifleAmt = 20; }
+	}
+	if(shotgunHave == 1)
+	{
+		if(o_saveload.ammoFull) { shotgunAmt = (o_saveload.ammoUp*24)+(6+sgda); }
+		else if(sgMag == 0) { shotgunAmt = 2*(6+sgda); }
+		else { shotgunAmt = (6+sgda); }
+	}
+	if(shooterGunHave == 1)
+	{
+		if(o_saveload.ammoFull) { shooterGunAmt = (o_saveload.ammoUp*120)+40; }
+		else if(shMag == 0) { shooterGunAmt = 80; }
+		else { shooterGunAmt = 40; }
+	}
+	if(sniperRifleHave == 1)
+	{
+		if(o_saveload.ammoFull) { sniperRifleAmt = (o_saveload.ammoUp*16)+snmr; }
+		else if(snMag == 0) { sniperRifleAmt = 2*snmr; }
+		else { sniperRifleAmt = snmr; }
+	}
+	if(flamethrowerHave == 1)
+	{
+		if(o_saveload.ammoFull) { flamethrowerAmt = (o_saveload.ammoUp*20)+5; }
+		else if(fMag == 0) { flamethrowerAmt = 10; }
+		else  { flamethrowerAmt = 5; }
+	}
+	if(rocketLauncherHave == 1)
+	{
+		if(o_saveload.ammoFull) { rocketLauncherAmt = (o_saveload.ammoUp*8)+2; }
+		else if(rlMag == 0) { rocketLauncherAmt = 4; }
+		else { rocketLauncherAmt = 2; }
+	}
+	if(pp7Have == 1)
+	{
+		if(o_saveload.ammoFull) { pp7Amt = (o_saveload.ammoUp*40)+4; }
+		else if(ppMag == 0) { pp7Amt = 8; }
+		else { pp7Amt = 4; }
+	}
+}

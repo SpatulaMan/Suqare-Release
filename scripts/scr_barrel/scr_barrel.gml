@@ -42,7 +42,7 @@ function scr_barrel() {
 		if(obj_suq.magnumHave == 1)
 		{
 			array_insert(w,r2,obj_mAmmo);
-			array_insert(w2,r2,19);
+			array_insert(w2,r2,29);
 			r2++;
 		}
 		if(obj_suq.shooterGunHave == 1)
@@ -66,7 +66,7 @@ function scr_barrel() {
 		if(obj_suq.pp7Have == 1)
 		{
 			array_insert(w,r2,obj_ppAmmo);
-			array_insert(w2,r2,9);
+			array_insert(w2,r2,29);
 			r2++;
 		}
 		if(r2 > 0)

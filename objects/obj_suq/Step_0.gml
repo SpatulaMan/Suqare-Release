@@ -679,8 +679,8 @@ if(!instance_exists(o_tank) and room == r_lvl_16)
 		audio_stop_sound(snd_fireT);
 	}
 }
-if(room == r_range or (room == r_skill1 and !instance_exists(o_skobj)) or (room == r_skill2 and !instance_exists(o_skobj)) or (room == r_skill3 and !instance_exists(o_skobj)) or 
-(room == r_skill4 and !instance_exists(o_skobj)) or (room == r_skill5 and !instance_exists(o_skobj)))//put all of these in here
+if(room == r_range or (room == r_skill1 and !instance_exists(o_skobj)) or (room == r_skill2 and !instance_exists(o_skobj)) or 
+(room == r_skill3 and !instance_exists(o_skobj)) or (room == r_skill4 and !instance_exists(o_skobj)) or (room == r_skill5 and !instance_exists(o_skobj)))//put all of these in here
 {
 	if(pistolHave == 1)
 	{

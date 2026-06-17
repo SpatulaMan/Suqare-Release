@@ -5,6 +5,7 @@ if(catchTime >= catchNeed and spd > 0)
 	spd = 0;
 	path_end();
 	weapon.image_alpha = 0.01;
-	var _con = instance_create_layer(x,y,"Instance_Action",o_conversation);
+	var _con = instance_create_layer(x,y,"Instances_Action",o_conversation);
 	_con.h = 100;
+	_con.image_alpha = 0.01;
 }

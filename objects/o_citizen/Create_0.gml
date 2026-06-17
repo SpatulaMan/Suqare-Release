@@ -23,7 +23,8 @@ x11 = 0; y11 = 0;
 x12 = 0; y12 = 0;
 xc = 0;
 yc = 0;
-alarm_set(1,5);
+spr = s_fancyGuy_1;
+if(room == r_lvl_41) { alarm_set(1,5); }
 alarm_set(0,20);
 xyc = 1;
 moveCheck = true;

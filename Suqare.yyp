@@ -1032,6 +1032,7 @@
     {"id":{"name":"s_verticalCapsule_1","path":"sprites/s_verticalCapsule_1/s_verticalCapsule_1.yy",},},
     {"id":{"name":"s_verticalCapsule_2","path":"sprites/s_verticalCapsule_2/s_verticalCapsule_2.yy",},},
     {"id":{"name":"s_verticalCapsule","path":"sprites/s_verticalCapsule/s_verticalCapsule.yy",},},
+    {"id":{"name":"s_verticalCapsuleVideo","path":"sprites/s_verticalCapsuleVideo/s_verticalCapsuleVideo.yy",},},
     {"id":{"name":"s_vol","path":"sprites/s_vol/s_vol.yy",},},
     {"id":{"name":"s_wall_1","path":"sprites/s_wall_1/s_wall_1.yy",},},
     {"id":{"name":"s_wall_frame_2","path":"sprites/s_wall_frame_2/s_wall_frame_2.yy",},},

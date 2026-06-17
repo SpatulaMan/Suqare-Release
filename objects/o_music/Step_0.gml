@@ -312,7 +312,7 @@ if(room == r_lvl_4 or room == r_lvl_49)
 	}
 }
 if(room == r_lvl_5 or room == r_lvl_22 or room == r_lvl_24 or room == r_lvl_25 or room == r_lvl_26 or room == r_lvl_29 or room == r_lvl_19 or 
-room == r_lvl_47 or room == r_lvl_50 or room == r_lvl_41 or room == r_lvl_37 or room == r_lvl_46 or room == r_lvl_42 or room == r_lvl_40)
+room == r_lvl_47 or room == r_lvl_50 or room == r_lvl_41 or room == r_lvl_46 or room == r_lvl_42 or room == r_lvl_40)
 {
 	if(mCheck2 == false and mCheck3 == false)
 	{
@@ -356,10 +356,11 @@ if(room == r_lvl_44)
 		audio_sound_gain(s6,.3*o_saveload.musvol,500);
 	}
 }
-if(room == r_lvl_7 or room == r_lvl_8 or room == r_lvl_12 or room == r_lvl_13 or room == r_lvl_14 or room == r_lvl_17 or room == r_lvl_30 or room == r_lvl_31)
+if(room == r_lvl_7 or room == r_lvl_8 or room == r_lvl_12 or room == r_lvl_13 or room == r_lvl_14 or room == r_lvl_17 or room == r_lvl_30 or room == r_lvl_31 or room == r_lvl_37)
 {
 	audio_sound_gain(s2,0,1000);
-	if(audio_is_playing(snd_musicA1)) { audio_stop_sound(snd_musicA1); }
+	audio_sound_gain(s1,0,1000);
+	//if(audio_is_playing(snd_musicA1)) { audio_stop_sound(snd_musicA1); }
 	//audio_sound_gain(s1,0,3000);
 	if(mCheck2 == false and mCheck3 == false)
 	{

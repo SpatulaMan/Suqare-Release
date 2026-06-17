@@ -932,6 +932,7 @@
     {"name":"s_verticalCapsule_1","order":13,"path":"sprites/s_verticalCapsule_1/s_verticalCapsule_1.yy",},
     {"name":"s_verticalCapsule_2","order":14,"path":"sprites/s_verticalCapsule_2/s_verticalCapsule_2.yy",},
     {"name":"s_verticalCapsule","order":5,"path":"sprites/s_verticalCapsule/s_verticalCapsule.yy",},
+    {"name":"s_verticalCapsuleVideo","order":17,"path":"sprites/s_verticalCapsuleVideo/s_verticalCapsuleVideo.yy",},
     {"name":"s_vol","order":48,"path":"sprites/s_vol/s_vol.yy",},
     {"name":"s_wall_1","order":86,"path":"sprites/s_wall_1/s_wall_1.yy",},
     {"name":"s_wall_frame_2","order":31,"path":"sprites/s_wall_frame_2/s_wall_frame_2.yy",},

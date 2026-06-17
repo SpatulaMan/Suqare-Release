@@ -1274,7 +1274,16 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.ynet -= 6;
 					obj_suq.yellerteeth -= 2;
 					obj_suq.gildebrand += 2;
-					if(7700-o_lvl34.nod > 0) { o_saveload.moneyT += 7700-o_lvl34.nod; }
+					if(7700-o_lvl34.nod > 0) 
+					{ 
+						o_saveload.moneyT += 7700-o_lvl34.nod; 
+						obj_suq.tempEarnMon = 7700-o_lvl34.nod;
+					}
+					else
+					{
+						obj_suq.tempEarnMon = 0;
+					}
+					
 				}
 				else if(o_lvl34.o2 and o_lvl34.tirH < 2)
 				{
@@ -1283,7 +1292,15 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 109;
 					obj_suq.yellerteeth -= 2;
 					obj_suq.gildebrand += 1;
-					if(2500-o_lvl34.nod > 0) { o_saveload.moneyT += 2500-o_lvl34.nod; }
+					if(2500-o_lvl34.nod > 0) 
+					{ 
+						o_saveload.moneyT += 2500-o_lvl34.nod; 
+						obj_suq.tempEarnMon = 2500-o_lvl34.nod;
+					}
+					else
+					{
+						obj_suq.tempEarnMon = 0;
+					}
 				}
 				else if(o_lvl34.o1 and o_lvl34.tirH >= 2)
 				{
@@ -1292,7 +1309,15 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.ynet -= 6;
 					obj_suq.yellerteeth -= 2;
 					obj_suq.gildebrand += 2;
-					if(7700-o_lvl34.nod > 0) { o_saveload.moneyT += 7700-o_lvl34.nod; }
+					if(7700-o_lvl34.nod > 0) 
+					{ 
+						o_saveload.moneyT += 7700-o_lvl34.nod; 
+						obj_suq.tempEarnMon = 7700-o_lvl34.nod;
+					}
+					else
+					{
+						obj_suq.tempEarnMon = 0;
+					}
 				}
 				else if(o_lvl34.o2 and o_lvl34.tirH >= 2)
 				{
@@ -1301,7 +1326,15 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 112;
 					obj_suq.yellerteeth -= 2;
 					obj_suq.gildebrand += 1;
-					if(2500-o_lvl34.nod > 0) { o_saveload.moneyT += 2500-o_lvl34.nod; }
+					if(2500-o_lvl34.nod > 0)
+					{ 
+						o_saveload.moneyT += 2500-o_lvl34.nod; 
+						obj_suq.tempEarnMon = 2500-o_lvl34.nod;
+					}
+					else
+					{
+						obj_suq.tempEarnMon = 0;
+					}
 				}
 				else if(!o_lvl34.o1 and !o_lvl34.o2 and o_lvl34.tirH < 2)
 				{
@@ -1309,6 +1342,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.gnet -= 8;
 					obj_suq.report = 110;
 					obj_suq.gildebrand -= 2;
+					obj_suq.tempEarnMon = 0;
 				}
 				else if(!o_lvl34.o1 and !o_lvl34.o2 and o_lvl34.tirH >= 2)
 				{
@@ -1316,6 +1350,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.gnet -= 4;
 					obj_suq.report = 121;
 					obj_suq.gildebrand -= 1;
+					obj_suq.tempEarnMon = 0;
 				}
 			} break;
 			case r_lvl_44:
@@ -1429,6 +1464,28 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.convinced = true;
 					o_saveload.moneyT += 9300;
 				}
+				else if(o_lvl35.o1 == true and o_lvl35.o2 == false)
+				{
+					randomize();
+					var choice = choose(1,2);
+					if(choice == 1)
+					{
+						obj_suq.report = 152;
+						obj_suq.perez += 2;
+						o_saveload.pnet += 10;
+						o_saveload.knet -= 4;
+						obj_suq.kanker -= 1;
+						o_saveload.convinced = true;
+						o_saveload.moneyT += 1500;
+					}
+					if(choice == 2)
+					{
+						obj_suq.report = 153;
+						obj_suq.perez -= 2;
+						o_saveload.pnet -= 3;
+						o_saveload.knet += 2;
+					}
+				}
 				else
 				{
 					obj_suq.report = 127;
@@ -1475,7 +1532,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += o_lvl37.r;
 					obj_suq.r37 = o_lvl37.r;
 					o_saveload.trick = false;
-					saveTrick();
+					//saveTrick();
 				}
 			} break;
 			case r_lvl_46:

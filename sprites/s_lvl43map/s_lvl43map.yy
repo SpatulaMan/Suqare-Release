@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"s_lvl43map",
   "bboxMode":0,
-  "bbox_bottom":939,
+  "bbox_bottom":908,
   "bbox_left":0,
   "bbox_right":1287,
   "bbox_top":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":940,
+  "height":909,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"19ed3674-b159-4c7d-bcd9-de050f76cfa4","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"19ed3674-b159-4c7d-bcd9-de050f76cfa4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},

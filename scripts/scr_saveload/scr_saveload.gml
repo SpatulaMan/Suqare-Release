@@ -131,7 +131,7 @@ function save()
 		vambrace: obj_suq.vambrace,
 		eye: obj_suq.eye,
 		artifacts: obj_suq.artifacts,
-		engame: o_saveload.endgame,
+		endgame: o_saveload.endgame,
 		knkrwins: o_saveload.knkrwins,
 		armycount: o_saveload.armycount,
 		trick: o_saveload.trick,

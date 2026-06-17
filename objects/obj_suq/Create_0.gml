@@ -189,6 +189,7 @@ magnumAmt = 0;
 mMag = 0;
 mr = false;
 mrt = 60;
+mMax = 30;
 rocketLauncherAmt = 0;
 rlMag = 0;
 rlr = false;
@@ -331,6 +332,8 @@ rlda = o_saveload.rlda;
 rlmr = o_saveload.rlmr;
 sndlvl = 0;
 r37 = 0;
+
+tempEarnMon = 0;
 
 ammoBuy = 0;
 

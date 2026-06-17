@@ -2020,6 +2020,7 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[259] = @"Destroy Market";
+	a[260] = @"This Briefing was a lie";
 	
 	
 return a[t];
@@ -2536,7 +2537,7 @@ function scr_conversation(t)
 	a[112] = @"Welcome to my game, Suqare. My name is Tirangle. You thought you were going on a mission from Hiertech, but
 			actually, you've fallen into my trap and you have to play a game. It's a simple quiz, but for every wrong answer, I
 			will take money away. For every correct answer, I'll give you money. Some answers will lead to more questions, and 
-			others fewer questions. ";//tirangle game lvl 37
+			others fewer questions. Enter the house to begin.";//tirangle game lvl 37
 	a[113] = @"Oh, you thought you could just quit? No, no, no, leaving my game won't be that easy. ";//tirangle game lvl 37
 	a[114] = @"What is Perez Holdings?
 	
@@ -2553,36 +2554,36 @@ function scr_conversation(t)
 			Left - $25000
 			
 			Right - $20000";//tirangle game lvl 37 3
-	a[117] = @"What was lurking in Philbin Wuthgor's Neighbor's house? 
+	a[117] = @"How many pieces does an enemy square break into?
 	
-			Up - Purple Ghost
+			Up - 6
 			
-			Down - Red Ghost";//tirangle game lvl 37 4
+			Down - 4";//tirangle game lvl 37 4
 	a[118] = @"How many Golden Fragments are there? 
 	
 			Up - 6
 			
 			Left - 4";//tirangle game lvl 37 5
-	a[119] = @"What is the sum of the interior angles of a Triangle?
+	a[119] = @"What is Hiertech's goal? 
 	
-			Up - 360 degrees
+			Up - Take control of the world through technological prowess
 			
-			Down - 180 degrees";//tirangle game lvl 37 6
-	a[120] = @"What small robots did Gildebrand Consulting need you to destroy? 
+			Down - To make a criminal empire";//tirangle game lvl 37 6
+	a[120] = @"What di Gildebrand Consulting ask you to destroy? 
 	
 			Left - Spiders
 			
 			Down - Cockroaches";//tirangle game lvl 37 7
-	a[121] = @"What is the highest number of weapons you can hold at one time?  
+	a[121] = @"What is the most weapons you can hold at one time?  
 	
-			Left - 3
+			Left - 9
 			
 			Down - 7";//tirangle game lvl 37 8
-	a[122] = @"How many bullets does an upgraded machine gun have in its magazine?
+	a[122] = @"How many pellets does an upgraded shotgun shoot?
 	
-			Up - 40
+			Up - 12
 			
-			Left - 50";//tirangle game lvl 37 9
+			Left - 10";//tirangle game lvl 37 9
 	a[123] = @"Where can the flamethrower be found?
 	
 			Up - Inside the scientists lab after the deadly gases have been released
@@ -2614,7 +2615,7 @@ function scr_conversation(t)
 			
 			Down - 30%";//tirangle game lvl 37
 	a[128] = @"You're a sneaky one, aren't you? Thought you could outsmart me, so you closed the game entrirely to get out of
-			my level. Since you choose to cheat my game, I'll choose to cheat you, and steal $10,000. Hope it was worth it.
+			my level. Since you choose to cheat my game, I'll choose to cheat you and steal $10,000. Hope it was worth it.
 			Hahahahaha!";//Tirangle after shutting down game
 	a[129] = @"Well, that's the game. We'll see how much money you lost in the end. Let's play again sometime. Hahahaha!";//tirangle game lvl 37 after answering all possible questions
 	a[130] = @"You dare face the leader of Hiertech? No one has ever challenged me and lived to tell the tale. I've been dying 
@@ -2633,6 +2634,13 @@ function scr_conversation(t)
 	a[138] = @"Aw nuts! You let him get back into the graveyard, and he saw our faces! Now, we're gonna hear about this from
 			our parents. Buh. You were no help at all. ";//lvl 25 letting grave keeper back into the area
 	a[139] = @"Whew! Can't believe I made it out of there alive. ";
+	a[140] = @"Stop doing that.";
+	a[141] = @"Pressing it more won't change my mind.";
+	a[142] = @"Maybe read the definition of insanity for once.";
+	a[143] = @"Nope. Still not working. By that, I mean your brain.";
+	a[144] = @"How's that backspace treating you?";
+	a[145] = @"Any other ideas?";
+	a[146] = @"Oh, you got me. I guess I should let you go this time - psych!";
 			
 	return a[t];
 }
@@ -2822,7 +2830,7 @@ function scr_shop(t){
 			Magazine: 12 
 			damage: 1
 			    |
-			Magazine: 18
+			Magazine: 24
 			damage: 2
 			
 			
@@ -2830,26 +2838,27 @@ function scr_shop(t){
 	o[21] = @"Magnum Upgrade
 			
 			
-			Description: Increases damage and magazine capacity
+			Description: Increases damage but lessens magazine 
+			capacity and total reserve ammo
 			
 			Magazine: 6 
 			damage: 4
+			Ammo: 30
 			    |
-			Magazine: 10
+			Magazine: 5
 			damage: 8
+			Ammo: 20
 			
 			
 			$5400"; 
 	o[22] = @"Machine Gun Upgrade
 			
 			
-			Description: Increases damage and magazine capacity
+			Description: Increases magazine capacity
 			
 			Magazine: 25 
-			damage: 0.8
 			    |
-			Magazine: 40
-			damage: 1.5
+			Magazine: 50
 			
 			
 			$5600"; 
@@ -4981,7 +4990,7 @@ function debrief(m)
 			
 			Press Spacebar to continue";
 	c[108] = @"Objectives Complete
-			Payout: $7700
+			Payout: $"+string(obj_suq.tempEarnMon)+@"
 			
 			Response From Hiring Firm:
 			Great job! You caught him, and he's been upgraded to a maximum security prison. Yellerteeth 
@@ -4989,7 +4998,7 @@ function debrief(m)
 			gambling rings for Monopoke cards. He may have been the smartest coocoo in the clock, but now
 			he's just a jaybird. 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You captured the convict and hurt Yellerteeth Inc's bottom line. This may affect your ability
@@ -4998,7 +5007,7 @@ function debrief(m)
 			
 			Press Spacebar to continue";
 	c[109] = @"Objectives Complete
-			Payout: $2500
+			Payout: $"+string(obj_suq.tempEarnMon)+@"
 			
 			Response From Hiring Firm:
 			Great job! Now, this isn't normally how we like to advertise our services, but with the extent
@@ -5006,7 +5015,7 @@ function debrief(m)
 			running illegal gambling rings for Monopoke cards. Dark stuff. We can't offer you the full
 			payment for not catching him, but here's something for the trouble. 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You killed the convict and hurt Yellerteeth Inc's bottom line. This may affect your ability
@@ -5022,7 +5031,7 @@ function debrief(m)
 			lousy mercenary? I guess you are. This hurts everyone's business except Yellerteeth Inc, and I
 			for one find that repulsive to have a Monopoke gambler on the loose. 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You failed to capture or kill the escaped convict. This will hurt Gildebrand Consulting's 
@@ -5031,7 +5040,7 @@ function debrief(m)
 			
 			Press Spacebar to continue";
 	c[111] = @"Objectives Complete
-			Payout: $7700
+			Payout: $"+string(obj_suq.tempEarnMon)+@"
 			
 			Response From Hiring Firm:
 			Great job! You caught him, and he's been upgraded to a maximum security prison. Yellerteeth 
@@ -5043,7 +5052,7 @@ function debrief(m)
 			Tirangle. It seems he was the one who broke him out of prison to cover up the evidence of his
 			next scheme. 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You captured the convict and hurt Yellerteeth Inc's bottom line. This may affect your ability
@@ -5053,7 +5062,7 @@ function debrief(m)
 			
 			Press Spacebar to continue";//found Tirangle's hints
 	c[112] = @"Objectives Complete
-			Payout: $2500
+			Payout: $"+string(obj_suq.tempEarnMon)+@"
 			
 			Response From Hiring Firm:
 			Great job! Now, this isn't normally how we like to advertise our services, but with the extent
@@ -5065,7 +5074,7 @@ function debrief(m)
 			Tirangle. It seems he was the one who broke him out of prison to cover up the evidence of his
 			next scheme. 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You killed the convict and hurt Yellerteeth Inc's bottom line. This may affect your ability
@@ -5081,7 +5090,7 @@ function debrief(m)
 			You saved all three hostages! And now we know exactly where he'll be next. This lunatic will
 			finally be brought to justice. 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You saved the hostages and now have one last thing to do. Gildebrand Consulting will be 
@@ -5096,7 +5105,7 @@ function debrief(m)
 			You saved all three hostages! That's fantastic news. I really wished we could have found his
 			current location as well, but I guess that wasn't in the cards for us this time. Dang! 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You saved the hostages, but the trail for Tirangle has gone cold. It looks like he's gotten
@@ -5111,7 +5120,7 @@ function debrief(m)
 			You couldn't save all the hostages, but you at least found out where he'll be next. We can get
 			him next time and stop him for good! 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You only saved some of the hostages, but at least you found out where Tirangle will be next. 
@@ -5127,7 +5136,7 @@ function debrief(m)
 			sucks, and it's especially bad because we couldn't find any clues to Tirangle's wherabouts. It 
 			looks like he's bested us for good. 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You saved some of the hostages, but didn't find any clues to Tirangle's current location. The
@@ -5142,7 +5151,7 @@ function debrief(m)
 			You couldn't save any of the hostages!? That's awful! I hoped you were better at your job. At
 			least we found out the location of where he's going next. We can get him there. 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You couldn't save the hostages, but you found out where Tirangle will be next. Gildebrand 
@@ -5158,7 +5167,7 @@ function debrief(m)
 			couldn't even figure out where Tirangle will be after this. That means the trail's gone cold,
 			and he'll never be brought to justice! You are a despicable person. 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You couldn't save the hostages, and you couldn't even get information about Tirangle's next
@@ -5173,7 +5182,7 @@ function debrief(m)
 			You saved all three hostages! And now we know exactly where he'll be next. This lunatic will
 			finally be brought to justice. 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You saved the hostages and now have one last thing to do. Gildebrand Consulting will be 
@@ -5189,7 +5198,7 @@ function debrief(m)
 			couldn't even figure out where Tirangle will be after this. That means the trail's gone cold,
 			and he'll never be brought to justice! You are a despicable person. 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You couldn't save the hostages, and you couldn't even get information about Tirangle's next
@@ -5209,7 +5218,7 @@ function debrief(m)
 			Tirangle. It seems he was the one who broke him out of prison to cover up the evidence of his
 			next scheme. 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You failed to capture or kill the escaped convict. This will hurt Gildebrand Consulting's 
@@ -5225,7 +5234,7 @@ function debrief(m)
 			You did it... It's finally over! The greatest villain in all of the world has finally been 
 			stopped. You did good. You deserve everything amazing in the world. 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You ended the reign of the great Tirangle. The world can rest a little easier knowing he's 
@@ -5241,7 +5250,7 @@ function debrief(m)
 			can't believe it. I told you not to trust him! What more can I do? Now he's off galavanting on
 			an island somewhere living it up when he should be dead! Gah! You sicken me. 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You decided against killing Tirangle. Only you know the reason why and if you regret it.  
@@ -5257,7 +5266,7 @@ function debrief(m)
 			thank you for the help. I hope your heart has changed and feels for the people fighting for 
 			their lives. Best of luck to you, Suqare. 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You saved some civilians and bolstered the Resistance Forces. Who knows how much of a 
@@ -5275,7 +5284,7 @@ function debrief(m)
 			most evil anymore. You are. You have become the scurge of the world. I hope you can live with
 			your choices, and I hope you don't live that long. 
 			
-			Current standing with Gildebrand Consulting"+string(obj_suq.gildebrand)+@"
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
 			
 			Result:
 			You didn't save a single civilian, and the Resistance is in the same place that it was in 
@@ -5293,7 +5302,7 @@ function debrief(m)
 			control over everything financial. Some people might not be able to be financially stable
 			anymore, but it's a small price to pay to give us even more money. 
 			
-			Current standing with Perez Holdings"+string(obj_suq.perez)+@"
+			Current standing with Perez Holdings: "+string(obj_suq.perez)+@"
 			
 			Result:
 			Perez Holdings has become the national bank. There are many against it, and there will be
@@ -5309,7 +5318,7 @@ function debrief(m)
 			the country. We'll have to think of another plan. You will not be a part of it. Never show 
 			your face around here again. We're done with you. 
 			
-			Current standing with Perez Holdings"+string(obj_suq.perez)+@"
+			Current standing with Perez Holdings: "+string(obj_suq.perez)+@"
 			
 			Result:
 			You weren't able to plant the evidence secretly, so Perez Holdings will have to stay a large
@@ -5325,7 +5334,7 @@ function debrief(m)
 			never know what hit em. Hiring you has been a small price to pay for all this. Maybe we'll
 			give you a discount if you ever need a loan. 
 			
-			Current standing with Perez Holdings"+string(obj_suq.perez)+@"
+			Current standing with Perez Holdings: "+string(obj_suq.perez)+@"
 			
 			Result:
 			Perez Holdings is the permanent National Bank with no one to oppose them. The government is
@@ -5343,7 +5352,7 @@ function debrief(m)
 			problem. You are the worst mercenary we've ever seen! You were so promising, and now we know
 			that you're basically a fraud. 
 			
-			Current standing with Perez Holdings"+string(obj_suq.perez)+@"
+			Current standing with Perez Holdings: "+string(obj_suq.perez)+@"
 			
 			Result:
 			You failed to find and kill the leader in time, and Perez Holdings has been kicked out of the
@@ -5359,10 +5368,11 @@ function debrief(m)
 			
 			
 			Result:
-			Your money has changed by: " + string(obj_suq.r37) + @" dollars. 
+			You've earned: " + string(obj_suq.r37) + @" dollars. 
 			
 			Tirangle has struck again. He's known for playing games and causing problems for fun. He's
-			wanted in 73 countries for his antics. 
+			wanted in 73 countries for his antics. You're lucky he didn't play a game with your life.
+			
 			
 			
 			Press Spacebar to continue";
@@ -5374,7 +5384,7 @@ function debrief(m)
 			being. We'll come back with an idea to put them down for good. For now, though, great job with
 			this. 
 			
-			Current standing with Hiertech"+string(obj_suq.hiertech)+@"
+			Current standing with Hiertech: "+string(obj_suq.hiertech)+@"
 			
 			Result:
 			Ungulate Studios will be reeling from this. Their CEO has been leading them well for the last
@@ -5392,7 +5402,7 @@ function debrief(m)
 			kill him during the race, so somebody noticed and reported it. We're being investigated now,
 			and that won't be good for out bottom line. I wish you could just do you job right. 
 			
-			Current standing with Hiertech"+string(obj_suq.hiertech)+@"
+			Current standing with Hiertech: "+string(obj_suq.hiertech)+@"
 			
 			Result:
 			Ungulate Studios will be reeling from this. Their CEO has been leading them well for the last
@@ -5409,7 +5419,7 @@ function debrief(m)
 			You couldn't kill him!? Are you a moron? Can you not follow directions? If only we could just
 			end the whole company. That might be what we try to do next. 
 			
-			Current standing with Hiertech"+string(obj_suq.hiertech)+@"
+			Current standing with Hiertech: "+string(obj_suq.hiertech)+@"
 			
 			Result:
 			You failed to kill Ungulate Studios' CEO, and now Hiertech has set its sights on ending the
@@ -5424,7 +5434,7 @@ function debrief(m)
 			You cleared out their defenses, and Ungulate is finally no more! We're free to do as we please.
 			You have been a huge help in keeping crime on the rise. Cheers to criminal activity! 
 			
-			Current standing with Hiertech"+string(obj_suq.hiertech)+@"
+			Current standing with Hiertech: "+string(obj_suq.hiertech)+@"
 			
 			Result:
 			Ungulate Studios is done for, and Hiertech is finally able to do whatever they want without
@@ -5439,7 +5449,7 @@ function debrief(m)
 			You are the absolute worst mercenary ever! How could you do this to us!? I hope you die in a
 			small hole. 
 			
-			Current standing with Hiertech"+string(obj_suq.hiertech)+@"
+			Current standing with Hiertech: "+string(obj_suq.hiertech)+@"
 			
 			Result:
 			You failed to clear out the defenses, and Hiertech is stuck with a major rival still left in
@@ -5453,7 +5463,7 @@ function debrief(m)
 			Response From Hiring Firm:
 			You saved them all! I knew we could count on you to get the job done cleanly and effectively. 
 			
-			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
 			
 			Result:
 			The wrongly convicted inmates were put into a protection program to keep them safe from the 
@@ -5468,7 +5478,7 @@ function debrief(m)
 			Well, you couldn't save them all, but you made a valiant effort. Nice job not killing any of
 			the guards. That's the trickiest part. 
 			
-			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
 			
 			Result:
 			The wrongly convicted inmates you ended up rescuing were put into a protection program to keep
@@ -5483,7 +5493,7 @@ function debrief(m)
 			I thought you would be able to get at least one inmate out! Ugh, this is awful. How could you
 			be so incompetent?
 			
-			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
 			
 			Result:
 			You weren't able to save the inmates, so they will be stuck in prison till the day they die
@@ -5498,7 +5508,7 @@ function debrief(m)
 			I don't even care if you saved any inmates. You're worse than anyone for killing the innocent
 			guards of the prison! I hate all you stand for. 
 			
-			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
 			
 			Result:
 			You killed at least one guard in the prison, and that made everything else you did become moot.
@@ -5512,7 +5522,7 @@ function debrief(m)
 			I can't believe it. You actually won! This has never happened before! The whole town will be
 			living it up for at least one more year thanks to you! 
 			
-			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
 			
 			Result:
 			You saved the desert town from certain doom, but you definitely angered Hiertech since they 
@@ -5528,7 +5538,7 @@ function debrief(m)
 			Hiertech's racers are just too good, and their cars are new. This town will most likely be
 			long gone before next year's race. I really hoped we could save them this year. 
 			
-			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
 			
 			Result:
 			You were too slow in the Water Race, so whoever paid for Hiertech to race for them won once
@@ -5578,7 +5588,7 @@ function debrief(m)
 			way. You broke the rules and didn't win the race. Sorry to say, nothing changes, and we get
 			disqualified. 
 			
-			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
 			
 			Result:
 			Your interesting methods of winning didn't pan out for you or the desert town. The residents
@@ -5593,7 +5603,7 @@ function debrief(m)
 			That was interesting... All of the cars are destroyed now. What did you think that would 
 			accomplish? We're disqualified from the race for life now. 
 			
-			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
 			
 			Result:
 			Your interesting methods of winning didn't pan out for you or the desert town. The residents
@@ -5649,7 +5659,7 @@ function debrief(m)
 			a better place instead of a smelly, old, crime-ridden piece of crap we were headed towards. 
 			Fantastic job, Suqare. 
 			
-			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
 			
 			Result:
 			With the destruction of Hiertech's black market, their stocks will plummet quickly and with a
@@ -5665,7 +5675,7 @@ function debrief(m)
 			not finish it. Maybe you were scared, or maybe you just wanted to make sure no one else could
 			take the job to protect your precious Hiertech. Either, you disgust me! 
 			
-			Current standing with Ungulate Studios"+string(obj_suq.ungulate)+@"
+			Current standing with Ungulate Studios: "+string(obj_suq.ungulate)+@"
 			
 			Result:
 			Your failure to end Hiertech for good has made Ungulate's operations harder to run day after
@@ -5673,8 +5683,37 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";
-	c[152] = @"";
-	c[153] = @"";
+	c[152] = @"Objectives Complete
+			Payout: $1500
+			
+			Response From Hiring Firm:
+			We had to be tried for our possible involvement in the break in recently, but we were found
+			not guilty! We've lowered our reward for you since you put us through all this trouble, but
+			we're finally able to move forward with our plan. 
+			
+			Current standing with Perez Holdings: "+string(obj_suq.perez)+@"
+			
+			Result:
+			Perez Holdings has become the national bank. There are many against it, and there will be
+			repercussions from this. But, for now, Perez Holdings will bask in their victory. 
+			
+			
+			Press Spacebar to continue";//lvl 35 extra
+	c[153] = @"Objectives Complete
+			Payout: $0
+			
+			Response From Hiring Firm:
+			We had to be tried for our possible involvement in the break in recently, and we were found
+			guilty! That means no amount of falsified evidence can help us now. You've ruined our plans! 
+			
+			Current standing with Perez Holdings: "+string(obj_suq.perez)+@"
+			
+			Result:
+			You weren't able to plant the evidence without setting off alarms, so Perez Holdings will have
+			to stay a measly large bank instead of the National bank for the time being. 
+			
+			
+			Press Spacebar to continue";
 	c[154] = @"";
 	c[155] = @"";
 	c[156] = @"";

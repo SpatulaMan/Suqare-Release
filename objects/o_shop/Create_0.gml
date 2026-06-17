@@ -129,7 +129,7 @@ if(obj_suq.armorlvl5Have == 1)
 if(obj_suq.minegAmt >= 60) { r1c2.image_index = 2; }
 if(obj_suq.minesAmt >= 60) { r2c1.image_index = 2; }
 if(obj_suq.lock30 >= 60) { r2c2.image_index = 2; }
-if(obj_suq.lock50 >= 9) { r3c1.image_index = 2; }
+if(obj_suq.lock50 >= 20) { r3c1.image_index = 2; }
 
 if(obj_suq.attackTur >= 10) { r11c1.image_index = 2; }
 if(obj_suq.defenseTur >= 10) { r11c2.image_index = 2; }

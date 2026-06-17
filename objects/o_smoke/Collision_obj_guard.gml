@@ -1,5 +1,5 @@
 /// @description 
-if(!instance_exists(obj_ninja_bosses) and !instance_exists(o_vandal))
+if(!instance_exists(obj_ninja_bosses) and !instance_exists(o_vandal) and room != r_lvl_34)
 {
 	if(other.sprite_index != s_turretE and other.sprite_index != s_turretT_1)
 	{

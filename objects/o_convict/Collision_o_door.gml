@@ -1,3 +1,3 @@
 /// @description
 activeDoor = other.id;
-alarm_set(9,60);
+alarm_set(9,30);

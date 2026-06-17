@@ -1,5 +1,5 @@
 /// @description
-if(instance_exists(o_ePBul) or instance_number(obj_guard_patrol) < 8)
+if(instance_number(obj_guard_patrol) < 8)
 {
 	o2 = false;
 }

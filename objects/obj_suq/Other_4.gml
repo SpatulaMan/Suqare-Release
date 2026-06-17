@@ -75,6 +75,14 @@ if(room == r_armory and instance_exists(o_armory))
 	}
 	ninjaBenefit = 0;
 	hazmat = false;
+	if(o_saveload.trick == true) 
+	{ 
+		o_saveload.moneyT -= 10000; 
+		var inst = instance_create_layer(obj_suq.x,obj_suq.y,"Instances_Action",o_conversation);
+		inst.h = 128;
+		o_saveload.trick = false;
+		showMoney = 360;
+	}
 	if(!gunRange) { money = floor(o_saveload.moneyT); }
 	else { gunRange = false; }
 	if(o_armory.roomStartCheck == false)

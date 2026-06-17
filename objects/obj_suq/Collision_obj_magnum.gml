@@ -1,3 +1,5 @@
+if(mmr < 6) { mMax = 20; }
+else { mMax = 30; }
 if(!heavyband)
 {
 	if(gunNum < gunMax and magnumHave == 0)
@@ -8,16 +10,16 @@ if(!heavyband)
 		if(!audio_is_playing(snd_knifespin)) then audio_play_sound(snd_knifespin,5,false,o_saveload.sfxvol);
 	    with (other) instance_destroy();
 	}
-	else if(magnumHave == 1 and ((magnumAmt+mMag) < ((ammoUp*30)+mmr)))
+	else if(magnumHave == 1 and ((magnumAmt+mMag) < ((ammoUp*mMax)+mmr)))
 	{
 		if(!audio_is_playing(snd_knifespin)) then audio_play_sound(snd_knifespin,5,false,o_saveload.sfxvol);
 		magnumAmt += other.Amt;	
 		with (other) instance_destroy();
 	}
-	if((magnumAmt+mMag) > ((ammoUp*30)+mmr))
+	if((magnumAmt+mMag) > ((ammoUp*mMax)+mmr))
 	{
 		if(!audio_is_playing(snd_knifespin)) then audio_play_sound(snd_knifespin,5,false,o_saveload.sfxvol);
-		magnumAmt = (ammoUp*30)+(mmr-mMag);
+		magnumAmt = (ammoUp*mMax)+(mmr-mMag);
 	}
 	if(gunEquip == 0 and knifeHave != 1)
 	{

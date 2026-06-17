@@ -8,7 +8,8 @@ drive = false;
 catchTime = 0;
 catchNeed = 60;
 activeDoor = noone;
-spd = 1.5;
+doorCount = 0;
+spd = 2.1;
 four = 0;
 path_check = false;
 search_check = false;
@@ -39,7 +40,7 @@ if(room == r_lvl_31)
 patrol_check = false;
 check = false; //final check
 var _p = choose(Path70,Path71,Path72);
-path_start(_p, 1.8, path_action_restart, true);
+path_start(_p, spd, path_action_restart, true);
 switch(_p)
 {
 	case Path70: instance_create_layer(1735,215,"Instances_Action",o_badCar); break;

@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_suq",
+    "path":"sprites/s_suq/s_suq.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
