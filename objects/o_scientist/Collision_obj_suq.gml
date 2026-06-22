@@ -16,3 +16,4 @@ if(room == r_lvl_13)
 		spawnCheck = true;
 	}
 }
+if(ar != noone and instance_exists(ar) == true) { with (ar) instance_destroy(); }

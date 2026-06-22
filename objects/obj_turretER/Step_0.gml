@@ -83,10 +83,10 @@ if((_wallsee and _doorsee) or check == true or (_wallseed and _doorseed) or (_wt
 		if(weapon_type == obj_magnum) then { audio_play_sound(snd_magnum,4,false,o_saveload.sfxvol); alarm_set(5,40); }
 		if(weapon_type == obj_machineGun)
 		{ 
-			audio_play_sound(snd_laser,1,false,o_saveload.sfxvol); 
+			if(distance_to_object(obj_suq) < 360) { audio_play_sound(snd_laser,1,false,o_saveload.sfxvol); }
 			bulamt++;
-			if(bulamt < 25) { shtspd = 10; }
-			else if(bulamt > 25) { bulamt = 0; shtspd = 80; }
+			if(bulamt <= 10) { shtspd = 10; }
+			else if(bulamt > 10) { bulamt = 0; shtspd = 80; }
 		}
 	    instance_create(x,y,o_gunSound);
 		shootCheck = shtspd;
@@ -97,8 +97,11 @@ if((_wallsee and _doorsee) or check == true or (_wallseed and _doorseed) or (_wt
 		if(weapon_type == obj_pistol) 
 		{ 
 			Bulg.sprite_index = spr_suqRLBul;
-			audio_play_sound(snd_fire,1,0,o_saveload.sfxvol,0,random_range(.7,.8));
-			audio_play_sound(snd_heavygun,1,0,o_saveload.sfxvol,0,random_range(.5,.6));
+			if(distance_to_object(obj_suq) < 360) 
+			{ 
+				audio_play_sound(snd_fire,1,0,o_saveload.sfxvol,0,random_range(.7,.8));
+				audio_play_sound(snd_heavygun,1,0,o_saveload.sfxvol,0,random_range(.5,.6));
+			}
 		}
 	}
 }

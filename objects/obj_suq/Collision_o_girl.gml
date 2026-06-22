@@ -1,5 +1,5 @@
 if(pickup_timer <= 0 and girlcheck == true and room != r_lvl_13 and room != r_lvl_17 and 
-room != r_lvl_50 and room != r_lvl_36)
+room != r_lvl_50 and room != r_lvl_36 and room != r_lvl_38)
 {
 	randomize();
 	pickup_item = choose(29,30,31,32);

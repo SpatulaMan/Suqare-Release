@@ -13,3 +13,6 @@ revC = instance_create_layer(x,y,"Instances_Action",o_fwd);
 ch = false;
 c = 0;
 dis = false;
+o1 = false;
+o2 = false; 
+o3 = false;

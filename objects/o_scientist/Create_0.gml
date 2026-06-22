@@ -14,6 +14,7 @@ fCheck = false;
 wallCheck = false;
 spawnCheck = false;
 sciCheck = false;
+ar = noone;
 randomize();
 if(room == r_lvl_44 or room == r_lvl_38)
 {

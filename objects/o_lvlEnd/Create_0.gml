@@ -1,5 +1,6 @@
 image_speed = 0;
-if(room == r_lvl_7 or room == r_lvl_8) { image_index = 2; }
+if(room == r_lvl_7 or room == r_lvl_8 or room == r_lvl_23 or room == r_lvl_50 or
+room == r_lvl_49) { image_index = 2; }
 success = false;
 x1 = 376;
 y1 = 497;

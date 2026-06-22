@@ -1,11 +1,11 @@
 /// @description
-if(!instance_exists(o_suqCarT) and !check)
+/*if(!instance_exists(o_suqCarT) and !check)
 {
-	if(o1) { o1 = false; }
-	if(o2) { o2 = false; }
-	if(o3) { o3 = false; }
-}
-if(distance_to_object(o_lvlEnd) > 1500) 
+	if(o_suqCarT.o1) { o1 = false; }
+	if(o_suqCarT.o2) { o2 = false; }
+	if(o_suqCarT.o3) { o3 = false; }
+}*/
+if(distance_to_object(obj_suq) > 1500) 
 { 
 	if(instance_exists(inst_DF18CBA))
 	{

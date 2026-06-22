@@ -1693,6 +1693,7 @@ function scr_levelEnd(car,range_optional)
 			} break;
 			case r_lvl_38:
 			{
+				if(instance_exists(o_checkpoint)) { with (o_checkpoint) instance_destroy(); }
 				obj_suq.lvldone[obj_suq.lvl] = true;
 				o_saveload.gnet += 2;
 				o_saveload.knet -= 2;
