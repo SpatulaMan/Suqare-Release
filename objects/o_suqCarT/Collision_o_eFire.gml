@@ -1,3 +1,3 @@
 /// @description
-hp -= (other.damage)/16;
-with (other) instance_destroy();
+hp -= (other.damage)/100;
+//with (other) instance_destroy();

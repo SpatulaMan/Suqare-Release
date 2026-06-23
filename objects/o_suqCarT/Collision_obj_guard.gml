@@ -1,3 +1,6 @@
 /// @description
-with (other) { hp -= 32; }
-hp--;
+if(speed > 1)
+{
+	with (other) { hp -= 32; }
+	hp--;
+}

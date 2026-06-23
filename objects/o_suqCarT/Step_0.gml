@@ -1,9 +1,11 @@
 /// @description
-fwdC.x = x + lengthdir_x(60,image_angle);
-fwdC.y = y + lengthdir_y(60,image_angle);
+fwdC.x = x + lengthdir_x(48,image_angle);
+fwdC.y = y + lengthdir_y(48,image_angle);
 
-revC.x = x + lengthdir_x(60,image_angle-180);
-revC.y = y + lengthdir_y(60,image_angle-180);
+revC.x = x + lengthdir_x(48,image_angle-180);
+revC.y = y + lengthdir_y(48,image_angle-180);
+fwdC.image_angle = image_angle+90;
+revC.image_angle = image_angle+90;
 if(driver and !leave)
 {
 	obj_suq.x = x;

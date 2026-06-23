@@ -1701,12 +1701,12 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.ynet += 2;
 				o_saveload.unet -= 2;
 				o_saveload.hnet -= 3;
-				if(o_lvl38.o1 == true and o_lvl38.o2 == true and o_lvl38.o3 == true and o_lvl38.o4 == true)
+				if(o_lvl38.o1 == true and o_lvl38.o2 == true and o_lvl38.o3 == true)
 				{
 					obj_suq.report = 147;
 					o_saveload.moneyT += 10500;
 				}//all
-				else if((o_lvl38.o1 == true or o_lvl38.o2 == true or o_lvl38.o3 == true) and o_lvl38.o4 == true)
+				else if(o_lvl38.o1 == true or o_lvl38.o2 == true or o_lvl38.o3 == true)
 				{
 					obj_suq.report = 148;
 					o_saveload.moneyT += 3600;
