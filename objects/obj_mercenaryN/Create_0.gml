@@ -20,3 +20,4 @@ ar.y1 = y;
 shtcnt = 0;
 shtspd = 30;
 pchCount = 1;
+dare = 0;

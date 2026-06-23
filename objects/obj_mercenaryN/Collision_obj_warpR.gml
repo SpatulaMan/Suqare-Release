@@ -1,5 +1,5 @@
 cCount++;
-if(pch == 1 and cCount == 1)
+/*if(pch == 1 and cCount == 1)
 {
 	if(instance_exists(o_tarpho))
 	{
@@ -11,7 +11,7 @@ if(pch == 1 and cCount == 1)
 		cCount++;
 	}
 }
-else if(pch == 1 and cCount == 2)
+if(pch == 1 and cCount == 2)
 {
 	x4 = 2409;
 	y4 = 249;
@@ -45,7 +45,7 @@ if(pch == 3 and cCount == 1)
 		cCount++;
 	}
 }
-else if(pch == 3 and cCount == 2)
+if(pch == 3 and cCount == 2)
 {
 	x4 = 615;
 	y4 = 1622;
@@ -62,7 +62,7 @@ if(pch == 4 and cCount == 1)
 		cCount++;
 	}
 }
-else if(pch == 4 and cCount == 2)
+if(pch == 4 and cCount == 2)
 {
 	x4 = 2832;
 	y4 = 1817;
@@ -79,7 +79,7 @@ if(pch == 5 and cCount == 1)
 		cCount++;
 	}
 }
-else if(pch == 5 and cCount == 2)
+if(pch == 5 and cCount == 2)
 {
 	x4 = 1961;
 	y4 = 1817;

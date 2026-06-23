@@ -160,8 +160,15 @@ switch(room)
 	if(o_lvl38.o4) { obj4 = true; } 
 	break;
 	
-	case r_lvl_39: t = 185; o1 = 188; b = scr_briefing(t); ot1 = scr_briefing(o1); image_index = 0;
-	if(o_lvl39.o1) { obj1 = true; } break;
+	case r_lvl_39: t = 185; o1 = 188; o2 = 261; o3 = 262; o4 = 263; o5 = 264; o6 = 265; b = scr_briefing(t); ot1 = scr_briefing(o1); ot2 = scr_briefing(o2); ot3 = scr_briefing(o3); 
+	ot4 = scr_briefing(o4); ot5 = scr_briefing(o5); ot6 = scr_briefing(o6); image_index = 5;
+	if(o_lvl39.o1) { obj1 = true; }
+	if(o_lvl39.o2) { obj2 = true; }
+	if(o_lvl39.o3) { obj3 = true; }
+	if(o_lvl39.o4) { obj4 = true; }
+	if(o_lvl39.o5) { obj5 = true; }
+	if(o_lvl39.o6) { obj6 = true; }
+	break;
 	
 	case r_lvl_40: t = 245; o1 = 248; b = scr_briefing(t); ot1 = scr_briefing(o1); image_index = 0;
 	if(o_lvl40.o1) { obj1 = true; } break;

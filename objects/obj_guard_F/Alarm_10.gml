@@ -109,7 +109,7 @@ switch(wc)
 	weapon_type = obj_pistol;
 	drop_gun = false;
 	shtspd = 10;
-	hp = 16;
+	hp = 32;
 	break;
 }
 start = true;

@@ -7,3 +7,6 @@ instance_create(x,y,o_eFireSH);
 instance_create(x,y,o_eFireSH);
 instance_create(x,y,o_eFireSH);
 instance_create(x,y,o_eFireSH);
+x4 = 1957;
+y4 = 1817;
+cCount++;

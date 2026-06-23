@@ -1449,7 +1449,12 @@ function scr_briefing(t){
 			
 			
 			(Press Spacebar to Accept)";
-	a[188] = @"Defend Stuff";
+	a[188] = @"Defend Amulet";
+	a[261] = @"Defend Ring";
+	a[262] = @"Defend Jewel";
+	a[263] = @"Defend Vambrace";
+	a[264] = @"Defend Eye";
+	a[265] = @"Kill All Ninjas";
 	a[189] = @"BRIEFING:
 			Please come to my son's 12th birthday party. We'll have a
 			special guest that's made up of the ninja artifacts for 
@@ -2466,8 +2471,8 @@ function scr_conversation(t)
 			
 			Press Spacebar to sell";//yellerteeth - Ninja memorabilia to sell or not
 	a[90] = @"We really like you, and we appreciate all you've done for us. But, we don't have much to give you. We know you
-			use a certain type of armor that can sometimes be found in blue crates, so we've made sure to ship more blue crates
-			that have a greater rate of dropping armor everywhere. 
+			use a certain type of armor that can sometimes be found in blue crates, so we've made sure to ship blue crates that
+			have a greater rate of dropping armor everywhere. 
 			
 			I know it doesn't make sense, but just level with me here. It's the best I got. ";//gildebrand - Spawn Armor more often
 	a[91] = @"Ungulate Studios is so grateful for your help. We'd like to give you a gift of a robot companion that we found.

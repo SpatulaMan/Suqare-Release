@@ -2,7 +2,13 @@ var pd = 0;
 var ad = 0;
 if(room != r_lvl_43)
 {
-	if(((x < 1900 and obj_suq.x < 1900) or (x > 1900 and obj_suq.x > 1900)) and distance_to_object(ar) > 80)
+	if(room == r_lvl_39 and ((obj_suq.x < 1200 and obj_suq.y < 1200 and x < 1200 and y < 1200) or ((obj_suq.x > 1200 or obj_suq.y > 1200) and distance_to_object(obj_suq) < 500)))
+	{
+		ar.x1 = x;
+		ar.y1 = y;
+		ar.image_alpha = 1;
+	}
+	else if(room != r_lvl_39 and ((x < 1900 and obj_suq.x < 1900) or (x > 1900 and obj_suq.x > 1900)) and distance_to_object(ar) > 80)
 	{
 		ar.x1 = x;
 		ar.y1 = y;
@@ -133,7 +139,6 @@ if(search_check == false and spin_check)
 	spin_check = false;
 	alarm_set(0,1);
 }
-if(spin_check == false) then weapon.image_angle += a;
 
 if(hp < hpc)
 {
@@ -142,7 +147,7 @@ if(hp < hpc)
 	if(hit == true)
 	{
 		_inst = instance_create_layer(x,y,"Instances_Action",o_hurt);
-		_inst.sprite_index = s_hurt_2;
+		_inst.sprite_index = s_hurt_1;
 	}
 	if(place_meeting(x,y,o_hurt))
 	{

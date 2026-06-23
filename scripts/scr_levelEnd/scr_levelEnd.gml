@@ -1203,7 +1203,7 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.gnet -= 2;
 				o_saveload.unet += 2;
 				o_saveload.hnet -= 3;
-				if(o_lvl39.o1)
+				if(o_lvl39.o6 and o_lvl39.o1 and o_lvl39.o2 and o_lvl39.o3 and o_lvl39.o4 and o_lvl39.o5)
 				{
 					o_saveload.moneyT += 8400*_emtBill;
 					obj_suq.report = 101;
@@ -1211,7 +1211,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.yellerteeth += 3;
 					obj_suq.artifacts = 1;
 				}
-				else if(instance_exists(obj_mercenaryN) and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye)
+				else if((instance_exists(obj_mercenaryN) or o_lvl39.o6) and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye)
 				{
 					o_saveload.ynet -= 30;
 					obj_suq.report = 102;
@@ -1224,7 +1224,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.yellerteeth -= 4;
 					obj_suq.artifacts = 2;
 				}
-				else if(instance_exists(obj_mercenaryN) and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and 
+				else if(obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and 
 					(!instance_exists(o_hecto) or !instance_exists(o_tarpho) or !instance_exists(o_jewel) or !instance_exists(o_vambrace) or !instance_exists(o_eye)))
 				{
 					o_saveload.ynet -= 30;
