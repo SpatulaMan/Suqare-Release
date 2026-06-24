@@ -1925,7 +1925,7 @@ function scr_briefing(t){
 			
 			The moment you get into one of the 3 car options, the time
 			will start. Follow the arrows to the checkpoints and finish
-			one lap around.";
+			3 laps around the course.";
 	a[246] = @"Time Trial Course";
 	a[247] = @"Mission: Time Trial
 			
@@ -1949,7 +1949,7 @@ function scr_briefing(t){
 			
 			
 			(Press Spacebar to Accept)";
-	a[248] = @"Set Record";
+	a[248] = @"Finish Race";
 	a[249] = @"BRIEFING:
 			We need help! I've got 3 guys trapped in the middle of a 
 			fight they can't hope to win. I want you to go in with our
@@ -2646,6 +2646,18 @@ function scr_conversation(t)
 	a[144] = @"How's that backspace treating you?";
 	a[145] = @"Any other ideas?";
 	a[146] = @"Oh, you got me. I guess I should let you go this time - psych!";
+	a[147] = @"Maphda Jazzy Stats:
+			Top Speed     - 00000000------
+			Acceleration - 00000000000---
+			Handling      - 00000000000000";
+	a[148] = @"Jork Gallop Stats:
+			Top Speed     - 00000000000000
+			Acceleration - 000000000-----
+			Handling      - 0000000000----";
+	a[149] = @"Hoypoka Whale Stats:
+			Top Speed     - 00000000000---
+			Acceleration - 00000000000000
+			Handling      - 00000000------";
 			
 	return a[t];
 }
@@ -3245,7 +3257,7 @@ function buttons(q)
 	b[35] = @"Turn Left";
 	b[36] = @"Turn Right";
 	b[37] = @"Brake";
-	b[38] = @"Exit Vehicle";
+	b[38] = @"Exit Vehicle/Reposition Stuck Vehicle";
 	
 	return b[q];
 }

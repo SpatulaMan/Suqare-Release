@@ -638,5 +638,6 @@ if(pickup_timer > 0)
 		case 76: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("800080"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;//purple
 		case 77: draw_text_transformed_colour(roomw/2,roomh*.65,string_hash_to_newline("008080"),3,3,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;//teal
 		case 78: draw_text_transformed_colour(roomw/2,roomh*.5,string_hash_to_newline("YOU WIN!"),4,4,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;//teal
+		case 80: draw_text_transformed_colour(roomw/2,roomh*.5,string_hash_to_newline("PRESS E TO MOVE CAR"),4,4,0,c_white,c_white,c_white,c_white,pickup_timer/90); break;//teal
 	}
 }

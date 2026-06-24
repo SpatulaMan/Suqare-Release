@@ -158,5 +158,5 @@ knkrwins = false;
 armycount = 0;
 trick = false;
 ceo = false;
-rec = 300;
+rec = 1500;
 ending = 0;

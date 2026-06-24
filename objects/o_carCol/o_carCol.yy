@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"o_checkP",
+  "%Name":"o_carCol",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"o_suqCarT","path":"objects/o_suqCarT/o_suqCarT.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_checkP",
+  "name":"o_carCol",
   "overriddenProperties":[],
   "parent":{
-    "name":"lvl40",
-    "path":"folders/Objects/lvlmechs/lvl40.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_safety",
-    "path":"sprites/s_safety/s_safety.yy",
+    "name":"s_carCol",
+    "path":"sprites/s_carCol/s_carCol.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,7 +1,7 @@
 /// @description
-if(other.c == c-1) 
+if(o_suqCarT.c == c-1 and !colcheck) 
 { 
-	other.c = c; 
+	o_suqCarT.c = c; 
 	if(instance_exists(o_arrow_1)) { with (o_arrow_1) instance_destroy(); }
 	switch(c)
 	{
@@ -42,6 +42,9 @@ if(other.c == c-1)
 				ar.y1 = inst_6B78FC52.y+160;
 			} break;		
 	}
-	instance_destroy(); 
+	visible = false;
+	o_lvl40.checkpoint++;
+	colcheck = true;
+	//instance_destroy(); 
 }
 

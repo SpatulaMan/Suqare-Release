@@ -1,5 +1,9 @@
-ml--
+//ml--
 rec++;
+recml++;
+if(recml > 9) { recs++; recml = 0; }
+if(recs > 59) { recm++; recs = 0; } 
+if(recm == 9 and recs == 59 and recml == 9) { start = false; }
 if(ml < 0)
 {
 	s--;
@@ -11,7 +15,7 @@ if(s < 0)
 	s = 59;
 }
 
-if!(ml == 0 and s == 0 and m == 0)
+if(start)
 {
 	alarm_set(1,6);
 }

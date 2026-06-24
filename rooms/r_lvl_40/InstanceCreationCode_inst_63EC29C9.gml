@@ -1,4 +1,4 @@
 image_blend = c_lime;
-topspd = 5;
-acc = .02;
-turn = 3;
+topspd = 8;
+acc = .033;
+turn = 3.5;

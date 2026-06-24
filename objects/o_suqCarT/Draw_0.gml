@@ -1,4 +1,5 @@
 /// @description
+draw_self();
 if(room == r_lvl_38)
 {
 	var _blue = make_color_rgb(0,255,255);

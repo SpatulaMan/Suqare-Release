@@ -1677,19 +1677,19 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.ynet -= 2;
 				o_saveload.unet += 2;
 				o_saveload.hnet += 3;
-				if(o_lvl40.o1 == true)
+				if(o_lvl40.o1 == true and o_lvl40.rec == o_saveload.rec)
 				{
 					obj_suq.report = 142;
 					o_saveload.moneyT += 2000;
 				}//win
-				else if(o_saveload.rec < 300)
+				else if(o_lvl40.o1 == true and o_saveload.rec < 1500)
 				{
 					obj_suq.report = 144;
-				}//lose
+				}//lose to your own record
 				else
 				{
 					obj_suq.report = 143;
-				}
+				}//lose
 			} break;
 			case r_lvl_38:
 			{

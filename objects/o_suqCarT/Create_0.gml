@@ -16,3 +16,5 @@ dis = false;
 o1 = false;
 o2 = false; 
 o3 = false;
+vischeck = false;
+col = noone;
