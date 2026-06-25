@@ -2,6 +2,11 @@
 weapon.x = x;
 weapon.y = y;
 turretTime--;
+ar.image_alpha -= 0.03;
+if(ar.image_alpha <= 0) { ar.image_alpha = 0; }
+if(vis) { ar.image_alpha = 1; vis = false; }
+ar.x1 = x;
+ar.y1 = y;
 var pd = 0;
 var ad = 0;
 if(!path_exists(path))

@@ -1,5 +1,4 @@
 /// @description
-alarm_set(6,120);
 shtspd = 60;
 shootCheck = shtspd;
 four = 0;
@@ -16,7 +15,7 @@ keyimage = 0;
 hpc = 0;
 hpt = 0;
 hitbool = false;
-spd = 1;
+spd = 1.8;
 if(room == r_lvl_2)
 {
 	access = true;
@@ -32,7 +31,7 @@ check = false; //final check
 path = path_add();
 
 image_speed = 0;
-
+vis = false;
 p1 = false;
 p2 = false;
 p3 = false;
@@ -56,3 +55,7 @@ perez_check = false;
 spr = s_enemy_1;
 image_blend = c_fuchsia;
 alarm_set(11,1);
+ar = instance_create_layer(x,y,"Instances_Action",o_arrow_1);
+ar.x1 = x;
+ar.y1 = y;
+ar.image_alpha = 1;

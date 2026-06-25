@@ -1,4 +1,4 @@
-ml--
+if(play) { ml--; }
 if(ml < 0)
 {
 	s--;

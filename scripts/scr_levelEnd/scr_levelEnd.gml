@@ -1507,7 +1507,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.perez += 3;
 					o_saveload.pnet += 15;
 					o_saveload.knet -= 6;
-					o_saveload.moneyT += 10000;
+					o_saveload.moneyT += 5600;
 				}
 				else
 				{

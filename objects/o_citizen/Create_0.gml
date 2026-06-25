@@ -23,10 +23,11 @@ x11 = 0; y11 = 0;
 x12 = 0; y12 = 0;
 xc = 0;
 yc = 0;
+r41 = false;
 spr = s_fancyGuy_1;
 if(room == r_lvl_41) { alarm_set(1,5); }
 alarm_set(0,20);
 xyc = 1;
 moveCheck = true;
-randomize();
+match = choose(s_hazmat,s_labCoat,s_mark,s_nothing);
 image_blend = choose(c_blue,c_fuchsia,c_red,c_maroon,c_orange,c_olive,c_lime,c_teal,c_purple,c_yellow,c_aqua);

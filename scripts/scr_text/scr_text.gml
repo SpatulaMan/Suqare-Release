@@ -1692,27 +1692,29 @@ function scr_briefing(t){
 			amount of time to get this done before he leaves to his
 			safe zone. 
 			
-			We've found a description of the riot leader, and if we
-			take him out, they won't be able to keep the riot going.
-			You must do this silently. If a gunshot or any kind of 
-			weapon is heard, that will trigger a commotion, and we'll
-			be blamed for it. Find him and kill him quickly before he
-			can shoot at you. 
+			We've found a description of the riot leader, and we need
+			to take him out. You must do this silently. If a gunshot or
+			any kind of weapon is heard, that will trigger a commotion, 
+			and we'll be blamed for it. Find him and kill him quickly 
+			before he can shoot at you. Any commotion that starts after
+			he's killed won't matter. 
 			
 			The leader will be fuschia colored with a gas mask and lab
-			coat on. Hex code for him is FF00FF. Check everyone. ";
+			coat on. Hex code for him is FF00FF. People who match any
+			part of our target's description will point you towards the
+			leader.";
 	a[219] = @"Find and Kill Riot Leader";
 	a[220] = @"Mission: Kill Riot Leader
 			
 			Hiring Firm: Perez Holdings
 			Current Standing With
 			Perez Holdings: "+string(obj_suq.perez)+@"
-			Combat Difficulty: 2
+			Combat Difficulty: 1
 			Mental Difficulty: 10
 			Locked Doors: 0
 			Req. Locked Doors: 0
 			Keys Available: 0
-			Reward: $10000
+			Reward: $5600
 			
 			
 			
@@ -5344,7 +5346,7 @@ function debrief(m)
 			
 			Press Spacebar to continue";
 	c[128] = @"Objectives Complete
-			Payout: $10000
+			Payout: $5600
 			
 			Response From Hiring Firm:
 			We're finally the all-powerful bank! There's nothing anyone can do. Those interest rates will

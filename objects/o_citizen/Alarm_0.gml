@@ -1,5 +1,4 @@
 /// @description 
-randomize();
 moveCheck = true;
 if(room == r_lvl_34)
 {

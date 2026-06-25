@@ -1,5 +1,5 @@
 weapon_type = obj_magnum;
-hp = 16;
+hp = 4;
 drop_gun = choose(true,false,true);
 p = Path81;
 weapon_spd = 6;

@@ -41,4 +41,5 @@
 	{ 
 		audio_play_sound(snd_enemyExplode,3,false,random_range(0.05,0.15)*o_saveload.sfxvol,0,random_range(0.9,1.1)); 
 	}
+	with (other) instance_destroy();
     instance_destroy();

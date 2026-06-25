@@ -9,8 +9,8 @@ if((m > 0 or s > 0 or ml > 0) and play)
 	else if(s < 10)
 		draw_text_transformed_colour(obj_suq.roomw*.01,obj_suq.roomh*.1,string("Leader leaves in: 0" + string(m) + ":0" + string(s) + ":" + string(ml)),2,2,0,_c,_c,_c,_c,1); 
 } 
-if(m <= 0 and s <= 0 and ml <= 0)
+if(m <= 0 and s <= 0 and ml <= 0 and instance_exists(o_leader))
 {
-	if(instance_exists(o_leader)) { with (o_leader) instance_change(o_citizen,true); }
+	with (o_leader) instance_change(o_citizen,true);
 	o1 = false;
 }

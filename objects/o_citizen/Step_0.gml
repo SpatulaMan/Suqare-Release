@@ -10,11 +10,12 @@ if(distance_to_point(xc,yc) < 15 and moveCheck == true)
 	alarm_set(0,20);
 	moveCheck = false;
 }
-if(room == r_lvl_41 and instance_exists(o_gunSound))
+if(room == r_lvl_41 and (instance_exists(o_leader) and distance_to_object(o_pieces) < 120) or (room == r_lvl_41 and place_meeting(x,y,o_gunSound)))
 {
+	if(instance_exists(o_leader)) { o_lvl41.alert = true; }
 	var g = instance_create_layer(obj_suq.x,obj_suq.y,"Instances_Action",o_gunSound);
 	g.sprite_index = s_alarmSound;
-	var inst = instance_change(obj_guard,true);
+	var inst = instance_create_layer(x,y,"Instances_Action",obj_guard);//instance_change(obj_guard,true);
 	inst.weapon_type = choose(obj_pistol,obj_magnum,obj_machineGun,obj_shotgun,obj_assaultRifle);
 	inst.hp = 4;
 	inst.drop_gun = choose(true,false,true);
@@ -42,4 +43,5 @@ if(room == r_lvl_41 and instance_exists(o_gunSound))
 			inst.weapon_bul = o_eARBul;
 			inst.shtspd = 20; break;
 	}
+	instance_destroy();
 }
