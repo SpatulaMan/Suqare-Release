@@ -1,5 +1,6 @@
-acc = .02;
-spd = 3;
-trn = 1;
+acc = .03;
+spd = 6.8;
+trn = 3;
 i = inst_FA64942;
 k = false;
+image_blend = c_orange;

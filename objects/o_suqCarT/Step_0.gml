@@ -9,13 +9,23 @@ fwdC.image_angle = image_angle+90;
 revC.image_angle = image_angle+90;
 if(driver and !leave)
 {
-	if(room == r_lvl_40) { view_visible[2] = true; view_visible[0] = false; }
+	if(room == r_lvl_40 or room == r_lvl_42) { view_visible[2] = true; view_visible[0] = false; }
 	obj_suq.x = x;
 	obj_suq.y = y;
 	if(keyboard_check(ord("W")) and !keyboard_check(ord("S")) and fwdC.go) { spd = speed; spdchg += acc; }
 	if(!keyboard_check(ord("W")) and keyboard_check(ord("S")) and revC.go) { spd = speed;  spdchg -= acc; }
-	if(!fwdC.go and speed > 0) { spdchg = 0; hp -= speed; }
-	if(!revC.go and speed < 0) { spdchg = 0; hp -= speed; }
+	if(!fwdC.go and speed > 0) 
+	{ 
+		spdchg = 0; hp -= speed; 
+		audio_play_sound(snd_hurt,1,false,o_saveload.sfxvol,0,.8);
+		audio_play_sound(snd_fireT,1,false,o_saveload.sfxvol,0,.8);
+	}
+	if(!revC.go and speed < 0) 
+	{ 
+		spdchg = 0; hp -= speed; 
+		audio_play_sound(snd_hurt,1,false,o_saveload.sfxvol,0,.8);
+		audio_play_sound(snd_fireT,1,false,o_saveload.sfxvol,0,.8);
+	}
 	if(keyboard_check(ord("D")) and speed != 0) { spd = speed; image_angle -= turn; }
 	if(keyboard_check(ord("A")) and speed != 0) { spd = speed; image_angle += turn; }
 	direction = image_angle;
@@ -41,6 +51,7 @@ if(speed < 1 and speed > -1 and keyboard_check_pressed(ord("E")))
 	timer = 120;
 	health = 100;
 	obj_suq.image_alpha = 1;
+	if(room == r_lvl_42) { view_visible[0] = true; view_visible[2] = false; }
 }
 if(instance_exists(o_carCol))
 {

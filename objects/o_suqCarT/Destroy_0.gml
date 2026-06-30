@@ -36,6 +36,13 @@ if(room != r_lvl_40)
 	obj_suq.image_alpha = 1;
 	obj_suq.lv -= 5;
 	obj_suq.lv = floor(obj_suq.lv);
+	if(room == r_lvl_42) 
+	{ 
+		view_visible[0] = true; 
+		view_visible[2] = false; 
+		o_lvl42.tcars--; 
+		if(o_lvl42.lap < 3) { o_lvl42.alarm[1] = 1; }
+	}
 }
 if(room == r_lvl_38)
 {

@@ -10,8 +10,18 @@ if(driver and !leave)
 	obj_suq.y = y;
 	if(keyboard_check(ord("W")) and !keyboard_check(ord("S")) and fwdC.go) { spd = speed; spdchg += 0.02; }
 	if(!keyboard_check(ord("W")) and keyboard_check(ord("S")) and revC.go) { spd = speed;  spdchg -= 0.05; }
-	if(!fwdC.go and speed > 0) { spdchg = 0; hp -= speed; }
-	if(!revC.go and speed < 0) { spdchg = 0; hp -= speed; }
+	if(!fwdC.go and speed > 0) 
+	{ 
+		spdchg = 0; hp -= speed; 
+		audio_play_sound(snd_hurt,1,false,o_saveload.sfxvol,0,.8);
+		audio_play_sound(snd_fireT,1,false,o_saveload.sfxvol,0,.8);
+	}
+	if(!revC.go and speed < 0)
+	{ 
+		spdchg = 0; hp -= speed; 
+		audio_play_sound(snd_hurt,1,false,o_saveload.sfxvol,0,.8);
+		audio_play_sound(snd_fireT,1,false,o_saveload.sfxvol,0,.8);
+	}
 	if(keyboard_check(ord("D")) and speed != 0) { spd = speed; image_angle -= 1.2; }
 	if(keyboard_check(ord("A")) and speed != 0) { spd = speed; image_angle += 1.2; }
 	direction = image_angle;

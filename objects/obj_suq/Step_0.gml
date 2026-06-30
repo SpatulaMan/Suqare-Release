@@ -33,7 +33,7 @@ if(image_yscale > 1)
 if(room != r_armory and room != r_lvl_37 and keyboard_check(vk_backspace) and lives > 0)
 {
 	res++;
-	if(res >= 180)
+	if(res >= 120)
 	{
 		visible = false;
 		var _piece3 = instance_create_layer(x,y,"Instances_Action",o_pieces);

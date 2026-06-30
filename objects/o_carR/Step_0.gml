@@ -13,6 +13,10 @@ if(start)
 	pd = point_direction(x,y,i.x,i.y);
 	ad = angle_difference(image_angle,pd);
 	image_angle -= min(abs(ad), trn) * sign(ad);
-	if(ad > 5) { sped -= (ad/10); }
+	if(ad > 5) 
+	{ 
+		sped -= (ad/20); 
+		if(sped < 1) { sped = 1; }
+	}
 	speed = sped;
 }

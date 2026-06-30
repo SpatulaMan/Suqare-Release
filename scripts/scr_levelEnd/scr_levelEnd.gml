@@ -1653,13 +1653,13 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.unet -= 7;
 					o_saveload.hnet += 5;
 				}//lose
-				else if(!instance_exists(o_carR) and !instance_exists(o_suqCarT))
+				/*else if(!instance_exists(o_carR) and !instance_exists(o_suqCarT))
 				{
 					obj_suq.report = 146;
 					obj_suq.ungulate -= 2;
 					o_saveload.unet -= 7;
 					o_saveload.hnet += 5;
-				}//lose
+				}//lose*/
 				else
 				{
 					obj_suq.report = 141;

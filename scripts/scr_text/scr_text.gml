@@ -1875,23 +1875,22 @@ function scr_briefing(t){
 	a[241] = @"BRIEFING:
 			There's a small desert town that's in dire need of water,
 			but the area always has a racing tournament to see who gets
-			the clean water. The town we represent always loses to 
-			whoever pays the most for Hiertech guys to win the race. 
-			They've never had the money to pay for them, so they 
-			reached out to us to see if we could help. 
+			the clean water. The town we represent has lost to Hiertech
+			for years and has had to get by on whatever they can find.
 			
 			We're hoping that you're our guy. Someone who can finally
 			end the longest winning streak in history and win water for
 			a town truly in need. 
 			
 			The rust-bucket of a car could be better, but it's fast.
-			It controls horribly, and if you even touch a wall or 
-			another car, the whole thing will explode. It also won't
-			have racing stripes which probably does worsen your 
-			chances. They will start without you, so get into your car
-			and go, go, go! ";
+			It controls horribly, and it won't have racing stripes 
+			which probably does worsen your chances. Don't hit too many
+			walls with it, or it will explode. 
+			
+			They will start without you, so get into your car and go, 
+			go, go! ";
 	a[242] = @"Race for Clean Water";
-	a[243] = @"Mission: Water Race
+	a[243] = @"Mission: Race For Water
 			
 			Hiring Firm: Ungulate Studios
 			Current Standing With

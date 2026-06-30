@@ -1,2 +1,3 @@
 /// @description
-audio_play_sound(snd_lightgun,1,false,1.5*o_saveload.sfxvol);
+audio_play_sound(snd_heavygun,1,false,12*o_saveload.sfxvol,0,.7);
+stuck = false;
