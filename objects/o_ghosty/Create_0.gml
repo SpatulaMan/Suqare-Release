@@ -1,8 +1,8 @@
 /// @description
 randomize();
 direction = ceil(random(359));
-speed = random_range(.5,4);
-if(distance_to_object(obj_suq) > 400)
+speed = random_range(1,6);
+if(x > 2400 or y > 2000 or x < 0 or y < 0)
 {
 	instance_destroy();
 }

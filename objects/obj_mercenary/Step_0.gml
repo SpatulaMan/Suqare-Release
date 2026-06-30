@@ -15,6 +15,11 @@ if(room != r_lvl_43)
 		ar.image_alpha = .001;
 	}
 }
+else
+{
+	ar.x1 = x;
+	ar.y1 = y;
+}
 if(!path_exists(path))
 {
     path = path_add();
@@ -141,7 +146,8 @@ if((_wallsee and _doorsee) or (_wallsee2 and _doorsee2))
 }
 	if(mp_grid_path(global.grid,path,x,y,x4,y4,true))
 	{
-		path_start(path,.7,path_action_stop,false);
+		if(room != r_lvl_43) { path_start(path,.7,path_action_stop,false); }
+		else { path_start(path,1,path_action_stop,false); }
 	}
 	else if(hit == true)
 	{
@@ -228,7 +234,7 @@ if(hp <= 0)
 	{
 		audio_play_sound(snd_enemyExplode,3,false,random_range(0.05,0.15)*o_saveload.sfxvol,0,random_range(0.9,1.1));
 	}
-	if(drop_gun) instance_create_layer(x,y,"Instances_Action",weapon_type);
+	if(drop_gun and room != r_lvl_43)  { instance_create_layer(x,y,"Instances_Action",weapon_type); }
 	var _piece5 = instance_create_layer(x,y,"Instances_Action",o_pieces);
 	_piece5.sprite_index = spr;
 	_piece5.speed = 5;

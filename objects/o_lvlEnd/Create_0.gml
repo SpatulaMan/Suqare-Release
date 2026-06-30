@@ -15,6 +15,7 @@ if(obj_suq.ungulate > 6 and o_saveload.robot == true)
 {
 	var _r = instance_create_layer(obj_suq.x+30,obj_suq.y,"Instances_Action",obj_guard_F);
 	_r.sprite_index = s_robot;
+	_r.wc = 11;
 	_r.spr = s_pieces;
 	var _c = instance_create_layer(obj_suq.x+30,obj_suq.y,"Instances_Action",o_conversation);
 	_c.h = 91;

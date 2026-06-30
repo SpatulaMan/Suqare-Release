@@ -16,7 +16,7 @@ Gildebrand Consulting - Will steal all of your weapons from you and leave you wi
 
 -Finish all 51 levels - 1 levels left
 
--Playtest and bug-fix levels - 10 levels left
+-Playtest and bug-fix levels - 8 levels left
 
 4 missions after lvl 45 shows up or choosing not to kill the monster, go to end game with monster attacking you? 
 
@@ -61,8 +61,7 @@ Checklist:
 	-Text blurb about each company and what they're doing or if they're bankrupt. 
 	-how the world has changed based on your actions
 	-A Mercenary rating based on how much money you made in total, multiplied by the total standing of all 6 companies - need to figure out what a good score is
--Setup a section where you can replay any level in the game besides the golden sword level. Can't get that one ever unless it's in the regular game. 
 -controller support
 -steam acheivements
 -change game icon to crosshair
--extras?
+-extras? Are these the extra modes if the game is successful enough (or make into DLC?)? Making of section? Small multiplayer/co-op game mode? 

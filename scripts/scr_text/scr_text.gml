@@ -4840,7 +4840,7 @@ function debrief(m)
 			
 			Press Spacebar to continue";
 	c[97] = @"Objectives Complete
-			Payout: $10000
+			Payout: $20000
 			
 			Response From Hiring Firm:
 			We're so close now! What an exciting time to live in. Kanker and Co's dominance is inevitable,

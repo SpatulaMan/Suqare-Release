@@ -233,7 +233,7 @@ if(rc and gadget == 11 and room != r_armory)
 }
 if(pistolHave == 1 and gunEquip == 1)
 {
-	if(((keyboard_check_pressed(ord("R")) and pMag < pmr) or (pMag == 0)) and pistolAmt > 0 and pr == false)
+	if((((keyboard_check_pressed(ord("R")) and pMag < pmr) or (pMag == 0)) and pistolAmt > 0 and pr == false) and room != r_armory)
 	{
 		pr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
@@ -257,7 +257,7 @@ if(pistolHave == 1 and gunEquip == 1)
 }
 if(magnumHave == 1 and gunEquip == 2)
 {
-	if(((keyboard_check_pressed(ord("R")) and mMag < mmr) or (mMag == 0)) and magnumAmt > 0 and mr == false)
+	if((((keyboard_check_pressed(ord("R")) and mMag < mmr) or (mMag == 0)) and magnumAmt > 0 and mr == false) and room != r_armory)
 	{
 		mr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
@@ -281,7 +281,7 @@ if(magnumHave == 1 and gunEquip == 2)
 }
 if(machineGunHave == 1 and gunEquip == 3)
 {
-	if(((keyboard_check_pressed(ord("R")) and mgMag < mgmr) or (mgMag == 0)) and machineGunAmt > 0 and mgr == false)
+	if((((keyboard_check_pressed(ord("R")) and mgMag < mgmr) or (mgMag == 0)) and machineGunAmt > 0 and mgr == false) and room != r_armory)
 	{
 		mgr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
@@ -305,7 +305,7 @@ if(machineGunHave == 1 and gunEquip == 3)
 }
 if(assaultRifleHave == 1 and gunEquip == 4)
 {
-	if(((keyboard_check_pressed(ord("R")) and arMag < 20) or (arMag == 0)) and assaultRifleAmt > 0 and arr == false)
+	if((((keyboard_check_pressed(ord("R")) and arMag < 20) or (arMag == 0)) and assaultRifleAmt > 0 and arr == false) and room != r_armory)
 	{
 		arr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
@@ -329,7 +329,7 @@ if(assaultRifleHave == 1 and gunEquip == 4)
 }
 if(shotgunHave == 1 and gunEquip == 5)
 {
-	if(((keyboard_check_pressed(ord("R")) and sgMag < (6+sgda)) or (sgMag == 0)) and shotgunAmt > 0 and sgr == false)
+	if((((keyboard_check_pressed(ord("R")) and sgMag < (6+sgda)) or (sgMag == 0)) and shotgunAmt > 0 and sgr == false) and room != r_armory)
 	{
 		sgr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
@@ -353,7 +353,7 @@ if(shotgunHave == 1 and gunEquip == 5)
 }
 if(shooterGunHave == 1 and gunEquip == 6)
 {
-	if(((keyboard_check_pressed(ord("R")) and shMag < 40) or (shMag == 0)) and shooterGunAmt > 0 and shr == false)
+	if((((keyboard_check_pressed(ord("R")) and shMag < 40) or (shMag == 0)) and shooterGunAmt > 0 and shr == false) and room != r_armory)
 	{
 		shr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
@@ -377,7 +377,7 @@ if(shooterGunHave == 1 and gunEquip == 6)
 }
 if(flamethrowerHave == 1 and gunEquip == 7)
 {
-	if(((keyboard_check_pressed(ord("R")) and fMag < 5) or (fMag == 0)) and flamethrowerAmt > 0 and fr == false)
+	if((((keyboard_check_pressed(ord("R")) and fMag < 5) or (fMag == 0)) and flamethrowerAmt > 0 and fr == false) and room != r_armory)
 	{
 		fr = true;
 		audio_play_sound(snd_switchguns,3,false);
@@ -401,7 +401,7 @@ if(flamethrowerHave == 1 and gunEquip == 7)
 }
 if(sniperRifleHave == 1 and gunEquip == 8)
 {
-	if(((keyboard_check_pressed(ord("R")) and snMag < snmr) or (snMag == 0)) and sniperRifleAmt > 0 and snr == false)
+	if((((keyboard_check_pressed(ord("R")) and snMag < snmr) or (snMag == 0)) and sniperRifleAmt > 0 and snr == false) and room != r_armory)
 	{
 		snr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
@@ -425,7 +425,7 @@ if(sniperRifleHave == 1 and gunEquip == 8)
 }
 if(rocketLauncherHave == 1 and gunEquip == 9)
 {
-	if(((keyboard_check_pressed(ord("R")) and rlMag < 2) or (rlMag == 0)) and rocketLauncherAmt > 0 and rlr == false)
+	if((((keyboard_check_pressed(ord("R")) and rlMag < 2) or (rlMag == 0)) and rocketLauncherAmt > 0 and rlr == false) and room != r_armory)
 	{
 		rlr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
@@ -455,7 +455,7 @@ if(ghostGunHave == 1 and gunEquip == 13)
 }
 if(pp7Have == 1 and gunEquip == 14)
 {
-	if(((keyboard_check_pressed(ord("R")) and ppMag < 4) or (ppMag == 0)) and pp7Amt > 0 and ppr == false)
+	if((((keyboard_check_pressed(ord("R")) and ppMag < 4) or (ppMag == 0)) and pp7Amt > 0 and ppr == false) and room != r_armory)
 	{
 		ppr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);

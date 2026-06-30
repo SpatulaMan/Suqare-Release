@@ -35,6 +35,7 @@ if(start and instance_exists(weapon))
 			var pd = point_direction(x,y,obj_suq.x,obj_suq.y);
 			var ad = angle_difference(image_angle,pd);
 			image_angle -= min(abs(ad), 4) * sign(ad);
+			weapon.image_index = s_robotT;
 		}
 	}
 	if(((_wallsee and _doorsee) and abs(angle_difference(weapon.image_angle,pd1)) < adif) or check == true)
