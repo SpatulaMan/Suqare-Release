@@ -12,6 +12,12 @@ if(room == r_lvl_13 and girlcheck == true)
 	pickup_timer = 90;
 	girlcheck = false;
 }
+if(room == r_lvl_44 and girlcheck == true)
+{
+	pickup_item = choose(29,31,32);
+	pickup_timer = 90;
+	girlcheck = false;
+}
 if(room == r_lvl_17 and girlcheck == true)
 {
 	switch(other.lady)

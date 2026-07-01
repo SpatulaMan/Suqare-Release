@@ -36,6 +36,7 @@ x4 = x;
 y4 = y;
 x5 = 0;
 y5 = 0;
+path = 0;
 turretTime = 120;
 restart_patrol = false;
 spr = s_enemy_1;

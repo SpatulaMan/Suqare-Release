@@ -1,4 +1,7 @@
 /// @description
 image_angle--;
-x = o_eShield.x;
-y = o_eShield.y;
+if(instance_exists(o_eShield))
+{
+	x = o_eShield.x;
+	y = o_eShield.y;
+}

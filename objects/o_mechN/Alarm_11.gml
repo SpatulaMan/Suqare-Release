@@ -18,9 +18,9 @@ if(image_index = 0)
 }
 switch(image_index)
 {
-	case 0: hp = 150; shtspd = 600; break;//jewel spawns shield
-	case 1: hp = 100; shtspd = 0; break;//vambrace shoot out at you periodically
-	case 2: hp = 100; shtspd = 180; break;//ring shoots homing missiles
-	case 3: hp = 100; shtspd = 60; break;//amulet drops mines constantly
-	case 4: hp = 100; shtspd = 360; break;//eye shoots laser beam continuously
+	case 0: hp = 120; shtspd = 600; break;//jewel spawns shield
+	case 1: hp = 120; shtspd = 180; break;//vambrace shoot out at you periodically
+	case 2: hp = 120; shtspd = 120; break;//ring shoots homing missiles
+	case 3: hp = 120; shtspd = 60; break;//amulet drops mines constantly
+	case 4: hp = 120; shtspd = 360; break;//eye shoots laser beam continuously
 }

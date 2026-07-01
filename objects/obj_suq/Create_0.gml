@@ -1,7 +1,7 @@
 kh = 1;
 ph = 1;
 res = 0;
-fix = 100/180;
+fix = 100/120;
 keys = [];
 var _i = 0;
 repeat(6)
