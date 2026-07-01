@@ -7,6 +7,7 @@ if(distance_to_object(obj_suq) > d)
 		case 90: image_angle = 0; break;
 	}
 	alarm_set(0,tt);
+	count = 180;
 }
 else
 {
