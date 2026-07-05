@@ -86,7 +86,7 @@
     },
     "name":"s_laser",
     "playback":1,
-    "playbackSpeed":25.0,
+    "playbackSpeed":80.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",

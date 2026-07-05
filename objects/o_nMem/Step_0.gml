@@ -20,6 +20,7 @@ if(check)
 		obj_suq.money += valueC;
 		o_saveload.moneyT += valueC;
 		o_saveload.nMems = true;
+		o_saveload.nMemsSave = false;
 		obj_suq.showMoney = 300;
 		save();
 		if(instance_exists(inst))

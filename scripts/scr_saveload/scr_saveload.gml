@@ -137,7 +137,8 @@ function save()
 		trick: o_saveload.trick,
 		ceo: o_saveload.ceo,
 		rec: o_saveload.rec,
-		ending: o_saveload.ending
+		ending: o_saveload.ending,
+		nMemsSave: o_saveload.nMemsSave
 		
 		//upgrades
 		
@@ -436,6 +437,8 @@ function load(_f)
 			o_saveload.rec=_struct.rec;
 		if (struct_exists(_struct, "ending"))
 			o_saveload.ending=_struct.ending;
+		if (struct_exists(_struct, "nMemsSave"))
+			o_saveload.nMemsSave=_struct.nMemsSave;
 			
 		
 		//levels that are incompleted and are available to the player currently in variables 
@@ -572,7 +575,8 @@ function load(_f)
 			trick: false,
 			ceo: false,
 			rec: 300,
-			ending: 0
+			ending: 0,
+			nMemsSave: false
 		
 		}
 	

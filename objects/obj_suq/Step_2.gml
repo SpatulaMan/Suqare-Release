@@ -3,6 +3,8 @@ var _view_values = room_get_viewport(room, 0);
 roomw = _view_values[3];
 roomh = _view_values[4];
 
+ammoUp = o_saveload.ammoUp;
+
 if(room == r_armory)
 {
 	mp_grid_destroy(global.grid);
@@ -15,11 +17,11 @@ if(instance_exists(o_eFire))
 {
 	o_eFire.image_blend = c_aqua;
 }
-if((!mouse_check_button(mb_left) or cgover == true) and chainGunAmt < 120)
+if((!mouse_check_button(mb_left) or cgover == true) and chainGunAmt < 180)
 {
 	chainGunAmt++;
 }
-if(chainGunAmt == 120 and cgover == true)
+if(chainGunAmt == 180 and cgover == true)
 {
 	cgover = false;
 }

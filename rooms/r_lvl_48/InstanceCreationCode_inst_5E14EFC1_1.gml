@@ -4,7 +4,7 @@ image_blend = c_purple;
 hp = 64;
 drop_gun = choose(true,false,true);
 weapon_spd = 6;
-key_drop = true;
+key_drop = false;
 keyimage = 1;
 switch(weapon_type)
 {

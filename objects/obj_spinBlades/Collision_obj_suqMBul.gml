@@ -1,2 +1,2 @@
-with (other) direction = self.image_angle;
+//other.direction = self.image_angle;
 

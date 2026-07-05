@@ -1,2 +1,2 @@
-with (other) direction = image_angle;
+//other.direction = image_angle;
 

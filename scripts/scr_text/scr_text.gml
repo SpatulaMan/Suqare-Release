@@ -1767,7 +1767,7 @@ function scr_briefing(t){
 			We have our annual race competition coming up, but don't
 			worry about that part. We always win the race to prevent
 			Ungulate Studios from winning a water source back for a
-			lowly desert town. We need it for our data centers. 
+			lowly desert town. 
 			
 			What we actually need you to do is assassinate the CEO of
 			Ungulate Studios since he'll be attending the race in 
@@ -1801,7 +1801,7 @@ function scr_briefing(t){
 			
 			(Press Spacebar to Accept)";
 	a[229] = @"Kill CEO";
-	a[230] = @"Leave Quickly";
+	a[230] = @"Race Still On";
 	a[231] = @"BRIEFING:
 			We have a way to destroy Ungulate Studios for good. They
 			have a heavily armed safe house that was taken from a 
@@ -2557,9 +2557,9 @@ function scr_conversation(t)
 			Down - Gildebrand Consulting";//tirangle game lvl 37 2
 	a[116] = @"How much does the 4th armor level cost in the shop?
 	
-			Left - $25000
+			Left - $20000
 			
-			Right - $20000";//tirangle game lvl 37 3
+			Right - $25000";//tirangle game lvl 37 3
 	a[117] = @"How many pieces does an enemy square break into?
 	
 			Up - 6
@@ -2693,7 +2693,7 @@ function scr_shop(t){
 			Description: Increases your Armor rating to level 4
 			
 			
-			$20000"; 
+			$25000"; 
 	o[5] = @"Armor 5
 						
 			
@@ -2710,6 +2710,8 @@ function scr_shop(t){
 			Placing a mine in a doorway can be an easy way to take out 
 			an enemy in pursuit. 
 			
+			Limit: 60
+			
 			
 			$600
 			
@@ -2717,10 +2719,12 @@ function scr_shop(t){
 	o[7] = @"Sticky Mines x3
 			
 			
-			Description: 3 Sticky Mines that can be placed on the floor,
-			walls, or thrown directly on enemies.
+			Description: 3 Sticky Mines that can be thrown on the floor,
+			walls, or directly on enemies.
 			
 			press 'f' to detonate them.
+			
+			Limit: 60
 			
 			
 			$800
@@ -2732,6 +2736,8 @@ function scr_shop(t){
 			Description: 3 canisters of tear gas. Throw it at an enemy 
 			to disorient them.
 			
+			Limit: 45
+			
 			
 			$400
 			
@@ -2741,6 +2747,8 @@ function scr_shop(t){
 			
 			Description: 1 lockpick with a 30% chance of unlocking any 
 			door.  
+			
+			Limit: 20
 			
 			
 			$900
@@ -2755,7 +2763,7 @@ function scr_shop(t){
 			20 seconds. 
 			
 			
-			$1400"; 
+			$1400";//new gadget
 	o[11] = @"Attractor
 			
 			
@@ -2765,7 +2773,7 @@ function scr_shop(t){
 			building with this! It can be used once every 30 seconds.
 			
 			
-			$2200"; 
+			$3000"; 
 	o[12] = @"Ammo Pickup 1
 			
 			
@@ -2967,7 +2975,7 @@ function scr_shop(t){
 			
 			Description: When placed, it will fire at the closest 
 			enemy. It cannot be reloaded, but it can be 
-			repositioned.
+			repositioned. Limit: 10
 			
 			Stats:
 			Ammo: 30
@@ -2975,7 +2983,7 @@ function scr_shop(t){
 			Damage: 1
 			
 			
-			$2000
+			$4000
 			
 			You have " + string(obj_suq.attackTur) + " Turrets currently"; 
 	o[30] = @"Defense Turret
@@ -2985,7 +2993,7 @@ function scr_shop(t){
 			the turret. This shield will protect against enemy fire, 
 			but it will allow your bullets through. You can 
 			reposition it at any time, but once the shield is 
-			depleted, it won't spawn another shield. 
+			depleted, it won't spawn another shield. Limit: 10
 			
 			Stats:
 			Shield Radius: 57
@@ -2993,7 +3001,7 @@ function scr_shop(t){
 			HP: 4
 			
 			
-			$2000
+			$4000
 			
 			You have " + string(obj_suq.defenseTur) + " Defense turrets currently"; 
 	o[31] = @"Tear Gas Turret
@@ -3008,16 +3016,16 @@ function scr_shop(t){
 			HP: 4
 			
 			
-			$2000
+			$4000
 			
-			You have " + string(obj_suq.tearTur) + " Tear Gas turrets currently"; 
+			You have " + string(obj_suq.tearTur) + " Tear Gas turrets currently";//new gadget
 	o[32] = @"Flame Turret
 			
 			
 			Description: When placed, it will fire at the closest 
 			enemy, but it has limited range. It cannot be reloaded,
 			but it can be repositioned. The fire will do damage
-			over time and stay burning for a while.
+			over time and stay burning for a while. Limit: 6
 			
 			Stats:
 			Ammo: 200
@@ -3026,7 +3034,7 @@ function scr_shop(t){
 			Burn time: 8 seconds
 			
 			
-			$3000
+			$12000
 			
 			You have " + string(obj_suq.flameTur) + " Flame turrets currently"; 
 	o[33] = @"Rocket Turret
@@ -3035,15 +3043,15 @@ function scr_shop(t){
 			Description: When placed, it will fire at the closest 
 			enemy. It cannot be reloaded, but it can be 
 			repositioned. The rockets have additional splash
-			damage. 
+			damage. Limit: 2
 			
 			Stats:
 			Ammo: 8
 			HP: 4
-			Damage: 8
+			Damage: 30
 			
 			
-			$4000
+			$25000
 			
 			You have " + string(obj_suq.rocketTur) + " Rocket turrets currently"; 
 	o[34] = @"Ammo Pickup 3
@@ -3108,14 +3116,14 @@ function scr_shop(t){
 			weapon by 50%. 
 			
 			
-			$11000";
+			$15000";
 	o[41] = @"Full Ammo
 			
 			
 			Description: Guns in Armory have max ammo by default. 
 			
 			
-			$13500"; 
+			$22000"; 
 	o[42] = @"Turret Upgrade
 			
 			
@@ -3123,7 +3131,7 @@ function scr_shop(t){
 			Turrets. 
 			
 			
-			$24000"; 
+			$40000"; 
 	o[43] = @"Speed Boots
 	
 	

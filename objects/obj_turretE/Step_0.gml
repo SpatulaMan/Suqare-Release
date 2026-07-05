@@ -39,12 +39,12 @@ if((_wallsee and _doorsee) or check == true or (_wallseed and _doorseed) or (_wt
 	else if(_wt and _dt and !_wallsee and !_doorsee and instance_exists(obj_turret))
 	{
 		var _tn = instance_nearest(x,y,obj_turret);
-		if(turretTime <= 0)
+		/*if(turretTime <= 0)
 		{
 			x3 = x+choose(32,-32);
 			y3 = y+choose(32,-32);
 			turretTime = choose(120,180);
-		}
+		}*/
 		x5 = _tn.x;
 		y5 = _tn.y;
 		suq_loc = false;

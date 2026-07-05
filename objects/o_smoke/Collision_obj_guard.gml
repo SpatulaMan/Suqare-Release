@@ -1,7 +1,8 @@
 /// @description 
-if(!instance_exists(obj_ninja_bosses) and !instance_exists(o_vandal) and room != r_lvl_34)
+if(!instance_exists(obj_ninja_bosses) and !instance_exists(o_vandal) and room != r_lvl_34 and room != r_lvl_45)
 {
-	if(other.sprite_index != s_turretE and other.sprite_index != s_turretT_1)
+	if(other.sprite_index != s_turretE and other.sprite_index != s_turretT_1 and 
+	other.sprite_index != s_spider and other.sprite_index != s_spiderB)
 	{
 		other.path_speed = 0;
 		other.shootCheck = 20;

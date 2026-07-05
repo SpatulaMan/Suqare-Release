@@ -42,7 +42,8 @@ x4 = 0;
 y4 = 0;
 x5 = x;//starting
 y5 = y;//starting
-hp = 64;
+if(room != r_lvl_48) { hp = 64; }
+else { hp = 128; }
 ninjakill = 0;
 dare = 0;
 darecheck = false;

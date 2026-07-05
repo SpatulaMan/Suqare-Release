@@ -37,7 +37,7 @@ else if(visible == true and s == -1)
 		case r_lvl_35: draw_sprite_ext(s_lvl35map,0,w*.1,h*.055,1,1,0,c_white,1); break;//too tall
 		case r_lvl_39: draw_sprite_ext(s_lvl39map,0,w*.25,h*.07,1,1,0,c_white,1); break;//too tall and narrow
 		case r_lvl_43: draw_sprite_ext(s_lvl43map,0,w*.133,h*.055,1,1,0,c_white,1); break;//too tall
-		case r_lvl_48: draw_sprite_ext(s_lvl1map,0,w*.133,h*.12,1,1,0,c_white,1); break;
+		case r_lvl_48: draw_sprite_ext(s_lvl48map,0,w*.133,h*.12,1,1,0,c_white,1); break;
 		case r_lvl_49: draw_sprite_ext(s_lvl49map,0,w*.133,h*.055,1,1,0,c_white,1); break;
 		default: draw_sprite_ext(s_mapnotfound,0,w*.133,h*.08,1,1,0,c_white,1);
 	}

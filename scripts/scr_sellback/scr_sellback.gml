@@ -44,7 +44,7 @@ function scr_sellback(_i,_ch)
 	obj_suq.moneyPercent = 50;
 	obj_suq.gunMax = 3;
 	obj_suq.pda = 0; obj_suq.pmr = 12;
-	obj_suq.mda = 0; obj_suq.mmr = 6;
+	obj_suq.mda = 0; obj_suq.mmr = 6; obj_suq.mMax = 30;
 	obj_suq.mgda = 0; obj_suq.mgmr = 25;
 	obj_suq.arda = 10; obj_suq.armr = 80;
 	obj_suq.sgda = 0; obj_suq.sgmr = 0;

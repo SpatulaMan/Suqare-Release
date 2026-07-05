@@ -19,5 +19,7 @@ yc = 0;
 xyc = 1;
 alarm_set(0,60);
 moveCheck = true;
+spr = s_enemy_1;
 hp = 32;
 image_blend = c_maroon;
+fix = 100/32;

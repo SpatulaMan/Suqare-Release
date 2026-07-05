@@ -3,6 +3,7 @@ var _i = instance_create(x,y,o_shop);
 _i.visible = false;
 roomStartCheck = true;
 scr_sellback(_i,"armory");
+alarm_set(3,60);
 
 /*
 s = 0;

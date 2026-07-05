@@ -482,12 +482,12 @@ if(chainGunHave == 1 and gunEquip == 15)
 {
 	if(!cgover)
 	{
-		draw_text_transformed_colour(1600,940,string_hash_to_newline("" + string(chainGunAmt) + "|" + string(0) + " "),3,3,0,c_green,c_orange,c_green,c_orange,1);
+		draw_text_transformed_colour(1600,940,string_hash_to_newline("" + string(chainGunAmt) + "|" + string(0) + " "),3,3,0,c_green,c_green,c_orange,c_orange,1);
 		draw_sprite_stretched_ext(spr_chainGun,1,1600,880,18*15,14*15,c_white,1); 
 	}
 	else
 	{
-		draw_text_transformed_colour(1600,940,string_hash_to_newline("" + string(chainGunAmt) + "|" + string(0) + " "),3,3,0,c_yellow,c_red,c_yellow,c_red,1);
+		draw_text_transformed_colour(1600,940,string_hash_to_newline("" + string(chainGunAmt) + "|" + string(0) + " "),3,3,0,c_orange,c_red,c_orange,c_red,1);
 		draw_sprite_stretched_ext(spr_chainGun,1,1600,880,18*15,14*15,c_orange,1); 
 	}
 }

@@ -222,7 +222,7 @@ function scr_spiderspawn() {
 			instance_create_layer(x-5,y+5,"Instances_Action",obj_spider);
 			instance_create_layer(x+10,y-5,"Instances_Action",obj_spider);
 		}
-		if(r15 > 99)
+		if(r15 >= 99)
 		{
 			instance_create_layer(x-10,y+5,"Instances_Action",obj_spider);
 			instance_create_layer(x-5,y-10,"Instances_Action",obj_spider);

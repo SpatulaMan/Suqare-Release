@@ -6,7 +6,7 @@ var inst2;
 var inst3;
 var inst4;
 var inst5;
-if(!instance_place(413,468,obj_guard))
+if(!instance_position(413,468,obj_guard))
 			{
 				inst = instance_create_layer(413,468,"Instances_Action",obj_guard); 
 				inst.weapon_type = choose(obj_assaultRifle,obj_shotgun);
@@ -27,7 +27,7 @@ if(!instance_place(413,468,obj_guard))
 						inst.shtspd = 80; break;
 				} 
 			}
-if(!instance_place(721,949,obj_guard))
+if(!instance_position(721,949,obj_guard))
 			{
 				inst1 = instance_create_layer(721,949,"Instances_Action",obj_guard); 
 				inst1.weapon_type = choose(obj_assaultRifle,obj_shotgun);
@@ -48,7 +48,7 @@ if(!instance_place(721,949,obj_guard))
 						inst1.shtspd = 80; break;
 				} 
 			}
-if(!instance_place(1302,757,obj_guard))
+if(!instance_position(1302,757,obj_guard))
 		{
 			inst2 = instance_create_layer(1302,757,"Instances_Action",obj_guard); 
 			inst2.weapon_type = choose(obj_assaultRifle,obj_shotgun);
@@ -69,7 +69,7 @@ if(!instance_place(1302,757,obj_guard))
 					inst2.shtspd = 80; break;
 			} 
 		}
-if(!instance_place(1188,467,obj_guard))
+if(!instance_position(1188,467,obj_guard))
 			{
 				inst3 = instance_create_layer(1188,467,"Instances_Action",obj_guard); 
 				inst3.weapon_type = choose(obj_assaultRifle,obj_shotgun);
@@ -90,7 +90,7 @@ if(!instance_place(1188,467,obj_guard))
 						inst3.shtspd = 80; break;
 				} 
 			}
-if(!instance_place(721,604,obj_guard))
+if(!instance_position(721,604,obj_guard))
 			{
 				inst4 = instance_create_layer(721,604,"Instances_Action",obj_guard); 
 				inst4.weapon_type = choose(obj_assaultRifle,obj_shotgun);
@@ -111,7 +111,7 @@ if(!instance_place(721,604,obj_guard))
 						inst4.shtspd = 80; break;
 				} 
 			}
-if(!instance_place(859,372,obj_guard))
+if(!instance_position(859,372,obj_guard))
 		{
 			inst5 = instance_create_layer(859,372,"Instances_Action",obj_guard); 
 			inst5.weapon_type = choose(obj_assaultRifle,obj_shotgun);

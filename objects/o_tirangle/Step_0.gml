@@ -26,7 +26,7 @@ if(instance_exists(o_decoy))
 }
 
 var pd1 = point_direction(x,y,obj_suq.x,obj_suq.y);
-if(((_wallsee and _doorsee) and abs(angle_difference(weapon.image_angle,pd1)) < 20) or check == true or (_wallseed and _doorseed) or (_wt and _dt))
+if(((_wallsee and _doorsee) and abs(angle_difference(weapon.image_angle,pd1)) < 350) or check == true or (_wallseed and _doorseed) or (_wt and _dt))
 {
 	
 	if(_wallseed and _doorseed and instance_exists(o_decoy))
@@ -194,6 +194,7 @@ if(hp < hpc)
 	if(hit == true and !place_meeting(x,y,o_hurt))
 	{
 		_inst = instance_create_layer(x,y,"Instances_Action",o_hurt);
+		_inst.sprite_index = s_hurt_2;
 	}
 	if(place_meeting(x,y,o_hurt))
 	{
@@ -289,5 +290,9 @@ if(hp <= 0)
 	_piece2.image_index = 5;
 	_piece2.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
 	_piece2.image_blend = image_blend;
+	if(instance_exists(weapon))
+	{
+		with (weapon) instance_destroy();
+	}
     instance_destroy();
 }

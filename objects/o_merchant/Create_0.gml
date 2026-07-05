@@ -1,3 +1,6 @@
+roomw = 0;
+roomh = 0;
+talk = "";
 w = [];
 w[0] = s_armor;
 w[1] = s_armor;

@@ -146,6 +146,7 @@ officials = false;
 convinced = false;//for level 35 bank level. This will be true for level 41 to show up
 plant = false;//for level 32
 nMems = false;
+nMemsSave = false;
 robot = true;
 hecto = false;
 ring = false;

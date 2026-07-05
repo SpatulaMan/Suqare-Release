@@ -19,7 +19,7 @@ hpt = 0;
 patrol_check = false;
 check = false; //final check
 image_speed = 0;
-hp = 100;
+hp = 150;
 p1 = false;
 p2 = false;
 p3 = false;
@@ -40,5 +40,7 @@ path = 0;
 turretTime = 120;
 restart_patrol = false;
 spr = s_enemy_1;
+roomw = 0;
+roomh = 0;
 alarm_set(11,1);
 randomize();

@@ -128,14 +128,14 @@ if(obj_suq.armorlvl5Have == 1)
 }
 if(obj_suq.minegAmt >= 60) { r1c2.image_index = 2; }
 if(obj_suq.minesAmt >= 60) { r2c1.image_index = 2; }
-if(obj_suq.lock30 >= 60) { r2c2.image_index = 2; }
+if(obj_suq.lock30 >= 45) { r2c2.image_index = 2; }
 if(obj_suq.lock50 >= 20) { r3c1.image_index = 2; }
 
 if(obj_suq.attackTur >= 10) { r11c1.image_index = 2; }
 if(obj_suq.defenseTur >= 10) { r11c2.image_index = 2; }
 if(obj_suq.tearTur >= 10) { r12c1.image_index = 2; }
-if(obj_suq.flameTur >= 10) { r12c2.image_index = 2; }
-if(obj_suq.rocketTur >= 10) { r13c1.image_index = 2; }
+if(obj_suq.flameTur >= 6) { r12c2.image_index = 2; }
+if(obj_suq.rocketTur >= 2) { r13c1.image_index = 2; }
 
 if(obj_suq.decoy == 1)
 {
@@ -351,16 +351,16 @@ if(obj_suq.ppda == 4)
 
 p = [];
 p[0] = 2000;//armor
-p[1] = 5000;//armor
-p[2] = 10000;//armor
-p[3] = 20000;//armor
+p[1] = 8000;//armor
+p[2] = 15000;//armor
+p[3] = 25000;//armor
 p[4] = 45000;//armor
 p[5] = 600;//mine
 p[6] = 800;//smine
 p[7] = 400;//teargas
 p[8] = 900;//30pick
 p[9] = 1400;//decoy
-p[10] = 2200;//sound
+p[10] = 3000;//sound
 p[11] = 600;//ammo 1
 p[12] = 1800;//ammo 2
 p[13] = 900;//money 1
@@ -378,23 +378,23 @@ p[24] = 6200;//weapon upgrades
 p[25] = 6400;//weapon upgrades
 p[26] = 6600;//weapon upgrades
 p[27] = 6800;//weapon upgrades
-p[28] = 2000;//TurretA
-p[29] = 2000;//TurretS
-p[30] = 2000;//TurretT
-p[31] = 3000;//TurretF
-p[32] = 4000;//TurretR
+p[28] = 4000;//TurretA
+p[29] = 4000;//TurretS
+p[30] = 4000;//TurretT
+p[31] = 12000;//TurretF
+p[32] = 25000;//TurretR
 p[33] = 3600;//ammo percent 3
 p[34] = 5000;//ammo percent 4
 p[35] = 8000;//ammo percent 5
 p[36] = 4000;//money percent 3
 p[37] = 6500;//money percent 4
 p[38] = 9000;//money percent 5
-p[39] = 11000;//ammo amount + 50%
-p[40] = 13500;//ammo full at start
-p[41] = 24000;//turret upgrade
+p[39] = 15000;//ammo amount + 50%
+p[40] = 22000;//ammo full at start
+p[41] = 40000;//turret upgrade
 p[42] = 28000;//spd upgrade
 p[43] = 12000;//RC car
-p[44] = 7000;//PP9 upgrade 4 to 16 dmg
+p[44] = 7000;//PP9 upgrade 4 to 8 dmg
 //add more items here
 
 //203,700 not counting unlimited items
