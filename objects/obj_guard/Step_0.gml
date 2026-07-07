@@ -45,12 +45,6 @@ if(((_wallsee and _doorsee) and abs(angle_difference(weapon.image_angle,pd1)) < 
 	else if(_wt and _dt and !_wallsee and !_doorsee and instance_exists(obj_turret))
 	{
 		var _tn = instance_nearest(x,y,obj_turret);
-		if(turretTime <= 0)
-		{
-			x3 = x+choose(32,-32);
-			y3 = y+choose(32,-32);
-			turretTime = choose(120,180);
-		}
 		x5 = _tn.x;
 		y5 = _tn.y;
 		suq_loc = false;
@@ -199,6 +193,8 @@ if(hp < hpc)
 	if(hit == true and !place_meeting(x,y,o_hurt))
 	{
 		_inst = instance_create_layer(x,y,"Instances_Action",o_hurt);
+		_inst.image_xscale = image_xscale;
+		_inst.image_yscale = image_yscale;
 	}
 	if(place_meeting(x,y,o_hurt))
 	{

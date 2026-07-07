@@ -119,7 +119,7 @@ switch(prog)
 if(t == 0 and obj_suq.progress < 36)
 {
 	obj_suq.progress++
-	instance_destroy();
+	//instance_destroy();
 }
 if(t <= 1)
 {

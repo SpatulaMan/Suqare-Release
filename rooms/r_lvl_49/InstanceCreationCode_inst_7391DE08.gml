@@ -33,3 +33,5 @@ switch(weapon_type)
 		weapon_bul = o_missile;
 		shtspd = 30; break;
 }
+weapon.image_xscale = 2;
+weapoin.image_yscale = 2;

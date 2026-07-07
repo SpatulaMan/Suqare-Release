@@ -3,6 +3,7 @@ if(instance_exists(o_pieces))
 {
 	with (o_pieces) instance_destroy();
 }
+if(room == r_lvl_50) { alarm_set(8,1); }
 hcheck = false;
 shtspd = 10;
 shtcnt = 0;

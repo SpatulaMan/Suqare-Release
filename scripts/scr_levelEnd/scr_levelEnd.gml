@@ -113,7 +113,7 @@ function scr_levelEnd(car,range_optional)
 		obj_suq.y = y;
 		obj_camera.x = x;
 		obj_camera.y = y;
-		if(room == r_lvl_7 or room == r_lvl_8) { direction = 180; }
+		if(room == r_lvl_7 or room == r_lvl_8 or room == r_lvl_23 or room == r_lvl_50 or room == r_lvl_49) { direction = 180; }
 		else { direction = 0; }
 		speed = 8;
 		obj_suq.progress++;
@@ -1433,11 +1433,18 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.hnet -= 3;
 				o_saveload.ynet -= 3;
 				o_saveload.endgame = true;
-				if(o_lvl50.o1 == true)
+				if(o_lvl50.o1 == true and o_lvl50.count > 30)
+				{
+					obj_suq.report = 154;
+					obj_suq.gildebrand += 4;
+					obj_suq.kanker -= 4;
+					o_saveload.armycount = o_lvl50.count;
+				}
+				else if(o_lvl50.o1 == true)
 				{
 					obj_suq.report = 124;
-					obj_suq.gildebrand += 3;
-					obj_suq.kanker -= 3;
+					obj_suq.gildebrand += 2;
+					obj_suq.kanker -= 2;
 					o_saveload.armycount = o_lvl50.count;
 				}
 				else

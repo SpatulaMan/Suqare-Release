@@ -93,6 +93,7 @@
     {"name":"inst_1ED9DD21","path":"rooms/r_armory/r_armory.yy",},
     {"name":"inst_2ECC6874","path":"rooms/r_armory/r_armory.yy",},
     {"name":"inst_6F2BE6E","path":"rooms/r_armory/r_armory.yy",},
+    {"name":"inst_2663D6DA","path":"rooms/r_armory/r_armory.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -216,6 +217,7 @@
         {"$GMRInstance":"v1","%Name":"inst_1ED9DD21","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1ED9DD21","objectId":{"name":"obj_chainGun","path":"objects/obj_chainGun/obj_chainGun.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":497.0,"y":447.0,},
         {"$GMRInstance":"v1","%Name":"inst_2ECC6874","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2ECC6874","objectId":{"name":"obj_assaultRifle","path":"objects/obj_assaultRifle/obj_assaultRifle.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":719.0,"y":433.0,},
         {"$GMRInstance":"v1","%Name":"inst_6F2BE6E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6F2BE6E","objectId":{"name":"obj_shuriken","path":"objects/obj_shuriken/obj_shuriken.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":738.0,"y":468.0,},
+        {"$GMRInstance":"v1","%Name":"inst_2663D6DA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2663D6DA","objectId":{"name":"obj_ghostGun","path":"objects/obj_ghostGun/obj_ghostGun.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":630.0,"y":449.0,},
       ],"layers":[],"name":"Instances_Action","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_2","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":45,"SerialiseWidth":640,"TileCompressedData":[
           -14294,-2147483648,15,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,-625,-2147483648,15,17,18,19,20,21,22,23,24,

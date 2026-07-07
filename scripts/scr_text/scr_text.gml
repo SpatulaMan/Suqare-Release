@@ -1611,6 +1611,7 @@ function scr_briefing(t){
 			you to save as many people as possible so they can join. 
 			Bring the civilians to the safety zone, and we'll bring 
 			them into our base without the ghosts knowing about it. 
+			Save as many as you can, but please save at least one! 
 			
 			We can't pay you anything, but we hope that you can find
 			some goodness left in your heart to help us. Don't let 
@@ -2025,7 +2026,7 @@ function scr_briefing(t){
 			
 			
 			(Press Spacebar to Accept)";
-	a[259] = @"Destroy Market";
+	a[259] = @"Kill Everyone";
 	a[260] = @"This Briefing was a lie";
 	
 	
@@ -2475,7 +2476,10 @@ function scr_conversation(t)
 			use a certain type of armor that can sometimes be found in blue crates, so we've made sure to ship blue crates that
 			have a greater rate of dropping armor everywhere. 
 			
-			I know it doesn't make sense, but just level with me here. It's the best I got. ";//gildebrand - Spawn Armor more often
+			I know it doesn't make sense, but just level with me here. It's the best I got. 
+			
+			Regards,
+			Gildebrand Consulting";//gildebrand - Spawn Armor more often
 	a[91] = @"Ungulate Studios is so grateful for your help. We'd like to give you a gift of a robot companion that we found.
 			We don't have any use for it, so we programmed it to follow you and assist you. If you ever let it get destroyed,
 			it won't come back. We only have the one robot. 
@@ -2997,8 +3001,8 @@ function scr_shop(t){
 			
 			Stats:
 			Shield Radius: 57
-			Shield HP: 8
-			HP: 4
+			Shield HP: 32
+			Turret HP: 4
 			
 			
 			$4000
@@ -5287,7 +5291,7 @@ function debrief(m)
 			Payout: $0
 			
 			Response From Hiring Firm:
-			Thank goodness. You saved at least one civilian. Maybe you're trying to make up for the 
+			Thank goodness. You saved some civilians! Maybe you're trying to make up for the 
 			mistakes you made. Or maybe you just want the battle to be more interesting. Either way, we
 			thank you for the help. I hope your heart has changed and feels for the people fighting for 
 			their lives. Best of luck to you, Suqare. 
@@ -5740,7 +5744,24 @@ function debrief(m)
 			
 			
 			Press Spacebar to continue";
-	c[154] = @"";
+	c[154] = @"Objectives Complete
+			Payout: $0
+			
+			Response From Hiring Firm:
+			Thank goodness. You saved a bunch of civilians! Maybe you're trying to make up for the 
+			mistakes you made. Or maybe you just want the battle to be more interesting. Either way, we
+			thank you for the help. I hope your heart has changed and feels for the people fighting for 
+			their lives. Best of luck to you, Suqare. 
+			
+			Current standing with Gildebrand Consulting: "+string(obj_suq.gildebrand)+@"
+			
+			Result:
+			You saved some civilians and bolstered the Resistance Forces. This will be plenty of members
+			to start the fighting force against Kanker and Co. It will give them a good, fighting chance,
+			and that's all you can expect in a time like this. 
+			
+			
+			Press Spacebar to continue";
 	c[155] = @"";
 	c[156] = @"";
 	c[157] = @"";

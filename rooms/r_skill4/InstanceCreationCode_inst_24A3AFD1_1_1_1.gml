@@ -1,3 +1,3 @@
-newX = 578;
-newY = 168;
+newX = 280;
+newY = 301;
 newR = r_range;

@@ -1,4 +1,4 @@
-if(o_saveload.skillCheck >= s and obj_suq.progress > (s*2))
+if(o_saveload.skillCheck >= s)// and obj_suq.progress > (s*2))
 {
 	instance_destroy();
 }
