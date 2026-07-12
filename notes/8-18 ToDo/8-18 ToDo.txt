@@ -50,6 +50,8 @@ Checklist:
 -level 51
 -Playtest and fix 1 levels
 -Check that level select looping works
+-Fix when company goes bankrupt
+-Go through levels and make them affect other companies more. Decisions matter! 
 -Fix turret code when reacting to enemies? 
 -6 low standing levels
 -If company is below -6, then don't show their levels

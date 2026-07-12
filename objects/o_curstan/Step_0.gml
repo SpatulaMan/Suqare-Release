@@ -19,23 +19,33 @@ switch(c)
 }
 if(csuq < -6)
 {
-	con = "Hated"
+	con = "Despised"
 	o1 = make_color_rgb(255,0,0);
 }
-else if(csuq >= -6 and csuq < -1)
+else if(csuq >= -6 and csuq < -4)
+{
+	con = "Hated"
+	o1 = make_color_rgb(255,90,0);
+}
+else if(csuq >= -4 and csuq < -1)
 {
 	con = "Disliked"
-	o1 = make_color_rgb(255,100,0);
+	o1 = make_color_rgb(255,180,0);
 }
 else if(csuq >= -1 and csuq <= 1)
 {
 	con = "Neutral"
 	o1 = make_color_rgb(255,255,0);
 }
-else if(csuq > 1 and csuq <= 6)
+else if(csuq > 1 and csuq <= 4)
 {
 	con = "Liked"
-	o1 = make_color_rgb(150,255,0);
+	o1 = make_color_rgb(180,255,0);
+}
+else if(csuq > 4 and csuq <= 6)
+{
+	con = "Valued"
+	o1 = make_color_rgb(90,255,0);
 }
 else if(csuq > 6)
 {
