@@ -7,3 +7,7 @@ if(instance_exists(o_shop) and image_index != 2 and buyable)
 	o_shop.hover = true;
 	o_shop.s = item;
 }
+/*else if(instance_exists(o_shop))
+{
+	o_shop.s = item;
+}

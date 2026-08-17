@@ -4,3 +4,7 @@ if(path_exists(path))
 {
     path_delete(path);
 }
+if(instance_exists(weapon))
+{
+	instance_destroy(weapon.id);
+}	

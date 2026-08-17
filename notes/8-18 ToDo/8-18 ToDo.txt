@@ -16,7 +16,7 @@ Gildebrand Consulting - Will steal all of your weapons from you and leave you wi
 
 -Finish all 51 levels - 1 levels left
 
--Playtest and bug-fix levels - 3 levels left
+-Playtest and bug-fix levels - 1 levels left
 
 4 missions after lvl 45 shows up or choosing not to kill the monster, go to end game with monster attacking you? 
 
@@ -35,13 +35,14 @@ You get an attack ending if any of the comapnies are less than -6 standing and t
 if all are greater than -6 and less than 6, you get a boring nothing ending
 highest net worth company with standing higher than 6 gives you positive ending
 
-Kanker standing and knet (bad standing not bankrupt, attack you)
-perez standing and pnet
-yellerteeth standing and ynet
-gildebrand standing and gnet
-ungulate standing and unet
-hiertech standing and hnet
-if several levels pass after not doing lvl 45 and it being available, trigger attack by ninja artifact boss? 
+Kanker standing and knet (bad standing not bankrupt, attack you - good standing, good words in for you)
+perez standing and pnet (bad standing not bankrupt, attack you - good standing, good words in for you)
+yellerteeth standing and ynet (bad standing not bankrupt, attack you - good standing, good words in for you)
+gildebrand standing and gnet (bad standing not bankrupt, attack you - good standing, good words in for you)
+ungulate standing and unet (bad standing not bankrupt, attack you - good standing, good words in for you)
+hiertech standing and hnet (bad standing not bankrupt, attack you - good standing, good words in for you)
+
+Only attack if standing is less than -6 and net worth is > 0
 
 
 
@@ -49,13 +50,16 @@ if several levels pass after not doing lvl 45 and it being available, trigger at
 Checklist:
 -level 51
 -Playtest and fix 1 levels
+Done-Create area to check your own net worth against the 6 other mercenaries that are active in your region
 -Check that level select looping works
--Fix when company goes bankrupt
+Done-Fix when company goes bankrupt
 -Go through levels and make them affect other companies more. Decisions matter! 
 -Fix turret code when reacting to enemies? 
--6 low standing levels
--If company is below -6, then don't show their levels
--gadgets
+Done-6 low standing assassination attempts
+Done-If company is below -6, then don't show their levels
+Done?-gadgets
+-Make sure ninja artifacts show up in base if you steal them
+-Add more traders into the game and give them expanded trading capabilities
 -Add 50 more variables to the saveload object in case I need more for later updates. 
 -credits
 	-How many Missions Taken
@@ -66,7 +70,11 @@ Checklist:
 	-Text blurb about each company and what they're doing or if they're bankrupt. 
 	-how the world has changed based on your actions
 	-A Mercenary rating based on how much money you made in total, multiplied by the total standing of all 6 companies - need to figure out what a good score is
--controller support
 -steam acheivements
--change game icon to crosshair
--extras? Are these the extra modes if the game is successful enough (or make into DLC?)? Making of section? Small multiplayer/co-op game mode? 
+Done-change game icon to crosshair
+-Re-write text so each company sounds distinct
+-Replace any use of human/person/people words with something shape related in text
+-extras? Are these the extra modes if the game is successful enough (or make into DLC?)? Making of section? Small multiplayer/co-op game mode? Cheat codes?
+
+After Release: 
+-controller support

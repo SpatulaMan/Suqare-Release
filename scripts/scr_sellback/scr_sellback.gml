@@ -38,7 +38,7 @@ function scr_sellback(_i,_ch)
 	obj_suq.minesAmt = 0;
 	obj_suq.lock30 = 0;
 	obj_suq.lock50 = 0;
-	obj_suq.decoy = 0;
+	obj_suq.darts = 0;
 	obj_suq.attract = 0;
 	obj_suq.ammoPercent = 50;
 	obj_suq.moneyPercent = 50;
@@ -46,7 +46,7 @@ function scr_sellback(_i,_ch)
 	obj_suq.pda = 0; obj_suq.pmr = 12;
 	obj_suq.mda = 0; obj_suq.mmr = 6; obj_suq.mMax = 30;
 	obj_suq.mgda = 0; obj_suq.mgmr = 25;
-	obj_suq.arda = 10; obj_suq.armr = 80;
+	obj_suq.arda = 8; obj_suq.armr = 80;
 	obj_suq.sgda = 0; obj_suq.sgmr = 0;
 	obj_suq.shda = 20; obj_suq.shmr = 100;
 	obj_suq.fda = 0; obj_suq.fmr = 0;

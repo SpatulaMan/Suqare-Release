@@ -85,11 +85,11 @@ r11c1.item = 28;
 r11c2 = instance_create_depth(x+54,y+106,-101,o_buy);
 r11c2.item = 29;
 r12c1 = instance_create_depth(x+3,y+116,-101,o_buy);
-r12c1.item = 30;
+r12c1.item = 31;
 r12c2 = instance_create_depth(x+54,y+116,-101,o_buy);
-r12c2.item = 31;
+r12c2.item = 32;
 r13c1 = instance_create_depth(x+3,y+126,-101,o_buy);
-r13c1.item = 32;
+r13c1.item = 30;
 r13c2 = instance_create_depth(x+54,y+126,-101,o_buy);
 r13c2.item = 39;
 r14c1 = instance_create_depth(x+3,y+136,-101,o_buy);
@@ -133,13 +133,13 @@ if(obj_suq.lock50 >= 20) { r3c1.image_index = 2; }
 
 if(obj_suq.attackTur >= 10) { r11c1.image_index = 2; }
 if(obj_suq.defenseTur >= 10) { r11c2.image_index = 2; }
-if(obj_suq.tearTur >= 10) { r12c1.image_index = 2; }
-if(obj_suq.flameTur >= 6) { r12c2.image_index = 2; }
-if(obj_suq.rocketTur >= 2) { r13c1.image_index = 2; }
+if(obj_suq.hurtLaser >= 1) { r13c1.image_index = 2; }
+if(obj_suq.flameTur >= 6) { r12c1.image_index = 2; }
+if(obj_suq.rocketTur >= 2) { r12c2.image_index = 2; }
 
-if(obj_suq.decoy == 1)
+if(obj_suq.darts >= 10)
 {
-	wp[9] = true;
+	//wp[9] = true;
 	r3c2.image_index = 2;
 }
 if(obj_suq.attract == 1)
@@ -359,7 +359,7 @@ p[5] = 600;//mine
 p[6] = 800;//smine
 p[7] = 400;//teargas
 p[8] = 900;//30pick
-p[9] = 1400;//decoy
+p[9] = 1400;//Change Sides dart 10% chance, odds get better the lower your health is
 p[10] = 3000;//sound
 p[11] = 600;//ammo 1
 p[12] = 1800;//ammo 2
@@ -380,9 +380,9 @@ p[26] = 6600;//weapon upgrades
 p[27] = 6800;//weapon upgrades
 p[28] = 4000;//TurretA
 p[29] = 4000;//TurretS
-p[30] = 4000;//TurretT
-p[31] = 12000;//TurretF
-p[32] = 25000;//TurretR
+p[32] = 50000;//something to bring down health and increase another stat. risk/reward
+p[30] = 12000;//TurretF
+p[31] = 25000;//TurretR
 p[33] = 3600;//ammo percent 3
 p[34] = 5000;//ammo percent 4
 p[35] = 8000;//ammo percent 5

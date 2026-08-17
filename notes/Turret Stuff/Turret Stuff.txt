@@ -32,7 +32,7 @@ Level where you get kidnapped by a company with a low standing. Other companies 
 time, they'll try to get back at you. Maybe needs a low net worth as well? Different for each company? These will happen after you select a mission. Have a pop-up show up to tell you 
 what's happening right before the level begins except for 
 
-Kanker & Co. - will hire Cricle the assassin to kill you. He'll show up on the next level you do right at the beginning to kill you.
+Kanker & Co. - will hire an assassin to kill you. He'll show up on the next level you do right at the beginning to kill you.
 HierTech - Will drug you. Switches all movement directions. Maybe these continually change every 30 seconds as well. 
 Perez Holdings - Will stop your car with armed thugs while you're on your way to the mission. Defeat them to move on. 
 Yellerteeth Inc. - Will send you on a suicide mission at Ninja headquarters

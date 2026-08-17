@@ -37,3 +37,9 @@ else
 	yn = ynetp;
 	un = unetp;
 }
+if(kn < 1) { kn = 0; }
+if(un < 1) { un = 0; }
+if(hn < 1) { hn = 0; }
+if(pn < 1) { pn = 0; }
+if(yn < 1) { yn = 0; }
+if(gn < 1) { gn = 0; }

@@ -18,7 +18,8 @@ if(distance_to_object(obj_suq) < 36 and s < 45)
 				if(obj_suq.lock30 >= 45) { r2c2.image_index = 2; } break;
 		case 8: if(obj_suq.money >= p[s] and obj_suq.lock50 < 20) { obj_suq.money -= p[s]; obj_suq.lock50 += 1; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); }
 				if(obj_suq.lock50 >= 20) { r3c1.image_index = 2; } break;
-		case 9: if(wp[s] == false and obj_suq.money >= p[s]) { r3c2.item = 45; wp[s] = true; obj_suq.money -= p[s]; obj_suq.decoy = 1; r3c2.image_index = 2; s = r3c2.item; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); } break;
+		case 9: if(wp[s] == false and obj_suq.darts < 10 and obj_suq.money >= p[s]) { obj_suq.money -= p[s]; obj_suq.darts++; /*s = r3c2.item;*/ audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); }
+				if(obj_suq.darts >= 10) { r3c2.image_index = 2; } break;
 		case 10: if(wp[s] == false and obj_suq.money >= p[s]) { r4c1.item = 45; wp[s] = true; obj_suq.money -= p[s]; obj_suq.attract = 1; r4c1.image_index = 2; s = r4c1.item; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); } break;
 		case 11: if(wp[s] == false and obj_suq.money >= p[s]) { r4c2.item = 12; wp[s] = true; obj_suq.money -= p[s]; obj_suq.ammoPercent -= 10; s = r4c2.item; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); } break;
 		case 12: if(wp[s] == false and obj_suq.money >= p[s]) { r4c2.item = 33; wp[s] = true; obj_suq.money -= p[s]; obj_suq.ammoPercent -= 10; s = r4c2.item; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); } break;
@@ -41,18 +42,18 @@ if(distance_to_object(obj_suq) < 36 and s < 45)
 				if(obj_suq.attackTur >= 10) { r11c1.image_index = 2; } break;
 		case 29: if(obj_suq.money >= p[s] and obj_suq.defenseTur < 10) { obj_suq.money -= p[s]; obj_suq.defenseTur++; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); }
 				if(obj_suq.defenseTur >= 10) { r11c2.image_index = 2; } break;
-		case 30: if(obj_suq.money >= p[s] and obj_suq.tearTur < 10) { obj_suq.money -= p[s]; obj_suq.tearTur++; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); }
-				if(obj_suq.tearTur >= 10) { r12c1.image_index = 2; } break;
-		case 31: if(obj_suq.money >= p[s] and obj_suq.flameTur < 6) { obj_suq.money -= p[s]; obj_suq.flameTur++; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); }
-				if(obj_suq.flameTur >= 6) { r12c2.image_index = 2; } break;
-		case 32: if(obj_suq.money >= p[s] and obj_suq.rocketTur < 2) { obj_suq.money -= p[s]; obj_suq.rocketTur++; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); }
-				if(obj_suq.rocketTur >= 2) { r13c1.image_index = 2; } break;
+		case 32: if(obj_suq.money >= p[s] and obj_suq.tearTur < 10) { obj_suq.money -= p[s]; obj_suq.tearTur++; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); }
+				if(obj_suq.tearTur >= 10) { r13c1.image_index = 2; } break;
+		case 30: if(obj_suq.money >= p[s] and obj_suq.flameTur < 6) { obj_suq.money -= p[s]; obj_suq.flameTur++; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); }
+				if(obj_suq.flameTur >= 6) { r12c1.image_index = 2; } break;
+		case 31: if(obj_suq.money >= p[s] and obj_suq.rocketTur < 2) { obj_suq.money -= p[s]; obj_suq.rocketTur++; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); }
+				if(obj_suq.rocketTur >= 2) { r12c2.image_index = 2; } break;
 		case 33: if(wp[s] == false and obj_suq.money >= p[s]) { r4c2.item = 34; wp[s] = true; obj_suq.money -= p[s]; obj_suq.ammoPercent -= 10; s = r4c2.item; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); } break;
 		case 34: if(wp[s] == false and obj_suq.money >= p[s]) { r4c2.item = 35; wp[s] = true; obj_suq.money -= p[s]; obj_suq.ammoPercent -= 10; s = r4c2.item; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); } break;
-		case 35: if(wp[s] == false and obj_suq.money >= p[s]) { r4c2.item = 45; r4c2.image_index = 2 wp[s] = true; obj_suq.money -= p[s]; obj_suq.ammoPercent -= 10; s = r4c2.item; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); } break;
+		case 35: if(wp[s] == false and obj_suq.money >= p[s]) { r4c2.item = 46; r4c2.image_index = 2 wp[s] = true; obj_suq.money -= p[s]; obj_suq.ammoPercent -= 10; s = r4c2.item; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); } break;
 		case 36: if(wp[s] == false and obj_suq.money >= p[s]) { r5c1.item = 37; wp[s] = true; obj_suq.money -= p[s]; obj_suq.moneyPercent -= 10; s = r5c1.item; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); } break;
 		case 37: if(wp[s] == false and obj_suq.money >= p[s]) { r5c1.item = 38; wp[s] = true; obj_suq.money -= p[s]; obj_suq.moneyPercent -= 10; s = r5c1.item; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); } break;
-		case 38: if(wp[s] == false and obj_suq.money >= p[s]) { r5c1.item = 45; r5c1.image_index = 2; wp[s] = true; obj_suq.money -= p[s]; obj_suq.moneyPercent -= 10; s = r5c1.item;  audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); } break;
+		case 38: if(wp[s] == false and obj_suq.money >= p[s]) { r5c1.item = 47; r5c1.image_index = 2; wp[s] = true; obj_suq.money -= p[s]; obj_suq.moneyPercent -= 10; s = r5c1.item;  audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); } break;
 		case 39: if(wp[s] == false and obj_suq.money >= p[s]) { r13c2.item = 45; r13c2.image_index = 2; wp[s] = true; obj_suq.money -= p[s]; o_saveload.ammoUp = 1.5; o_armory.alarm[2] = 1; s = r13c2.item; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); } break;
 		case 40: if(wp[s] == false and obj_suq.money >= p[s]) { r14c1.item = 45; r14c1.image_index = 2; wp[s] = true; obj_suq.money -= p[s]; o_saveload.ammoFull = true; o_armory.alarm[2] = 1; s = r14c1.item; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); } break;
 		case 41: if(wp[s] == false and obj_suq.money >= p[s]) { r14c2.item = 45; r14c2.image_index = 2; wp[s] = true; obj_suq.money -= p[s]; o_saveload.turretUp = 2; s = r14c2.item; audio_play_sound(snd_heal,3,0,.7*o_saveload.sfxvol,0,.7); } break;

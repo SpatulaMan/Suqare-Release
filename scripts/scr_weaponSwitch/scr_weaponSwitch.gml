@@ -333,7 +333,7 @@ function scr_gadgetswitch(_dir)
 			    {
 			        gadget++;
 			    }
-			    if(gadget == 4 and decoy != 1)
+			    if(gadget == 4 and darts == 0)
 			    {
 			        gadget++;
 			    }
@@ -385,7 +385,7 @@ function scr_gadgetswitch(_dir)
 			    {
 			        gadget++;
 			    }
-			    if(gadget == 4 and decoy != 1)
+			    if(gadget == 4 and darts == 0)
 			    {
 			        gadget++;
 			    }
@@ -458,7 +458,7 @@ function scr_gadgetswitch(_dir)
 			    {
 			        gadget--;
 			    }
-			    if(gadget == 4 and decoy != 1)
+			    if(gadget == 4 and darts == 0)
 			    {
 			        gadget--;
 			    }
@@ -510,7 +510,7 @@ function scr_gadgetswitch(_dir)
 			    {
 			        gadget--;
 			    }
-			    if(gadget == 4 and decoy != 1)
+			    if(gadget == 4 and darts == 0)
 			    {
 			        gadget--;
 			    }

@@ -15,6 +15,8 @@ hit = false;
 keyimage = 0;
 hpc = 0;
 hpt = 0;
+randomize();
+spd = random_range(.9,1.15);
 if(room == r_lvl_2)
 {
 	access = true;

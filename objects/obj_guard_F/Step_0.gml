@@ -20,6 +20,13 @@ if(start and instance_exists(weapon))
 		_doorsee = collision_line(x,y,_n.x,_n.y,o_door,false,true) < 0;
 		pd1 = point_direction(x,y,_n.x,_n.y);
 	}
+	if(instance_exists(obj_guard))
+	{
+		_n = instance_nearest(x,y,obj_guard);
+		_wallsee = collision_line(x,y,_n.x,_n.y,obj_wall,false,true) < 0;
+		_doorsee = collision_line(x,y,_n.x,_n.y,o_door,false,true) < 0;
+		pd1 = point_direction(x,y,_n.x,_n.y);
+	}
 	if(distance_to_object(obj_suq) > 10)
 	{
 		fCheck = false;

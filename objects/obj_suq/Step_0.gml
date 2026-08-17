@@ -30,7 +30,7 @@ if(image_yscale > 1)
 	image_yscale -= 0.0005;
 }
 
-if(room != r_armory and room != r_lvl_37 and keyboard_check(vk_backspace) and lives > 0)
+if(room != r_armory and room != r_range and room != r_lvl_37 and keyboard_check(vk_backspace) and lives > 0)
 {
 	res++;
 	if(res >= 120)
@@ -741,6 +741,7 @@ if(room == r_range or (room == r_skill1 and !instance_exists(o_skobj)) or (room 
 	tearTur = t3;
 	flameTur = t4;
 	rocketTur = t5;
+	darts = dartsb;
 	lives = lb;
 }
 if(lives <= 2 and ninjaHeal) { lives = 10; ninjaHeal = false; }

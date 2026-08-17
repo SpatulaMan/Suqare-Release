@@ -275,14 +275,14 @@ if(keyboard_check_direct(vk_shift) and room != r_armory)
 			}
 			lock50--;
 		} break;
-		case 4: if(decoy == 1)
+		case 4: if(darts > 0)
 		{
-			var _inst1 = instance_create_layer(x,y,"Instances_Action",o_decoy);
-			audio_play_sound(snd_knifeThrow,5,false,3*o_saveload.sfxvol,0,.5);
-			_inst1.speed = 2;
+			var _inst1 = instance_create_layer(x,y,"Instances_Action",o_dart);
+			audio_play_sound(snd_knifeThrow,3,false,o_saveload.sfxvol,0,random_range(2,4));
+			_inst1.speed = 5;
 			_inst1.direction = point_direction(x,y,mouse_x,mouse_y);
-			decoy++;
-			alarm_set(4,1200);
+			_inst1.image_angle = point_direction(x,y,mouse_x,mouse_y);
+			darts--;
 		} break;
 		case 5: if(attract == 1)
 		{

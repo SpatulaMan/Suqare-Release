@@ -2758,16 +2758,20 @@ function scr_shop(t){
 			$900
 			
 			You have " + string(obj_suq.lock50) + " lockpicks currently"; 
-	o[10] = @"Decoy
+	o[10] = @"Influence Dart
 			
 			
-			Description: This is a gadget that creates a decoy of you.
-			It will walk forward and even open doors, but it's mostly
-			there to attract enemy fire. This can be used once every
-			20 seconds. 
+			Description: This gadget has a chance to turn an enemy into
+			an ally. It's a weird poison dart from a weird country, but
+			it's been said to be more effective in the most dire of
+			situations. These work on most intelligent beings. 
+			
+			Limit: 10
 			
 			
-			$1400";//new gadget
+			$1400
+			
+			You have " + string(obj_suq.darts) + " darts currently";//new gadget
 	o[11] = @"Attractor
 			
 			

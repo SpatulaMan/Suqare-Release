@@ -34,6 +34,7 @@ sniperRifleAmt = snb;
 rocketLauncherAmt = rb;
 flamethrowerAmt = fb;
 pp7Amt = ppb;  
+darts = dartsb;
 o_saveload.moneyT = moneyb;//maybe leave this in? 
 //money += ammoBuy;
 

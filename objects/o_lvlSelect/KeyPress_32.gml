@@ -72,6 +72,8 @@ if(distance_to_object(obj_suq) < 36)
 		case 50: o_lvlStart.x1 = 1114; o_lvlStart.y1 = 859; o_lvlStart.r = r_lvl_51; break;*/
 	}
 	//with (obj_wallWood) instance_destroy();
+	o_saveload.lvlorgx = o_lvlStart.x1;
+	o_saveload.lvlorgy = o_lvlStart.y1;
 	o_missionG.b = b;
 	o_missionG.ot1 = ot1;
 	inst_4437104E.x = 800;//482 for origin

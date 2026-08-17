@@ -138,7 +138,33 @@ function save()
 		ceo: o_saveload.ceo,
 		rec: o_saveload.rec,
 		ending: o_saveload.ending,
-		nMemsSave: o_saveload.nMemsSave
+		nMemsSave: o_saveload.nMemsSave,
+		hrev: o_saveload.hRevenge,
+		prev: o_saveload.pRevenge,
+		yrev: o_saveload.yRevenge,
+		grev: o_saveload.gRevenge,
+		urev: o_saveload.uRevenge,
+		krev: o_saveload.kRevenge,
+		dainet: o_saveload.dainet,
+		hxenet: o_saveload.hxenet,
+		otcnet: o_saveload.otcnet,
+		pnenet: o_saveload.pnenet,
+		pranet: o_saveload.pranet,
+		rcenet: o_saveload.rcenet,
+		success: o_saveload.success,
+		failure: o_saveload.failure,
+		ksuccess: o_saveload.ksuccess,
+		ysuccess: o_saveload.ysuccess,
+		psuccess: o_saveload.psuccess,
+		usuccess: o_saveload.usuccess,
+		gsuccess: o_saveload.gsuccess,
+		hsuccess: o_saveload.hsuccess,
+		kwin: o_saveload.kwin,
+		ywin: o_saveload.ywin,
+		pwin: o_saveload.pwin,
+		uwin: o_saveload.uwin,
+		gwin: o_saveload.gwin,
+		hwin: o_saveload.hwin
 		
 		//upgrades
 		
@@ -439,6 +465,58 @@ function load(_f)
 			o_saveload.ending=_struct.ending;
 		if (struct_exists(_struct, "nMemsSave"))
 			o_saveload.nMemsSave=_struct.nMemsSave;
+		if (struct_exists(_struct, "hrev"))
+			o_saveload.hRevenge=_struct.hrev;
+		if (struct_exists(_struct, "prev"))
+			o_saveload.pRevenge=_struct.prev;
+		if (struct_exists(_struct, "yrev"))
+			o_saveload.yRevenge=_struct.yrev;
+		if (struct_exists(_struct, "grev"))
+			o_saveload.gRevenge=_struct.grev;
+		if (struct_exists(_struct, "urev"))
+			o_saveload.uRevenge=_struct.urev;
+		if (struct_exists(_struct, "krev"))
+			o_saveload.kRevenge=_struct.krev;
+		if (struct_exists(_struct, "dainet"))
+			o_saveload.dainet=_struct.dainet;
+		if (struct_exists(_struct, "hxenet"))
+			o_saveload.hxenet=_struct.hxenet;
+		if (struct_exists(_struct, "otcnet"))
+			o_saveload.otcnet=_struct.otcnet;
+		if (struct_exists(_struct, "pnenet"))
+			o_saveload.pnenet=_struct.pnenet;
+		if (struct_exists(_struct, "pranet"))
+			o_saveload.pranet=_struct.pranet;
+		if (struct_exists(_struct, "rcenet"))
+			o_saveload.rcenet=_struct.rcenet;
+		if (struct_exists(_struct, "success"))
+			o_saveload.success=_struct.success;
+		if (struct_exists(_struct, "failure"))
+			o_saveload.failure=_struct.failure;
+		if (struct_exists(_struct, "ksuccess"))
+			o_saveload.ksuccess=_struct.ksuccess;
+		if (struct_exists(_struct, "ysuccess"))
+			o_saveload.ysuccess=_struct.ysuccess;
+		if (struct_exists(_struct, "psuccess"))
+			o_saveload.psuccess=_struct.psuccess;
+		if (struct_exists(_struct, "usuccess"))
+			o_saveload.usuccess=_struct.usuccess;
+		if (struct_exists(_struct, "gsuccess"))
+			o_saveload.gsuccess=_struct.gsuccess;
+		if (struct_exists(_struct, "hsuccess"))
+			o_saveload.hsuccess=_struct.hsuccess;
+		if (struct_exists(_struct, "kwin"))
+			o_saveload.kwin=_struct.kwin;
+		if (struct_exists(_struct, "ywin"))
+			o_saveload.ywin=_struct.ywin;
+		if (struct_exists(_struct, "pwin"))
+			o_saveload.pwin=_struct.pwin;
+		if (struct_exists(_struct, "uwin"))
+			o_saveload.uwin=_struct.uwin;
+		if (struct_exists(_struct, "gwin"))
+			o_saveload.gwin=_struct.gwin;
+		if (struct_exists(_struct, "hwin"))
+			o_saveload.hwin=_struct.hwin;
 			
 		
 		//levels that are incompleted and are available to the player currently in variables 
@@ -576,7 +654,34 @@ function load(_f)
 			ceo: false,
 			rec: 300,
 			ending: 0,
-			nMemsSave: false
+			nMemsSave: false,
+			hrev: false,
+			prev: false,
+			yrev: false,
+			grev: false,
+			urev: false,
+			krev: false,
+			dainet: 120000,
+			hxenet: 105000,
+			otcnet: 90000,
+			pnenet: 75000,
+			pranet: 60000,
+			rcenet: 45000,
+			success: 0,
+			failure: 0,
+			ksuccess: 0,
+			ysuccess: 0,
+			psuccess: 0,
+			usuccess: 0,
+			gsuccess: 0,
+			hsuccess: 0,
+			kwin: false,
+			ywin: false,
+			pwin: false,
+			uwin: false,
+			gwin: false,
+			hwin: false
+			
 		
 		}
 	

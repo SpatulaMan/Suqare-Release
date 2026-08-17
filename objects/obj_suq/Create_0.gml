@@ -231,6 +231,9 @@ keyHaveOrange = 0;
 silverKeyHave = 0;
 keys = 0;
 hitSwitch = 0;
+hurtLaser = 0;
+darts = 0;
+dartsb = 0;
 //Health Variables
 h = 50;
 hc = true;

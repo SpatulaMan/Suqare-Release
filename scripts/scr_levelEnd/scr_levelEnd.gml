@@ -14,6 +14,15 @@ function scr_levelEnd(car,range_optional)
 			o_saveload.pnetp = o_saveload.pnet;
 			o_saveload.ynetp = o_saveload.ynet;
 			o_saveload.hnetp = o_saveload.hnet;
+			
+			var _net = 180000;
+			o_saveload.dainet += min((_net-o_saveload.dainet)/(36-obj_suq.progress),choose(1000,10000));
+			o_saveload.hxenet += min((_net-o_saveload.hxenet)/(36-obj_suq.progress),choose(1200,10000));
+			o_saveload.otcnet += min((_net-o_saveload.otcnet)/(36-obj_suq.progress),choose(1400,10000));
+			o_saveload.pnenet += min((_net-o_saveload.pnenet)/(36-obj_suq.progress),choose(800,1600,10000));
+			o_saveload.pranet += min((_net-o_saveload.pranet)/(36-obj_suq.progress),choose(900,1800,10000));
+			o_saveload.rcenet += min((_net-o_saveload.rcenet)/(36-obj_suq.progress),choose(1000,2000,10000));
+			
 			if(obj_suq.progress >= 6) { o_saveload.pnet -= (3 - o_saveload.software); }
 			if(obj_suq.progress >= 15 and o_saveload.officials == false) { o_saveload.pnet -= 2; }
 			if(obj_suq.progress >= 23 and o_saveload.convinced == false) { o_saveload.pnet -= 1; } 
@@ -139,10 +148,12 @@ function scr_levelEnd(car,range_optional)
 				if(!instance_exists(inst_6C9E1EA5))
 				{
 					o_saveload.moneyT += 300*_emtBill;
+					o_saveload.success++;
 					obj_suq.report = 1;
 				}
 				else
 				{
+					o_saveload.failure++;
 					obj_suq.report = 2;
 				}
 			} break;
@@ -176,6 +187,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.kanker += 2;
 					o_saveload.moneyT += 800*_emtBill;
 					obj_suq.report = 5;
+					o_saveload.success++;
 					if(!instance_exists(o_safe) == true)
 					{
 						o_saveload.knet += 5;
@@ -186,6 +198,7 @@ function scr_levelEnd(car,range_optional)
 				}
 				else
 				{
+					o_saveload.failure++;
 					o_saveload.knet -= 2;
 					o_saveload.pnet += 1;
 					if(!instance_exists(o_safe)) { o_saveload.pnet -= 10; }
@@ -207,12 +220,14 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += 4700*_emtBill;
 					obj_suq.yellerteeth += 2;
 					obj_suq.report = 8;
+					o_saveload.success++;
 				}
 				else
 				{
 					o_saveload.ynet -= 7;
 					obj_suq.yellerteeth -= 2;
 					obj_suq.report = 9;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_4:
@@ -231,6 +246,7 @@ function scr_levelEnd(car,range_optional)
 						o_saveload.moneyT += 4200*_emtBill;
 						obj_suq.ungulate += 2;
 						obj_suq.report = 10;
+						o_saveload.success++;
 					}
 					else
 					{
@@ -238,6 +254,7 @@ function scr_levelEnd(car,range_optional)
 						o_saveload.unet -= 1;
 						obj_suq.ungulate -= 2;
 						obj_suq.report = 11;
+						o_saveload.failure++;
 					}
 				}
 				else if(!instance_exists(o_girl))
@@ -246,6 +263,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.unet -= 3;
 					obj_suq.ungulate -= 2;
 					obj_suq.report = 11;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_5:
@@ -264,6 +282,7 @@ function scr_levelEnd(car,range_optional)
 						o_saveload.moneyT += 2450*_emtBill;
 						obj_suq.hiertech += 2;
 						obj_suq.report = 12;
+						o_saveload.success++;
 					}
 					else
 					{
@@ -271,6 +290,7 @@ function scr_levelEnd(car,range_optional)
 						o_saveload.unet += 1;
 						obj_suq.hiertech -= 2;
 						obj_suq.report = 15;
+						o_saveload.failure++;
 					}
 				}
 				else if(!instance_exists(o_girl_1) and o_badCar.speed > 0)
@@ -279,6 +299,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.unet += 4;
 					obj_suq.hiertech -= 3;
 					obj_suq.report = 13;
+					o_saveload.failure++;
 				}
 				else if(!instance_exists(o_girl_1) and o_badCar.speed == 0)
 				{
@@ -286,11 +307,13 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.unet -= 3;
 					obj_suq.hiertech -= 2;
 					obj_suq.report = 14;
+					o_saveload.failure++;
 				}
 				else
 				{
 					obj_suq.hiertech -= 2;
 					obj_suq.report = 15;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_6:
@@ -306,15 +329,18 @@ function scr_levelEnd(car,range_optional)
 				{
 					o_saveload.moneyT += 3600*_emtBill;
 					obj_suq.report = 16;
+					o_saveload.success++;
 				}
 				else if(obj_suq.totems == 3 and instance_exists(obj_ghost) == true and obj_suq.ghostGunHave == 1)//investigated and found totems
 				{
 					o_saveload.moneyT += 1800*_emtBill;
 					obj_suq.report = 17;
+					o_saveload.failure++;
 				}
 				else if(obj_suq.totems < 3 or obj_suq.ghostGunHave == 0)//failed
 				{
 					obj_suq.report = 18;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_7:
@@ -332,6 +358,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 19;
 					obj_suq.perez += 5;
 					obj_suq.gemsD = 0;
+					o_saveload.success++;
 				}
 				else
 				{
@@ -339,6 +366,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 20;
 					obj_suq.kanker += 4;
 					obj_suq.perez -= 10;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_8:
@@ -355,6 +383,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.gnet -= 9;
 					obj_suq.report = 21;
 					obj_suq.gildebrand -= 3;
+					o_saveload.failure++;
 				}
 				else
 				{
@@ -362,6 +391,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += 3300*_emtBill;
 					obj_suq.report = 22;
 					obj_suq.gildebrand += 3;
+					o_saveload.success++;
 				}
 			} break;
 			case r_lvl_9:
@@ -379,6 +409,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 23;
 					obj_suq.yellerteeth += 2;
 					o_saveload.moneyT += 4000*_emtBill;
+					o_saveload.success++;
 					if(o_obj_L9.ob2 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 1; o_saveload.moneyT += 1000*_emtBill; }
 					if(o_obj_L9.ob3 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 2; o_saveload.moneyT += 1000*_emtBill; }
 				}
@@ -387,6 +418,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.ynet -= 9;
 					obj_suq.report = 24;
 					obj_suq.yellerteeth -= 3;
+					o_saveload.failure++;
 					if(o_obj_L9.ob2 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 1; o_saveload.moneyT += 1000*_emtBill; }
 					if(o_obj_L9.ob3 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 2; o_saveload.moneyT += 1000*_emtBill; }
 				}
@@ -400,10 +432,13 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.knet -= 2;
 				o_saveload.ynet -= 1;
 				var _money = 0;
+				o_saveload.failure++;
 				if(obj_suq.culprit == 1 and instance_number(o_guest) == 13)
 				{
 					_money += 6000;
 					obj_suq.report = 25;
+					o_saveload.success++;
+					o_saveload.failure--;
 				}
 				else if(obj_suq.culprit == 2 and instance_number(o_guest) == 13)
 				{
@@ -475,11 +510,13 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.ungulate += 2;
 					obj_suq.hiertech -= 2;
 					o_saveload.moneyT += 8700*_emtBill;
+					o_saveload.success++;
 				}
 				else
 				{
 					obj_suq.report = 36;
 					obj_suq.ungulate -= 1;
+					o_saveload.failure++;
 					if(instance_number(o_generator) == 3)
 					{
 						o_saveload.hnet -= 1;
@@ -518,6 +555,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += 7000*_emtBill;
 					o_saveload.pnet += 8;
 					o_saveload.software = 3;
+					o_saveload.success++;
 				}
 				else if(!instance_exists(o_data) and obj_suq.cBackup < 16)
 				{
@@ -525,6 +563,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.knet -= 3;
 					o_saveload.pnet += 1;
 					o_saveload.software = 2;
+					o_saveload.failure++;
 				}
 				else if(obj_suq.cBackup == 16 and instance_exists(o_data))
 				{
@@ -533,12 +572,14 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.knet -= 4;
 					o_saveload.pnet += 2;
 					o_saveload.software = 1;
+					o_saveload.failure++;
 				}
 				else if(obj_suq.cBackup < 16 and instance_exists(o_data))
 				{
 					obj_suq.report = 40;
 					obj_suq.perez -= 2;
 					o_saveload.pnet -= 4;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_13:
@@ -558,12 +599,14 @@ function scr_levelEnd(car,range_optional)
 						obj_suq.kanker += 3;
 						obj_suq.report = 41;
 						obj_suq.scientist = true;
+						o_saveload.success++;
 					}
 					else
 					{
 						o_saveload.knet -= 4;
 						obj_suq.kanker -= 2;
 						obj_suq.report = 42;
+						o_saveload.failure++;
 					}
 				}
 				else if(!instance_exists(o_scientist))
@@ -571,6 +614,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.knet -= 4;
 					obj_suq.kanker -= 2;
 					obj_suq.report = 42;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_14:
@@ -588,22 +632,26 @@ function scr_levelEnd(car,range_optional)
 					{
 						o_saveload.moneyT += 3800*_emtBill;
 						obj_suq.report = 43;
+						o_saveload.success++;
 					}
 					else if(o_lvl14.ob1 == false and o_lvl14.ob2 == true)
 					{
 						obj_suq.report = 44;
+						o_saveload.failure++;
 					}
 					else if(o_lvl14.ob2 == false and instance_number(obj_guard) > 0)
 					{
 						obj_suq.report = 45;
 						obj_suq.ungulate -= 1;
 						obj_suq.gildebrand -= 1;
+						o_saveload.failure++;
 					}
 					else if(o_lvl14.ob2 == false)
 					{
 						obj_suq.report = 46;
 						obj_suq.ungulate -= 2;
 						obj_suq.gildebrand -= 2;
+						o_saveload.failure++;
 					}
 				}
 			} break;
@@ -623,6 +671,7 @@ function scr_levelEnd(car,range_optional)
 						obj_suq.report = 47;
 						obj_suq.hiertech += 2;
 						o_saveload.hnet += 6;
+						o_saveload.success++;
 						
 					}
 					else
@@ -630,6 +679,7 @@ function scr_levelEnd(car,range_optional)
 						obj_suq.report = 48;
 						obj_suq.hiertech -= 2;
 						o_saveload.hnet -= 3;
+						o_saveload.failure++;
 					}
 				}
 			} break;
@@ -650,6 +700,7 @@ function scr_levelEnd(car,range_optional)
 						o_saveload.knet += 7;
 						o_saveload.pnet -= 15;
 						obj_suq.tankD = true;
+						o_saveload.success++;
 					}
 					else
 					{
@@ -657,6 +708,7 @@ function scr_levelEnd(car,range_optional)
 						obj_suq.kanker -= 2;
 						o_saveload.knet -= 3;
 						o_saveload.pnet += 4;
+						o_saveload.failure++;
 					}
 				}
 			} break;
@@ -676,6 +728,7 @@ function scr_levelEnd(car,range_optional)
 						obj_suq.report = 51;
 						obj_suq.gildebrand += 4;
 						o_saveload.gnet += 6;
+						o_saveload.success++;
 					}
 					else if((o_lvl17.ob1 == true and o_lvl17.ob2 == true) or (o_lvl17.ob3 == true and o_lvl17.ob2 == true) or (o_lvl17.ob1 == true and o_lvl17.ob3 == true))
 					{
@@ -683,18 +736,21 @@ function scr_levelEnd(car,range_optional)
 						obj_suq.report = 52;
 						obj_suq.gildebrand += 2;
 						o_saveload.gnet -= 4;
+						o_saveload.failure++;
 					}
 					else if(o_lvl17.ob1 == true xor o_lvl17.ob2 == true xor o_lvl17.ob3 == true)
 					{
 						o_saveload.moneyT += 1500*_emtBill;
 						obj_suq.report = 53;
 						o_saveload.gnet -= 7;
+						o_saveload.failure++;
 					}
 					else
 					{
 						obj_suq.report = 54;
 						obj_suq.gildebrand -= 3;
 						o_saveload.gnet -= 25;
+						o_saveload.failure++;
 					}
 				}
 			} break;
@@ -705,6 +761,7 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.unet += 1;
 				o_saveload.pnet += 1;
 				obj_suq.lvldone[obj_suq.lvl] = true;
+				o_saveload.failure++;
 				if(!instance_exists(inst_1062E581) and !instance_exists(inst_1FC19C6A) and !instance_exists(inst_713E65DA))
 				{
 					o_saveload.moneyT += 8100*_emtBill;
@@ -713,6 +770,8 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.gildebrand -= 4;
 					o_saveload.hnet += 6;
 					o_saveload.gnet -= 25;
+					o_saveload.success++;
+					o_saveload.failure--;
 				}
 				else
 				{
@@ -750,12 +809,14 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 57;
 					obj_suq.perez += 2;
 					o_saveload.pnet += 4;
+					o_saveload.success++;
 				}
 				else
 				{
 					obj_suq.report = 58;
 					o_saveload.pnet -= 20;
 					obj_suq.perez -= 3;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_21:
@@ -772,12 +833,14 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 59;
 					obj_suq.yellerteeth += 2;
 					o_saveload.ynet += 5;
+					o_saveload.success++;
 				}
 				else if(!instance_exists(o_guard_replace) or (instance_exists(o_guard_replace) and instance_exists(obj_darkness)))
 				{
 					obj_suq.report = 60;
 					o_saveload.ynet -= 10;
 					obj_suq.yellerteeth -= 2;
+					o_saveload.failure++;
 				}
 				else if(instance_exists(o_guard_replace) and o_lvl21.accPoints > 120 and o_lvl21.spdPoints >= 155 and o_lvl21.evPoints >= 115 and !instance_exists(obj_darkness))
 				{
@@ -785,6 +848,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.ynet -= 10;
 					obj_suq.yellerteeth -= 3;
 					obj_suq.ninjaClan = true;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_22:
@@ -802,6 +866,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.hiertech -= 1;
 					o_saveload.unet += 5;
 					o_saveload.hnet -= 4;
+					o_saveload.success++;
 				}
 				if(!instance_exists(obj_guard) and instance_exists(o_lvl22) and obj_suq.contraband > 0)
 				{
@@ -814,6 +879,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.hiertech -= 1;
 					o_saveload.unet += 4;
 					o_saveload.hnet -= 4;
+					o_saveload.failure++;
 				}
 				else if(!instance_exists(o_lvl22) or instance_exists(obj_guard))
 				{
@@ -821,6 +887,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.unet -= 5;
 					obj_suq.ungulate -= 1;
 					o_saveload.hnet += 2;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_23:
@@ -892,12 +959,14 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.perez += 2;
 					o_saveload.pnet += 6;
 					o_saveload.officials = true;
+					o_saveload.success++;
 				}
 				else
 				{
 					obj_suq.report = 72;
 					o_saveload.pnet -= 18;
 					obj_suq.perez -= 2;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_25:
@@ -913,14 +982,17 @@ function scr_levelEnd(car,range_optional)
 				{
 					o_saveload.moneyT += 3400*_emtBill;
 					obj_suq.report = 73;
+					o_saveload.success++;
 				}
 				else if(!instance_exists(obj_guard))
 				{
 					obj_suq.report = 75;
+					o_saveload.failure++;
 				}
 				else
 				{
 					obj_suq.report = 74;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_26:
@@ -937,18 +1009,21 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 76;
 					o_saveload.gnet += 4;
 					obj_suq.gildebrand += 1;
+					o_saveload.success++;
 				}
 				else if(o_lvl26.isKilled == true)
 				{
 					obj_suq.report = 77;
 					o_saveload.gnet -= 4;
 					obj_suq.gildebrand -= 2;
+					o_saveload.failure++;
 				}
 				else if(o_lvl26.o1 == false)
 				{
 					obj_suq.report = 78;
 					o_saveload.gnet -= 3;
 					obj_suq.gildebrand -= 1;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_27:
@@ -965,18 +1040,21 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 79;
 					obj_suq.yellerteeth += 2;
 					o_saveload.ynet += 3;
+					o_saveload.success++;
 				}
 				else if(obj_suq.vambrace == false and obj_suq.vambraceK == true)
 				{
 					obj_suq.report = 80;
 					obj_suq.yellerteeth -= 2;
 					o_saveload.ynet -= 4;
+					o_saveload.failure++;
 				}
 				else if(obj_suq.vambrace == false and obj_suq.vambraceK == false)
 				{
 					obj_suq.report = 81;
 					obj_suq.yellerteeth -= 1;
 					o_saveload.ynet -= 2;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_28:
@@ -993,12 +1071,14 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 82;
 					obj_suq.hiertech += 2;
 					o_saveload.hnet += 10;
+					o_saveload.success++;
 				}
 				else if(o_lvl28.o1 == false)
 				{
 					obj_suq.report = 83;
 					obj_suq.hiertech -= 2;
 					o_saveload.hnet -= 10;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_29:
@@ -1016,6 +1096,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.hiertech -= 1;
 					o_saveload.unet += 6;
 					o_saveload.hnet -= 5;
+					o_saveload.success++;
 				}
 				else if((o_lvl29.o1 and o_lvl29.o2 and !o_lvl29.o3) or (o_lvl29.o1 and !o_lvl29.o2 and o_lvl29.o3) or(!o_lvl29.o1 and o_lvl29.o2 and o_lvl29.o3))
 				{
@@ -1025,6 +1106,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.hiertech -= 1;
 					o_saveload.unet += 3;
 					o_saveload.hnet += 2;
+					o_saveload.success++;
 				}
 				else if((o_lvl29.o1 and !o_lvl29.o2 and !o_lvl29.o3) or (!o_lvl29.o1 and !o_lvl29.o2 and o_lvl29.o3) or(!o_lvl29.o1 and o_lvl29.o2 and !o_lvl29.o3))
 				{
@@ -1032,6 +1114,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 86;
 					o_saveload.unet += 1;
 					o_saveload.hnet += 5;
+					o_saveload.success++;
 				}
 				else if(!o_lvl29.o1 and !o_lvl29.o2 and !o_lvl29.o3)
 				{
@@ -1040,6 +1123,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.hiertech += 1;
 					o_saveload.unet -= 6;
 					o_saveload.hnet += 7;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_30:
@@ -1057,20 +1141,23 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.hiertech += 3;
 					o_saveload.unet -= 2;
 					o_saveload.hnet += 10;
+					o_saveload.success++;
 				}
-				if(o_lvl30.o1 and o_lvl30.o2 and o_lvl30.o3 and !instance_exists(o_carSt))
+				else if(o_lvl30.o1 and o_lvl30.o2 and o_lvl30.o3 and !instance_exists(o_carSt))
 				{
 					obj_suq.report = 91;
 					obj_suq.hiertech -= 4;
 					o_saveload.hnet -= 15;
+					o_saveload.failure++;
 				}
-				if(!instance_exists(o_carSt))
+				else if(!instance_exists(o_carSt))
 				{
 					obj_suq.report = 90;
 					obj_suq.ungulate += 1;
 					obj_suq.hiertech -= 2;
 					o_saveload.unet += 2;
 					o_saveload.hnet -= 10;
+					o_saveload.failure++;
 				}
 				else if((!o_lvl30.o1 or !o_lvl30.o2 or !o_lvl30.o3))
 				{
@@ -1079,6 +1166,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.hiertech -= 1;
 					o_saveload.unet += 2;
 					o_saveload.hnet += 2;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_31:
@@ -1106,15 +1194,18 @@ function scr_levelEnd(car,range_optional)
 				{
 					o_saveload.moneyT += 6400*_emtBill;
 					obj_suq.report = 92;
+					o_saveload.success++;
 				}
 				if(o_lvl31.o1 and !o_lvl31.o2)
 				{
 					o_saveload.moneyT += 1000*_emtBill;
 					obj_suq.report = 93;
+					o_saveload.failure++;
 				}
 				if(!o_lvl31.o1)
 				{
 					obj_suq.report = 94;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_32:
@@ -1137,12 +1228,14 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.unet -= 4;
 					o_saveload.hnet -= 5;
 					o_saveload.plant = true;
+					o_saveload.success++;
 				}
 				else
 				{
 					obj_suq.report = 96;
 					obj_suq.kanker -= 14;
 					o_saveload.knet -= 20;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_43:
@@ -1160,6 +1253,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.unet -= 4;
 					o_saveload.hnet -= 5;
 					o_saveload.knkrwins = true;
+					o_saveload.success++;
 				}
 				else
 				{
@@ -1171,6 +1265,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 98;
 					obj_suq.kanker -= 20;
 					o_saveload.knet -= 100;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_33:
@@ -1187,12 +1282,14 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 99;
 					o_saveload.ynet += 15;
 					obj_suq.yellerteeth += 2;
+					o_saveload.success++;
 				}
 				else
 				{
 					o_saveload.ynet -= 7;
 					obj_suq.report = 100;
 					obj_suq.yellerteeth -= 2;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_39:
@@ -1210,12 +1307,14 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.ynet += 22;
 					obj_suq.yellerteeth += 3;
 					obj_suq.artifacts = 1;
+					o_saveload.success++;
 				}
 				else if((instance_exists(obj_mercenaryN) or o_lvl39.o6) and obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye)
 				{
 					o_saveload.ynet -= 30;
 					obj_suq.report = 102;
 					obj_suq.yellerteeth -= 2;
+					o_saveload.failure++;
 				}
 				else if(!obj_suq.hecto or !obj_suq.ring or !obj_suq.jewel or !obj_suq.vambrace or !obj_suq.eye)
 				{
@@ -1223,6 +1322,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 103;
 					obj_suq.yellerteeth -= 4;
 					obj_suq.artifacts = 2;
+					o_saveload.failure++;
 				}
 				else if(obj_suq.hecto and obj_suq.ring and obj_suq.jewel and obj_suq.vambrace and obj_suq.eye and 
 					(!instance_exists(o_hecto) or !instance_exists(o_tarpho) or !instance_exists(o_jewel) or !instance_exists(o_vambrace) or !instance_exists(o_eye)))
@@ -1230,6 +1330,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.ynet -= 30;
 					obj_suq.report = 104;
 					obj_suq.yellerteeth -= 1;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_45:
@@ -1241,6 +1342,7 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.unet -= 2;
 				o_saveload.hnet += 3;
 				o_saveload.moneyT += 6000*_emtBill;
+				o_saveload.success++;
 				if(o_lvl45.o1 and o_lvl45.o2)
 				{
 					obj_suq.report = 105;
@@ -1274,6 +1376,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.ynet -= 6;
 					obj_suq.yellerteeth -= 2;
 					obj_suq.gildebrand += 2;
+					o_saveload.success++;
 					if(7700-o_lvl34.nod > 0) 
 					{ 
 						o_saveload.moneyT += 7700-o_lvl34.nod; 
@@ -1292,6 +1395,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 109;
 					obj_suq.yellerteeth -= 2;
 					obj_suq.gildebrand += 1;
+					o_saveload.success++;
 					if(2500-o_lvl34.nod > 0) 
 					{ 
 						o_saveload.moneyT += 2500-o_lvl34.nod; 
@@ -1309,6 +1413,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.ynet -= 6;
 					obj_suq.yellerteeth -= 2;
 					obj_suq.gildebrand += 2;
+					o_saveload.success++;
 					if(7700-o_lvl34.nod > 0) 
 					{ 
 						o_saveload.moneyT += 7700-o_lvl34.nod; 
@@ -1326,6 +1431,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 112;
 					obj_suq.yellerteeth -= 2;
 					obj_suq.gildebrand += 1;
+					o_saveload.success++;
 					if(2500-o_lvl34.nod > 0)
 					{ 
 						o_saveload.moneyT += 2500-o_lvl34.nod; 
@@ -1343,6 +1449,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 110;
 					obj_suq.gildebrand -= 2;
 					obj_suq.tempEarnMon = 0;
+					o_saveload.failure++;
 				}
 				else if(!o_lvl34.o1 and !o_lvl34.o2 and o_lvl34.tirH >= 2)
 				{
@@ -1351,6 +1458,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 121;
 					obj_suq.gildebrand -= 1;
 					obj_suq.tempEarnMon = 0;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_44:
@@ -1367,6 +1475,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.gnet += 12;
 					obj_suq.gildebrand += 3;
 					o_saveload.moneyT += 9500;
+					o_saveload.success++;
 				}
 				else if(o_lvl44.o1 and o_lvl44.o2 and o_lvl44.o3 and o_lvl44.tirH < 1)
 				{
@@ -1374,6 +1483,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.gnet += 10;
 					obj_suq.gildebrand += 2;
 					o_saveload.moneyT += 9500;
+					o_saveload.success++;
 				}
 				else if((o_lvl44.o1 or o_lvl44.o2 or o_lvl44.o3) and o_lvl44.tirH >= 1)
 				{
@@ -1381,6 +1491,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.gnet += 7;
 					obj_suq.gildebrand += 2;
 					o_saveload.moneyT += 5500;
+					o_saveload.success++;
 				}
 				else if((o_lvl44.o1 or o_lvl44.o2 or o_lvl44.o3) and o_lvl44.tirH < 1)
 				{
@@ -1388,18 +1499,21 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.gnet += 6;
 					obj_suq.gildebrand += 1;
 					o_saveload.moneyT += 4500;
+					o_saveload.failure++;
 				}
 				else if(!o_lvl44.o1 and !o_lvl44.o2 and !o_lvl44.o3 and o_lvl44.tirH >= 1)
 				{
 					obj_suq.report = 115;
 					o_saveload.gnet -= 2;
 					o_saveload.moneyT += 1500;
+					o_saveload.failure++;
 				}
 				else if(!o_lvl44.o1 and !o_lvl44.o2 and !o_lvl44.o3 and o_lvl44.tirH < 1)
 				{
 					obj_suq.report = 116;
 					o_saveload.gnet -= 6;
 					obj_suq.gildebrand -= 2;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_47:
@@ -1416,12 +1530,14 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.gnet += 12;
 					obj_suq.gildebrand += 3;
 					o_saveload.moneyT += 12500;
+					o_saveload.success++;
 				}
 				else
 				{
 					obj_suq.report = 123;
 					o_saveload.gnet -= 12;
 					obj_suq.gildebrand -= 3;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_50:
@@ -1439,6 +1555,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.gildebrand += 4;
 					obj_suq.kanker -= 4;
 					o_saveload.armycount = o_lvl50.count;
+					o_saveload.success++;
 				}
 				else if(o_lvl50.o1 == true)
 				{
@@ -1446,12 +1563,14 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.gildebrand += 2;
 					obj_suq.kanker -= 2;
 					o_saveload.armycount = o_lvl50.count;
+					o_saveload.success++;
 				}
 				else
 				{
 					obj_suq.report = 125;
 					obj_suq.gildebrand -= 3;
 					obj_suq.kanker += 1;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_35:
@@ -1470,6 +1589,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.kanker -= 1;
 					o_saveload.convinced = true;
 					o_saveload.moneyT += 9300;
+					o_saveload.success++;
 				}
 				else if(o_lvl35.o1 == true and o_lvl35.o2 == false)
 				{
@@ -1484,6 +1604,7 @@ function scr_levelEnd(car,range_optional)
 						obj_suq.kanker -= 1;
 						o_saveload.convinced = true;
 						o_saveload.moneyT += 1500;
+						o_saveload.success++;
 					}
 					if(choice == 2)
 					{
@@ -1491,6 +1612,7 @@ function scr_levelEnd(car,range_optional)
 						obj_suq.perez -= 2;
 						o_saveload.pnet -= 3;
 						o_saveload.knet += 2;
+						o_saveload.failure++;
 					}
 				}
 				else
@@ -1499,6 +1621,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.perez -= 3;
 					o_saveload.pnet -= 5;
 					o_saveload.knet += 3;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_41:
@@ -1515,6 +1638,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.pnet += 15;
 					o_saveload.knet -= 6;
 					o_saveload.moneyT += 5600;
+					o_saveload.success++;
 				}
 				else
 				{
@@ -1522,6 +1646,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.perez -= 4;
 					o_saveload.pnet -= 30;
 					o_saveload.knet += 6;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_37:
@@ -1539,6 +1664,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += o_lvl37.r;
 					obj_suq.r37 = o_lvl37.r;
 					o_saveload.trick = false;
+					o_saveload.success++;
 					//saveTrick();
 				}
 			} break;
@@ -1558,6 +1684,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.unet -= 12;
 					o_saveload.moneyT += 8500;
 					o_saveload.ceo = true;
+					o_saveload.success++;
 				}
 				else if(o_lvl46.o1 == true and o_lvl46.o2 == false)
 				{
@@ -1568,6 +1695,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.unet -= 12;
 					o_saveload.moneyT += 4000;
 					o_saveload.ceo = true;
+					o_saveload.success++;
 				}
 				else
 				{
@@ -1575,6 +1703,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.hiertech -= 1;
 					o_saveload.hnet -= 4;
 					o_saveload.unet += 2;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_48:
@@ -1592,6 +1721,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.hnet += 18;
 					o_saveload.unet -= 100;
 					o_saveload.moneyT += 11000;
+					o_saveload.success++;
 				}
 				else
 				{
@@ -1599,6 +1729,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.hiertech -= 3;
 					o_saveload.hnet -= 7;
 					o_saveload.unet += 2;
+					o_saveload.failure++;
 				}
 			} break;
 			case r_lvl_36:
@@ -1615,6 +1746,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.ungulate += 3;
 					o_saveload.unet += 10;
 					o_saveload.moneyT += 7200;
+					o_saveload.success++;
 				}//all done
 				else if((o_lvl36.o1 == true or o_lvl36.o2 == true or o_lvl36.o3 == true) and o_lvl36.guards == instance_number(obj_guard))
 				{
@@ -1623,18 +1755,21 @@ function scr_levelEnd(car,range_optional)
 					if(o_lvl36.o1) { o_saveload.moneyT += 2400; obj_suq.ungulate += 1; }
 					if(o_lvl36.o2) { o_saveload.moneyT += 2400; obj_suq.ungulate += 1; }
 					if(o_lvl36.o3) { o_saveload.moneyT += 2400; obj_suq.ungulate += 1; }
+					o_saveload.success++;
 				}//some saved, no kill
 				else if(o_lvl36.o1 == false and o_lvl36.o2 == false and o_lvl36.o3 == false and o_lvl36.guards == instance_number(obj_guard))
 				{
 					obj_suq.report = 138;
 					obj_suq.ungulate -= 2;
 					o_saveload.unet -= 4;
+					o_saveload.failure++;
 				}//none saved no kill
 				else
 				{
 					obj_suq.report = 139;
 					obj_suq.ungulate -= 3;
 					o_saveload.unet -= 7;
+					o_saveload.failure++;
 				}//kill
 			} break;
 			case r_lvl_42:
@@ -1652,6 +1787,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.unet += 10;
 					o_saveload.hnet -= 5;
 					o_saveload.moneyT += 9600;
+					o_saveload.success++;
 				}//win
 				else if(o_lvl42.alt)
 				{
@@ -1659,6 +1795,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.ungulate -= 2;
 					o_saveload.unet -= 7;
 					o_saveload.hnet += 5;
+					o_saveload.failure++;
 				}//lose
 				/*else if(!instance_exists(o_carR) and !instance_exists(o_suqCarT))
 				{
@@ -1673,6 +1810,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.ungulate -= 2;
 					o_saveload.unet -= 7;
 					o_saveload.hnet += 5;
+					o_saveload.failure++;
 				}//lose
 			} break;
 			case r_lvl_40:
@@ -1688,13 +1826,16 @@ function scr_levelEnd(car,range_optional)
 				{
 					obj_suq.report = 142;
 					o_saveload.moneyT += 2000;
+					o_saveload.success++;
 				}//win
 				else if(o_lvl40.o1 == true and o_saveload.rec < 1500)
 				{
 					obj_suq.report = 144;
+					o_saveload.failure++;
 				}//lose to your own record
 				else
 				{
+					o_saveload.failure++;
 					obj_suq.report = 143;
 				}//lose
 			} break;
@@ -1712,14 +1853,17 @@ function scr_levelEnd(car,range_optional)
 				{
 					obj_suq.report = 147;
 					o_saveload.moneyT += 10500;
+					o_saveload.success++;
 				}//all
 				else if(o_lvl38.o1 == true or o_lvl38.o2 == true or o_lvl38.o3 == true)
 				{
 					obj_suq.report = 148;
 					o_saveload.moneyT += 3600;
+					o_saveload.failure++;
 				}//some
 				else
 				{
+					o_saveload.success++;
 					obj_suq.report = 149;
 				}//none
 			} break;
@@ -1738,6 +1882,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.hiertech -= 3;
 					o_saveload.unet += 9;
 					o_saveload.hnet -= 100;
+					o_saveload.success++;
 				}
 				else
 				{
@@ -1745,6 +1890,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.ungulate -= 3;
 					o_saveload.unet -= 7;
 					o_saveload.hnet += 4;
+					o_saveload.failure++;
 				}
 			} break;
 		}

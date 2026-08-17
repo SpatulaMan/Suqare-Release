@@ -188,10 +188,10 @@ if(lock50 > 0 and gadget == 3 and room != r_armory)
 	draw_sprite_ext(s_lockpick50,0,1580,120,15,15,0,c_white,1);
 	draw_text_transformed_colour(1450,80,string_hash_to_newline(string(lock50)),3,3,0,c_lime,c_lime,c_lime,c_lime,1);
 }
-if(decoy == 1 and gadget == 4 and room != r_armory)
+if(darts > 0 and gadget == 4 and room != r_armory)
 {
-	draw_sprite_ext(s_suq,0,1550,80,15,15,0,c_white,1);
-	//draw_text_transformed_colour(1500,80,string_hash_to_newline(string(decoyMax-decoy)),3,3,0,c_yellow,c_yellow,c_yellow,c_yellow,1);
+	draw_sprite_ext(s_dart,0,1550,145,15,15,0,c_white,1);
+	draw_text_transformed_colour(1450,80,string_hash_to_newline(string(darts)),3,3,0,c_lime,c_red,c_aqua,c_aqua,1);
 }
 if(attract == 1 and gadget == 5 and room != r_armory)
 {
