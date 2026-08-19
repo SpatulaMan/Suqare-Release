@@ -10,7 +10,7 @@ if(swordHave == 1 and swordCH < 120)
 else if(swordHave == 1 and swordCH > 119 and swordCH < 121)
 {
 	swordCH = 121;
-	audio_play_sound(snd_heal,1,false,.6*o_saveload.sfxvol,0,3);
+	audio_play_sound(snd_heal,1,false,.3*o_saveload.sfxvol,0,4);
 }
 if(spd > 2 and room == r_lvl_13)
 {

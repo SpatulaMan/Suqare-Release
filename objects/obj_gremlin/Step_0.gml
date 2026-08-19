@@ -265,6 +265,18 @@ if((boss == true and instance_exists(o_wallCreate.inst)) or boss == false)
 		_piece5.speed = 5;
 		_piece5.image_index = 3;
 		_piece5.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
+		
+		var _piece1 = instance_create_layer(x,y,"Instances_Action",o_pieces);
+		_piece1.sprite_index = s_enemy_1;
+		_piece1.speed = 5;
+		_piece1.image_index = 4;
+		_piece1.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
+		
+		var _piece2 = instance_create_layer(x,y,"Instances_Action",o_pieces);
+		_piece2.sprite_index = s_enemy_1;
+		_piece2.speed = 5;
+		_piece2.image_index = 5;
+		_piece2.direction = choose(330,30,300,60,270,90,240,120,210,150,180);
 	    instance_destroy();
 	}
 }

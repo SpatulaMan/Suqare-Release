@@ -2633,14 +2633,14 @@ function scr_conversation(t)
 	a[131] = @"They killed them all. Everyone else in here. They only left me alive so they could fight you at your strongest.
 			
 			I'm trembling, man. I never thought my brothers would go out like this. Give em the payback they deserve. ";//Scared Merchant
-	a[132] = @"Suqare! This is Kanker and Co. I never thought it would come to this, but you've proven to be a bigger problem 
-			than any rival company I've had before. That's why I found you and killed your friends. That's why I'm gonna kill
-			you too! ";//kanker
-	a[133] = @"";//perez
-	a[134] = @"";//gildebrand
-	a[135] = @"";//ungulate
-	a[136] = @"";//yellerteeth
-	a[137] = @"";//hiertech
+	a[132] = @"Suqare! You will pay for making Kanker and Co. your enemy. Daimond will take care of you quickly. ";//kanker
+	a[133] = @"It's weird that you'd want to work against us. Let us remind you that Perez Holdings didn't strike first. ";//perez
+	a[134] = @"We never wanted to make enemies, but you've left us no choice! Gildebrand Consulting has to respond to the 
+			damage you're causing! ";//gildebrand
+	a[135] = @"I can't believe you would undermine Ungulate Studios' plans. We've got to stop you.";//ungulate
+	a[136] = @"Just like a ninja would do, Yellerteeth Inc. will kill you swiftly for getting on our bad side. ";//yellerteeth
+	a[137] = @"You've gotten in our way one too many times. Hiertech is here to kill you. What's one more crime when that's 
+			our business model? ";//hiertech
 	a[138] = @"Aw nuts! You let him get back into the graveyard, and he saw our faces! Now, we're gonna hear about this from
 			our parents. Buh. You were no help at all. ";//lvl 25 letting grave keeper back into the area
 	a[139] = @"Whew! Can't believe I made it out of there alive. ";
@@ -2663,6 +2663,13 @@ function scr_conversation(t)
 			Top Speed     - 00000000000---
 			Acceleration - 00000000000000
 			Handling      - 00000000------";
+	a[150] = @"An assortment of Ninja Artifacts. They look really mesmerizing. 
+	
+			Do you want to sell the Ninja Artifacts? 
+			
+			Valuation: $2,000 per artifact
+			
+			Press Spacebar to sell";
 			
 	return a[t];
 }
@@ -4956,9 +4963,8 @@ function debrief(m)
 			Current standing with Yellerteeth Inc. "+string(obj_suq.yellerteeth)+@"
 			
 			Result:
-			You chose to steal artifacts from Yellerteeth. If you got them all, maybe you can see for 
-			yourself what Yellerteeth had planned for them. Yellerteeth's plans are basically finished
-			now, so their stock is bound to drop dramatically. 
+			You chose to steal artifacts from Yellerteeth. Yellerteeth's plans are basically finished now,
+			so their stock is bound to drop dramatically. 
 			
 			Press Spacebar to continue";//you stole some or all the artifacts
 	c[104] = @"Objectives Failed

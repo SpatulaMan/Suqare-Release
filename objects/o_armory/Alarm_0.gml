@@ -99,9 +99,22 @@ if(!instance_exists(o_paints))
 			instance_create_layer(726,396,"Instances_Action",o_paints);
 		}
 		
+	}	
+}
+if(obj_suq.artifacts == 2)
+{
+	var cr = noone;
+	var co = 0;
+	if(instance_exists(o_eye) and !obj_suq.eye) { o_eye.visible = true; co++; }
+	if(instance_exists(o_vambrace) and !obj_suq.vambrace) { o_vambrace.visible = true; co++; }
+	if(instance_exists(o_tarpho) and !obj_suq.ring) { o_tarpho.visible = true; co++; }
+	if(instance_exists(o_hecto) and !obj_suq.hecto) { o_hecto.visible = true; co++; }
+	if(instance_exists(o_jewel) and !obj_suq.jewel) { o_jewel.visible = true; co++; }
+	if(co > 0)
+	{
+		cr = instance_create_layer(776,392,"Instances_Action",o_sell);
+		cr.count = co;
 	}
-
-	
 }
 if(obj_suq.fragment[0] == true)
 {

@@ -1,2 +1,2 @@
 /// @description 
-image_xscale = scale/480;
+//image_xscale = scale/480;

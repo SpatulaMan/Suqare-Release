@@ -82,7 +82,8 @@ function scr_barrel() {
 			if(r1 > (w2[r2]+20+obj_suq.ammoPercent)) { instance_create_layer(x+2,y-1,"Instances_Action",w[r2]); } 
 			if(r1 > (w2[r2]+obj_suq.ammoPercent)) { instance_create_layer(x,y,"Instances_Action",w[r2]); }
 		}
-		else { scr_barrelmoney(); }
+		else if(room != r_skill1 and room != r_skill2 and room != r_skill3 and room != r_skill4 and room != r_skill5) 
+		{ scr_barrelmoney(); }
 	}
 }
 function scr_barrelmoney() {

@@ -275,21 +275,27 @@ if(hp <= 0)
 	{
 		case s_hxeagon: 
 		o_saveload.pRevenge = true;
+		o_saveload.hxenet = 0;
 			 break;
 		case s_rcetangle:
 		o_saveload.hRevenge = true;
+		o_saveload.rcenet = 0;
 			 break;
 		case s_otcogon: 
 		o_saveload.yRevenge = true;
+		o_saveload.otcnet = 0;
 			 break;
 		case s_praallelogram:
 		o_saveload.gRevenge = true;
+		o_saveload.pranet = 0;
 			 break;
 		case s_daimond: 
 		o_saveload.kRevenge = true;
+		o_saveload.dainet = 0;
 			 break;
 		case s_pnetagon: 
 		o_saveload.uRevenge = true;
+		o_saveload.pnenet = 0;
 			 break;
 	}
     instance_destroy();

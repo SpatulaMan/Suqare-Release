@@ -48,33 +48,100 @@ Only attack if standing is less than -6 and net worth is > 0
 
 
 Checklist:
--level 51
--Playtest and fix 1 levels
-Done-Create area to check your own net worth against the 6 other mercenaries that are active in your region
+maybe-level 51
+maybe-Playtest and fix 1 levels
+-Add a new room for the Armory for the "Post Game" that just shows what happened to each company, but still lets you play the skill check levels and buy gadgets with money. 
+	Make o_saveload and the r_range go to this Armory instead of the regular one one Endgame has been set. 
+	But fade to black and then switch rooms to the new one as we see Day 0 visible on the screen. 
+-Make early game checklist where you answer questions and get scored based on how closely you play to those values(30% of score)? Rank the company values in order, and if the companies are in that standing order get top points.
+	Added to total money made(30% of score where 30% is $300,000) and added together with top 3 highest standing companies total standing (40% where 21 is 40%)
+-Add a "40 day timer" to show that each mission takes 1 day and that's how long you have to "make it big" as a mercenary. Some motivation?  
+-Add a spot in your room to see days left to make it big before your dad pulls your funding and personnel and you have to work for him.
+-Add randomly selected dialogue to show when Suqare checks how many days are left. Or just a different one for each day. 
+-When 40 levels are done and/or no more levels are available, have the o_lvlselect object have the credits role? Or when the endgame variable is TRUE?
+-Add some kind of ending based on your player score and company standings/net worths/mercenary net worth that ends the game with some kind of finality.
+	1.
+		-Kanker ending where the world is plunged into chaos and there's no room for paid mercenaries anymore. Overrides every other ending. 
+			-Sub ending to this one where you got enough people through to the safe zone in that final mission to have some hope. They'll eventually overtake Kanker and Co. and kill his 
+				army of ghosts and destroy the machine. Long and hard fought battle. Extra mission here? 
+	2. Can happen alongside the specific endings for each company
+		-Companies never want to work with you again and you end up running out of business. End up working for your dad (lowest threshhold total score/standing)
+		-Earthquake crashing your building down on top of you. No one knows if you survived or not (somewhere in the lower/middle of scores)
+		-You keep on as a mercenary for a while, but it wears on you since you never make it big. Your dad pulls funding, but you keep a rag-tag operation going and live a meager life
+		-You become a highly renowned mercenary. Your dad is very proud of you, and he supports you as an investor now. 
+		-You get praised as the best mercenary in the world with high standings and the highest standing of all the mercenaries. You make so much money on brand deals that you don't need to work
+			anymore (highest threshold total score/standing)
+	3. Company Endings (only trigger if you complete their final job as a success)
+		-Perez becomes the government bank, starts beating down the people and other companies with interest rates and fees. They become the largest company in the world
+		-Yellerteeth goes completely bankrupt. Everyone is dead. A total loss
+		-Hiertech becomes a highly integrated crime syndicate with influence stretching accross the world
+		-Gildebrand still fights for the little guy, but the support they've received means they get to help even more people. 
+		-Ungulate is keeping these other companies in check, making sure none of them become to large to handle
+	4. Other details of companies that didn't get fully resolved arcs. Inclusive numbers
+		-Kanker:
+			-3<x<6: Kanker and Co. may not have taken over the world yet, but they're on their way. If they can fit a few pieces together they will have an unstoppable army no one could contend with. 
+			--2<x<2: Kanker and Co's plans of world domination are far off. Without your help in building an army, they're stuck trying to build capital and resources to make their dream a reality
+			-x<-3: Kanker and Co's company is breaking down. They're losing clientele, and their business isn't in the greatest light. It'll be a miracle if 
+			-bankrupt: Kanker and Co. - BANKRUPT
+		-Perez:
+			-3<x<6: Perez Holdings has a grip on the government that won't easily be let go of, but they're still landing short of their lofty goals. Maybe one day. 
+			--2<x<2: Perez Holdings is down but not out. They haven't made much progress towards their goals, but with some new leadership the company might end up surpassing everyone. 
+			-x<-3: Perez Holdings is in dire need of new management. They're current trajectory is heading straight towards bankruptcy on their own if they can't right the ship. 
+			-bankrupt: Perez Holdings - BANKRUPT
+		-Yellerteeth:
+			-3<x<6: Yellerteeth Inc. has become the scourge of all ninja clans even if their plans weren't fully realized. They'll continue their work against the ninja, and someday we'll see what they need those artifacts for. 
+			--2<x<2: Yellerteeth Inc. hasn't made any big moves against the ninja clans, so they will shift away from mercenary help, and try to gather the ninja artifacts on their own. 
+			-x<-3: Yellerteeth Inc. is in a losing battle against the ninja clans. They've made enemies, but haven't made up any ground in retrieving the artifacts. They will plan to switch to internal help instead of mercenaries. 
+			-bankrupt: Yellerteeth Inc. - BANKRUPT
+		-Gildebrand:
+			-3<x<6: Gildebrand Consulting is flying high since they're still able to keep afloat and help the little guy even after all that's happened. They'll continue to be a light in a dark world for the forseeable future.
+			--2<x<2: Gildebrand Consulting is still kicking, but they're mostly coasting on benefactors. They'll need more funding and help in order for them to continue to help others in need.
+			-x<-3: Gildebrand Consulting is barely hanging on. Funding is never guarenteed, and they may have to liquidate all assets and perform one last act of charity if this keeps up. 
+			-bankrupt: Gildebrand Consulting - BANKRUPT
+		-Ungulate:
+			-3<x<6: Ungulate Studios just won't quit! They're keeping these companies in check as best as they can, and they're thriving while doing it. They just keep falling short of demand, so they've got room to improve.
+			--2<x<2: Ungulate Studios plans on many more years of keeping all of the power-hungry companies in check, but in the state their in, they won't be able to do nearly as much as they hoped. 
+			-x<-3: Ungulate Studios is on the brink of failure. Without much success, the public sentiment around them is waning. Failure after failure will result in the company's closure if something doesn't change soon.
+			-bankrupt: Ungulate Studios - BANKRUPT
+		-Hiertech:
+			-3<x<6: Hiertech has become a massive crime syndicate, and they keep on growing. But, they've lost hold on key areas that really keep them relevent. They're in a good place, but could always do better. 
+			--2<x<2: Hiertech isn't the empire they hoped they would be by this time, but they're still a moderately sized operation with many opportunities to grow into more criminal areas. 
+			-x<-3: Hiertech is more of a niche crime family business than the empire they once were. They're still holding on, though, because there will always be money in crime. 
+			-bankrupt: Hiertech - BANKRUPT
+		
+	
 -Check that level select looping works
-Done-Fix when company goes bankrupt
--Go through levels and make them affect other companies more. Decisions matter! 
--Fix turret code when reacting to enemies? 
-Done-6 low standing assassination attempts
-Done-If company is below -6, then don't show their levels
-Done?-gadgets
--Make sure ninja artifacts show up in base if you steal them
 -Add more traders into the game and give them expanded trading capabilities
 -Add 50 more variables to the saveload object in case I need more for later updates. 
 -credits
-	-How many Missions Taken
+	-How many Missions completed
 	-How many deaths?
-	-How many successes/partial successes
+	-How many successes
 	-How many failures
+	-How much money earned
+	-Favorite company based on standing? 
 	-What companies are still left with their net worths and your standing with them
 	-Text blurb about each company and what they're doing or if they're bankrupt. 
 	-how the world has changed based on your actions
 	-A Mercenary rating based on how much money you made in total, multiplied by the total standing of all 6 companies - need to figure out what a good score is
 -steam acheivements
-Done-change game icon to crosshair
--Re-write text so each company sounds distinct
--Replace any use of human/person/people words with something shape related in text
 -extras? Are these the extra modes if the game is successful enough (or make into DLC?)? Making of section? Small multiplayer/co-op game mode? Cheat codes?
+
+Done from checklist:
+
+	Done-Make lightning sword be like the sniper rifle, just do less damage and be shorter, but still go through walls, and let the lightning show up the moment you swing
+	Done-change game icon to crosshair
+	Done-6 low standing assassination attempts
+	Done-If company is below -6, then don't show their levels
+	Done?-gadgets
+	Done-Make sure ninja artifacts show up in base if you steal them
+	Done-Fix when company goes bankrupt
+	Done-Go through levels and make them affect other companies more. Decisions matter! 
+	Done-Create area to check your own net worth against the 6 other mercenaries that are active in your region
+	Should be done-Fix turret code when reacting to enemies? 
 
 After Release: 
 -controller support
+-Re-write text so each company sounds distinct
+-Replace any use of human/person/people words with something shape related in text
+-Multiplayer online/offline for zombies mode and others

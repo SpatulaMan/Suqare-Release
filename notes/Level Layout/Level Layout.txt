@@ -29,7 +29,7 @@ NL - Non-Lethal
 	42: Race to win a town back their water from Hiertech's racing division
 	49: Stop Hiertech once and for all by finding their black market. Figure out where it is. Once you do, the cops will come shut it down. 
 
-	-Yellerteeth Inc. Plan - Steal every ninja artifact and kill ninja leader for revenge:
+	-Yellerteeth Inc. Plan - Steal every ninja artifact:
 	3: Amulet of Hecto
 	9: Ring of Tarpho 
 	21: Jewel of Barfo, Ghost ninjas too 
