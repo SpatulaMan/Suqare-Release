@@ -8,3 +8,7 @@ if(instance_exists(weapon))
 {
 	instance_destroy(weapon.id);
 }	
+if(room == r_intro)
+{
+	obj_suq.alarm[4] = 300;
+}

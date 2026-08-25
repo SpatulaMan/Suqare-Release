@@ -109,14 +109,14 @@ switch(prog)
 			if(obj_suq.lvldone[4] == false and obj_suq.lvldone[3] == false and o_saveload.hnet > 0 and obj_suq.hiertech >= -6) { array_insert(lvl,t,4); t++; }
 			//break;
 	case 0: array_insert(lvl,t,0); t++;
-			array_insert(lvl,t,45); t++;
-			array_insert(lvl,t,46); t++;
-			array_insert(lvl,t,47); t++;
-			array_insert(lvl,t,48); t++;
-			array_insert(lvl,t,49); t++;
-			array_insert(lvl,t,50); t++;
+			//array_insert(lvl,t,45); t++;
+			//array_insert(lvl,t,46); t++;
+			//array_insert(lvl,t,47); t++;
+			//array_insert(lvl,t,48); t++;
+			//array_insert(lvl,t,49); t++;
+			//array_insert(lvl,t,50); t++;
 }
-if(t == 0 and obj_suq.progress < 36)
+if(t == 0 and obj_suq.progress < 40)//might need to change this? 
 {
 	obj_suq.progress++
 	//instance_destroy();

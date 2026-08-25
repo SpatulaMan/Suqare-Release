@@ -1,6 +1,7 @@
 /// @description 
 if(room == r_armory)
 {
+	game = 1;
 	if(knet > 100)
 		knet = 100;
 	if(gnet > 100)

@@ -164,8 +164,111 @@ function save()
 		pwin: o_saveload.pwin,
 		uwin: o_saveload.uwin,
 		gwin: o_saveload.gwin,
-		hwin: o_saveload.hwin
+		hwin: o_saveload.hwin,
+		game: o_saveload.game,
 		
+		//100 extra variables for potential later updates
+		var1: o_saveload.var1,
+		var2: o_saveload.var2,
+		var3: o_saveload.var3,
+		var4: o_saveload.var4,
+		var5: o_saveload.var5,
+		var6: o_saveload.var6,
+		var7: o_saveload.var7,
+		var8: o_saveload.var8,
+		var9: o_saveload.var9,
+		var10: o_saveload.var10,
+		var11: o_saveload.var11,
+		var12: o_saveload.var12,
+		var13: o_saveload.var13,
+		var14: o_saveload.var14,
+		var15: o_saveload.var15,
+		var16: o_saveload.var16,
+		var17: o_saveload.var17,
+		var18: o_saveload.var18,
+		var19: o_saveload.var19,
+		var20: o_saveload.var20,
+		var21: o_saveload.var21,
+		var22: o_saveload.var22,
+		var23: o_saveload.var23,
+		var24: o_saveload.var24,
+		var25: o_saveload.var25,
+		var26: o_saveload.var26,
+		var27: o_saveload.var27,
+		var28: o_saveload.var28,
+		var29: o_saveload.var29,
+		var30: o_saveload.var30,
+		var31: o_saveload.var31,
+		var32: o_saveload.var32,
+		var33: o_saveload.var33,
+		var34: o_saveload.var34,
+		var35: o_saveload.var35,
+		var36: o_saveload.var36,
+		var37: o_saveload.var37,
+		var38: o_saveload.var38,
+		var39: o_saveload.var39,
+		var40: o_saveload.var40,
+		var41: o_saveload.var41,
+		var42: o_saveload.var42,
+		var43: o_saveload.var43,
+		var44: o_saveload.var44,
+		var45: o_saveload.var45,
+		var46: o_saveload.var46,
+		var47: o_saveload.var47,
+		var48: o_saveload.var48,
+		var49: o_saveload.var49,
+		var50: o_saveload.var50,
+		var51: o_saveload.var51,
+		var52: o_saveload.var52,
+		var53: o_saveload.var53,
+		var54: o_saveload.var54,
+		var55: o_saveload.var55,
+		var56: o_saveload.var56,
+		var57: o_saveload.var57,
+		var58: o_saveload.var58,
+		var59: o_saveload.var59,
+		var60: o_saveload.var60,
+		var61: o_saveload.var61,
+		var62: o_saveload.var62,
+		var63: o_saveload.var63,
+		var64: o_saveload.var64,
+		var65: o_saveload.var65,
+		var66: o_saveload.var66,
+		var67: o_saveload.var67,
+		var68: o_saveload.var68,
+		var69: o_saveload.var69,
+		var70: o_saveload.var70,
+		var71: o_saveload.var71,
+		var72: o_saveload.var72,
+		var73: o_saveload.var73,
+		var74: o_saveload.var74,
+		var75: o_saveload.var75,
+		var76: o_saveload.var76,
+		var77: o_saveload.var77,
+		var78: o_saveload.var78,
+		var79: o_saveload.var79,
+		var80: o_saveload.var80,
+		var81: o_saveload.var81,
+		var82: o_saveload.var82,
+		var83: o_saveload.var83,
+		var84: o_saveload.var84,
+		var85: o_saveload.var85,
+		var86: o_saveload.var86,
+		var87: o_saveload.var87,
+		var88: o_saveload.var88,
+		var89: o_saveload.var89,
+		var90: o_saveload.var90,
+		var91: o_saveload.var91,
+		var92: o_saveload.var92,
+		var93: o_saveload.var93,
+		var94: o_saveload.var94,
+		var95: o_saveload.var95,
+		var96: o_saveload.var96,
+		var97: o_saveload.var97,
+		var98: o_saveload.var98,
+		var99: o_saveload.var99,
+		var100: o_saveload.var100
+	
 		//upgrades
 		
 		//gadgets
@@ -517,6 +620,110 @@ function load(_f)
 			o_saveload.gwin=_struct.gwin;
 		if (struct_exists(_struct, "hwin"))
 			o_saveload.hwin=_struct.hwin;
+		if (struct_exists(_struct, "game"))
+			o_saveload.game=_struct.game;
+		
+		//extra variables
+		if (struct_exists(_struct, "var1")) o_saveload.var1=_struct.var1;
+		if (struct_exists(_struct, "var2")) o_saveload.var2=_struct.var2;
+		if (struct_exists(_struct, "var3")) o_saveload.var3=_struct.var3;
+		if (struct_exists(_struct, "var4")) o_saveload.var4=_struct.var4;
+		if (struct_exists(_struct, "var5")) o_saveload.var5=_struct.var5;
+		if (struct_exists(_struct, "var6")) o_saveload.var6=_struct.var6;
+		if (struct_exists(_struct, "var7")) o_saveload.var7=_struct.var7;
+		if (struct_exists(_struct, "var8")) o_saveload.var8=_struct.var8;
+		if (struct_exists(_struct, "var9")) o_saveload.var9=_struct.var9;
+		if (struct_exists(_struct, "var10")) o_saveload.var10=_struct.var10;
+		if (struct_exists(_struct, "var11")) o_saveload.var11=_struct.var11;
+		if (struct_exists(_struct, "var12")) o_saveload.var12=_struct.var12;
+		if (struct_exists(_struct, "var13")) o_saveload.var13=_struct.var13;
+		if (struct_exists(_struct, "var14")) o_saveload.var14=_struct.var14;
+		if (struct_exists(_struct, "var15")) o_saveload.var15=_struct.var15;
+		if (struct_exists(_struct, "var16")) o_saveload.var16=_struct.var16;
+		if (struct_exists(_struct, "var17")) o_saveload.var17=_struct.var17;
+		if (struct_exists(_struct, "var18")) o_saveload.var18=_struct.var18;
+		if (struct_exists(_struct, "var19")) o_saveload.var19=_struct.var19;
+		if (struct_exists(_struct, "var20")) o_saveload.var20=_struct.var20;
+		if (struct_exists(_struct, "var21")) o_saveload.var21=_struct.var21;
+		if (struct_exists(_struct, "var22")) o_saveload.var22=_struct.var22;
+		if (struct_exists(_struct, "var23")) o_saveload.var23=_struct.var23;
+		if (struct_exists(_struct, "var24")) o_saveload.var24=_struct.var24;
+		if (struct_exists(_struct, "var25")) o_saveload.var25=_struct.var25;
+		if (struct_exists(_struct, "var26")) o_saveload.var26=_struct.var26;
+		if (struct_exists(_struct, "var27")) o_saveload.var27=_struct.var27;
+		if (struct_exists(_struct, "var28")) o_saveload.var28=_struct.var28;
+		if (struct_exists(_struct, "var29")) o_saveload.var29=_struct.var29;
+		if (struct_exists(_struct, "var30")) o_saveload.var30=_struct.var30;
+		if (struct_exists(_struct, "var31")) o_saveload.var31=_struct.var31;
+		if (struct_exists(_struct, "var32")) o_saveload.var32=_struct.var32;
+		if (struct_exists(_struct, "var33")) o_saveload.var33=_struct.var33;
+		if (struct_exists(_struct, "var34")) o_saveload.var34=_struct.var34;
+		if (struct_exists(_struct, "var35")) o_saveload.var35=_struct.var35;
+		if (struct_exists(_struct, "var36")) o_saveload.var36=_struct.var36;
+		if (struct_exists(_struct, "var37")) o_saveload.var37=_struct.var37;
+		if (struct_exists(_struct, "var38")) o_saveload.var38=_struct.var38;
+		if (struct_exists(_struct, "var39")) o_saveload.var39=_struct.var39;
+		if (struct_exists(_struct, "var30")) o_saveload.var40=_struct.var40;
+		if (struct_exists(_struct, "var41")) o_saveload.var41=_struct.var41;
+		if (struct_exists(_struct, "var42")) o_saveload.var42=_struct.var42;
+		if (struct_exists(_struct, "var43")) o_saveload.var43=_struct.var43;
+		if (struct_exists(_struct, "var44")) o_saveload.var44=_struct.var44;
+		if (struct_exists(_struct, "var45")) o_saveload.var45=_struct.var45;
+		if (struct_exists(_struct, "var46")) o_saveload.var46=_struct.var46;
+		if (struct_exists(_struct, "var47")) o_saveload.var47=_struct.var47;
+		if (struct_exists(_struct, "var48")) o_saveload.var48=_struct.var48;
+		if (struct_exists(_struct, "var49")) o_saveload.var49=_struct.var49;
+		if (struct_exists(_struct, "var50")) o_saveload.var50=_struct.var50;
+		if (struct_exists(_struct, "var51")) o_saveload.var51=_struct.var51;
+		if (struct_exists(_struct, "var52")) o_saveload.var52=_struct.var52;
+		if (struct_exists(_struct, "var53")) o_saveload.var53=_struct.var53;
+		if (struct_exists(_struct, "var54")) o_saveload.var54=_struct.var54;
+		if (struct_exists(_struct, "var55")) o_saveload.var55=_struct.var55;
+		if (struct_exists(_struct, "var56")) o_saveload.var56=_struct.var56;
+		if (struct_exists(_struct, "var57")) o_saveload.var57=_struct.var57;
+		if (struct_exists(_struct, "var58")) o_saveload.var58=_struct.var58;
+		if (struct_exists(_struct, "var59")) o_saveload.var59=_struct.var59;
+		if (struct_exists(_struct, "var60")) o_saveload.var60=_struct.var60;
+		if (struct_exists(_struct, "var61")) o_saveload.var61=_struct.var61;
+		if (struct_exists(_struct, "var62")) o_saveload.var62=_struct.var62;
+		if (struct_exists(_struct, "var63")) o_saveload.var63=_struct.var63;
+		if (struct_exists(_struct, "var64")) o_saveload.var64=_struct.var64;
+		if (struct_exists(_struct, "var65")) o_saveload.var65=_struct.var65;
+		if (struct_exists(_struct, "var66")) o_saveload.var66=_struct.var66;
+		if (struct_exists(_struct, "var67")) o_saveload.var67=_struct.var67;
+		if (struct_exists(_struct, "var68")) o_saveload.var68=_struct.var68;
+		if (struct_exists(_struct, "var69")) o_saveload.var69=_struct.var69;
+		if (struct_exists(_struct, "var70")) o_saveload.var70=_struct.var70;
+		if (struct_exists(_struct, "var71")) o_saveload.var71=_struct.var71;
+		if (struct_exists(_struct, "var72")) o_saveload.var72=_struct.var72;
+		if (struct_exists(_struct, "var73")) o_saveload.var73=_struct.var73;
+		if (struct_exists(_struct, "var74")) o_saveload.var74=_struct.var74;
+		if (struct_exists(_struct, "var75")) o_saveload.var75=_struct.var75;
+		if (struct_exists(_struct, "var76")) o_saveload.var76=_struct.var76;
+		if (struct_exists(_struct, "var77")) o_saveload.var77=_struct.var77;
+		if (struct_exists(_struct, "var78")) o_saveload.var78=_struct.var78;
+		if (struct_exists(_struct, "var79")) o_saveload.var79=_struct.var79;
+		if (struct_exists(_struct, "var80")) o_saveload.var80=_struct.var80;
+		if (struct_exists(_struct, "var81")) o_saveload.var81=_struct.var81;
+		if (struct_exists(_struct, "var82")) o_saveload.var82=_struct.var82;
+		if (struct_exists(_struct, "var83")) o_saveload.var83=_struct.var83;
+		if (struct_exists(_struct, "var84")) o_saveload.var84=_struct.var84;
+		if (struct_exists(_struct, "var85")) o_saveload.var85=_struct.var85;
+		if (struct_exists(_struct, "var86")) o_saveload.var86=_struct.var86;
+		if (struct_exists(_struct, "var87")) o_saveload.var87=_struct.var87;
+		if (struct_exists(_struct, "var88")) o_saveload.var88=_struct.var88;
+		if (struct_exists(_struct, "var89")) o_saveload.var89=_struct.var89;
+		if (struct_exists(_struct, "var90")) o_saveload.var90=_struct.var90;
+		if (struct_exists(_struct, "var91")) o_saveload.var91=_struct.var91;
+		if (struct_exists(_struct, "var92")) o_saveload.var92=_struct.var92;
+		if (struct_exists(_struct, "var93")) o_saveload.var93=_struct.var93;
+		if (struct_exists(_struct, "var94")) o_saveload.var94=_struct.var94;
+		if (struct_exists(_struct, "var95")) o_saveload.var95=_struct.var95;
+		if (struct_exists(_struct, "var96")) o_saveload.var96=_struct.var96;
+		if (struct_exists(_struct, "var97")) o_saveload.var97=_struct.var97;
+		if (struct_exists(_struct, "var98")) o_saveload.var98=_struct.var98;
+		if (struct_exists(_struct, "var99")) o_saveload.var99=_struct.var99;
+		if (struct_exists(_struct, "var100")) o_saveload.var100=_struct.var100;
 			
 		
 		//levels that are incompleted and are available to the player currently in variables 
@@ -680,7 +887,110 @@ function load(_f)
 			pwin: false,
 			uwin: false,
 			gwin: false,
-			hwin: false
+			hwin: false,
+			game: 0,
+			
+			//generic veriables
+			var1: 0,
+			var2: 0,
+			var3: 0,
+			var4: 0,
+			var5: 0,
+			var6: 0,
+			var7: 0,
+			var8: 0,
+			var9: 0,
+			var10: 0,
+			var11: 0,
+			var12: 0,
+			var13: 0,
+			var14: 0,
+			var15: 0,
+			var16: 0,
+			var17: 0,
+			var18: 0,
+			var19: 0,
+			var20: 0,
+			var21: 0,
+			var22: 0,
+			var23: 0,
+			var24: 0,
+			var25: 0,
+			var26: 0,
+			var27: 0,
+			var28: 0,
+			var29: 0,
+			var30: 0,
+			var31: 0,
+			var32: 0,
+			var33: 0,
+			var34: 0,
+			var35: 0,
+			var36: 0,
+			var37: 0,
+			var38: 0,
+			var39: 0,
+			var40: 0,
+			var41: 0,
+			var42: 0,
+			var43: 0,
+			var44: 0,
+			var45: 0,
+			var46: 0,
+			var47: 0,
+			var48: 0,
+			var49: 0,
+			var50: 0,
+			var51: 0,
+			var52: 0,
+			var53: 0,
+			var54: 0,
+			var55: 0,
+			var56: 0,
+			var57: 0,
+			var58: 0,
+			var59: 0,
+			var60: 0,
+			var61: 0,
+			var62: 0,
+			var63: 0,
+			var64: 0,
+			var65: 0,
+			var66: 0,
+			var67: 0,
+			var68: 0,
+			var69: 0,
+			var70: 0,
+			var71: 0,
+			var72: 0,
+			var73: 0,
+			var74: 0,
+			var75: 0,
+			var76: 0,
+			var77: 0,
+			var78: 0,
+			var79: 0,
+			var80: 0,
+			var81: 0,
+			var82: 0,
+			var83: 0,
+			var84: 0,
+			var85: 0,
+			var86: 0,
+			var87: 0,
+			var88: 0,
+			var89: 0,
+			var90: 0,
+			var91: 0,
+			var92: 0,
+			var93: 0,
+			var94: 0,
+			var95: 0,
+			var96: 0,
+			var97: 0,
+			var98: 0,
+			var99: 0,
+			var100: 0
 			
 		
 		}

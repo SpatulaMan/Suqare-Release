@@ -30,7 +30,7 @@ if(image_yscale > 1)
 	image_yscale -= 0.0005;
 }
 
-if(room != r_armory and room != r_range and room != r_lvl_37 and keyboard_check(vk_backspace) and lives > 0)
+if(room != r_armory and room != r_range and room != r_lvl_37 and room != r_intro and keyboard_check(vk_backspace) and lives > 0)
 {
 	res++;
 	if(res >= 120)

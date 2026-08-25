@@ -2036,67 +2036,37 @@ return a[t];
 function scr_conversation(t)
 {
 	//text for small text box is 128 across, and 11 char-13's
-	a[0] = @"You are Suqare. A brand new mercenary trying to make a name for yourself. You've equipped the place with a shop 
-			where you can buy equipment and upgrades, and a manager who will always have a list of jobs for you to choose from.
-			This is your first foray into the world of mercenaries. Keep your wits about you. 
-			
-			These are tumultuous times. 6 large corporations are all vying for control in the public and private sectors. While 
+	a[0] = @"These are tumultuous times. 6 large corporations are all vying for control in the public and private sectors. While 
 			they show their good side to the public, many of them do some shady dealings behind closed doors. These 6 companies
 			will be your primary source of jobs, but decide for yourself if the job fits your moral code. It won't always be 
-			pretty, but you have an opportunity to make this world better or much worse. Use your head out there.  
+			pretty, but you have an opportunity to make this world better or much worse. Use your head out there.  ";
+	a[1] = @"This area shows the net worth of all 6 corporations. If a company goes bankrupt, their jobs will be removed from
+			the board. 
 			
-			WASD to move";
-	a[1] = @"This area shows the net worth of all 6 corporations. The higher that goes, the better they're doing. The actions 
-			you take during missions affect this, so if you want one company to thrive while bankrupting another, try to make
-			the necessary moves to do so. If a company goes bankrupt they won't have any more jobs for you. 
-			
-			The blue line shows where their net worth was at before you took your last job. This way you can see how much their
-			net worth changes from just one job. That's how volatile business is these days.";
-	a[2] = @"This area shows how each company views you. If they like you, you might get extra bonuses. If they hate you, 
-			you'll want to watch your back. Staying in a Neutral zone might just be the safest if you don't want to ruffle any
-			feathers.
+			The blue line shows where their net worth was before you took the last job. ";
+	a[2] = @"This area shows where you stand with each company. Check back often.
 			
 			Use Q,E to switch between company views. ";
 	a[3] = @"The job manager keeps a list of all the available jobs. He'll show you a briefing and maybe a map of the area. 
 			Read these closely and pay attention to the placement of locked doors and enemy patrols. 
 			
-			If finishing every objective is too risky, consider leaving early. You can leave at any point by going back to your
-			car. 
+			If finishing every objective is too risky, consider leaving early. 
 			
-			The number of locked doors refers to the number of differently keyed doors, but there could be multiple of a door 
-			that requires the same key. If it says 3 locked doors, then 3 keys would be necessary to open them all. This also 
-			means that if there's 1 locked door, there could be multiple doors that can be opened with the same key. Req. 
-			locked doors need to be opened to complete all objectives. 
+			The number of locked doors refers to the number of differently keyed doors. There could be multiple doors that 
+			require the same key, but the briefing would still say '1 locked door'. Req. locked doors need to be opened to 
+			complete all objectives. 
 			
 			Check your objectives with Spacebar and the map with M. Do this often to know what to do.";
 	a[4] = @"This is the shop. Buy whatever upgrades you think will best serve you for a given job. Everything purchased in 
 			this shop will be automatically sold back to them after each mission for the same price you bought it for. This way
-			you can specialize for the needs of the job.
-			
-			New equipment and upgrades are being added constantly, so always check back to see what else is available before 
-			you begin a job. If you accidentally buy the wrong thing, you can always sell everything you have while still in 
-			the shop. 
-			
-			Play around with as many gadgets as you can. They are all useful in their own ways, and the quicker you learn what
-			they all can do, the better you'll be as a mercenary. You won't always be better off with more armor or upgraded 
-			weapons. See what the job's main objective is and plan accordingly. ";
-	a[5] = @"This is the armory. It stashes all the weaponry that you've acquired over time. If you have a weapon in your 
-			inventory when you exit a mission, it'll be automatically added to your armory to be used at any time. You'll want 
-			to bring back as many weapons as possible to better equip yourself for more extreme threats. 
-			
-			Most weapons have a limited amount of ammo, so watch your supply closely. The knife will be near your vehicle if 
-			you choose not to equip it as a backup.
-			
-			The knife can be swung by using right-click while any weapon is equipped, or thrown by equipping the knife and 
-			using left-click. Throwing a knife does exponentially more damage, but it comes with the risk of being defenseless.
-			Swinging your knife is a great way to open barrels to look for loose cash or ammo.";
-	a[6] = @"This is the shooting range. You can test out any weapon you have here with infinite ammo. There are also combat 
-			challenges you can try if you want to hone your skill even more. These are against simulated enemies that you might
-			face during jobs. Harder challenges will unlock as you complete them, so you can improve your skills no matter your
-			proficiency in combat.";
-	a[7] = @"This is where the trophies you acquire during missions will be displayed. If you're short on cash, you might be 
-			able to sell some of them. ";
-	a[8] = @"An exquisite piece of fine art depicting the ghostly figure of Esmerelda. It has invoked feelings of deep emotion
+			you can specialize for the needs of the job.";
+	a[5] = @"This is the armory. It stashes all the weaponry that you've acquired. If you have a weapon in your inventory when 
+			you exit a mission, it'll be automatically added to your armory. ";
+	a[6] = @"This is the shooting range. You can test out any weapon here with infinite ammo. There are also combat 
+			challenges you can try if you want to hone your skills even more. These are against simulated enemies you might
+			face during jobs. Harder challenges will unlock as you complete them.";
+	a[7] = @"This is where your trophies will be displayed. If you're short on cash, you might be able to sell them. ";
+	a[8] = @"An exquisite piece of fine art depicting the ghostly figure of Esmerelda. It has evoked feelings of deep emotion
 			in the hearts of the many throughout its years on display. Sadly, the artist has been lost to time with no one ever
 			discovering who was responsible for its creation. 
 	
@@ -2670,6 +2640,80 @@ function scr_conversation(t)
 			Valuation: $2,000 per artifact
 			
 			Press Spacebar to sell";
+	a[151] = @"How many days you have left to prove yourself";
+	a[152] = @"Walk with me, Suqare. 
+	
+			(W A S D to move)";
+	a[153] = @"Look around you...... Look at all I'm supplying you......
+	
+			I'm funding this whole operation because I'm your uncle, not because I believe in you. 
+			
+			You say you want to be a great mercenary... Well, let's see about that. ";
+	a[154] = @"I've heard you're quite the competent soldier.
+	
+			But can you make enough money, build up a loyal client base, and all the while stand by your values without 
+			caving into pressure?
+			
+			That's what matters to me. ";
+	a[155] = @"I'm giving you an armory equipped with a storefront, a job manager, and so much more. 
+			
+			You have more than enough to get a head start... 
+			
+			Do not disappoint me. ";
+	a[156] = @"I'll give you 40 days to prove yourself. That's 40 jobs if you spend your time wisely.
+	
+			If you impress me, I'll let you keep everything I've given you here as a gift. If not...
+			
+			I take it all back. ";
+	a[157] = @"Here's some advice. It's the last thing you'll get for free...
+	
+			State your values and let them drive your decisions...";
+	a[158] = @"... And make every choice count.";
+	a[159] = @"Value statement #1:
+	
+			Are you okay with killing innocents for a virtuous end goal?
+	
+	
+			Y for yes
+			N for no";//kanker
+	a[160] = @"Value statement #2:
+	
+			Are you okay with stealing property from peaceful organizations to make change happen?
+	
+	
+			Y for yes
+			N for no";//yellerteeth
+	a[161] = @"Value statement #3:
+	
+			Should the state control the price of goods?
+	
+	
+			Y for yes
+			N for no";//perez
+	a[162] = @"Value statement #4:
+	
+			Should checks and balances be forced upon organizations that hinder greed and economy growth?
+	
+	
+			Y for yes
+			N for no";//ungulate
+	a[163] = @"Value statement #5:
+	
+			Are criminal acts always morally wrong?
+	
+	
+			Y for yes
+			N for no";//hiertech
+	a[164] = @"Value statement #6:
+	
+			Should organizations help those in need to their own detriment? 
+	
+	
+			Y for yes
+			N for no";//gildebrand
+	a[165] = @"";//intentionally left blank
+	a[166] = @"";
+	a[167] = @"";
 			
 	return a[t];
 }
@@ -2906,14 +2950,11 @@ function scr_shop(t){
 	o[23] = @"Assault Rifle Upgrade
 			
 			
-			Description: Increases Fire Rate immensely but decreases
-			Reload speed
+			Description: Increases Fire Rate immensely
 			
-			Fire Rate: 6
-			Reload Speed: 1.33
+			Fire Rate: 7.5
 			    |
 			Fire Rate: 60
-			Reload Speed: 3
 			
 			
 			$5800"; 

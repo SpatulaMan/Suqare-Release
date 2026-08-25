@@ -11,9 +11,16 @@ if(t > 0)
 	x = obj_suq.x;
 	y = obj_suq.y;
 	t--;
+	if(h >= 159 and h < 165) { t++; }
 	if(t <= 1) { instance_destroy(); }
 }
-if(!instance_exists(o_convo) and place_meeting(x,y,obj_suq) and check == false and h != 77 and h != 84 and !instance_exists(o_lvl21))
+if(!instance_exists(o_convo) and place_meeting(x,y,obj_suq) and check == false and (h >= 159 and h < 165))
+{
+	inst = instance_create(x,y,o_choice);
+	inst.i = h;
+	check = true;
+}
+else if(!instance_exists(o_convo) and place_meeting(x,y,obj_suq) and check == false and h != 77 and h != 84 and h != 165 and !instance_exists(o_lvl21))
 {
 	inst = instance_create(x,y,o_convo);
 	inst.i = h;
@@ -38,7 +45,7 @@ else if(h == 84 and obj_suq.hazmat == false and check == false and place_meeting
 	inst.i = h;
 	check = true;
 }
-if(!instance_exists(o_convo) and place_meeting(x,y,obj_suq) and check == false and instance_exists(o_lvl21))
+else if(!instance_exists(o_convo) and place_meeting(x,y,obj_suq) and check == false and instance_exists(o_lvl21))
 {
 	if(o_lvl21.start == false)
 	{

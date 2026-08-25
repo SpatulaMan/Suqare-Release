@@ -1,6 +1,9 @@
-if(visible == true)
+if(visible == true and lclick == false)
 {
 	audio_play_sound(snd_heal,1,false,random_range(.8,1.2)*o_saveload.sfxvol,0,3);
+	lclick = true;
+	if(c == 5 or c == 6 or c == 7) { alarm_set(1,300); }
+	else { alarm_set(1,60); }
 	switch(c)
 	{
 		case 1: o_logo.keyPress = true; visible = false; break; //start game
