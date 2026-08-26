@@ -69,7 +69,7 @@ function scr_levelEnd(car,range_optional)
 				case 38: o_saveload.valueC += choose(4000,7000,9000); break;
 				case 39: o_saveload.valueC += choose(-1000,200,-2000); break;
 				case 40: o_saveload.valueC += choose(50,-100,900); break;
-				case 41: o_saveload.valueC += choose(50,1200,200,-500); break;
+				/*case 41: o_saveload.valueC += choose(50,1200,200,-500); break;
 				case 42: o_saveload.valueC += choose(1000,2400,-500); break;
 				case 43: o_saveload.valueC += choose(500,-1040,200); break;
 				case 44: o_saveload.valueC += choose(500,1100,2800); break;
@@ -79,7 +79,7 @@ function scr_levelEnd(car,range_optional)
 				case 48: o_saveload.valueC += choose(500,1400,2600,-500); break;
 				case 49: o_saveload.valueC += choose(100,700,-4000); break;
 				case 50: o_saveload.valueC += choose(50,4500,2000,-50); break;
-				case 51: o_saveload.valueC += choose(5000,1000,2000); break;
+				case 51: o_saveload.valueC += choose(5000,1000,2000); break;*/
 			}
 			alarm_set(0,120); 
 			if(obj_suq.magnumHave > 0)
@@ -1360,6 +1360,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 105;
 					o_saveload.ynet -= 100;
 					obj_suq.yellerteeth += 3;
+					o_saveload.ylrtwins = true;
 				}
 				else if(o_lvl45.o1 == false)
 				{
@@ -1543,6 +1544,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.gildebrand += 3;
 					o_saveload.moneyT += 12500;
 					o_saveload.success++;
+					o_saveload.gldwins = true;
 				}
 				else
 				{
@@ -1651,6 +1653,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.knet -= 6;
 					o_saveload.moneyT += 5600;
 					o_saveload.success++;
+					o_saveload.prhwins = true;
 				}
 				else
 				{
@@ -1734,6 +1737,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.unet -= 100;
 					o_saveload.moneyT += 11000;
 					o_saveload.success++;
+					o_saveload.hrtwins = true;
 				}
 				else
 				{
@@ -1895,6 +1899,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.unet += 9;
 					o_saveload.hnet -= 100;
 					o_saveload.success++;
+					o_saveload.ungwins = true;
 				}
 				else
 				{

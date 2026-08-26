@@ -167,73 +167,73 @@ if(shuriken > 0 and gunEquip == 12)
 	draw_sprite_stretched(spr_shuriken,0,1550,940,12*15,12*15);
 	draw_text_transformed_colour(1500,940,string_hash_to_newline(string(shuriken)),3,3,0,c_white,c_white,c_white,c_white,1);
 }
-if(minegAmt > 0 and gadget == 0 and room != r_armory)
+if(minegAmt > 0 and gadget == 0 and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 {
 	draw_sprite_ext(spr_mine,0,1550,160,15,15,0,c_white,1);
 	draw_text_transformed_colour(1450,80,string_hash_to_newline(string(minegAmt)),3,3,0,c_red,c_red,c_red,c_red,1);
 }
-if(minesAmt > 0 and gadget == 1 and room != r_armory)
+if(minesAmt > 0 and gadget == 1 and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 {
 	draw_sprite_ext(spr_mineD,0,1550,160,15,15,0,c_white,1);
 	draw_text_transformed_colour(1450,80,string_hash_to_newline(string(minesAmt)),3,3,0,c_lime,c_lime,c_lime,c_lime,1);
 }
-if(lock30 > 0 and gadget == 2 and room != r_armory)
+if(lock30 > 0 and gadget == 2 and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 {
 	var _c = make_color_rgb(0,255,255);
 	draw_sprite_ext(s_tearGas,0,1550,145,15,15,0,c_white,1);
 	draw_text_transformed_colour(1450,80,string_hash_to_newline(string(lock30)),3,3,0,_c,_c,_c,_c,1);
 }
-if(lock50 > 0 and gadget == 3 and room != r_armory)
+if(lock50 > 0 and gadget == 3 and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 {
 	draw_sprite_ext(s_lockpick50,0,1580,120,15,15,0,c_white,1);
 	draw_text_transformed_colour(1450,80,string_hash_to_newline(string(lock50)),3,3,0,c_lime,c_lime,c_lime,c_lime,1);
 }
-if(darts > 0 and gadget == 4 and room != r_armory)
+if(darts > 0 and gadget == 4 and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 {
 	draw_sprite_ext(s_dart,0,1550,145,15,15,0,c_white,1);
 	draw_text_transformed_colour(1450,80,string_hash_to_newline(string(darts)),3,3,0,c_lime,c_red,c_aqua,c_aqua,1);
 }
-if(attract == 1 and gadget == 5 and room != r_armory)
+if(attract == 1 and gadget == 5 and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 {
 	draw_sprite_ext(s_attract,0,1550,120,15,15,0,c_white,1);
 	//draw_text_transformed_colour(1500,80,string_hash_to_newline(string(attractMax-attract)),3,3,0,c_yellow,c_yellow,c_yellow,c_yellow,1);
 }
-if(attackTur > 0 and gadget == 6 and room != r_armory)
+if(attackTur > 0 and gadget == 6 and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 {
 	var _c = make_color_rgb(0,255,0);
 	draw_sprite_ext(s_turretA,0,1550,145,15,15,0,c_white,1);
 	draw_text_transformed_colour(1450,80,string_hash_to_newline(string(attackTur)),3,3,0,_c,_c,_c,_c,1);
 }
-if(defenseTur > 0 and gadget == 7 and room != r_armory)
+if(defenseTur > 0 and gadget == 7 and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 {
 	var _c = make_color_rgb(255,150,0);
 	draw_sprite_ext(s_turretS,0,1550,145,15,15,0,c_white,1);
 	draw_text_transformed_colour(1450,80,string_hash_to_newline(string(defenseTur)),3,3,0,_c,_c,_c,_c,1);
 }
-if(tearTur > 0 and gadget == 8 and room != r_armory)
+if(tearTur > 0 and gadget == 8 and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 {
 	var _c = make_color_rgb(0,255,255);
 	draw_sprite_ext(s_turretT,0,1550,145,15,15,0,c_white,1);
 	draw_text_transformed_colour(1450,80,string_hash_to_newline(string(tearTur)),3,3,0,_c,_c,_c,_c,1);
 }
-if(flameTur > 0 and gadget == 9 and room != r_armory)
+if(flameTur > 0 and gadget == 9 and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 {
 	draw_sprite_ext(s_turretF,0,1550,145,15,15,0,c_white,1);
 	draw_text_transformed_colour(1450,80,string_hash_to_newline(string(flameTur)),3,3,0,c_red,c_red,c_red,c_red,1);
 }
-if(rocketTur > 0 and gadget == 10 and room != r_armory)
+if(rocketTur > 0 and gadget == 10 and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 {
 	var _c = make_color_rgb(158,68,229);
 	draw_sprite_ext(s_turretR,0,1550,145,15,15,0,c_white,1);
 	draw_text_transformed_colour(1450,80,string_hash_to_newline(string(rocketTur)),3,3,0,_c,_c,_c,_c,1);
 }
-if(rc and gadget == 11 and room != r_armory)
+if(rc and gadget == 11 and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 {
 	draw_sprite_ext(s_rcCar,0,1550,145,15,15,0,c_white,1);
 }
 if(pistolHave == 1 and gunEquip == 1)
 {
-	if((((keyboard_check_pressed(ord("R")) and pMag < pmr) or (pMag == 0)) and pistolAmt > 0 and pr == false) and room != r_armory)
+	if((((keyboard_check_pressed(ord("R")) and pMag < pmr) or (pMag == 0)) and pistolAmt > 0 and pr == false) and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 	{
 		pr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
@@ -257,7 +257,7 @@ if(pistolHave == 1 and gunEquip == 1)
 }
 if(magnumHave == 1 and gunEquip == 2)
 {
-	if((((keyboard_check_pressed(ord("R")) and mMag < mmr) or (mMag == 0)) and magnumAmt > 0 and mr == false) and room != r_armory)
+	if((((keyboard_check_pressed(ord("R")) and mMag < mmr) or (mMag == 0)) and magnumAmt > 0 and mr == false) and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 	{
 		mr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
@@ -281,7 +281,7 @@ if(magnumHave == 1 and gunEquip == 2)
 }
 if(machineGunHave == 1 and gunEquip == 3)
 {
-	if((((keyboard_check_pressed(ord("R")) and mgMag < mgmr) or (mgMag == 0)) and machineGunAmt > 0 and mgr == false) and room != r_armory)
+	if((((keyboard_check_pressed(ord("R")) and mgMag < mgmr) or (mgMag == 0)) and machineGunAmt > 0 and mgr == false) and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 	{
 		mgr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
@@ -305,7 +305,7 @@ if(machineGunHave == 1 and gunEquip == 3)
 }
 if(assaultRifleHave == 1 and gunEquip == 4)
 {
-	if((((keyboard_check_pressed(ord("R")) and arMag < 20) or (arMag == 0)) and assaultRifleAmt > 0 and arr == false) and room != r_armory)
+	if((((keyboard_check_pressed(ord("R")) and arMag < 20) or (arMag == 0)) and assaultRifleAmt > 0 and arr == false) and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 	{
 		arr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
@@ -329,7 +329,7 @@ if(assaultRifleHave == 1 and gunEquip == 4)
 }
 if(shotgunHave == 1 and gunEquip == 5)
 {
-	if((((keyboard_check_pressed(ord("R")) and sgMag < (6+sgda)) or (sgMag == 0)) and shotgunAmt > 0 and sgr == false) and room != r_armory)
+	if((((keyboard_check_pressed(ord("R")) and sgMag < (6+sgda)) or (sgMag == 0)) and shotgunAmt > 0 and sgr == false) and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 	{
 		sgr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
@@ -353,7 +353,7 @@ if(shotgunHave == 1 and gunEquip == 5)
 }
 if(shooterGunHave == 1 and gunEquip == 6)
 {
-	if((((keyboard_check_pressed(ord("R")) and shMag < 40) or (shMag == 0)) and shooterGunAmt > 0 and shr == false) and room != r_armory)
+	if((((keyboard_check_pressed(ord("R")) and shMag < 40) or (shMag == 0)) and shooterGunAmt > 0 and shr == false) and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 	{
 		shr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
@@ -377,7 +377,7 @@ if(shooterGunHave == 1 and gunEquip == 6)
 }
 if(flamethrowerHave == 1 and gunEquip == 7)
 {
-	if((((keyboard_check_pressed(ord("R")) and fMag < 5) or (fMag == 0)) and flamethrowerAmt > 0 and fr == false) and room != r_armory)
+	if((((keyboard_check_pressed(ord("R")) and fMag < 5) or (fMag == 0)) and flamethrowerAmt > 0 and fr == false) and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 	{
 		fr = true;
 		audio_play_sound(snd_switchguns,3,false);
@@ -401,7 +401,7 @@ if(flamethrowerHave == 1 and gunEquip == 7)
 }
 if(sniperRifleHave == 1 and gunEquip == 8)
 {
-	if((((keyboard_check_pressed(ord("R")) and snMag < snmr) or (snMag == 0)) and sniperRifleAmt > 0 and snr == false) and room != r_armory)
+	if((((keyboard_check_pressed(ord("R")) and snMag < snmr) or (snMag == 0)) and sniperRifleAmt > 0 and snr == false) and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 	{
 		snr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
@@ -425,7 +425,7 @@ if(sniperRifleHave == 1 and gunEquip == 8)
 }
 if(rocketLauncherHave == 1 and gunEquip == 9)
 {
-	if((((keyboard_check_pressed(ord("R")) and rlMag < 2) or (rlMag == 0)) and rocketLauncherAmt > 0 and rlr == false) and room != r_armory)
+	if((((keyboard_check_pressed(ord("R")) and rlMag < 2) or (rlMag == 0)) and rocketLauncherAmt > 0 and rlr == false) and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 	{
 		rlr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);
@@ -455,7 +455,7 @@ if(ghostGunHave == 1 and gunEquip == 13)
 }
 if(pp7Have == 1 and gunEquip == 14)
 {
-	if((((keyboard_check_pressed(ord("R")) and ppMag < 4) or (ppMag == 0)) and pp7Amt > 0 and ppr == false) and room != r_armory)
+	if((((keyboard_check_pressed(ord("R")) and ppMag < 4) or (ppMag == 0)) and pp7Amt > 0 and ppr == false) and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 	{
 		ppr = true;
 		audio_play_sound(snd_switchguns,3,false,o_saveload.sfxvol);

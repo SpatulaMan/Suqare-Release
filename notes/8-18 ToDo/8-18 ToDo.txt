@@ -48,26 +48,40 @@ Only attack if standing is less than -6 and net worth is > 0
 
 
 Checklist:
-maybe-level 51
-maybe-Playtest and fix 1 levels
--Get scored based on how closely you play to those values(30% of score)? Say yes or no to each set of values and the higher those companies standing's are, the better
+-Add randomly selected dialogue to show when Suqare checks how many days are left. Or just a different one for each day. 
+-Check that level select looping works
+-credits
+	-How many Missions taken
+	-How many successes
+	-How many failures
+	-How much money earned
+	-Favorite company based on standing? 
+	-A Mercenary rating 
+-steam acheivements - Obtain all 16 weapons, bankrupt companies (six of these), Complete company goals (six of these), Complete the game, become the richest mercenary, Kill a ranked mercenary
+	Obtain all trophies, A Rank Mercenary, B Rank Mercenary, C Rank Mercenary, D Rank Mercenary, F Rank Mercenary, Hidden achievements (kill uncle, Acquire Golden Sword)
+-extras? Are these the extra modes if the game is successful enough (or make into DLC?)? Making of section? Small multiplayer/co-op game mode? Cheat codes?
+	Just make this follow me on instagram/youtube links, linktree, and 
+
+Done from checklist:
+	
+	Done-Uncle comes by and gives his assessment of how you're doing. Walk up to him to get that assessment. 
+	Done-Add some kind of ending based on your player score and company standings/net worths/mercenary net worth that ends the game with some kind of finality.
+		2. Can happen alongside the specific endings for each company
+			-Companies never want to work with you again and you end up running out of business. End up working for your uncle as a bouncer at a club (lowest threshhold total score/standing)
+			-Earthquake crashing your building down on top of you. No one knows if you survived or not (somewhere in the lower/middle of scores)
+			-You keep on as a mercenary for a while, but it wears on you since you never make it big. Your dad pulls funding, but you keep a rag-tag operation going and live a meager life
+			-You become a highly renowned mercenary. Your dad is very proud of you, and he supports you as an investor now. 
+			-You get praised as the best mercenary in the world with high standings and the highest standing of all the mercenaries. You make so much money on brand deals that you don't need to work
+				anymore (highest threshold total score/standing)
+	Done-Get scored based on how closely you play to those values(30% of score)? Say yes or no to each set of values and the higher those companies standing's are, the better
 	Added to total money made(30% of score where 30% is $300,000), and have most companies wanting your services. Successes + non-company successes (10% of score 40 is 10%)
 	total net worth of companies with 0 or greater standing (30% of score where 600 is 30%)
--Add randomly selected dialogue to show when Suqare checks how many days are left. Or just a different one for each day. 
--When 40 levels are done and/or no more levels are available, have the o_lvlselect object have the credits roll, but still allow the player to use the skill check levels.
-	Uncle comes by and gives his assessment of how you're doing. Walk up to him to get that assessment, and then the game fades to black and goes back to logo/menu. 
--Add some kind of ending based on your player score and company standings/net worths/mercenary net worth that ends the game with some kind of finality.
+	Done-
 	1.
 		-Kanker ending where the world is plunged into chaos and there's no room for paid mercenaries anymore. Overrides every other ending. 
 			-Sub ending to this one where you got enough people through to the safe zone in that final mission to have some hope. They'll eventually overtake Kanker and Co. and kill his 
 				army of ghosts and destroy the machine. Long and hard fought battle. Extra mission here? 
-	2. Can happen alongside the specific endings for each company
-		-Companies never want to work with you again and you end up running out of business. End up working for your dad (lowest threshhold total score/standing)
-		-Earthquake crashing your building down on top of you. No one knows if you survived or not (somewhere in the lower/middle of scores)
-		-You keep on as a mercenary for a while, but it wears on you since you never make it big. Your dad pulls funding, but you keep a rag-tag operation going and live a meager life
-		-You become a highly renowned mercenary. Your dad is very proud of you, and he supports you as an investor now. 
-		-You get praised as the best mercenary in the world with high standings and the highest standing of all the mercenaries. You make so much money on brand deals that you don't need to work
-			anymore (highest threshold total score/standing)
+	Done-
 	3. Company Endings (only trigger if you complete their final job as a success)
 		-Perez becomes the government bank, starts beating down the people and other companies with interest rates and fees. They become the largest company in the world
 		-Yellerteeth goes completely bankrupt. Everyone is dead. A total loss
@@ -77,8 +91,8 @@ maybe-Playtest and fix 1 levels
 	4. Other details of companies that didn't get fully resolved arcs. Inclusive numbers
 		-Kanker:
 			-3<x<6: Kanker and Co. may not have taken over the world yet, but they're on their way. If they can fit a few pieces together they will have an unstoppable army no one could contend with. 
-			--2<x<2: Kanker and Co's plans of world domination are far off. Without your help in building an army, they're stuck trying to build capital and resources to make their dream a reality
-			-x<-3: Kanker and Co's company is breaking down. They're losing clientele, and their business isn't in the greatest light. It'll be a miracle if 
+			--2<x<2: Kanker and Co's plans of world domination are far off. Without your help in building an army, they're stuck trying to build capital and resources to make their dream a reality. 
+			-x<-3: Kanker and Co's company is breaking down. They're losing clientele, and their business isn't in the greatest light. The world is a safer place without
 			-bankrupt: Kanker and Co. - BANKRUPT
 		-Perez:
 			-3<x<6: Perez Holdings has a grip on the government that won't easily be let go of, but they're still landing short of their lofty goals. Maybe one day. 
@@ -105,25 +119,7 @@ maybe-Playtest and fix 1 levels
 			--2<x<2: Hiertech isn't the empire they hoped they would be by this time, but they're still a moderately sized operation with many opportunities to grow into more criminal areas. 
 			-x<-3: Hiertech is more of a niche crime family business than the empire they once were. They're still holding on, though, because there will always be money in crime. 
 			-bankrupt: Hiertech - BANKRUPT
--Check that level select looping works
--credits
-	-How many Missions taken
-	-How many deaths?
-	-How many successes
-	-How many failures
-	-How much money earned
-	-Favorite company based on standing? 
-	-What companies are still left with their net worths and your standing with them
-	-Text blurb about each company and what they're doing or if they're bankrupt. 
-	-how the world has changed based on your actions
-	-A Mercenary rating based on how much money you made in total, multiplied by the total standing of all 6 companies - need to figure out what a good score is
--steam acheivements - Obtain all 16 weapons, bankrupt companies (six of these), Complete company goals (six of these), Complete the game, become the richest mercenary, Kill a ranked mercenary
-	Obtain all trophies, Hidden achievements (kill uncle, Acquire Golden Sword)
--extras? Are these the extra modes if the game is successful enough (or make into DLC?)? Making of section? Small multiplayer/co-op game mode? Cheat codes?
-	Just make this follow me on instagram/youtube links, linktree, and 
-
-Done from checklist:
-
+	Done-When 40 levels are done and/or no more levels are available, have the o_lvlselect object have the credits roll, but still allow the player to use the skill check levels.
 	Done-Make early game checklist where you answer questions
 	Done-Add 50 more variables to the saveload object in case I need more for later updates. 
 	Done-Add a "40 day timer" to show that each mission takes 1 day and that's how long you have to "make it big" as a mercenary. Some motivation?  
@@ -145,3 +141,7 @@ After Release:
 -Over $1500 - Re-write text so each company sounds distinct
 -Over $1500 - Replace any use of human/person/people words with something shape related in text
 -Over $2000 and dedicated player base - Multiplayer online/offline for zombies mode and others
+
+Not Doing:
+-level 51
+-Playtest and fix 1 levels

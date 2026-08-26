@@ -16,7 +16,7 @@ s = make_color_rgb(0,255,255);
 o3 = make_color_rgb(0,255,255);
 o1 = make_color_rgb(255,128,0);
 
-total = 2000;
+total = 3000;//maybe set this back to 2000
 knet = o_saveload.dainet;
 hnet = o_saveload.hxenet;
 gnet = o_saveload.otcnet;

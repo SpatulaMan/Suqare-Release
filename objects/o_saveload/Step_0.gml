@@ -25,3 +25,7 @@ if(room == r_armory and newfile == true)
 	alarm_set(0,3);
 	newfile = false;
 }
+if(obj_suq.progress >= 40)
+{
+	endgame = true;
+}

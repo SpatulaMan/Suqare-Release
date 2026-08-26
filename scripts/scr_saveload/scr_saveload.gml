@@ -133,6 +133,11 @@ function save()
 		artifacts: obj_suq.artifacts,
 		endgame: o_saveload.endgame,
 		knkrwins: o_saveload.knkrwins,
+		ungwins: o_saveload.ungwins,
+		hrtwins: o_saveload.hrtwins,
+		ylrtwins: o_saveload.ylrtwins,
+		prhwins: o_saveload.prhwins,
+		gldwins: o_saveload.gldwins,
 		armycount: o_saveload.armycount,
 		trick: o_saveload.trick,
 		ceo: o_saveload.ceo,
@@ -166,6 +171,7 @@ function save()
 		gwin: o_saveload.gwin,
 		hwin: o_saveload.hwin,
 		game: o_saveload.game,
+		rank: o_saveload.rank,
 		
 		//100 extra variables for potential later updates
 		var1: o_saveload.var1,
@@ -622,6 +628,18 @@ function load(_f)
 			o_saveload.hwin=_struct.hwin;
 		if (struct_exists(_struct, "game"))
 			o_saveload.game=_struct.game;
+		if (struct_exists(_struct, "ungwins"))
+			o_saveload.ungwins=_struct.ungwins;
+		if (struct_exists(_struct, "hrtwins"))
+			o_saveload.hrtwins=_struct.hrtwins;
+		if (struct_exists(_struct, "ylrtwins"))
+			o_saveload.ylrtwins=_struct.ylrtwins;
+		if (struct_exists(_struct, "prhwins"))
+			o_saveload.prhwins=_struct.prhwins;
+		if (struct_exists(_struct, "gldwins"))
+			o_saveload.gldwins=_struct.gldwins;
+		if (struct_exists(_struct, "rank"))
+			o_saveload.rank=_struct.rank;
 		
 		//extra variables
 		if (struct_exists(_struct, "var1")) o_saveload.var1=_struct.var1;
@@ -889,6 +907,12 @@ function load(_f)
 			gwin: false,
 			hwin: false,
 			game: 0,
+			ylrtwins: false,
+			gldwins: false,
+			ungwins: false,
+			prhwins: false,
+			hrtwins: false,
+			rank: 0,
 			
 			//generic veriables
 			var1: 0,

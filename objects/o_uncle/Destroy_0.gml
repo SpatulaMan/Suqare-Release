@@ -6,7 +6,7 @@ if(instance_exists(o_choice)) { with (o_choice) instance_destroy(); }
 var e = instance_create_layer(x,y,"Instances_Action",obj_guard);
 e.weapon_type = obj_shotgun;
 e.sprite_index = s_uncle;
-e.hp = 400;
+e.hp = 800;
 e.drop_gun = false;
 e.weapon_spd = 10;
 e.weapon = instance_create_layer(x,y,"Instances_Action",o_eShotgun); 

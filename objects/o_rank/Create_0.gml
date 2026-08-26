@@ -1,0 +1,15 @@
+b = "";
+image_alpha = 0.01;
+show = false;
+w = obj_suq.roomw;
+h = obj_suq.roomh;
+depth = -100;
+image_index = 10;
+displaytxt = "";
+txt = scr_results(45);
+spd = 1;
+i = 43;
+r = 255;
+g = 150;
+b = 0;
+o = make_color_rgb(r,g,b);

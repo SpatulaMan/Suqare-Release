@@ -233,7 +233,7 @@ if(gunEquip == 13 and ghostGunHave == 1)
 {
 	instance_create_layer(x,y,"Instances_1",o_ggCharge);
 }
-if(keyboard_check_direct(vk_shift) and room != r_armory)
+if(keyboard_check_direct(vk_shift) and (room != r_armory or instance_exists(o_uncleEnd) or instance_exists(obj_guard)))
 {
 	switch(gadget)
 	{

@@ -123,5 +123,5 @@ if(t == 0 and obj_suq.progress < 40)//might need to change this?
 }
 if(t <= 1)
 {
-	o_saveload.endgame = true;
+	//o_saveload.endgame = true;
 }

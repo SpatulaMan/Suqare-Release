@@ -14,7 +14,7 @@ if(t > 0)
 	if(h >= 159 and h < 165) { t++; }
 	if(t <= 1) { instance_destroy(); }
 }
-if(!instance_exists(o_convo) and place_meeting(x,y,obj_suq) and check == false and (h >= 159 and h < 165))
+if(!instance_exists(o_choice) and place_meeting(x,y,obj_suq) and check == false and (h >= 159 and h < 165))
 {
 	inst = instance_create(x,y,o_choice);
 	inst.i = h;

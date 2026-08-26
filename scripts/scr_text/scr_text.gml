@@ -2642,13 +2642,14 @@ function scr_conversation(t)
 			Press Spacebar to sell";
 	a[151] = @"How many days you have left to prove yourself";
 	a[152] = @"Walk with me, Suqare. 
-	
+			.
+			.
+			.
+			.
 			(W A S D to move)";
 	a[153] = @"Look around you...... Look at all I'm supplying you......
 	
-			I'm funding this whole operation because I'm your uncle, not because I believe in you. 
-			
-			You say you want to be a great mercenary... Well, let's see about that. ";
+			I'm funding this whole operation of yours because I'm your uncle, not because I believe in you.";
 	a[154] = @"I've heard you're quite the competent soldier.
 	
 			But can you make enough money, build up a loyal client base, and all the while stand by your values without 
@@ -2657,12 +2658,10 @@ function scr_conversation(t)
 			That's what matters to me. ";
 	a[155] = @"I'm giving you an armory equipped with a storefront, a job manager, and so much more. 
 			
-			You have more than enough to get a head start... 
-			
 			Do not disappoint me. ";
-	a[156] = @"I'll give you 40 days to prove yourself. That's 40 jobs if you spend your time wisely.
+	a[156] = @"You have 40 days to prove yourself. That's 40 jobs if you spend your time wisely.
 	
-			If you impress me, I'll let you keep everything I've given you here as a gift. If not...
+			If you impress me, I'll let you keep everything here as a gift. If not...
 			
 			I take it all back. ";
 	a[157] = @"Here's some advice. It's the last thing you'll get for free...
@@ -2678,28 +2677,28 @@ function scr_conversation(t)
 			N for no";//kanker
 	a[160] = @"Value statement #2:
 	
-			Are you okay with stealing property from peaceful organizations to make change happen?
+			Are you okay with stealing property from peaceful organizations to create immense positive change for everyone else?
 	
 	
 			Y for yes
 			N for no";//yellerteeth
 	a[161] = @"Value statement #3:
 	
-			Should the state control the price of goods?
+			Should the state control prices to prevent a free market?
 	
 	
 			Y for yes
 			N for no";//perez
 	a[162] = @"Value statement #4:
 	
-			Should checks and balances be forced upon organizations that hinder greed and economy growth?
+			Should checks and balances be forced upon organizations to hinder greed and misdeeds but could prevent economy growth?
 	
 	
 			Y for yes
 			N for no";//ungulate
 	a[163] = @"Value statement #5:
 	
-			Are criminal acts always morally wrong?
+			Are criminal acts permissible as long as you have a good reason to do them?
 	
 	
 			Y for yes
@@ -2716,6 +2715,263 @@ function scr_conversation(t)
 	a[167] = @"";
 			
 	return a[t];
+}
+
+function scr_results(t)
+{
+	r = [];
+	//kanker endings
+	r[0] = @"Kanker and Co. may not have taken over the world yet, but they're on their way. If they can fit a few pieces 
+			together they will have an unstoppable army no one could contend with. The world is a more dangerous place because
+			of your meddling. 
+			
+			";//good standing
+	r[1] = @"Kanker and Co's plans of world domination are far off. Without your help in building an army, they're stuck trying
+			to build capital and resources to make their dream a reality. 
+			
+			";//okay standing
+	r[2] = @"Kanker and Co's company is breaking down. They're losing clientele, and their business isn't in the greatest light. 
+			The world is a safer place without them around. Lives have become easier, and anxiety levels have begun to fall 
+			dramatically. 
+			
+			";//bad standing
+	r[3] = @"Kanker and Co. have taken over the world. Survival is all that matters. The only reason you're still standing here
+			today is because you helped them create the means of conquest. Now all you can do is sit and wonder what will happen
+			next. Maybe the world will be safer once everything settles down and crime is at an all-time low, but it's at the 
+			cost of millions of lives. Could that be worth it?
+			
+			";//take over the world
+	r[4] = @"Kanker and Co. - BANKRUPT
+	
+			";//bankrupt
+	//yellerteeth
+	r[5] = @"Yellerteeth Inc. has become the scourge of all ninja clans even if their plans weren't fully realized. They'll 
+			continue their work against the ninja, and someday we'll see what they needed those artifacts for. The ninja clans
+			are destitute, and much of the work they've done to stay in the shadows is moot now.
+			
+			";//good
+	r[6] = @"Yellerteeth Inc. hasn't made any big moves against the ninja clans, so they will shift away from mercenary help 
+			and try to gather the ninja artifacts on their own. It is unsure at this time how the Ninja clans will fare.
+			
+			";//okay
+	r[7] = @"Yellerteeth Inc. is in a losing battle against the ninja clans. They've made enemies, but haven't made up any 
+			ground in retrieving the artifacts. They will plan to switch to internal help instead of mercenaries. The ninja 
+			clans seem well equipped to defend themselves.
+			
+			";//bad
+	r[8] = @"Yellerteeth Inc. - BANKRUPT
+	
+			";//bankrupt
+	r[25] = @"Yellerteeth Inc. wanted to bring together a being from ancient prophecy. The ninja had warned about it's 
+			destructive	power, but Yellerteeth misinterpreted it. They thought it would be something they could control, take
+			to birthday parties, and make money with, but it ended up destroying them all. The Ninja clans are scattered across
+			the land as well. Nobody won this fight. 
+			
+			";//Finished goal
+	//perez
+	r[9] = @"Perez Holdings has a grip on the government that won't easily be let go of, but they're still landing short of 
+			their lofty goals. Maybe one day. In the meantime, the common citizen is feeling the financial squeeze on their
+			life as Perez Holdings grows in power daily.
+			
+			";//good
+	r[10] = @"Perez Holdings is down but not out. They haven't made much progress towards their goals, but with some new 
+			leadership the company might end up surpassing everyone. People's financial lives are mostly left unchanged by the 
+			current state of events.
+			
+			";//okay
+	r[11] = @"Perez Holdings is in dire need of new management. They're current trajectory is heading straight towards 
+			bankruptcy if they can't right the ship. The people are feeling less financial strain overall as they find 
+			alternatives to the failing company's offerings
+			
+			";//bad
+	r[12] = @"Perez Holdings - BANKRUPT
+	
+			";//bankrupt
+	r[26] = @"Perez Holdings have become the national bank and have monopolized all financial services. They are raking in the
+			cash while the middle class feel the pressure. It's truly a dire time for those not already wealthy.
+			
+			";//finished goal
+	//ungulate
+	r[13] = @"Ungulate Studios just won't quit! They're keeping these companies in check as best as they can, and they're 
+			thriving while doing it. They just keep falling short of demand, so they've got room to improve. General life
+			for the average person is better.
+			
+			";//good
+	r[14] = @"Ungulate Studios plans on many more years of keeping all of the power-hungry companies in check, but in the state
+			their in, they won't be able to do nearly as much as they hoped. No one's life has been improved all that much by
+			their actions.
+			
+			";//okay
+	r[15] = @" Ungulate Studios is on the brink of failure. Without much success, the public sentiment around them is waning. 
+			Failure after failure will result in the company's closure if something doesn't change soon. The general person is
+			feeling slightly more strained by the stressful nature of life under these companies.
+			
+			";//bad
+	r[16] = @"Ungulate Studios - BANKRUPT
+	
+			";//bankrupt
+	r[27] = @"Ungulate Studios has finished off the Crime syndicate, Hiertech, and they're not gonna stop anytime soon. They
+			will certainly work hard to put more evil companies out of business, and keep others in check. Families feel safer
+			than they ever have before. 
+			
+			";//finished goal
+	//hiertech
+	r[17] = @"Hiertech has become a massive crime syndicate, and they keep on growing. But, Ungulate Studios still fights them.
+			They're in a good place, but they want total freedom. Fear rates are rising in families as the company's influence
+			grows without much opposition. 
+			
+			";//good
+	r[29] = @"Hiertech has become a massive crime syndicate, and they keep on growing. Fear rates are rising in families as the
+			company's influence grows without much opposition. 
+			
+			";//good without Ungulate
+	r[18] = @"Hiertech isn't the empire they hoped they would be by this time, but they're still a moderately sized operation 
+			with many opportunities to grow into more criminal areas. Just plagued with opposition and set backs. 
+			
+			";//okay
+	r[19] = @"Hiertech is more of a niche crime family business than the empire they once were. They're still holding on, 
+			though, because there will always be money in crime. Families feel moderately safer knowing that crime rates are 
+			down.
+			
+			";//bad
+	r[20] = @"Hiertech - BANKRUPT
+	
+			";//bankrupt
+	r[28] = @"Hiertech has finished off Ungulate Studios, and is free to wreak havoc as they see fit. They'll be printing
+			money with the number of illegal activities they can perform. Fear and anxiety rates are through the roof as crime
+			continues to increase day after day.
+			
+			";//finished goal
+	//gildebrand
+	r[21] = @"Gildebrand Consulting is flying high since they're still able to keep afloat and help the little guy even after 
+			all that's happened. They'll continue to be a light in a dark world for the forseeable future. They just have one
+			thing looming over their heads... That nasty Tirangle. The world is still a better place because of them. 
+			
+			";//good
+	r[22] = @"Gildebrand Consulting is still kicking, but they're mostly coasting on benefactors. They'll need more funding and
+			help in order for them to continue to help others in need. 
+			
+			";//okay
+	r[23] = @"Gildebrand Consulting is barely hanging on. Funding is never guarenteed, and they may have to liquidate all 
+			assets and perform one last act of charity if this keeps up. People are trying to pull together funding to keep 
+			this beloved company afloat. 
+			
+			";//bad
+	r[24] = @"Gildebrand Consulting - BANKRUPT
+	
+			";//bankrupt
+	r[30] = @"Gildebrand Consulting has made major differences in the world, and will expand its efforts to do so. Now, 
+			without Tirangle's Tyranny, they can again focus on bettering life for the little guy. Happiness rates have
+			generally increased because of their success. 
+			
+			";//finished goal
+	r[31] = @"Kanker and Co. have taken over the world. Survival is all that matters. The only reason you're still standing here
+			today is because you helped them create the means of conquest. 
+			
+			But, there is a glimmer of hope. You saved enough people from the initial onslaught that a rebellion has emerged.
+			This militia has been able to develop ghost guns powerful enough to fight back. It's only a matter of time before
+			the tides shift. Which side will you be on? 
+			
+			";
+	r[32] = @"You've done a terrible job, Suqare. I guess that means you've met my expectations. I'm shutting down your 
+			operation effective immediately. Maybe you can be of some use at my club as a bouncer.";//F
+	r[33] = @"I'm surprised, Suqare. Surprised that you were able to not make an absolute fool of yourself. You still didn't
+			do nearly well enough to keep everything I've given you, but a valiant effort nonetheless. You have a job with me
+			at the club if you're interested. I'll make you the head bouncer. It's about all you're good for.";//D
+	r[34] = @"Interesting. You've done everything I've asked, just not that well. How does mediocrity make you feel? Do you 
+			feel good about missing the mark? If you can reach this level, then I know you have more in you. That means I should
+			expect more from you. So you're a disappointment all over again. 
+			
+			I'm taking everything back, but I'll give you one last chance to prove yourself as a franchise owner of one of my 
+			clubs. Perhaps the open nature of mercenary work is too daunting for you.";//C
+	r[35] = @"You've almost impressed me, Suqare. Almost impressed me enough that I'm going to let you keep everything I gave
+			you. Do I think you'll do a great job? No, of course not. But, I think you'll be able to stay afloat for the time
+			being, and that's enough for me to see how this turns out. 
+			
+			Good luck, Suqare.";//B
+	r[36] = @"Wow, a near perfect job. There were plenty of mistakes and problems, sure, but you actually made a profitable 
+			business that mostly stuck to your values, made money, and kept a viable client base as well. I'm impressed. I
+			never thought you could do it, but here you are. 
+			
+			Feel free to keep everything. You've got this mercenary thing down. Just don't let those mistakes become bigger
+			problems in the future, and you'll be alright. ";//A
+	r[37] = @"How could you do this to the world? 
+	
+			You're evil. ";//kanker ending
+	r[38] = @"I can't believe it. Little Suqare actually fulfilled every requirement perfectly. I have no notes. I'll be your
+			biggest investor, and we'll run the greatest mercenary business that the world has ever known!";//100% ending. Might be unattainable
+	r[39] = @"A";//
+	r[40] = @"B";
+	r[41] = @"C";
+	r[42] = @"D";
+	r[43] = @"F";
+	r[44] = @"S";
+	r[45] = @"Awarded Mercenary Rank:";//top of rank section
+	r[46] = @"Stats:
+			Missions taken: " + string(o_saveload.success+o_saveload.failure)+@"
+			Successful Missions: " + string(o_saveload.success)+@"
+			Failed Missions: " + string(o_saveload.failure)+@"
+			Total Money Earned: " + string(o_saveload.moneyT)+@"
+			Favorite Company: " + string(fave)+@"
+			Least Favorite Company: " + string(least);//stats
+	r[47] = @"Creative Director:
+			Flint Burchett
+			
+			Level Designer:
+			Flint Burchett
+			
+			Concept Design:
+			Flint Burchett
+			
+			Graphics/Animation:
+			Flint Burchett
+			
+			Programming:
+			Flint Burchett
+			
+			SFX:
+			Flint Burchett
+			
+			Music:
+			Guy from Fiverr #1
+			Guy from Fiverr #2
+			
+			UX/UI:
+			Flint Burchett
+			
+			Marketing:
+			Flint Burchett
+			
+			Story:
+			Flint Burchett
+			
+			Contractor Management:
+			Flint Burchett
+			
+			Character Design:
+			Flint Burchett
+			
+			Playtesters:
+			Jennifer Suchman
+			Serena Suchman
+			Cadence Suchman
+			Raylee Suchman
+			Braemar Suchman
+			Daniel Curtis
+			Alex Dabney
+			Codie Schmidt
+			Nathan Burchett
+			Deacon Burchett
+			Gehringer Burchett
+			Murllin Bender";//credits
+	r[48] = @"C+";
+	r[49] = @"B+";
+	r[50] = @"A+";
+	r[51] = @"A++";
+	r[52] = @"A+++";
+	r[53] = @"A++++";
+	
+	return r[t];
 }
 
 function scr_shop(t){
@@ -2950,11 +3206,14 @@ function scr_shop(t){
 	o[23] = @"Assault Rifle Upgrade
 			
 			
-			Description: Increases Fire Rate immensely
+			Description: Increases Fire Rate immensely but reduces 
+			reload speed
 			
 			Fire Rate: 7.5
+			Reload Speed: 1
 			    |
 			Fire Rate: 60
+			Reload Speed: .5
 			
 			
 			$5800"; 
