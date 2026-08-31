@@ -19,8 +19,7 @@
   "height":909,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"f7711f0c-0aa5-43a4-99f1-72512ca647fe","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"f7711f0c-0aa5-43a4-99f1-72512ca647fe","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"d968ae29-176c-4c3a-bc94-00334ded78d0","blendMode":0,"displayName":"default","isLocked":false,"name":"d968ae29-176c-4c3a-bc94-00334ded78d0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"866019c5-4813-4852-abb1-38c6af6fb5e0","blendMode":0,"displayName":"default","isLocked":false,"name":"866019c5-4813-4852-abb1-38c6af6fb5e0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s_lvl49map",
   "nineSlice":null,

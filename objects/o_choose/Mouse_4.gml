@@ -1,4 +1,4 @@
-if(visible == true and lclick == false)
+ bvif(visible == true and lclick == false)
 {
 	audio_play_sound(snd_heal,1,false,random_range(.8,1.2)*o_saveload.sfxvol,0,3);
 	lclick = true;

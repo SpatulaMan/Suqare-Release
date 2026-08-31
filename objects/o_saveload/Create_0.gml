@@ -202,10 +202,10 @@ game = 0;
 
 
 //generic variables
-var1 = 0;
-var2 = 0;
-var3 = 0;
-var4 = 0;
+var1 = 0;//in use
+var2 = 0;//in use for trophy count for achievement
+var3 = 0;//in use for kill_unc achievement
+var4 = 0;//in use for kill_unc_h achievement
 var5 = 0;
 var6 = 0;
 var7 = 0;

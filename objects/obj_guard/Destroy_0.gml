@@ -11,4 +11,9 @@ if(instance_exists(weapon))
 if(room == r_intro)
 {
 	obj_suq.alarm[4] = 300;
+	o_saveload.var3 = 1;
+}
+if(room == r_armory)
+{
+	o_saveload.var4 = 1;
 }

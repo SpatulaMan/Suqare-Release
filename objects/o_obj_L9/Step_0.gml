@@ -1,6 +1,6 @@
 if(ninjakill >= 50)
 {
-	obj_suq.bonus = 3000;
+	obj_suq.bonus = 4000;
 	ob2 = true;
 	ob3 = true;
 }

@@ -49,21 +49,21 @@ Only attack if standing is less than -6 and net worth is > 0
 
 Checklist:
 -Add randomly selected dialogue to show when Suqare checks how many days are left. Or just a different one for each day. 
--Check that level select looping works
--credits
+-extras? Are these the extra modes if the game is successful enough (or make into DLC?)? Making of section? Small multiplayer/co-op game mode? Cheat codes?
+	Just make this follow me on instagram/youtube links, linktree, and 
+
+Done from checklist:
+	
+	Done-Check that level select looping works
+	Done-steam acheivements - Obtain all 16 weapons, bankrupt companies (six of these), Complete company goals (six of these), Complete the game, become the richest mercenary, Kill a ranked mercenary
+	Obtain all trophies, A Rank Mercenary, B Rank Mercenary, C Rank Mercenary, D Rank Mercenary, F Rank Mercenary, Hidden achievements (kill uncle, Acquire Golden Sword)
+	Done-credits
 	-How many Missions taken
 	-How many successes
 	-How many failures
 	-How much money earned
 	-Favorite company based on standing? 
 	-A Mercenary rating 
--steam acheivements - Obtain all 16 weapons, bankrupt companies (six of these), Complete company goals (six of these), Complete the game, become the richest mercenary, Kill a ranked mercenary
-	Obtain all trophies, A Rank Mercenary, B Rank Mercenary, C Rank Mercenary, D Rank Mercenary, F Rank Mercenary, Hidden achievements (kill uncle, Acquire Golden Sword)
--extras? Are these the extra modes if the game is successful enough (or make into DLC?)? Making of section? Small multiplayer/co-op game mode? Cheat codes?
-	Just make this follow me on instagram/youtube links, linktree, and 
-
-Done from checklist:
-	
 	Done-Uncle comes by and gives his assessment of how you're doing. Walk up to him to get that assessment. 
 	Done-Add some kind of ending based on your player score and company standings/net worths/mercenary net worth that ends the game with some kind of finality.
 		2. Can happen alongside the specific endings for each company
@@ -138,8 +138,8 @@ Done from checklist:
 
 After Release: 
 -Over $1000 - controller support 
--Over $1500 - Re-write text so each company sounds distinct
--Over $1500 - Replace any use of human/person/people words with something shape related in text
+Maybe-Over $1500 - Re-write text so each company sounds distinct
+Maybe-Over $1500 - Replace any use of human/person/people words with something shape related in text
 -Over $2000 and dedicated player base - Multiplayer online/offline for zombies mode and others
 
 Not Doing:

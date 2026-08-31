@@ -55,11 +55,13 @@ if((obj_suq.yellerteeth > 6 and o_saveload.nMems == false) or o_saveload.nMemsSa
 {
 	instance_create_layer(733,513,"Instances_Action",o_nMem);
 	o_saveload.nMemsSave = true;
+	o_saveload.var2++;
 }
 	
 if(obj_suq.painting and !instance_exists(o_esmerelda))
 {
 	instance_create_layer(689,383,"Instances_Action",o_esmerelda);
+	o_saveload.var2++;
 }
 if(!instance_exists(o_paints))
 {
@@ -98,7 +100,7 @@ if(!instance_exists(o_paints))
 		{
 			instance_create_layer(726,396,"Instances_Action",o_paints);
 		}
-		
+		o_saveload.var2++;
 	}	
 }
 if(obj_suq.artifacts == 2)
@@ -114,6 +116,7 @@ if(obj_suq.artifacts == 2)
 	{
 		cr = instance_create_layer(776,392,"Instances_Action",o_sell);
 		cr.count = co;
+		if(co == 5) { o_saveload.var2++; }
 	}
 }
 if(obj_suq.fragment[0] == true)
@@ -135,6 +138,11 @@ if(obj_suq.fragment[3] == true)
 {
 	var inst = instance_create_layer(688,511,"Instances_Action",o_gFrag);
 	inst.image_index = 3;
+}
+if(obj_suq.fragment[0] == true and obj_suq.fragment[1] == true and obj_suq.fragment[2] == true and obj_suq.fragment[3] == true)
+{
+	
+	o_saveload.var2++;
 }
 	
 alarm_set(1,10);

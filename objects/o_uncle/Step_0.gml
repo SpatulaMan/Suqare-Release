@@ -8,10 +8,10 @@ if(path_check)
 }
 if(distance_to_point(646,261) < 10)
 {
-	x1 = 894;
-	y1 = 366;
+	x1 = 857;
+	y1 = 327;
 }
-if(distance_to_point(894,366) < 10)
+if(distance_to_point(847,327) < 10)
 {
 	x1 = 375;
 	y1 = 450;

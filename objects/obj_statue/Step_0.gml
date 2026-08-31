@@ -1,9 +1,10 @@
 /// @description
 if(hp <= 0) { instance_destroy(); }
-if(instance_exists(o_decoy) and r == 4)
+if(instance_exists(o_dart) and r == 4)
 {
-	if(distance_to_object(o_decoy) < 10 and !imposter)
+	if(distance_to_object(o_dart) < 8 and !imposter)
 	{
+		audio_play_sound(snd_heal,4,false,gain*o_saveload.sfxvol,0,pitch); 
 		hp -= 2;
 		imposter = true;
 	}

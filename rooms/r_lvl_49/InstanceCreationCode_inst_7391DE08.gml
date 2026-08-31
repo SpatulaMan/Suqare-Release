@@ -34,4 +34,4 @@ switch(weapon_type)
 		shtspd = 30; break;
 }
 weapon.image_xscale = 2;
-weapoin.image_yscale = 2;
+weapon.image_yscale = 2;

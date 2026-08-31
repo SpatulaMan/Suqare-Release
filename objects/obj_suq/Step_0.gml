@@ -64,7 +64,7 @@ if(room != r_armory and room != r_range and room != r_lvl_37 and room != r_intro
 		lv = lives;
 		health = 0;
 		room_persistent = false;
-		alarm_set(10,120);
+		alarm_set(10,100);
 	}
 }
 else

@@ -1,0 +1,24 @@
+/// @description
+sendToSteam = false;
+getAllStats = false;
+all_weap = 0;
+bank_h = 0;
+bank_g = 0;
+bank_k = 0;
+bank_y = 0;
+bank_p = 0;
+bank_u = 0;
+comp_game = 0;
+comp_h = 0;
+comp_g = 0;
+comp_k = 0;
+comp_y = 0;
+comp_p = 0;
+comp_u = 0;
+rich_m = 0;
+kill_m = 0;
+rank_m = 0;
+kill_unc = 0;
+get_sword = 0;
+lvl_fails = 0;
+lvl_wins = 0;

@@ -1702,7 +1702,7 @@
   "views":[
     {"hborder":160,"hport":1080,"hspeed":-1,"hview":180,"inherit":false,"objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"vborder":90,"visible":true,"vspeed":-1,"wport":1920,"wview":320,"xport":0,"xview":80,"yport":0,"yview":80,},
     {"hborder":80,"hport":432,"hspeed":-1,"hview":90,"inherit":false,"objectId":{"name":"o_rcCar","path":"objects/o_rcCar/o_rcCar.yy",},"vborder":45,"visible":false,"vspeed":-1,"wport":768,"wview":160,"xport":0,"xview":0,"yport":0,"yview":0,},
-    {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":480,"hport":1080,"hspeed":-1,"hview":540,"inherit":false,"objectId":{"name":"obj_suq","path":"objects/obj_suq/obj_suq.yy",},"vborder":270,"visible":false,"vspeed":-1,"wport":1920,"wview":960,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},

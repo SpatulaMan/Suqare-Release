@@ -275,27 +275,27 @@ if(hp <= 0)
 	{
 		case s_hxeagon: 
 		o_saveload.pRevenge = true;
-		o_saveload.hxenet = 0;
+		o_saveload.hxenet = -1000000;
 			 break;
 		case s_rcetangle:
 		o_saveload.hRevenge = true;
-		o_saveload.rcenet = 0;
+		o_saveload.rcenet = -10000000;
 			 break;
 		case s_otcogon: 
 		o_saveload.yRevenge = true;
-		o_saveload.otcnet = 0;
+		o_saveload.otcnet = -10000000;
 			 break;
 		case s_praallelogram:
 		o_saveload.gRevenge = true;
-		o_saveload.pranet = 0;
+		o_saveload.pranet = -10000000;
 			 break;
 		case s_daimond: 
 		o_saveload.kRevenge = true;
-		o_saveload.dainet = 0;
+		o_saveload.dainet = -10000000;
 			 break;
 		case s_pnetagon: 
 		o_saveload.uRevenge = true;
-		o_saveload.pnenet = 0;
+		o_saveload.pnenet = -10000000;
 			 break;
 	}
     instance_destroy();

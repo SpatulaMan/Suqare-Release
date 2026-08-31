@@ -7,9 +7,8 @@ con = "";
 show = true;
 
 prog = 40-obj_suq.progress;
-
 g = 127;
-b = prog*6.4;
+b = prog*6.4
 r = 255-b;
 if(r > 255) { r = 255; }
 if(b < 0) { b = 0; }

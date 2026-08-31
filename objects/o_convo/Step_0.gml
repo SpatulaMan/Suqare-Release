@@ -1,6 +1,6 @@
 show = true;
 displaytxt = string_copy(txt,1,spd);
-if(room == r_intro) { spd += .5; }
+if(room == r_intro) { spd += .4; }
 else { spd += .8; }
 if(keyboard_check_pressed(ord("G")))
 {

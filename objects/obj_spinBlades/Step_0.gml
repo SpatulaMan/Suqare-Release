@@ -35,3 +35,4 @@ if(alive)
 }
 
 if(hp <= 0) then { instance_destroy(); }
+if(instance_exists(obj_sword)) { sCount = 1; }

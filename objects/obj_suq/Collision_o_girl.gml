@@ -1,5 +1,5 @@
 if(pickup_timer <= 0 and girlcheck == true and room != r_lvl_13 and room != r_lvl_17 and 
-room != r_lvl_50 and room != r_lvl_36 and room != r_lvl_38)
+room != r_lvl_50 and room != r_lvl_36 and room != r_lvl_37 and room != r_lvl_38)
 {
 	randomize();
 	pickup_item = choose(29,30,31,32);
@@ -12,7 +12,7 @@ if(room == r_lvl_13 and girlcheck == true)
 	pickup_timer = 90;
 	girlcheck = false;
 }
-if(room == r_lvl_44 and girlcheck == true)
+if((room == r_lvl_44 or room == r_lvl_37 or room == r_lvl_38) and girlcheck == true)
 {
 	pickup_item = choose(29,31,32);
 	pickup_timer = 90;

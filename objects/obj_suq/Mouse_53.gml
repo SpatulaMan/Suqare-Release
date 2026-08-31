@@ -294,7 +294,7 @@ if(keyboard_check_direct(vk_shift) and (room != r_armory or instance_exists(o_un
 			attract++;
 			alarm_set(2,1800);
 		}
-		case 11: if(rc)
+		case 11: if(rc and room != r_range)
 		{
 			rc = false;
 			instance_create_layer(x,y,"Instances_Action",o_rcCar);

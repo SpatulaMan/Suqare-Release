@@ -63,6 +63,10 @@ if(room == r_lvl_6) { obj_suq.fragment[0] = false; }
 if(room == r_lvl_10) { obj_suq.fragment[1] = false; }
 if(room == r_lvl_12) { obj_suq.fragment[2] = false; }
 if(room == r_lvl_16) { obj_suq.fragment[3] = false; }
+if(room == r_lvl_30 or room == r_lvl_31) { paints1 = false; }
+if(room == r_lvl_30 or room == r_lvl_31) { paints2 = false; }
+if(room == r_lvl_30 or room == r_lvl_31) { paints3 = false; }
+if(room == r_lvl_10) { painting = false; }
 room_persistent = false;
 //if(room == r_lvl_0) { room_goto(r_lvl_0_1); room_1persistent = false; }
 //if(room == r_lvl_4) { room_goto(r_lvl_4_1); room_1persistent = false; }

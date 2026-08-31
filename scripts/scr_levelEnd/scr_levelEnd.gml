@@ -15,13 +15,27 @@ function scr_levelEnd(car,range_optional)
 			o_saveload.ynetp = o_saveload.ynet;
 			o_saveload.hnetp = o_saveload.hnet;
 			
-			var _net = 180000;
-			o_saveload.dainet += min((_net-o_saveload.dainet)/(36-obj_suq.progress),choose(1000,10000));
-			o_saveload.hxenet += min((_net-o_saveload.hxenet)/(36-obj_suq.progress),choose(1200,10000));
-			o_saveload.otcnet += min((_net-o_saveload.otcnet)/(36-obj_suq.progress),choose(1400,10000));
-			o_saveload.pnenet += min((_net-o_saveload.pnenet)/(36-obj_suq.progress),choose(800,1600,10000));
-			o_saveload.pranet += min((_net-o_saveload.pranet)/(36-obj_suq.progress),choose(900,1800,10000));
-			o_saveload.rcenet += min((_net-o_saveload.rcenet)/(36-obj_suq.progress),choose(1000,2000,10000));
+			var _net = 200000;
+			o_saveload.dainet += min((_net-o_saveload.dainet)/(40-obj_suq.progress),choose(1000,8000));
+			o_saveload.hxenet += min((_net-o_saveload.hxenet)/(40-obj_suq.progress),choose(1200,7000));
+			o_saveload.otcnet += min((_net-o_saveload.otcnet)/(40-obj_suq.progress),choose(1400,6000));
+			o_saveload.pnenet += min((_net-o_saveload.pnenet)/(40-obj_suq.progress),choose(800,1600,10000));
+			o_saveload.pranet += min((_net-o_saveload.pranet)/(40-obj_suq.progress),choose(900,1800,10000));
+			o_saveload.rcenet += min((_net-o_saveload.rcenet)/(40-obj_suq.progress),choose(1000,2000,10000));
+			
+			if(o_saveload.gildebrand > 6 and o_saveload.gnet > 0) { o_saveload.gnet += 2; }
+			else if(o_saveload.gildebrand > 1 and o_saveload.gnet > 0) { o_saveload.gnet += 1; }
+			if(o_saveload.ungulate > 6 and o_saveload.unet > 0) { o_saveload.unet += 2; }
+			else if(o_saveload.ungulate > 1 and o_saveload.unet > 0) { o_saveload.unet += 1; }
+			if(o_saveload.hiertech > 6 and o_saveload.hnet > 0) { o_saveload.hnet += 2; }
+			else if(o_saveload.hiertech > 1 and o_saveload.hnet > 0) { o_saveload.hnet += 1; }
+			if(o_saveload.yellerteeth > 6 and o_saveload.ynet > 0) { o_saveload.ynet += 2; }
+			else if(o_saveload.yellerteeth > 1 and o_saveload.ynet > 0) { o_saveload.ynet += 1; }
+			if(o_saveload.perez > 6 and o_saveload.pnet > 0) { o_saveload.pnet += 2; }
+			else if(o_saveload.perez > 1 and o_saveload.pnet > 0) { o_saveload.pnet += 1; }
+			if(o_saveload.kanker > 6 and o_saveload.knet > 0) { o_saveload.knet += 2; }
+			else if(o_saveload.kanker > 1 and o_saveload.knet > 0) { o_saveload.knet += 1; }
+				
 			
 			if(obj_suq.progress >= 6) { o_saveload.pnet -= (3 - o_saveload.software); }
 			if(obj_suq.progress >= 15 and o_saveload.officials == false) { o_saveload.pnet -= 2; }
@@ -125,7 +139,7 @@ function scr_levelEnd(car,range_optional)
 		if(room == r_lvl_7 or room == r_lvl_8 or room == r_lvl_23 or room == r_lvl_50 or room == r_lvl_49) { direction = 180; }
 		else { direction = 0; }
 		speed = 8;
-		obj_suq.progress++;
+		if(room != r_lvl_40) { obj_suq.progress++; }
 		if(o_saveload.knet <= 0) { o_saveload.knet = -1000; }
 		if(o_saveload.unet <= 0) { o_saveload.unet = -1000; }
 		if(o_saveload.gnet <= 0) { o_saveload.gnet = -1000; }
@@ -199,7 +213,7 @@ function scr_levelEnd(car,range_optional)
 				else
 				{
 					o_saveload.failure++;
-					o_saveload.knet -= 2;
+					o_saveload.knet -= 7;
 					o_saveload.pnet += 1;
 					if(!instance_exists(o_safe)) { o_saveload.pnet -= 10; }
 					obj_suq.report = 7;
@@ -418,7 +432,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += 4000*_emtBill;
 					o_saveload.success++;
 					if(o_obj_L9.ob2 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 1; o_saveload.moneyT += 1000*_emtBill; }
-					if(o_obj_L9.ob3 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 2; o_saveload.moneyT += 1000*_emtBill; }
+					if(o_obj_L9.ob3 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 2; o_saveload.moneyT += 3000*_emtBill; }
 				}
 				else
 				{
@@ -427,7 +441,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.yellerteeth -= 3;
 					o_saveload.failure++;
 					if(o_obj_L9.ob2 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 1; o_saveload.moneyT += 1000*_emtBill; }
-					if(o_obj_L9.ob3 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 2; o_saveload.moneyT += 1000*_emtBill; }
+					if(o_obj_L9.ob3 == true) { obj_suq.yellerteeth += 1; o_saveload.ynet += 2; o_saveload.moneyT += 3000*_emtBill; }
 				}
 			} break;
 			case r_lvl_10:
@@ -440,6 +454,7 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.ynet -= 1;
 				var _money = 0;
 				o_saveload.failure++;
+				obj_suq.lvldone[obj_suq.lvl] = true;
 				if(obj_suq.culprit == 1 and instance_number(o_guest) == 13)
 				{
 					_money += 6000;
@@ -829,6 +844,16 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.pnet -= 20;
 					obj_suq.perez -= 3;
 					o_saveload.failure++;
+				}
+			} break;
+			case r_lvl_20:
+			{
+				if(obj_suq.swordHave == 1)
+				{
+					fragment[0] = false;
+					fragment[1] = false;
+					fragment[2] = false;
+					fragment[3] = false;
 				}
 			} break;
 			case r_lvl_21:
@@ -1427,6 +1452,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.yellerteeth -= 2;
 					obj_suq.gildebrand += 2;
 					o_saveload.success++;
+					o_saveload.var1 = 1;//if tirangle is found
 					if(7700-o_lvl34.nod > 0) 
 					{ 
 						o_saveload.moneyT += 7700-o_lvl34.nod; 
@@ -1445,6 +1471,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.yellerteeth -= 2;
 					obj_suq.gildebrand += 1;
 					o_saveload.success++;
+					o_saveload.var1 = 1;//if tirangle is found
 					if(2500-o_lvl34.nod > 0)
 					{ 
 						o_saveload.moneyT += 2500-o_lvl34.nod; 
@@ -1471,6 +1498,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 121;
 					obj_suq.gildebrand -= 1;
 					obj_suq.tempEarnMon = 0;
+					o_saveload.var1 = 1;//if tirangle is found
 					o_saveload.failure++;
 				}
 			} break;
@@ -1832,17 +1860,18 @@ function scr_levelEnd(car,range_optional)
 			case r_lvl_40:
 			{
 				obj_suq.lvldone[obj_suq.lvl] = true;
-				o_saveload.gnet -= 2;
-				o_saveload.knet += 2;
-				o_saveload.pnet += 3;
-				o_saveload.ynet -= 2;
-				o_saveload.unet += 2;
-				o_saveload.hnet += 3;
+				//o_saveload.gnet -= 2;
+				//o_saveload.knet += 2;
+				//o_saveload.pnet += 3;
+				//o_saveload.ynet -= 2;
+				//o_saveload.unet += 2;
+				//o_saveload.hnet += 3;
 				if(o_lvl40.o1 == true and o_lvl40.rec == o_saveload.rec)
 				{
 					obj_suq.report = 142;
 					o_saveload.moneyT += 2000;
 					o_saveload.success++;
+					if(o_saveload.moneyT > 200000) { obj_suq.progress++; }
 				}//win
 				else if(o_lvl40.o1 == true and o_saveload.rec < 1500)
 				{

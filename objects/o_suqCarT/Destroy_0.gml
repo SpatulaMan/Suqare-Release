@@ -43,6 +43,11 @@ if(room != r_lvl_40)
 		o_lvl42.tcars--; 
 		if(o_lvl42.lap < 3) { o_lvl42.alarm[1] = 1; }
 	}
+	if(room == r_lvl_38)
+	{
+		view_visible[0] = true; 
+		view_visible[2] = false; 
+	}
 }
 if(room == r_lvl_38)
 {

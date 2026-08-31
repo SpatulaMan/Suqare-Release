@@ -1,9 +1,9 @@
 /// @description 
-fwdC.x = x + lengthdir_x(10,image_angle);
-fwdC.y = y + lengthdir_y(10,image_angle);
+fwdC.x = x + lengthdir_x(4,image_angle);
+fwdC.y = y + lengthdir_y(4,image_angle);
 
-revC.x = x + lengthdir_x(10,image_angle-180);
-revC.y = y + lengthdir_y(10,image_angle-180);
+revC.x = x + lengthdir_x(5,image_angle-180);
+revC.y = y + lengthdir_y(5,image_angle-180);
 battery--;
 
 if(keyboard_check(vk_up) and !keyboard_check(vk_down) and fwdC.go) { spd = speed; spdchg += 0.05; }

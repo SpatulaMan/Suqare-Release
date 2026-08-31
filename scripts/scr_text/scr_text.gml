@@ -2201,10 +2201,10 @@ function scr_conversation(t)
 			Three implements, deadly and sleek
 			Through air one must reach
 			The impact of which they seek";//Golden shard riddles
-	a[39] = @"An imposter, a sound
-			One just as you are
-			One is made, not found
-			Bring both, I'll come ajar";//Golden shard riddles
+	a[39] = @"A dart, a sound
+			One is sharp
+			One is loud
+			Both are proud";//Golden shard riddles
 	if(instance_exists(o_lvl21))
 	{
 		a[40] = @"This is the Accuracy Test. You will have 20 seconds to throw shurikens at the moving targets. The further they're
@@ -2298,19 +2298,22 @@ function scr_conversation(t)
 	var _t2 = "";
 	if(obj_suq.paints1 == true) 
 	{
-		_t = "The Bertha is a fine painting from the Pentagonal era. It depicts a lonely figure in search of meaning.";
+		_t = @"The Bertha is a fine painting from the Pentagonal era. It depicts a lonely figure in search of meaning.
+		";
 	}
 	if(obj_suq.paints2 == true) 
 	{
 		_t1 = @"The Goobet depicts birds flying over a waterfall. What are birds? No one will ever know. It's a concept unknown
-				to the whole shape world.";
+				to the whole shape world.
+				";
 	}
 	if(obj_suq.paints3 == true) 
 	{
-		_t2 = @"The Holla shows how the ancient world used to Holla at ya boi. Bagpipes on a blank canvas. Very thought provoking
-				but bagpipes are not something anyone has heard of in thousands of years.";
+		_t2 = @"The Holla shows how the ancient world used to Holla at ya boi. Bagpipes on a blank canvas. Very thought- 
+				provoking but bagpipes are not something anyone has heard of in thousands of years.";
 	}
-	a[61] = @"The finest art in the collection fetches a pretty penny. Here's what you have: " +
+	a[61] = @"The finest art in the collection fetches a pretty penny. Here's what you have: 
+			" +
 			string(_t) +
 			string(_t1) +
 			string(_t2) + @"
@@ -2451,8 +2454,7 @@ function scr_conversation(t)
 			Regards,
 			Gildebrand Consulting";//gildebrand - Spawn Armor more often
 	a[91] = @"Ungulate Studios is so grateful for your help. We'd like to give you a gift of a robot companion that we found.
-			We don't have any use for it, so we programmed it to follow you and assist you. If you ever let it get destroyed,
-			it won't come back. We only have the one robot. 
+			We don't have any use for it, so we programmed it to follow you and assist you. 
 			
 			His name is roboto";//ungulate - gives you a pet robot that comes along with you and shoots at enemies
 	a[92] = @"NEW SOFTWARE INPUT...
@@ -2549,7 +2551,7 @@ function scr_conversation(t)
 			Up - Take control of the world through technological prowess
 			
 			Down - To make a criminal empire";//tirangle game lvl 37 6
-	a[120] = @"What di Gildebrand Consulting ask you to destroy? 
+	a[120] = @"What did Gildebrand Consulting ask you to destroy? 
 	
 			Left - Spiders
 			
@@ -2711,7 +2713,7 @@ function scr_conversation(t)
 			Y for yes
 			N for no";//gildebrand
 	a[165] = @"";//intentionally left blank
-	a[166] = @"";
+	a[166] = @"This is where you can track your net worth against more established mercenaries. ";
 	a[167] = @"";
 			
 	return a[t];
@@ -2933,8 +2935,8 @@ function scr_results(t)
 			Flint Burchett
 			
 			Music:
-			Guy from Fiverr #1
-			Guy from Fiverr #2
+			J1r3m
+			Pedro Pina
 			
 			UX/UI:
 			Flint Burchett
@@ -2990,14 +2992,14 @@ function scr_shop(t){
 			Description: Increases your Armor rating to level 2.
 			
 			
-			$5000";
+			$8000";
 	o[3] = @"Armor 3
 						
 			
 			Description: Increases your Armor rating to level 3
 			
 			
-			$10000"; 
+			$15000"; 
 	o[4] = @"Armor 4
 						
 			
@@ -4084,11 +4086,11 @@ function debrief(m)
 			
 			Press Spacebar to continue ";
 	}
-	if(obj_suq.bonus == 4000 and m == 24)
+	if(obj_suq.bonus == 1000 and m == 24)
 	{
 		_t = @"Response From Hiring Firm:
 			You are terrible. I can't believe you could fail such a simple task. Sure,
-			you killed at least 50 ninjas, but the important part was the ring. I'll 
+			you killed at least 20 ninjas, but the important part was the ring. I'll 
 			honor my word and still give you the bonus. 
 			
 			Current standing with Yellerteeth Inc. "+string(obj_suq.yellerteeth)+@"
@@ -4101,7 +4103,7 @@ function debrief(m)
 			
 			Press Spacebar to continue ";
 	}
-	if(obj_suq.bonus == 1000 and m == 23)
+	if(obj_suq.bonus == 4000 and m == 23)
 	{
 		_t = @"Response From Hiring Firm:
 			This is amazing! Wow! These ninjas are finally getting what's coming to them. 
@@ -6170,6 +6172,9 @@ function tutorial(k)
 			Press Spacebar to Continue";
 	j[7] = @"These are where the trophies you acquire during your missions will be displayed. If you're short
 			on cash, you might be able to sell some of them. 
+			
+			Press Spacebar to Continue";
+	j[8] = @"This is where you can track your net worth against more established mercenaries. 
 			
 			Press Spacebar to Continue";
 	return j[k];

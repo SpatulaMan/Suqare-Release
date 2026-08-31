@@ -16,3 +16,4 @@ if(speed > 0)
 	Bul.image_alpha = image_alpha;
 }
 speed -= abs(t2/20);
+if(speed <= 0) { speed = .1; }

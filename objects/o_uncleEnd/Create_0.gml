@@ -10,12 +10,12 @@ if(o_saveload.gildebrand >= 0 and o_saveload.gnet > 0) { raw += o_saveload.gnet;
 if(o_saveload.hiertech >= 0 and o_saveload.hnet > 0) { raw += o_saveload.hnet; }
 nscr = (raw/600)*30;//30% of score where this is net worth of all companies with standing > 1. 600 is highest score
 var rv = 0;
-rv += 7 + (o_saveload.ksuccess * o_saveload.kanker);
-rv += 7 + (o_saveload.ysuccess * o_saveload.yellerteeth);
-rv += 7 + (o_saveload.usuccess * o_saveload.ungulate);
-rv += 7 + (o_saveload.psuccess * o_saveload.perez);
-rv += 7 + (o_saveload.gsuccess * o_saveload.gildebrand);
-rv += 7 + (o_saveload.hsuccess * o_saveload.hiertech);
+rv += min(7 + (o_saveload.ksuccess * o_saveload.kanker),14);
+rv += min(7 + (o_saveload.ysuccess * o_saveload.yellerteeth),14);
+rv += min(7 + (o_saveload.usuccess * o_saveload.ungulate),14);
+rv += min(7 + (o_saveload.psuccess * o_saveload.perez),14);
+rv += min(7 + (o_saveload.gsuccess * o_saveload.gildebrand),14);
+rv += min(7 + (o_saveload.hsuccess * o_saveload.hiertech),14);
 vscr = (rv/84)*30;//30% of score where 42 is highest score (6 companies at matching 7 or -7 standing)
 if(vscr < 0) { vscr = 0; }
 t = 0;

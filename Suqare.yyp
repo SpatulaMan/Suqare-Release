@@ -103,6 +103,7 @@
     {"$GMFolder":"","%Name":"mercs","folderPath":"folders/Sprites/Pieces/mercs.yy","name":"mercs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"shop","folderPath":"folders/Sprites/shop.yy","name":"shop","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"tilesets","folderPath":"folders/Sprites/tilesets.yy","name":"tilesets","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Steamworks","folderPath":"folders/Steamworks.yy","name":"Steamworks","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
@@ -122,6 +123,7 @@
   },
   "name":"Suqare",
   "resources":[
+    {"id":{"name":"Steamworks","path":"extensions/Steamworks/Steamworks.yy",},},
     {"id":{"name":"f_0","path":"fonts/f_0/f_0.yy",},},
     {"id":{"name":"font0","path":"fonts/font0/font0.yy",},},
     {"id":{"name":"8-18 ToDo","path":"notes/8-18 ToDo/8-18 ToDo.yy",},},
@@ -388,6 +390,7 @@
     {"id":{"name":"o_spikes","path":"objects/o_spikes/o_spikes.yy",},},
     {"id":{"name":"o_spinKnife","path":"objects/o_spinKnife/o_spinKnife.yy",},},
     {"id":{"name":"o_splash","path":"objects/o_splash/o_splash.yy",},},
+    {"id":{"name":"o_steam","path":"objects/o_steam/o_steam.yy",},},
     {"id":{"name":"o_suqCar","path":"objects/o_suqCar/o_suqCar.yy",},},
     {"id":{"name":"o_suqCarR","path":"objects/o_suqCarR/o_suqCarR.yy",},},
     {"id":{"name":"o_suqCarT","path":"objects/o_suqCarT/o_suqCarT.yy",},},

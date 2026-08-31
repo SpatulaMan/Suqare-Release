@@ -64,7 +64,7 @@ switch(prog)
 			if(obj_suq.lvldone[35] == false and o_saveload.unet > 0 and obj_suq.ungulate >= -6) { array_insert(lvl,t,35); t++; } 
 	case 25: if(obj_suq.lvldone[32] == false and o_saveload.ynet > 0 and obj_suq.yellerteeth >= -6) { array_insert(lvl,t,32); t++; } 
 	case 24: if(obj_suq.lvldone[36] == false) { array_insert(lvl,t,36); t++; }
-			 if(obj_suq.lvldone[37] == false) { array_insert(lvl,t,37); t++; }
+			 if(obj_suq.lvldone[37] == false and o_saveload.var1 == 1) { array_insert(lvl,t,37); t++; }
 	case 23: if(obj_suq.lvldone[31] == false and obj_suq.scientist and obj_suq.tankD == true and o_saveload.knet > 0 and obj_suq.kanker >= -6) { array_insert(lvl,t,31); t++; }
 			if(obj_suq.lvldone[34] == false and o_saveload.officials == true and o_saveload.plant == false and o_saveload.pnet > 0 and obj_suq.perez >= -6) { array_insert(lvl,t,34); t++; }
 	case 22: if(obj_suq.lvldone[28] == false and obj_suq.lvldone[29] == false and obj_suq.lvldone[30] == false and o_saveload.unet > 0 and obj_suq.ungulate >= -6) { array_insert(lvl,t,28); t++; }
@@ -107,14 +107,8 @@ switch(prog)
 			if(obj_suq.lvldone[2] == false and o_saveload.ynet > 0 and obj_suq.yellerteeth >= -6) { array_insert(lvl,t,2); t++; }
 			if(obj_suq.lvldone[3] == false and obj_suq.lvldone[4] == false and o_saveload.unet > 0 and obj_suq.ungulate >= -6) { array_insert(lvl,t,3); t++; }
 			if(obj_suq.lvldone[4] == false and obj_suq.lvldone[3] == false and o_saveload.hnet > 0 and obj_suq.hiertech >= -6) { array_insert(lvl,t,4); t++; }
-			//break;
+			break;
 	case 0: array_insert(lvl,t,0); t++;
-			//array_insert(lvl,t,45); t++;
-			//array_insert(lvl,t,46); t++;
-			//array_insert(lvl,t,47); t++;
-			//array_insert(lvl,t,48); t++;
-			//array_insert(lvl,t,49); t++;
-			//array_insert(lvl,t,50); t++;
 }
 if(t == 0 and obj_suq.progress < 40)//might need to change this? 
 {

@@ -14,8 +14,12 @@ if(!instance_exists(obj_ninja_bosses) and !instance_exists(o_vandal) and room !=
 		if(check == false)
 		{
 			check = true;
-			if(other.weapon != 101 and !place_meeting(x,y,obj_gremlin))
+			//other.weapon != 101 and 
+			if(!place_meeting(x,y,obj_gremlin) and !place_meeting(x,y,obj_ninja) and 
+			!place_meeting(x,y,obj_mercenaryN))
+			{
 				other.weapon.image_angle += 180;
+			}
 		}
 	}
 	if(other.sprite_index == s_turretE)

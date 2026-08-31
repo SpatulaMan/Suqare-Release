@@ -17,19 +17,19 @@ o3 = make_color_rgb(0,255,255);
 o1 = make_color_rgb(255,128,0);
 
 total = 3000;//maybe set this back to 2000
-knet = o_saveload.dainet;
+dnet = o_saveload.dainet;
 hnet = o_saveload.hxenet;
-gnet = o_saveload.otcnet;
+onet = o_saveload.otcnet;
 pnet = o_saveload.pnenet;
-ynet = o_saveload.pranet;
-unet = o_saveload.rcenet;
+prnet = o_saveload.pranet;
+rnet = o_saveload.rcenet;
 snet = o_saveload.money;
 
-kn = 0;
+dn = 0;
 hn = 0;
-gn = 0;
+on = 0;
 pn = 0;
-yn = 0;
-un = 0;
+prn = 0;
+rn = 0;
 sn = 0;
 
