@@ -50,6 +50,7 @@ if(obj_suq.gildebrand > 6)
 {
 	var _cg = instance_create_layer(407,436,"Instances_Action",o_conversation);
 	_cg.h = 90;
+	_cg.sprite_index = s_quitR;
 }
 if((obj_suq.yellerteeth > 6 and o_saveload.nMems == false) or o_saveload.nMemsSave) 
 {

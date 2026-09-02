@@ -30,7 +30,7 @@ if(steam_stats_ready() and !getAllStats)
 
 if(sendToSteam and instance_exists(o_saveload))
 {
-	steam_set_stat_int("all_weap",(o_saveload.magnumHave+o_saveload.machineGunHave+o_saveload.swordHave+o_saveload.chainGunHave+o_saveload.assaultRifleHave+o_saveload.shotgunHave+o_saveload.shooterGunHave+o_saveload.flamethrowerHave+o_saveload.boomerangHave+o_saveload.shurikenHave+o_saveload.rocketLauncherHave+o_saveload.sniperRifleHave+o_saveload.ghostGunHave+o_saveload.pp7Have));
+	steam_set_stat_int("all_weap",(2+o_saveload.magnumHave+o_saveload.machineGunHave+o_saveload.swordHave+o_saveload.chainGunHave+o_saveload.assaultRifleHave+o_saveload.shotgunHave+o_saveload.shooterGunHave+o_saveload.flamethrowerHave+o_saveload.boomerangHave+o_saveload.shurikenHave+o_saveload.rocketLauncherHave+o_saveload.sniperRifleHave+o_saveload.ghostGunHave+o_saveload.pp7Have));
 	if(o_saveload.ynet <= 0) { steam_set_stat_int("bank_y",1); }
 	if(o_saveload.ylrtwins) { steam_set_stat_int("comp_y",1); }
 	if(o_saveload.knet <= 0) { steam_set_stat_int("bank_k",1); }
@@ -51,11 +51,12 @@ if(sendToSteam and instance_exists(o_saveload))
 	{
 		steam_set_stat_int("rich_m",1);
 	}
+	steam_set_stat_int("skill_check",o_saveload.skillCheck);
 	if(o_saveload.swordHave == 1) { steam_set_stat_int("get_sword",1); }
 	if(o_saveload.endgame) { steam_set_stat_int("comp_game",1); }
-	if(o_saveload.var3 == 1) { steam_set_stat_int("kill_unc",1); }
-	if(o_saveload.var4 == 1) { steam_set_stat_int("kill_unc_h",1); }
-	steam_set_stat_int("rank_m",o_saveload.rank);
+	if(o_saveload.var3 == 1) { steam_set_stat_int("kill_unc_h",1); }
+	if(o_saveload.var4 == 1) { steam_set_stat_int("kill_unc",1); }
+	steam_set_stat_int("rank_m",ceil(o_saveload.rank));
 	if(o_saveload.failure >= 5) { steam_set_stat_int("lvl_fails",5); }
 	if(o_saveload.failure >= 10) { steam_set_stat_int("lvl_fails",10); }
 	if(o_saveload.failure >= 25) { steam_set_stat_int("lvl_fails",25); }

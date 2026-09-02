@@ -1,7 +1,9 @@
 //b = buttons();
+var fix = 0;
 show = true;
 displaytxt = string_copy(txt,1,spd);
 spd += .8;
+fix = o_uncleEnd.t;
 if(o_uncleEnd.t < 40) { i = 43; }//F
 if(o_uncleEnd.t >= 40 and o_uncleEnd.t < 50) { i = 42; }//D
 if(o_uncleEnd.t >= 50 and o_uncleEnd.t < 58) { i = 41; }//C
@@ -14,8 +16,8 @@ if(o_uncleEnd.t >= 83 and o_uncleEnd.t < 87) { i = 51; }//A++
 if(o_uncleEnd.t >= 87 and o_uncleEnd.t < 91) { i = 52; }//A+++
 if(o_uncleEnd.t >= 91 and o_uncleEnd.t < 95) { i = 53; }//A++++
 if(o_uncleEnd.t >= 95) { i = 44; }//S
-b = scr_results(i);
-r = 255-(i*2.55);
-g = 150+(i*1.05);
-b = 0+(i*2.55);
+text = scr_results(i);
+r = 255-(fix*2.55);
+g = 150+(fix);
+b = 0+(fix*2.55);
 o = make_color_rgb(r,g,b);

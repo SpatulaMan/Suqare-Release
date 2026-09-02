@@ -34,3 +34,4 @@ health = 100;
 obj_suq.image_alpha = 1;
 obj_suq.lv -= 5;
 obj_suq.lv = floor(obj_suq.lv);
+if(room == r_lvl_18) { view_visible[0] = true; view_visible[2] = false; }

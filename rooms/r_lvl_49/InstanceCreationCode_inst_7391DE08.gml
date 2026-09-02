@@ -5,7 +5,7 @@ image_xscale = 2;
 image_yscale = 2;
 hp = 240;
 drop_gun = choose(true,false,true);
-weapon_spd = 3;
+weapon_spd = 8;
 switch(weapon_type)
 {
 	case obj_pistol: 
@@ -30,8 +30,9 @@ switch(weapon_type)
 		shtspd = 20; break;
 	case obj_rocketLauncher: 
 		weapon = instance_create_layer(x,y,"Instances_Action",o_eBazooka); 
-		weapon_bul = o_missile;
-		shtspd = 30; break;
+		weapon_bul = o_eRLBul;
+		extra_bul = o_missile;
+		shtspd = 60; break;
 }
 weapon.image_xscale = 2;
 weapon.image_yscale = 2;

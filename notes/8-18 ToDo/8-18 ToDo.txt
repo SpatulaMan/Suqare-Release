@@ -49,11 +49,11 @@ Only attack if standing is less than -6 and net worth is > 0
 
 Checklist:
 -Add randomly selected dialogue to show when Suqare checks how many days are left. Or just a different one for each day. 
--extras? Are these the extra modes if the game is successful enough (or make into DLC?)? Making of section? Small multiplayer/co-op game mode? Cheat codes?
-	Just make this follow me on instagram/youtube links, linktree, and 
+
 
 Done from checklist:
 	
+	Done-extras? Just make this linktree link
 	Done-Check that level select looping works
 	Done-steam acheivements - Obtain all 16 weapons, bankrupt companies (six of these), Complete company goals (six of these), Complete the game, become the richest mercenary, Kill a ranked mercenary
 	Obtain all trophies, A Rank Mercenary, B Rank Mercenary, C Rank Mercenary, D Rank Mercenary, F Rank Mercenary, Hidden achievements (kill uncle, Acquire Golden Sword)

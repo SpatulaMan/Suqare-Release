@@ -11,13 +11,29 @@ else if(instance_exists(o_rank) and instance_exists(o_ending) and distance_to_ob
 }
 if(instance_exists(o_rank))
 {
-	if(t < total-1)
+	if(t < total-60)
+	{
+		t += .6;
+	}
+	else if(t < total-40)
 	{
 		t += .5;
 	}
+	else if(t < total-20)
+	{
+		t += .4;
+	}
+	else if(t < total-5)
+	{
+		t += .2;
+	}
+	else if(t < total-.4)
+	{
+		t += .1;
+	}
 	else if(t < total)
 	{
-		t += .01;
+		t = total;
 	}
 }
 else

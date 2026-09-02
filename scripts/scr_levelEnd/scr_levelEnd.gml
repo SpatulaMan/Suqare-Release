@@ -139,7 +139,8 @@ function scr_levelEnd(car,range_optional)
 		if(room == r_lvl_7 or room == r_lvl_8 or room == r_lvl_23 or room == r_lvl_50 or room == r_lvl_49) { direction = 180; }
 		else { direction = 0; }
 		speed = 8;
-		if(room != r_lvl_40) { obj_suq.progress++; }
+		//if(room != r_lvl_40) { obj_suq.progress++; }
+		obj_suq.progress++;
 		if(o_saveload.knet <= 0) { o_saveload.knet = -1000; }
 		if(o_saveload.unet <= 0) { o_saveload.unet = -1000; }
 		if(o_saveload.gnet <= 0) { o_saveload.gnet = -1000; }
@@ -1383,19 +1384,19 @@ function scr_levelEnd(car,range_optional)
 				if(o_lvl45.o1 and o_lvl45.o2)
 				{
 					obj_suq.report = 105;
-					o_saveload.ynet -= 100;
+					o_saveload.ynet -= 1000;
 					obj_suq.yellerteeth += 3;
 					o_saveload.ylrtwins = true;
 				}
 				else if(o_lvl45.o1 == false)
 				{
-					o_saveload.ynet -= 100;
+					o_saveload.ynet -= 1000;
 					obj_suq.report = 106;
 					obj_suq.yellerteeth -= 2;
 				}
 				else if(o_lvl45.o1 and !o_lvl45.o2)
 				{
-					o_saveload.ynet -= 100;
+					o_saveload.ynet -= 1000;
 					obj_suq.report = 107;
 					obj_suq.yellerteeth -= 1;
 				}
@@ -1869,9 +1870,9 @@ function scr_levelEnd(car,range_optional)
 				if(o_lvl40.o1 == true and o_lvl40.rec == o_saveload.rec)
 				{
 					obj_suq.report = 142;
-					o_saveload.moneyT += 2000;
+					o_saveload.moneyT += 6000;
 					o_saveload.success++;
-					if(o_saveload.moneyT > 200000) { obj_suq.progress++; }
+					//if(o_saveload.moneyT > 200000) { obj_suq.progress++; }
 				}//win
 				else if(o_lvl40.o1 == true and o_saveload.rec < 1500)
 				{

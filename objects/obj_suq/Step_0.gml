@@ -586,7 +586,7 @@ if(health > 0)
 	if(canCGShoot <= 0) then canCGShoot = 0;
     if(canCGShoot > 0) then canCGShoot--; 
 }
-if(keyboard_check(vk_shift) and room != r_armory and ((gadget == 6 and attackTur > 0) or (gadget == 7 and defenseTur > 0) or (gadget == 8 and tearTur > 0) or (gadget == 9 and flameTur > 0) or (gadget == 10 and rocketTur > 0)))
+if(keyboard_check(vk_shift) and (room != r_armory or progress >= 40) and ((gadget == 6 and attackTur > 0) or (gadget == 7 and defenseTur > 0) or (gadget == 8 and tearTur > 0) or (gadget == 9 and flameTur > 0) or (gadget == 10 and rocketTur > 0)))
 {
 	switch(gadget)
 	{

@@ -5,7 +5,7 @@ if(hprem < 5 and room != r_skill1 and room != r_skill2 and room != r_skill3 and
 room != r_skill4 and room != r_skill5 and room != r_range) { hprem = 5; }
 pMag = 0;
 mMag = 0;
-if(room != r_skill1 and room != r_skill2 and room != r_skill3 and room != r_skill4 and room != r_skill5 and room != r_range and room != r_intro) { shuriken = 0; }//add all skill rooms
+if(room != r_skill1 and room != r_skill2 and room != r_skill3 and room != r_skill4 and room != r_skill5 and room != r_range and room != r_intro and room != r_armory) { shuriken = 0; }//add all skill rooms
 else if(room == r_intro or room == r_armory)
 {
 	game_restart();

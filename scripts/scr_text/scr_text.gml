@@ -1923,7 +1923,7 @@ function scr_briefing(t){
 			
 			Come back and try the time trial as many times as you 
 			want, even if you set the record, you can always set it
-			again. 
+			again when this job becomes available. 
 			
 			The moment you get into one of the 3 car options, the time
 			will start. Follow the arrows to the checkpoints and finish
@@ -1939,7 +1939,7 @@ function scr_briefing(t){
 			Locked Doors: 0
 			Req. Locked Doors: 0
 			Keys Available: 0
-			Reward: $2000
+			Reward: $6000
 			
 			
 			
@@ -2908,14 +2908,20 @@ function scr_results(t)
 	r[42] = @"D";
 	r[43] = @"F";
 	r[44] = @"S";
+	r[48] = @"C+";
+	r[49] = @"B+";
+	r[50] = @"A+";
+	r[51] = @"A++";
+	r[52] = @"A+++";
+	r[53] = @"A++++";
 	r[45] = @"Awarded Mercenary Rank:";//top of rank section
 	r[46] = @"Stats:
 			Missions taken: " + string(o_saveload.success+o_saveload.failure)+@"
 			Successful Missions: " + string(o_saveload.success)+@"
 			Failed Missions: " + string(o_saveload.failure)+@"
 			Total Money Earned: " + string(o_saveload.moneyT)+@"
-			Favorite Company: " + string(fave)+@"
-			Least Favorite Company: " + string(least);//stats
+			Favorite Company: " + string(o_saveload.fave)+@"
+			Least Favorite Company: " + string(o_saveload.least);//stats
 	r[47] = @"Creative Director:
 			Flint Burchett
 			
@@ -2937,6 +2943,7 @@ function scr_results(t)
 			Music:
 			J1r3m
 			Pedro Pina
+			Flint Burchett
 			
 			UX/UI:
 			Flint Burchett
@@ -2966,12 +2973,6 @@ function scr_results(t)
 			Deacon Burchett
 			Gehringer Burchett
 			Murllin Bender";//credits
-	r[48] = @"C+";
-	r[49] = @"B+";
-	r[50] = @"A+";
-	r[51] = @"A++";
-	r[52] = @"A+++";
-	r[53] = @"A++++";
 	
 	return r[t];
 }
@@ -5889,7 +5890,7 @@ function debrief(m)
 			
 			Press Spacebar to continue";
 	c[142] = @"New Course Record Set
-			Payout: $2000
+			Payout: $6000
 			
 			Response From Hiring Firm:
 			Wow, you beat the record! 

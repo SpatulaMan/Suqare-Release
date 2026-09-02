@@ -16,9 +16,9 @@ if(patrol_check == false)
 {
 	switch(lady)
 	{
-		case 1: path_start(p,1.7,path_action_stop,false); break;
-		case 2: path_start(p,1.7,path_action_stop,false); break;
-		case 3: path_start(p,1.7,path_action_stop,false); break;
+		case 1: path_start(p,1.2,path_action_stop,false); break;
+		case 2: path_start(p,1.2,path_action_stop,false); break;
+		case 3: path_start(p,1.2,path_action_stop,false); break;
 	}
 	//path_start(p,1.5,path_action_stop,false);
 	patrol_check = true;

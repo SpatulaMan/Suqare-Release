@@ -13,6 +13,10 @@ if(!file_exists("3save.txt"))
 	var _f = file_text_open_write("3save.txt");
 	file_text_close(_f);
 }*/
+fave = ""
+least = ""
+mx = 0;
+mn = 0;
 newfile = false;
 volCheck = false;
 volChangeCheck = false;

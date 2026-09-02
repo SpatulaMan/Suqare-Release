@@ -9,7 +9,7 @@ if(driver and !leave)
 	if(room == r_lvl_40 or room == r_lvl_42 or room == r_lvl_18) { view_visible[2] = true; view_visible[0] = false; }
 	obj_suq.x = x;
 	obj_suq.y = y;
-	if(keyboard_check(ord("W")) and !keyboard_check(ord("S")) and fwdC.go) { spd = speed; spdchg += 0.02; }
+	if(keyboard_check(ord("W")) and !keyboard_check(ord("S")) and fwdC.go) { spd = speed; spdchg += 0.05; }
 	if(!keyboard_check(ord("W")) and keyboard_check(ord("S")) and revC.go) { spd = speed;  spdchg -= 0.05; }
 	if(!fwdC.go and speed > 0) 
 	{ 

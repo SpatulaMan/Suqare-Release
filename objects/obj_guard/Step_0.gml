@@ -75,8 +75,8 @@ if(((_wallsee and _doorsee) and abs(angle_difference(weapon.image_angle,pd1)) < 
 		{
 			audio_play_sound(snd_fire,1,0,o_saveload.sfxvol,0,random_range(1,1.2));
 			audio_play_sound(snd_heavygun,1,0,o_saveload.sfxvol,0,random_range(.8,1));
-			if(bulamt < 3) { shtspd = 30; }
-			else if(bulamt > 3) { bulamt = 0; shtspd = 120; }
+			if(bulamt < 3) { shtspd = 60; }
+			else if(bulamt > 3) { bulamt = 0; shtspd = 180; }
 		}
 		if(weapon_type == obj_pistol) then { audio_play_sound(snd_lightgun,4,false,o_saveload.sfxvol); }
 		if(weapon_type == obj_magnum) then { audio_play_sound(snd_magnum,4,false,o_saveload.sfxvol); alarm_set(5,40); }
@@ -108,6 +108,13 @@ if(((_wallsee and _doorsee) and abs(angle_difference(weapon.image_angle,pd1)) < 
 		    Bulg.direction = weapon.image_angle;
 		    Bulg.image_angle = weapon.image_angle;
 			Bulg.speed = weapon_spd;
+			if(id == inst_7391DE08)
+			{
+				var Bulg8 = instance_create(x,y,extra_bul);
+			    Bulg8.direction = weapon.image_angle+180;
+			    Bulg8.image_angle = weapon.image_angle+180;
+				Bulg8.speed = weapon_spd-5;
+			}
 		}
 		if(weapon_type == obj_shotgun and bulamt != 0)
 		{

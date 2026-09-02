@@ -1,4 +1,4 @@
- bvif(visible == true and lclick == false)
+if(visible == true and lclick == false)
 {
 	audio_play_sound(snd_heal,1,false,random_range(.8,1.2)*o_saveload.sfxvol,0,3);
 	lclick = true;
@@ -7,7 +7,7 @@
 	switch(c)
 	{
 		case 1: o_logo.keyPress = true; visible = false; break; //start game
-		case 2: visible = false; break; //extras
+		case 2: o_logo.keyPress = true; o_logo.keyPressExtras = true; visible = false; break; //extras
 		case 3: o_logo.keyPress = true; o_logo.keyPressOptions = true; visible = false; break; //options
 		case 4: visible = false; game_end(); //quit
 		case 5: o_saveload.filename = "1"; visible = false; 
@@ -47,7 +47,11 @@
 		case 9: visible = false; o_logo.keyPress = true; o_logo.keyPressErase = true; inst_58B97707.f = f; break; //erase file 2
 		case 10: visible = false; o_logo.keyPress = true; o_logo.keyPressErase = true; inst_58B97707.f = f; break; //erase file 3
 		case 11: o_logo.keyPress = true; visible = false; break; //back
-		case 12: if(file_exists(string(f)+"save.txt")) then { file_delete(string(f)+"save.txt"); o_logo.keyPress = true; } //yes delete
-		case 13: o_logo.keyPress = true; //no delete
+		case 12: if(file_exists(string(f)+"save.txt")) then { file_delete(string(f)+"save.txt"); o_logo.keyPress = true; } break; //yes delete
+		case 13: o_logo.keyPress = true; break; //no delete
+		case 14: url_open("https://linktr.ee/flintburchett"); break;
+		case 15: break;//addition #1
+		case 16: break;//addition #2
+		case 17: break;//addition #3
 	}
 }

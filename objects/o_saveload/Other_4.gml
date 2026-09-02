@@ -26,6 +26,46 @@ if(room == r_armory)
 		unet = 0;
 	if(ynet < 0)
 		ynet = 0;
+	fave = "";
+	least = "";
+	mx = max(o_saveload.kanker,o_saveload.gildebrand,o_saveload.ungulate,o_saveload.hiertech,o_saveload.perez,o_saveload.yellerteeth);
+	mn = min(o_saveload.kanker,o_saveload.gildebrand,o_saveload.ungulate,o_saveload.hiertech,o_saveload.perez,o_saveload.yellerteeth);
+	if(mx == o_saveload.kanker) { fave +=  "Kanker"; }
+	if(mx == o_saveload.gildebrand and fave != "") { fave +=  @"
+															, gildebrand"; }
+	else if(mx == o_saveload.gildebrand) { fave +=  "gildebrand"; }
+	if(mx == o_saveload.ungulate and fave != "") { fave +=  @"
+															, ungulate"; }
+	else if(mx == o_saveload.ungulate) { fave +=  "ungulate"; }
+	if(mx == o_saveload.hiertech and fave != "") { fave +=  @"
+															, hiertech"; }
+	else if(mx == o_saveload.hiertech) { fave +=  "hiertech"; }
+	if(mx == o_saveload.perez and fave != "") { fave +=  @"
+														, perez"; }
+	else if(mx == o_saveload.perez) { fave +=  "perez"; }
+	if(mx == o_saveload.yellerteeth and fave != "") { fave +=  @"
+															, yellerteeth"; }
+	else if(mx == o_saveload.yellerteeth) { fave +=  "yellerteeth"; }
+
+	if(mn == o_saveload.kanker) { least +=  "Kanker"; }
+	if(mn == o_saveload.gildebrand and least != "") 
+	{ 
+		least +=  @"
+				, gildebrand"; 
+	}
+	else if(mn == o_saveload.gildebrand) { least +=  "gildebrand"; }
+	if(mn == o_saveload.ungulate and least != "") { least +=  @"
+															, ungulate"; }
+	else if(mn == o_saveload.ungulate) { least +=  "ungulate"; }
+	if(mn == o_saveload.hiertech and least != "") { least +=  @"
+															, hiertech"; }
+	else if(mn == o_saveload.hiertech) { least +=  "hiertech"; }
+	if(mn == o_saveload.perez and least != "") { least +=  @"
+															, perez"; }
+	else if(mn == o_saveload.perez) { least +=  "perez"; }
+	if(mn == o_saveload.yellerteeth and least != "") { least +=  @"
+																, yellerteeth"; }
+	else if(mn == o_saveload.yellerteeth) { least +=  "yellerteeth"; }
 }
 if(room != r_armory and room != r_range and room != r_skill1 and room != r_skill2 and room != r_skill3 and 
 room != r_skill4 and room != r_skill5 and instance_exists(obj_suq))

@@ -1,3 +1,4 @@
+//if(o_saveload.endgame == false or true)//debug
 if(o_saveload.endgame == false)
 {
 	if(distance_to_object(obj_suq) < 36 and ready == false and !instance_exists(o_lvlSelect))
