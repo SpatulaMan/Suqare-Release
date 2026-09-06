@@ -10,20 +10,28 @@ function scr_switchside(_id,_eff)
 		if(pc > ct)
 		{
 			var f = instance_create_layer(_id.x,_id.y,"Instances_Action",obj_guard_F);
+			f.influence = true;
 			f.key_drop = _id.key_drop;
 			f.keyimage = _id.keyimage;
 			f.weapon_type = _id.weapon_type;
 			f.sprite_index = _id.sprite_index;
-			f.image_blend = _id.image_blend;
+			f.image_blend = choose(c_lime,c_yellow,c_orange,c_aqua,c_purple);
 			f.hp = _id.hp;
 			f.drop_gun = _id.drop_gun;
 			f.weapon_spd = _id.weapon_spd;
-			//f.weapon = instance_create_layer(x,y,"Instances_Action",o_ePistol); 
-			//f.weapon.sprite_index = _id.weapon.sprite_index;
+			f.weapon = instance_create_layer(f.x,f.y,"Instances_Action",o_ePistol); 
+			if(_id.sprite_index != s_enemy_N and _id.sprite_index != s_enemy_N_2)
+			{
+				f.weapon.id.sprite_index = _id.weapon.id.sprite_index;
+			}
+			else//if(sprite_index == s_enemy_N or sprite_index == s_enemy_N_2) 
+			{ 
+				f.weapon.id.visible = false;
+			}
 			f.weapon_bul = _id.weapon_bul;
-			f.shtspd = _id.shtspd;
+			f.shtspd = 60;//_id.shtspd;
 			f.spr = _id.spr;
-			with (_id.weapon.id) instance_destroy();
+			if(instance_exists(_id.weapon)) { if(instance_exists(_id.weapon.id)) { with (_id.weapon.id) instance_destroy(); } }
 			with(_id) instance_destroy();
 			var d = instance_create_layer(x,y,"Instances_Action",o_dartin);
 			d.image_angle = image_angle;

@@ -652,7 +652,7 @@ function scr_briefing(t){
 			and retreats often.
 			Ji: Hyper accurate and the speed of his shuriken are
 			lightning fast.
-			Ren: Has mastered the art of creating moving after images,
+			Ren: Has mastered the art of creating moving after-images,
 			and he's also skilled at disappearing at any time.";
 	a[82] = @"Recruit Ninja Clan By Defeating 3 Ninja Masters";
 	a[83] = @"Mission: Recruit Ninjas
@@ -687,7 +687,7 @@ function scr_briefing(t){
 			our plans before they get off the ground. Since they don't
 			know we know it exists, this is our only chance to strike.
 			I want you to sneak into their warehouse, find out how to
-			kill it, then go kill it. 
+			destroy it, then go take it out. 
 			
 			You can take it on at any point, but if you go in 
 			unprepared, it'll most likely eat you alive. Bring anything
@@ -1033,15 +1033,15 @@ function scr_briefing(t){
 			graveyard, so we can vandalize whatever we want. 
 			
 			You'll want to explore every out-building around the area
-			too. That way he thinks you're trying to steal stuff from
-			there and doesn't suspect us, and you have to do this 
-			during the time we're vandalizing. 
+			during the time that we're vandalizing. That way he thinks
+			you're trying to steal stuff from there and doesn't suspect
+			us. 
 			
-			We don't want to hurt him. It just sounds so fun to break 
+			We don't want to hurt him. It just sounds so fun to paint 
 			some gravestones, ya know? Bring whatever Non-Lethal things
 			you have to keep him at bay and out of our way for about 2
-			minutes. If he comes back in during the 2 minutes, we'll be
-			seen, so don't let him back in until the time is up!";
+			minutes. If he comes back in during that time or you haven't 
+			explored all the out-buildings, we'll be found out!";
 	a[135] = @"Lure the gun-crazy Grave-Keeper away from Graveyard";
 	a[136] = @"Mission: Grave-Keeper
 			
@@ -2473,7 +2473,7 @@ function scr_conversation(t)
 	
 			Remember, if the switch is on the pink section, power is on, and if the switch is on the green section, power is 
 			off. It's conductive versus non-conductive material. What's so hard to understand about this? ";
-	a[94] = @"He's got the Eye! Spring the trap! 
+	a[94] = @"He might have the eye! Spring the trap! 
 	
 			Don't let him get back to his car! ";
 	a[95] = @"Things did not go to plan...";
@@ -2891,12 +2891,12 @@ function scr_results(t)
 			being, and that's enough for me to see how this turns out. 
 			
 			Good luck, Suqare.";//B
-	r[36] = @"Wow, a near perfect job. There were plenty of mistakes and problems, sure, but you actually made a profitable 
-			business that mostly stuck to your values, made money, and kept a viable client base as well. I'm impressed. I
-			never thought you could do it, but here you are. 
+	r[36] = @"Wow. There were plenty of mistakes and problems, but you actually made a profitable business that mostly stuck 
+			to your values, made money, and kept a small client base going as well. I never thought you could do it, but here 
+			you are. 
 			
-			Feel free to keep everything. You've got this mercenary thing down. Just don't let those mistakes become bigger
-			problems in the future, and you'll be alright. ";//A
+			Feel free to keep everything. Just don't let those mistakes become bigger problems in the future, and you'll be 
+			alright. ";//A
 	r[37] = @"How could you do this to the world? 
 	
 			You're evil. ";//kanker ending
@@ -2973,6 +2973,39 @@ function scr_results(t)
 			Deacon Burchett
 			Gehringer Burchett
 			Murllin Bender";//credits
+	r[54] = @"Interesting. You've done everything I've asked, just not that well. How does mediocrity make you feel? Do you 
+			feel good about missing the mark? If you can reach this level, then I know you have more in you. That means I should
+			expect more from you. You're only a slight disappointment, though. 
+			
+			I'm taking everything back, but I'll give you one last chance to prove yourself as a franchise owner of one of my 
+			clubs. Perhaps the open nature of mercenary work is too daunting for you.";//c+
+	r[55] = @"You've come really close to impressing me, Suqare. In fact, I'm going to let you keep everything I gave you. 
+			Do I think you'll do a great job? Maybe. But, I think you'll be able to stay afloat for the time being, and that's
+			enough for me to see how this turns out. 
+			
+			Good luck, Suqare.";//b+
+	r[56] = @"Wow. There were plenty of mistakes and problems, but you actually made a profitable business that mostly stuck 
+			to your values, made money, and kept a viable client base as well. I never thought you could do it, but here you
+			are. 
+			
+			Feel free to keep everything. Just don't let those mistakes become bigger problems in the future, and you'll be 
+			alright. ";//a+
+	r[57] = @"Wow, that was good. There were a bunch of mistakes and problems, but you actually made a profitable business that 
+			mostly stuck to your values, made money, and kept a viable client base as well. I'm impressed. 
+			
+			Feel free to keep everything. You've got this mercenary thing down for the most part. Just don't let those mistakes 
+			become bigger problems in the future, and you'll be alright. ";//a++
+	r[58] = @"Wow, an impressive job. There were plenty of mistakes and problems, sure, but you actually made a profitable 
+			business that stuck to your values, made money, and kept a viable client base as well. I never thought you could 
+			do so well. 
+			
+			Feel free to keep everything. You've got this mercenary thing down. Just don't let those mistakes become bigger
+			problems in the future, and you'll be alright. ";//a+++
+	r[59] = @"Wow, a near perfect job. There were plenty of mistakes and problems, sure, but you actually made a profitable 
+			business that stuck to your values, made money, and kept a viable client base as well. I'm impressed. I
+			never thought you could do it, but here you are. 
+			
+			Feel free to keep everything. You've got this mercenary thing down. You'll be alright. ";//a++++
 	
 	return r[t];
 }
@@ -3281,10 +3314,10 @@ function scr_shop(t){
 			Description: Increases Explosion Radius and Density
 			
 			Explosion Radius: 4
-			Explosion Density: 13
+			Explosion Density: 20
 			    |
 			Explosion Radius: 12
-			Explosion Density: 30
+			Explosion Density: 45
 			
 			
 			$6800"; 
@@ -4824,7 +4857,7 @@ function debrief(m)
 			Payout: $7800
 			
 			Response From Hiring Firm:
-			You got them both! The vote will surely fail now. We can't thank you enough for disposing
+			You got them both! The vote will surely pass now. We can't thank you enough for disposing
 			of the trash politicians we have to deal with. 
 			
 			Current standing with Perez Holdings: "+string(obj_suq.perez)+@"
@@ -4839,8 +4872,8 @@ function debrief(m)
 			Payout: $0
 			
 			Response From Hiring Firm:
-			So, poopy pants. Why didn't you do what I asked you to do? Yup. That's all I got to say about
-			that. 
+			So, poopy pants. Why didn't you do what I asked you to do? Yup. That's all I've got to say
+			about that. 
 			
 			Current standing with Perez Holdings: "+string(obj_suq.perez)+@"
 			

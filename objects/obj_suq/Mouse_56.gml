@@ -9,7 +9,13 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
         Bulm.speed = 15;
 		Bulm.damage += mda;
         mMag -= 1;
-		instance_create(x,y,o_gunSound);
+		if(instance_exists(o_gem))
+		{
+			if(distance_to_object(instance_nearest(x,y,o_gem)) > 48)
+			{
+				instance_create(x,y,o_gunSound);
+			}
+		}
     }
     canMNShoot = 10;
     with (object112) instance_destroy();

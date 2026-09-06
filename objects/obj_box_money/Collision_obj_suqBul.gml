@@ -1,1 +1,1 @@
-instance_destroy();
+if(other.sprite_index != s_ggBul) { instance_destroy(); }

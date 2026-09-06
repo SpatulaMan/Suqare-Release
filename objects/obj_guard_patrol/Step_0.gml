@@ -295,6 +295,18 @@ if(hp <= 0)
 	{
 		audio_play_sound(snd_enemyExplode,3,false,random_range(0.05,0.15)*o_saveload.sfxvol,0,random_range(0.9,1.1));
 	}
+	if(instance_exists(o_lvl36))
+	{
+		o_lvl36.guards++;
+	}
+	if(instance_exists(o_lvl35))
+	{
+		o_lvl35.num++;
+	}
+	if(instance_exists(o_lvl14))
+	{
+		o_lvl14.num++;
+	}
 	if(drop_gun) instance_create_layer(x,y,"Instances_Action",weapon_type);
 	var _piece5 = instance_create_layer(x,y,"Instances_Action",o_pieces);
 	_piece5.sprite_index = spr;

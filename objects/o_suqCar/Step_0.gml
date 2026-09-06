@@ -23,8 +23,8 @@ if(driver and !leave)
 		audio_play_sound(snd_hurt,1,false,o_saveload.sfxvol,0,.8);
 		audio_play_sound(snd_fireT,1,false,o_saveload.sfxvol,0,.8);
 	}
-	if(keyboard_check(ord("D")) and speed != 0) { spd = speed; image_angle -= 1.2; }
-	if(keyboard_check(ord("A")) and speed != 0) { spd = speed; image_angle += 1.2; }
+	if(keyboard_check(ord("D")) and speed != 0) { spd = speed; image_angle -= 1.3; }
+	if(keyboard_check(ord("A")) and speed != 0) { spd = speed; image_angle += 1.3; }
 	direction = image_angle;
 	if(keyboard_check(ord("B")) and speed > .5) { spdchg -= 0.2; }
 	else if(keyboard_check(ord("B")) and speed < -.5) { spdchg += 0.2; }

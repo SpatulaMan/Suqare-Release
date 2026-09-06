@@ -1,5 +1,5 @@
 /// @description
-if(instance_number(obj_guard_patrol) < 8)
+if(num > 0)
 {
 	o2 = false;
 }

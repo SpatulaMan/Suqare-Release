@@ -19,7 +19,7 @@ if(instance_exists(o_eFire))
 }
 if((!mouse_check_button(mb_left) or cgover == true) and chainGunAmt < 180)
 {
-	chainGunAmt++;
+	chainGunAmt += choose(1,2);
 }
 if(chainGunAmt == 180 and cgover == true)
 {
@@ -105,4 +105,8 @@ if(room == r_armory)
 		else if(ppMag == 0) { pp7Amt = 8; }
 		else { pp7Amt = 4; }
 	}
+}
+if(!place_meeting(x,y,o_lasers) and laserTimer < 5)
+{
+	laserTimer = 5;
 }

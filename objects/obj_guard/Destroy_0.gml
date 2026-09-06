@@ -19,3 +19,7 @@ if(room == r_armory)
 	o_saveload.var4 = 1;
 	o_steam.sendToSteam = true;
 }
+if(room == r_lvl_23 and instance_exists(o_conversation))
+{
+	with (o_conversation) instance_destroy();
+}

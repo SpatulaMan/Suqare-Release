@@ -3,6 +3,7 @@ if(distance_to_object(obj_suq) < 15 and !instance_exists(o_rank) and !instance_e
 {
 	instance_create(0,0,o_rank);
 	instance_create(0,0,o_ending);
+	o_steam.sendToSteam = true;
 }
 else if(instance_exists(o_rank) and instance_exists(o_ending) and distance_to_object(obj_suq) >= 15)
 {

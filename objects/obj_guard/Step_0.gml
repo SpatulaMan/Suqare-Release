@@ -257,6 +257,18 @@ if((hp <= 0 and p3 == false) or (hp <= (hpt*0.25) and p3 == false))
 }
 if(hp <= 0)
 {
+	if(instance_exists(o_lvl36))
+	{
+		o_lvl36.guards++;
+	}
+	if(instance_exists(o_lvl35))
+	{
+		o_lvl35.num++;
+	}
+	if(instance_exists(o_lvl14))
+	{
+		o_lvl14.num++;
+	}
 	if(room != r_lvl_6)
 	{
 		if(distance_to_object(obj_suq) < 180)

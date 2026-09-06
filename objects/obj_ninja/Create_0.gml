@@ -6,7 +6,7 @@ w_type = choose(1,2);
 	w_type = choose(1,2);
 }
 else { w_type = 1; }*/
-
+spr = s_enemy_N_1;
 spkn = noone;
 shtspd = 10;
 shtcnt = 0;
@@ -26,7 +26,7 @@ access = true;
 patrol_check = false;
 check = false; //final check
 weapon_spd = 4; 
-weapon = 101;
+weapon = obj_shuriken;
 turretTime = 120;
 bigX = false;
 //path_start(path0, 1.7, path_action_restart, true);
@@ -35,7 +35,8 @@ path = path_add();
 path_speed = 1;
 
 image_speed = 0;
-
+weapon_type = obj_shuriken;
+weapon_bul = obj_thrownShuriken;
 p1 = false;
 p2 = false;
 p3 = false;

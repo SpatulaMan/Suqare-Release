@@ -1,4 +1,4 @@
-if(room != r_lvl_29)
+if(room != r_lvl_29 and health > 0)
 {
 	lv -= other.damage;
 	direction = other.direction;

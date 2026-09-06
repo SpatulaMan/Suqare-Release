@@ -3,6 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
+weapon_bul = obj_thrownShuriken;
 bigX = choose(false,false,false,false,true);
 spr = s_enemy_N_1;
 hp = 8;
@@ -21,3 +22,7 @@ shtcnt = 0;
 shtspd = 30;
 pchCount = 1;
 dare = 0;
+weapon_type = obj_shuriken;
+weapon_spd = 4;
+drop_gun = false;
+weapon = obj_shuriken;

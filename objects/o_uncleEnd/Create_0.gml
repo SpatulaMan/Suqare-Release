@@ -19,5 +19,5 @@ rv += min(7 + (o_saveload.hsuccess * o_saveload.hiertech),14);
 vscr = (rv/84)*30;//30% of score where 42 is highest score (6 companies at matching 7 or -7 standing)
 if(vscr < 0) { vscr = 0; }
 t = 0;
-total = mscr+sscr+nscr+vscr;
-o_saveload.rank = total;
+total = ceil(mscr+sscr+nscr+vscr);
+o_saveload.rank = ceil(total);

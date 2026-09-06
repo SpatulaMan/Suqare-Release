@@ -1,7 +1,7 @@
 t--
 t2--
 image_alpha -= a;
-if(t <= 0)
+if(t <= 0 or speed <= 0)
 {
     //instance_destroy();
 	instance_change(o_smoke_A,true);
@@ -15,5 +15,5 @@ if(speed > 0)
     Bul.direction = direction;
 	Bul.image_alpha = image_alpha;
 }
-speed -= abs(t2/20);
-if(speed <= 0) { speed = .1; }
+//speed -= abs(t2/20);
+//if(speed <= 0) { speed = .1; }

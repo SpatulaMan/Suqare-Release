@@ -21,7 +21,7 @@ hpt = 0;
 patrol_check = false;
 check = false; //final check
 image_speed = 0;
-
+influence = false;
 p1 = false;
 p2 = false;
 p3 = false;
@@ -39,14 +39,17 @@ y4 = y;
 spr = s_enemy_1;
 fCheck = false;
 path = path_add();
-weapon = noone;
-weapon_spd = 6;
-weapon_bul = obj_suqBul;
-weapon_type = obj_pistol;
+if(!influence)
+{
+	weapon = noone;
+	weapon_spd = 6;
+	weapon_bul = obj_suqBul;
+	weapon_type = obj_pistol;
+}
 wc = 0;
-if(room != r_lvl_19) { wc = choose(1,1,2,3,3); }
+if(room != r_lvl_19 and !influence) { wc = choose(1,1,2,3,3); }
 if(sprite_index == s_robot) { wc = 11; }
 sk = 0;
 start = false;
 robot = false;
-alarm_set(10,2);
+if(!influence) { alarm_set(10,2); }

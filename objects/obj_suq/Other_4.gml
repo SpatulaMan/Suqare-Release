@@ -1,4 +1,5 @@
 visible = true;
+health = 100;
 spd = 2;
 mdCh = 1;
 obj_suq.image_xscale = 1; 

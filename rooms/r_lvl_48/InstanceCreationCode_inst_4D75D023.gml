@@ -1,4 +1,4 @@
-weapon_type = choose(obj_pistol,obj_magnum,obj_machineGun,obj_shotgun,obj_assaultRifle);
+weapon_type = choose(obj_shotgun,obj_assaultRifle);
 sprite_index = s_enemy_2;
 image_blend = c_green;
 hp = 32;

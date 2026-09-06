@@ -23,7 +23,7 @@ onet = o_saveload.otcnet;
 pnet = o_saveload.pnenet;
 prnet = o_saveload.pranet;
 rnet = o_saveload.rcenet;
-snet = o_saveload.money;
+snet = o_saveload.moneyT;
 
 dn = 0;
 hn = 0;

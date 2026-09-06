@@ -15,6 +15,13 @@ if(obj_suq.rlda == 0)
 	instance_create(x,y+3,obj_fireSH);
 	instance_create(x-3,y,obj_fireSH);
 	instance_create(x,y-3,obj_fireSH);
+	instance_create(x-7,y-7,obj_fireSH);
+	instance_create(x,y,obj_fireSH);
+	instance_create(x,y,obj_fireSH);
+	instance_create(x+3,y,obj_fireSH);
+	instance_create(x,y+3,obj_fireSH);
+	instance_create(x-3,y,obj_fireSH);
+	instance_create(x,y-3,obj_fireSH);
 }
 else
 {
@@ -43,6 +50,21 @@ else
 	instance_create(x,y+4,obj_fireSH_1);
 	instance_create(x-4,y,obj_fireSH_1);
 	instance_create(x,y-4,obj_fireSH_1);
+	instance_create(x,y+2,obj_fireSH_1);
+	instance_create(x+5,y+5,obj_fireSH_1);
+	instance_create(x-2,y,obj_fireSH_1);
+	instance_create(x,y-2,obj_fireSH_1);
+	instance_create(x-5,y-5,obj_fireSH_1);
+	instance_create(x+5,y-5,obj_fireSH_1);
+	instance_create(x-5,y+5,obj_fireSH_1);
+	instance_create(x+4,y,obj_fireSH_1);
+	instance_create(x,y+4,obj_fireSH_1);
+	instance_create(x-4,y,obj_fireSH_1);
+	instance_create(x-4,y,obj_fireSH_1);
+	instance_create(x-4,y,obj_fireSH_1);
+	instance_create(x-4,y,obj_fireSH_1);
+	instance_create(x-4,y,obj_fireSH_1);
+	instance_create(x-4,y,obj_fireSH_1);
 	
 	var f1 = instance_create(x,y,obj_suqFTBul);
 	f1.direction = ceil(random_range(0,359));

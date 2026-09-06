@@ -1,2 +1,2 @@
 /// @description
-guards = instance_number(obj_guard);
+//guards = instance_number(obj_guard);

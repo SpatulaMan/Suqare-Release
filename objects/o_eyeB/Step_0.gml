@@ -44,7 +44,7 @@ switch(stt)
 	}
 	else if(place_meeting(x,y,obj_suq) and speed > 0)
 	{
-		obj_suq.lv -= damage;
+		if(health > 0) { obj_suq.lv -= damage; }
 		obj_suq.direction = direction;
 		obj_suq.hit = true;
 		obj_suq.lv = floor(obj_suq.lv);
@@ -89,7 +89,7 @@ switch(stt)
 	}
 	else if(place_meeting(x,y,obj_suq) and speed > 0)
 	{
-		obj_suq.lv -= damage;
+		if(health > 0) { obj_suq.lv -= damage; }
 		obj_suq.direction = direction;
 		obj_suq.hit = true;
 		obj_suq.lv = floor(obj_suq.lv);

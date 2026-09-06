@@ -11,7 +11,7 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
         pMag -= 1;
 		if(instance_exists(o_gem2)) 
 		{
-			if(distance_to_object(o_gem2) > 48) 
+			if(distance_to_object(instance_nearest(x,y,o_gem2)) > 48) 
 				instance_create(x,y,o_gunSound);
 		}
 		else
@@ -108,7 +108,7 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
 			sgr = false;
 			if(instance_exists(o_gem2)) 
 			{
-				if(distance_to_object(o_gem2) > 48) 
+				if(distance_to_object(instance_nearest(x,y,o_gem2)) > 48) 
 					instance_create(x,y,o_gunSound);
 			}
 			else
@@ -127,7 +127,7 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
             canSNShoot = snda;
 			if(instance_exists(o_gem2)) 
 			{
-				if(distance_to_object(o_gem2) > 48) 
+				if(distance_to_object(instance_nearest(x,y,o_gem2)) > 48) 
 					instance_create(x,y,o_gunSound);
 			}
 			else
@@ -147,7 +147,7 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
             rlMag -= 1;
             if(instance_exists(o_gem2)) 
 			{
-				if(distance_to_object(o_gem2) > 48) 
+				if(distance_to_object(instance_nearest(x,y,o_gem2)) > 48) 
 					instance_create(x,y,o_gunSound);
 			}
 			else

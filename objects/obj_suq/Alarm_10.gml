@@ -54,6 +54,7 @@ tearTur = t3;
 flameTur = t4;
 rocketTur = t5;
 gemsD2 = 0;//gemsD;
+if(o_saveload.var5 < 5 and o_saveload.var5 > 0) { o_saveload.var5--; }//horoban ninja money
 if(audio_is_playing(snd_stepOther))
 {
 	audio_stop_sound(snd_stepOther);

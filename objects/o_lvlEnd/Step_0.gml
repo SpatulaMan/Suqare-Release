@@ -19,6 +19,7 @@ if(success == false)
 			{
 				success = true;
 				obj_suq.gunEquip = 0;
+				health = 0;
 				cursor_sprite = spr_unarmed;
 				if(room == r_lvl_7 or room == r_lvl_8 or room == r_lvl_23 or room == r_lvl_50 or room == r_lvl_49)
 				{

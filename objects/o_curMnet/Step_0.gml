@@ -1,5 +1,5 @@
 /// @description 
-snet = o_saveload.money;
+if(snet < o_saveload.moneyT) { snet = o_saveload.moneyT; }
 if(distance_to_object(obj_suq) < 28 and obj_suq.y < y)
 {
 	show = true;

@@ -1,11 +1,11 @@
-weapon_type = choose(obj_pistol,obj_magnum,obj_machineGun,obj_shotgun,obj_assaultRifle);
+weapon_type = obj_shotgun;
 sprite_index = s_enemy_2;
 image_blend = c_purple;
 hp = 64;
 drop_gun = choose(true,false,true);
 weapon_spd = 6;
-key_drop = false;
-keyimage = 1;
+//key_drop = false;
+//keyimage = 1;
 switch(weapon_type)
 {
 	case obj_pistol: 

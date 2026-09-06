@@ -2,7 +2,7 @@ rk = keyboard_check(ord("D"));
 lk = keyboard_check(ord("A"));
 uk = keyboard_check(ord("W"));
 dk = keyboard_check(ord("S"));
-if(keyboard_check_pressed(vk_f1)) { money = 25000; }//for testing
+//if(keyboard_check_pressed(vk_f1)) { money = 25000; }//for testing
 if(swordHave == 1 and swordCH < 120)
 {
 	swordCH++;
@@ -779,18 +779,24 @@ if(ninjaBenefit > 0 and instance_exists(o_lvlEnd))
 				instance_create_layer(x,y,"Instances_Action",obj_srAmmo); 
 				var _c3 = instance_create_layer(x,y,"Instances_Action",o_conversation); 
 				_c3.h = 57; break;
-		case 4: ninjaBenefit = 0;
-				instance_create_layer(x,y,"Instances_Action",o_coin_50);
-				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
-				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
-				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
-				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
-				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
-				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
-				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
-				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
-				instance_create_layer(x,y,"Instances_Action",o_coin_50); 
-				var _c4 = instance_create_layer(x,y,"Instances_Action",o_conversation); 
-				_c4.h = 58; ninjaBenefit = 0; break;
+		case 4: 
+				if(o_saveload.var5 < 5)
+				{
+					ninjaBenefit = 0;
+					instance_create_layer(x,y,"Instances_Action",o_coin_50);
+					instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+					instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+					instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+					instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+					instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+					instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+					instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+					instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+					instance_create_layer(x,y,"Instances_Action",o_coin_50); 
+					var _c4 = instance_create_layer(x,y,"Instances_Action",o_conversation); 
+					_c4.h = 58; ninjaBenefit = 0;
+					o_saveload.var5++;
+				}
+				break;
 	}
 }

@@ -89,7 +89,7 @@ tdead[1] = 0;
 tdead[2] = 0;
 tdead[3] = 0;
 tdead[4] = 0;
-scientist = false;
+scientist = o_saveload.scientist;
 ppda = o_saveload.ppda;
 rc = o_saveload.rc;
 spdup = o_saveload.spdup;
@@ -369,3 +369,5 @@ mdCh = 1;
 lady1Arrow = noone;
 lady2Arrow = noone;
 lady3Arrow = noone;
+
+laserTimer = 45;

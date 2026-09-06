@@ -1,4 +1,4 @@
-if(!place_meeting(x,y,o_suqCarT))
+if(!place_meeting(x,y,o_suqCarT) and health > 0)
 {
 	lv -= other.damage;
 	direction = ceil(random_range(0,359));

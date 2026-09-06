@@ -386,7 +386,7 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 20;
 					obj_suq.kanker += 1;
 					obj_suq.perez -= 1;
-					o_saveload.pnet -= 10;
+					o_saveload.pnet -= 5;
 					o_saveload.failure++;
 				}
 			} break;
@@ -569,7 +569,7 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.hnet -= 1;
 				o_saveload.unet -= 2;
 				obj_suq.lvldone[obj_suq.lvl] = true;
-				if(!instance_exists(o_data) and obj_suq.cBackup == 16)
+				if(!instance_exists(o_data) and obj_suq.cBackup >= 16)
 				{
 					//completed
 					o_saveload.knet -= 10;
@@ -589,7 +589,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.software = 2;
 					o_saveload.failure++;
 				}
-				else if(obj_suq.cBackup == 16 and instance_exists(o_data))
+				else if(obj_suq.cBackup >= 16 and instance_exists(o_data))
 				{
 					obj_suq.report = 39;
 					obj_suq.perez += 1;
@@ -624,6 +624,7 @@ function scr_levelEnd(car,range_optional)
 						o_saveload.unet -= 3;
 						obj_suq.report = 41;
 						obj_suq.scientist = true;
+						o_saveload.scientist = true;
 						o_saveload.success++;
 					}
 					else
@@ -726,7 +727,7 @@ function scr_levelEnd(car,range_optional)
 						obj_suq.report = 49;
 						obj_suq.kanker += 2;
 						o_saveload.knet += 7;
-						o_saveload.pnet -= 15;
+						o_saveload.pnet -= 10;
 						obj_suq.tankD = true;
 						o_saveload.success++;
 					}
@@ -1248,11 +1249,6 @@ function scr_levelEnd(car,range_optional)
 			} break;
 			case r_lvl_32:
 			{
-				o_saveload.pnet -= 3;
-				o_saveload.ynet += 3;
-				o_saveload.gnet -= 3;
-				o_saveload.unet += 2;
-				o_saveload.hnet += 2;
 				obj_suq.lvldone[obj_suq.lvl] = true;
 				if(o_lvl32.o1 and o_lvl32.o2 and o_lvl32.o3)
 				{
@@ -1260,16 +1256,21 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 95;
 					o_saveload.knet += 15;
 					obj_suq.kanker += 4;
-					o_saveload.pnet -= 6;
-					o_saveload.ynet -= 5;
-					o_saveload.gnet -= 4;
-					o_saveload.unet -= 4;
-					o_saveload.hnet -= 5;
+					o_saveload.pnet -= 3;
+					o_saveload.ynet -= 3;
+					o_saveload.gnet -= 3;
+					o_saveload.unet -= 3;
+					o_saveload.hnet -= 3;
 					o_saveload.plant = true;
 					o_saveload.success++;
 				}
 				else
 				{
+					o_saveload.pnet += 3;
+					o_saveload.ynet += 3;
+					o_saveload.gnet += 3;
+					o_saveload.unet += 3;
+					o_saveload.hnet += 3;
 					obj_suq.report = 96;
 					obj_suq.kanker -= 14;
 					o_saveload.knet -= 20;
@@ -1296,10 +1297,10 @@ function scr_levelEnd(car,range_optional)
 				else
 				{
 					o_saveload.pnet += 3;
-					o_saveload.ynet -= 3;
+					o_saveload.ynet += 3;
 					o_saveload.gnet += 3;
-					o_saveload.unet -= 2;
-					o_saveload.hnet -= 2;
+					o_saveload.unet += 3;
+					o_saveload.hnet += 3;
 					obj_suq.report = 98;
 					obj_suq.kanker -= 20;
 					o_saveload.knet -= 100;
@@ -1785,7 +1786,7 @@ function scr_levelEnd(car,range_optional)
 				o_saveload.pnet += 3;
 				o_saveload.ynet += 3;
 				o_saveload.hnet += 2;
-				if(o_lvl36.o1 == true and o_lvl36.o2 == true and o_lvl36.o3 == true and o_lvl36.guards == instance_number(obj_guard))
+				if(o_lvl36.o1 == true and o_lvl36.o2 == true and o_lvl36.o3 == true and o_lvl36.guards == 0)
 				{
 					obj_suq.report = 136;
 					obj_suq.ungulate += 3;
@@ -1793,7 +1794,7 @@ function scr_levelEnd(car,range_optional)
 					o_saveload.moneyT += 7200;
 					o_saveload.success++;
 				}//all done
-				else if((o_lvl36.o1 == true or o_lvl36.o2 == true or o_lvl36.o3 == true) and o_lvl36.guards == instance_number(obj_guard))
+				else if((o_lvl36.o1 == true or o_lvl36.o2 == true or o_lvl36.o3 == true) and o_lvl36.guards == 0)
 				{
 					obj_suq.report = 137;
 					o_saveload.unet += 6;
@@ -1802,7 +1803,7 @@ function scr_levelEnd(car,range_optional)
 					if(o_lvl36.o3) { o_saveload.moneyT += 2400; obj_suq.ungulate += 1; }
 					o_saveload.success++;
 				}//some saved, no kill
-				else if(o_lvl36.o1 == false and o_lvl36.o2 == false and o_lvl36.o3 == false and o_lvl36.guards == instance_number(obj_guard))
+				else if(o_lvl36.o1 == false and o_lvl36.o2 == false and o_lvl36.o3 == false and o_lvl36.guards == 0)
 				{
 					obj_suq.report = 138;
 					obj_suq.ungulate -= 2;
@@ -1860,7 +1861,7 @@ function scr_levelEnd(car,range_optional)
 			} break;
 			case r_lvl_40:
 			{
-				obj_suq.lvldone[obj_suq.lvl] = true;
+				//obj_suq.lvldone[obj_suq.lvl] = true;
 				//o_saveload.gnet -= 2;
 				//o_saveload.knet += 2;
 				//o_saveload.pnet += 3;
@@ -1872,17 +1873,20 @@ function scr_levelEnd(car,range_optional)
 					obj_suq.report = 142;
 					o_saveload.moneyT += 6000;
 					o_saveload.success++;
+					o_saveload.var6 += 4;
 					//if(o_saveload.moneyT > 200000) { obj_suq.progress++; }
 				}//win
 				else if(o_lvl40.o1 == true and o_saveload.rec < 1500)
 				{
 					obj_suq.report = 144;
 					o_saveload.failure++;
+					o_saveload.var6 += 3;
 				}//lose to your own record
 				else
 				{
 					o_saveload.failure++;
 					obj_suq.report = 143;
+					o_saveload.var6 += 3;
 				}//lose
 			} break;
 			case r_lvl_38:

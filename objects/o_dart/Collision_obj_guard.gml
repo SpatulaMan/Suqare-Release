@@ -1,5 +1,5 @@
 /// @description 
-if((other.sprite_index == s_enemy or other.sprite_index = s_enemy_2) and room != r_range and other.image_xscale == 1 and other.hp <= 32)
+if((other.sprite_index == s_enemy or other.sprite_index == s_enemy_2) and (room != r_range and room != r_lvl_26 and room != r_lvl_25) and other.image_xscale == 1 and other.hp <= 32)
 {
 	scr_switchside(other.id,true);
 }

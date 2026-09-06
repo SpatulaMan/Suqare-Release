@@ -16,9 +16,15 @@ else
 {
 	if(o_uncleEnd.total < 40) { i = 32; }
 	if(o_uncleEnd.total >= 40 and o_uncleEnd.total < 50) { i = 33; }
-	if(o_uncleEnd.total >= 50 and o_uncleEnd.total < 65) { i = 34; }
-	if(o_uncleEnd.total >= 65 and o_uncleEnd.total < 75) { i = 35; }
-	if(o_uncleEnd.total >= 75 and o_uncleEnd.total < 95) { i = 36; }
+	if(o_uncleEnd.total >= 50 and o_uncleEnd.total < 58) { i = 34; }
+	if(o_uncleEnd.total >= 58 and o_uncleEnd.total < 65) { i = 54; }//c+
+	if(o_uncleEnd.total >= 65 and o_uncleEnd.total < 70) { i = 35; }
+	if(o_uncleEnd.total >= 70 and o_uncleEnd.total < 75) { i = 55; }//b+
+	if(o_uncleEnd.total >= 75 and o_uncleEnd.total < 79) { i = 36; }
+	if(o_uncleEnd.total >= 79 and o_uncleEnd.total < 83) { i = 56; }//a+
+	if(o_uncleEnd.total >= 83 and o_uncleEnd.total < 87) { i = 57; }//a++
+	if(o_uncleEnd.total >= 87 and o_uncleEnd.total < 91) { i = 58; }//a+++
+	if(o_uncleEnd.total >= 91 and o_uncleEnd.total < 95) { i = 59; }//a++++
 	if(o_uncleEnd.total >= 95) { i = 38; }
 }
 displaytxt = "";

@@ -81,7 +81,7 @@ if(start and instance_exists(weapon))
 				shootCheck = shtspd;
 				if((weapon_type == obj_shotgun and bulamt != 0) or weapon_type != obj_shotgun)
 				{
-					instance_create(x,y,o_gunSound);
+					if(weapon_type != obj_shuriken) { instance_create(x,y,o_gunSound); }
 				    var Bulg = instance_create(x,y,weapon_bul);
 				    Bulg.direction = weapon.image_angle;
 				    Bulg.image_angle = weapon.image_angle;
@@ -188,6 +188,18 @@ if(start and instance_exists(weapon))
 	}
 	if(hp <= 0)
 	{
+		if(instance_exists(o_lvl36))
+		{
+			o_lvl36.guards++;
+		}
+		if(instance_exists(o_lvl35))
+		{
+			o_lvl35.num++;
+		}
+		if(instance_exists(o_lvl14))
+		{
+			o_lvl14.num++;
+		}
 		if(distance_to_object(obj_suq) < 180)
 		{
 			audio_play_sound(snd_enemyExplode,3,false,random_range(0.05,0.15)*o_saveload.sfxvol,0,random_range(0.9,1.1));

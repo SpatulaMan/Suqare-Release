@@ -13,7 +13,7 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
             canMGShoot = 5;
 			if(instance_exists(o_gem2)) 
 			{
-				if(distance_to_object(o_gem2) > 48) 
+				if(distance_to_object(instance_nearest(x,y,o_gem2)) > 48) 
 					instance_create(x,y,o_gunSound);
 			}
 			else
@@ -41,7 +41,7 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
             canARShoot = arda;
 			if(instance_exists(o_gem2)) 
 			{
-				if(distance_to_object(o_gem2) > 48) 
+				if(distance_to_object(instance_nearest(x,y,o_gem2)) > 48) 
 					instance_create(x,y,o_gunSound);
 			}
 			else
@@ -55,13 +55,13 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
             Bulft.direction = point_direction(x,y,mouse_x,mouse_y);
             Bulft.image_angle = Bulft.direction;
             Bulft.speed = 22;
-            fMag-= .1;
+            fMag-= .05;
             alarm_set(9,1);
             canFTShoot = 2;
 			if(cgss < 0) { cgss = 4; }
 			if(instance_exists(o_gem2)) 
 			{
-				if(distance_to_object(o_gem2) > 48) 
+				if(distance_to_object(instance_nearest(x,y,o_gem2)) > 48) 
 					instance_create(x,y,o_gunSound);
 			}
 			else
@@ -87,7 +87,7 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
         canCGShoot = 1;
 		if(instance_exists(o_gem2)) 
 		{
-			if(distance_to_object(o_gem2) > 48) 
+			if(distance_to_object(instance_nearest(x,y,o_gem2)) > 48) 
 				instance_create(x,y,o_gunSound);
 		}
 		else

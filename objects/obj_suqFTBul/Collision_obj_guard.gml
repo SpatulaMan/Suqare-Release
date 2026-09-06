@@ -7,4 +7,5 @@ if(instance_exists(obj_guard))
 		other.alarm[4] = 5;
 		other.direction = direction;
 }
+instance_create_layer(other.x,other.y,"Instances_Action",obj_fireST);
 instance_destroy();
