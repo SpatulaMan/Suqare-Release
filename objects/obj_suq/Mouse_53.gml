@@ -128,10 +128,14 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
 			if(instance_exists(o_gem2)) 
 			{
 				if(distance_to_object(instance_nearest(x,y,o_gem2)) > 48) 
-					instance_create(x,y,o_gunSound);
+					var gs = instance_create(x,y,o_gunSound);
+					gs.sprite_index = s_bombSound;
 			}
 			else
-				instance_create(x,y,o_gunSound);
+			{
+				var gs = instance_create(x,y,o_gunSound);
+				gs.sprite_index = s_bombSound;
+			}
     }
 	else if((snMag <= 0 and gunEquip == 8) or snr == true) then audio_play_sound(snd_switchguns,3,false,.5*o_saveload.sfxvol,0,2);
     if(rlMag > 0 and gunEquip == 9 and rlr == false)
@@ -148,10 +152,16 @@ if(health > 0 and !keyboard_check_direct(vk_shift) and !instance_exists(o_shop))
             if(instance_exists(o_gem2)) 
 			{
 				if(distance_to_object(instance_nearest(x,y,o_gem2)) > 48) 
-					instance_create(x,y,o_gunSound);
+				{
+					var gs = instance_create(x,y,o_gunSound);
+					gs.sprite_index = s_bombSound;
+				}
 			}
 			else
-				instance_create(x,y,o_gunSound);
+			{
+				var gs = instance_create(x,y,o_gunSound);
+				gs.sprite_index = s_bombSound;
+			}
         }
     }
 	else if((rlMag <= 0 and gunEquip == 9) or rlr == true) then audio_play_sound(snd_switchguns,3,false,.5*o_saveload.sfxvol,0,2);

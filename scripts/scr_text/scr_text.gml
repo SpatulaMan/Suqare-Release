@@ -3494,9 +3494,13 @@ function scr_shop(t){
 	
 			Description: Gives you access to a surveillance RC car. It
 			can drive under doors and it comes equipped with a camera
-			to see what it sees. 
+			to see what it sees. To redeploy, pick up the rc car from 
+			where it stopped. 
 			
-			To redeploy, pick up the rc car from where it stopped. 
+			Up Arrow - Accelerate
+			Down Arrow - Decelerate
+			Left Arrow - Turn Left
+			Right Arrow - Turn Right
 			
 			Battery Life: 30 seconds per use
 			
